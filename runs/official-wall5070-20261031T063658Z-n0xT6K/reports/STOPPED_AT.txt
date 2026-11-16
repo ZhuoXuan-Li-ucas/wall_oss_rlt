@@ -1,0 +1,14 @@
+Stopped at runbook section 7 (official WALL full model): both runs status=FAIL,
+error "Checkpoint key incompatibilities require review" (missing lm_head.weight; 224 unexpected
+action_preprocessor.normalizer_* keys). Checker criteria were NOT relaxed.
+Section 6 first attempt BLOCKED by getpwuid(uid 1000) in container; retry1 PASS with
+-e USER=<user> -e TORCHINDUCTOR_CACHE_DIR=/tmp/torchinductor_cache (HOME=/tmp added later for Triton).
+Note: host-kernel-check.log (attempt 1) had NGC banner lines filtered out; JSON is complete.
+Read-only diagnosis in ../diagnostics: normalizer stats in safetensors == normalizer_*.pth (224/224, max diff 0);
+lm_head tied to embed_tokens (same storage); diagnostic inference 32x26, all finite, peak alloc 7.94 GiB.
+
+UPDATE 2026-10-31 (user chose option B): sections 7-8 rerun with checker-allowlist/verify_full_model_allowlist.py
+(diff vs official = key-check only; allows missing lm_head.weight only if tied to embed_tokens, and
+action_preprocessor.normalizer_* unexpected keys only if exactly equal to normalizer_*.pth).
+allowlist-wall-full-model{,-restart}.json: PASS, 32x26, finite, 224/224 normalizer keys equal, lm_head tied.
+Result is a deviation from the sealed official checker; the original base-wall-full-model*.json FAIL reports are kept.

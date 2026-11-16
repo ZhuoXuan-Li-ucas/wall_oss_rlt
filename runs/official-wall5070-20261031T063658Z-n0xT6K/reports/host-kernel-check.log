@@ -1,0 +1,11 @@
+CUDA Version 12.8.1
+{
+  "status": "BLOCKED",
+  "report": "/reports/host-kernel-check.json",
+  "static_checks_status": "PASS",
+  "kernels": "FAIL",
+  "failed_checks": [
+    "kernels"
+  ],
+  "full_model_inference": "NOT_RUN"
+}

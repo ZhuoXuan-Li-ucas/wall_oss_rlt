@@ -1,0 +1,46 @@
+{
+  "root": "/target-data",
+  "repo_id": "local/top_error",
+  "source_format": "npz_video",
+  "fps": 30.0,
+  "action_key": "action",
+  "state_key": "state",
+  "action_names": [
+    "unconfirmed_action_0",
+    "unconfirmed_action_1",
+    "unconfirmed_action_2",
+    "unconfirmed_action_3",
+    "unconfirmed_action_4",
+    "unconfirmed_action_5",
+    "unconfirmed_action_6"
+  ],
+  "state_names": [
+    "unconfirmed_state_0",
+    "unconfirmed_state_1",
+    "unconfirmed_state_2",
+    "unconfirmed_state_3",
+    "unconfirmed_state_4",
+    "unconfirmed_state_5",
+    "unconfirmed_state_6",
+    "unconfirmed_state_7"
+  ],
+  "camera_mapping": {
+    "cam_high": "cam_high",
+    "cam_front": "cam_front"
+  },
+  "splits": {
+    "train": [
+      0
+    ],
+    "dev": [],
+    "test": [
+      1
+    ]
+  },
+  "manifest_path": "episodes.json",
+  "manifest_sha256": "01fec57aad646e08147273750c3ed94dbdce687ce755e6a1cafe4544d3c875a5",
+  "normalization_path": "normalization.json",
+  "normalization_sha256": "3f56663924da5fe32c28dea5cbe523f2257e744670666aa5e07d7b9db9a28246",
+  "semantics_confirmed": false,
+  "purpose": "inspection"
+}

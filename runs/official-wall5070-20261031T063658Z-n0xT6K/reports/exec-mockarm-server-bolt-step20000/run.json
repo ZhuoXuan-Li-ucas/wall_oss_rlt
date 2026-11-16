@@ -1,0 +1,178 @@
+{
+ "created": "2026-11-05T14:36:33",
+ "argv": [
+  "--mock-arm",
+  "--server",
+  "http://127.0.0.1:8080",
+  "--task-dir",
+  "/home/crp-5070ti-01/atom_episodes/wall_unlocked_v2/bolt",
+  "--autostart",
+  "--max-seconds",
+  "10",
+  "--verbose",
+  "--log-dir",
+  "/home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/reports/exec-mockarm-server-bolt-step20000"
+ ],
+ "ik": "weighted",
+ "mock_arm": true,
+ "prompt": "insert the bolt into the sleeve",
+ "fps": 30.0,
+ "control_hz": 50.0,
+ "replan_steps": 10,
+ "blend_s": 0.1,
+ "policy": {
+  "kind": "remote",
+  "url": "http://127.0.0.1:8080",
+  "server_instance_id": "5ae65ad2f4f541c0a13a9c34d104c18e",
+  "metadata": {
+   "backend": "wall_rlt_stage1",
+   "absolute_target_dim": 7,
+   "absolute_target_names": [
+    "flange_x",
+    "flange_y",
+    "flange_z",
+    "flange_rotvec_x",
+    "flange_rotvec_y",
+    "flange_rotvec_z",
+    "gripper_command"
+   ],
+   "absolute_target_units": [
+    "m",
+    "m",
+    "m",
+    "rad",
+    "rad",
+    "rad",
+    "binary_0_close_1_open"
+   ],
+   "absolute_target_frame": "AR5_base_frame_flange_pose",
+   "target_mode": "ar5_ee_rel6d_next_v1",
+   "model_adapter": "wall_oss05_right_arm_ee_v1",
+   "model_origin": "stage1_checkpoint",
+   "artifact_id": "ea83bb3bc25387c65d040f707a9da8fbddb03e55f5e68801394e3603cbddf6e5",
+   "training_step": 20000,
+   "runtime_model_sources_sha256": "284306df5ca1ae426ae772ff1d62608d99bf6e18c078885877ae0f19584fbb5b",
+   "data_contract_hash": "f47efc753b81e84d4e70db58ee71a30d1a93e27fb40133f5799d9e6debd490f2",
+   "action_horizon": 32,
+   "action_dim": 10,
+   "action_names": [
+    "flange_dx",
+    "flange_dy",
+    "flange_dz",
+    "rot6d_rel_r00",
+    "rot6d_rel_r01",
+    "rot6d_rel_r02",
+    "rot6d_rel_r10",
+    "rot6d_rel_r11",
+    "rot6d_rel_r12",
+    "gripper_next_command"
+   ],
+   "action_units": [
+    "m",
+    "m",
+    "m",
+    "rotation_matrix_element",
+    "rotation_matrix_element",
+    "rotation_matrix_element",
+    "rotation_matrix_element",
+    "rotation_matrix_element",
+    "rotation_matrix_element",
+    "binary_0_close_1_open"
+   ],
+   "action_convention": "mixed",
+   "coordinate_frame": "AR5_base_frame_flange_pose",
+   "camera_mapping": {
+    "cam_high": "top_view",
+    "cam_front": "wrist_view"
+   },
+   "state_names": [
+    "flange_x",
+    "flange_y",
+    "flange_z",
+    "rot6d_r00",
+    "rot6d_r01",
+    "rot6d_r02",
+    "rot6d_r10",
+    "rot6d_r11",
+    "rot6d_r12",
+    "gripper_measured_opening"
+   ],
+   "state_dim": 10,
+   "state_units": [
+    "m",
+    "m",
+    "m",
+    "rotation_matrix_element",
+    "rotation_matrix_element",
+    "rotation_matrix_element",
+    "rotation_matrix_element",
+    "rotation_matrix_element",
+    "rotation_matrix_element",
+    "opening_fraction_position_div_210"
+   ],
+   "action_source": "WALL_reference_prediction",
+   "gripper_output": "continuous_prediction_of_binary_target",
+   "includes_actor": false,
+   "includes_decoder": false,
+   "feature_dim": 2048,
+   "robot_execution_supported": false,
+   "device": "cuda:0",
+   "inference_steps": 10,
+   "image_size": 448,
+   "max_length": 2048,
+   "vision_attention": "flash_attention_2",
+   "wall_attention": "sdpa",
+   "completed_requests": 2,
+   "last_inference_seconds": 0.24178555200001028,
+   "peak_allocated_bytes": 10021716992,
+   "peak_reserved_bytes": 10148118528
+  }
+ },
+ "so101": "/home/crp-5070ti-01/yuhang_workspace/算法/DexGraspVLA-/SO101",
+ "wall_rlt_root": "/home/crp-5070ti-01/workspaces/WALL-OSS-CRP",
+ "tcp_z": 0.13,
+ "ori_cost": 0.5,
+ "workspace": [
+  [
+   0.0,
+   -0.6,
+   0.08
+  ],
+  [
+   0.66,
+   0.43,
+   0.65
+  ]
+ ],
+ "omnipicker": {
+  "grip_force": 80,
+  "speed": 128
+ },
+ "start_q": [
+  -0.7415,
+  -0.0008,
+  0.0919,
+  1.8059,
+  -1.3811,
+  0.3432,
+  -0.4173
+ ],
+ "ended": "2026-11-05T14:36:43",
+ "chunks": 29,
+ "switch_jump_warnings": 2,
+ "env_stats": {
+  "steps": 501,
+  "delta_clamped": 0,
+  "workspace_clamped": 0,
+  "unreachable": 0,
+  "resynced": 0,
+  "leashed": 0,
+  "motion_errors": 0,
+  "joint_clamped": 0,
+  "floor_blocked": 0,
+  "joint_rate_limited": 0
+ },
+ "backend_stats": {
+  "box_clamped": 0
+ }
+}

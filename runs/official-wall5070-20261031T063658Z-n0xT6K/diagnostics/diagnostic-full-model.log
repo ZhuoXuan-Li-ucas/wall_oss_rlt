@@ -1,0 +1,39 @@
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 12.8.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+typed TrainConfig loading failed; falling back to raw data config: task.dof_config is required (cannot be empty)
+/opt/walloss/env/lib/python3.10/site-packages/transformers/modeling_rope_utils.py:936: FutureWarning: `rope_config_validation` is deprecated and has been removed. Its functionality has been moved to RotaryEmbeddingConfigMixin.validate_rope method. PreTrainedConfig inherits this class, so please call self.validate_rope() instead. Also, make sure to use the new rope_parameters syntax. You can call self.standardize_rope_params() in the meantime.
+  warnings.warn(
+Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+{
+  "scope": "diagnostic only; not acceptance",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "lm_head_is_embed_tokens": true,
+  "lm_head_shares_storage": true,
+  "lm_head_equals_embed_tokens": true,
+  "tie_word_embeddings": true,
+  "resolved_norm_key": "x2_normal",
+  "first_inference_seconds": 1.5993595279869623,
+  "action_shape": [
+    32,
+    26
+  ],
+  "action_all_finite": true,
+  "action_min": -0.049239397048950195,
+  "action_max": 1.4210270643234253,
+  "peak_allocated_gib": 7.940301418304443,
+  "peak_reserved_gib": 8.072265625
+}

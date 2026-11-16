@@ -1,0 +1,94 @@
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 12.8.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+typed TrainConfig loading failed; falling back to raw data config: task.dof_config is required (cannot be empty)
+/opt/walloss/env/lib/python3.10/site-packages/transformers/modeling_rope_utils.py:936: FutureWarning: `rope_config_validation` is deprecated and has been removed. Its functionality has been moved to RotaryEmbeddingConfigMixin.validate_rope method. PreTrainedConfig inherits this class, so please call self.validate_rope() instead. Also, make sure to use the new rope_parameters syntax. You can call self.standardize_rope_params() in the meantime.
+  warnings.warn(
+Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+模型 /opt/walloss/models/wall-oss-0.5：动作 32 步 × 26 维，加载 38.7 s；norm_key x2_normal；夹爪 range（x2_normal 统计 -0.160 ~ 5.245）
+数据 /target-data/black_sleeve：50 条，回放 50 条、每 30 帧一次
+  ep  0   17 次  累计 17  单次中位 228 ms
+  ep  1   17 次  累计 34  单次中位 228 ms
+  ep  2   16 次  累计 50  单次中位 228 ms
+  ep  3   14 次  累计 64  单次中位 227 ms
+  ep  4   15 次  累计 79  单次中位 227 ms
+  ep  5   18 次  累计 97  单次中位 227 ms
+  ep  6   16 次  累计 113  单次中位 226 ms
+  ep  7   11 次  累计 124  单次中位 227 ms
+  ep  8   15 次  累计 139  单次中位 227 ms
+  ep  9   12 次  累计 151  单次中位 227 ms
+  ep 10   14 次  累计 165  单次中位 227 ms
+  ep 11   19 次  累计 184  单次中位 226 ms
+  ep 12   17 次  累计 201  单次中位 226 ms
+  ep 13   17 次  累计 218  单次中位 226 ms
+  ep 14   18 次  累计 236  单次中位 227 ms
+  ep 15   14 次  累计 250  单次中位 227 ms
+  ep 16   14 次  累计 264  单次中位 227 ms
+  ep 17   15 次  累计 279  单次中位 227 ms
+  ep 18   11 次  累计 290  单次中位 227 ms
+  ep 19   12 次  累计 302  单次中位 227 ms
+  ep 20   16 次  累计 318  单次中位 227 ms
+  ep 21   14 次  累计 332  单次中位 227 ms
+  ep 22   10 次  累计 342  单次中位 227 ms
+  ep 23   14 次  累计 356  单次中位 227 ms
+  ep 24    9 次  累计 365  单次中位 227 ms
+  ep 25   11 次  累计 376  单次中位 227 ms
+  ep 26   10 次  累计 386  单次中位 227 ms
+  ep 27   14 次  累计 400  单次中位 227 ms
+  ep 28   14 次  累计 414  单次中位 227 ms
+  ep 29    9 次  累计 423  单次中位 227 ms
+  ep 30    9 次  累计 432  单次中位 227 ms
+  ep 31    8 次  累计 440  单次中位 227 ms
+  ep 32   10 次  累计 450  单次中位 227 ms
+  ep 33   10 次  累计 460  单次中位 227 ms
+  ep 34   12 次  累计 472  单次中位 227 ms
+  ep 35   10 次  累计 482  单次中位 227 ms
+  ep 36   10 次  累计 492  单次中位 227 ms
+  ep 37   12 次  累计 504  单次中位 227 ms
+  ep 38   10 次  累计 514  单次中位 227 ms
+  ep 39   10 次  累计 524  单次中位 227 ms
+  ep 40   13 次  累计 537  单次中位 227 ms
+  ep 41   11 次  累计 548  单次中位 227 ms
+  ep 42    8 次  累计 556  单次中位 227 ms
+  ep 43   10 次  累计 566  单次中位 227 ms
+  ep 44   10 次  累计 576  单次中位 227 ms
+  ep 45   11 次  累计 587  单次中位 227 ms
+  ep 46   11 次  累计 598  单次中位 227 ms
+  ep 47   10 次  累计 608  单次中位 227 ms
+  ep 48    8 次  累计 616  单次中位 227 ms
+  ep 49   10 次  累计 626  单次中位 227 ms
+
+回放 626 次；首次 1395 ms，之后中位 227 ms、p90 230 ms；显存峰值 7.92 GiB
+欧拉角约定核对最大差 7.8e-16；当前位置落在 x2_normal 统计范围内的比例 xyz [1.   0.22 0.83]
+                      模型        不动
+位置 mm               34.3      24.7
+  第8步               17.7      12.5
+  第16步              27.9      24.2
+  第32步              80.7      47.2
+姿态 °                5.56      3.57
+夹爪开度               0.109     0.028
+第 32 步方向（真走了 ≥1 cm 的 507 个点）：余弦中位 0.54，同向比例 0.77；位移中位 预测 69.6 mm / 数据 36.1 mm
+检查 ep0 t0：同种子重跑最大差 0.00e+00；换种子位置平均变 14.5 mm；两张图换全黑平均变 43.3 mm
+检查 ep0 t30：同种子重跑最大差 0.00e+00；换种子位置平均变 36.7 mm；两张图换全黑平均变 22.6 mm
+检查 ep0 t60：同种子重跑最大差 0.00e+00；换种子位置平均变 20.6 mm；两张图换全黑平均变 20.9 mm
+检查 ep0 t90：同种子重跑最大差 0.00e+00；换种子位置平均变 39.8 mm；两张图换全黑平均变 14.4 mm
+检查 ep0 t120：同种子重跑最大差 0.00e+00；换种子位置平均变 17.0 mm；两张图换全黑平均变 20.2 mm
+检查 ep0 t150：同种子重跑最大差 0.00e+00；换种子位置平均变 29.5 mm；两张图换全黑平均变 73.7 mm
+检查 ep0 t180：同种子重跑最大差 0.00e+00；换种子位置平均变 21.4 mm；两张图换全黑平均变 42.5 mm
+检查 ep0 t210：同种子重跑最大差 0.00e+00；换种子位置平均变 19.0 mm；两张图换全黑平均变 56.0 mm
+检查 ep0 t240：同种子重跑最大差 0.00e+00；换种子位置平均变 15.0 mm；两张图换全黑平均变 57.4 mm
+检查 ep0 t270：同种子重跑最大差 0.00e+00；换种子位置平均变 16.7 mm；两张图换全黑平均变 47.2 mm
+输出：/out/black_sleeve_x2_s30

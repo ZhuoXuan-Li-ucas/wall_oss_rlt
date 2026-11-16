@@ -1,0 +1,94 @@
+{
+  "status": "INTEGRITY_PASS",
+  "bundle": "/home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/incoming/WALL-RLT-inference5070-20261105-v2",
+  "source_members": 6893,
+  "gpu_validated": false
+}
+{
+  "status": "SOURCES_VERIFIED_AND_EXTRACTED",
+  "output": "/home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261105T020149Z",
+  "source_members": 6893
+}
+Building wall-rlt-inference:5070ti-20261105T020149Z from verified local base sha256:8f067a0eb220228f444811532cc8ec0a328e4d46b7983637c1c4ea7743ef9ee8; compilation uses one worker.
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  104.1MB
+Step 1/14 : ARG BASE_IMAGE
+Step 2/14 : FROM ${BASE_IMAGE}
+ ---> 8f067a0eb220
+Step 3/14 : SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+ ---> Using cache
+ ---> 94126aba92c4
+Step 4/14 : ENV PATH="/opt/walloss/env/bin:${PATH}"     PYTHONNOUSERSITE=1 PYTHONPATH="/opt/wall-rlt"     CUDA_HOME=/usr/local/cuda MAX_JOBS=1 NVCC_THREADS=1     TORCH_CUDA_ARCH_LIST="12.0" FLASH_ATTN_CUDA_ARCHS="120"     FLASH_ATTENTION_FORCE_BUILD=TRUE PIP_NO_INDEX=1     PIP_DISABLE_PIP_VERSION_CHECK=1 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1     TOKENIZERS_PARALLELISM=false
+ ---> Using cache
+ ---> 89637236f120
+Step 5/14 : WORKDIR /opt/wall-rlt
+ ---> Using cache
+ ---> abfe7481fd38
+Step 6/14 : COPY flash-attn/ /opt/wall-rlt-build/flash-attn/
+ ---> Using cache
+ ---> 53c5e3cd000a
+Step 7/14 : RUN test ! -e /opt/wall-rlt-build/flash-attn/.git     && test -f /opt/wall-rlt-build/flash-attn/csrc/cutlass/include/cutlass/cutlass.h     && CUDA_VISIBLE_DEVICES="" python -m pip install -v --force-reinstall        --no-cache-dir --no-index --no-deps --no-build-isolation /opt/wall-rlt-build/flash-attn     && rm -rf /opt/wall-rlt-build/flash-attn
+ ---> Using cache
+ ---> aa51230f04d7
+Step 8/14 : COPY wall-x/ /opt/wall-rlt-build/wall-x/
+ ---> Using cache
+ ---> 85a2d2d39cde
+Step 9/14 : RUN test ! -e /opt/wall-rlt-build/wall-x/.git     && CUDA_VISIBLE_DEVICES="" python -m pip install -v --force-reinstall        --no-cache-dir --no-index --no-deps --no-build-isolation /opt/wall-rlt-build/wall-x     && rm -rf /opt/wall-rlt-build/wall-x
+ ---> Using cache
+ ---> af364f50430a
+Step 10/14 : COPY project/ /opt/wall-rlt/
+ ---> bd1d467f9d50
+Step 11/14 : COPY SOURCE-MANIFEST.json /opt/wall-rlt/build-record/source-manifest.json
+ ---> 8c493ed7e210
+Step 12/14 : RUN CUDA_VISIBLE_DEVICES="" python docker/verify_native_architectures.py        --required-arch sm_120 --output build-record/native-sm120.json     && python -m pip freeze --all > build-record/environment.freeze.txt     && python -c "import importlib.util; from pathlib import Path; p=Path(importlib.util.find_spec('wall_x').origin).resolve(); assert p.is_relative_to(Path('/opt/walloss/env')), p; print('Installed patched WALL:', p)"     && CUDA_VISIBLE_DEVICES="" python -c "import wall_rlt.inference.artifact, wall_rlt.inference.runtime, wall_rlt.inference.server, wall_rlt.inference.client; from wall_x.data.backends.lerobot.loader import DataCollator; from wall_x.model.qact.qwen2_5 import Qwen2_5_VLMoEForAction; from wall_rlt.model.builder import _require_prefix_patch; _require_prefix_patch(Qwen2_5_VLMoEForAction); print('Inference imports and prefix patch: PASS; model and GPU kernels not run')"
+ ---> Running in 63777c8a75c6
+{
+  "status": "PASS",
+  "report": "build-record/native-sm120.json",
+  "required_architectures": [
+    "sm_120"
+  ],
+  "extensions": [
+    {
+      "module": "flash_attn_2_cuda",
+      "status": "PASS",
+      "path": "/opt/walloss/env/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "f33ecad8e9c513e94d4937702d5879001c93f3c619613b770b202b10a653c173",
+      "elf_architectures": [
+        "sm_120"
+      ],
+      "ptx_architectures": [],
+      "missing_architectures": []
+    },
+    {
+      "module": "wall_x.model.core.ops._cuda_ext_bin",
+      "status": "PASS",
+      "path": "/opt/walloss/env/lib/python3.10/site-packages/wall_x/model/core/ops/_cuda_ext_bin.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "cc427af0b15fb96a16e6d77d5542299adbd9d093085883c82809638dd13e7ea5",
+      "elf_architectures": [
+        "sm_120"
+      ],
+      "ptx_architectures": [],
+      "missing_architectures": []
+    }
+  ]
+}
+Installed patched WALL: /opt/walloss/env/lib/python3.10/site-packages/wall_x/__init__.py
+Inference imports and prefix patch: PASS; model and GPU kernels not run
+ ---> Removed intermediate container 63777c8a75c6
+ ---> 8c488fe23018
+Step 13/14 : LABEL org.opencontainers.image.title="WALL RLT RTX 5070 Ti inference candidate"     walloss.scope="offline sm120 source build; target GPU execution and trained RLT artifact acceptance pending"
+ ---> Running in f49622dfd045
+ ---> Removed intermediate container f49622dfd045
+ ---> 597a27dfc9ae
+Step 14/14 : CMD ["bash"]
+ ---> Running in cd88a3fa77aa
+ ---> Removed intermediate container cd88a3fa77aa
+ ---> 8205eabda184
+Successfully built 8205eabda184
+Successfully tagged wall-rlt-inference:5070ti-20261105T020149Z
+Image built: wall-rlt-inference:5070ti-20261105T020149Z. Static sm_120 coverage passed; GPU kernel/inference acceptance remains pending.
+Build log: /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261105T020149Z.build.log

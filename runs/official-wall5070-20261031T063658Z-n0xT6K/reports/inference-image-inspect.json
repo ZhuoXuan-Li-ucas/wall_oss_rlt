@@ -1,0 +1,148 @@
+[
+    {
+        "Architecture": "amd64",
+        "Config": {
+            "Cmd": [
+                "bash"
+            ],
+            "Entrypoint": [
+                "/opt/nvidia/nvidia_entrypoint.sh"
+            ],
+            "Env": [
+                "PATH=/opt/walloss/env/bin:/opt/walloss/env/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NVARCH=x86_64",
+                "NVIDIA_REQUIRE_CUDA=cuda>=12.8 brand=unknown,driver>=470,driver<471 brand=grid,driver>=470,driver<471 brand=tesla,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=vapps,driver>=470,driver<471 brand=vpc,driver>=470,driver<471 brand=vcs,driver>=470,driver<471 brand=vws,driver>=470,driver<471 brand=cloudgaming,driver>=470,driver<471 brand=unknown,driver>=535,driver<536 brand=grid,driver>=535,driver<536 brand=tesla,driver>=535,driver<536 brand=nvidia,driver>=535,driver<536 brand=quadro,driver>=535,driver<536 brand=quadrortx,driver>=535,driver<536 brand=nvidiartx,driver>=535,driver<536 brand=vapps,driver>=535,driver<536 brand=vpc,driver>=535,driver<536 brand=vcs,driver>=535,driver<536 brand=vws,driver>=535,driver<536 brand=cloudgaming,driver>=535,driver<536 brand=unknown,driver>=550,driver<551 brand=grid,driver>=550,driver<551 brand=tesla,driver>=550,driver<551 brand=nvidia,driver>=550,driver<551 brand=quadro,driver>=550,driver<551 brand=quadrortx,driver>=550,driver<551 brand=nvidiartx,driver>=550,driver<551 brand=vapps,driver>=550,driver<551 brand=vpc,driver>=550,driver<551 brand=vcs,driver>=550,driver<551 brand=vws,driver>=550,driver<551 brand=cloudgaming,driver>=550,driver<551 brand=unknown,driver>=560,driver<561 brand=grid,driver>=560,driver<561 brand=tesla,driver>=560,driver<561 brand=nvidia,driver>=560,driver<561 brand=quadro,driver>=560,driver<561 brand=quadrortx,driver>=560,driver<561 brand=nvidiartx,driver>=560,driver<561 brand=vapps,driver>=560,driver<561 brand=vpc,driver>=560,driver<561 brand=vcs,driver>=560,driver<561 brand=vws,driver>=560,driver<561 brand=cloudgaming,driver>=560,driver<561 brand=unknown,driver>=565,driver<566 brand=grid,driver>=565,driver<566 brand=tesla,driver>=565,driver<566 brand=nvidia,driver>=565,driver<566 brand=quadro,driver>=565,driver<566 brand=quadrortx,driver>=565,driver<566 brand=nvidiartx,driver>=565,driver<566 brand=vapps,driver>=565,driver<566 brand=vpc,driver>=565,driver<566 brand=vcs,driver>=565,driver<566 brand=vws,driver>=565,driver<566 brand=cloudgaming,driver>=565,driver<566",
+                "NV_CUDA_CUDART_VERSION=12.8.90-1",
+                "CUDA_VERSION=12.8.1",
+                "LD_LIBRARY_PATH=/usr/local/cuda/lib64",
+                "NVIDIA_VISIBLE_DEVICES=all",
+                "NVIDIA_DRIVER_CAPABILITIES=compute,utility",
+                "NV_CUDA_LIB_VERSION=12.8.1-1",
+                "NV_NVTX_VERSION=12.8.90-1",
+                "NV_LIBNPP_VERSION=12.3.3.100-1",
+                "NV_LIBNPP_PACKAGE=libnpp-12-8=12.3.3.100-1",
+                "NV_LIBCUSPARSE_VERSION=12.5.8.93-1",
+                "NV_LIBCUBLAS_PACKAGE_NAME=libcublas-12-8",
+                "NV_LIBCUBLAS_VERSION=12.8.4.1-1",
+                "NV_LIBCUBLAS_PACKAGE=libcublas-12-8=12.8.4.1-1",
+                "NV_LIBNCCL_PACKAGE_NAME=libnccl2",
+                "NV_LIBNCCL_PACKAGE_VERSION=2.25.1-1",
+                "NCCL_VERSION=2.25.1-1",
+                "NV_LIBNCCL_PACKAGE=libnccl2=2.25.1-1+cuda12.8",
+                "NVIDIA_PRODUCT_NAME=CUDA",
+                "NV_CUDA_CUDART_DEV_VERSION=12.8.90-1",
+                "NV_NVML_DEV_VERSION=12.8.90-1",
+                "NV_LIBCUSPARSE_DEV_VERSION=12.5.8.93-1",
+                "NV_LIBNPP_DEV_VERSION=12.3.3.100-1",
+                "NV_LIBNPP_DEV_PACKAGE=libnpp-dev-12-8=12.3.3.100-1",
+                "NV_LIBCUBLAS_DEV_VERSION=12.8.4.1-1",
+                "NV_LIBCUBLAS_DEV_PACKAGE_NAME=libcublas-dev-12-8",
+                "NV_LIBCUBLAS_DEV_PACKAGE=libcublas-dev-12-8=12.8.4.1-1",
+                "NV_CUDA_NSIGHT_COMPUTE_VERSION=12.8.1-1",
+                "NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE=cuda-nsight-compute-12-8=12.8.1-1",
+                "NV_NVPROF_VERSION=12.8.90-1",
+                "NV_NVPROF_DEV_PACKAGE=cuda-nvprof-12-8=12.8.90-1",
+                "NV_LIBNCCL_DEV_PACKAGE_NAME=libnccl-dev",
+                "NV_LIBNCCL_DEV_PACKAGE_VERSION=2.25.1-1",
+                "NV_LIBNCCL_DEV_PACKAGE=libnccl-dev=2.25.1-1+cuda12.8",
+                "LIBRARY_PATH=/usr/local/cuda/lib64/stubs",
+                "DEBIAN_FRONTEND=noninteractive",
+                "PYTHONNOUSERSITE=1",
+                "PIP_DISABLE_PIP_VERSION_CHECK=1",
+                "PIP_RETRIES=10",
+                "PIP_TIMEOUT=60",
+                "PIP_RESUME_RETRIES=10",
+                "CUDA_HOME=/usr/local/cuda",
+                "MAX_JOBS=1",
+                "NVCC_THREADS=1",
+                "TORCH_CUDA_ARCH_LIST=12.0",
+                "FLASH_ATTN_CUDA_ARCHS=120",
+                "HF_HUB_OFFLINE=1",
+                "TRANSFORMERS_OFFLINE=1",
+                "HF_DATASETS_OFFLINE=1",
+                "HF_HOME=/tmp/walloss-hf",
+                "XDG_CACHE_HOME=/tmp/walloss-cache",
+                "NUMBA_CACHE_DIR=/tmp/walloss-numba",
+                "TORCH_HOME=/tmp/walloss-torch",
+                "MPLCONFIGDIR=/tmp/walloss-matplotlib",
+                "PYTHONPATH=/opt/wall-rlt",
+                "FLASH_ATTENTION_FORCE_BUILD=TRUE",
+                "PIP_NO_INDEX=1",
+                "TOKENIZERS_PARALLELISM=false"
+            ],
+            "Labels": {
+                "maintainer": "NVIDIA CORPORATION <cudatools@nvidia.com>",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.title": "WALL RLT RTX 5070 Ti inference candidate",
+                "org.opencontainers.image.version": "22.04",
+                "walloss.scope": "offline sm120 source build; target GPU execution and trained RLT artifact acceptance pending"
+            },
+            "Shell": [
+                "/bin/bash",
+                "-o",
+                "pipefail",
+                "-c"
+            ],
+            "WorkingDir": "/opt/wall-rlt"
+        },
+        "Created": "2026-10-31T16:02:25.521661832+08:00",
+        "Descriptor": {
+            "digest": "sha256:f4199e5ed18f8ee5768f7b3c50b9183a789e718144e51e490187cb9fa3d438c4",
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "size": 7936
+        },
+        "Id": "sha256:f4199e5ed18f8ee5768f7b3c50b9183a789e718144e51e490187cb9fa3d438c4",
+        "Metadata": {
+            "LastTagTime": "2026-10-31T08:02:25.656507772Z"
+        },
+        "Os": "linux",
+        "Parent": "sha256:494daf236bc510a36d155512c44867bfa87448bb9bb3877258cb836f38819d81",
+        "RepoDigests": [
+            "wall-rlt-inference@sha256:f4199e5ed18f8ee5768f7b3c50b9183a789e718144e51e490187cb9fa3d438c4"
+        ],
+        "RepoTags": [
+            "wall-rlt-inference:5070ti-20261031T065922Z"
+        ],
+        "RootFS": {
+            "Layers": [
+                "sha256:270a1170e7e398434ff1b31e17e233f7d7b71aa99a40473615860068e86720af",
+                "sha256:fb456a9e7760e7e4481d3d9eddee3ef62358753326d669c3efe6b0cc254ab9c3",
+                "sha256:981a144d9fa2efffdbdfbdcfd3881dccb4fbf07867d4fa326a386126ca11b50f",
+                "sha256:583f1d6040fc90a1380cb4d11d46b78bbbd4ad7d6274b9656ab9832ef7ba6342",
+                "sha256:6020d84069cf575521faca653d2817e2195b8233b8c4e2d7bc65f3296296c2bb",
+                "sha256:eb0143fcce68bd06a29bf314125d30f2a1f44d606fc419e7a54ab602bc26b2d0",
+                "sha256:cb395f276e984728ca05fdee4e1dc203e1310a9e943a2d16d7aa87e5b2cf754b",
+                "sha256:70a158f70e3777a129c15ffe51399bb6c226218c08ff6819948b9b1f26a46277",
+                "sha256:9bb0510c7b4b74b056648f24e0a55c26f7521a1a1b766250a0776e14ce9d93f6",
+                "sha256:7215ae9b9700d9530f70dea6f546b7ebdaac0098e4436b4c99e3e8063170c274",
+                "sha256:acbc0d2ed199232b8f482ce41318ccd603e3c9a7731d39f0b08b88b253a6ca67",
+                "sha256:d206169a85b7c2a599b8d5343ffc1fb0ba95996ac4c431684263e40d7922d928",
+                "sha256:56c5ce007b8b25f3a91eed557f1c6095774af35f3aa9ff817cf7a74f7f8b83a6",
+                "sha256:c2eb8604533c7734defa2fe3d99a3d40282b5fe999d9dd8bf0bc039857106782",
+                "sha256:1046534086f17e92b781ee0024673a13686be896af0e7a6bade12d5e70dfb01f",
+                "sha256:8d53b5b640d39ea0c8eac26253236f7bf32135facd5b3f55436060224e80978c",
+                "sha256:b908a0c1f6c79af4bad28b3b1440afbaf4a3656796457d7ca6edd2b99a114e76",
+                "sha256:c069f1cd95325c1b30f33e2ee1183dc0e9a11898b9af6376f7318b56f3c5bafe",
+                "sha256:6e3ea5ede16a617db98b64fc35158cdb33ecd12b3023934b2f33f659eac4c90c",
+                "sha256:b45b7f77a6a97e16bf1200683dc3a8d824fd14e0220fb2cdc63c0f0bcc08eccb",
+                "sha256:761326d445bde61fb47b8c08376461a423459aa26c7ede28b8738d846ad03793",
+                "sha256:56cf167188bc25a0bc4d87681d43aa18e9e49a6c6d1a1065b42bc854d2fdab9d",
+                "sha256:5d8a2299ac231388ddbf71d779a104ad602d293e3444538d5ef31f3975e50f15",
+                "sha256:4eaa860f776e30d0600637d8554f3af53bed867375288a902a39fa338ea7ca4d",
+                "sha256:420d1b5513442bc7934238de96b673396907706e1299ae22576c90eda485da8e",
+                "sha256:f3323f9e573fc93c01ca903859bd060bc4d8eead52f4aaacbbfb45b6de58affc",
+                "sha256:66dd384d46dbe85fa754c7f4d3a476aa52fdcdc1d36a295822f26f9d132b0ae7",
+                "sha256:5fc720291de04a6324980519b0228974aca7a908532e2088c6474ce1cb828130",
+                "sha256:2b13389a623287a3cc1fab7a7ae9e7c4645bc70f15c03cfd17de73116bae0773",
+                "sha256:f1a3198bc72d67d7ebda8c116c8c7ae366e328e274560b8b76e1fa73bc5331f7",
+                "sha256:6e04f3c11ea67f423945f42325e92399cd8bbd5f00a9bc70a137d52b0aa128bf",
+                "sha256:e46edb83d8cdd56f73d765a9491e695857b5ad9184e7a966cba80b7489d3ee0d",
+                "sha256:d5a7b298ee428f285ca59f7d1bd72032299269ec990cccc6cb8bfa4d759a7c6c",
+                "sha256:911f56be1adbb21d48f6a36aac108e179c5fa19055b337cf11076c01b0c13463",
+                "sha256:ce736054f980b8a1c69d8a39a47b16fa5ac34b16eb809e8935bdcc27043eadf4"
+            ],
+            "Type": "layers"
+        },
+        "Size": 9988971133
+    }
+]

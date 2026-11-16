@@ -1,0 +1,19 @@
+{
+  "scope": "diagnostic only; not acceptance",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "lm_head_is_embed_tokens": true,
+  "lm_head_shares_storage": true,
+  "lm_head_equals_embed_tokens": true,
+  "tie_word_embeddings": true,
+  "resolved_norm_key": "x2_normal",
+  "first_inference_seconds": 1.5993595279869623,
+  "action_shape": [
+    32,
+    26
+  ],
+  "action_all_finite": true,
+  "action_min": -0.049239397048950195,
+  "action_max": 1.4210270643234253,
+  "peak_allocated_gib": 7.940301418304443,
+  "peak_reserved_gib": 8.072265625
+}

@@ -1,0 +1,21 @@
+allowlist-wall-full-model
+  检查器: allowlist variant (user-approved 2026-10-31) of official verify_full_model.py
+  GPU: NVIDIA GeForce RTX 5070 Ti
+  动作形状: [32, 26]
+  键审查: lm_head {'tie_word_embeddings': True, 'shares_embed_tokens_storage': True} | 归一化键比对 224 不一致 0
+  模型加载秒数: 38.831
+  首次推理秒数: 2.428
+  峰值 allocated GiB: 7.94
+  峰值 reserved GiB: 8.072
+  动作范围: -0.0492 ~ 1.421
+allowlist-wall-full-model-restart
+  检查器: allowlist variant (user-approved 2026-10-31) of official verify_full_model.py
+  GPU: NVIDIA GeForce RTX 5070 Ti
+  动作形状: [32, 26]
+  键审查: lm_head {'tie_word_embeddings': True, 'shares_embed_tokens_storage': True} | 归一化键比对 224 不一致 0
+  模型加载秒数: 38.24
+  首次推理秒数: 1.389
+  峰值 allocated GiB: 7.94
+  峰值 reserved GiB: 8.072
+  动作范围: -0.0492 ~ 1.421
+两轮官方 WALL 完整模型检查均通过（白名单检查器）。

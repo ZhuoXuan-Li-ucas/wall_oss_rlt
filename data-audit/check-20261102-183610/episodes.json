@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "source_format": "npz_video",
+  "excluded_groups": [],
+  "split_algorithm": "task-stratified shuffle, 70/15/remainder percent, integer floor",
+  "seed": 20261029,
+  "splits": {
+    "train": [
+      0
+    ],
+    "dev": [],
+    "test": [
+      1
+    ]
+  },
+  "episodes": [
+    {
+      "episode_id": 0,
+      "task_group": "orange_block",
+      "npz": "orange_block/episode_0000.npz",
+      "npz_sha256": "0098472958923d19776535764cacea5ccdd82abee28f76e712720556c5b8e3f7",
+      "frames": 1222,
+      "action_dim": 7,
+      "state_dim": 8,
+      "fps": 30.0,
+      "instruction": "pickl",
+      "cameras": [
+        "cam_high",
+        "cam_front"
+      ],
+      "held_frames": 0,
+      "duration_s": 40.668854000163265,
+      "action_min": [
+        -0.002043499145656824,
+        -0.003914963454008102,
+        -0.005051851738244295,
+        -0.008664085529744625,
+        -0.007359940558671951,
+        -0.007449069991707802,
+        0.0
+      ],
+      "action_max": [
+        0.0032523691188544035,
+        0.0023633562959730625,
+        0.003794015385210514,
+        0.008360186591744423,
+        0.007755177095532417,
+        0.007427271455526352,
+        1.0
+      ],
+      "camera_max_offset_s": {
+        "cam_high": 0.016693630954250693,
+        "cam_front": 0.0
+      },
+      "trajectory_sha256": "feba410a13ae85a4e57954474a8e1066ea629d634419de26a4568c3538368ab8",
+      "dataset_metadata_sha256": "640ad06627e7fdd0e043c7e34d5bbf571263822e1f4fa4a62d617a6792ce5a14",
+      "gripper_settings_registers": {
+        "grip_force": 80,
+        "speed": 128
+      },
+      "locked_joint_peak_to_peak_rad": {
+        "j3": 0.07726603001356125,
+        "j5": 0.1724635362625122
+      },
+      "pose_delta_validation": {
+        "max_position_error": 2.9412603907985613e-08,
+        "max_rotation_error": 2.4063893416292505e-07,
+        "initial_delta_max": 0.0
+      },
+      "videos": {
+        "cam_high": {
+          "path": "orange_block/episode_0000_cam_high.mp4",
+          "bytes": 25590541,
+          "frames": 1222,
+          "width": 640,
+          "height": 480,
+          "fps": 30.0,
+          "time_base": "1/15360"
+        },
+        "cam_front": {
+          "path": "orange_block/episode_0000_cam_front.mp4",
+          "bytes": 9528256,
+          "frames": 1222,
+          "width": 640,
+          "height": 480,
+          "fps": 30.0,
+          "time_base": "1/15360"
+        }
+      },
+      "structural_errors": [],
+      "semantic_errors": [],
+      "semantic_status": "PASS"
+    },
+    {
+      "episode_id": 1,
+      "task_group": "orange_block",
+      "npz": "orange_block/episode_0001.npz",
+      "npz_sha256": "a4f433c21151724b68c25aa47bedf3b5268dcd3638357c6caef2e316448e2338",
+      "frames": 2277,
+      "action_dim": 7,
+      "state_dim": 8,
+      "fps": 30.0,
+      "instruction": "pickl",
+      "cameras": [
+        "cam_high",
+        "cam_front"
+      ],
+      "held_frames": 0,
+      "duration_s": 75.80892933323048,
+      "action_min": [
+        -0.003082209499552846,
+        -0.004654227755963802,
+        -0.005433282814919949,
+        -0.012850558385252953,
+        -0.00851342361420393,
+        -0.012419779784977436,
+        0.0
+      ],
+      "action_max": [
+        0.0030471940990537405,
+        0.003486585570499301,
+        0.00427144905552268,
+        0.013899972662329674,
+        0.00808955729007721,
+        0.01036563515663147,
+        1.0
+      ],
+      "camera_max_offset_s": {
+        "cam_high": 0.01709871890489012,
+        "cam_front": 0.0
+      },
+      "trajectory_sha256": "ebcea6bca524045fb85618ccb50ec6e517f3268dac783f41115d3a7bf3a00331",
+      "dataset_metadata_sha256": "640ad06627e7fdd0e043c7e34d5bbf571263822e1f4fa4a62d617a6792ce5a14",
+      "gripper_settings_registers": {
+        "grip_force": 80,
+        "speed": 128
+      },
+      "locked_joint_peak_to_peak_rad": {
+        "j3": 0.2339789867401123,
+        "j5": 0.9459129571914673
+      },
+      "pose_delta_validation": {
+        "max_position_error": 2.9423972591757774e-08,
+        "max_rotation_error": 2.2918730748758242e-07,
+        "initial_delta_max": 0.0
+      },
+      "videos": {
+        "cam_high": {
+          "path": "orange_block/episode_0001_cam_high.mp4",
+          "bytes": 45886941,
+          "frames": 2277,
+          "width": 640,
+          "height": 480,
+          "fps": 30.0,
+          "time_base": "1/15360"
+        },
+        "cam_front": {
+          "path": "orange_block/episode_0001_cam_front.mp4",
+          "bytes": 28881351,
+          "frames": 2277,
+          "width": 640,
+          "height": 480,
+          "fps": 30.0,
+          "time_base": "1/15360"
+        }
+      },
+      "structural_errors": [],
+      "semantic_errors": [],
+      "semantic_status": "PASS"
+    }
+  ]
+}

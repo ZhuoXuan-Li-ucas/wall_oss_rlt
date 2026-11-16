@@ -1,0 +1,6 @@
+{
+  "status": "INTEGRITY_PASS",
+  "bundle": "/home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/incoming/WALL-RLT-inference5070-20261105-v2",
+  "source_members": 6893,
+  "gpu_validated": false
+}

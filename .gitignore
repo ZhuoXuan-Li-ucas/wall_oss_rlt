@@ -1,0 +1,20 @@
+# Large binaries — kept on local disk / My Passport, not in git
+/artifacts/
+/incoming/
+/runs/*/models/
+/runs/*/build-context-*/
+*.tar
+*.tar.gz
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.mp4
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Local backups (history lives in git now)
+*.bak_*

@@ -1,0 +1,38 @@
+{
+  "root": "/target-data",
+  "task": "grasping",
+  "scope": "original NPZ and MP4 only",
+  "structural_status": "PASS",
+  "semantic_status": "PASS",
+  "semantic_check_scope": "documented shapes, binary command, wrist timeline, held, prompt, camera layout and SO(3) previous-to-current pose delta",
+  "excluded_groups": [
+    "1"
+  ],
+  "training_ready": false,
+  "episodes": 150,
+  "frames": 66286,
+  "groups": {
+    "black_bushing": 50,
+    "bolt": 50,
+    "orange_block": 50
+  },
+  "split_counts": {
+    "train": 105,
+    "dev": 21,
+    "test": 24
+  },
+  "split_status": "provisional stratified episode split; target representation and model contract are separate",
+  "action_dims": [
+    7
+  ],
+  "state_dims": [
+    8
+  ],
+  "video_check_scope": "container frame counts/FPS and first-frame decode, not full-stream decode/hash",
+  "unconfirmed": [
+    "model slot mapping",
+    "episode success/quality labels"
+  ],
+  "problems": [],
+  "semantic_problems": []
+}

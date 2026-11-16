@@ -1,0 +1,133 @@
+WALL+RLT：prepare_ar5.py 适配解锁关节后的新数据（2026-10-31，5070 Ti 现场）
+
+背景：用户 10-31 定，解锁前（j3、j5 锁死）采的数据全部作废，新数据用笛卡尔遥操、7 轴全动重新采
+（入口 5070 Ti 上的 wall_oss_rlt/tools/wall_collect.py）。原版 prepare_ar5.py 有两处只适用于旧数据：
+写死 locked_joint_indices_zero_based=[2,4]，强制要求 manifest 排除 mouse、tape。
+
+改动（只改 wall_rlt/data/prepare_ar5.py；推理侧 MODEL_SOURCES 核对的文件一个没动，
+5070 Ti 上已建好的 sm_120 镜像不用重建）：
+- 锁定关节改为按 train 划分实测：state 峰峰值 < --locked-tol-rad（默认 1e-3）才记为锁定，
+  峰峰值一并写进 provenance
+- 必须排除的组改成参数 --require-excluded（可重复）；provenance.excluded_groups 取 manifest 实际值
+- --repo-id 可指定（默认不变）
+- 数据根目录有 wall_collection.json（wall_collect.py 写的采集参数）时，参数和记录的 sha256 写进 provenance
+
+基线：10-29 推理工具包里的 wall_rlt/data/prepare_ar5.py，sha256 19392b34906658acd8f411eca0797493790510d62e0655afabaa0c3aa41ecccf
+在仓库根目录应用：git apply --check <本文件> && git apply <本文件>
+
+5070 Ti 上已做的验证（推理镜像，改后的文件单独挂载，CPU）：
+- 作废的 black_sleeve 50 条：原版报 "the user excluded mouse and tape"；改后通过 require_trainable，
+  算出锁定 [2,4]（j3/j5 峰峰值 0.000137 / 0.000033 rad）；加 --require-excluded mouse 正确报错
+- 合成夹具（black_sleeve 3 条复制、只让 j3 动 ±0.2 rad，附 wall_collection.json）：
+  算出锁定 [4]，采集参数进了 provenance
+- 没跑 tests/rlt（镜像里没有 pytest）；tests/rlt/test_npz_pipeline.py 只按函数签名调用 prepare_ar5，
+  新增的都是带默认值的关键字参数，应当不受影响，请在开发机 .venv-rlt 里复跑
+
+--- a/wall_rlt/data/prepare_ar5.py
++++ b/wall_rlt/data/prepare_ar5.py
+@@ -1,4 +1,10 @@
+-"""Freeze an audited AR5 next-joint dataset and train-only statistics."""
++"""Freeze an audited AR5 next-joint dataset and train-only statistics.
++
++2026-10-31: recordings collected before the joint unlock (j3/j5 locked) are void.
++Locked joints are therefore measured from the train split instead of assumed,
++required group exclusions are explicit arguments, and the collection settings
++written by wall_collect.py (``wall_collection.json``) are carried into provenance.
++"""
+ from __future__ import annotations
+ 
+ import argparse
+@@ -15,7 +21,11 @@
+ from .npz_source import contained_path
+ 
+ 
+-def prepare_ar5(root, audit_dir, document, *, contract_path):
++COLLECTION_RECORD = 'wall_collection.json'
++
++
++def prepare_ar5(root, audit_dir, document, *, contract_path, required_excluded=(),
++                repo_id='local/top_error_ar5_joint_next_v1', locked_tol_rad=1e-3):
+     root, audit_dir, document = Path(root).resolve(), Path(audit_dir).resolve(), Path(document).resolve()
+     contract_path = Path(contract_path).resolve()
+     if contract_path.is_relative_to(root) or audit_dir.is_relative_to(root):
+@@ -26,9 +36,11 @@
+     mp = audit_dir/'episodes.json'
+     manifest_bytes = mp.read_bytes()
+     manifest = json.loads(manifest_bytes)
+-    if not {'mouse','tape'}.issubset(manifest.get('excluded_groups',[])):
+-        raise ValueError('the user excluded mouse and tape; regenerate the manifest with exclusions')
+-    if any(e['task_group'] in {'mouse','tape'} for e in manifest['episodes']):
++    excluded = sorted(manifest.get('excluded_groups',[]))
++    missing = sorted(set(required_excluded)-set(excluded))
++    if missing:
++        raise ValueError(f'groups {missing} must be excluded; regenerate the manifest with exclusions')
++    if any(e['task_group'] in excluded for e in manifest['episodes']):
+         raise ValueError('excluded recordings present in manifest')
+     splits = manifest['splits']
+     train_ids = set(splits['train'])
+@@ -52,13 +64,23 @@
+                       'q99':np.quantile(values,.99,axis=0).tolist(),
+                       'min':values.min(axis=0).tolist(), 'max':values.max(axis=0).tolist(),
+                       'count':len(values)}
++    # A joint counts as locked only if it never moved in the train split.
++    joint_ptp = np.asarray(stats['state']['max'][:7])-np.asarray(stats['state']['min'][:7])
++    locked = [int(i) for i in np.flatnonzero(joint_ptp < locked_tol_rad)]
++    collection = {}
++    record_path = root/COLLECTION_RECORD
++    if record_path.is_file():
++        record = json.loads(record_path.read_text(encoding='utf-8'))
++        collection = {'collection_settings':record.get('settings'),
++                      'collection_fixed_args':record.get('fixed_args'),
++                      'collection_record_sha256':hashlib.sha256(record_path.read_bytes()).hexdigest()}
+     mhash = hashlib.sha256(manifest_bytes).hexdigest()
+     norm_path = audit_dir/'normalization.ar5_joint_next_v1.json'
+     write_json(norm_path, {'schema_version':1,'train_episode_ids':splits['train'],
+                           'manifest_sha256':mhash,'target_mode':'ar5_joint_next_v1',
+                           'norm_stats':stats})
+     contract = DataContract(
+-        root=str(root), repo_id='local/top_error_ar5_joint_next_v1', fps=30.0,
++        root=str(root), repo_id=repo_id, fps=30.0,
+         source_format='npz_video', action_key='action',state_key='state',
+         action_names=[f'j{i}_next_measured' for i in range(1,8)]+['gripper_next_command'],
+         state_names=[f'j{i}_measured' for i in range(1,8)]+['gripper_measured_opening'],
+@@ -76,9 +98,12 @@
+         provenance={'format_document':document.name,'format_document_sha256':hashlib.sha256(document.read_bytes()).hexdigest(),
+                     'collection_host':'user-confirmed intended Ubuntu inference validation host',
+                     'collection_robot':'user-confirmed intended inference validation robot',
+-                    'excluded_groups':['mouse','tape'],
++                    'excluded_groups':excluded,
+                     'target_source':'next-frame measured joint angles, not saved arm commands; next-frame binary gripper command',
+-                    'locked_joint_indices_zero_based':[2,4],
++                    'locked_joint_indices_zero_based':locked,
++                    'locked_joint_rule':f'train-split state peak-to-peak < {locked_tol_rad} rad',
++                    'train_joint_peak_to_peak_rad':[round(float(x),6) for x in joint_ptp],
++                    **collection,
+                     'model_adaptation':'redefine first 8 of 26 slots; reset action_preprocessor.w1 and action_preprocessor.action_proj_back before fine-tuning; state string input',
+                     'dataset_rewards':'not supplied; not an RL replay dataset'})
+     contract.require_trainable()
+@@ -94,6 +119,8 @@
+             'target_mode':contract.target_mode,'model_adapter':contract.model_adapter,
+             'episodes':len(manifest['episodes']),'split_counts':{k:len(v) for k,v in splits.items()},
+             'train_observations':stats['state']['count'],
++            'locked_joint_indices_zero_based':locked,
++            'collection_record':bool(collection),
+             'raw_frames':sum(e['frames'] for e in manifest['episodes']),
+             'usable_observations':sum(e['frames']-1 for e in manifest['episodes']),
+             'model_training_status':'NOT_RUN'}
+@@ -105,8 +132,15 @@
+     parser.add_argument('--audit-dir',required=True)
+     parser.add_argument('--document',required=True)
+     parser.add_argument('--contract-path',required=True)
++    parser.add_argument('--require-excluded',action='append',default=[],
++                        help='Task group the manifest must have excluded; repeatable (old top_error flow: mouse, tape)')
++    parser.add_argument('--repo-id',default='local/top_error_ar5_joint_next_v1')
++    parser.add_argument('--locked-tol-rad',type=float,default=1e-3,
++                        help='A joint whose train-split peak-to-peak is below this is recorded as locked')
+     args = parser.parse_args()
+-    print(json.dumps(prepare_ar5(args.root,args.audit_dir,args.document,contract_path=args.contract_path),
++    print(json.dumps(prepare_ar5(args.root,args.audit_dir,args.document,contract_path=args.contract_path,
++                                 required_excluded=args.require_excluded,repo_id=args.repo_id,
++                                 locked_tol_rad=args.locked_tol_rad),
+                      ensure_ascii=False,indent=2))
+ 
+ 

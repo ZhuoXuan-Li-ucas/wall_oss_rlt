@@ -1,0 +1,100 @@
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 12.8.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+typed TrainConfig loading failed; falling back to raw data config: task.dof_config is required (cannot be empty)
+/opt/walloss/env/lib/python3.10/site-packages/transformers/modeling_rope_utils.py:936: FutureWarning: `rope_config_validation` is deprecated and has been removed. Its functionality has been moved to RotaryEmbeddingConfigMixin.validate_rope method. PreTrainedConfig inherits this class, so please call self.validate_rope() instead. Also, make sure to use the new rope_parameters syntax. You can call self.standardize_rope_params() in the meantime.
+  warnings.warn(
+Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+Traceback (most recent call last):
+  File "/diag/diag_full_model.py", line 45, in <module>
+    action = helper._predict_raw_action(adapter, payload)
+  File "/opt/walloss/wall-x/scripts/fake_inference.py", line 76, in _predict_raw_action
+    model_output = adapter._model.generate_flow_action(
+  File "/opt/walloss/env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/opt/walloss/env/lib/python3.10/site-packages/wall_x/model/qact/qwen2_5/modeling_qwen2_5_vl_act.py", line 1822, in generate_flow_action
+    ctx = self._prepare_flow_action_inputs(
+  File "/opt/walloss/env/lib/python3.10/site-packages/wall_x/model/qact/qwen2_5/modeling_qwen2_5_vl_act.py", line 1932, in _prepare_flow_action_inputs
+    image_embeds = self.visual(pixel_values, grid_thw=image_grid_thw)
+  File "/opt/walloss/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/walloss/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/walloss/env/lib/python3.10/site-packages/wall_x/model/qact/qwen2_5/modeling_qwen2_5_vl.py", line 892, in forward
+    hidden_states = blk(
+  File "/opt/walloss/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/walloss/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/walloss/env/lib/python3.10/site-packages/wall_x/model/qact/qwen2_5/modeling_qwen2_5_vl.py", line 632, in forward
+    hidden_states = hidden_states + self.attn(
+  File "/opt/walloss/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/walloss/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/walloss/env/lib/python3.10/site-packages/wall_x/model/qact/qwen2_5/modeling_qwen2_5_vl.py", line 410, in forward
+    q, k = apply_rotary_pos_emb_flashatt(q.unsqueeze(0), k.unsqueeze(0), cos, sin)
+  File "/opt/walloss/env/lib/python3.10/site-packages/wall_x/model/qact/qwen2_5/modeling_qwen2_5_vl.py", line 370, in apply_rotary_pos_emb_flashatt
+    q_embed = apply_rotary_emb(q.float(), cos.float(), sin.float()).type_as(q)
+  File "/opt/walloss/env/lib/python3.10/site-packages/flash_attn/layers/rotary.py", line 121, in apply_rotary_emb
+    return ApplyRotaryEmb.apply(
+  File "/opt/walloss/env/lib/python3.10/site-packages/torch/autograd/function.py", line 583, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/opt/walloss/env/lib/python3.10/site-packages/flash_attn/layers/rotary.py", line 51, in forward
+    out = apply_rotary(
+  File "/opt/walloss/env/lib/python3.10/site-packages/flash_attn/ops/triton/rotary.py", line 159, in apply_rotary
+    torch.library.wrap_triton(rotary_kernel)[grid](
+  File "/opt/walloss/env/lib/python3.10/site-packages/torch/_higher_order_ops/triton_kernel_wrap.py", line 2103, in __call__
+    return tracing_triton_hopifier_singleton.call_triton_kernel(
+  File "/opt/walloss/env/lib/python3.10/site-packages/torch/_higher_order_ops/triton_kernel_wrap.py", line 1945, in call_triton_kernel
+    return self.call_HOP(variable, grids, combined_args_raw, tx)
+  File "/opt/walloss/env/lib/python3.10/site-packages/torch/_higher_order_ops/triton_kernel_wrap.py", line 2055, in call_HOP
+    return triton_kernel_wrapper_mutation(
+  File "/opt/walloss/env/lib/python3.10/site-packages/torch/_higher_order_ops/triton_kernel_wrap.py", line 1019, in __call__
+    return super().__call__(
+  File "/opt/walloss/env/lib/python3.10/site-packages/torch/_ops.py", line 510, in __call__
+    return self.dispatch(dispatch_key_set.highestPriorityTypeId(), *args, **kwargs)
+  File "/opt/walloss/env/lib/python3.10/site-packages/torch/_ops.py", line 499, in dispatch
+    return kernel(*args, **kwargs)
+  File "/opt/walloss/env/lib/python3.10/site-packages/torch/_higher_order_ops/triton_kernel_wrap.py", line 1140, in triton_kernel_wrapper_mutation_dense
+    kernel[grid_fn](*args, **kwargs, **constant_args)
+  File "/opt/walloss/env/lib/python3.10/site-packages/triton/runtime/jit.py", line 370, in <lambda>
+    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)
+  File "/opt/walloss/env/lib/python3.10/site-packages/triton/runtime/jit.py", line 700, in run
+    device = driver.active.get_current_device()
+  File "/opt/walloss/env/lib/python3.10/site-packages/triton/runtime/driver.py", line 28, in active
+    self._active = self.default
+  File "/opt/walloss/env/lib/python3.10/site-packages/triton/runtime/driver.py", line 22, in default
+    self._default = _create_driver()
+  File "/opt/walloss/env/lib/python3.10/site-packages/triton/runtime/driver.py", line 10, in _create_driver
+    return active_drivers[0]()
+  File "/opt/walloss/env/lib/python3.10/site-packages/triton/backends/nvidia/driver.py", line 720, in __init__
+    self.utils = CudaUtils()  # TODO: make static
+  File "/opt/walloss/env/lib/python3.10/site-packages/triton/backends/nvidia/driver.py", line 62, in __init__
+    mod = compile_module_from_src(
+  File "/opt/walloss/env/lib/python3.10/site-packages/triton/runtime/build.py", line 78, in compile_module_from_src
+    cache = get_cache_manager(key)
+  File "/opt/walloss/env/lib/python3.10/site-packages/triton/runtime/cache.py", line 248, in get_cache_manager
+    return cls(_base32(key))
+  File "/opt/walloss/env/lib/python3.10/site-packages/triton/runtime/cache.py", line 55, in __init__
+    os.makedirs(self.cache_dir, exist_ok=True)
+  File "/opt/walloss/env/lib/python3.10/os.py", line 215, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/opt/walloss/env/lib/python3.10/os.py", line 215, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/opt/walloss/env/lib/python3.10/os.py", line 225, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/.triton'

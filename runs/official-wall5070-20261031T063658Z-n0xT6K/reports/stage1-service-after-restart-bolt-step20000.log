@@ -1,0 +1,36 @@
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 12.8.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+/opt/walloss/env/lib/python3.10/site-packages/transformers/modeling_rope_utils.py:936: FutureWarning: `rope_config_validation` is deprecated and has been removed. Its functionality has been moved to RotaryEmbeddingConfigMixin.validate_rope method. PreTrainedConfig inherits this class, so please call self.validate_rope() instead. Also, make sure to use the new rope_parameters syntax. You can call self.standardize_rope_params() in the meantime.
+  warnings.warn(
+{"status": "LISTENING", "address": ["127.0.0.1", 8080], "metadata": {"backend": "wall_rlt_stage1", "absolute_target_dim": 7, "absolute_target_names": ["flange_x", "flange_y", "flange_z", "flange_rotvec_x", "flange_rotvec_y", "flange_rotvec_z", "gripper_command"], "absolute_target_units": ["m", "m", "m", "rad", "rad", "rad", "binary_0_close_1_open"], "absolute_target_frame": "AR5_base_frame_flange_pose", "target_mode": "ar5_ee_rel6d_next_v1", "model_adapter": "wall_oss05_right_arm_ee_v1", "model_origin": "stage1_checkpoint", "artifact_id": "ea83bb3bc25387c65d040f707a9da8fbddb03e55f5e68801394e3603cbddf6e5", "training_step": 20000, "runtime_model_sources_sha256": "284306df5ca1ae426ae772ff1d62608d99bf6e18c078885877ae0f19584fbb5b", "data_contract_hash": "f47efc753b81e84d4e70db58ee71a30d1a93e27fb40133f5799d9e6debd490f2", "action_horizon": 32, "action_dim": 10, "action_names": ["flange_dx", "flange_dy", "flange_dz", "rot6d_rel_r00", "rot6d_rel_r01", "rot6d_rel_r02", "rot6d_rel_r10", "rot6d_rel_r11", "rot6d_rel_r12", "gripper_next_command"], "action_units": ["m", "m", "m", "rotation_matrix_element", "rotation_matrix_element", "rotation_matrix_element", "rotation_matrix_element", "rotation_matrix_element", "rotation_matrix_element", "binary_0_close_1_open"], "action_convention": "mixed", "coordinate_frame": "AR5_base_frame_flange_pose", "camera_mapping": {"cam_high": "top_view", "cam_front": "wrist_view"}, "state_names": ["flange_x", "flange_y", "flange_z", "rot6d_r00", "rot6d_r01", "rot6d_r02", "rot6d_r10", "rot6d_r11", "rot6d_r12", "gripper_measured_opening"], "state_dim": 10, "state_units": ["m", "m", "m", "rotation_matrix_element", "rotation_matrix_element", "rotation_matrix_element", "rotation_matrix_element", "rotation_matrix_element", "rotation_matrix_element", "opening_fraction_position_div_210"], "action_source": "WALL_reference_prediction", "gripper_output": "continuous_prediction_of_binary_target", "includes_actor": false, "includes_decoder": false, "feature_dim": 2048, "robot_execution_supported": false, "device": "cuda:0", "inference_steps": 10, "image_size": 448, "max_length": 2048, "vision_attention": "flash_attention_2", "wall_attention": "sdpa", "completed_requests": 0, "last_inference_seconds": null, "peak_allocated_bytes": null, "peak_reserved_bytes": null}, "full_inference_acceptance": "NOT_RUN"}
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 12.8.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+/opt/walloss/env/lib/python3.10/site-packages/transformers/modeling_rope_utils.py:936: FutureWarning: `rope_config_validation` is deprecated and has been removed. Its functionality has been moved to RotaryEmbeddingConfigMixin.validate_rope method. PreTrainedConfig inherits this class, so please call self.validate_rope() instead. Also, make sure to use the new rope_parameters syntax. You can call self.standardize_rope_params() in the meantime.
+  warnings.warn(
+{"status": "LISTENING", "address": ["127.0.0.1", 8080], "metadata": {"backend": "wall_rlt_stage1", "absolute_target_dim": 7, "absolute_target_names": ["flange_x", "flange_y", "flange_z", "flange_rotvec_x", "flange_rotvec_y", "flange_rotvec_z", "gripper_command"], "absolute_target_units": ["m", "m", "m", "rad", "rad", "rad", "binary_0_close_1_open"], "absolute_target_frame": "AR5_base_frame_flange_pose", "target_mode": "ar5_ee_rel6d_next_v1", "model_adapter": "wall_oss05_right_arm_ee_v1", "model_origin": "stage1_checkpoint", "artifact_id": "ea83bb3bc25387c65d040f707a9da8fbddb03e55f5e68801394e3603cbddf6e5", "training_step": 20000, "runtime_model_sources_sha256": "284306df5ca1ae426ae772ff1d62608d99bf6e18c078885877ae0f19584fbb5b", "data_contract_hash": "f47efc753b81e84d4e70db58ee71a30d1a93e27fb40133f5799d9e6debd490f2", "action_horizon": 32, "action_dim": 10, "action_names": ["flange_dx", "flange_dy", "flange_dz", "rot6d_rel_r00", "rot6d_rel_r01", "rot6d_rel_r02", "rot6d_rel_r10", "rot6d_rel_r11", "rot6d_rel_r12", "gripper_next_command"], "action_units": ["m", "m", "m", "rotation_matrix_element", "rotation_matrix_element", "rotation_matrix_element", "rotation_matrix_element", "rotation_matrix_element", "rotation_matrix_element", "binary_0_close_1_open"], "action_convention": "mixed", "coordinate_frame": "AR5_base_frame_flange_pose", "camera_mapping": {"cam_high": "top_view", "cam_front": "wrist_view"}, "state_names": ["flange_x", "flange_y", "flange_z", "rot6d_r00", "rot6d_r01", "rot6d_r02", "rot6d_r10", "rot6d_r11", "rot6d_r12", "gripper_measured_opening"], "state_dim": 10, "state_units": ["m", "m", "m", "rotation_matrix_element", "rotation_matrix_element", "rotation_matrix_element", "rotation_matrix_element", "rotation_matrix_element", "rotation_matrix_element", "opening_fraction_position_div_210"], "action_source": "WALL_reference_prediction", "gripper_output": "continuous_prediction_of_binary_target", "includes_actor": false, "includes_decoder": false, "feature_dim": 2048, "robot_execution_supported": false, "device": "cuda:0", "inference_steps": 10, "image_size": 448, "max_length": 2048, "vision_attention": "flash_attention_2", "wall_attention": "sdpa", "completed_requests": 0, "last_inference_seconds": null, "peak_allocated_bytes": null, "peak_reserved_bytes": null}, "full_inference_acceptance": "NOT_RUN"}

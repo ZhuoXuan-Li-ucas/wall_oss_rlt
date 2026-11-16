@@ -1,0 +1,81 @@
+{
+  "single": [
+    {
+      "curl_rc": 0,
+      "http_status": 206,
+      "bytes": 131072,
+      "seconds": 4.838725,
+      "bytes_per_second": 27088.0,
+      "mode": "proxy",
+      "range_start": 0,
+      "range_end": 131071,
+      "content_range": "bytes 0-131071/2989040412",
+      "body_sha256": "fd6c49c74c4f205823d21cfbb2c2748ae4072f5c9a7007c6ea95f881f4866661"
+    },
+    {
+      "curl_rc": 0,
+      "http_status": 206,
+      "bytes": 131072,
+      "seconds": 8.789264,
+      "bytes_per_second": 14912.0,
+      "mode": "direct",
+      "range_start": 0,
+      "range_end": 131071,
+      "content_range": "bytes 0-131071/2989040412",
+      "body_sha256": "fd6c49c74c4f205823d21cfbb2c2748ae4072f5c9a7007c6ea95f881f4866661"
+    }
+  ],
+  "parallel": [
+    {
+      "curl_rc": 0,
+      "http_status": 206,
+      "bytes": 131072,
+      "seconds": 8.567608,
+      "bytes_per_second": 15298.0,
+      "mode": "proxy",
+      "range_start": 393216,
+      "range_end": 524287,
+      "content_range": "bytes 393216-524287/2989040412",
+      "body_sha256": "1d05f2639347cb2aa26d916d321fe76f2fcfce6562bd74489dce2e08ef38dbd5"
+    },
+    {
+      "curl_rc": 0,
+      "http_status": 206,
+      "bytes": 131072,
+      "seconds": 11.416526,
+      "bytes_per_second": 11480.0,
+      "mode": "proxy",
+      "range_start": 131072,
+      "range_end": 262143,
+      "content_range": "bytes 131072-262143/2989040412",
+      "body_sha256": "29ffc68e52ec9630e8256b77ad09d3078911dc7aaaada87324e22dcaaedb0f7e"
+    },
+    {
+      "curl_rc": 0,
+      "http_status": 206,
+      "bytes": 131072,
+      "seconds": 11.506848,
+      "bytes_per_second": 11390.0,
+      "mode": "proxy",
+      "range_start": 524288,
+      "range_end": 655359,
+      "content_range": "bytes 524288-655359/2989040412",
+      "body_sha256": "6d26ce13fc9437d76cc6cfda5712a551224a9235565887fb0c29be3ef9e61c57"
+    },
+    {
+      "curl_rc": 0,
+      "http_status": 206,
+      "bytes": 131072,
+      "seconds": 16.743202,
+      "bytes_per_second": 7828.0,
+      "mode": "proxy",
+      "range_start": 262144,
+      "range_end": 393215,
+      "content_range": "bytes 262144-393215/2989040412",
+      "body_sha256": "52eb7940c97a87256bf0655e172ee04a848952efe6f922e005f12af44c4036cb"
+    }
+  ],
+  "parallel_wall_seconds": 16.764265425968915,
+  "parallel_total_bytes": 524288,
+  "parallel_bytes_per_second": 31274.14095865152
+}

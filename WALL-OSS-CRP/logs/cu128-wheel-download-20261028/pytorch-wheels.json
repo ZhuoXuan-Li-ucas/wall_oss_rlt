@@ -1,0 +1,32 @@
+[
+  {
+    "package": "torch",
+    "version": "2.10.0",
+    "url": "https://download-r2.pytorch.org/whl/cu128/torch-2.10.0%2Bcu128-cp310-cp310-manylinux_2_28_x86_64.whl",
+    "filename": "torch-2.10.0+cu128-cp310-cp310-manylinux_2_28_x86_64.whl",
+    "sha256": "36368507b56eaa51acbd3c96ac8893bb9a86991ffcd0699fea3a1a74a2b8bdcb",
+    "index_url": "https://download.pytorch.org/whl/cu128/torch/",
+    "index_attributes": "href=\"https://download-r2.pytorch.org/whl/cu128/torch-2.10.0%2Bcu128-cp310-cp310-manylinux_2_28_x86_64.whl#sha256=36368507b56eaa51acbd3c96ac8893bb9a86991ffcd0699fea3a1a74a2b8bdcb\" data-dist-info-metadata=\"sha256=7f56e1b49211bfcfe45a8c7df42d96a054f69a96fbf6bc4f1b6b6fe8d3f097a7\" data-core-metadata=\"sha256=7f56e1b49211bfcfe45a8c7df42d96a054f69a96fbf6bc4f1b6b6fe8d3f097a7\" data-upload-time=\"2026-01-21T15:21:34Z\"",
+    "size": 916743378
+  },
+  {
+    "package": "torchvision",
+    "version": "0.25.0",
+    "url": "https://download-r2.pytorch.org/whl/cu128/torchvision-0.25.0%2Bcu128-cp310-cp310-manylinux_2_28_x86_64.whl",
+    "filename": "torchvision-0.25.0+cu128-cp310-cp310-manylinux_2_28_x86_64.whl",
+    "sha256": "43350ca113e9f224dedb90b0dbc31853fde4f322794cbe4a7589fccab5768f0c",
+    "index_url": "https://download.pytorch.org/whl/cu128/torchvision/",
+    "index_attributes": "href=\"https://download-r2.pytorch.org/whl/cu128/torchvision-0.25.0%2Bcu128-cp310-cp310-manylinux_2_28_x86_64.whl#sha256=43350ca113e9f224dedb90b0dbc31853fde4f322794cbe4a7589fccab5768f0c\" data-dist-info-metadata=\"sha256=26de99ebf26c31101bd2bd1247091a650297d5dc9267ef04c5dc2dc13e48b875\" data-core-metadata=\"sha256=26de99ebf26c31101bd2bd1247091a650297d5dc9267ef04c5dc2dc13e48b875\" data-upload-time=\"2026-01-21T22:32:19Z\"",
+    "size": 8068159
+  },
+  {
+    "package": "torchaudio",
+    "version": "2.10.0",
+    "url": "https://download-r2.pytorch.org/whl/cu128/torchaudio-2.10.0%2Bcu128-cp310-cp310-manylinux_2_28_x86_64.whl",
+    "filename": "torchaudio-2.10.0+cu128-cp310-cp310-manylinux_2_28_x86_64.whl",
+    "sha256": "7065bd10ab6994d30667568e8c6498794678ce1ee23d2f0756fb28ce6d623482",
+    "index_url": "https://download.pytorch.org/whl/cu128/torchaudio/",
+    "index_attributes": "href=\"https://download-r2.pytorch.org/whl/cu128/torchaudio-2.10.0%2Bcu128-cp310-cp310-manylinux_2_28_x86_64.whl#sha256=7065bd10ab6994d30667568e8c6498794678ce1ee23d2f0756fb28ce6d623482\" data-dist-info-metadata=\"sha256=a2196e829a587087382cc6f2968824a7a362b167456d06b1626d28bf091b056c\" data-core-metadata=\"sha256=a2196e829a587087382cc6f2968824a7a362b167456d06b1626d28bf091b056c\" data-upload-time=\"2026-01-21T15:05:48Z\"",
+    "size": 1841037
+  }
+]

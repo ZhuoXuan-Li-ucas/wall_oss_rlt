@@ -1,0 +1,11 @@
+{
+  "status": "BLOCKED",
+  "report": "logs/rlt-inference-host-local-20261029.json",
+  "static_checks_status": "FAIL",
+  "kernels": "NOT_RUN",
+  "failed_checks": [
+    "selected_gpu",
+    "native_extensions"
+  ],
+  "full_model_inference": "NOT_RUN"
+}

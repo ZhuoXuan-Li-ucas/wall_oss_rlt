@@ -1,0 +1,115 @@
+{
+  "package": "wheel",
+  "version": "0.48.0",
+  "status": "PASS",
+  "source": {
+    "kind": "official PyPI wheel download",
+    "metadata_url": "https://pypi.org/pypi/wheel/0.48.0/json",
+    "url": "https://files.pythonhosted.org/packages/2e/29/69cfbb602cd91690c55d38ba9fe53e6a7e76a6fa647bf38f19c138d25449/wheel-0.48.0-py3-none-any.whl",
+    "pypi_sha256": "3217dcc807155e45db462d7ef2431f5ddda0d7273b700d05a67b271ceb1287ab"
+  },
+  "filename": "wheel-0.48.0-py3-none-any.whl",
+  "wheel_sha256": "3217dcc807155e45db462d7ef2431f5ddda0d7273b700d05a67b271ceb1287ab",
+  "wheel_size_bytes": 33320,
+  "wheel_tags": [
+    "py3-none-any"
+  ],
+  "record_verified_files": [
+    {
+      "path": "wheel/__init__.py",
+      "size_bytes": 59,
+      "sha256": "486f49117612245c2a2d8e9f4b9686a6e8451c5aa8bd0d7a63c9ee6d0e446bd4"
+    },
+    {
+      "path": "wheel/__main__.py",
+      "size_bytes": 516,
+      "sha256": "d87fa9659c3ed2e1563d84f8e978c5b7bc148bb789d5a7cf5f0a1c2a40f35d73"
+    },
+    {
+      "path": "wheel/_bdist_wheel.py",
+      "size_bytes": 21729,
+      "sha256": "6e998d6bbfecf826059158177fd10d0184e2274d57061456e29c47d53f1762c2"
+    },
+    {
+      "path": "wheel/_metadata.py",
+      "size_bytes": 6188,
+      "sha256": "04fe630bdb82d61ca2729ee72f8149d8b622c4d169109215fee3036352816418"
+    },
+    {
+      "path": "wheel/_setuptools_logging.py",
+      "size_bytes": 781,
+      "sha256": "fb9282fa59ded2294e5162037ce92a6a951618c15986e2980c86af219881e643"
+    },
+    {
+      "path": "wheel/bdist_wheel.py",
+      "size_bytes": 1102,
+      "sha256": "1ebcd8892ccc921e688400219509d8052d69f2a6ebf395fa179f71ab177d9018"
+    },
+    {
+      "path": "wheel/macosx_libfile.py",
+      "size_bytes": 16712,
+      "sha256": "a4bd309bcf2344c97fe004a01a5360fe6cfaf599afe719bc2529232ddc32bc84"
+    },
+    {
+      "path": "wheel/metadata.py",
+      "size_bytes": 757,
+      "sha256": "1a49ce3bb2498993257047bf7e20fb9ea9c34d32ddd2c5fff88822a4ce0bdfee"
+    },
+    {
+      "path": "wheel/wheelfile.py",
+      "size_bytes": 9288,
+      "sha256": "2ebfa1943eaf95a80ea178c7909b1e37b6ca0f8aac59096c3c1681e509c9ad5b"
+    },
+    {
+      "path": "wheel/_commands/__init__.py",
+      "size_bytes": 5099,
+      "sha256": "3b5ef331ee8dc0f4728a849effc4742223df02de0f25196215b67fa8cb32bad2"
+    },
+    {
+      "path": "wheel/_commands/convert.py",
+      "size_bytes": 13501,
+      "sha256": "329831e79101a70204621128686112c1ccb09a3c9a73c773e44be361b3e51482"
+    },
+    {
+      "path": "wheel/_commands/info.py",
+      "size_bytes": 4446,
+      "sha256": "1b3578875b28bc1dc362c082350e426336af6c0d33d845367757b5aaa8bd987d"
+    },
+    {
+      "path": "wheel/_commands/pack.py",
+      "size_bytes": 4966,
+      "sha256": "80ca2046047e8d421f57c45d3be590191e437b60c36f2ab95883fff8d45d2ce9"
+    },
+    {
+      "path": "wheel/_commands/tags.py",
+      "size_bytes": 5620,
+      "sha256": "0e70cadb09a36ace46a52c3b105c1a0a30103bf2d37942b99d7551e07b4c4bb2"
+    },
+    {
+      "path": "wheel/_commands/unpack.py",
+      "size_bytes": 1016,
+      "sha256": "0230d24b6dd763209215f89f9ccbad8a7ae93eff832bfdb06cd1e4280505c203"
+    },
+    {
+      "path": "wheel-0.48.0.dist-info/entry_points.txt",
+      "size_bytes": 110,
+      "sha256": "24976d480193bcc2db2244d565400cbc628edfd16d59f09517c9a9fcd1fa7b88"
+    },
+    {
+      "path": "wheel-0.48.0.dist-info/licenses/LICENSE.txt",
+      "size_bytes": 1107,
+      "sha256": "30c23618679108f3e8ea1d2a658c7ca417bdfc891c98ef1a89fa4ff0c9828654"
+    },
+    {
+      "path": "wheel-0.48.0.dist-info/WHEEL",
+      "size_bytes": 81,
+      "sha256": "ff23073da055face9f40cc14a28f3735275308cddcf315d6157461a9a7cdfbb6"
+    },
+    {
+      "path": "wheel-0.48.0.dist-info/METADATA",
+      "size_bytes": 2301,
+      "sha256": "e702fede719fefbb8accad64c01c78efe8d7efea27a7dcef3423f83ffaadfc48"
+    }
+  ],
+  "excluded_installation_files": []
+}

@@ -1,0 +1,130 @@
+{
+  "package": "nvidia-cublas-cu12",
+  "version": "12.8.4.1",
+  "source": {
+    "kind": "installed package",
+    "site_packages": "/home/pangk/miniforge3/envs/lerobot-so101/lib/python3.12/site-packages"
+  },
+  "source_record_sha256": "a628a64f01e4edc24cb477798f388716a9d06fbd6b7478a9b2813ff8693ae7f3",
+  "wheel_tags": [
+    "py3-none-manylinux_2_27_x86_64"
+  ],
+  "record_verified_files": [
+    {
+      "path": "nvidia/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/cublas/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/cublas/include/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/cublas/include/cublas.h",
+      "sha256": "6b494bab2fa4e3b36ec320e3bae782dd6d0ca5cf74f0c4d4ee8e6c309a84fb5c",
+      "size_bytes": 41246
+    },
+    {
+      "path": "nvidia/cublas/include/cublasLt.h",
+      "sha256": "a07f53474d47e4259f18f223264ebe2e383c7903aed20868ed336df378029b08",
+      "size_bytes": 102451
+    },
+    {
+      "path": "nvidia/cublas/include/cublasXt.h",
+      "sha256": "096f5dc976064945b5c045eb555ca153a3b104ad4f52f32861d5469504fb2fd0",
+      "size_bytes": 37380
+    },
+    {
+      "path": "nvidia/cublas/include/cublas_api.h",
+      "sha256": "03826fbfd7a5be82480f0f117943fba819d2c44bddb2573e8215bfc9cabfa805",
+      "size_bytes": 374363
+    },
+    {
+      "path": "nvidia/cublas/include/cublas_v2.h",
+      "sha256": "ab131d0798dbf7b96e11fc3ad4b10007e5a5afc03d0cb06f3b8ad1ca90c234ac",
+      "size_bytes": 15460
+    },
+    {
+      "path": "nvidia/cublas/include/nvblas.h",
+      "sha256": "75708b47eda8522245ccbb03b4800ad3d9b8d9cb781b41d6758cc152e0cf5e97",
+      "size_bytes": 23341
+    },
+    {
+      "path": "nvidia/cublas/lib/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/cublas/lib/libcublas.so.12",
+      "sha256": "031ce6c2cbfbb9468f040527cab5c599069ce5609e73e28f87503881063eac21",
+      "size_bytes": 116388640
+    },
+    {
+      "path": "nvidia/cublas/lib/libcublasLt.so.12",
+      "sha256": "10b5e6631cf8115c661eb895ed1533826308b58f7956466f53d236a40c9b622c",
+      "size_bytes": 751771728
+    },
+    {
+      "path": "nvidia/cublas/lib/libnvblas.so.12",
+      "sha256": "9d244820d32966f0af47afe6c9ee6f34b230fafe87ea0141dc71241a5d2b340c",
+      "size_bytes": 753824
+    },
+    {
+      "path": "nvidia_cublas_cu12-12.8.4.1.dist-info/INSTALLER",
+      "sha256": "e6184ce10e266134fdcfa401e8f1a95005bcd4f18d16b62b757323e2833fe9a9",
+      "size_bytes": 2
+    },
+    {
+      "path": "nvidia_cublas_cu12-12.8.4.1.dist-info/License.txt",
+      "sha256": "ad6f5853fba0ca0d159d0f58d49ae49830c2f8c93f7a92648b9ce90adb4c6ccd",
+      "size_bytes": 59262
+    },
+    {
+      "path": "nvidia_cublas_cu12-12.8.4.1.dist-info/METADATA",
+      "sha256": "310556f1c2c31ec517d4b049eaf12374081d1c52c8ef4d8eceab2aaf1edff2df",
+      "size_bytes": 1683
+    },
+    {
+      "path": "nvidia_cublas_cu12-12.8.4.1.dist-info/REQUESTED",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia_cublas_cu12-12.8.4.1.dist-info/WHEEL",
+      "sha256": "c304171825c9404505e7d7ca8c19d55733a4ce2efc13aac4ffe42e511e194f8c",
+      "size_bytes": 109
+    },
+    {
+      "path": "nvidia_cublas_cu12-12.8.4.1.dist-info/top_level.txt",
+      "sha256": "7d3900b6216e2f5ea752b07dcad0c3b69cadcf6b7407836f6139d1cf00213b5e",
+      "size_bytes": 7
+    },
+    {
+      "path": "nvidia_cublas_cu12-12.8.4.1.dist-info/uv_cache.json",
+      "sha256": "b69c2ab95c58b93fc8deca98c8c00926024619c395e6eb5e2bd4f6b717d47089",
+      "size_bytes": 127
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "nvidia_cublas_cu12-12.8.4.1.dist-info/INSTALLER",
+      "reason": "verified installed metadata; excluded from rebuilt wheel"
+    },
+    {
+      "path": "nvidia_cublas_cu12-12.8.4.1.dist-info/REQUESTED",
+      "reason": "verified installed metadata; excluded from rebuilt wheel"
+    }
+  ],
+  "status": "PASS",
+  "filename": "nvidia_cublas_cu12-12.8.4.1-py3-none-manylinux_2_27_x86_64.whl",
+  "wheel_sha256": "c74e187a75422a2de09ad6fe3b2d6c1b63f2be9c650610472a7dbeb0b4b792de",
+  "wheel_size_bytes": 606586576,
+  "payload_size_bytes": 869569621,
+  "checked_at_utc": "2026-10-28T09:01:25.558277+00:00"
+}

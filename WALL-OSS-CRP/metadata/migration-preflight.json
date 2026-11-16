@@ -1,0 +1,190 @@
+{
+  "checked_at_utc": "2026-10-29T06:17:59.117368+00:00",
+  "priority": "Server base-environment bundle READY; next SSH/SCP upload and Ubuntu H100 validation. Windows validation is not required.",
+  "source_component_checks": {
+    "status": "PASS",
+    "evidence": "logs/migration-preflight-20261028T064203Z/setup-verification.json"
+  },
+  "model_checks": {
+    "status": "PASS",
+    "files": 24,
+    "evidence": "logs/migration-preflight-20261028T064203Z/model_files.manifest.json"
+  },
+  "dataset_checks": {
+    "status": "PASS",
+    "evidence": "logs/migration-preflight-20261028T064203Z/dataset-verification.json",
+    "source": "/media/pangk/My Passport/H100_lerobot/Datasets/stack_the_base_llx_04251",
+    "episodes": 32,
+    "frames": 15376,
+    "size_bytes": 337408840,
+    "role": "historical smoke data, not AR5 demonstrations; first/middle/last samples only"
+  },
+  "dependency_declarations": {
+    "status": "FAIL",
+    "missing_dependencies": 10,
+    "hub_conflicts": 1,
+    "evidence": "logs/migration-preflight-20261028T064203Z/pip-check.log"
+  },
+  "docker_host": {
+    "status": "PASS",
+    "engine": "29.9.2",
+    "container_toolkit": "1.20.1-1",
+    "gpu_passthrough": "PASS; --network none container nvidia-smi",
+    "evidence": "logs/docker-host-install-offline-retry-20261028.log",
+    "gpu_check_image": "walloss-bootstrap:cuda12.8-local; derived from existing local image base layers only, not WALL environment"
+  },
+  "docker_build_and_runtime": {
+    "status": "PASS",
+    "scope": "component and historical smoke-data validation only",
+    "image_exported": true,
+    "source_image_id": "sha256:8f067a0eb220228f444811532cc8ec0a328e4d46b7983637c1c4ea7743ef9ee8",
+    "transfer_tag": "docker.io/library/wall-oss-crp-transfer:validated-8f067a0eb220",
+    "portable_identity": "/media/pangk/My Passport/WALL-OSS-CRP-transfer-20261029/image-identity.json",
+    "evidence": "/home/pangk/workspaces/WALL-OSS-CRP/logs/docker-validation-delivery-20261029",
+    "bundle": "/media/pangk/My Passport/WALL-OSS-CRP-transfer-20261029",
+    "service": "walloss-bundle-20261029-export.service",
+    "service_result": "success",
+    "service_exit_code": 0,
+    "actual_gpu": "NVIDIA GeForce RTX 3060 Ti",
+    "complete_bundle_evidence": "/home/pangk/workspaces/WALL-OSS-CRP/logs/server-environment-delivery-20261029.json"
+  },
+  "h100_target": {
+    "status": "NOT_RUN",
+    "candidate_cuda": "12.8",
+    "source_cuda": "13.0",
+    "target_driver_documented": "570.86.10; current server driver not queried",
+    "requires_new_validation": true
+  },
+  "windows_transfer": {
+    "status": "NOT_REQUIRED",
+    "medium": "My Passport",
+    "role": "Optional file transit only; no Windows deployment or validation."
+  },
+  "full_model_inference": "NOT_RUN",
+  "training": "NOT_RUN",
+  "notes": [
+    "Existing source environment was not reinstalled or changed.",
+    "The original CUDA 13.0 environment was not packed. A fresh minimal Python 3.10.22 prefix was created offline from 25 verified local Conda packages and packed with normal conda-pack integrity checks for the CUDA 12.8 Docker image.",
+    "Some offline wheels were repacked from RECORD-verified installed payloads; they are not byte-identical upstream archives. The wheel cache records the origin and SHA256 of every input."
+  ],
+  "rlinf": {
+    "status": "NOT_INTEGRATED",
+    "planned_framework": "RLinf",
+    "planned_commit": "e1a82ebf0c1af69da6ab9b1519f5f3692fe33566",
+    "image_scope": "current base image excludes RLinf; subsequent training image is built online and transferred offline"
+  },
+  "packaging_scripts": {
+    "syntax_checks": "PASS",
+    "dependency_gate_cases": "PASS: known declarations remain FAIL; unexpected/new errors stop validation",
+    "dataset_runner_host_test": "PASS",
+    "cache_exclusion_test": "PASS",
+    "docker_runtime_test": "PASS on RTX 3060 Ti: CUDA/FlashAttention BF16, selected component imports/processors and three historical data samples; full inference/training NOT_RUN",
+    "windows_powershell_test": "NOT_REQUIRED: Windows validation omitted from the server delivery workflow; script not included in the transfer bundle.",
+    "automatic_export_gate": "PASS: missing build success does not export",
+    "full_model_runner": "Syntax and CPU configuration interface checks only; H100 execution NOT_RUN",
+    "docker29_archive_identity": "PASS: actual Docker 29 save archive, archive verification and loaded-image check; logs/docker29-identity-smoke-20261028.json and logs/docker29-identity-loaded-20261028.json",
+    "export_native_architecture_gate": "PASS: isolated failure test returned the native check failure before tag, save or bundle directory creation; logs/export-native-gate-20261028.json",
+    "complete_bundle_gate": "PASS: 18 isolated integrity/partial-publication cases and end-to-end export fixture; logs/bundle-completeness-tests-20261029.json and logs/bundle-export-integration-20261029.json",
+    "reuse_built_image_gate": "PASS: 11 isolated cases; logs/reuse-built-image-mock-20261029.json",
+    "asset_manifest_order_gate": "PASS: same 31 hash/path entries despite locale order; changed hashes/missing/duplicate mismatches rejected; logs/asset-manifest-order-tests-20261029.json",
+    "actual_transfer_bundle": "PASS: gzip archives, image identity and complete 27-entry manifest finalized; logs/server-environment-delivery-20261029.json"
+  },
+  "assets_staging": {
+    "status": "PASS",
+    "completed_at_utc": "2026-10-28T07:17:00.160360+00:00",
+    "path": "/media/pangk/My Passport/WALL-OSS-CRP-assets-20261028",
+    "includes_docker_image": false,
+    "gzip_integrity": "PASS",
+    "source_file_recheck": "PASS",
+    "sha256_recheck": "PASS",
+    "artifacts": {
+      "models.tar.gz": {
+        "size_bytes": 6570912728,
+        "sha256": "ca7e3165bc834032dcb5530d1ebf8bdaafe0ef61ec914818f9ff0eb77440e74c"
+      },
+      "smoke-data.tar.gz": {
+        "size_bytes": 336602786,
+        "sha256": "5fb5ba323fd20b2212dbcc2a4e3f9d14119a60e320f5c23ffc7edbadefd3e842"
+      }
+    },
+    "log": "logs/migration-preflight-20261028T064203Z/prepare-assets.log",
+    "archive_portability": "PASS: archive members match model/data inventories, regular payload files only, no escaping paths or external links; logs/asset-archive-portability-20261029.json"
+  },
+  "native_architecture_audit": {
+    "source_flash_attention": "sm_80 cubin only; no PTX",
+    "source_wall_x": "sm_86 cubin only; no PTX",
+    "h100_requirement": "Both extensions must contain sm_90; candidate static coverage PASS, actual H100 execution still required.",
+    "evidence": "logs/native-architecture-audit-20261028.json",
+    "export_gate": "Inspect the exact validated image with docker/verify_native_architectures.py; both installed extensions must contain sm_90 cubins before docker save. H100 repeats the check.",
+    "gate_negative_test": "PASS: correctly rejected the existing cu130 FlashAttention sm_80-only and Wall-X sm_86-only binaries; logs/native-architecture-negative-20261028.json",
+    "candidate_binary_report": "/home/pangk/workspaces/WALL-OSS-CRP/logs/docker-validation-delivery-20261029/native-architectures.json",
+    "candidate_status": "PASS: FlashAttention sm_80/sm_90; Wall-X sm_86/sm_90; static coverage only; H100 execution NOT_RUN"
+  },
+  "deployment_scope_note": "User confirmed server base environment delivery now; final full WALL-RLT packaging is deferred until other-Ubuntu end-to-end inference passes. Current base image excludes RLinf/RLT integration.",
+  "delivery_scope": {
+    "confirmed_by_user": "2026-10-29",
+    "current": "Complete the server WALL base validation environment/model/data bundle. This does not deliver a validated WALL-RLT inference system.",
+    "later": "Freeze and package the complete WALL-RLT environment only after required trained weights, integration and end-to-end inference pass on the other Ubuntu host; then revalidate on the target server.",
+    "other_ubuntu_host": "16 GB VRAM; GPU model and driver not yet recorded; full inference NOT_RUN.",
+    "data_collection": "Already complete according to the updated plans; no new collection arranged."
+  },
+  "transfer_workflow": {
+    "confirmed_by_user": "2026-10-29",
+    "steps": [
+      "Export compressed archives locally",
+      "SSH/SCP upload to Ubuntu server",
+      "Verify bundle and load Docker on Ubuntu server"
+    ],
+    "windows": "Optional file transit only; no deployment or verification step required",
+    "transfer_bundle_required_files": 24,
+    "test_evidence": "logs/bundle-direct-ssh-tests-20261029.json"
+  },
+  "server_transfer": {
+    "status": "NOT_STARTED",
+    "method": "SSH/SCP",
+    "server": "aiuser@10.241.90.194",
+    "gateway": "10.241.245.6",
+    "bundle": "/media/pangk/My Passport/WALL-OSS-CRP-transfer-20261029"
+  },
+  "bundle_delivery": {
+    "status": "READY",
+    "checked_at_utc": "2026-10-29T06:17:59.117368+00:00",
+    "bundle": "/media/pangk/My Passport/WALL-OSS-CRP-transfer-20261029",
+    "total_bytes": 16787299846,
+    "manifest_entries": 27,
+    "required_files": 24,
+    "archive_bytes": {
+      "environment-image.tar.gz": 9879516707,
+      "models.tar.gz": 6570912728,
+      "smoke-data.tar.gz": 336602786
+    },
+    "archive_sha256": {
+      "environment-image.tar.gz": "89d7602ad621b383dd53f97389548498efd3fb2c71f45c57baf1c08318d61cbb",
+      "models.tar.gz": "ca7e3165bc834032dcb5530d1ebf8bdaafe0ef61ec914818f9ff0eb77440e74c",
+      "smoke-data.tar.gz": "5fb5ba323fd20b2212dbcc2a4e3f9d14119a60e320f5c23ffc7edbadefd3e842"
+    },
+    "manifest_sha256": "9dbf56cb50f464339ae1053f91934e8a98c3857b901b8d8d81f7061b7b537f10",
+    "source_image_id": "sha256:8f067a0eb220228f444811532cc8ec0a328e4d46b7983637c1c4ea7743ef9ee8",
+    "validation_report": "/home/pangk/workspaces/WALL-OSS-CRP/logs/docker-validation-delivery-20261029",
+    "runtime_gpu": "NVIDIA GeForce RTX 3060 Ti",
+    "scope": "Base component execution, historical sample-data reads, static native-architecture coverage and complete transfer-bundle integrity only.",
+    "dependency_declarations": "FAIL: 11 known exceptions; no unexpected issues",
+    "service": "walloss-bundle-20261029-export.service",
+    "service_result": "success",
+    "service_exit_code": 0,
+    "temporary_swap_removed": true,
+    "task_sleep_inhibitor_released": true,
+    "windows_validation": "NOT_REQUIRED",
+    "server_transfer": "NOT_STARTED",
+    "h100_validation": "NOT_RUN",
+    "full_model_inference": "NOT_RUN",
+    "training": "NOT_RUN",
+    "rlinf_rlt": "NOT_INTEGRATED",
+    "full_bundle_hash_verification": "PASS in exporter finalize; closeout checks receipt binding and inventory without redundantly rehashing archives.",
+    "recovery_evidence": [
+      "logs/build-input-cache-cleanup-20261029.json",
+      "logs/asset-manifest-order-20261029.json",
+      "logs/asset-manifest-order-tests-20261029.json"
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+WALL / WALL-RLT H100 后续中转说明（仓库现行版）
+日期：2026-10-29
+
+当前状态入口：[PROJECT_STATUS.md](../PROJECT_STATUS.md)
+事实依据：[推理交付记录](../metadata/rlt-inference-deployment-20261029.json)
+本轮实现验证：[377 项 CPU 测试报告](../logs/rlt-inference-20261029/cpu-check/report.json)
+
+当前优先：用户在 Ubuntu crp-5070ti-01 本地部署并验证官方 WALL 推理。
+主机为 RTX 5070 Ti，显存 16303 MiB，驱动 595.91.07；工作目录：
+/home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt
+nvidia-smi 的 CUDA 13.2 是驱动兼容上限，不是 toolkit。
+使用 D0 派生的 CUDA 12.8 / Torch 2.10.0+cu128，离线重编 sm_120 扩展。
+操作入口：[5070 Ti 本地部署说明](../WALL_RLT_Inference_Deployment.md)。
+不要在 5070 Ti 上运行要求 sm_90 的 verify_h100_bundle.sh。
+
+My Passport 上已有三个完成打包及校验的包：
+- D0 基础包 WALL-OSS-CRP-transfer-20261029：29 文件，16,787,299,846 字节。
+- 训练候选 WALL-RLT-training-candidate-20261029-v1：8 文件，5,781,431,598 字节。
+- 推理源码工具 WALL-RLT-inference5070-20261029-v1：8 文件，10,979,923 字节。
+三个包合计 45 文件，22,579,711,367 字节，不包括旁置说明。
+新增工具包没有基础镜像、模型权重或录制数据，需配合 D0 使用；
+其完整性用自身 package_wall_rlt_inference.py verify 入口核验。
+原 WALL-H100-SHA256SUMS-20261029.txt 只覆盖 D0 和训练候选，未包含新工具包。
+
+官方 WALL 权重已有，训练后的 WALL+RLT / RL Actor 权重缺失；最终封版未完成。
+本轮 377 项 CPU 测试 PASS，不表示目标 GPU 推理或 H100 训练通过。
+目标镜像构建、5070 Ti GPU 与完整推理记录为 NOT_RUN，尚无目标机验收报告；
+尚未记录用户拷贝/上传完成回执。现有双卡 FSDP 候选仍待实测。
+已交付包及移动硬盘上的历史说明快照不修改，本文是仓库状态更新。
+
+已确认的后续 H100 交付流程
+本机打包 → My Passport → 你的电脑 → 连接专用网线 → H100 服务器。
+本机不连接 H100；之前的 SSH 超时记录不影响此次硬盘交付。
+你已确认服务器资源完备，共 8 张 H100，承担训练和后续复验。
+具体作业使用的 GPU 在服务器运行时选择，不默认占用全部 8 卡。
+网关固定为 10.241.245.6；Windows 只负责 SSH/SCP 传输，不承担校验或部署。
+
+以下为 D0 与训练候选两包的原中转步骤，保留其清单范围与历史验证数字。
+当前 5070 Ti 部署使用前述新入口；后续 H100 导出 Stage 1 权重时，还需带上
+新的推理源码工具包，并按新部署说明第 7 节提取到新源码目录使用导出脚本。
+无需为此在 H100 构建 5070 Ti 镜像，不覆盖旧训练工程。
+
+从 My Passport 完整拷贝以下四项到电脑的同一个文件夹
+1. WALL-OSS-CRP-transfer-20261029/
+   基础镜像、模型、processor、基础验证文件及原有历史 smoke 数据。
+   29 个文件，16,787,299,846 字节，约 16.79GB。
+2. WALL-RLT-training-candidate-20261029-v1/
+   固定源码、训练配置、44 个离线依赖 wheel、350 条目标轨迹。
+   已排除 top_error/mouse 和 top_error/tape。
+   8 个文件，5,781,431,598 字节，约 5.78GB。
+3. WALL-H100-SHA256SUMS-20261029.txt
+4. WALL-H100-中转说明-20261029.txt（本文件）
+
+上述 D0 与训练候选两包共 37 个文件、22,568,731,444 字节，约 22.57GB；
+这是旧两包清单的范围，不包含新增推理源码工具包；建议电脑接收目录预留 25GB。
+电脑上只需拷贝原样目录，无需解压、重新压缩、安装 Docker 或构建 FlashAttention。
+保留所有子目录；两包已有严格文件集合清单，不要把说明或新日志放进两包内部。
+本说明和统一 SHA256 清单放在它们旁边即可。不要改用 20261028 的失败目录。
+
+电脑接上专用网线之后
+在这四项所在的共同父目录打开提供 ssh / scp 的终端，执行以下两行：
+
+ssh aiuser@10.241.90.194 "mkdir -p ~/WALL-OSS-CRP-incoming"
+scp -r "WALL-OSS-CRP-transfer-20261029" "WALL-RLT-training-candidate-20261029-v1" "WALL-H100-SHA256SUMS-20261029.txt" "WALL-H100-中转说明-20261029.txt" aiuser@10.241.90.194:~/WALL-OSS-CRP-incoming/
+
+使用你已有的登录凭据，包中不包含密码。
+IP、专线和登录由现场操作；本轮没有修改网络配置或连接服务器。
+
+上传后在 Ubuntu 服务器检查传输完整性
+cd ~/WALL-OSS-CRP-incoming
+sha256sum -c WALL-H100-SHA256SUMS-20261029.txt
+
+统一清单覆盖两包的全部 37 个文件，包括各自的完成标记和原清单。
+该步骤会读取约 22.57GB 文件；每项应为 OK，命令退出码应为 0。
+清单复用两包既有完整验证的 SHA256，并对清单自身及标记另外记录哈希。
+统一清单不把“已拷贝到你的电脑”或“服务器已经验收”当作已完成事实。
+
+服务器环境使用顺序
+先按 WALL-OSS-CRP-transfer-20261029/OFFLINE-DEPLOY.md 加载并验证基础环境。
+旧包内说明快照中的“构建机直接上传”路线，由用户电脑中转流程取代。
+基础包提供 CUDA 12.8、PyTorch 2.10 和已构建的 FlashAttention / WALL 原生扩展。
+宿主机 Python 3、Docker、NVIDIA 驱动和 GPU 容器支持使用服务器已有环境。
+
+训练候选的迁移与安装命令在 project.tar.gz 内的
+WALL_RLT_Agent_Implementation_Plan.md 第 9.2 节。
+可先只读查看：
+tar -xOf WALL-RLT-training-candidate-20261029-v1/project.tar.gz WALL_RLT_Agent_Implementation_Plan.md
+
+训练候选依赖基础包的模型与原生扩展；在最终容器路径解包，之后不移动该目录。
+训练解包、源码准备和原生扩展复制需要容器内有 git；现有基础验收未核对该命令，
+执行训练步骤前检查 command -v git。若缺失，需补齐相应离线工具后再运行。
+44 个增量依赖 wheel 已备齐，目标 cu128 容器中的安装及 GPU 训练仍需验证。
+基础环境原有 11 项 pip 依赖声明问题仍有记录，不能将基础组件通过等同于完整训练通过。
+训练候选冻结时通过了 218 项 CPU 测试和完整解包、迁移后真实 batch 检查；
+这些属于该旧包的历史证据，不改记为本轮 377 项。完整模型训练、分片恢复、
+5070 Ti 主机的完整推理仍需单独验收。

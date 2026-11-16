@@ -1,0 +1,12 @@
+{
+  "retrieved_utc": "2026-10-28T07:49:11.846056+00:00",
+  "repository": "https://nvidia.github.io/libnvidia-container/stable/deb/amd64/",
+  "key_url": "https://nvidia.github.io/libnvidia-container/gpgkey",
+  "key_transport": "HTTPS with default certificate validation through http://127.0.0.1:7897",
+  "signing_fingerprint": "C95B321B61E88C1809C4F759DDCAE044F796ECB0",
+  "gpgv_result": "exit 0; GOODSIG and VALIDSIG; full status stored in signature-verification.log",
+  "expired_subkey_note": "KEYEXPIRED references the unused signing subkey 2041629BF5352FAC178A9B1F6ED91CA3AC1160CD (expired 2021-06-15). The actual signature uses the primary key, which has no expiration.",
+  "metadata_checks": "SHA512 and byte length of Packages.xz and decompressed Packages matched signed InRelease",
+  "package_checks": "Package SHA256 values are from the signed-and-verified Packages file; downloading script verifies each completed deb before reporting success.",
+  "scope": "Only local metadata/download artifacts; no installation or system configuration changes."
+}

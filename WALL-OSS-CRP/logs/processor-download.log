@@ -1,0 +1,13 @@
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files:   9%|▉         | 1/11 [00:01<00:11,  1.15s/it]Fetching 11 files:  27%|██▋       | 3/11 [00:01<00:03,  2.49it/s]Fetching 11 files:  36%|███▋      | 4/11 [00:02<00:03,  2.08it/s]Fetching 11 files:  45%|████▌     | 5/11 [00:02<00:02,  2.38it/s]Fetching 11 files:  55%|█████▍    | 6/11 [00:04<00:05,  1.13s/it]Fetching 11 files:  64%|██████▎   | 7/11 [00:05<00:04,  1.04s/it]Fetching 11 files:  82%|████████▏ | 9/11 [00:09<00:02,  1.39s/it]Fetching 11 files: 100%|██████████| 11/11 [00:09<00:00,  1.09it/s]Fetching 11 files: 100%|██████████| 11/11 [00:09<00:00,  1.12it/s]
+Verified models/Qwen2.5-VL-3B-Instruct/.gitattributes (1,519 bytes)
+Verified models/Qwen2.5-VL-3B-Instruct/LICENSE (7,387 bytes)
+Verified models/Qwen2.5-VL-3B-Instruct/README.md (18,276 bytes)
+Verified models/Qwen2.5-VL-3B-Instruct/chat_template.json (1,050 bytes)
+Verified models/Qwen2.5-VL-3B-Instruct/config.json (1,373 bytes)
+Verified models/Qwen2.5-VL-3B-Instruct/generation_config.json (216 bytes)
+Verified models/Qwen2.5-VL-3B-Instruct/merges.txt (1,671,839 bytes)
+Verified models/Qwen2.5-VL-3B-Instruct/preprocessor_config.json (350 bytes)
+Verified models/Qwen2.5-VL-3B-Instruct/tokenizer.json (7,031,645 bytes)
+Verified models/Qwen2.5-VL-3B-Instruct/tokenizer_config.json (5,702 bytes)
+Verified models/Qwen2.5-VL-3B-Instruct/vocab.json (2,776,833 bytes)
+All selected model and processor files verified.

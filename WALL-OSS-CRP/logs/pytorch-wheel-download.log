@@ -1,0 +1,165 @@
+Pinned 20 wheels, 2.82 GB
+Pinned 20 wheels, 2.82 GB
+Already verified: nvidia_cuda_runtime-13.0.96-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+Already verified: nvidia_cuda_cupti-13.0.85-py3-none-manylinux_2_25_x86_64.whl
+Already verified: nvidia_cuda_nvrtc-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl
+nvidia_cudnn_cu13-9.15.1.9-py3-none-manylinux_2_27_x86_64.whl: 1/11 parts, 84s
+nvidia_cudnn_cu13-9.15.1.9-py3-none-manylinux_2_27_x86_64.whl: 2/11 parts, 84s
+nvidia_cublas-13.1.0.3-py3-none-manylinux_2_27_x86_64.whl: 1/13 parts, 86s
+nvidia_cublas-13.1.0.3-py3-none-manylinux_2_27_x86_64.whl: 2/13 parts, 88s
+nvidia_cudnn_cu13-9.15.1.9-py3-none-manylinux_2_27_x86_64.whl: 3/11 parts, 91s
+nvidia_cufft-12.0.0.61-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: 1/7 parts, 92s
+nvidia_cudnn_cu13-9.15.1.9-py3-none-manylinux_2_27_x86_64.whl: 4/11 parts, 97s
+nvidia_cublas-13.1.0.3-py3-none-manylinux_2_27_x86_64.whl: 3/13 parts, 100s
+nvidia_cublas-13.1.0.3-py3-none-manylinux_2_27_x86_64.whl: 4/13 parts, 100s
+nvidia_cudnn_cu13-9.15.1.9-py3-none-manylinux_2_27_x86_64.whl: 5/11 parts, 103s
+nvidia_cufft-12.0.0.61-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: 2/7 parts, 142s
+nvidia_cudnn_cu13-9.15.1.9-py3-none-manylinux_2_27_x86_64.whl: 6/11 parts, 178s
+nvidia_cufft-12.0.0.61-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: 3/7 parts, 179s
+nvidia_cudnn_cu13-9.15.1.9-py3-none-manylinux_2_27_x86_64.whl: 7/11 parts, 183s
+cuda_bindings-13.0.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl: 1/1 parts, 199s
+Verified SHA256: cuda_bindings-13.0.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
+nvidia_cufft-12.0.0.61-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: 4/7 parts, 203s
+nvidia_cublas-13.1.0.3-py3-none-manylinux_2_27_x86_64.whl: 5/13 parts, 222s
+nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_x86_64.whl: 1/2 parts, 58s
+nvidia_cublas-13.1.0.3-py3-none-manylinux_2_27_x86_64.whl: 6/13 parts, 260s
+nvidia_cublas-13.1.0.3-py3-none-manylinux_2_27_x86_64.whl: 7/13 parts, 264s
+nvidia_cublas-13.1.0.3-py3-none-manylinux_2_27_x86_64.whl: 8/13 parts, 271s
+nvidia_cudnn_cu13-9.15.1.9-py3-none-manylinux_2_27_x86_64.whl: 8/11 parts, 272s
+nvidia_cublas-13.1.0.3-py3-none-manylinux_2_27_x86_64.whl: 9/13 parts, 277s
+nvidia_cublas-13.1.0.3-py3-none-manylinux_2_27_x86_64.whl: 10/13 parts, 281s
+nvidia_cufft-12.0.0.61-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: 5/7 parts, 282s
+nvidia_cudnn_cu13-9.15.1.9-py3-none-manylinux_2_27_x86_64.whl: 9/11 parts, 288s
+nvidia_cublas-13.1.0.3-py3-none-manylinux_2_27_x86_64.whl: 11/13 parts, 306s
+nvidia_cufft-12.0.0.61-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: 6/7 parts, 313s
+nvidia_cufft-12.0.0.61-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: 7/7 parts, 326s
+Verified SHA256: nvidia_cufft-12.0.0.61-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+nvidia_cublas-13.1.0.3-py3-none-manylinux_2_27_x86_64.whl: 12/13 parts, 344s
+nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: 1/5 parts, 17s
+nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_x86_64.whl: 1/6 parts, 50s
+nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: 2/5 parts, 47s
+nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_x86_64.whl: 2/2 parts, 183s
+Verified SHA256: nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_x86_64.whl
+nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: 3/5 parts, 49s
+nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: 4/5 parts, 49s
+nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: 5/5 parts, 49s
+Verified SHA256: nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_x86_64.whl: 2/6 parts, 84s
+nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_x86_64.whl: 3/6 parts, 87s
+nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_x86_64.whl: 4/6 parts, 88s
+nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_x86_64.whl: 5/6 parts, 88s
+nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_x86_64.whl: 6/6 parts, 88s
+Verified SHA256: nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_x86_64.whl
+Traceback (most recent call last):
+  File "/home/pangk/workspaces/WALL-OSS-CRP/scripts/download_wheels.py", line 100, in <module>
+    main()
+  File "/home/pangk/workspaces/WALL-OSS-CRP/scripts/download_wheels.py", line 95, in main
+    list(pool.map(fetch, jobs))
+  File "/home/pangk/miniforge3/lib/python3.10/concurrent/futures/_base.py", line 621, in result_iterator
+    yield _result_or_cancel(fs.pop())
+  File "/home/pangk/miniforge3/lib/python3.10/concurrent/futures/_base.py", line 319, in _result_or_cancel
+    return fut.result(timeout)
+  File "/home/pangk/miniforge3/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/home/pangk/miniforge3/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/pangk/miniforge3/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/pangk/workspaces/WALL-OSS-CRP/scripts/download_wheels.py", line 92, in fetch
+    download(job["url"], ROOT / "wheelhouse" / job["filename"],
+  File "/home/pangk/workspaces/WALL-OSS-CRP/scripts/download_artifact.py", line 76, in download
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+  File "/home/pangk/miniforge3/lib/python3.10/concurrent/futures/_base.py", line 621, in result_iterator
+    yield _result_or_cancel(fs.pop())
+  File "/home/pangk/miniforge3/lib/python3.10/concurrent/futures/_base.py", line 319, in _result_or_cancel
+    return fut.result(timeout)
+  File "/home/pangk/miniforge3/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/home/pangk/miniforge3/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/pangk/miniforge3/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/pangk/workspaces/WALL-OSS-CRP/scripts/download_artifact.py", line 71, in fetch
+    if attempt == 3:
+RuntimeError: Failed part 0: OSError
+Pinned 20 wheels, 2.82 GB
+Already verified: nvidia_cuda_runtime-13.0.96-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+Already verified: cuda_bindings-13.0.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
+Already verified: nvidia_cuda_cupti-13.0.85-py3-none-manylinux_2_25_x86_64.whl
+Already verified: nvidia_cuda_nvrtc-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl
+Already verified: nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_x86_64.whl
+Already verified: nvidia_cufft-12.0.0.61-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+Already verified: nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_x86_64.whl
+Already verified: nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+nvidia_cusparselt_cu13-0.8.0-py3-none-manylinux2014_x86_64.whl: 1/6 parts, 4s
+nvidia_cudnn_cu13-9.15.1.9-py3-none-manylinux_2_27_x86_64.whl: 10/11 parts, 32s
+nvidia_cusparselt_cu13-0.8.0-py3-none-manylinux2014_x86_64.whl: 2/6 parts, 35s
+nvidia_nccl_cu13-2.28.9-py3-none-manylinux_2_18_x86_64.whl: part 5 attempt 1: OSError
+nvidia_cusparselt_cu13-0.8.0-py3-none-manylinux2014_x86_64.whl: 3/6 parts, 56s
+nvidia_nccl_cu13-2.28.9-py3-none-manylinux_2_18_x86_64.whl: 1/6 parts, 57s
+nvidia_cudnn_cu13-9.15.1.9-py3-none-manylinux_2_27_x86_64.whl: part 0 attempt 1: OSError
+nvidia_nccl_cu13-2.28.9-py3-none-manylinux_2_18_x86_64.whl: 2/6 parts, 57s
+nvidia_cusparselt_cu13-0.8.0-py3-none-manylinux2014_x86_64.whl: part 4 attempt 1: OSError
+nvidia_nccl_cu13-2.28.9-py3-none-manylinux_2_18_x86_64.whl: part 3 attempt 1: OSError
+nvidia_cusparselt_cu13-0.8.0-py3-none-manylinux2014_x86_64.whl: 4/6 parts, 59s
+nvidia_cudnn_cu13-9.15.1.9-py3-none-manylinux_2_27_x86_64.whl: 11/11 parts, 60s
+Verified SHA256: nvidia_cudnn_cu13-9.15.1.9-py3-none-manylinux_2_27_x86_64.whl
+nvidia_nccl_cu13-2.28.9-py3-none-manylinux_2_18_x86_64.whl: 3/6 parts, 60s
+nvidia_cusparselt_cu13-0.8.0-py3-none-manylinux2014_x86_64.whl: 5/6 parts, 60s
+nvidia_cusparselt_cu13-0.8.0-py3-none-manylinux2014_x86_64.whl: 6/6 parts, 61s
+Verified SHA256: nvidia_cusparselt_cu13-0.8.0-py3-none-manylinux2014_x86_64.whl
+nvidia_nvtx-13.0.85-py3-none-manylinux1_x86_64.manylinux_2_5_x86_64.whl: 1/1 parts, 1s
+Verified SHA256: nvidia_nvtx-13.0.85-py3-none-manylinux1_x86_64.manylinux_2_5_x86_64.whl
+nvidia_nccl_cu13-2.28.9-py3-none-manylinux_2_18_x86_64.whl: 4/6 parts, 64s
+nvidia_nccl_cu13-2.28.9-py3-none-manylinux_2_18_x86_64.whl: 5/6 parts, 64s
+nvidia_nccl_cu13-2.28.9-py3-none-manylinux_2_18_x86_64.whl: 6/6 parts, 65s
+Verified SHA256: nvidia_nccl_cu13-2.28.9-py3-none-manylinux_2_18_x86_64.whl
+nvidia_cufile-1.15.1.6-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: 1/1 parts, 2s
+Verified SHA256: nvidia_cufile-1.15.1.6-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+nvidia_cublas-13.1.0.3-py3-none-manylinux_2_27_x86_64.whl: 13/13 parts, 68s
+Verified SHA256: nvidia_cublas-13.1.0.3-py3-none-manylinux_2_27_x86_64.whl
+nvidia_nvjitlink-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl: part 1 attempt 1: OSError
+nvidia_nvjitlink-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl: 1/2 parts, 17s
+triton-3.6.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl: part 5 attempt 1: OSError
+triton-3.6.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl: 1/6 parts, 41s
+nvidia_nvshmem_cu13-3.4.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: part 1 attempt 1: OSError
+torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 1/20 parts, 45s
+nvidia_nvshmem_cu13-3.4.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: 1/2 parts, 55s
+nvidia_nvshmem_cu13-3.4.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: part 0 attempt 1: OSError
+nvidia_nvjitlink-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl: part 0 attempt 1: OSError
+nvidia_nvshmem_cu13-3.4.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: 2/2 parts, 63s
+Verified SHA256: nvidia_nvshmem_cu13-3.4.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+triton-3.6.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl: 2/6 parts, 56s
+nvidia_nvjitlink-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl: 2/2 parts, 62s
+Verified SHA256: nvidia_nvjitlink-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl
+triton-3.6.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl: part 1 attempt 1: OSError
+triton-3.6.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl: 3/6 parts, 62s
+torchaudio-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 1/1 parts, 4s
+Verified SHA256: torchaudio-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl
+torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 2/20 parts, 62s
+triton-3.6.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl: 4/6 parts, 65s
+torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 3/20 parts, 63s
+triton-3.6.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl: 5/6 parts, 66s
+torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 4/20 parts, 65s
+torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 5/20 parts, 66s
+torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 6/20 parts, 66s
+triton-3.6.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl: 6/6 parts, 68s
+Verified SHA256: triton-3.6.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+torchvision-0.25.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 1/1 parts, 11s
+Verified SHA256: torchvision-0.25.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl
+torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 7/20 parts, 67s
+torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 8/20 parts, 72s
+torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 9/20 parts, 97s
+torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 10/20 parts, 102s
+torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 11/20 parts, 105s
+torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 12/20 parts, 105s
+torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 13/20 parts, 107s
+torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 14/20 parts, 108s
+torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 15/20 parts, 109s
+torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 16/20 parts, 111s
+torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 17/20 parts, 113s
+torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 18/20 parts, 133s
+torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 19/20 parts, 134s
+torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl: 20/20 parts, 136s
+Verified SHA256: torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl
+All pinned PyTorch CUDA wheels verified.

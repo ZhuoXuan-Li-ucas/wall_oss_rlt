@@ -1,0 +1,32 @@
+Looking in indexes: https://download.pytorch.org/whl/cu130
+Collecting torch==2.10.0
+  Downloading torch-2.10.0%2Bcu130-cp310-cp310-manylinux_2_28_x86_64.whl.metadata (30 kB)
+Collecting torchvision==0.25.0
+  Downloading torchvision-0.25.0%2Bcu130-cp310-cp310-manylinux_2_28_x86_64.whl.metadata (5.4 kB)
+Collecting torchaudio==2.10.0
+  Downloading torchaudio-2.10.0%2Bcu130-cp310-cp310-manylinux_2_28_x86_64.whl.metadata (6.9 kB)
+Collecting filelock (from torch==2.10.0)
+  Downloading filelock-3.32.3-py3-none-any.whl.metadata (2.0 kB)
+Collecting typing-extensions>=4.10.0 (from torch==2.10.0)
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting sympy>=1.13.3 (from torch==2.10.0)
+  Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting networkx>=2.5.1 (from torch==2.10.0)
+  Downloading networkx-3.4.2-py3-none-any.whl.metadata (6.3 kB)
+Collecting jinja2 (from torch==2.10.0)
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec>=0.8.5 (from torch==2.10.0)
+  Downloading fsspec-2026.7.0-py3-none-any.whl.metadata (10 kB)
+Collecting cuda-bindings==13.0.3 (from torch==2.10.0)
+  Downloading cuda_bindings-13.0.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (2.3 kB)
+Collecting nvidia-cuda-nvrtc==13.0.88 (from torch==2.10.0)
+  Downloading nvidia_cuda_nvrtc-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (90.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.2/90.2 MB 1.5 MB/s  0:00:59
+Collecting nvidia-cuda-runtime==13.0.96 (from torch==2.10.0)
+  Downloading nvidia_cuda_runtime-13.0.96-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 1.6 MB/s  0:00:01
+Collecting nvidia-cuda-cupti==13.0.85 (from torch==2.10.0)
+  Downloading nvidia_cuda_cupti-13.0.85-py3-none-manylinux_2_25_x86_64.whl (10.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.7/10.7 MB 1.4 MB/s  0:00:07
+Collecting nvidia-cudnn-cu13==9.15.1.9 (from torch==2.10.0)
+  Downloading nvidia_cudnn_cu13-9.15.1.9-py3-none-manylinux_2_27_x86_64.whl (351.3 MB)

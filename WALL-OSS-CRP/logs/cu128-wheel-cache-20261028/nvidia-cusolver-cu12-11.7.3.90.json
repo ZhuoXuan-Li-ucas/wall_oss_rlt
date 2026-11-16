@@ -1,0 +1,125 @@
+{
+  "package": "nvidia-cusolver-cu12",
+  "version": "11.7.3.90",
+  "source": {
+    "kind": "installed package",
+    "site_packages": "/home/pangk/miniforge3/envs/lerobot-so101/lib/python3.12/site-packages"
+  },
+  "source_record_sha256": "af9fac949d3de1e60c3870c8ea81e93876b942cae0fbdd3d1da8a6fb0c2b8ad0",
+  "wheel_tags": [
+    "py3-none-manylinux_2_27_x86_64"
+  ],
+  "record_verified_files": [
+    {
+      "path": "nvidia/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/cusolver/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/cusolver/include/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/cusolver/include/cusolverDn.h",
+      "sha256": "06a89787eb12965ecac70863a92b9526f483c5e072aa3db17c02b42b2a06dcab",
+      "size_bytes": 152029
+    },
+    {
+      "path": "nvidia/cusolver/include/cusolverMg.h",
+      "sha256": "37cf7cf679d2d8195e78ccae7ed6d08010c9e2c30090b3d29e6cbf4bfedfc678",
+      "size_bytes": 11549
+    },
+    {
+      "path": "nvidia/cusolver/include/cusolverRf.h",
+      "sha256": "e0537aa3a1589a5d3da52e29f984f924a6f0819a8a2c4b5ff6d419af9d32668e",
+      "size_bytes": 14535
+    },
+    {
+      "path": "nvidia/cusolver/include/cusolverSp.h",
+      "sha256": "4b3207d86b77e9ffdc68dd708c5f0f9c2c182e1c2c7c9eb79f530f21cd3f026b",
+      "size_bytes": 32885
+    },
+    {
+      "path": "nvidia/cusolver/include/cusolverSp_LOWLEVEL_PREVIEW.h",
+      "sha256": "9a6997b97fe094705da604f322a85790b333f540b1c42d6e4136dc280d56e942",
+      "size_bytes": 39169
+    },
+    {
+      "path": "nvidia/cusolver/include/cusolver_common.h",
+      "sha256": "93984764465ca31c644c5a9b28958a1aec6e1cb692470588bd8760bd02746ddc",
+      "size_bytes": 8732
+    },
+    {
+      "path": "nvidia/cusolver/lib/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/cusolver/lib/libcusolver.so.11",
+      "sha256": "b64b838bf3e2f27373a59312aff73a5fb7e452300c4048db353a7f30d009a1d7",
+      "size_bytes": 243303872
+    },
+    {
+      "path": "nvidia/cusolver/lib/libcusolverMg.so.11",
+      "sha256": "d947654631c536e9099abcc9fe551ece97d0ffeb8fbab142189ea2c85bc55e8e",
+      "size_bytes": 161493576
+    },
+    {
+      "path": "nvidia_cusolver_cu12-11.7.3.90.dist-info/INSTALLER",
+      "sha256": "e6184ce10e266134fdcfa401e8f1a95005bcd4f18d16b62b757323e2833fe9a9",
+      "size_bytes": 2
+    },
+    {
+      "path": "nvidia_cusolver_cu12-11.7.3.90.dist-info/License.txt",
+      "sha256": "ad6f5853fba0ca0d159d0f58d49ae49830c2f8c93f7a92648b9ce90adb4c6ccd",
+      "size_bytes": 59262
+    },
+    {
+      "path": "nvidia_cusolver_cu12-11.7.3.90.dist-info/METADATA",
+      "sha256": "1f06a55dc8f2aef9eb20f018044bfa7731124698ba7b435d11c250c62eaf4dc3",
+      "size_bytes": 1826
+    },
+    {
+      "path": "nvidia_cusolver_cu12-11.7.3.90.dist-info/REQUESTED",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia_cusolver_cu12-11.7.3.90.dist-info/WHEEL",
+      "sha256": "56d14b11507e557f278904f8910e6971038eaa22af52fa9f65ee55d781e653cf",
+      "size_bytes": 109
+    },
+    {
+      "path": "nvidia_cusolver_cu12-11.7.3.90.dist-info/top_level.txt",
+      "sha256": "7d3900b6216e2f5ea752b07dcad0c3b69cadcf6b7407836f6139d1cf00213b5e",
+      "size_bytes": 7
+    },
+    {
+      "path": "nvidia_cusolver_cu12-11.7.3.90.dist-info/uv_cache.json",
+      "sha256": "7dece32d598456a2eea31d8dc53be8d68b272a73e814a5a9a8574077f9f3827e",
+      "size_bytes": 127
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "nvidia_cusolver_cu12-11.7.3.90.dist-info/INSTALLER",
+      "reason": "verified installed metadata; excluded from rebuilt wheel"
+    },
+    {
+      "path": "nvidia_cusolver_cu12-11.7.3.90.dist-info/REQUESTED",
+      "reason": "verified installed metadata; excluded from rebuilt wheel"
+    }
+  ],
+  "status": "PASS",
+  "filename": "nvidia_cusolver_cu12-11.7.3.90-py3-none-manylinux_2_27_x86_64.whl",
+  "wheel_sha256": "f9247570be5a1ee4b37f962fd14093db81bf9b2fa01e41870f93ac9c082b1e70",
+  "wheel_size_bytes": 275917537,
+  "payload_size_bytes": 405117678,
+  "checked_at_utc": "2026-10-28T09:02:39.471140+00:00"
+}

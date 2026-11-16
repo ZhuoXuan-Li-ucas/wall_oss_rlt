@@ -1,0 +1,4757 @@
+{
+  "status": "PASS",
+  "package": "matplotlib",
+  "version": "3.10.9",
+  "filename": "matplotlib-3.10.9-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "c2bebd3b8fcf7f7f1e641ef8009dca19dc0179ac9c57642f0ba5fd03e4def1fc",
+  "wheel_tags": [
+    "cp310-cp310-manylinux_2_17_x86_64",
+    "cp310-cp310-manylinux2014_x86_64"
+  ],
+  "record_verified_files": [
+    {
+      "path": "matplotlib-3.10.9.dist-info/INSTALLER",
+      "wheel_path": "matplotlib-3.10.9.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "matplotlib-3.10.9.dist-info/LICENSE",
+      "wheel_path": "matplotlib-3.10.9.dist-info/LICENSE",
+      "size_bytes": 40129,
+      "sha256": "dbb9ad7495a83b0f2f48c94b06e23020587d82f8d1492dcb717fb1ebc2f86c18"
+    },
+    {
+      "path": "matplotlib-3.10.9.dist-info/METADATA",
+      "wheel_path": "matplotlib-3.10.9.dist-info/METADATA",
+      "size_bytes": 52837,
+      "sha256": "bea8a4672bbe4f26b7a4fe5bc5e5023a08c4fb7069cc951f39eef26a403c7ea6"
+    },
+    {
+      "path": "matplotlib-3.10.9.dist-info/REQUESTED",
+      "wheel_path": "matplotlib-3.10.9.dist-info/REQUESTED",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "matplotlib-3.10.9.dist-info/WHEEL",
+      "wheel_path": "matplotlib-3.10.9.dist-info/WHEEL",
+      "size_bytes": 137,
+      "sha256": "b1933f35e50ccf61b87c37a731fd757a291c0b170b6905a26119a3c1005abd0b"
+    },
+    {
+      "path": "matplotlib/__init__.py",
+      "wheel_path": "matplotlib/__init__.py",
+      "size_bytes": 55823,
+      "sha256": "c6c47d1ecf25d7934f38c8a55c3b8e116d41aa08d8ecfa82f6ae8af589216a3a"
+    },
+    {
+      "path": "matplotlib/__init__.pyi",
+      "wheel_path": "matplotlib/__init__.pyi",
+      "size_bytes": 3439,
+      "sha256": "b34609f1f906562a192fd6dc06dc98802abf31b63c2d1ad052d99a0f75da2314"
+    },
+    {
+      "path": "matplotlib/_afm.py",
+      "wheel_path": "matplotlib/_afm.py",
+      "size_bytes": 16692,
+      "sha256": "7167b521bdfb4fa6721db47afe13eecc08e8b4c9a2df6cbe90307e8b6f22caa1"
+    },
+    {
+      "path": "matplotlib/_animation_data.py",
+      "wheel_path": "matplotlib/_animation_data.py",
+      "size_bytes": 7986,
+      "sha256": "24925b6dcf9f31d3e391b43b9e0f411cbe62f755530c74154ed11d58ebd60402"
+    },
+    {
+      "path": "matplotlib/_api/__init__.py",
+      "wheel_path": "matplotlib/_api/__init__.py",
+      "size_bytes": 14509,
+      "sha256": "7b45f97630b1870dd80c58a7d88cd4dd129dffb84cdc6e71569b359751250274"
+    },
+    {
+      "path": "matplotlib/_api/__init__.pyi",
+      "wheel_path": "matplotlib/_api/__init__.pyi",
+      "size_bytes": 2246,
+      "sha256": "5cd2fea06924d4c64fb525e4deb1e50b78cb599c6c1259a93693a89e02aaf2a0"
+    },
+    {
+      "path": "matplotlib/_api/deprecation.py",
+      "wheel_path": "matplotlib/_api/deprecation.py",
+      "size_bytes": 20091,
+      "sha256": "5c9c64b1257cba44bc912566b063d2d3382fd5f7c56bc58d6912c0937d5d98e3"
+    },
+    {
+      "path": "matplotlib/_api/deprecation.pyi",
+      "wheel_path": "matplotlib/_api/deprecation.pyi",
+      "size_bytes": 2217,
+      "sha256": "03c0dee7b6a65f61a5652ac363055808cc4715bf00b181ab1f493f6c2c6e26eb"
+    },
+    {
+      "path": "matplotlib/_blocking_input.py",
+      "wheel_path": "matplotlib/_blocking_input.py",
+      "size_bytes": 1224,
+      "sha256": "54736cc6f5f6993c7fc41927777d0c4a27159515d2e1d0837bd84372d6d5e6b9"
+    },
+    {
+      "path": "matplotlib/_c_internal_utils.cpython-310-x86_64-linux-gnu.so",
+      "wheel_path": "matplotlib/_c_internal_utils.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 289072,
+      "sha256": "ac8785903ed669a9962b7a837efb02bffeea43e9552e5b047b39505b7a583d60"
+    },
+    {
+      "path": "matplotlib/_c_internal_utils.pyi",
+      "wheel_path": "matplotlib/_c_internal_utils.pyi",
+      "size_bytes": 377,
+      "sha256": "6776cbb3da4c197ae6663b7ee3f03ec78df6d5b2cff81e78c436ebe0f22051f7"
+    },
+    {
+      "path": "matplotlib/_cm.py",
+      "wheel_path": "matplotlib/_cm.py",
+      "size_bytes": 68014,
+      "sha256": "3ee608024529cf8bb86a2523bdd5799e321f1b427f31063da4cd98cf78f7297b"
+    },
+    {
+      "path": "matplotlib/_cm_bivar.py",
+      "wheel_path": "matplotlib/_cm_bivar.py",
+      "size_bytes": 97461,
+      "sha256": "82998a892c6c5a854658889fb1e874828343ed8ef34d624ab339ebfd0904b438"
+    },
+    {
+      "path": "matplotlib/_cm_listed.py",
+      "wheel_path": "matplotlib/_cm_listed.py",
+      "size_bytes": 135004,
+      "sha256": "ddad3698f5129ceb1792a445371286c08bc9080298e657b3054aea19c9659ef9"
+    },
+    {
+      "path": "matplotlib/_cm_multivar.py",
+      "wheel_path": "matplotlib/_cm_multivar.py",
+      "size_bytes": 6630,
+      "sha256": "d148cd156ed2cad8f5b77d500fdf5e6dfafe6a5ecd982a5684a50ecaaf55ccaf"
+    },
+    {
+      "path": "matplotlib/_color_data.py",
+      "wheel_path": "matplotlib/_color_data.py",
+      "size_bytes": 34780,
+      "sha256": "93ec1d4e2e80ac9c64b2a05f313fbb532daa5b3f175f84e1e60b237f7d82c263"
+    },
+    {
+      "path": "matplotlib/_color_data.pyi",
+      "wheel_path": "matplotlib/_color_data.pyi",
+      "size_bytes": 170,
+      "sha256": "45d051934d72b9fde3615942c06df9d6d2010b17a18b39193272acf5cf209cec"
+    },
+    {
+      "path": "matplotlib/_constrained_layout.py",
+      "wheel_path": "matplotlib/_constrained_layout.py",
+      "size_bytes": 31485,
+      "sha256": "5d7ff67a5a87ba4177b687840eea7040f94dffc504bf7fb218a951d00f769fbe"
+    },
+    {
+      "path": "matplotlib/_docstring.py",
+      "wheel_path": "matplotlib/_docstring.py",
+      "size_bytes": 4435,
+      "sha256": "bbdc89a2b262748f24d56f12d3548832a36687954e31573e02ac844bae8411d9"
+    },
+    {
+      "path": "matplotlib/_docstring.pyi",
+      "wheel_path": "matplotlib/_docstring.pyi",
+      "size_bytes": 800,
+      "sha256": "eb37b90e8a99685cba050e59f2fb43889c123978417296499643397a723d72e1"
+    },
+    {
+      "path": "matplotlib/_enums.py",
+      "wheel_path": "matplotlib/_enums.py",
+      "size_bytes": 6175,
+      "sha256": "7ae0f6b23d8521b40ccc83c0e2b0ab208ff2f1157368cc8404ab1274141a51be"
+    },
+    {
+      "path": "matplotlib/_enums.pyi",
+      "wheel_path": "matplotlib/_enums.pyi",
+      "size_bytes": 326,
+      "sha256": "2bb8ff903c063a7c77ec26275e1c1f27d34904679eb78e4abc08f4a26d39454b"
+    },
+    {
+      "path": "matplotlib/_fontconfig_pattern.py",
+      "wheel_path": "matplotlib/_fontconfig_pattern.py",
+      "size_bytes": 4365,
+      "sha256": "842a6ea53a217aa249a4849510ddc536fe966593d56a828ebaa18c983dd6c61e"
+    },
+    {
+      "path": "matplotlib/_image.cpython-310-x86_64-linux-gnu.so",
+      "wheel_path": "matplotlib/_image.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 590200,
+      "sha256": "a714960bb8827938e8d841b4a1d2ed1c1d4cb2f0d71bc01df129d7c4b2ea018e"
+    },
+    {
+      "path": "matplotlib/_image.pyi",
+      "wheel_path": "matplotlib/_image.pyi",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "matplotlib/_internal_utils.py",
+      "wheel_path": "matplotlib/_internal_utils.py",
+      "size_bytes": 2140,
+      "sha256": "9e12ba2cb5985bdddf05cb0588ed3d266a858f6ae01c4b0660539e682ec744ac"
+    },
+    {
+      "path": "matplotlib/_layoutgrid.py",
+      "wheel_path": "matplotlib/_layoutgrid.py",
+      "size_bytes": 21676,
+      "sha256": "98507d6ac655a25d9a57d84b069767b6e1b9c758ac294ada8c5fb74d484282ca"
+    },
+    {
+      "path": "matplotlib/_mathtext.py",
+      "wheel_path": "matplotlib/_mathtext.py",
+      "size_bytes": 107336,
+      "sha256": "b297f8066605dc4af9b7207404b10e01a3b8ca8f4770dcf7107ecbeb2788024c"
+    },
+    {
+      "path": "matplotlib/_mathtext_data.py",
+      "wheel_path": "matplotlib/_mathtext_data.py",
+      "size_bytes": 65067,
+      "sha256": "f72fffee37f76f380e983da51185b742982c4fecfd403ba2c112d51fb5aaf0fc"
+    },
+    {
+      "path": "matplotlib/_path.cpython-310-x86_64-linux-gnu.so",
+      "wheel_path": "matplotlib/_path.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 523184,
+      "sha256": "b8c8a9c21f7b7d90c0dd5ae04b76f45524dff0af455fe0c9e56668e7209a5810"
+    },
+    {
+      "path": "matplotlib/_path.pyi",
+      "wheel_path": "matplotlib/_path.pyi",
+      "size_bytes": 325,
+      "sha256": "cb39f27f3a14a201fdbef8b4bcaebc81ae128656eb9f95018409cb5fc1a1b75a"
+    },
+    {
+      "path": "matplotlib/_pylab_helpers.py",
+      "wheel_path": "matplotlib/_pylab_helpers.py",
+      "size_bytes": 4307,
+      "sha256": "a49111cad1c3997a3654fdec1fd430e8dc093f485e7cd3d03145c2567b67a072"
+    },
+    {
+      "path": "matplotlib/_pylab_helpers.pyi",
+      "wheel_path": "matplotlib/_pylab_helpers.pyi",
+      "size_bytes": 1012,
+      "sha256": "ece64aafe38bde2a55b7510367a7beb51c07012cfe8a361f7087653dccd786f4"
+    },
+    {
+      "path": "matplotlib/_qhull.cpython-310-x86_64-linux-gnu.so",
+      "wheel_path": "matplotlib/_qhull.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 778688,
+      "sha256": "0d67d890ed9a3e94e5a578bfd9b5aa710a3b85af11b7dbd23a111789d5611f6c"
+    },
+    {
+      "path": "matplotlib/_qhull.pyi",
+      "wheel_path": "matplotlib/_qhull.pyi",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "matplotlib/_text_helpers.py",
+      "wheel_path": "matplotlib/_text_helpers.py",
+      "size_bytes": 2538,
+      "sha256": "9f3d69bc4a7cef9e8f0ab9fa28863633abd503e6de61434e0efbdfe0d9c61748"
+    },
+    {
+      "path": "matplotlib/_tight_bbox.py",
+      "wheel_path": "matplotlib/_tight_bbox.py",
+      "size_bytes": 2787,
+      "sha256": "75d2795625ee95b3cba1c1ebf919162b6ed6252b95d965d4c7be236722f434e8"
+    },
+    {
+      "path": "matplotlib/_tight_layout.py",
+      "wheel_path": "matplotlib/_tight_layout.py",
+      "size_bytes": 12675,
+      "sha256": "037bd92819b1722ef0df938ef65c607d4aab44a813afe37f754cdad0cd395b11"
+    },
+    {
+      "path": "matplotlib/_tri.cpython-310-x86_64-linux-gnu.so",
+      "wheel_path": "matplotlib/_tri.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 456048,
+      "sha256": "7e72bcd81c8f0adb16f5634d52b84adb6f00ba025f896c783aa3c4ed5e1bac2d"
+    },
+    {
+      "path": "matplotlib/_tri.pyi",
+      "wheel_path": "matplotlib/_tri.pyi",
+      "size_bytes": 1429,
+      "sha256": "6c59eef7ba489526e8253de28d0070e189597654755335d8b48dc39043d5cde3"
+    },
+    {
+      "path": "matplotlib/_type1font.py",
+      "wheel_path": "matplotlib/_type1font.py",
+      "size_bytes": 28409,
+      "sha256": "73f3d7bf2385438602450276dec9d636474486e67893425b2dee79cda7a85df4"
+    },
+    {
+      "path": "matplotlib/_version.py",
+      "wheel_path": "matplotlib/_version.py",
+      "size_bytes": 19,
+      "sha256": "552547e164cf545bce1335463622e8debf8cabe985f2a47502af1728e49063cf"
+    },
+    {
+      "path": "matplotlib/animation.py",
+      "wheel_path": "matplotlib/animation.py",
+      "size_bytes": 73744,
+      "sha256": "4b972937ef682a70aed4fe5f4f8882e0c3a9ec5e899054bd560a564100f44284"
+    },
+    {
+      "path": "matplotlib/animation.pyi",
+      "wheel_path": "matplotlib/animation.pyi",
+      "size_bytes": 6566,
+      "sha256": "0bc1609acc21e2e9bea9882a3d93411295d569e7d15e2e9ed36ea9623a272c78"
+    },
+    {
+      "path": "matplotlib/artist.py",
+      "wheel_path": "matplotlib/artist.py",
+      "size_bytes": 63374,
+      "sha256": "96887ff6e0fb6fa7a0d418c9e6481c501b3131c38085c416ba01bcce606ef807"
+    },
+    {
+      "path": "matplotlib/artist.pyi",
+      "wheel_path": "matplotlib/artist.pyi",
+      "size_bytes": 7336,
+      "sha256": "f6c474c3c2af8b519a155e886d4ccec3d2ef4243c407c14ffee46f51c23afe18"
+    },
+    {
+      "path": "matplotlib/axes/__init__.py",
+      "wheel_path": "matplotlib/axes/__init__.py",
+      "size_bytes": 351,
+      "sha256": "68713fcc88e98482645b8ff57f2a05b845936fb80245ec0ae633595891c47603"
+    },
+    {
+      "path": "matplotlib/axes/__init__.pyi",
+      "wheel_path": "matplotlib/axes/__init__.pyi",
+      "size_bytes": 303,
+      "sha256": "1cfd73daff8f6e81d04b87508ef27b5e35235fecf0ead6994534c1f6854ac181"
+    },
+    {
+      "path": "matplotlib/axes/_axes.py",
+      "wheel_path": "matplotlib/axes/_axes.py",
+      "size_bytes": 353841,
+      "sha256": "0b0054161e1f225245e0a9bcd1aa45787f6c3d5062fb738f4ce9f1a8abde6794"
+    },
+    {
+      "path": "matplotlib/axes/_axes.pyi",
+      "wheel_path": "matplotlib/axes/_axes.pyi",
+      "size_bytes": 26116,
+      "sha256": "7ef9558fc0272ade7610e0a0c49e4dffafe56fd9f48265e538fed619fda9b8d2"
+    },
+    {
+      "path": "matplotlib/axes/_base.py",
+      "wheel_path": "matplotlib/axes/_base.py",
+      "size_bytes": 186445,
+      "sha256": "7976ab5c8924d5289044f6bb45dbbf47a803807766da5eb41e1d913ed3d37fb1"
+    },
+    {
+      "path": "matplotlib/axes/_base.pyi",
+      "wheel_path": "matplotlib/axes/_base.pyi",
+      "size_bytes": 17058,
+      "sha256": "117eb16251c610c4565e813ce70f947c290dee6f7dd06839545649e380f45e61"
+    },
+    {
+      "path": "matplotlib/axes/_secondary_axes.py",
+      "wheel_path": "matplotlib/axes/_secondary_axes.py",
+      "size_bytes": 11887,
+      "sha256": "49ec3e2cae7b9839dd5176fef7f547cece5d24b43a7e1e27b2d66d7e9663ba2d"
+    },
+    {
+      "path": "matplotlib/axes/_secondary_axes.pyi",
+      "wheel_path": "matplotlib/axes/_secondary_axes.pyi",
+      "size_bytes": 1414,
+      "sha256": "1ad539e58ccb34ded71cc45070099c03171d70df85cc7c354402693a24dc6459"
+    },
+    {
+      "path": "matplotlib/axis.py",
+      "wheel_path": "matplotlib/axis.py",
+      "size_bytes": 104714,
+      "sha256": "6ec3c4ca7e1e3009e44c26d6e2bc529bccac3cd607da9feeafb44dfd97d9469b"
+    },
+    {
+      "path": "matplotlib/axis.pyi",
+      "wheel_path": "matplotlib/axis.pyi",
+      "size_bytes": 10181,
+      "sha256": "50ed7ea02787c81eccaf1c67ba8d10cacdaefe4f1eeaa4e6cf807afab1eb59dc"
+    },
+    {
+      "path": "matplotlib/backend_bases.py",
+      "wheel_path": "matplotlib/backend_bases.py",
+      "size_bytes": 131953,
+      "sha256": "e446886212c2ecb74aae4d126123418985b71b5e8a6db7b19dd161a0e5fbfe36"
+    },
+    {
+      "path": "matplotlib/backend_bases.pyi",
+      "wheel_path": "matplotlib/backend_bases.pyi",
+      "size_bytes": 16270,
+      "sha256": "1ba32abe659ffb2d92c21ba1345daa37c866a2fc40915d5324c6e0e0bcd4f5c3"
+    },
+    {
+      "path": "matplotlib/backend_managers.py",
+      "wheel_path": "matplotlib/backend_managers.py",
+      "size_bytes": 11795,
+      "sha256": "45085e08efdc40195a5ac60c6c09acc2ed143ca53b6e62d32392c4160a2d9250"
+    },
+    {
+      "path": "matplotlib/backend_managers.pyi",
+      "wheel_path": "matplotlib/backend_managers.pyi",
+      "size_bytes": 2253,
+      "sha256": "6a09ee334c22651a9282ab62d8081b2898a344bbc43cd2cead263c3c4c0b8c51"
+    },
+    {
+      "path": "matplotlib/backend_tools.py",
+      "wheel_path": "matplotlib/backend_tools.py",
+      "size_bytes": 33491,
+      "sha256": "a9340632c2075c84c5afb1a8a43b0e22b007968aacdb99ad6a84cdfca1d19279"
+    },
+    {
+      "path": "matplotlib/backend_tools.pyi",
+      "wheel_path": "matplotlib/backend_tools.pyi",
+      "size_bytes": 4142,
+      "sha256": "4faabdfd51d217d09aef26361494fa16a6e9d1ee5f9735c53d4e20e949a3ada5"
+    },
+    {
+      "path": "matplotlib/backends/__init__.py",
+      "wheel_path": "matplotlib/backends/__init__.py",
+      "size_bytes": 206,
+      "sha256": "268c097beb43ad404c3494e22404e0884b800a981dc6c2a744261afa70b6e790"
+    },
+    {
+      "path": "matplotlib/backends/_backend_agg.cpython-310-x86_64-linux-gnu.so",
+      "wheel_path": "matplotlib/backends/_backend_agg.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 789976,
+      "sha256": "688c6392bde63a40c1da3f8f2963591934f8fc2dd4786339e018139edfcbcc5f"
+    },
+    {
+      "path": "matplotlib/backends/_backend_agg.pyi",
+      "wheel_path": "matplotlib/backends/_backend_agg.pyi",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "matplotlib/backends/_backend_gtk.py",
+      "wheel_path": "matplotlib/backends/_backend_gtk.py",
+      "size_bytes": 11274,
+      "sha256": "ccd0a630e82381919f0089710d4e29874d973124a7d30214a0f438c2c69e7808"
+    },
+    {
+      "path": "matplotlib/backends/_backend_pdf_ps.py",
+      "wheel_path": "matplotlib/backends/_backend_pdf_ps.py",
+      "size_bytes": 5968,
+      "sha256": "3349234293250680229ba3ddc3cbb716a508a17cf853046fe264b35cf24f238e"
+    },
+    {
+      "path": "matplotlib/backends/_backend_tk.py",
+      "wheel_path": "matplotlib/backends/_backend_tk.py",
+      "size_bytes": 44581,
+      "sha256": "cf1f4665882b7264f00e0513deb3ef53b6205bbf6c51b248590f9226d12c1f9b"
+    },
+    {
+      "path": "matplotlib/backends/_macosx.pyi",
+      "wheel_path": "matplotlib/backends/_macosx.pyi",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "matplotlib/backends/_tkagg.cpython-310-x86_64-linux-gnu.so",
+      "wheel_path": "matplotlib/backends/_tkagg.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 308800,
+      "sha256": "1dcfba98ba6696b90973d695027d134a8b0b93ce26ea9c725ee56300e1c65794"
+    },
+    {
+      "path": "matplotlib/backends/_tkagg.pyi",
+      "wheel_path": "matplotlib/backends/_tkagg.pyi",
+      "size_bytes": 379,
+      "sha256": "d722a760a4a03457acadbd192394500b24cee3338d8075b932b27dbeae07cf22"
+    },
+    {
+      "path": "matplotlib/backends/backend_agg.py",
+      "wheel_path": "matplotlib/backends/backend_agg.py",
+      "size_bytes": 19888,
+      "sha256": "3f2feb5d16c34cfd194ab341d8ee539a1e55f06e55f558971ff615e4f4d7f71c"
+    },
+    {
+      "path": "matplotlib/backends/backend_cairo.py",
+      "wheel_path": "matplotlib/backends/backend_cairo.py",
+      "size_bytes": 18618,
+      "sha256": "021e4cf393e96bccd818eb4b3a2cd6d20ce5b63b376f89c3e7aa8579047bf795"
+    },
+    {
+      "path": "matplotlib/backends/backend_gtk3.py",
+      "wheel_path": "matplotlib/backends/backend_gtk3.py",
+      "size_bytes": 22320,
+      "sha256": "f4c10c1a7ae6ddb2c16d9cbd5627f16398e4851efd00557367d3e1daeb577d85"
+    },
+    {
+      "path": "matplotlib/backends/backend_gtk3agg.py",
+      "wheel_path": "matplotlib/backends/backend_gtk3agg.py",
+      "size_bytes": 2463,
+      "sha256": "685270d392f957e1721528ffdb497f16e0b9a623dff1f84acdfb7f9b534c8587"
+    },
+    {
+      "path": "matplotlib/backends/backend_gtk3cairo.py",
+      "wheel_path": "matplotlib/backends/backend_gtk3cairo.py",
+      "size_bytes": 1392,
+      "sha256": "ccfb09cd59bbe7489fd8b890f726f3b1b5f4ac18643f4e5756f47d2e1cfae6ca"
+    },
+    {
+      "path": "matplotlib/backends/backend_gtk4.py",
+      "wheel_path": "matplotlib/backends/backend_gtk4.py",
+      "size_bytes": 23594,
+      "sha256": "dc3236f288cecab2b4ca79984cd39d26ed61f4211127028c6db8e8f0ee7d8bbf"
+    },
+    {
+      "path": "matplotlib/backends/backend_gtk4agg.py",
+      "wheel_path": "matplotlib/backends/backend_gtk4agg.py",
+      "size_bytes": 1262,
+      "sha256": "d348b7aa922df5371ffd2ef818e59b79c9223e57d5268436a416e15c332d845d"
+    },
+    {
+      "path": "matplotlib/backends/backend_gtk4cairo.py",
+      "wheel_path": "matplotlib/backends/backend_gtk4cairo.py",
+      "size_bytes": 1125,
+      "sha256": "b2a5a6dd681f34ef04b018eacec0f85387007347f8ab94ae7d8c7b64969c0dfd"
+    },
+    {
+      "path": "matplotlib/backends/backend_macosx.py",
+      "wheel_path": "matplotlib/backends/backend_macosx.py",
+      "size_bytes": 7397,
+      "sha256": "1a36eed4c297219a4233f96e306e94eea0e0c28b5c1927a00af630f8d356c5e4"
+    },
+    {
+      "path": "matplotlib/backends/backend_mixed.py",
+      "wheel_path": "matplotlib/backends/backend_mixed.py",
+      "size_bytes": 4696,
+      "sha256": "19fff60438f2f7815945700b9b45f7c51a4aff597c6d9192602aa7ad28eb8cc1"
+    },
+    {
+      "path": "matplotlib/backends/backend_nbagg.py",
+      "wheel_path": "matplotlib/backends/backend_nbagg.py",
+      "size_bytes": 8000,
+      "sha256": "02ef511df46e7e92349e04f84742b409456d00c162f4183e6210ee9e58ff2e4a"
+    },
+    {
+      "path": "matplotlib/backends/backend_pdf.py",
+      "wheel_path": "matplotlib/backends/backend_pdf.py",
+      "size_bytes": 105320,
+      "sha256": "0df14a743e3ec1cecf3e97e35e1f0c01a683a695d4bcbc2271a3215ca811846c"
+    },
+    {
+      "path": "matplotlib/backends/backend_pgf.py",
+      "wheel_path": "matplotlib/backends/backend_pgf.py",
+      "size_bytes": 39627,
+      "sha256": "2315343da681b90cef098fac88b4864e6bbf843c8e045f930c726557669af4e6"
+    },
+    {
+      "path": "matplotlib/backends/backend_ps.py",
+      "wheel_path": "matplotlib/backends/backend_ps.py",
+      "size_bytes": 52099,
+      "sha256": "6c9c975aa388a9ff9791255dc429c4dde6e6142515c3b00b7711f82478b4ebb5"
+    },
+    {
+      "path": "matplotlib/backends/backend_qt.py",
+      "wheel_path": "matplotlib/backends/backend_qt.py",
+      "size_bytes": 42312,
+      "sha256": "78b220ec6aa34a346a52d9ebe5952f0a0e436b041ec07e64b3d369a0c7cedd04"
+    },
+    {
+      "path": "matplotlib/backends/backend_qt5.py",
+      "wheel_path": "matplotlib/backends/backend_qt5.py",
+      "size_bytes": 787,
+      "sha256": "9337e8a3692c106b225806b62c6b596332af7f3a89256c863a886885c440bb58"
+    },
+    {
+      "path": "matplotlib/backends/backend_qt5agg.py",
+      "wheel_path": "matplotlib/backends/backend_qt5agg.py",
+      "size_bytes": 352,
+      "sha256": "561ec7f24a961f85fc6b7557d976765737bdb2bc096af90d1c0671749533fdb9"
+    },
+    {
+      "path": "matplotlib/backends/backend_qt5cairo.py",
+      "wheel_path": "matplotlib/backends/backend_qt5cairo.py",
+      "size_bytes": 292,
+      "sha256": "1a8d98d065645e1d7187ac78176e79fdee576f0c30b3e3a20f515cd3cd3913bf"
+    },
+    {
+      "path": "matplotlib/backends/backend_qtagg.py",
+      "wheel_path": "matplotlib/backends/backend_qtagg.py",
+      "size_bytes": 3413,
+      "sha256": "6633eda79c11ead6468db9e03d745d5576118623cfadce42d2ad839ad7519296"
+    },
+    {
+      "path": "matplotlib/backends/backend_qtcairo.py",
+      "wheel_path": "matplotlib/backends/backend_qtcairo.py",
+      "size_bytes": 1770,
+      "sha256": "7b74941b9d151aaa3af1e4bff1e6d309540f6b801ac4bc6ea35262597e132168"
+    },
+    {
+      "path": "matplotlib/backends/backend_svg.py",
+      "wheel_path": "matplotlib/backends/backend_svg.py",
+      "size_bytes": 51058,
+      "sha256": "98f956e7de3217557c87ca22591ce97d9c9fac6fa66727a10c31e6b8bfae32e2"
+    },
+    {
+      "path": "matplotlib/backends/backend_template.py",
+      "wheel_path": "matplotlib/backends/backend_template.py",
+      "size_bytes": 8012,
+      "sha256": "aa15af5c688f78eda3bc7eb52f73424582d17a8fbe778589ad061a9c86849a21"
+    },
+    {
+      "path": "matplotlib/backends/backend_tkagg.py",
+      "wheel_path": "matplotlib/backends/backend_tkagg.py",
+      "size_bytes": 592,
+      "sha256": "cfd801d7a7ead9df8350da5b7920c32d669899cd09cf7703a8d9412a19d08347"
+    },
+    {
+      "path": "matplotlib/backends/backend_tkcairo.py",
+      "wheel_path": "matplotlib/backends/backend_tkcairo.py",
+      "size_bytes": 845,
+      "sha256": "25a1865e1f18e45c1566d82bc88b9c37de353a57ff3e7e9fe117bb56ec65d7e7"
+    },
+    {
+      "path": "matplotlib/backends/backend_webagg.py",
+      "wheel_path": "matplotlib/backends/backend_webagg.py",
+      "size_bytes": 11014,
+      "sha256": "8d0841f49039b57711c26ebfeea941836f90f3fcbee619efd8850d04fa4249b0"
+    },
+    {
+      "path": "matplotlib/backends/backend_webagg_core.py",
+      "wheel_path": "matplotlib/backends/backend_webagg_core.py",
+      "size_bytes": 18748,
+      "sha256": "4598acc4b4bfa6872e051af9fe5a819c5f757e5400e6ea48f0f88ff3e662b65d"
+    },
+    {
+      "path": "matplotlib/backends/backend_wx.py",
+      "wheel_path": "matplotlib/backends/backend_wx.py",
+      "size_bytes": 51310,
+      "sha256": "038ced9cc955a3ea75cfbeee66f27eb098b2136d7f42bba3693c68e4fd6094e6"
+    },
+    {
+      "path": "matplotlib/backends/backend_wxagg.py",
+      "wheel_path": "matplotlib/backends/backend_wxagg.py",
+      "size_bytes": 1468,
+      "sha256": "b737306325b7e23e0b3df1e6f6e86e1f07a9c1921cb298b7cbca0f0bc14991d9"
+    },
+    {
+      "path": "matplotlib/backends/backend_wxcairo.py",
+      "wheel_path": "matplotlib/backends/backend_wxcairo.py",
+      "size_bytes": 848,
+      "sha256": "4cafa6dd2d1cd568a97ca13622920f35e1388685cf8df32f9d60331e9097a45b"
+    },
+    {
+      "path": "matplotlib/backends/qt_compat.py",
+      "wheel_path": "matplotlib/backends/qt_compat.py",
+      "size_bytes": 5346,
+      "sha256": "b7fe1a0f8ae0e66688b570012ed546e8921fb90c199c7c2131c8edcfa014c10b"
+    },
+    {
+      "path": "matplotlib/backends/qt_editor/__init__.py",
+      "wheel_path": "matplotlib/backends/qt_editor/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "matplotlib/backends/qt_editor/_formlayout.py",
+      "wheel_path": "matplotlib/backends/qt_editor/_formlayout.py",
+      "size_bytes": 20953,
+      "sha256": "426aaaa8b3bac1aa9e48638a8c3354c23be89f9dd9ef2aa297901fa9f7ed0d66"
+    },
+    {
+      "path": "matplotlib/backends/qt_editor/figureoptions.py",
+      "wheel_path": "matplotlib/backends/qt_editor/figureoptions.py",
+      "size_bytes": 9851,
+      "sha256": "96377b7c2062134924d804cd4da0790e0f14e869fb2f3e15862dd75fe55b5de1"
+    },
+    {
+      "path": "matplotlib/backends/registry.py",
+      "wheel_path": "matplotlib/backends/registry.py",
+      "size_bytes": 15480,
+      "sha256": "33604784129b509f04d81d901317d57fc35b00ae1916126d98a45e9416590e1e"
+    },
+    {
+      "path": "matplotlib/backends/web_backend/all_figures.html",
+      "wheel_path": "matplotlib/backends/web_backend/all_figures.html",
+      "size_bytes": 1753,
+      "sha256": "e3863e1af2096cd96a41a2925b793054aa53c41486d56b1d633dd99981e552c0"
+    },
+    {
+      "path": "matplotlib/backends/web_backend/css/boilerplate.css",
+      "wheel_path": "matplotlib/backends/web_backend/css/boilerplate.css",
+      "size_bytes": 2310,
+      "sha256": "aae8b5e905d19d014d2436dc31ab1f1fa2ad37d84b8eff3cf3753d7099ac5421"
+    },
+    {
+      "path": "matplotlib/backends/web_backend/css/fbm.css",
+      "wheel_path": "matplotlib/backends/web_backend/css/fbm.css",
+      "size_bytes": 1456,
+      "sha256": "c1ae2f36436fedf43f4ee7e326379c1591333cc47a5bcc7ab972606bfc1020bc"
+    },
+    {
+      "path": "matplotlib/backends/web_backend/css/mpl.css",
+      "wheel_path": "matplotlib/backends/web_backend/css/mpl.css",
+      "size_bytes": 1611,
+      "sha256": "aee71afda03990d9cff8c6662e4ae2bbcb5e54fd67220c1c144a68075ea3f19e"
+    },
+    {
+      "path": "matplotlib/backends/web_backend/css/page.css",
+      "wheel_path": "matplotlib/backends/web_backend/css/page.css",
+      "size_bytes": 1623,
+      "sha256": "71ade73b74da3f0efceb93cde529462414dcd87deb05740231a14fcb05f6f72e"
+    },
+    {
+      "path": "matplotlib/backends/web_backend/ipython_inline_figure.html",
+      "wheel_path": "matplotlib/backends/web_backend/ipython_inline_figure.html",
+      "size_bytes": 1311,
+      "sha256": "c204b1521df1a4f0313a766048c9eb8433398589dc39f5911a068251ecef79d6"
+    },
+    {
+      "path": "matplotlib/backends/web_backend/js/mpl.js",
+      "wheel_path": "matplotlib/backends/web_backend/js/mpl.js",
+      "size_bytes": 24432,
+      "sha256": "14015ff21b849afca625b4c7154439a5b42de3c36d5e637f0cd0023f67420ccc"
+    },
+    {
+      "path": "matplotlib/backends/web_backend/js/mpl_tornado.js",
+      "wheel_path": "matplotlib/backends/web_backend/js/mpl_tornado.js",
+      "size_bytes": 302,
+      "sha256": "66cd94ceced8522946efae6762f6a70a8f882bc1e41c3b48ba6d4a02ae9b43fc"
+    },
+    {
+      "path": "matplotlib/backends/web_backend/js/nbagg_mpl.js",
+      "wheel_path": "matplotlib/backends/web_backend/js/nbagg_mpl.js",
+      "size_bytes": 9514,
+      "sha256": "17e072e198ce4a6c29340931514c54937e6a0a31a57f4076f19d1a3b27e9c433"
+    },
+    {
+      "path": "matplotlib/backends/web_backend/single_figure.html",
+      "wheel_path": "matplotlib/backends/web_backend/single_figure.html",
+      "size_bytes": 1357,
+      "sha256": "c0407017ad3624b1c4ac15045e24ba8d7aa6c58008cc7a5adcc305ae77afeabb"
+    },
+    {
+      "path": "matplotlib/bezier.py",
+      "wheel_path": "matplotlib/bezier.py",
+      "size_bytes": 19049,
+      "sha256": "6a12750512684db73126836617598261cf7a996b398d23380ce2b9f2361a5e45"
+    },
+    {
+      "path": "matplotlib/bezier.pyi",
+      "wheel_path": "matplotlib/bezier.pyi",
+      "size_bytes": 2586,
+      "sha256": "8adb9b42dfd4d482a7439d3c6e1cba27c2d2a5ab29bd921e3a626a83b26f3a65"
+    },
+    {
+      "path": "matplotlib/category.py",
+      "wheel_path": "matplotlib/category.py",
+      "size_bytes": 7377,
+      "sha256": "52c67cadb003007f7a61fa630fe3750cb4dc4bf710c25b332084366516a25a6e"
+    },
+    {
+      "path": "matplotlib/cbook.py",
+      "wheel_path": "matplotlib/cbook.py",
+      "size_bytes": 80020,
+      "sha256": "9c5da1342febca225c79ce7c0a7a7fd26006483d0b7ec9e36f352e087e29f8eb"
+    },
+    {
+      "path": "matplotlib/cbook.pyi",
+      "wheel_path": "matplotlib/cbook.pyi",
+      "size_bytes": 6037,
+      "sha256": "6243d9cff6ec4d840943fc0ac7ea9bb0960b872dadda70b2bcb363272891b69c"
+    },
+    {
+      "path": "matplotlib/cm.py",
+      "wheel_path": "matplotlib/cm.py",
+      "size_bytes": 10350,
+      "sha256": "e716aff81bc9e2959255dbc6aa5e2861ce04a40f91e8eb943f9c63ad908c2af8"
+    },
+    {
+      "path": "matplotlib/cm.pyi",
+      "wheel_path": "matplotlib/cm.pyi",
+      "size_bytes": 939,
+      "sha256": "3ade63db30c7613adae242ae4f0c58a7b5f94ec37083f709b986bb071990cfe0"
+    },
+    {
+      "path": "matplotlib/collections.py",
+      "wheel_path": "matplotlib/collections.py",
+      "size_bytes": 96311,
+      "sha256": "e40717de54ec283d4e6d23a42ebfa2af360f7dd271b0dae0c397400fcf3abc21"
+    },
+    {
+      "path": "matplotlib/collections.pyi",
+      "wheel_path": "matplotlib/collections.pyi",
+      "size_bytes": 10775,
+      "sha256": "b99e1f3ddab7e28821744b52d54918ecfd28384da83d4cef4b40abd3dca4b5a4"
+    },
+    {
+      "path": "matplotlib/colorbar.py",
+      "wheel_path": "matplotlib/colorbar.py",
+      "size_bytes": 60687,
+      "sha256": "f8fc15df191ccdcc8fabd2a2ff37e941d3ffd44a8e141ce87944ac325505d9c1"
+    },
+    {
+      "path": "matplotlib/colorbar.pyi",
+      "wheel_path": "matplotlib/colorbar.pyi",
+      "size_bytes": 4966,
+      "sha256": "0b53738cc5852a6d35acf514af5e588f3d56074a466a425079ab493bb1b498db"
+    },
+    {
+      "path": "matplotlib/colorizer.py",
+      "wheel_path": "matplotlib/colorizer.py",
+      "size_bytes": 25180,
+      "sha256": "473134ce3a81e9e96991eb4a89dcba9fe4510db605f7cb2978420e20c7c815be"
+    },
+    {
+      "path": "matplotlib/colorizer.pyi",
+      "wheel_path": "matplotlib/colorizer.pyi",
+      "size_bytes": 3308,
+      "sha256": "07fe7eac4bcda380db95289f2e875fdce55511cddb4c6b0862aa9a41d53fe13c"
+    },
+    {
+      "path": "matplotlib/colors.py",
+      "wheel_path": "matplotlib/colors.py",
+      "size_bytes": 137303,
+      "sha256": "875615e7dcb85afb2d38f0b4c7c799cf01d822d6a5ed58e355cc954b79e26923"
+    },
+    {
+      "path": "matplotlib/colors.pyi",
+      "wheel_path": "matplotlib/colors.pyi",
+      "size_bytes": 14908,
+      "sha256": "5e10a2dccb604a8cce6391404ed3d41f228ee3132bbe2ed3bdb08097bd785317"
+    },
+    {
+      "path": "matplotlib/container.py",
+      "wheel_path": "matplotlib/container.py",
+      "size_bytes": 4565,
+      "sha256": "63abf88fbf60324f100d87eb74ea9b6c91c7d01a0e20ef5e9f3e1db656814895"
+    },
+    {
+      "path": "matplotlib/container.pyi",
+      "wheel_path": "matplotlib/container.pyi",
+      "size_bytes": 1805,
+      "sha256": "0ddb611d58f5f9b41057755ca4c0f5b883cb5d550ac8a856317cbcc829e22b52"
+    },
+    {
+      "path": "matplotlib/contour.py",
+      "wheel_path": "matplotlib/contour.py",
+      "size_bytes": 68479,
+      "sha256": "25058dc67c40bfd935ed1f2ae6e8b0c836a9435ce1a0840b8c2958e93ad30e9c"
+    },
+    {
+      "path": "matplotlib/contour.pyi",
+      "wheel_path": "matplotlib/contour.pyi",
+      "size_bytes": 5300,
+      "sha256": "5f80d21f4bb560552f2b1ba802ff186e654e25327ec1b1e28389739f386c2345"
+    },
+    {
+      "path": "matplotlib/dates.py",
+      "wheel_path": "matplotlib/dates.py",
+      "size_bytes": 66306,
+      "sha256": "c5f70563783702c5bd8ac9c420a1468f8817ab45dea31a31ff77f13420d0d357"
+    },
+    {
+      "path": "matplotlib/dviread.py",
+      "wheel_path": "matplotlib/dviread.py",
+      "size_bytes": 42590,
+      "sha256": "06a420d1fa970ff4e600124f4960c2f87d9acedec1e7735f384d520ba99b5e22"
+    },
+    {
+      "path": "matplotlib/dviread.pyi",
+      "wheel_path": "matplotlib/dviread.pyi",
+      "size_bytes": 2139,
+      "sha256": "e5fa6cdc688f7f589b298d531fafff90d12227dc61a5583381a8adea3a34f477"
+    },
+    {
+      "path": "matplotlib/figure.py",
+      "wheel_path": "matplotlib/figure.py",
+      "size_bytes": 142126,
+      "sha256": "1c9374e5dcad6ae2702a6dcdc8052cb587ea39362ec5445c245ce44c0ce8698a"
+    },
+    {
+      "path": "matplotlib/figure.pyi",
+      "wheel_path": "matplotlib/figure.pyi",
+      "size_bytes": 14914,
+      "sha256": "ad138ff30bcf99e4b04caa09c05696b021c5a598df80393fec7134c0f7d94118"
+    },
+    {
+      "path": "matplotlib/font_manager.py",
+      "wheel_path": "matplotlib/font_manager.py",
+      "size_bytes": 57651,
+      "sha256": "119f931d556373a707f7a0709645c98e7866b385331e6246b09bba79a6acc576"
+    },
+    {
+      "path": "matplotlib/font_manager.pyi",
+      "wheel_path": "matplotlib/font_manager.pyi",
+      "size_bytes": 5052,
+      "sha256": "26c7b522c84e7638571dd8dcbd3c6da2cdeb82cb8409b449cdcdbae00f991aeb"
+    },
+    {
+      "path": "matplotlib/ft2font.cpython-310-x86_64-linux-gnu.so",
+      "wheel_path": "matplotlib/ft2font.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 1449608,
+      "sha256": "d2da887bd5aba8f90b9726beefe1a4dd174e541ef39952f69b3492df0591a9ba"
+    },
+    {
+      "path": "matplotlib/ft2font.pyi",
+      "wheel_path": "matplotlib/ft2font.pyi",
+      "size_bytes": 9259,
+      "sha256": "8f0f3208c62d028d1c8276ae4b7372a020d6f414df3a085c9ec0817f08dbdae1"
+    },
+    {
+      "path": "matplotlib/gridspec.py",
+      "wheel_path": "matplotlib/gridspec.py",
+      "size_bytes": 29786,
+      "sha256": "b3a4645c49383915ac3078d790af7c66fa2c6790feaa07a754d934848bccc0ec"
+    },
+    {
+      "path": "matplotlib/gridspec.pyi",
+      "wheel_path": "matplotlib/gridspec.pyi",
+      "size_bytes": 5099,
+      "sha256": "dc8422fd0e4a770c8f4ff27f156727809ee250e3821f83d29b8d944a6d7a39f8"
+    },
+    {
+      "path": "matplotlib/hatch.py",
+      "wheel_path": "matplotlib/hatch.py",
+      "size_bytes": 7453,
+      "sha256": "b5f10cd03431c8b91413cee51ddb8c365139e4628836d019a3863f62c026489a"
+    },
+    {
+      "path": "matplotlib/hatch.pyi",
+      "wheel_path": "matplotlib/hatch.pyi",
+      "size_bytes": 2098,
+      "sha256": "38416435ef1382b0658bf303316f7d4ef86be384b8c923da610a268d55e95140"
+    },
+    {
+      "path": "matplotlib/image.py",
+      "wheel_path": "matplotlib/image.py",
+      "size_bytes": 69765,
+      "sha256": "30b160d3a276c65966d6d9a00e794b630f204f2efffcd1a791fe1264ffb7992b"
+    },
+    {
+      "path": "matplotlib/image.pyi",
+      "wheel_path": "matplotlib/image.pyi",
+      "size_bytes": 7066,
+      "sha256": "47cf1a186bbac0fd2514a46e75a33b88dc4682ae2487db97f5045a652a2b4cb4"
+    },
+    {
+      "path": "matplotlib/inset.py",
+      "wheel_path": "matplotlib/inset.py",
+      "size_bytes": 10154,
+      "sha256": "7c957c54c318d3bffdee2251dff44ef3dd9600a13b9b27d5fc6aa0faa2bdf6f8"
+    },
+    {
+      "path": "matplotlib/inset.pyi",
+      "wheel_path": "matplotlib/inset.pyi",
+      "size_bytes": 968,
+      "sha256": "73e2155b5e1ba6a6f7aaeedbcf411a6ef3572676702405c45e842821cacbf27b"
+    },
+    {
+      "path": "matplotlib/layout_engine.py",
+      "wheel_path": "matplotlib/layout_engine.py",
+      "size_bytes": 11433,
+      "sha256": "9b044d875de6210fb0a63415801681fcb58a3750224135a5760f97f672e65689"
+    },
+    {
+      "path": "matplotlib/layout_engine.pyi",
+      "wheel_path": "matplotlib/layout_engine.pyi",
+      "size_bytes": 1788,
+      "sha256": "f5c2854c53c2bf098a23281352faef3aad625a715899ef528678a2bf641b0bbe"
+    },
+    {
+      "path": "matplotlib/legend.py",
+      "wheel_path": "matplotlib/legend.py",
+      "size_bytes": 55343,
+      "sha256": "e4d0cf6d6aa488890fd45277b0b36a99ec368e43636b041fd86fc1a99346feee"
+    },
+    {
+      "path": "matplotlib/legend.pyi",
+      "wheel_path": "matplotlib/legend.pyi",
+      "size_bytes": 5364,
+      "sha256": "867f8c345dd23c7b5252a221c155d379b53f37393fc0887988a81fec01006518"
+    },
+    {
+      "path": "matplotlib/legend_handler.py",
+      "wheel_path": "matplotlib/legend_handler.py",
+      "size_bytes": 29872,
+      "sha256": "7a48594d3d57f7241ded334845dbbfbee8b9151d824e62343564c5253a85d4de"
+    },
+    {
+      "path": "matplotlib/legend_handler.pyi",
+      "wheel_path": "matplotlib/legend_handler.pyi",
+      "size_bytes": 7655,
+      "sha256": "dd511f7a2a06200c617779a18383d711366308a7f83a55cbd23cf5300146b68b"
+    },
+    {
+      "path": "matplotlib/lines.py",
+      "wheel_path": "matplotlib/lines.py",
+      "size_bytes": 57920,
+      "sha256": "046df1853bb3603163cdffa4e4271073f57b5b81e5425e022fb442410cf4102f"
+    },
+    {
+      "path": "matplotlib/lines.pyi",
+      "wheel_path": "matplotlib/lines.pyi",
+      "size_bytes": 6081,
+      "sha256": "ded1bbb43f0667c60fa61c389e69204bd49f74b57c89c5b7e9bbfad636fd4655"
+    },
+    {
+      "path": "matplotlib/markers.py",
+      "wheel_path": "matplotlib/markers.py",
+      "size_bytes": 33708,
+      "sha256": "83aba47ab6799ffb03fc49e4d1e240e24913bce3a9f007d2181abad0f1e8b7e1"
+    },
+    {
+      "path": "matplotlib/markers.pyi",
+      "wheel_path": "matplotlib/markers.pyi",
+      "size_bytes": 1678,
+      "sha256": "145141b2f8a59db77cfb92f4e14ef491f568c81c1cd7cc3f7d9e83cac4e3f69d"
+    },
+    {
+      "path": "matplotlib/mathtext.py",
+      "wheel_path": "matplotlib/mathtext.py",
+      "size_bytes": 5104,
+      "sha256": "c9396951f9cac73ac597b5cd8f2b82fb1301067c54b9f53a195c10ca1400236a"
+    },
+    {
+      "path": "matplotlib/mathtext.pyi",
+      "wheel_path": "matplotlib/mathtext.pyi",
+      "size_bytes": 1045,
+      "sha256": "44257160643f089eb00bbbff1e4aa8a2e5363e1b5cbe52757df232c73002faca"
+    },
+    {
+      "path": "matplotlib/mlab.py",
+      "wheel_path": "matplotlib/mlab.py",
+      "size_bytes": 30210,
+      "sha256": "4fbd69e31d0a24d546af052ea03760723590b9c2104ee56ba1c382f7c65dc2c7"
+    },
+    {
+      "path": "matplotlib/mlab.pyi",
+      "wheel_path": "matplotlib/mlab.pyi",
+      "size_bytes": 3583,
+      "sha256": "9a447bc1b252f5e0907c216c516a179eaac0cb491c137715aa915909e3860bf4"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/cmex10.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/cmex10.afm",
+      "size_bytes": 12070,
+      "sha256": "6e54771119ab5415795ca9009c30a3e0d31e6158331fb717b49deee7dbbd1ae1"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/cmmi10.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/cmmi10.afm",
+      "size_bytes": 10416,
+      "sha256": "e6ac043a979d128efa6c351a872bae175ab4703f38b51ad7f95438a773257c1a"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/cmr10.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/cmr10.afm",
+      "size_bytes": 10101,
+      "sha256": "583be00bf0f752418983dbbe27453a45a4f4da5178a33de54311ed835af7958c"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/cmsy10.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/cmsy10.afm",
+      "size_bytes": 8295,
+      "sha256": "01b9b3bc255605c78745f9917de27d13ac733904c52e4d14d730dfa5fdff31a3"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/cmtt10.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/cmtt10.afm",
+      "size_bytes": 6501,
+      "sha256": "e238bbfe64e979631af77a3f5070563ca0a7aac05f84924d9656add65240acfe"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pagd8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pagd8a.afm",
+      "size_bytes": 17183,
+      "sha256": "8e316b8a0c244e960ba9adba729cd9bca40d068f8fb85e1b98356a68ce29316c"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pagdo8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pagdo8a.afm",
+      "size_bytes": 17255,
+      "sha256": "b2035075e632c7c27e8ad1b0f61df5cbde5a301893091be63523d35f0c12ef18"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pagk8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pagk8a.afm",
+      "size_bytes": 17241,
+      "sha256": "654b5f1cf96836a72f18c1ccc5a2834a5b2184e723c21794c75e37470a467485"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pagko8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pagko8a.afm",
+      "size_bytes": 17346,
+      "sha256": "623d70060e89b2aab3d4a05f851a09dc0091f82310a25f058ff64ce4d6758039"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pbkd8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pbkd8a.afm",
+      "size_bytes": 15157,
+      "sha256": "665e68e89fdd8bd6398f61291ed8dec3efec7e0efe5a879598ef4fcce6124d47"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pbkdi8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pbkdi8a.afm",
+      "size_bytes": 15278,
+      "sha256": "2403a7a3ddf4893c9f6482cc7f5d6f5ad89a4e0ac970fa4fe8545346110c303e"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pbkl8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pbkl8a.afm",
+      "size_bytes": 15000,
+      "sha256": "509a898ce27ac500e00c12d7d79ee62a9a2120915598733e37ac76f83886bf5e"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pbkli8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pbkli8a.afm",
+      "size_bytes": 15181,
+      "sha256": "0168ac959da10dbb34a31fea396444ba0b1b4bcffc9692f8f0b3cc478d2aa62d"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pcrb8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pcrb8a.afm",
+      "size_bytes": 15352,
+      "sha256": "ea3d534b651cec359273ef25e364c60dcd6ed0583c26ca5e59fc456b28d4c22f"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pcrbo8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pcrbo8a.afm",
+      "size_bytes": 15422,
+      "sha256": "b268379a397d41a043b5022dd3a928e46bdac4bb0ef50b53bd800db84e617c6d"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pcrr8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pcrr8a.afm",
+      "size_bytes": 15339,
+      "sha256": "ee7c45af4121cf8139286ff3484e5264e871447f0cc9f9c26f0fbbc79c2eeedc"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pcrro8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pcrro8a.afm",
+      "size_bytes": 15443,
+      "sha256": "34a133ed7b5d16487d700f0cbd8f92dd4399955d98fc9ded3045851718fb4128"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/phvb8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/phvb8a.afm",
+      "size_bytes": 17155,
+      "sha256": "340c783381e32fbbc034225b73eb64d38564a25f93d28697790dd3da1f9752f3"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/phvb8an.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/phvb8an.afm",
+      "size_bytes": 17086,
+      "sha256": "f1efe6c83f80424345eeaf5734b6f69bbebf957d9352bddae70a20fcb204d6c9"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/phvbo8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/phvbo8a.afm",
+      "size_bytes": 17230,
+      "sha256": "f1f90146627e49663662b060f1f1728c9cab269f1d690e893cee8bbe133cc4f2"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/phvbo8an.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/phvbo8an.afm",
+      "size_bytes": 17195,
+      "sha256": "69e551bd5e2bd79041bf1b91274306f191ee1f61d58ae22209892fb9aa669263"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/phvl8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/phvl8a.afm",
+      "size_bytes": 15627,
+      "sha256": "23231833e6e097e808eab1b412e659d8e2f397125f19e4a1f31aac874b7e7894"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/phvlo8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/phvlo8a.afm",
+      "size_bytes": 15729,
+      "sha256": "b35d82f9e3672031c9fd455bba2a6b8f10630a21c86d2dd8f0e4530bea93a6e2"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/phvr8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/phvr8a.afm",
+      "size_bytes": 17839,
+      "sha256": "2adf0a69189db6cf3d10120adbd5f62689835040f1beba1e689cff44d4e2eabe"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/phvr8an.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/phvr8an.afm",
+      "size_bytes": 17781,
+      "sha256": "94be5f0074d1c0e0e5fac079987ec87ec0f5b679de6b8c9150afbf09ad9b4073"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/phvro8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/phvro8a.afm",
+      "size_bytes": 17919,
+      "sha256": "dcaa8adde7a3891e21205054ca7b925ffe2531d1365764f9f31385f255fe7f07"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/phvro8an.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/phvro8an.afm",
+      "size_bytes": 17877,
+      "sha256": "571f6b45fdd87dab0c63bb73fa78d2c73ebbc472a4f9f36437bc818b45f620fd"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pncb8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pncb8a.afm",
+      "size_bytes": 16028,
+      "sha256": "6a85dea5370342d41afe6b297e530990414a79fcd71e8ca3cfa8a825523460d7"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pncbi8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pncbi8a.afm",
+      "size_bytes": 17496,
+      "sha256": "a42596d4c620cb4126bf0698b1a60968023f2dfaec2a60c0347bbb3e4d116a25"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pncr8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pncr8a.afm",
+      "size_bytes": 16665,
+      "sha256": "d02201d812def6bfbafd697939b4534dff7c50eadece6190f193ae057e642e4b"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pncri8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pncri8a.afm",
+      "size_bytes": 16920,
+      "sha256": "e51fa92d93a7687346f298d5e8c3f7022f9dd8e4d0611fdc6026f9cd08737d25"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pplb8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pplb8a.afm",
+      "size_bytes": 15662,
+      "sha256": "dc4cd46cd9d7af916de5e14b634d16f685aee7dac73918035d4b8968ea0a379f"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pplbi8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pplbi8a.afm",
+      "size_bytes": 15810,
+      "sha256": "5fff6d56ca6fadc31eaf7392f2abddc23145aa90176199dec822f634703dd368"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pplr8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pplr8a.afm",
+      "size_bytes": 15752,
+      "sha256": "8a331be3dec50c9f6755d54c6f6d45ed6dfe72ef6c6fff67174a2b885a529fc9"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pplri8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pplri8a.afm",
+      "size_bytes": 15733,
+      "sha256": "f0a2136daadc514322fe176844b2e6347b65aacd13b4e48aaad3c57eded7e676"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/psyr.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/psyr.afm",
+      "size_bytes": 9644,
+      "sha256": "232b7c6a31380764e6df8a018f6a4ab5cb487fd90f7ead39b2e41e7eaf29dd1a"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/ptmb8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/ptmb8a.afm",
+      "size_bytes": 17983,
+      "sha256": "6cbd5f035342e3f9d6d7866b9f1cf89c795725be1dcc42c93efa1da8a9d878c8"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/ptmbi8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/ptmbi8a.afm",
+      "size_bytes": 18070,
+      "sha256": "fbf522e9794a6854c71279284bffb51ad22be55b466b78054367b32ce607b34f"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/ptmr8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/ptmr8a.afm",
+      "size_bytes": 17942,
+      "sha256": "20472c59c9b32728c2c2482cc38a3a848326ce5c975209496adf6cd4f64d9c45"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/ptmri8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/ptmri8a.afm",
+      "size_bytes": 18068,
+      "sha256": "e3d7d0320e5f20682e67bae073fdacb7230ae793efe5b3d3b3bc02ceaa5c1a99"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/putb8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/putb8a.afm",
+      "size_bytes": 21532,
+      "sha256": "a8c6874dda64acd2fe9b80d6863a712424a6818902bf5a88ccb9457ccd2b978d"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/putbi8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/putbi8a.afm",
+      "size_bytes": 21931,
+      "sha256": "83b015272893c5e329364ff57127e6620334f6e3547cf959c961afdc3d6f7009"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/putr8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/putr8a.afm",
+      "size_bytes": 22148,
+      "sha256": "5d898d0b919081254064a4c861d61e364b04eb39cd9bd185ff44a6425ae2ab1d"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/putri8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/putri8a.afm",
+      "size_bytes": 21891,
+      "sha256": "8bb7d57be88bc8bb50c427c06b82317711feb9f70798c93b85b0861b94f1018e"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pzcmi8a.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pzcmi8a.afm",
+      "size_bytes": 16250,
+      "sha256": "c32ba821611939ca17ad2975b4fccb9046a18a4ee41a2f752498feb641511b80"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/afm/pzdr.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/afm/pzdr.afm",
+      "size_bytes": 9467,
+      "sha256": "3328cb027cca61175005fa1fd56de4fe17f7d0cbea3a4a8bfff1b6da6439c70c"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/pdfcorefonts/Courier-Bold.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/pdfcorefonts/Courier-Bold.afm",
+      "size_bytes": 15333,
+      "sha256": "b080c323e07cd956770b4988fe61c5213099ecf567dfb00860cbf50ab1d7e2c1"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/pdfcorefonts/Courier-BoldOblique.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/pdfcorefonts/Courier-BoldOblique.afm",
+      "size_bytes": 15399,
+      "sha256": "ce0eb54286c3dd853d5017c25e6be684135a14a9e8fb18fcb18d1bd91a607cbc"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/pdfcorefonts/Courier-Oblique.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/pdfcorefonts/Courier-Oblique.afm",
+      "size_bytes": 15441,
+      "sha256": "bd1426e63d6c4d4378862713d4f71567d3fd0d34d41e11337cf5ea514cd56611"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/pdfcorefonts/Courier.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/pdfcorefonts/Courier.afm",
+      "size_bytes": 15335,
+      "sha256": "31d72adad79910126b22a5579ec9e179eee86674ecebe3fcff6f76916193af0e"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/pdfcorefonts/Helvetica-Bold.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/pdfcorefonts/Helvetica-Bold.afm",
+      "size_bytes": 69269,
+      "sha256": "8b697881c8ee617a177f6f2e2bbc88570b9fd2b9f0e89ecfc0f5507878f988fc"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/pdfcorefonts/Helvetica-BoldOblique.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/pdfcorefonts/Helvetica-BoldOblique.afm",
+      "size_bytes": 69365,
+      "sha256": "526e4eeaa2b5d435cbb7cba3ff42285a473ce132aa1caddb39b48a52cc10aaf6"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/pdfcorefonts/Helvetica-Oblique.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/pdfcorefonts/Helvetica-Oblique.afm",
+      "size_bytes": 74392,
+      "sha256": "8556038366f9da4aad6d5782ce68afdb96d6d7261da64652f8b5e519110dd91b"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/pdfcorefonts/Helvetica.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/pdfcorefonts/Helvetica.afm",
+      "size_bytes": 74292,
+      "sha256": "db772f2830fb6d000907791d8d26a12524d96943a9a739e520ee855c6b25c96f"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/pdfcorefonts/Symbol.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/pdfcorefonts/Symbol.afm",
+      "size_bytes": 9740,
+      "sha256": "3f951aa17af8cb4aa1e1288c6b9baa8a30d3e990ebdbe8cf9a3d5acabcb9f771"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/pdfcorefonts/Times-Bold.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/pdfcorefonts/Times-Bold.afm",
+      "size_bytes": 64251,
+      "sha256": "7104e6af62c53f029013fb0641a81e31c98589c8f27b5ea6289b25b092c74321"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/pdfcorefonts/Times-BoldItalic.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/pdfcorefonts/Times-BoldItalic.afm",
+      "size_bytes": 59642,
+      "sha256": "a7358e772726e91aa87015a001563926ad33dc5a7b2eea9680b34cc78aba385c"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/pdfcorefonts/Times-Italic.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/pdfcorefonts/Times-Italic.afm",
+      "size_bytes": 66328,
+      "sha256": "6cae69b92329193fd85082f0c89ad7a318df8fb5c939d7efe5343f88ab09473c"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/pdfcorefonts/Times-Roman.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/pdfcorefonts/Times-Roman.afm",
+      "size_bytes": 60460,
+      "sha256": "86136b527a5acee0c3283d56a6b68fc6a3d60982eb3bb0fb6cc54e83ecc8d77a"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/pdfcorefonts/ZapfDingbats.afm",
+      "wheel_path": "matplotlib/mpl-data/fonts/pdfcorefonts/ZapfDingbats.afm",
+      "size_bytes": 9527,
+      "sha256": "66e3a6b7d19c2a87e374eabc92a84f86d00884ec242f6ad3253999c408c56a40"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/pdfcorefonts/readme.txt",
+      "wheel_path": "matplotlib/mpl-data/fonts/pdfcorefonts/readme.txt",
+      "size_bytes": 828,
+      "sha256": "311bfca694884d86006fb96de443b0f4359635921b95fc6c161bb94d013b7292"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf",
+      "size_bytes": 704128,
+      "sha256": "b184b89e3c1075f22f6b71575b6fc20d4972b3cfd3b23322ca6fd596dcaef167"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf",
+      "size_bytes": 641720,
+      "sha256": "6edf0283160186af451cbee71e7b845f2e4cabf264bb992ce668c83c25465e6f"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf",
+      "size_bytes": 633840,
+      "sha256": "ccdf74b350f11fd3dd5774de50e5e6346a1a5da1f5b7d5fb83590665e97a5213"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf",
+      "size_bytes": 756072,
+      "sha256": "3fdf69cabf06049ea70a00b5919340e2ce1e6d02b0cc3c4b44fb6801bd1e0d22"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf",
+      "size_bytes": 25712,
+      "sha256": "82099dcfba5aa868cdfc27451989525fe3292f737fb3c9e0328ce9cef59652f6"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf",
+      "size_bytes": 331536,
+      "sha256": "baada9a5172fe20886251aff0433fc38461912d5daf07287e7bee56620a8da96"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf",
+      "size_bytes": 253116,
+      "sha256": "a69081c15c76c827e0a27a5a7f5c74b6135c843499955495ffa8c20d3a98288b"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf",
+      "size_bytes": 251472,
+      "sha256": "28052813f7a709fc89f52d192dc995ef4f0fdc5c3d7b73a49d6849b1916d0cd0"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf",
+      "size_bytes": 340240,
+      "sha256": "602ec86b8948cfcd956482fe64f94c36c867770149ef2f791d4613f443bcecb3"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf",
+      "size_bytes": 355692,
+      "sha256": "c3753f2ed6bc673f15846dc45addbeb3b9c872f32fb18fd53a21f1bef1ed7676"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf",
+      "size_bytes": 347064,
+      "sha256": "d93efec7a9d2e826768d1a2ee95b95870e15e29599a84f3484af1de1cec2e181"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf",
+      "size_bytes": 345612,
+      "sha256": "3e7994fbc54fa10ce3352a42d548fadd7d9cadb69cb1109bc9d960f6dac57f04"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf",
+      "size_bytes": 379740,
+      "sha256": "107244956e9962b9e96faccdc551825e0ae0898ae13737133e1b921a2fd35ffa"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf",
+      "size_bytes": 14300,
+      "sha256": "2914f32e47c777c27be5677afae7db4de79f9e45de6fc9097d9949c23c14f7d5"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/LICENSE_DEJAVU",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/LICENSE_DEJAVU",
+      "size_bytes": 4816,
+      "sha256": "d75938dec098f06f0ac3c00853065d94f020be1c3c62ef1dc2975ba15b4d9b0e"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/LICENSE_STIX",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/LICENSE_STIX",
+      "size_bytes": 5476,
+      "sha256": "bab3d31dfef07f483624f2f65f2711e76065b8e7273278b1c071ede1041c9959"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf",
+      "size_bytes": 448228,
+      "sha256": "167378031e2dddc6216d67819c9260e9a06ffc4c478e4e23cb98a6fd44b183c2"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf",
+      "size_bytes": 237360,
+      "sha256": "e8533dc7083fa346bda1933d60ea4a83b67d0945bceaf1b3541f82b4a0e2c6a0"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf",
+      "size_bytes": 181152,
+      "sha256": "98788fd4ba48dfbb2bd026c0e20a247a8b06c7372879628b7a6bb0d5bb09736c"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf",
+      "size_bytes": 175040,
+      "sha256": "6cfcb333d22b7c3c623bdfd40174f14c85c3d6731ca6166c1edc80140eae8527"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf",
+      "size_bytes": 59108,
+      "sha256": "5256f7e021335ac4854d180f0e8bf198964ec2fc820176276e16aabc6537bb57"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf",
+      "size_bytes": 30512,
+      "sha256": "5d106a5b78d1ffc30174553439b86257bfa45f088120cb3b4150a51dc4f9b60b"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf",
+      "size_bytes": 41272,
+      "sha256": "a5bdb60e76c37f6c90aa2ce8b5cdf0043a85182fe0dbb61c086262bc7f7e2def"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf",
+      "size_bytes": 46752,
+      "sha256": "04cafda56881bf660865dab4e17e1cdc280be8d3cb50fae5eb8695d4de30f548"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf",
+      "size_bytes": 13656,
+      "sha256": "c18b87d60614a42baeb2a22d447e647fda7fb3a9940fef57dcbe51bd1b4a4b1b"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf",
+      "size_bytes": 12228,
+      "sha256": "c8d76f8d4a129ac64250b983ed256af4769b9dd1bd3f874f85ba0bd49a407f4b"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf",
+      "size_bytes": 15972,
+      "sha256": "fbdc553182f8ff5adc3bc16208aac27d1e0f69298ab40e3675d2c6ab0b5e8b5c"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf",
+      "size_bytes": 12556,
+      "sha256": "7187b1ca8f2b65c76a325a5af5f345e5ad88a172d44d9b88be1d090f5429d22e"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf",
+      "size_bytes": 19760,
+      "sha256": "d256c7ce99ddcc998ef12e369a5921b33e4d6ef24b402687e4c71ced06510f37"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf",
+      "size_bytes": 12192,
+      "sha256": "dde05cf95b586e1414dc19f18b2a5f3ba780cc4bbc05d0efb4825215b912da86"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf",
+      "size_bytes": 15836,
+      "sha256": "5c548a0a9b5b11233cbb11ed5054805767326f0c614a377c756541caae9fdf0d"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf",
+      "size_bytes": 12116,
+      "sha256": "3140981eb03466a162484fcf8c81a525980cbafefd694810a84ec3b6ede4ba8d"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf",
+      "size_bytes": 15704,
+      "sha256": "fec7710ee130043b400e9bbd0b221743157bb08a80d93655042522523ab95029"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/cmb10.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/cmb10.ttf",
+      "size_bytes": 25680,
+      "sha256": "074497b50c43ea57597181591f9893d38fc12a87e95104f5657fc2481f61a23a"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/cmex10.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/cmex10.ttf",
+      "size_bytes": 21092,
+      "sha256": "af28f0c170723ac776a71bfa595aca09e98d15ae5c3d54ce19afd5619c96a905"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/cmmi10.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/cmmi10.ttf",
+      "size_bytes": 32560,
+      "sha256": "3092965b8811fd6a6765799664845181fc1dd1330b937f915808c485d316234d"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/cmr10.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/cmr10.ttf",
+      "size_bytes": 26348,
+      "sha256": "4dd9761b058c009db9b2145f55ee6617d093c273dd3d6c5b3e43ff6110fa9bf6"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/cmss10.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/cmss10.ttf",
+      "size_bytes": 20376,
+      "sha256": "7df91a83d05b2e471ec638cb0b435a360a3c792b09fc42a7da67e91f2e79115a"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/cmsy10.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/cmsy10.ttf",
+      "size_bytes": 29396,
+      "sha256": "bb226ed932f3f100cd0e52f5e4912ee553b41b69e7bfdb8d3854db0eb6605232"
+    },
+    {
+      "path": "matplotlib/mpl-data/fonts/ttf/cmtt10.ttf",
+      "wheel_path": "matplotlib/mpl-data/fonts/ttf/cmtt10.ttf",
+      "size_bytes": 28136,
+      "sha256": "6211f09ae93599991afda970c24669dad1a77e253d915624fbf212f702f071d7"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/back-symbolic.svg",
+      "wheel_path": "matplotlib/mpl-data/images/back-symbolic.svg",
+      "size_bytes": 1532,
+      "sha256": "3a48ffadeb2c6647dee84c2ffe8ec6179b68739a9609e164436707436e417551"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/back.pdf",
+      "wheel_path": "matplotlib/mpl-data/images/back.pdf",
+      "size_bytes": 1623,
+      "sha256": "651ec2268fdd01e08cf8a95a1afb2482d1d0c91b6b3c8a2573c4443a6728a899"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/back.png",
+      "wheel_path": "matplotlib/mpl-data/images/back.png",
+      "size_bytes": 380,
+      "sha256": "1387467f81a7cf5c49d6fdad33280757460d4204a1ade0de540a5a31bfbbe265"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/back.svg",
+      "wheel_path": "matplotlib/mpl-data/images/back.svg",
+      "size_bytes": 1532,
+      "sha256": "3a48ffadeb2c6647dee84c2ffe8ec6179b68739a9609e164436707436e417551"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/back_large.png",
+      "wheel_path": "matplotlib/mpl-data/images/back_large.png",
+      "size_bytes": 620,
+      "sha256": "f40ea151241eb3385838d13866e1f792f388b4cd097c356eead91fae89826ec4"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/filesave-symbolic.svg",
+      "wheel_path": "matplotlib/mpl-data/images/filesave-symbolic.svg",
+      "size_bytes": 2049,
+      "sha256": "74c197bcb48e1cfbb8e24896819c7e07f332fed2d668fe89e8683125f2f8156d"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/filesave.pdf",
+      "wheel_path": "matplotlib/mpl-data/images/filesave.pdf",
+      "size_bytes": 1734,
+      "sha256": "3f510f3d5da0e74593b7c51a5feea41684d9335c55aa8e92d87e8527a65dd5e7"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/filesave.png",
+      "wheel_path": "matplotlib/mpl-data/images/filesave.png",
+      "size_bytes": 458,
+      "sha256": "6fb72db9caccfc5da61be0f271379d1bf6bfcb8a47931dc5fb333b975f062e19"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/filesave.svg",
+      "wheel_path": "matplotlib/mpl-data/images/filesave.svg",
+      "size_bytes": 2049,
+      "sha256": "74c197bcb48e1cfbb8e24896819c7e07f332fed2d668fe89e8683125f2f8156d"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/filesave_large.png",
+      "wheel_path": "matplotlib/mpl-data/images/filesave_large.png",
+      "size_bytes": 720,
+      "sha256": "2cd6d10f9299dca7fb9dba7eb2dc7f6b5ffa5df18149651f0dda609a7ce846f9"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/forward-symbolic.svg",
+      "wheel_path": "matplotlib/mpl-data/images/forward-symbolic.svg",
+      "size_bytes": 1551,
+      "sha256": "90e88aab76b89a278c44b542c1005d38c4d1ad61b634e5ffe7eadb0051e97664"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/forward.pdf",
+      "wheel_path": "matplotlib/mpl-data/images/forward.pdf",
+      "size_bytes": 1630,
+      "sha256": "288a882f8608778dcb91c3b157f4d3e6ebf3d523fc939894354789980125315f"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/forward.png",
+      "wheel_path": "matplotlib/mpl-data/images/forward.png",
+      "size_bytes": 357,
+      "sha256": "a4a6cb7a98068867b26364c2065f2cbe3be6ed9e024b78b2b05c5cab8191fb09"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/forward.svg",
+      "wheel_path": "matplotlib/mpl-data/images/forward.svg",
+      "size_bytes": 1551,
+      "sha256": "90e88aab76b89a278c44b542c1005d38c4d1ad61b634e5ffe7eadb0051e97664"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/forward_large.png",
+      "wheel_path": "matplotlib/mpl-data/images/forward_large.png",
+      "size_bytes": 593,
+      "sha256": "dfa87b9bb0d90c7aa5ea491da4d3dc9328b62ca09eff1861c9abd6011cffda44"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/hand.pdf",
+      "wheel_path": "matplotlib/mpl-data/images/hand.pdf",
+      "size_bytes": 4172,
+      "sha256": "86ca7090d63dd7928f0fb00c5a7550b3b2c53ceb65723d155222eeefa74c69b4"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/hand.png",
+      "wheel_path": "matplotlib/mpl-data/images/hand.png",
+      "size_bytes": 979,
+      "sha256": "d9c7214444c629ad2160d294c672400709326171013ea272fd5a923e54f45b64"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/hand.svg",
+      "wheel_path": "matplotlib/mpl-data/images/hand.svg",
+      "size_bytes": 4906,
+      "sha256": "871c41b5a91a54503b9a964e19a92fa3441471bdb1d3aae88de4b9827566cae7"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/help-symbolic.svg",
+      "wheel_path": "matplotlib/mpl-data/images/help-symbolic.svg",
+      "size_bytes": 1890,
+      "sha256": "5d570572ecdc2f7490dcb8df49bb5d2d80e3a01e585248f68e4d8693cbda645f"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/help.pdf",
+      "wheel_path": "matplotlib/mpl-data/images/help.pdf",
+      "size_bytes": 1813,
+      "sha256": "09e13defc20c8b4616ce758a8c84f547c22b3f82a16744bbbac3d4beb79281c0"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/help.png",
+      "wheel_path": "matplotlib/mpl-data/images/help.png",
+      "size_bytes": 472,
+      "sha256": "b38a50aea690d29cbc23bbdcf61bf7048dc33bfb64cbeed804ca5a1ee0430816"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/help.svg",
+      "wheel_path": "matplotlib/mpl-data/images/help.svg",
+      "size_bytes": 1890,
+      "sha256": "5d570572ecdc2f7490dcb8df49bb5d2d80e3a01e585248f68e4d8693cbda645f"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/help_large.png",
+      "wheel_path": "matplotlib/mpl-data/images/help_large.png",
+      "size_bytes": 747,
+      "sha256": "d48c04c967c64609e809633eafd0891c4a204c9543e67d5cf0b5d32b8009e111"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/home-symbolic.svg",
+      "wheel_path": "matplotlib/mpl-data/images/home-symbolic.svg",
+      "size_bytes": 1911,
+      "sha256": "a6daeeb3c8793d94e2f5a8587e76b3fae67c3001c2afbd9a3de316e3c4c147d4"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/home.pdf",
+      "wheel_path": "matplotlib/mpl-data/images/home.pdf",
+      "size_bytes": 1737,
+      "sha256": "7b47b4a48f9746d3e6bd4096d954ca2f50de62ed69bcf99451e4528046d69a29"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/home.png",
+      "wheel_path": "matplotlib/mpl-data/images/home.png",
+      "size_bytes": 468,
+      "sha256": "21c15d00051aebf034aadf083b723ca78ae95e942002527c9dd04408287b0b5c"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/home.svg",
+      "wheel_path": "matplotlib/mpl-data/images/home.svg",
+      "size_bytes": 1911,
+      "sha256": "a6daeeb3c8793d94e2f5a8587e76b3fae67c3001c2afbd9a3de316e3c4c147d4"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/home_large.png",
+      "wheel_path": "matplotlib/mpl-data/images/home_large.png",
+      "size_bytes": 790,
+      "sha256": "bb14b63b7b5638787589abbb09a555e1eae6209699d34ee26e6e59de2f245d88"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/matplotlib.pdf",
+      "wheel_path": "matplotlib/mpl-data/images/matplotlib.pdf",
+      "size_bytes": 22852,
+      "sha256": "0644947fedb1a228fe7977e9576b7bcb5245286d730f582d57a6808375e2ff01"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/matplotlib.png",
+      "wheel_path": "matplotlib/mpl-data/images/matplotlib.png",
+      "size_bytes": 1283,
+      "sha256": "c3c28b45855afafa146576b8d618096ae42ea288acdb77f73457dd73bda95186"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/matplotlib.svg",
+      "wheel_path": "matplotlib/mpl-data/images/matplotlib.svg",
+      "size_bytes": 62087,
+      "sha256": "4224c872a950c066953ed1ec124fafb66264d70c70652be28e1a817bf6fd5422"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/matplotlib_large.png",
+      "wheel_path": "matplotlib/mpl-data/images/matplotlib_large.png",
+      "size_bytes": 3088,
+      "sha256": "125468b9ef60ad4aa4657267824fa7be1e0629fa6f278804ebd5abca309b5f95"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/move-symbolic.svg",
+      "wheel_path": "matplotlib/mpl-data/images/move-symbolic.svg",
+      "size_bytes": 2529,
+      "sha256": "fee6a62e78d0db48b04ae29b77c26f4d7505691ab8db4e8cae9156bed12bafc2"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/move.pdf",
+      "wheel_path": "matplotlib/mpl-data/images/move.pdf",
+      "size_bytes": 1867,
+      "sha256": "0979373c62bd58be6dfb927e1b65f94e5fa76fa95c12b4c14b9a148f64ade9a5"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/move.png",
+      "wheel_path": "matplotlib/mpl-data/images/move.png",
+      "size_bytes": 481,
+      "sha256": "4e68d1e352334b3c466e1894715eb85f4cf1d818ebc5b587ddc48abe71b6bf37"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/move.svg",
+      "wheel_path": "matplotlib/mpl-data/images/move.svg",
+      "size_bytes": 2529,
+      "sha256": "fee6a62e78d0db48b04ae29b77c26f4d7505691ab8db4e8cae9156bed12bafc2"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/move_large.png",
+      "wheel_path": "matplotlib/mpl-data/images/move_large.png",
+      "size_bytes": 767,
+      "sha256": "4a48f3da75bf453039b3fd20f3c81dab686b55b9ba0ce71f616e05bb8d859fd5"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/qt4_editor_options.pdf",
+      "wheel_path": "matplotlib/mpl-data/images/qt4_editor_options.pdf",
+      "size_bytes": 1568,
+      "sha256": "daabba195c81ac9bd51f1c9c850a095225cf63107295b1f68fdd109f2b57b3fc"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/qt4_editor_options.png",
+      "wheel_path": "matplotlib/mpl-data/images/qt4_editor_options.png",
+      "size_bytes": 380,
+      "sha256": "12bc908d0e61876770988c6dcc216230dd54e939ddd75a750837e01f96478cd3"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/qt4_editor_options.svg",
+      "wheel_path": "matplotlib/mpl-data/images/qt4_editor_options.svg",
+      "size_bytes": 1264,
+      "sha256": "b1dacd231613f812ef277d004a76914393f1177481e35fa981d688253d0aa818"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/qt4_editor_options_large.png",
+      "wheel_path": "matplotlib/mpl-data/images/qt4_editor_options_large.png",
+      "size_bytes": 619,
+      "sha256": "f8f77ef55879688af73d96bc3ba19efc12e8e35922127a6691d0e3f1ad752646"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/subplots-symbolic.svg",
+      "wheel_path": "matplotlib/mpl-data/images/subplots-symbolic.svg",
+      "size_bytes": 2150,
+      "sha256": "1aae1f0d24bdf51bf9adb47cfe77a757a8dc63956c28f01159e1fe059064f425"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/subplots.pdf",
+      "wheel_path": "matplotlib/mpl-data/images/subplots.pdf",
+      "size_bytes": 1714,
+      "sha256": "434b323cc23912fb6033e084f985ca3a42fd7855006678ff5f6221a23e91e29e"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/subplots.png",
+      "wheel_path": "matplotlib/mpl-data/images/subplots.png",
+      "size_bytes": 445,
+      "sha256": "3147c222dab7ff2cdbf724627863a09699f463be21f0803b9b98bbd01eb78917"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/subplots.svg",
+      "wheel_path": "matplotlib/mpl-data/images/subplots.svg",
+      "size_bytes": 2150,
+      "sha256": "1aae1f0d24bdf51bf9adb47cfe77a757a8dc63956c28f01159e1fe059064f425"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/subplots_large.png",
+      "wheel_path": "matplotlib/mpl-data/images/subplots_large.png",
+      "size_bytes": 662,
+      "sha256": "11dbbd4b054c4045c9679a205397325bb54b7305c976175ff84b71c66c5d908b"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/zoom_to_rect-symbolic.svg",
+      "wheel_path": "matplotlib/mpl-data/images/zoom_to_rect-symbolic.svg",
+      "size_bytes": 1499,
+      "sha256": "b8c99d1a43b8dd91e57b392989e477fcc8aa944739bd139f7d10ce858e2cc66e"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/zoom_to_rect.pdf",
+      "wheel_path": "matplotlib/mpl-data/images/zoom_to_rect.pdf",
+      "size_bytes": 1609,
+      "sha256": "484bcf736e207d946997e747bfb9f1f0a9313f253ae8aab8ce0413bc6166f4a0"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/zoom_to_rect.png",
+      "wheel_path": "matplotlib/mpl-data/images/zoom_to_rect.png",
+      "size_bytes": 530,
+      "sha256": "68dcf741906b220c6ef44f9f15f690c1e095362b46b83505a02dbb7b9354d8be"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/zoom_to_rect.svg",
+      "wheel_path": "matplotlib/mpl-data/images/zoom_to_rect.svg",
+      "size_bytes": 1499,
+      "sha256": "b8c99d1a43b8dd91e57b392989e477fcc8aa944739bd139f7d10ce858e2cc66e"
+    },
+    {
+      "path": "matplotlib/mpl-data/images/zoom_to_rect_large.png",
+      "wheel_path": "matplotlib/mpl-data/images/zoom_to_rect_large.png",
+      "size_bytes": 1016,
+      "sha256": "57aa64c669ba570144c5d83f3c425674adfb1c1ee4ddc13f728acb6bb45b50c9"
+    },
+    {
+      "path": "matplotlib/mpl-data/kpsewhich.lua",
+      "wheel_path": "matplotlib/mpl-data/kpsewhich.lua",
+      "size_bytes": 139,
+      "sha256": "45dc986819c12f2dcdb01e5cd91e451ab2aef95f9605c6629b6e0d5a296c4dfc"
+    },
+    {
+      "path": "matplotlib/mpl-data/matplotlibrc",
+      "wheel_path": "matplotlib/mpl-data/matplotlibrc",
+      "size_bytes": 43413,
+      "sha256": "097216cf659e1afde4ca842c3010ce3b49b7c85f4cfe92b5122857974d70d1bc"
+    },
+    {
+      "path": "matplotlib/mpl-data/plot_directive/plot_directive.css",
+      "wheel_path": "matplotlib/mpl-data/plot_directive/plot_directive.css",
+      "size_bytes": 318,
+      "sha256": "bad489d68113cf4506e800bd854d77e09fc963bf043628ea3195cdd0930151f9"
+    },
+    {
+      "path": "matplotlib/mpl-data/sample_data/Minduka_Present_Blue_Pack.png",
+      "wheel_path": "matplotlib/mpl-data/sample_data/Minduka_Present_Blue_Pack.png",
+      "size_bytes": 13634,
+      "sha256": "5e72868826a7a4329a950e5a9efa393594807833fb7f27e5cd001a8afb9cd081"
+    },
+    {
+      "path": "matplotlib/mpl-data/sample_data/README.txt",
+      "wheel_path": "matplotlib/mpl-data/sample_data/README.txt",
+      "size_bytes": 128,
+      "sha256": "001cf5f5504a7c67b0758dfd4089c6f5071c827d4c4d85776d3e4f87b4c2cb66"
+    },
+    {
+      "path": "matplotlib/mpl-data/sample_data/Stocks.csv",
+      "wheel_path": "matplotlib/mpl-data/sample_data/Stocks.csv",
+      "size_bytes": 67924,
+      "sha256": "ef6f3bf1a64d5c6c5de702ef154c3fae78fe9df83882ab6bb9c6638bec3cdf47"
+    },
+    {
+      "path": "matplotlib/mpl-data/sample_data/axes_grid/bivariate_normal.npy",
+      "wheel_path": "matplotlib/mpl-data/sample_data/axes_grid/bivariate_normal.npy",
+      "size_bytes": 1880,
+      "sha256": "0e9599f6e74087aa2ca58aa77846b6ec3e8491180e445c07a2c69c65756ef7c5"
+    },
+    {
+      "path": "matplotlib/mpl-data/sample_data/data_x_x2_x3.csv",
+      "wheel_path": "matplotlib/mpl-data/sample_data/data_x_x2_x3.csv",
+      "size_bytes": 132,
+      "sha256": "034494ddbb8e506853f8d23fe8b43aa7bd1f152214de22c5760cefceb291e921"
+    },
+    {
+      "path": "matplotlib/mpl-data/sample_data/eeg.dat",
+      "wheel_path": "matplotlib/mpl-data/sample_data/eeg.dat",
+      "size_bytes": 25600,
+      "sha256": "28656316df0004acfba7a5d98ab35f7314933a918636ec80f09604ad128b4417"
+    },
+    {
+      "path": "matplotlib/mpl-data/sample_data/embedding_in_wx3.xrc",
+      "wheel_path": "matplotlib/mpl-data/sample_data/embedding_in_wx3.xrc",
+      "size_bytes": 2186,
+      "sha256": "714a95c39bc31cd499a1a3b827479b6547f94ab24fdfaefbe5a6eced1f417258"
+    },
+    {
+      "path": "matplotlib/mpl-data/sample_data/goog.npz",
+      "wheel_path": "matplotlib/mpl-data/sample_data/goog.npz",
+      "size_bytes": 22845,
+      "sha256": "400917cf30e6b664f7b0da93d7c745860d3aa9008da8b7f160d2dd12e6a318b1"
+    },
+    {
+      "path": "matplotlib/mpl-data/sample_data/grace_hopper.jpg",
+      "wheel_path": "matplotlib/mpl-data/sample_data/grace_hopper.jpg",
+      "size_bytes": 61306,
+      "sha256": "a8ca6d734765703b09728ab47fe59f473d93ae3967fc24c7c0288c3c7adb7130"
+    },
+    {
+      "path": "matplotlib/mpl-data/sample_data/jacksboro_fault_dem.npz",
+      "wheel_path": "matplotlib/mpl-data/sample_data/jacksboro_fault_dem.npz",
+      "size_bytes": 174061,
+      "sha256": "d493f50a33e82a4420494c54d1fca1539d177bdc27ab190bc5fe6e92f62fb637"
+    },
+    {
+      "path": "matplotlib/mpl-data/sample_data/logo2.png",
+      "wheel_path": "matplotlib/mpl-data/sample_data/logo2.png",
+      "size_bytes": 22279,
+      "sha256": "0d7371e055decaac47cb6e809af3442e9c1ecd02f1c1e2d063d1cfee4b4a21d7"
+    },
+    {
+      "path": "matplotlib/mpl-data/sample_data/membrane.dat",
+      "wheel_path": "matplotlib/mpl-data/sample_data/membrane.dat",
+      "size_bytes": 48000,
+      "sha256": "ab795b429201a5bb575c6370d5e17090dfcfc317431aa9382f8e881366f43357"
+    },
+    {
+      "path": "matplotlib/mpl-data/sample_data/msft.csv",
+      "wheel_path": "matplotlib/mpl-data/sample_data/msft.csv",
+      "size_bytes": 3211,
+      "sha256": "180aca6f43b70e029946c29d25fea55f7acc49ff8f09e908881a0b35d805ecc9"
+    },
+    {
+      "path": "matplotlib/mpl-data/sample_data/s1045.ima.gz",
+      "wheel_path": "matplotlib/mpl-data/sample_data/s1045.ima.gz",
+      "size_bytes": 33229,
+      "sha256": "32b424d64f62b7e71cb24d29fd53938ad5664d608055a67ab2b2af4369f8b89e"
+    },
+    {
+      "path": "matplotlib/mpl-data/sample_data/topobathy.npz",
+      "wheel_path": "matplotlib/mpl-data/sample_data/topobathy.npz",
+      "size_bytes": 45224,
+      "sha256": "0244e03291702df45024dcb5cacbc4f3d4cb30d72dfa7fd371c4ac61c42b4fbf"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/Solarize_Light2.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/Solarize_Light2.mplstyle",
+      "size_bytes": 1257,
+      "sha256": "6b2b4e9b8793fd23efb3b1c2dbc658e06ba478de38abe484d0910c091f2454e9"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/_classic_test_patch.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/_classic_test_patch.mplstyle",
+      "size_bytes": 167,
+      "sha256": "8a8a47a4c68cde29bf00ad9a8871ae3360ca3398bd29cf38bfa35012849bd744"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/_mpl-gallery-nogrid.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/_mpl-gallery-nogrid.mplstyle",
+      "size_bytes": 489,
+      "sha256": "d5538bdd44aa0fa8ae190692ca7360d50872530bca2e790bc9429d6c13279ea8"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/_mpl-gallery.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/_mpl-gallery.mplstyle",
+      "size_bytes": 504,
+      "sha256": "30dfaae7d0a20ea1d707cc45297c7309b2496c998d0e105ef650c9240a0c4cf0"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/bmh.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/bmh.mplstyle",
+      "size_bytes": 712,
+      "sha256": "f8a6e1688f39f412131c8a3251921fa500e37dc9202c0943012ff274ab26ea67"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/classic.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/classic.mplstyle",
+      "size_bytes": 24670,
+      "sha256": "d68e5be3b543fd1219bf7ba79c6f469b6b5ba6b4ef39e3465ccf21242986b982"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/dark_background.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/dark_background.mplstyle",
+      "size_bytes": 607,
+      "sha256": "1b34810f4ea3be54583aabbb0f96796b9c76e65f499d382d39b9fb4b80fdcee8"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/fast.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/fast.mplstyle",
+      "size_bytes": 288,
+      "sha256": "c936b66042083fdc62e55fc6d29daf4a5c6086e84dc23462f603c408cc724623"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/fivethirtyeight.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/fivethirtyeight.mplstyle",
+      "size_bytes": 780,
+      "sha256": "21c06dd83483cfd0adbb20a2b3d259b53dcdaa887a2d53be741eba03139b51c0"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/ggplot.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/ggplot.mplstyle",
+      "size_bytes": 956,
+      "sha256": "bb6a0f1cc2d616d65ca488c7936b308b636bb783609c4b687f9971730334443d"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/grayscale.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/grayscale.mplstyle",
+      "size_bytes": 526,
+      "sha256": "2822e0fa95e99ecf5c9ca0d728dd961fa995e35387fba71b4fee73290a2d49dc"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/petroff10.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/petroff10.mplstyle",
+      "size_bytes": 298,
+      "sha256": "423ee93db1e1dcbdb991db0fb75ca9c2f291ddd3f3b8eac5cf34133f731f8a58"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-bright.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-bright.mplstyle",
+      "size_bytes": 144,
+      "sha256": "a43aa7dfe354c952ef95f918b3c9fc1f3359be6b2554c0a191e1fe1ed66e2487"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-colorblind.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-colorblind.mplstyle",
+      "size_bytes": 148,
+      "sha256": "7824b3163e7fdaf47a9f9aaed6b1c4e3ac2f49519971d56acfce68bf8d19b07f"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-dark-palette.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-dark-palette.mplstyle",
+      "size_bytes": 142,
+      "sha256": "a7900128d407446edb9381d7a8c42b4418c3971180a374425c775098fee0f8d8"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-dark.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-dark.mplstyle",
+      "size_bytes": 667,
+      "sha256": "238c50ef9bc4e7ff57e24d1c3438aa8619c5dce72b676c653d7f0b97b3829281"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-darkgrid.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-darkgrid.mplstyle",
+      "size_bytes": 670,
+      "sha256": "d9b5ce4b34b98263f3441ad19b3556ca183fed9681450eadffe3be711bb26680"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-deep.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-deep.mplstyle",
+      "size_bytes": 142,
+      "sha256": "e3874b7178e346047eeb26a8a60191227695833de393c5495504db048731441d"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-muted.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-muted.mplstyle",
+      "size_bytes": 143,
+      "sha256": "4f8a378efa8a0ff2265c3929eba5c5395ff1ac1545528949537e090c59355e49"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-notebook.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-notebook.mplstyle",
+      "size_bytes": 382,
+      "sha256": "3dcbd941b62b0dd76e72b3656af04f990d60da68a78a8ffd1a4514151760b683"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-paper.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-paper.mplstyle",
+      "size_bytes": 393,
+      "sha256": "9f499ba14a760b852cab68fab4d59cbb84d9fd84f8fa42a0ad83b4b7eaf3d72c"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-pastel.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-pastel.mplstyle",
+      "size_bytes": 144,
+      "sha256": "f2757ca91a5b52b9c565ec84e95710d6846e64f2e29765bbe0cd94dfb0cd30e1"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-poster.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-poster.mplstyle",
+      "size_bytes": 403,
+      "sha256": "75468aa931383117d4ab6ad65576dba2eee4cc3ed9f4f13d2a8f1a5cbcdaf090"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-talk.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-talk.mplstyle",
+      "size_bytes": 403,
+      "sha256": "ec59c168111d5816e77139bafc447e11055afdb66053b7677207b3f9ecfc47be"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-ticks.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-ticks.mplstyle",
+      "size_bytes": 665,
+      "sha256": "0884d9999154169e3430ad8ecfcb48f1aed64680a2cd053d678275ef66167d6c"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-white.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-white.mplstyle",
+      "size_bytes": 665,
+      "sha256": "5a327a2c453aae50b052e813a1ac1c8806ca3fda044451ebf6b7c5954add4f1d"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-whitegrid.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/seaborn-v0_8-whitegrid.mplstyle",
+      "size_bytes": 664,
+      "sha256": "79ce018ec37398ebc7a6d709de674fc542c5dd2d7f535114a1cbaa7c8a70f8d9"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/seaborn-v0_8.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/seaborn-v0_8.mplstyle",
+      "size_bytes": 1130,
+      "sha256": "fd7bbaa972b38b86f71b2982381d5bd7eca429343cc610e5899f1ecc7193880b"
+    },
+    {
+      "path": "matplotlib/mpl-data/stylelib/tableau-colorblind10.mplstyle",
+      "wheel_path": "matplotlib/mpl-data/stylelib/tableau-colorblind10.mplstyle",
+      "size_bytes": 190,
+      "sha256": "06c8ab6557752e63d64f8b41233ea5a193e365c227a10ac819f0bbaefcea989c"
+    },
+    {
+      "path": "matplotlib/offsetbox.py",
+      "wheel_path": "matplotlib/offsetbox.py",
+      "size_bytes": 54490,
+      "sha256": "85c04dee0d940452eefd684183f6c39671dc21d8dce8f8fe90789c7e13a94e92"
+    },
+    {
+      "path": "matplotlib/offsetbox.pyi",
+      "wheel_path": "matplotlib/offsetbox.pyi",
+      "size_bytes": 9909,
+      "sha256": "2127fb811ace86f79f34a7eeb5b1c83e1e90612d24020b40f7b6d86ba37ef36a"
+    },
+    {
+      "path": "matplotlib/patches.py",
+      "wheel_path": "matplotlib/patches.py",
+      "size_bytes": 165064,
+      "sha256": "b977b0d7d6d27a0275bf154885932199ff1fe175f207bc0a2308009c53dfc279"
+    },
+    {
+      "path": "matplotlib/patches.pyi",
+      "wheel_path": "matplotlib/patches.pyi",
+      "size_bytes": 22649,
+      "sha256": "77eb02a955f0fc036cbe85299621fb76594c6d3cbb4dcc919b6215f7b2e5d273"
+    },
+    {
+      "path": "matplotlib/path.py",
+      "wheel_path": "matplotlib/path.py",
+      "size_bytes": 43269,
+      "sha256": "42241148c8c76ca081a635b227728f20980ad44ab4eea5d462350b6831e0b798"
+    },
+    {
+      "path": "matplotlib/path.pyi",
+      "wheel_path": "matplotlib/path.pyi",
+      "size_bytes": 4808,
+      "sha256": "55f22e7362a991c076f2ecd18cbbe40b71eae47c07e19a745328fd1fd6f07165"
+    },
+    {
+      "path": "matplotlib/patheffects.py",
+      "wheel_path": "matplotlib/patheffects.py",
+      "size_bytes": 18387,
+      "sha256": "e2969080f18a73fc5d073fc167f31a561289d85c590c67a1e731f0ce7ddebc36"
+    },
+    {
+      "path": "matplotlib/patheffects.pyi",
+      "wheel_path": "matplotlib/patheffects.pyi",
+      "size_bytes": 3664,
+      "sha256": "efe161bb1186adeafde06b49d6c6746313a62ba36fe288b14e6b0a6fafa28ce8"
+    },
+    {
+      "path": "matplotlib/projections/__init__.py",
+      "wheel_path": "matplotlib/projections/__init__.py",
+      "size_bytes": 4438,
+      "sha256": "80808a80d7e327eb62a161056bbe4128a2591ba2498f1e3afd1a44aade5f93de"
+    },
+    {
+      "path": "matplotlib/projections/__init__.pyi",
+      "wheel_path": "matplotlib/projections/__init__.pyi",
+      "size_bytes": 673,
+      "sha256": "0f6f1d4989b065c481141b4d0deafe42a13f96a5c084729eaecb8096f8bcf631"
+    },
+    {
+      "path": "matplotlib/projections/geo.py",
+      "wheel_path": "matplotlib/projections/geo.py",
+      "size_bytes": 17605,
+      "sha256": "7de4767726c2ca5864eb17be333c41aff7bc31d6e955cf2d06d090409d15d9ca"
+    },
+    {
+      "path": "matplotlib/projections/geo.pyi",
+      "wheel_path": "matplotlib/projections/geo.pyi",
+      "size_bytes": 3775,
+      "sha256": "bcf7e1be3eff7b46672a3c9f0d4342f3d4460a4b7270904f9e7e43f30d00ecdf"
+    },
+    {
+      "path": "matplotlib/projections/polar.py",
+      "wheel_path": "matplotlib/projections/polar.py",
+      "size_bytes": 57241,
+      "sha256": "bc4cbb141e059c4bbb08e5b28d94fecd80ede2d6d3c245bc06f642afb92a6224"
+    },
+    {
+      "path": "matplotlib/projections/polar.pyi",
+      "wheel_path": "matplotlib/projections/polar.pyi",
+      "size_bytes": 6636,
+      "sha256": "2163522d0228e5c5c5049babe551550d007002dab99f55c564c9eb8fce660818"
+    },
+    {
+      "path": "matplotlib/py.typed",
+      "wheel_path": "matplotlib/py.typed",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "matplotlib/pylab.py",
+      "wheel_path": "matplotlib/pylab.py",
+      "size_bytes": 2369,
+      "sha256": "56a52a776276f9d2ad96d66db183fc78f2a85f58ec343a53caa95c9a97c2fa5a"
+    },
+    {
+      "path": "matplotlib/pyplot.py",
+      "wheel_path": "matplotlib/pyplot.py",
+      "size_bytes": 149717,
+      "sha256": "d3e6a71727bdf305419aced04be05deda74f69654d25611546acca2a7a2bdd4c"
+    },
+    {
+      "path": "matplotlib/quiver.py",
+      "wheel_path": "matplotlib/quiver.py",
+      "size_bytes": 48676,
+      "sha256": "831fa65f8044d8357512345031347fde3a9933c3438759e950e8b37400b2e224"
+    },
+    {
+      "path": "matplotlib/quiver.pyi",
+      "wheel_path": "matplotlib/quiver.pyi",
+      "size_bytes": 5640,
+      "sha256": "2aad45bd03fe0d15f537d5e5a7a5c5e8e25f2a427bb5ce1d62ae021277711338"
+    },
+    {
+      "path": "matplotlib/rcsetup.py",
+      "wheel_path": "matplotlib/rcsetup.py",
+      "size_bytes": 52790,
+      "sha256": "287bde7232789700387d401d7166ec651d92e95450b97b7df7e53a8668103a43"
+    },
+    {
+      "path": "matplotlib/rcsetup.pyi",
+      "wheel_path": "matplotlib/rcsetup.pyi",
+      "size_bytes": 4337,
+      "sha256": "d154c88737ca80170ac4e78e7682aad686bb66e6da94e8fd2acd1e7c4d3e726b"
+    },
+    {
+      "path": "matplotlib/sankey.py",
+      "wheel_path": "matplotlib/sankey.py",
+      "size_bytes": 36151,
+      "sha256": "78a03d0eb5fdebe6e9a1645d78d9ef0bbdda25f3ed0a707bf1698c3c25d0f6b7"
+    },
+    {
+      "path": "matplotlib/sankey.pyi",
+      "wheel_path": "matplotlib/sankey.pyi",
+      "size_bytes": 1451,
+      "sha256": "3f6006921760dd92ea5da41d7fcca875b96b0697601106412ca3cbd666f19857"
+    },
+    {
+      "path": "matplotlib/scale.py",
+      "wheel_path": "matplotlib/scale.py",
+      "size_bytes": 26924,
+      "sha256": "9f726a2d4fddddd00aacfd6e3b99538a95446b18222e10d1dac4a4f1301713f3"
+    },
+    {
+      "path": "matplotlib/scale.pyi",
+      "wheel_path": "matplotlib/scale.pyi",
+      "size_bytes": 5057,
+      "sha256": "fa9b51a6d72a880bb37cac2b8e049658ec459a34544ce286c08a16b6e0572a06"
+    },
+    {
+      "path": "matplotlib/sphinxext/__init__.py",
+      "wheel_path": "matplotlib/sphinxext/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "matplotlib/sphinxext/figmpl_directive.py",
+      "wheel_path": "matplotlib/sphinxext/figmpl_directive.py",
+      "size_bytes": 9308,
+      "sha256": "ae0a0970645f2dda788e23a5c812301bcdf07327f36c555fae5ad20a60c72fd8"
+    },
+    {
+      "path": "matplotlib/sphinxext/mathmpl.py",
+      "wheel_path": "matplotlib/sphinxext/mathmpl.py",
+      "size_bytes": 7871,
+      "sha256": "08a228701495e29ad130f479d0d2fa5b105350b05ad7345ea2aa3b66d6ef0ac7"
+    },
+    {
+      "path": "matplotlib/sphinxext/plot_directive.py",
+      "wheel_path": "matplotlib/sphinxext/plot_directive.py",
+      "size_bytes": 32542,
+      "sha256": "e8610e5f6cb42b523373df00a23b7ca425d2db551caeee84f93ff7de5454f76b"
+    },
+    {
+      "path": "matplotlib/sphinxext/roles.py",
+      "wheel_path": "matplotlib/sphinxext/roles.py",
+      "size_bytes": 4882,
+      "sha256": "53b3f8b74e9fa0b1763ec649ad337899f6aca4a191a18c056778a3221214572a"
+    },
+    {
+      "path": "matplotlib/spines.py",
+      "wheel_path": "matplotlib/spines.py",
+      "size_bytes": 21923,
+      "sha256": "ffd0dce28200803b37300eab642c2bd6c70f1824b36c09e6629dcf433a4a15e5"
+    },
+    {
+      "path": "matplotlib/spines.pyi",
+      "wheel_path": "matplotlib/spines.pyi",
+      "size_bytes": 2951,
+      "sha256": "79c7824b8edb39ac2091674b50c20fb7a5d7fc7f84b564b6b7e7aecf906091b8"
+    },
+    {
+      "path": "matplotlib/stackplot.py",
+      "wheel_path": "matplotlib/stackplot.py",
+      "size_bytes": 4997,
+      "sha256": "6ba21402e8c38c6a5a16a893cc6afce5e0c3f25e9b6962cfacce5836f6fa83d2"
+    },
+    {
+      "path": "matplotlib/stackplot.pyi",
+      "wheel_path": "matplotlib/stackplot.pyi",
+      "size_bytes": 561,
+      "sha256": "057da0dfee9d2784618e3220ba8fa0c1686f299358a85090615c3948abe93387"
+    },
+    {
+      "path": "matplotlib/streamplot.py",
+      "wheel_path": "matplotlib/streamplot.py",
+      "size_bytes": 24011,
+      "sha256": "ad754a6048b831f4a0dc79c06966fcc38a85a7de6645fe9da2c315aad5d91291"
+    },
+    {
+      "path": "matplotlib/streamplot.pyi",
+      "wheel_path": "matplotlib/streamplot.pyi",
+      "size_bytes": 2690,
+      "sha256": "7e47647b0f2ef34eea77b59715dfd98c5ec551bc7ca24388f00eeee31fe4b6f8"
+    },
+    {
+      "path": "matplotlib/style/__init__.py",
+      "wheel_path": "matplotlib/style/__init__.py",
+      "size_bytes": 140,
+      "sha256": "7eb690b72042dd3636653b0b7712fbccdb3db49619b637bbb5b8aa11fdcce7a3"
+    },
+    {
+      "path": "matplotlib/style/core.py",
+      "wheel_path": "matplotlib/style/core.py",
+      "size_bytes": 8362,
+      "sha256": "452347d8d3b4c4afd8dfb75ba4c5b269630c8ef70c6bf34768a5c36b9238fed0"
+    },
+    {
+      "path": "matplotlib/style/core.pyi",
+      "wheel_path": "matplotlib/style/core.pyi",
+      "size_bytes": 521,
+      "sha256": "988972cfa78285d32367f03b4b4e62260716c2b584d8d5e0dab866d42d5e6254"
+    },
+    {
+      "path": "matplotlib/table.py",
+      "wheel_path": "matplotlib/table.py",
+      "size_bytes": 27744,
+      "sha256": "32417db3cbb65fef7f09e8bdb098b19636f6fc8fc1ff850ea95c7489178a214d"
+    },
+    {
+      "path": "matplotlib/table.pyi",
+      "wheel_path": "matplotlib/table.pyi",
+      "size_bytes": 3098,
+      "sha256": "b5c478d21a0258244b94bfbc3ed14c6bb3f9b2af2a6a30d2305c5ddb943dd33e"
+    },
+    {
+      "path": "matplotlib/testing/__init__.py",
+      "wheel_path": "matplotlib/testing/__init__.py",
+      "size_bytes": 6979,
+      "sha256": "0d4768aa331b3d7d034650560ec907596b7a3371eb933a628db4ad73c21b7eac"
+    },
+    {
+      "path": "matplotlib/testing/__init__.pyi",
+      "wheel_path": "matplotlib/testing/__init__.pyi",
+      "size_bytes": 1752,
+      "sha256": "7dfa9f7ad5b3c8256b4b1ec1967a310a66e021a660db1e7b9c3aeaf5eb9c464d"
+    },
+    {
+      "path": "matplotlib/testing/_markers.py",
+      "wheel_path": "matplotlib/testing/_markers.py",
+      "size_bytes": 1419,
+      "sha256": "d223723a2db95cbbff8137d252a8918b3752a89ce8cde3cf04c468ef61f625ee"
+    },
+    {
+      "path": "matplotlib/testing/compare.py",
+      "wheel_path": "matplotlib/testing/compare.py",
+      "size_bytes": 19780,
+      "sha256": "f1d55cb8fec56ae1d8d496505c10fb7cd05f40a6f82285ccea955eabacc9801b"
+    },
+    {
+      "path": "matplotlib/testing/compare.pyi",
+      "wheel_path": "matplotlib/testing/compare.pyi",
+      "size_bytes": 1192,
+      "sha256": "c6527872181729ee7aecd51abe5bbe75a9723ebe3001051b776173e9a2bf2482"
+    },
+    {
+      "path": "matplotlib/testing/conftest.py",
+      "wheel_path": "matplotlib/testing/conftest.py",
+      "size_bytes": 6683,
+      "sha256": "09cc1f52d22450e8060655d736995013a760d94fd404a747e806a344e3c9e6ec"
+    },
+    {
+      "path": "matplotlib/testing/conftest.pyi",
+      "wheel_path": "matplotlib/testing/conftest.pyi",
+      "size_bytes": 416,
+      "sha256": "cce17f30cd868c290d8bd9d9f2f95d57d548e356c3ebb9d586b2202d5b8c36c9"
+    },
+    {
+      "path": "matplotlib/testing/decorators.py",
+      "wheel_path": "matplotlib/testing/decorators.py",
+      "size_bytes": 18022,
+      "sha256": "d578b26f67b178dd270c43b885ef0c5bf54ac05137e1c07b12d465e9b7064738"
+    },
+    {
+      "path": "matplotlib/testing/decorators.pyi",
+      "wheel_path": "matplotlib/testing/decorators.pyi",
+      "size_bytes": 872,
+      "sha256": "d1f4a974b06d107ed93ffb6b549ed13f136d397f6c27fcfe32436c6d4c45f273"
+    },
+    {
+      "path": "matplotlib/testing/exceptions.py",
+      "wheel_path": "matplotlib/testing/exceptions.py",
+      "size_bytes": 138,
+      "sha256": "ef64268e21c6ec3c314af9497fc99e8be8518ade401f734a874fa8b01a3861b6"
+    },
+    {
+      "path": "matplotlib/testing/jpl_units/Duration.py",
+      "wheel_path": "matplotlib/testing/jpl_units/Duration.py",
+      "size_bytes": 3966,
+      "sha256": "f45301bbdba3ea8ac25ad7f6ddc7faffd1c21540b9d31007ac2cdac404f041f3"
+    },
+    {
+      "path": "matplotlib/testing/jpl_units/Epoch.py",
+      "wheel_path": "matplotlib/testing/jpl_units/Epoch.py",
+      "size_bytes": 6100,
+      "sha256": "f851b17aaf95bc24bd1953f03841398a777f1b84e5f73b43fa061c5bd096ce3a"
+    },
+    {
+      "path": "matplotlib/testing/jpl_units/EpochConverter.py",
+      "wheel_path": "matplotlib/testing/jpl_units/EpochConverter.py",
+      "size_bytes": 2944,
+      "sha256": "7e15a3c8fe7aedbcdc4d4fe836e249a6e728a25a92f3c36dfb2105835fb7c849"
+    },
+    {
+      "path": "matplotlib/testing/jpl_units/StrConverter.py",
+      "wheel_path": "matplotlib/testing/jpl_units/StrConverter.py",
+      "size_bytes": 2865,
+      "sha256": "728746c3d6ff65cf8c1bf60ae028b232b9cc47c6a147d870f37e8ed92b15f102"
+    },
+    {
+      "path": "matplotlib/testing/jpl_units/UnitDbl.py",
+      "wheel_path": "matplotlib/testing/jpl_units/UnitDbl.py",
+      "size_bytes": 5882,
+      "sha256": "100063c842b8315a2ecaf9708bff4a7580e0faa6d863768b1e8523470dfb15bd"
+    },
+    {
+      "path": "matplotlib/testing/jpl_units/UnitDblConverter.py",
+      "wheel_path": "matplotlib/testing/jpl_units/UnitDblConverter.py",
+      "size_bytes": 2828,
+      "sha256": "07c0ecb2b415c82e26c2f4853fbf1c18bd2f0a76605610da01b644fa3b172d48"
+    },
+    {
+      "path": "matplotlib/testing/jpl_units/UnitDblFormatter.py",
+      "wheel_path": "matplotlib/testing/jpl_units/UnitDblFormatter.py",
+      "size_bytes": 657,
+      "sha256": "db8ea1800e3fa427c99be3fde2112cc6a9d34bdb745e5bcb0bca75bff6f0da95"
+    },
+    {
+      "path": "matplotlib/testing/jpl_units/__init__.py",
+      "wheel_path": "matplotlib/testing/jpl_units/__init__.py",
+      "size_bytes": 2684,
+      "sha256": "a7fffd454c2bb762c9d9ea13d893ccfb8d972f1489adf0386b3deb379b8fe9de"
+    },
+    {
+      "path": "matplotlib/testing/widgets.py",
+      "wheel_path": "matplotlib/testing/widgets.py",
+      "size_bytes": 3480,
+      "sha256": "21aa0f1e00e0b8948777bb7dee449559466fa9343e4ecafdb54f647e7989ac03"
+    },
+    {
+      "path": "matplotlib/testing/widgets.pyi",
+      "wheel_path": "matplotlib/testing/widgets.pyi",
+      "size_bytes": 831,
+      "sha256": "2286aeed0d9a3d10d92f1f21cded8339edc4d6f9fb40fc5e3c2ef858c47bb457"
+    },
+    {
+      "path": "matplotlib/tests/__init__.py",
+      "wheel_path": "matplotlib/tests/__init__.py",
+      "size_bytes": 366,
+      "sha256": "5f25ef78403169f07cee09dbc748e40b432083328ef05bce46affa46d251c28e"
+    },
+    {
+      "path": "matplotlib/tests/conftest.py",
+      "wheel_path": "matplotlib/tests/conftest.py",
+      "size_bytes": 138,
+      "sha256": "d1c2b1595502db951f40941c0231496bbdcc404f5e498a8a497183c7b900ab8f"
+    },
+    {
+      "path": "matplotlib/tests/test_afm.py",
+      "wheel_path": "matplotlib/tests/test_afm.py",
+      "size_bytes": 3701,
+      "sha256": "03b8e6da8f906901fd492a621711ad6646d55342c9644ebd8df3efed1733383e"
+    },
+    {
+      "path": "matplotlib/tests/test_agg.py",
+      "wheel_path": "matplotlib/tests/test_agg.py",
+      "size_bytes": 10884,
+      "sha256": "c402ab4f3bd3d5d34cff8f5e7e25a2b2718dac9b4834e05e9d848eb5a457bc88"
+    },
+    {
+      "path": "matplotlib/tests/test_agg_filter.py",
+      "wheel_path": "matplotlib/tests/test_agg_filter.py",
+      "size_bytes": 1067,
+      "sha256": "ddcfd29ad6f838710e7dd30508e6f6a8a87331749b368694b6c274a56e3b438e"
+    },
+    {
+      "path": "matplotlib/tests/test_animation.py",
+      "wheel_path": "matplotlib/tests/test_animation.py",
+      "size_bytes": 18357,
+      "sha256": "cf4149d20c75e6b241fe48443d283513ebcb190c938fce4a8beb938c5b0c10f1"
+    },
+    {
+      "path": "matplotlib/tests/test_api.py",
+      "wheel_path": "matplotlib/tests/test_api.py",
+      "size_bytes": 5914,
+      "sha256": "b5a7110381e6706a637641c08814ee0bc7544cf05c6f904c01a3ab0ae7daa6b0"
+    },
+    {
+      "path": "matplotlib/tests/test_arrow_patches.py",
+      "wheel_path": "matplotlib/tests/test_arrow_patches.py",
+      "size_bytes": 6577,
+      "sha256": "aa06d2f4eae51dae132628407767a45b802ea4256028377607963217bd383da9"
+    },
+    {
+      "path": "matplotlib/tests/test_artist.py",
+      "wheel_path": "matplotlib/tests/test_artist.py",
+      "size_bytes": 18599,
+      "sha256": "a1b9424e408f673b9f8210a9d7d00ac0825fb55ebdb59c043a37912e7f2ca004"
+    },
+    {
+      "path": "matplotlib/tests/test_axes.py",
+      "wheel_path": "matplotlib/tests/test_axes.py",
+      "size_bytes": 329924,
+      "sha256": "d488868e2b9ee0209147ef7fcd4a26b25943352b157545885661cf3e04cc025f"
+    },
+    {
+      "path": "matplotlib/tests/test_axis.py",
+      "wheel_path": "matplotlib/tests/test_axis.py",
+      "size_bytes": 1446,
+      "sha256": "2e373f61cedd005913b955b43c3d22def1278e418eb807a192970da5683d03b6"
+    },
+    {
+      "path": "matplotlib/tests/test_backend_bases.py",
+      "wheel_path": "matplotlib/tests/test_backend_bases.py",
+      "size_bytes": 22775,
+      "sha256": "17052079aad8902ed482aa51a5a2a4e75a3917ada2a432f8914bc544ec0654ba"
+    },
+    {
+      "path": "matplotlib/tests/test_backend_cairo.py",
+      "wheel_path": "matplotlib/tests/test_backend_cairo.py",
+      "size_bytes": 1821,
+      "sha256": "3b62d3623b1f3e7fff6cab53cf8306181a1da52b21a0f933bb420db1cd7cc662"
+    },
+    {
+      "path": "matplotlib/tests/test_backend_gtk3.py",
+      "wheel_path": "matplotlib/tests/test_backend_gtk3.py",
+      "size_bytes": 2849,
+      "sha256": "65bdbdb3ce676d1cf02d5982842039fcba6101e0bfc8ac8fe39902707c5f80f1"
+    },
+    {
+      "path": "matplotlib/tests/test_backend_inline.py",
+      "wheel_path": "matplotlib/tests/test_backend_inline.py",
+      "size_bytes": 1608,
+      "sha256": "6fb1ab98c0ab25f23991718929bc5d30cf6458177e24a51d0a446afaf93c257a"
+    },
+    {
+      "path": "matplotlib/tests/test_backend_macosx.py",
+      "wheel_path": "matplotlib/tests/test_backend_macosx.py",
+      "size_bytes": 3654,
+      "sha256": "b2913d1ac742021c95513aedf2a23efc689387c671b3ac95bbff9678e0d91781"
+    },
+    {
+      "path": "matplotlib/tests/test_backend_nbagg.py",
+      "wheel_path": "matplotlib/tests/test_backend_nbagg.py",
+      "size_bytes": 1459,
+      "sha256": "a3a38deedb7f2ce5bbc338384ad20c62e4e030548f356b7514ebf614530879f9"
+    },
+    {
+      "path": "matplotlib/tests/test_backend_pdf.py",
+      "wheel_path": "matplotlib/tests/test_backend_pdf.py",
+      "size_bytes": 14602,
+      "sha256": "0b15584e5cfcfc043ba3dd3287971abe94a73412e8cc82fc521b1c4584a15153"
+    },
+    {
+      "path": "matplotlib/tests/test_backend_pgf.py",
+      "wheel_path": "matplotlib/tests/test_backend_pgf.py",
+      "size_bytes": 13028,
+      "sha256": "5a519d653873e6e43ec7cf87aa931c0792169988a37e53420bead5360bf3d32c"
+    },
+    {
+      "path": "matplotlib/tests/test_backend_ps.py",
+      "wheel_path": "matplotlib/tests/test_backend_ps.py",
+      "size_bytes": 12600,
+      "sha256": "bde1db9b8fdda410dc7338289848d0c5dcfe4aff301e28f72d548a5924fd05dd"
+    },
+    {
+      "path": "matplotlib/tests/test_backend_qt.py",
+      "wheel_path": "matplotlib/tests/test_backend_qt.py",
+      "size_bytes": 12928,
+      "sha256": "25f1c5850d56470ea730509104e3c1cc0bddbc718c5dfa318e2c1a526e064ba4"
+    },
+    {
+      "path": "matplotlib/tests/test_backend_registry.py",
+      "wheel_path": "matplotlib/tests/test_backend_registry.py",
+      "size_bytes": 5950,
+      "sha256": "4a2cb2451313d6d2172b1c27ec85ead12688ad8b770c4bc105ef13bcdc5aeb8e"
+    },
+    {
+      "path": "matplotlib/tests/test_backend_svg.py",
+      "wheel_path": "matplotlib/tests/test_backend_svg.py",
+      "size_bytes": 23044,
+      "sha256": "f0e9b5dede3af24dfb5e3b62a5d191fcc42440f6eddccba5e960c990512b6e86"
+    },
+    {
+      "path": "matplotlib/tests/test_backend_template.py",
+      "wheel_path": "matplotlib/tests/test_backend_template.py",
+      "size_bytes": 2184,
+      "sha256": "bae13ba19f694815435ab3cbd390745a0085b20bfa1e55f27adb8f4df267e9af"
+    },
+    {
+      "path": "matplotlib/tests/test_backend_tk.py",
+      "wheel_path": "matplotlib/tests/test_backend_tk.py",
+      "size_bytes": 8850,
+      "sha256": "03587701f3e110c6c6e4f2dd0ebd606e7c2dfc395a40e06016ec7942c2290a93"
+    },
+    {
+      "path": "matplotlib/tests/test_backend_tools.py",
+      "wheel_path": "matplotlib/tests/test_backend_tools.py",
+      "size_bytes": 501,
+      "sha256": "0be07b3429325ac4392b34049c8e417b5e83b001c764953d3f9bfdfbec2c17ea"
+    },
+    {
+      "path": "matplotlib/tests/test_backend_webagg.py",
+      "wheel_path": "matplotlib/tests/test_backend_webagg.py",
+      "size_bytes": 938,
+      "sha256": "e0e73ecfbc3e9931844c1d71d0543f8193fda877f25a1e65c1673da8f9248ac7"
+    },
+    {
+      "path": "matplotlib/tests/test_backends_interactive.py",
+      "wheel_path": "matplotlib/tests/test_backends_interactive.py",
+      "size_bytes": 28878,
+      "sha256": "65e100092f305e46d13763eae1388342369f38b628af134c63ebc414c038b337"
+    },
+    {
+      "path": "matplotlib/tests/test_basic.py",
+      "wheel_path": "matplotlib/tests/test_basic.py",
+      "size_bytes": 1141,
+      "sha256": "b9b027944fa5150ccc86806559864928202ca31f58de30574bf20c9f6f598bce"
+    },
+    {
+      "path": "matplotlib/tests/test_bbox_tight.py",
+      "wheel_path": "matplotlib/tests/test_bbox_tight.py",
+      "size_bytes": 6351,
+      "sha256": "01306ee80ca57f6636b569dd90e87f98f1c5d4e44b4c4864d2ec42ba9d4af028"
+    },
+    {
+      "path": "matplotlib/tests/test_bezier.py",
+      "wheel_path": "matplotlib/tests/test_bezier.py",
+      "size_bytes": 692,
+      "sha256": "22bac35805793ba10b31dce269a39e048ecb7f211a4c156c4f80754fd28ccc3f"
+    },
+    {
+      "path": "matplotlib/tests/test_category.py",
+      "wheel_path": "matplotlib/tests/test_category.py",
+      "size_bytes": 12043,
+      "sha256": "8d65ce006391fe0a6fae36abbc907a4f2a2dd3238859a3ba77517d9ab35c54fa"
+    },
+    {
+      "path": "matplotlib/tests/test_cbook.py",
+      "wheel_path": "matplotlib/tests/test_cbook.py",
+      "size_bytes": 33656,
+      "sha256": "c444a90fd544f5d5c89c6a7f432cd109e1af9ac818da3f48c8d31250169ef960"
+    },
+    {
+      "path": "matplotlib/tests/test_collections.py",
+      "wheel_path": "matplotlib/tests/test_collections.py",
+      "size_bytes": 48896,
+      "sha256": "0b88dbbc0abdb7bc1cb1763ed121faeba68fdadf30e1dc8ef27467bbb4d17587"
+    },
+    {
+      "path": "matplotlib/tests/test_colorbar.py",
+      "wheel_path": "matplotlib/tests/test_colorbar.py",
+      "size_bytes": 46711,
+      "sha256": "b437665b3fcbc426c3f3492c33a8aaac762aa6899bc8bf10b6aa4a41228e4b5e"
+    },
+    {
+      "path": "matplotlib/tests/test_colors.py",
+      "wheel_path": "matplotlib/tests/test_colors.py",
+      "size_bytes": 61213,
+      "sha256": "09b4392f83f2a63fbb7f1c0ed1730bd45b9210b73dbfec667309fb39c0c5cf4e"
+    },
+    {
+      "path": "matplotlib/tests/test_compare_images.py",
+      "wheel_path": "matplotlib/tests/test_compare_images.py",
+      "size_bytes": 3260,
+      "sha256": "35c0684fc1c0c6dce8475cd906ed15dcc169196b5d15a0db950f28dce4ceeb33"
+    },
+    {
+      "path": "matplotlib/tests/test_constrainedlayout.py",
+      "wheel_path": "matplotlib/tests/test_constrainedlayout.py",
+      "size_bytes": 24270,
+      "sha256": "331f3a5c201fc345c41baedd53bdc68d96598b7f0464c244af0be0ae6efe4e15"
+    },
+    {
+      "path": "matplotlib/tests/test_container.py",
+      "wheel_path": "matplotlib/tests/test_container.py",
+      "size_bytes": 694,
+      "sha256": "1537b072439dddd26a2cecc451adbd22d8eabac93b331ecc2b9c4f54c8733267"
+    },
+    {
+      "path": "matplotlib/tests/test_contour.py",
+      "wheel_path": "matplotlib/tests/test_contour.py",
+      "size_bytes": 30289,
+      "sha256": "3bf5488630e0b1bd00f9bad847e809f9651cab36331f45cb403e1a23fe52a1c3"
+    },
+    {
+      "path": "matplotlib/tests/test_cycles.py",
+      "wheel_path": "matplotlib/tests/test_cycles.py",
+      "size_bytes": 5996,
+      "sha256": "dcac919961f6f56520bc85d44f4ead2950cd09f0d6ab1bb194bb9e229f85225d"
+    },
+    {
+      "path": "matplotlib/tests/test_dates.py",
+      "wheel_path": "matplotlib/tests/test_dates.py",
+      "size_bytes": 56533,
+      "sha256": "8ce2be28800c05109c9e5829ce49e92c96f726f3b7c456b941edcee665537863"
+    },
+    {
+      "path": "matplotlib/tests/test_datetime.py",
+      "wheel_path": "matplotlib/tests/test_datetime.py",
+      "size_bytes": 33131,
+      "sha256": "a08faa5f81026a18599143f8e6630b2f9eb2987adb208301dbcec859e1cf9367"
+    },
+    {
+      "path": "matplotlib/tests/test_determinism.py",
+      "wheel_path": "matplotlib/tests/test_determinism.py",
+      "size_bytes": 7958,
+      "sha256": "85aac6fa19cea43e4764528fb4779b4f4b271eef15e82e8149c5459a5d4cab28"
+    },
+    {
+      "path": "matplotlib/tests/test_doc.py",
+      "wheel_path": "matplotlib/tests/test_doc.py",
+      "size_bytes": 1024,
+      "sha256": "13beaa0559670398c21fc31ae03068ce1ceb129f49ceaaf7aac213214218edb6"
+    },
+    {
+      "path": "matplotlib/tests/test_dviread.py",
+      "wheel_path": "matplotlib/tests/test_dviread.py",
+      "size_bytes": 2764,
+      "sha256": "25e4ee03614c523d4575dc435415d4b67bd9613833b44f82c915cbfe6236d0fd"
+    },
+    {
+      "path": "matplotlib/tests/test_figure.py",
+      "wheel_path": "matplotlib/tests/test_figure.py",
+      "size_bytes": 60837,
+      "sha256": "518f1512554d5118a5a0f07d4ace857873d89a00c2784021ec87c5a7eff1954d"
+    },
+    {
+      "path": "matplotlib/tests/test_font_manager.py",
+      "wheel_path": "matplotlib/tests/test_font_manager.py",
+      "size_bytes": 14136,
+      "sha256": "4247b0bb8b4cca58157226a657058bf131680e89fc632ccdfbda68eaeb0de8c9"
+    },
+    {
+      "path": "matplotlib/tests/test_fontconfig_pattern.py",
+      "wheel_path": "matplotlib/tests/test_fontconfig_pattern.py",
+      "size_bytes": 2168,
+      "sha256": "2d247a95617fd1c54eb2190689f95869308b70849120933a9a35e6e50b438d7e"
+    },
+    {
+      "path": "matplotlib/tests/test_ft2font.py",
+      "wheel_path": "matplotlib/tests/test_ft2font.py",
+      "size_bytes": 40838,
+      "sha256": "973d779511a6c5d43d7918d09678a075f4160706924f5037fc0804011e5d240d"
+    },
+    {
+      "path": "matplotlib/tests/test_getattr.py",
+      "wheel_path": "matplotlib/tests/test_getattr.py",
+      "size_bytes": 1090,
+      "sha256": "4e5fc7d73a702dd48856eb5ce2f8be4300c27963f3046a4ddf537d22dcd391e4"
+    },
+    {
+      "path": "matplotlib/tests/test_gridspec.py",
+      "wheel_path": "matplotlib/tests/test_gridspec.py",
+      "size_bytes": 1580,
+      "sha256": "49826e26e700fcfc90d91b28bf545a36169d3845860dc31b41c545ad6228cb72"
+    },
+    {
+      "path": "matplotlib/tests/test_image.py",
+      "wheel_path": "matplotlib/tests/test_image.py",
+      "size_bytes": 59598,
+      "sha256": "a08573b8aff74c3e57482dbf003344f107cb846345cdf36fb3e54f2c29aa2f66"
+    },
+    {
+      "path": "matplotlib/tests/test_legend.py",
+      "wheel_path": "matplotlib/tests/test_legend.py",
+      "size_bytes": 55122,
+      "sha256": "41e3234dcdb4fc865e552865c4465042cbf6b2e1403eaa6f0fce93047112ca4b"
+    },
+    {
+      "path": "matplotlib/tests/test_lines.py",
+      "wheel_path": "matplotlib/tests/test_lines.py",
+      "size_bytes": 15035,
+      "sha256": "28494d8b61a5242b462e13697fcae5f1b90384c710f62b6dc9176c5f8add4b1a"
+    },
+    {
+      "path": "matplotlib/tests/test_marker.py",
+      "wheel_path": "matplotlib/tests/test_marker.py",
+      "size_bytes": 11410,
+      "sha256": "c345951e8683fba8b26e351210da1514575438e475dfde3725c138b20cf7aa12"
+    },
+    {
+      "path": "matplotlib/tests/test_mathtext.py",
+      "wheel_path": "matplotlib/tests/test_mathtext.py",
+      "size_bytes": 24549,
+      "sha256": "d92d62dc12cd7df12acf5b7e99e86158144e05cb1d059b1d82bb627315ba5ebc"
+    },
+    {
+      "path": "matplotlib/tests/test_matplotlib.py",
+      "wheel_path": "matplotlib/tests/test_matplotlib.py",
+      "size_bytes": 3368,
+      "sha256": "650803f71ed45561675433a6f4ae6229fa1bcfa06d32d16483255143941ecd86"
+    },
+    {
+      "path": "matplotlib/tests/test_mlab.py",
+      "wheel_path": "matplotlib/tests/test_mlab.py",
+      "size_bytes": 42269,
+      "sha256": "778a8cca881314caef951644a43b3b4a38529a60a705430d8125f66c953a7839"
+    },
+    {
+      "path": "matplotlib/tests/test_multivariate_colormaps.py",
+      "wheel_path": "matplotlib/tests/test_multivariate_colormaps.py",
+      "size_bytes": 20785,
+      "sha256": "c06734f1c7544c10c9be1522c15a93ac14bba35f448bec104675a5927cbb8793"
+    },
+    {
+      "path": "matplotlib/tests/test_offsetbox.py",
+      "wheel_path": "matplotlib/tests/test_offsetbox.py",
+      "size_bytes": 16656,
+      "sha256": "55715f829bad5672e874784ae687c45aa81ee36b6b452bc89b66ab7806efd594"
+    },
+    {
+      "path": "matplotlib/tests/test_patches.py",
+      "wheel_path": "matplotlib/tests/test_patches.py",
+      "size_bytes": 33592,
+      "sha256": "15e4063434b41bc0c93560804158addaf37824f374011368ba018e4c235adc59"
+    },
+    {
+      "path": "matplotlib/tests/test_path.py",
+      "wheel_path": "matplotlib/tests/test_path.py",
+      "size_bytes": 23254,
+      "sha256": "477a13aebea44b536efeaf3378ad6ec6badb9d023c34c6f907bc9393c475791b"
+    },
+    {
+      "path": "matplotlib/tests/test_patheffects.py",
+      "wheel_path": "matplotlib/tests/test_patheffects.py",
+      "size_bytes": 8109,
+      "sha256": "abb240e556d953966caaf73678633b62107d4c2964369dda91009956c1eb3505"
+    },
+    {
+      "path": "matplotlib/tests/test_pickle.py",
+      "wheel_path": "matplotlib/tests/test_pickle.py",
+      "size_bytes": 10014,
+      "sha256": "d9572c27a43037dbcfe1cbe4b940990fbbb02b2775ace08321a60f101af7bba1"
+    },
+    {
+      "path": "matplotlib/tests/test_png.py",
+      "wheel_path": "matplotlib/tests/test_png.py",
+      "size_bytes": 1407,
+      "sha256": "77abba52453bd53e942f10d549d324213dc25002f8e9d12e0ee36b9e365ee411"
+    },
+    {
+      "path": "matplotlib/tests/test_polar.py",
+      "wheel_path": "matplotlib/tests/test_polar.py",
+      "size_bytes": 18306,
+      "sha256": "a4f5c1326794214661ca463265ae66aeb8c52fd189137bec6935fde1c463b2d5"
+    },
+    {
+      "path": "matplotlib/tests/test_preprocess_data.py",
+      "wheel_path": "matplotlib/tests/test_preprocess_data.py",
+      "size_bytes": 11363,
+      "sha256": "7085480948b589a84c412df4b2a2392254f64582511f6809d33eb4172b985059"
+    },
+    {
+      "path": "matplotlib/tests/test_pyplot.py",
+      "wheel_path": "matplotlib/tests/test_pyplot.py",
+      "size_bytes": 13929,
+      "sha256": "dec74b4a34a766d5eb6a0d81147e5a87e02361cac5cf34308319cb67e8f1eda9"
+    },
+    {
+      "path": "matplotlib/tests/test_quiver.py",
+      "wheel_path": "matplotlib/tests/test_quiver.py",
+      "size_bytes": 11953,
+      "sha256": "e73485ff40e9a035cf06f1960fa8aed557c85276b5e67a4b776532086ebf2ac8"
+    },
+    {
+      "path": "matplotlib/tests/test_rcparams.py",
+      "wheel_path": "matplotlib/tests/test_rcparams.py",
+      "size_bytes": 27252,
+      "sha256": "39846beeea1a73c107b2cfeb5c9d5722b642202116421f38051e3064b141904b"
+    },
+    {
+      "path": "matplotlib/tests/test_sankey.py",
+      "wheel_path": "matplotlib/tests/test_sankey.py",
+      "size_bytes": 3900,
+      "sha256": "ca0e22faa1d3e4c9631731465623a71db324ba633c6e13f0460a10e4ce82504b"
+    },
+    {
+      "path": "matplotlib/tests/test_scale.py",
+      "wheel_path": "matplotlib/tests/test_scale.py",
+      "size_bytes": 8429,
+      "sha256": "7ea2eef3c955cbbf8964536c96982289dd75fd3222bd290cf43c559c7c19258a"
+    },
+    {
+      "path": "matplotlib/tests/test_simplification.py",
+      "wheel_path": "matplotlib/tests/test_simplification.py",
+      "size_bytes": 21570,
+      "sha256": "209d72133d98e7c42d291447cf8d4d697552e249118a9684fd49f41e03382b68"
+    },
+    {
+      "path": "matplotlib/tests/test_skew.py",
+      "wheel_path": "matplotlib/tests/test_skew.py",
+      "size_bytes": 6349,
+      "sha256": "fcc8f07e071ee96c4b1f775a7c8ee2aefd82c3400d89fcad0ad417772392b429"
+    },
+    {
+      "path": "matplotlib/tests/test_sphinxext.py",
+      "wheel_path": "matplotlib/tests/test_sphinxext.py",
+      "size_bytes": 9937,
+      "sha256": "f61cd571480c86d7e8ffa03f73e4af098583418e393aafa50fa3ace0f9d1837b"
+    },
+    {
+      "path": "matplotlib/tests/test_spines.py",
+      "wheel_path": "matplotlib/tests/test_spines.py",
+      "size_bytes": 5274,
+      "sha256": "83609e1744bbdd7a0603e4f4e0dbd815a948c99bdcabb0a96d3bcdfa2915167d"
+    },
+    {
+      "path": "matplotlib/tests/test_streamplot.py",
+      "wheel_path": "matplotlib/tests/test_streamplot.py",
+      "size_bytes": 5731,
+      "sha256": "9922ee67b136784b5c2399ca1c1659ff7d0e62d7b96b0aac5d615644e258b424"
+    },
+    {
+      "path": "matplotlib/tests/test_style.py",
+      "wheel_path": "matplotlib/tests/test_style.py",
+      "size_bytes": 6509,
+      "sha256": "b1deab30ba4f052d618a7476b2f235ad76669d7527310935b33c52341517b735"
+    },
+    {
+      "path": "matplotlib/tests/test_subplots.py",
+      "wheel_path": "matplotlib/tests/test_subplots.py",
+      "size_bytes": 11082,
+      "sha256": "f985421286f8f05c8b5267489c4f2f4361366f5b714dba828456f5b4352ed7ab"
+    },
+    {
+      "path": "matplotlib/tests/test_table.py",
+      "wheel_path": "matplotlib/tests/test_table.py",
+      "size_bytes": 8659,
+      "sha256": "42cac34697bceb82cfdf391006d4dc88ab9be6b698cf78b756bb7f55ede47734"
+    },
+    {
+      "path": "matplotlib/tests/test_testing.py",
+      "wheel_path": "matplotlib/tests/test_testing.py",
+      "size_bytes": 1057,
+      "sha256": "7a1fb5af83c85dc33b85f48a08d4d4f3df50c51616859060e96ef1d130d5531a"
+    },
+    {
+      "path": "matplotlib/tests/test_texmanager.py",
+      "wheel_path": "matplotlib/tests/test_texmanager.py",
+      "size_bytes": 2647,
+      "sha256": "8ffe591b4db3b483be9b4a17cdddf56b5dd8170fc6ec947b2ddb777f07fea612"
+    },
+    {
+      "path": "matplotlib/tests/test_text.py",
+      "wheel_path": "matplotlib/tests/test_text.py",
+      "size_bytes": 38473,
+      "sha256": "dd1c4aadf249056285192ac4bf17821b9af172f964222be2afcc028f596ce7e3"
+    },
+    {
+      "path": "matplotlib/tests/test_textpath.py",
+      "wheel_path": "matplotlib/tests/test_textpath.py",
+      "size_bytes": 271,
+      "sha256": "58b5ef4f93b313a4dec38a6bf3b2c7f9c822a02ccceecae030d45e9a23040b9a"
+    },
+    {
+      "path": "matplotlib/tests/test_ticker.py",
+      "wheel_path": "matplotlib/tests/test_ticker.py",
+      "size_bytes": 74759,
+      "sha256": "063de18848173015f30e2d0b9a0f24f908380a13d9ad056a194d107e1ed2bfce"
+    },
+    {
+      "path": "matplotlib/tests/test_tightlayout.py",
+      "wheel_path": "matplotlib/tests/test_tightlayout.py",
+      "size_bytes": 13978,
+      "sha256": "294d26f419e96ca57e8c175a23811b0cb13909ffc12ed17463d85c15f438ce54"
+    },
+    {
+      "path": "matplotlib/tests/test_transforms.py",
+      "wheel_path": "matplotlib/tests/test_transforms.py",
+      "size_bytes": 48671,
+      "sha256": "35f5a43d638a026635b2afd1d53f3972de0261d1666148e68ed836bb03982086"
+    },
+    {
+      "path": "matplotlib/tests/test_triangulation.py",
+      "wheel_path": "matplotlib/tests/test_triangulation.py",
+      "size_bytes": 55289,
+      "sha256": "86cb556211f4f41a1597c2f49fabc75c169b9e264b52ed8a625eb0a999f65da7"
+    },
+    {
+      "path": "matplotlib/tests/test_type1font.py",
+      "wheel_path": "matplotlib/tests/test_type1font.py",
+      "size_bytes": 6369,
+      "sha256": "819643162d1bb85bacfda0203ab9adc0aa9b0b7ebef3c524bccf007db72782ce"
+    },
+    {
+      "path": "matplotlib/tests/test_units.py",
+      "wheel_path": "matplotlib/tests/test_units.py",
+      "size_bytes": 11675,
+      "sha256": "d2fec936a8e403c3159ef94e785a18a90dec5b52a3458fe28e9f0118cf195bf5"
+    },
+    {
+      "path": "matplotlib/tests/test_usetex.py",
+      "wheel_path": "matplotlib/tests/test_usetex.py",
+      "size_bytes": 6405,
+      "sha256": "6be63a36ec9138f1c318fd842ec399352570054a06b40bf5c5065f8ac97d9521"
+    },
+    {
+      "path": "matplotlib/tests/test_widgets.py",
+      "wheel_path": "matplotlib/tests/test_widgets.py",
+      "size_bytes": 66435,
+      "sha256": "53614c082272283fa970b6f31b310100bf75fb7171f34c2c61d8a717b7823ab8"
+    },
+    {
+      "path": "matplotlib/texmanager.py",
+      "wheel_path": "matplotlib/texmanager.py",
+      "size_bytes": 15338,
+      "sha256": "1be28d61b627f8bda0d32b6b08464f5c5bb963d5dddaf91106339eb97dd859bc"
+    },
+    {
+      "path": "matplotlib/texmanager.pyi",
+      "wheel_path": "matplotlib/texmanager.pyi",
+      "size_bytes": 1116,
+      "sha256": "762de06c2f66b97293a39542ad6e727be7b5f40d66ace97c7bc96f2376fdd380"
+    },
+    {
+      "path": "matplotlib/text.py",
+      "wheel_path": "matplotlib/text.py",
+      "size_bytes": 70856,
+      "sha256": "c584a42d988ea5ec381b58e42c0e69523b45eea5213acdf2a7c20414ca84e868"
+    },
+    {
+      "path": "matplotlib/text.pyi",
+      "wheel_path": "matplotlib/text.pyi",
+      "size_bytes": 7021,
+      "sha256": "5f284610257678f13191ddea26b2839c3c5ff03e910e13c177f133eea28808a1"
+    },
+    {
+      "path": "matplotlib/textpath.py",
+      "wheel_path": "matplotlib/textpath.py",
+      "size_bytes": 13254,
+      "sha256": "426ad943632d7f26a8eaa5a0fb09841806d3c24b89e7802703315ff4dcd91e0e"
+    },
+    {
+      "path": "matplotlib/textpath.pyi",
+      "wheel_path": "matplotlib/textpath.pyi",
+      "size_bytes": 2529,
+      "sha256": "aea39e4c07906209b66f63697adac45f480c17c3f3cd6e37c52e6635f500f7c3"
+    },
+    {
+      "path": "matplotlib/ticker.py",
+      "wheel_path": "matplotlib/ticker.py",
+      "size_bytes": 107381,
+      "sha256": "628209c96565624dc32196c197ec3a7f392e5444b78f574de27c9ff921ca5438"
+    },
+    {
+      "path": "matplotlib/ticker.pyi",
+      "wheel_path": "matplotlib/ticker.pyi",
+      "size_bytes": 10604,
+      "sha256": "62f9d00c7c494fd1fe8a8983669bc10a86247d14584a8b76311d07d298d933bf"
+    },
+    {
+      "path": "matplotlib/transforms.py",
+      "wheel_path": "matplotlib/transforms.py",
+      "size_bytes": 99763,
+      "sha256": "72d9ce4ea80f3f87601c29929146b24162fd2a48f3592cd011900b71cf681330"
+    },
+    {
+      "path": "matplotlib/transforms.pyi",
+      "wheel_path": "matplotlib/transforms.pyi",
+      "size_bytes": 12102,
+      "sha256": "d08ef4151e195a6468a3ac392a36d746b1f47550e64323c56c6b7fb0d4d8ab5d"
+    },
+    {
+      "path": "matplotlib/tri/__init__.py",
+      "wheel_path": "matplotlib/tri/__init__.py",
+      "size_bytes": 820,
+      "sha256": "6ac9df79f291a49bfbb066df75d08cc9b9c92275433f082987b8349a9a21daee"
+    },
+    {
+      "path": "matplotlib/tri/_triangulation.py",
+      "wheel_path": "matplotlib/tri/_triangulation.py",
+      "size_bytes": 9784,
+      "sha256": "52bda528c3b1e0dad9c70ca2d2105e06757389cb8a68291ed0d92b6677929253"
+    },
+    {
+      "path": "matplotlib/tri/_triangulation.pyi",
+      "wheel_path": "matplotlib/tri/_triangulation.pyi",
+      "size_bytes": 1017,
+      "sha256": "a55c35aefa48725d34a7b57b13d19cbc94aa416ca8c656575ffa74fd54b14e26"
+    },
+    {
+      "path": "matplotlib/tri/_tricontour.py",
+      "wheel_path": "matplotlib/tri/_tricontour.py",
+      "size_bytes": 10220,
+      "sha256": "cb1787f10801b9bd674eaf6a6cee488a2cfcd5b70b5c378c7091d44b60219a7b"
+    },
+    {
+      "path": "matplotlib/tri/_tricontour.pyi",
+      "wheel_path": "matplotlib/tri/_tricontour.pyi",
+      "size_bytes": 1155,
+      "sha256": "8e7b00995457d3e14e530f69b5481c8bd2784f8250465a0a787f1f87c6808bea"
+    },
+    {
+      "path": "matplotlib/tri/_trifinder.py",
+      "wheel_path": "matplotlib/tri/_trifinder.py",
+      "size_bytes": 3522,
+      "sha256": "de05332590c8c1f76c489504f2120ab28f5ed7e506bf29d437d1f16aa0b51047"
+    },
+    {
+      "path": "matplotlib/tri/_trifinder.pyi",
+      "wheel_path": "matplotlib/tri/_trifinder.pyi",
+      "size_bytes": 405,
+      "sha256": "757719b9c69c012dc287a9eb0c13e1d9edcb6192df67b570aa905405bfaf30fa"
+    },
+    {
+      "path": "matplotlib/tri/_triinterpolate.py",
+      "wheel_path": "matplotlib/tri/_triinterpolate.py",
+      "size_bytes": 62445,
+      "sha256": "e05b72252a09a47705c644a464767568d7a7815356a95285e25efc3e0087f0ed"
+    },
+    {
+      "path": "matplotlib/tri/_triinterpolate.pyi",
+      "wheel_path": "matplotlib/tri/_triinterpolate.pyi",
+      "size_bytes": 1044,
+      "sha256": "9d1d28d099b4b8f1feea5d1fb755911ea625abeea8f385fa334697d5427d22f1"
+    },
+    {
+      "path": "matplotlib/tri/_tripcolor.py",
+      "wheel_path": "matplotlib/tri/_tripcolor.py",
+      "size_bytes": 6705,
+      "sha256": "67abab16ffa7683337feb86ffe9920219239de1f3c68ea3da96737307ec69810"
+    },
+    {
+      "path": "matplotlib/tri/_tripcolor.pyi",
+      "wheel_path": "matplotlib/tri/_tripcolor.pyi",
+      "size_bytes": 1781,
+      "sha256": "42c03e036a218f7affb40125b76fbda738b8ec9894d35b4d9513c3229b6a9e1e"
+    },
+    {
+      "path": "matplotlib/tri/_triplot.py",
+      "wheel_path": "matplotlib/tri/_triplot.py",
+      "size_bytes": 3102,
+      "sha256": "8e51d2cf7e99e52d7ccc129ceb7f4f952a9d85f97b8c7a25f04c6575d26e0c8e"
+    },
+    {
+      "path": "matplotlib/tri/_triplot.pyi",
+      "wheel_path": "matplotlib/tri/_triplot.pyi",
+      "size_bytes": 446,
+      "sha256": "f54494f817e2b6b71d404f3258e525057e7d4013681c25a2bc3a27f496c34349"
+    },
+    {
+      "path": "matplotlib/tri/_trirefine.py",
+      "wheel_path": "matplotlib/tri/_trirefine.py",
+      "size_bytes": 13178,
+      "sha256": "346f1bb03859e443b1313f8cb045b3266d75651dfff020181e51b9dc81a2d29b"
+    },
+    {
+      "path": "matplotlib/tri/_trirefine.pyi",
+      "wheel_path": "matplotlib/tri/_trirefine.pyi",
+      "size_bytes": 1056,
+      "sha256": "27f3e68db788e946cb69e79c823d4e0af19efecafd514b0d2bd346052950df6d"
+    },
+    {
+      "path": "matplotlib/tri/_tritools.py",
+      "wheel_path": "matplotlib/tri/_tritools.py",
+      "size_bytes": 10575,
+      "sha256": "c02f4a544e94aa45951e9c96f4553885076a455455989961681175117b1a0fc5"
+    },
+    {
+      "path": "matplotlib/tri/_tritools.pyi",
+      "wheel_path": "matplotlib/tri/_tritools.pyi",
+      "size_bytes": 402,
+      "sha256": "5d6c30bc7da7200987f24e7d6918e72c15506d3c0abddfc5cddb1134048224cc"
+    },
+    {
+      "path": "matplotlib/typing.py",
+      "wheel_path": "matplotlib/typing.py",
+      "size_bytes": 2439,
+      "sha256": "671a50e6302a8a9aeadd492a58f6ab589213808b8e8b8649e9610cfeadd03a2b"
+    },
+    {
+      "path": "matplotlib/units.py",
+      "wheel_path": "matplotlib/units.py",
+      "size_bytes": 6429,
+      "sha256": "ecefa595cf24dc6a5da2d52cdad59c1068285071d7f98ee8d11edffb526f7b79"
+    },
+    {
+      "path": "matplotlib/widgets.py",
+      "wheel_path": "matplotlib/widgets.py",
+      "size_bytes": 152774,
+      "sha256": "1afe5f4acba634d94796e6dba129495d373cd41f42cccabc9ef24c7176403ed6"
+    },
+    {
+      "path": "matplotlib/widgets.pyi",
+      "wheel_path": "matplotlib/widgets.pyi",
+      "size_bytes": 15383,
+      "sha256": "0696e309979cee7fae3a3fdc226bbe701d629950b8a1e2fcac95308f16e63787"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/__init__.py",
+      "wheel_path": "mpl_toolkits/axes_grid1/__init__.py",
+      "size_bytes": 371,
+      "sha256": "c22b94090a35836d125b94f79853a623d74608963a6839a0969430e437eccc45"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/anchored_artists.py",
+      "wheel_path": "mpl_toolkits/axes_grid1/anchored_artists.py",
+      "size_bytes": 17161,
+      "sha256": "64ee5b205ff6f6c5ab93e956a1c289ff8e4e41d96e7ff82eee72eb0ad7cab5d6"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/axes_divider.py",
+      "wheel_path": "mpl_toolkits/axes_grid1/axes_divider.py",
+      "size_bytes": 21892,
+      "sha256": "243de318102a4474586f58da6e5ae9abf44542f62d61fc2d2083c9810a5b28f7"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/axes_grid.py",
+      "wheel_path": "mpl_toolkits/axes_grid1/axes_grid.py",
+      "size_bytes": 22344,
+      "sha256": "b2311baba86eed81629a839854871a71c1065ec4a58cd3da4cb7c98c51d656d3"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/axes_rgb.py",
+      "wheel_path": "mpl_toolkits/axes_grid1/axes_rgb.py",
+      "size_bytes": 5227,
+      "sha256": "a5a6e069626e2d308fc361654fa65fcb9774ffde4212f68b7a8b1645312547df"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/axes_size.py",
+      "wheel_path": "mpl_toolkits/axes_grid1/axes_size.py",
+      "size_bytes": 7713,
+      "sha256": "500110fadd2a7899507306dbad8e2d2b636e49685e17251722493805409ab877"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/inset_locator.py",
+      "wheel_path": "mpl_toolkits/axes_grid1/inset_locator.py",
+      "size_bytes": 19649,
+      "sha256": "ff653c6408ffc7b8232a13e4e345526f313b2fac0ed9563e3a838c7ddeb1389b"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/mpl_axes.py",
+      "wheel_path": "mpl_toolkits/axes_grid1/mpl_axes.py",
+      "size_bytes": 4251,
+      "sha256": "bc50adb678fd248818dccb7678e8be3bf155bdd67a496fec06d2011626fa6f3e"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/parasite_axes.py",
+      "wheel_path": "mpl_toolkits/axes_grid1/parasite_axes.py",
+      "size_bytes": 9404,
+      "sha256": "f34f54cb76cb817203206ced79f72f4bd12865cbb729f315d50c0bcd7f2a553e"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/tests/__init__.py",
+      "wheel_path": "mpl_toolkits/axes_grid1/tests/__init__.py",
+      "size_bytes": 365,
+      "sha256": "b0a2f12fd8c42415fb7a1e4eba6b5748e9d3ae23eb25492e8d31c5b6725516b3"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/tests/conftest.py",
+      "wheel_path": "mpl_toolkits/axes_grid1/tests/conftest.py",
+      "size_bytes": 147,
+      "sha256": "cc1eb5b32f745fded8275ea62068ae68401a0488c11334402bfa9f48289c8503"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/tests/test_axes_grid1.py",
+      "wheel_path": "mpl_toolkits/axes_grid1/tests/test_axes_grid1.py",
+      "size_bytes": 29093,
+      "sha256": "c7e5bce390af9763be7861a1a712836b2160efe4105cd03de273832c214fa497"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/__init__.py",
+      "wheel_path": "mpl_toolkits/axisartist/__init__.py",
+      "size_bytes": 631,
+      "sha256": "44f68d0e5db615b9833fb651b24bb5c82aa9a0da9c7250a4d1adeb5e3dc6edf1"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/angle_helper.py",
+      "wheel_path": "mpl_toolkits/axisartist/angle_helper.py",
+      "size_bytes": 12952,
+      "sha256": "fa68caa5a475a4b309ba8734b31d3f5776efd2244f32ba52eebfd6234518ac27"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/axes_divider.py",
+      "wheel_path": "mpl_toolkits/axisartist/axes_divider.py",
+      "size_bytes": 122,
+      "sha256": "eb9c52090f5c1d20b7284ec9ec7c52e1b7ec0d301b3e6c32cf58c9e3706a9c1b"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/axis_artist.py",
+      "wheel_path": "mpl_toolkits/axisartist/axis_artist.py",
+      "size_bytes": 38328,
+      "sha256": "f4563dc9797c785e50b81bc5f3e562a6ffeb99da5c3a5037438f1ae6fec5a1e0"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/axisline_style.py",
+      "wheel_path": "mpl_toolkits/axisartist/axisline_style.py",
+      "size_bytes": 6723,
+      "sha256": "f636c39171333108831d1fa50d829912f4c00ed270b76aa5375704ad5514771d"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/axislines.py",
+      "wheel_path": "mpl_toolkits/axisartist/axislines.py",
+      "size_bytes": 16556,
+      "sha256": "4312af0a14da44f8f4a2fbf176b7ebde93b31311087f9b2f0f0c5113b7a71178"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/floating_axes.py",
+      "wheel_path": "mpl_toolkits/axisartist/floating_axes.py",
+      "size_bytes": 10337,
+      "sha256": "91f8562a49a2cbcb645e8547be8a1389d5c8962714f3ad559dc125b1470184ba"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/grid_finder.py",
+      "wheel_path": "mpl_toolkits/axisartist/grid_finder.py",
+      "size_bytes": 12265,
+      "sha256": "1e2db3c2742295abe0aea58a49cb9245b6bf5813eaaab6e612b194d17c80b0ea"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/grid_helper_curvelinear.py",
+      "wheel_path": "mpl_toolkits/axisartist/grid_helper_curvelinear.py",
+      "size_bytes": 12349,
+      "sha256": "a1f37ba4fa84321debe9b49ff5e3879006443ab9a188d655f988a0de3a33902e"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/parasite_axes.py",
+      "wheel_path": "mpl_toolkits/axisartist/parasite_axes.py",
+      "size_bytes": 244,
+      "sha256": "61d8b8fb42db733afa2bb4b3d7e7d1c0ae139bc2a51eb388ba6c7aed76e8ffd7"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/tests/__init__.py",
+      "wheel_path": "mpl_toolkits/axisartist/tests/__init__.py",
+      "size_bytes": 365,
+      "sha256": "b0a2f12fd8c42415fb7a1e4eba6b5748e9d3ae23eb25492e8d31c5b6725516b3"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/tests/conftest.py",
+      "wheel_path": "mpl_toolkits/axisartist/tests/conftest.py",
+      "size_bytes": 147,
+      "sha256": "cc1eb5b32f745fded8275ea62068ae68401a0488c11334402bfa9f48289c8503"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/tests/test_angle_helper.py",
+      "wheel_path": "mpl_toolkits/axisartist/tests/test_angle_helper.py",
+      "size_bytes": 5670,
+      "sha256": "3f0849c019b6924e2e33285d3b96ab42cf0896a497daf37486f53323b607aabc"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/tests/test_axis_artist.py",
+      "wheel_path": "mpl_toolkits/axisartist/tests/test_axis_artist.py",
+      "size_bytes": 2980,
+      "sha256": "c2dddb89c56050f9c15f8f3e747d19ea16e81e0bad220c15a5a1a47146437955"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/tests/test_axislines.py",
+      "wheel_path": "mpl_toolkits/axisartist/tests/test_axislines.py",
+      "size_bytes": 4353,
+      "sha256": "3577a0aef133556a2fb21b5afaa8db50a036b6941c01b8d86dfc247fab4a4fa6"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/tests/test_floating_axes.py",
+      "wheel_path": "mpl_toolkits/axisartist/tests/test_floating_axes.py",
+      "size_bytes": 4083,
+      "sha256": "976e1507548baec25938c307da39819f2f444e16b802a00ce4aa2474639ae569"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/tests/test_grid_finder.py",
+      "wheel_path": "mpl_toolkits/axisartist/tests/test_grid_finder.py",
+      "size_bytes": 1156,
+      "sha256": "73040b0ce75c25b018d84eddafce7de72cee361d7f621f34aff3bc5864f684c6"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/tests/test_grid_helper_curvelinear.py",
+      "wheel_path": "mpl_toolkits/axisartist/tests/test_grid_helper_curvelinear.py",
+      "size_bytes": 7216,
+      "sha256": "3a11de8f4bc27c28c92649d3ef222de0ec5977a38c2425e71684f7a73a94b53a"
+    },
+    {
+      "path": "mpl_toolkits/mplot3d/__init__.py",
+      "wheel_path": "mpl_toolkits/mplot3d/__init__.py",
+      "size_bytes": 49,
+      "sha256": "7c7f4774c7c532f8db216ab2da08d09e6da6dda7b50af2e2b87e8bc0a1e8d242"
+    },
+    {
+      "path": "mpl_toolkits/mplot3d/art3d.py",
+      "wheel_path": "mpl_toolkits/mplot3d/art3d.py",
+      "size_bytes": 50596,
+      "sha256": "7d23ac8df004ad2945b7c499585942e97b5aa756a0fc505a3911c28ab3a9b37d"
+    },
+    {
+      "path": "mpl_toolkits/mplot3d/axes3d.py",
+      "wheel_path": "mpl_toolkits/mplot3d/axes3d.py",
+      "size_bytes": 157921,
+      "sha256": "84205d6b6401ebf398c8a109386d2968f1200cf98b21cac432466e2aa394161a"
+    },
+    {
+      "path": "mpl_toolkits/mplot3d/axis3d.py",
+      "wheel_path": "mpl_toolkits/mplot3d/axis3d.py",
+      "size_bytes": 29327,
+      "sha256": "7903d6a364ca6d1b0f63c254b7976b8c16f245d54a060793d841781c6839d685"
+    },
+    {
+      "path": "mpl_toolkits/mplot3d/proj3d.py",
+      "wheel_path": "mpl_toolkits/mplot3d/proj3d.py",
+      "size_bytes": 6349,
+      "sha256": "e879ba58fcdebbfc237de47c69fad0d6709f8d2d29df08efa122312565654b4b"
+    },
+    {
+      "path": "mpl_toolkits/mplot3d/tests/__init__.py",
+      "wheel_path": "mpl_toolkits/mplot3d/tests/__init__.py",
+      "size_bytes": 365,
+      "sha256": "b0a2f12fd8c42415fb7a1e4eba6b5748e9d3ae23eb25492e8d31c5b6725516b3"
+    },
+    {
+      "path": "mpl_toolkits/mplot3d/tests/conftest.py",
+      "wheel_path": "mpl_toolkits/mplot3d/tests/conftest.py",
+      "size_bytes": 147,
+      "sha256": "cc1eb5b32f745fded8275ea62068ae68401a0488c11334402bfa9f48289c8503"
+    },
+    {
+      "path": "mpl_toolkits/mplot3d/tests/test_art3d.py",
+      "wheel_path": "mpl_toolkits/mplot3d/tests/test_art3d.py",
+      "size_bytes": 3743,
+      "sha256": "eba758753d77f0dad0bfd313f4881b9da5a1658ae6682d2569ab526778b7fb83"
+    },
+    {
+      "path": "mpl_toolkits/mplot3d/tests/test_axes3d.py",
+      "wheel_path": "mpl_toolkits/mplot3d/tests/test_axes3d.py",
+      "size_bytes": 92348,
+      "sha256": "5dfe4cd438a9c957ec04117c740dc05e0e54d07b6cd7de047c0879ed54aea44e"
+    },
+    {
+      "path": "mpl_toolkits/mplot3d/tests/test_legend3d.py",
+      "wheel_path": "mpl_toolkits/mplot3d/tests/test_legend3d.py",
+      "size_bytes": 4343,
+      "sha256": "4063daa1ab9c24ff4a202ebc83cce6938762bc1ff0e4fb507380cc207329700f"
+    },
+    {
+      "path": "pylab.py",
+      "wheel_path": "pylab.py",
+      "size_bytes": 110,
+      "sha256": "cd45d4d25edeec2e639834896ccd062d0c41ba7df1cee5cd7f5b6ea19600e979"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "__pycache__/pylab.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib-3.10.9.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib-3.10.9.dist-info/REQUESTED",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_afm.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_animation_data.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_blocking_input.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_cm.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_cm_bivar.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_cm_listed.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_cm_multivar.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_color_data.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_constrained_layout.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_docstring.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_enums.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_fontconfig_pattern.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_internal_utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_layoutgrid.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_mathtext.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_mathtext_data.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_pylab_helpers.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_text_helpers.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_tight_bbox.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_tight_layout.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_type1font.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/_version.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/animation.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/artist.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/axis.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/backend_bases.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/backend_managers.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/backend_tools.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/bezier.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/category.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/cbook.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/cm.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/collections.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/colorbar.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/colorizer.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/colors.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/container.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/contour.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/dates.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/dviread.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/figure.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/font_manager.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/gridspec.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/hatch.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/image.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/inset.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/layout_engine.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/legend.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/legend_handler.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/lines.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/markers.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/mathtext.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/mlab.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/offsetbox.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/patches.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/path.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/patheffects.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/pylab.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/pyplot.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/quiver.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/rcsetup.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/sankey.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/scale.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/spines.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/stackplot.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/streamplot.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/table.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/texmanager.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/text.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/textpath.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/ticker.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/transforms.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/typing.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/units.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/__pycache__/widgets.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/_api/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/_api/__pycache__/deprecation.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/axes/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/axes/__pycache__/_axes.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/axes/__pycache__/_base.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/axes/__pycache__/_secondary_axes.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/_backend_gtk.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/_backend_pdf_ps.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/_backend_tk.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_agg.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_cairo.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_gtk3.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_gtk3agg.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_gtk3cairo.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_gtk4.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_gtk4agg.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_gtk4cairo.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_macosx.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_mixed.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_nbagg.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_pdf.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_pgf.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_ps.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_qt.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_qt5.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_qt5agg.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_qt5cairo.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_qtagg.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_qtcairo.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_svg.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_template.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_tkagg.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_tkcairo.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_webagg.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_webagg_core.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_wx.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_wxagg.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/backend_wxcairo.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/qt_compat.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/__pycache__/registry.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/qt_editor/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/qt_editor/__pycache__/_formlayout.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/backends/qt_editor/__pycache__/figureoptions.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/projections/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/projections/__pycache__/geo.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/projections/__pycache__/polar.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/sphinxext/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/sphinxext/__pycache__/figmpl_directive.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/sphinxext/__pycache__/mathmpl.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/sphinxext/__pycache__/plot_directive.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/sphinxext/__pycache__/roles.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/style/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/style/__pycache__/core.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/testing/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/testing/__pycache__/_markers.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/testing/__pycache__/compare.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/testing/__pycache__/conftest.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/testing/__pycache__/decorators.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/testing/__pycache__/exceptions.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/testing/__pycache__/widgets.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/testing/jpl_units/__pycache__/Duration.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/testing/jpl_units/__pycache__/Epoch.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/testing/jpl_units/__pycache__/EpochConverter.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/testing/jpl_units/__pycache__/StrConverter.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/testing/jpl_units/__pycache__/UnitDbl.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/testing/jpl_units/__pycache__/UnitDblConverter.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/testing/jpl_units/__pycache__/UnitDblFormatter.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/testing/jpl_units/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/conftest.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_afm.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_agg.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_agg_filter.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_animation.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_api.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_arrow_patches.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_artist.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_axes.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_axis.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_backend_bases.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_backend_cairo.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_backend_gtk3.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_backend_inline.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_backend_macosx.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_backend_nbagg.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_backend_pdf.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_backend_pgf.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_backend_ps.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_backend_qt.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_backend_registry.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_backend_svg.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_backend_template.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_backend_tk.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_backend_tools.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_backend_webagg.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_backends_interactive.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_basic.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_bbox_tight.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_bezier.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_category.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_cbook.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_collections.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_colorbar.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_colors.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_compare_images.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_constrainedlayout.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_container.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_contour.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_cycles.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_dates.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_datetime.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_determinism.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_doc.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_dviread.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_figure.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_font_manager.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_fontconfig_pattern.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_ft2font.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_getattr.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_gridspec.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_image.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_legend.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_lines.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_marker.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_mathtext.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_matplotlib.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_mlab.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_multivariate_colormaps.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_offsetbox.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_patches.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_path.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_patheffects.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_pickle.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_png.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_polar.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_preprocess_data.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_pyplot.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_quiver.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_rcparams.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_sankey.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_scale.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_simplification.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_skew.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_sphinxext.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_spines.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_streamplot.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_style.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_subplots.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_table.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_testing.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_texmanager.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_text.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_textpath.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_ticker.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_tightlayout.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_transforms.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_triangulation.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_type1font.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_units.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_usetex.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tests/__pycache__/test_widgets.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tri/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tri/__pycache__/_triangulation.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tri/__pycache__/_tricontour.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tri/__pycache__/_trifinder.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tri/__pycache__/_triinterpolate.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tri/__pycache__/_tripcolor.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tri/__pycache__/_triplot.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tri/__pycache__/_trirefine.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "matplotlib/tri/__pycache__/_tritools.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/__pycache__/anchored_artists.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/__pycache__/axes_divider.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/__pycache__/axes_grid.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/__pycache__/axes_rgb.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/__pycache__/axes_size.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/__pycache__/inset_locator.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/__pycache__/mpl_axes.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/__pycache__/parasite_axes.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/tests/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/tests/__pycache__/conftest.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axes_grid1/tests/__pycache__/test_axes_grid1.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/__pycache__/angle_helper.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/__pycache__/axes_divider.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/__pycache__/axis_artist.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/__pycache__/axisline_style.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/__pycache__/axislines.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/__pycache__/floating_axes.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/__pycache__/grid_finder.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/__pycache__/grid_helper_curvelinear.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/__pycache__/parasite_axes.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/tests/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/tests/__pycache__/conftest.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/tests/__pycache__/test_angle_helper.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/tests/__pycache__/test_axis_artist.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/tests/__pycache__/test_axislines.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/tests/__pycache__/test_floating_axes.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/tests/__pycache__/test_grid_finder.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/axisartist/tests/__pycache__/test_grid_helper_curvelinear.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/mplot3d/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/mplot3d/__pycache__/art3d.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/mplot3d/__pycache__/axes3d.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/mplot3d/__pycache__/axis3d.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/mplot3d/__pycache__/proj3d.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/mplot3d/tests/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/mplot3d/tests/__pycache__/conftest.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/mplot3d/tests/__pycache__/test_art3d.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/mplot3d/tests/__pycache__/test_axes3d.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "mpl_toolkits/mplot3d/tests/__pycache__/test_legend3d.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "9f436ea059f8c8e0508e67699b9ad79d2baae0ae9363015419994925eeef4d1d",
+  "wheel_size_bytes": 9626545,
+  "rebuilt_record_verified_files": 593,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:19.833634+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 593,
+  "source_record_verified_file_count": 595
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "source": "user supplied nvidia-smi output on 2026-10-29",
+  "hostname": "crp-5070ti-01",
+  "project_directory": "/home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt",
+  "os_family": "Ubuntu",
+  "gpu_index": 0,
+  "gpu_name": "NVIDIA GeForce RTX 5070 Ti",
+  "gpu_memory_mib": 16303,
+  "driver_version": "595.91.07",
+  "nvidia_smi_cuda_capability": "13.2",
+  "compute_capability": "12.0",
+  "native_architecture": "sm_120",
+  "driver_change_requested": false,
+  "delivery": "My Passport; user runs deployment and inference on the target host",
+  "preferred_runtime": "D0-derived CUDA 12.8 / Torch 2.10.0+cu128 image with rebuilt sm_120 extensions",
+  "service_bind": "127.0.0.1:8080",
+  "robot_execution": false,
+  "hardware_source": "https://developer.nvidia.com/cuda/gpus"
+}

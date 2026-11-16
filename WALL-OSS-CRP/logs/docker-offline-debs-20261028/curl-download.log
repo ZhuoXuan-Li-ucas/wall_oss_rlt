@@ -1,0 +1,94 @@
+Progress 8/699 ranges in 25.5s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 2490368 downloaded
+Progress 16/699 ranges in 30.2s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 786432 downloaded
+Progress 24/699 ranges in 51.6s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 4718592 downloaded
+Progress 32/699 ranges in 58.8s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 2883584 downloaded
+Progress 40/699 ranges in 68.3s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 5767168 downloaded
+Progress 48/699 ranges in 75.2s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 6422528 downloaded
+Progress 56/699 ranges in 84.0s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 4325376 downloaded
+Progress 64/699 ranges in 90.2s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 8126464 downloaded
+Progress 72/699 ranges in 97.1s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 9043968 downloaded
+Progress 80/699 ranges in 104.4s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 10878976 downloaded
+Progress 88/699 ranges in 111.1s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 11796480 downloaded
+Progress 96/699 ranges in 121.8s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 13238272 downloaded
+Progress 104/699 ranges in 129.9s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 14942208 downloaded
+Progress 112/699 ranges in 137.2s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 14548992 downloaded
+Progress 120/699 ranges in 146.4s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 15728640 downloaded
+Progress 128/699 ranges in 153.8s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 17170432 downloaded
+Progress 136/699 ranges in 158.4s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 18481152 downloaded
+Progress 144/699 ranges in 163.3s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 17432576 downloaded
+Progress 152/699 ranges in 173.3s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 19922944 downloaded
+Progress 160/699 ranges in 177.8s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 16121856 downloaded
+Progress 168/699 ranges in 187.1s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 22282240 downloaded
+Progress 176/699 ranges in 193.1s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 23986176 downloaded
+Progress 184/699 ranges in 200.7s: docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb 23855104 downloaded
+Progress 192/699 ranges in 211.1s: docker-ce-cli_29.9.2-1~ubuntu.24.04~noble_amd64.deb 1310720 downloaded
+Progress 200/699 ranges in 217.4s: docker-ce-cli_29.9.2-1~ubuntu.24.04~noble_amd64.deb 1572864 downloaded
+Progress 208/699 ranges in 222.7s: docker-ce-cli_29.9.2-1~ubuntu.24.04~noble_amd64.deb 3276800 downloaded
+Progress 216/699 ranges in 229.1s: docker-ce-cli_29.9.2-1~ubuntu.24.04~noble_amd64.deb 3670016 downloaded
+Progress 224/699 ranges in 234.8s: docker-ce-cli_29.9.2-1~ubuntu.24.04~noble_amd64.deb 5898240 downloaded
+Progress 232/699 ranges in 242.5s: docker-ce-cli_29.9.2-1~ubuntu.24.04~noble_amd64.deb 6422528 downloaded
+Progress 240/699 ranges in 245.3s: docker-ce-cli_29.9.2-1~ubuntu.24.04~noble_amd64.deb 6553600 downloaded
+Progress 248/699 ranges in 254.9s: docker-ce-cli_29.9.2-1~ubuntu.24.04~noble_amd64.deb 6946816 downloaded
+Progress 256/699 ranges in 257.4s: docker-ce-cli_29.9.2-1~ubuntu.24.04~noble_amd64.deb 8257536 downloaded
+Progress 264/699 ranges in 263.5s: docker-ce-cli_29.9.2-1~ubuntu.24.04~noble_amd64.deb 10223616 downloaded
+Progress 272/699 ranges in 270.3s: docker-ce-cli_29.9.2-1~ubuntu.24.04~noble_amd64.deb 11403264 downloaded
+Progress 280/699 ranges in 274.1s: docker-ce-cli_29.9.2-1~ubuntu.24.04~noble_amd64.deb 11141120 downloaded
+Progress 288/699 ranges in 279.5s: docker-ce-cli_29.9.2-1~ubuntu.24.04~noble_amd64.deb 13631488 downloaded
+Progress 296/699 ranges in 288.6s: docker-ce-cli_29.9.2-1~ubuntu.24.04~noble_amd64.deb 14024704 downloaded
+Progress 304/699 ranges in 298.4s: docker-ce-cli_29.9.2-1~ubuntu.24.04~noble_amd64.deb 16121856 downloaded
+Progress 312/699 ranges in 303.5s: docker-ce-cli_29.9.2-1~ubuntu.24.04~noble_amd64.deb 15990784 downloaded
+Progress 320/699 ranges in 312.5s: docker-ce-cli_29.9.2-1~ubuntu.24.04~noble_amd64.deb 16646144 downloaded
+Progress 328/699 ranges in 316.9s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 1835008 downloaded
+Progress 336/699 ranges in 323.6s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 524288 downloaded
+Progress 344/699 ranges in 329.5s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 2621440 downloaded
+Progress 352/699 ranges in 334.6s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 4325376 downloaded
+Progress 360/699 ranges in 346.7s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 5898240 downloaded
+Progress 368/699 ranges in 350.2s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 5242880 downloaded
+Progress 376/699 ranges in 356.3s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 7077888 downloaded
+Progress 384/699 ranges in 365.4s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 8781824 downloaded
+Progress 392/699 ranges in 373.1s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 8257536 downloaded
+Progress 400/699 ranges in 378.8s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 10092544 downloaded
+Progress 408/699 ranges in 385.0s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 10485760 downloaded
+Progress 416/699 ranges in 393.8s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 12320768 downloaded
+Progress 424/699 ranges in 397.4s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 14024704 downloaded
+Progress 432/699 ranges in 403.6s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 13238272 downloaded
+Progress 440/699 ranges in 411.5s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 15728640 downloaded
+Progress 448/699 ranges in 415.0s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 16646144 downloaded
+Progress 456/699 ranges in 423.8s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 17694720 downloaded
+Progress 464/699 ranges in 428.0s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 16252928 downloaded
+Progress 472/699 ranges in 434.9s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 19660800 downloaded
+Progress 480/699 ranges in 440.6s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 21364736 downloaded
+Progress 488/699 ranges in 442.7s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 20971520 downloaded
+Progress 496/699 ranges in 448.2s: containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb 22413312 downloaded
+Progress 504/699 ranges in 456.1s: docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb 917504 downloaded
+Progress 512/699 ranges in 461.5s: docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb 1441792 downloaded
+Progress 520/699 ranges in 468.1s: docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb 524288 downloaded
+Progress 528/699 ranges in 473.7s: docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb 3932160 downloaded
+Progress 536/699 ranges in 479.5s: docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb 4456448 downloaded
+Progress 544/699 ranges in 484.3s: docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb 5505024 downloaded
+Progress 552/699 ranges in 491.1s: docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb 6815744 downloaded
+Progress 560/699 ranges in 496.4s: docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb 6684672 downloaded
+Progress 568/699 ranges in 500.2s: docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb 9043968 downloaded
+Progress 576/699 ranges in 506.9s: docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb 9437184 downloaded
+Progress 584/699 ranges in 519.5s: docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb 11272192 downloaded
+Progress 592/699 ranges in 534.3s: docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb 12713984 downloaded
+Progress 600/699 ranges in 556.4s: docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb 14286848 downloaded
+Progress 608/699 ranges in 568.3s: docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb 11665408 downloaded
+Progress 616/699 ranges in 575.2s: docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb 15597568 downloaded
+Progress 624/699 ranges in 583.7s: docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb 14548992 downloaded
+Progress 632/699 ranges in 587.8s: docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb 16252928 downloaded
+Traceback (most recent call last):
+  File "/home/pangk/workspaces/WALL-OSS-CRP/logs/docker-offline-debs-20261028/download_verified.py", line 31, in <module>
+    name,start,status=f.result()
+                      ^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pangk/workspaces/WALL-OSS-CRP/logs/docker-offline-debs-20261028/download_verified.py", line 26, in download
+    raise RuntimeError(f'{p["filename"]} bytes {start}-{end}: rc={r.returncode} status={r.stdout}, {r.stderr.strip()}')
+RuntimeError: docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb bytes 11927552-12058623: rc=28 status=000, curl: (28) SSL connection timeout

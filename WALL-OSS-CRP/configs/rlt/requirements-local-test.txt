@@ -1,0 +1,7 @@
+# Install only in .venv-rlt, which inherits the existing WALL environment.
+pytest>=8,<9
+hydra-core==1.3.2
+torchdata==0.11.0
+ray[default]==2.47.0
+sortedcontainers==2.4.0
+tensorboard==2.20.0

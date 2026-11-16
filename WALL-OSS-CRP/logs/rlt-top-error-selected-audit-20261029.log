@@ -1,0 +1,43 @@
+{
+  "root": "/media/pangk/My Passport/top_error",
+  "task": "grasping",
+  "scope": "original NPZ and MP4 only",
+  "structural_status": "PASS",
+  "semantic_status": "PASS",
+  "semantic_check_scope": "documented shapes, binary command, wrist timeline, held, prompt, camera layout and SO(3) previous-to-current pose delta",
+  "excluded_groups": [
+    "mouse",
+    "tape"
+  ],
+  "training_ready": false,
+  "episodes": 350,
+  "frames": 176523,
+  "groups": {
+    "banana": 50,
+    "black_box": 50,
+    "black_sleeve": 50,
+    "charger": 50,
+    "long_box": 50,
+    "pill_box": 50,
+    "water_bottle": 50
+  },
+  "split_counts": {
+    "train": 245,
+    "dev": 49,
+    "test": 56
+  },
+  "split_status": "provisional stratified episode split; target representation and model contract are separate",
+  "action_dims": [
+    7
+  ],
+  "state_dims": [
+    8
+  ],
+  "video_check_scope": "container frame counts/FPS and first-frame decode, not full-stream decode/hash",
+  "unconfirmed": [
+    "model slot mapping",
+    "episode success/quality labels"
+  ],
+  "problems": [],
+  "semantic_problems": []
+}

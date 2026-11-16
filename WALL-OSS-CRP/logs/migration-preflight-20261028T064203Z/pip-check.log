@@ -1,0 +1,11 @@
+lerobot 0.4.4 requires cmake, which is not installed.
+lerobot 0.4.4 requires deepdiff, which is not installed.
+lerobot 0.4.4 requires diffusers, which is not installed.
+lerobot 0.4.4 requires gymnasium, which is not installed.
+lerobot 0.4.4 requires imageio, which is not installed.
+lerobot 0.4.4 requires jsonlines, which is not installed.
+lerobot 0.4.4 requires pynput, which is not installed.
+lerobot 0.4.4 requires pyserial, which is not installed.
+lerobot 0.4.4 requires rerun-sdk, which is not installed.
+lerobot 0.4.4 requires torchcodec, which is not installed.
+lerobot 0.4.4 has requirement huggingface-hub[cli,hf-transfer]<0.36.0,>=0.34.2, but you have huggingface-hub 1.33.0.

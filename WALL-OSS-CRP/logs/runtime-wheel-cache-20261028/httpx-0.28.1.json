@@ -1,0 +1,306 @@
+{
+  "status": "PASS",
+  "package": "httpx",
+  "version": "0.28.1",
+  "filename": "httpx-0.28.1-py3-none-any.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "34fd4089dba8de4e354e1b04c22103f23b939915b47bb14cd5d2740365ce3347",
+  "wheel_tags": [
+    "py3-none-any"
+  ],
+  "record_verified_files": [
+    {
+      "path": "../../../bin/httpx",
+      "wheel_path": "../../../bin/httpx",
+      "size_bytes": 186,
+      "sha256": "f7bc842d0eac48d17f81ec4858359501d505fac7e6023b9d30303c5212241fa1"
+    },
+    {
+      "path": "httpx-0.28.1.dist-info/INSTALLER",
+      "wheel_path": "httpx-0.28.1.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "httpx-0.28.1.dist-info/METADATA",
+      "wheel_path": "httpx-0.28.1.dist-info/METADATA",
+      "size_bytes": 7052,
+      "sha256": "febb9b0f8f3e80d57c8199c304f35c4336e8581d1d18d7983c92766b82793b25"
+    },
+    {
+      "path": "httpx-0.28.1.dist-info/WHEEL",
+      "wheel_path": "httpx-0.28.1.dist-info/WHEEL",
+      "size_bytes": 87,
+      "sha256": "0b615483066088b6f39d1fa4d1bff9937022ff568048e5c3b2cde5cc252c52e8"
+    },
+    {
+      "path": "httpx-0.28.1.dist-info/entry_points.txt",
+      "wheel_path": "httpx-0.28.1.dist-info/entry_points.txt",
+      "size_bytes": 37,
+      "sha256": "da55647509b12c0d6934c812376795f3da3dd070997b3866370b32eabc8a0d20"
+    },
+    {
+      "path": "httpx-0.28.1.dist-info/licenses/LICENSE.md",
+      "wheel_path": "httpx-0.28.1.dist-info/licenses/LICENSE.md",
+      "size_bytes": 1508,
+      "sha256": "4ec59d544f12b5f539a3a716fd321ac58ccd8030b465221f2c880200cdf28d8d"
+    },
+    {
+      "path": "httpx/__init__.py",
+      "wheel_path": "httpx/__init__.py",
+      "size_bytes": 2171,
+      "sha256": "0ac6997bac998f4ac783adf6d8058a587193315afdb718047c3e4fdff46bcfad"
+    },
+    {
+      "path": "httpx/__version__.py",
+      "wheel_path": "httpx/__version__.py",
+      "size_bytes": 108,
+      "sha256": "2e853261e3974e2786cee3ffeb850bd30c5db718eebbf41b3af13b34e83e22a5"
+    },
+    {
+      "path": "httpx/_api.py",
+      "wheel_path": "httpx/_api.py",
+      "size_bytes": 11743,
+      "sha256": "aff660b388c8a5c3c92ea2b975b6d26b2aa8fe254c2856b164277ea0e1f12c4b"
+    },
+    {
+      "path": "httpx/_auth.py",
+      "wheel_path": "httpx/_auth.py",
+      "size_bytes": 11891,
+      "sha256": "62bdd0c1a5122b5eeb198c7eee3f85762705233cf863d14557ed45e3eed15d7e"
+    },
+    {
+      "path": "httpx/_client.py",
+      "wheel_path": "httpx/_client.py",
+      "size_bytes": 65714,
+      "sha256": "c43f941baefe58c91e96d00039e1868fe719d91453026d7db1647194563bff8d"
+    },
+    {
+      "path": "httpx/_config.py",
+      "wheel_path": "httpx/_config.py",
+      "size_bytes": 8547,
+      "sha256": "a4fa7653ec2271f70ab05f8a6111352d876dddee84446788a1767c1a3a372d67"
+    },
+    {
+      "path": "httpx/_content.py",
+      "wheel_path": "httpx/_content.py",
+      "size_bytes": 8161,
+      "sha256": "2c61b3ac94d1dcebcde0c6f519554d2d7917247fbaa0a97002db4ef69e70ff28"
+    },
+    {
+      "path": "httpx/_decoders.py",
+      "wheel_path": "httpx/_decoders.py",
+      "size_bytes": 12041,
+      "sha256": "a74757f08d0d1077b1b37506a784ac66eb62321b17aeb5a5ebe1a7a956f488a3"
+    },
+    {
+      "path": "httpx/_exceptions.py",
+      "wheel_path": "httpx/_exceptions.py",
+      "size_bytes": 8527,
+      "sha256": "6f15bb7f1ce054c01d3536f04f4567ab4e202435b5fe023f1858903ee3328cbd"
+    },
+    {
+      "path": "httpx/_main.py",
+      "wheel_path": "httpx/_main.py",
+      "size_bytes": 15626,
+      "sha256": "0a0f4631a6e24d3fecc1a0df5202118ad4b0c4b44c4b05033a6ecb7521aa940e"
+    },
+    {
+      "path": "httpx/_models.py",
+      "wheel_path": "httpx/_models.py",
+      "size_bytes": 44700,
+      "sha256": "e3ffc6bb2bf580bc6e6428708a6f247d036220e709f5a72b785392babbd97e6b"
+    },
+    {
+      "path": "httpx/_multipart.py",
+      "wheel_path": "httpx/_multipart.py",
+      "size_bytes": 9843,
+      "sha256": "28e1c465997aa28860f663da2b2caedf8e6aab5ac92e0df94d41b7600cd70776"
+    },
+    {
+      "path": "httpx/_status_codes.py",
+      "wheel_path": "httpx/_status_codes.py",
+      "size_bytes": 5639,
+      "sha256": "0d89fedae7c180c797cb9b3cc77fd307bc2302e00031ec136a43eb9b9ad712c7"
+    },
+    {
+      "path": "httpx/_transports/__init__.py",
+      "wheel_path": "httpx/_transports/__init__.py",
+      "size_bytes": 275,
+      "sha256": "19b52805200ea7bcfe97ef63e5884c851dc3308727e8554b863d3bd8edcd9e7a"
+    },
+    {
+      "path": "httpx/_transports/asgi.py",
+      "wheel_path": "httpx/_transports/asgi.py",
+      "size_bytes": 5501,
+      "sha256": "1d17e20d830fb78c101f6805807660e1cfa2dec6e5a3a6cbe464ea7044fec73f"
+    },
+    {
+      "path": "httpx/_transports/base.py",
+      "wheel_path": "httpx/_transports/base.py",
+      "size_bytes": 2523,
+      "sha256": "9194bf54c6d58987c5e7bd29a205022756ee973fb26df2f9d4faacf7292d79b5"
+    },
+    {
+      "path": "httpx/_transports/default.py",
+      "wheel_path": "httpx/_transports/default.py",
+      "size_bytes": 13983,
+      "sha256": "03379a454c95c0271c4f2c8d25ec437f49f57457f3cf2769748420bf0ecf2e79"
+    },
+    {
+      "path": "httpx/_transports/mock.py",
+      "wheel_path": "httpx/_transports/mock.py",
+      "size_bytes": 1232,
+      "sha256": "3d3a34779ebb4484d7c46ae48ba90deffebbc300317f088c0dcb972626428c4a"
+    },
+    {
+      "path": "httpx/_transports/wsgi.py",
+      "wheel_path": "httpx/_transports/wsgi.py",
+      "size_bytes": 4825,
+      "sha256": "35c3d7dd76a9fc4c0215958efce692c9036e227098c7540c35b3bc1807a2ea36"
+    },
+    {
+      "path": "httpx/_types.py",
+      "wheel_path": "httpx/_types.py",
+      "size_bytes": 2965,
+      "sha256": "272878d4642aec039ebfc20e58a0c083bcc26ef1c07ee7e65b983f3e24ed12b6"
+    },
+    {
+      "path": "httpx/_urlparse.py",
+      "wheel_path": "httpx/_urlparse.py",
+      "size_bytes": 18546,
+      "sha256": "640987e3b38d7e4c6bae3f8f3d88467a21e36fa0232824be00d58837838bfca6"
+    },
+    {
+      "path": "httpx/_urls.py",
+      "wheel_path": "httpx/_urls.py",
+      "size_bytes": 21550,
+      "sha256": "757f7d551d4348e1e9828f40abb3f360ee0529dc6a2a3c32369f20adff1d1cdd"
+    },
+    {
+      "path": "httpx/_utils.py",
+      "wheel_path": "httpx/_utils.py",
+      "size_bytes": 8285,
+      "sha256": "fd355ea802afc4990a1ddcfb74579be2cd0b66a41781e1645d281f88704aff5a"
+    },
+    {
+      "path": "httpx/py.typed",
+      "wheel_path": "httpx/py.typed",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "../../../bin/httpx",
+      "reason": "verified console entry point; installer regenerates portable script"
+    },
+    {
+      "path": "httpx-0.28.1.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/__pycache__/__version__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/__pycache__/_api.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/__pycache__/_auth.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/__pycache__/_client.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/__pycache__/_config.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/__pycache__/_content.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/__pycache__/_decoders.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/__pycache__/_exceptions.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/__pycache__/_main.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/__pycache__/_models.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/__pycache__/_multipart.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/__pycache__/_status_codes.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/__pycache__/_types.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/__pycache__/_urlparse.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/__pycache__/_urls.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/__pycache__/_utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/_transports/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/_transports/__pycache__/asgi.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/_transports/__pycache__/base.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/_transports/__pycache__/default.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/_transports/__pycache__/mock.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpx/_transports/__pycache__/wsgi.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "8030922aa8a55cda1c0a1185176ba42e0443e89bd8f6cdec51c2cceb4020582c",
+  "wheel_size_bytes": 85160,
+  "rebuilt_record_verified_files": 28,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:18.295507+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 28,
+  "source_record_verified_file_count": 30
+}

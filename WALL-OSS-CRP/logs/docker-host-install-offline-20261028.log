@@ -1,0 +1,21 @@
+Authentication: 
+docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb: OK
+docker-ce-cli_29.9.2-1~ubuntu.24.04~noble_amd64.deb: OK
+containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb: OK
+docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb: OK
+docker-compose-plugin_5.6.1-1~ubuntu.24.04~noble_amd64.deb: OK
+nvidia-container-toolkit_1.20.1-1_amd64.deb: OK
+nvidia-container-toolkit-base_1.20.1-1_amd64.deb: OK
+libnvidia-container-tools_1.20.1-1_amd64.deb: OK
+libnvidia-container1_1.20.1-1_amd64.deb: OK
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  clang-tidy-14 clang-tools-14
+Use 'sudo apt autoremove' to remove them.
+Suggested packages:
+  cgroupfs-mount | cgroup-lite docker-model-plugin
+Recommended packages:
+  docker-ce-rootless-extras pigz
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?

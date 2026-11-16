@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "status": "OFFLINE_SOURCE_CANDIDATE_READY",
+  "target": {
+    "schema_version": 1,
+    "source": "user supplied nvidia-smi output on 2026-10-29",
+    "hostname": "crp-5070ti-01",
+    "project_directory": "/home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt",
+    "os_family": "Ubuntu",
+    "gpu_index": 0,
+    "gpu_name": "NVIDIA GeForce RTX 5070 Ti",
+    "gpu_memory_mib": 16303,
+    "driver_version": "595.91.07",
+    "nvidia_smi_cuda_capability": "13.2",
+    "compute_capability": "12.0",
+    "native_architecture": "sm_120",
+    "driver_change_requested": false,
+    "delivery": "My Passport; user runs deployment and inference on the target host",
+    "preferred_runtime": "D0-derived CUDA 12.8 / Torch 2.10.0+cu128 image with rebuilt sm_120 extensions",
+    "service_bind": "127.0.0.1:8080",
+    "robot_execution": false,
+    "hardware_source": "https://developer.nvidia.com/cuda/gpus"
+  },
+  "delivery": {
+    "mode": "My Passport; user executes on target",
+    "bundle": "/media/pangk/My Passport/WALL-RLT-inference5070-20261029-v1",
+    "ssh_to_target": "NOT_USED",
+    "h100_connection": "NOT_USED",
+    "read_first": "/media/pangk/My Passport/WALL-5070Ti-开始部署-20261029.txt",
+    "sidecar_documents": [
+      "/media/pangk/My Passport/WALL-5070Ti-推理部署-20261029.md",
+      "/media/pangk/My Passport/WALL-RLT-详细实现审阅-20261029.md"
+    ]
+  },
+  "existing_bundles": {
+    "base": "/media/pangk/My Passport/WALL-OSS-CRP-transfer-20261029",
+    "training": "/media/pangk/My Passport/WALL-RLT-training-candidate-20261029-v1",
+    "modified": false
+  },
+  "training_server": {
+    "gpu_type": "H100",
+    "gpu_count": 8,
+    "source": "user confirmation",
+    "training": "NOT_RUN"
+  },
+  "weights": {
+    "official_wall": "AVAILABLE_IN_D0",
+    "trained_wall_rlt": "ABSENT",
+    "trained_rl_actor": "ABSENT"
+  },
+  "implementation": {
+    "export": "completed Stage1 consolidated checkpoint to WALL and Encoder safetensors; no decoder/optimizer/Actor",
+    "runtime": "meta initialization, strict assign, selective BF16/FP32, matched training model/preprocessing sources, restored tied embeddings",
+    "transport": "localhost HTTP observation-only, physical WALL reference actions 32x8 and optional z_rl",
+    "validation": "fixed seed, matching decoded observation and artifact, distinct service instance for restart comparison"
+  },
+  "native_build": {
+    "base_image_config": "sha256:2eaee50dfe782ceec5f3c29ade76fdb4b641d92229a18404f1cb5001bba353c3",
+    "cuda": "12.8",
+    "torch": "2.10.0+cu128",
+    "flash_attention": "2.8.3",
+    "target_arch": "sm_120",
+    "network": "none",
+    "status": "NOT_RUN",
+    "reason": "local Docker daemon access unavailable; delivered offline build inputs for target host",
+    "base_source_image_id": "sha256:8f067a0eb220228f444811532cc8ec0a328e4d46b7983637c1c4ea7743ef9ee8"
+  },
+  "target_gpu_kernels": "NOT_RUN",
+  "target_full_official_wall_inference": "NOT_RUN",
+  "target_full_wall_rlt_inference": "NOT_RUN",
+  "robot_execution": false,
+  "data_collection": false,
+  "final_product_frozen": false,
+  "documents": [
+    "WALL_RLT_Inference_Deployment.md",
+    "WALL_RLT_Implementation_Review.md"
+  ],
+  "cpu_report": "logs/rlt-inference-20261029/cpu-check/report.json",
+  "cpu_result": {
+    "tests": 377,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "package": {
+    "status": "SOURCE_PACKAGE_NOT_GPU_VALIDATED",
+    "output": "/media/pangk/My Passport/WALL-RLT-inference5070-20261029-v1",
+    "files": 8,
+    "bytes": 10979923,
+    "source_members": 6888
+  },
+  "package_verification": {
+    "status": "INTEGRITY_PASS",
+    "bundle": "/media/pangk/My Passport/WALL-RLT-inference5070-20261029-v1",
+    "source_members": 6888,
+    "gpu_validated": false
+  },
+  "portable_entrypoints": {
+    "status": "PASS",
+    "scope": "actual new package extraction; source member hashes, docs/config/CPU-report closure and portable CLI help; no Docker or GPU",
+    "root": "/home/pangk/workspaces/WALL-OSS-CRP/.cache/rlt-inference-portability-20261029-v1",
+    "required_project_files_matched": [
+      "WALL_RLT_Inference_Deployment.md",
+      "WALL_RLT_Implementation_Review.md",
+      "configs/inference/rtx5070ti.json",
+      "logs/rlt-inference-20261029/cpu-check/report.json",
+      "scripts/serve_wall_rlt.py",
+      "scripts/export_wall_rlt_inference.py",
+      "scripts/check_wall_rlt_inference.py",
+      "scripts/check_wall_rlt_inference_host.py"
+    ],
+    "cli_help": 4,
+    "cutlass_present": true,
+    "host_native_binaries_present": false,
+    "git_metadata_present": false
+  },
+  "package_files": {
+    "Dockerfile.inference5070": {
+      "bytes": 2811,
+      "sha256": "ac7738c37e3242206330cadaba0b52520a413a32adffc186e2375d9b995bafec"
+    },
+    "MANIFEST.json": {
+      "bytes": 1795922,
+      "sha256": "89cb2418d16d14cdd95ef4ad437348a32c77dff43b9635d838f9611c64f14a39"
+    },
+    "SHA256SUMS": {
+      "bytes": 630,
+      "sha256": "40601a3de4bce2ce6cc0946cf0938b074ead98eb99e38a8e27773e7ab67b8224"
+    },
+    "base-image-identity.json": {
+      "bytes": 2885,
+      "sha256": "21e90ef00aa7772928871eb42806e609afc318287a5670effdb2bbbca7b950dd"
+    },
+    "build_inference5070.sh": {
+      "bytes": 2732,
+      "sha256": "e9c9e76ab4e899a087a354588c7f2492dd9bcc402696e53987559374bac9a692"
+    },
+    "image_archive_identity.py": {
+      "bytes": 11227,
+      "sha256": "92092f6b89728cea1fd423f3c9b8a6783079340e05145c7f303971b8deeb95d0"
+    },
+    "inference-sources.tar.gz": {
+      "bytes": 9145644,
+      "sha256": "262fdce7a45091817f2d84028bd03edbc541ae841474ad3b9cb3507520208b06"
+    },
+    "package_wall_rlt_inference.py": {
+      "bytes": 18072,
+      "sha256": "e4067503b68986dc347b2f5f362b24baa6978c0252d3e75f18a4a91c541c0e23"
+    }
+  },
+  "training_candidate_compatibility": {
+    "checked": "8 directly used project model/preprocessing sources match immutable training-candidate v1 project.tar.gz",
+    "result": "PASS",
+    "wall_patch": "same locked commit and exact patch verified by packager"
+  }
+}

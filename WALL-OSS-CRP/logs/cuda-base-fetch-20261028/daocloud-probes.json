@@ -1,0 +1,54 @@
+{
+  "interface": "wlx6c1ff780c0b6",
+  "resolved_ipv4": {
+    "docker.m.daocloud.io": [
+      "8.217.45.147"
+    ]
+  },
+  "official_manifest_digest": "sha256:6617a625f4090c76c545a0e7d63f2e441718ef9af7f4efe7dd1242a29e289fd7",
+  "official_manifest_verified": true,
+  "blob_digest": "sha256:6b2035e8b73ed2b018995a7b2c8d607d5527daf948d41964f02cc3ce7ed0699a",
+  "blob_size": 2989040412,
+  "range_valid": false,
+  "range_sha256": "56ff272cf2a21f62b4dc5a4f20a6a3f85aa917cd10bbf0dedb0856ae256415cc",
+  "history": [
+    {
+      "phase": "initial_manifest",
+      "curl_rc": 0,
+      "http_status": 401,
+      "bytes": 73,
+      "seconds": 0.191971,
+      "bytes_per_second": 380.0,
+      "remote_ip": "8.217.45.147"
+    },
+    {
+      "phase": "anonymous_auth",
+      "curl_rc": 0,
+      "http_status": 200,
+      "bytes": 246,
+      "seconds": 0.184796,
+      "bytes_per_second": 1331.0,
+      "remote_ip": "8.217.45.147"
+    },
+    {
+      "phase": "authenticated_manifest",
+      "curl_rc": 0,
+      "http_status": 200,
+      "bytes": 2630,
+      "seconds": 1.183967,
+      "bytes_per_second": 2221.0,
+      "remote_ip": "8.217.45.147"
+    },
+    {
+      "phase": "initial_blob_range",
+      "curl_rc": 0,
+      "http_status": 503,
+      "bytes": 68,
+      "seconds": 0.416721,
+      "bytes_per_second": 163.0,
+      "remote_ip": "8.217.45.147"
+    }
+  ],
+  "content_range": null,
+  "note": "A small range cannot establish the full blob SHA256; a complete download must match blob_digest before OCI import."
+}

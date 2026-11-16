@@ -1,0 +1,361 @@
+{
+  "package": "nvidia-nvshmem-cu12",
+  "version": "3.4.5",
+  "source": {
+    "kind": "installed package",
+    "site_packages": "/home/pangk/miniforge3/envs/lerobot-so101/lib/python3.12/site-packages"
+  },
+  "source_record_sha256": "af0b521a4f333d8d631b9d9c5c1240a29babff5977fc48d069375745598efe4a",
+  "wheel_tags": [
+    "py3-none-manylinux2014_x86_64",
+    "py3-none-manylinux_2_17_x86_64"
+  ],
+  "record_verified_files": [
+    {
+      "path": "nvidia/nvshmem/include/bootstrap_device_host/nvshmem_uniqueid.h",
+      "sha256": "7649f530e830c8e5823749e3c5803bd2f7f84f7108b4b5b938ed66d1e2fcc176",
+      "size_bytes": 1534
+    },
+    {
+      "path": "nvidia/nvshmem/include/device/nvshmem_coll_defines.cuh",
+      "sha256": "eabce317b22e059736f6154fbaf1c5bf7024ec6508ddc64e267620651d212484",
+      "size_bytes": 7787
+    },
+    {
+      "path": "nvidia/nvshmem/include/device/nvshmem_defines.h",
+      "sha256": "61015cb4590b0c29576d5f6110d429992abfb66712e41fbd4bcfc977231aebf6",
+      "size_bytes": 84913
+    },
+    {
+      "path": "nvidia/nvshmem/include/device/nvshmem_device_macros.h",
+      "sha256": "f07e0fd07bd354e1767a3bd3642ca96ee093969b8c8f23b36462ba2bf344a05c",
+      "size_bytes": 1438
+    },
+    {
+      "path": "nvidia/nvshmem/include/device/nvshmemx_coll_defines.cuh",
+      "sha256": "fe6663eae7aab10dbe99062e359fc53ed2c5f853cec96a0afe40b4f4152e2f23",
+      "size_bytes": 13391
+    },
+    {
+      "path": "nvidia/nvshmem/include/device/nvshmemx_collective_launch_apis.h",
+      "sha256": "0650ddc510b40a16470899eb36b6c0ec557cf788a2694c66c8bceffbd52ea16a",
+      "size_bytes": 983
+    },
+    {
+      "path": "nvidia/nvshmem/include/device/nvshmemx_defines.h",
+      "sha256": "a2f2326a8c4b92cdb98484b5710a418228d1f10e302100d16f89a11959d5a1fd",
+      "size_bytes": 29148
+    },
+    {
+      "path": "nvidia/nvshmem/include/device/tile/nvshmemx_tile_api.hpp",
+      "sha256": "535ce6690ddd5d43b3e1da48ca3bc4566c91469896d3e0d2f5addc3a664e9632",
+      "size_bytes": 4787
+    },
+    {
+      "path": "nvidia/nvshmem/include/device/tile/nvshmemx_tile_api_defines.cuh",
+      "sha256": "810fd5cd5f699c507450f2ee8d290c56447e451ba21762f9f29ec5b97cd7e1aa",
+      "size_bytes": 6695
+    },
+    {
+      "path": "nvidia/nvshmem/include/device_host/nvshmem_common.cuh",
+      "sha256": "cc2d665af05824d0a1fed15918bf4272478e0ea085416ccc6514e9beefee5081",
+      "size_bytes": 28599
+    },
+    {
+      "path": "nvidia/nvshmem/include/device_host/nvshmem_proxy_channel.h",
+      "sha256": "bcdb733c650cf4fcd00b059a3b3efa76f8516e956e555319ba9285010bc9321e",
+      "size_bytes": 3800
+    },
+    {
+      "path": "nvidia/nvshmem/include/device_host/nvshmem_tensor.h",
+      "sha256": "f06888b2bd7521d4186f196d90b0e8968a58ae587bfe17ea4fc3ed18670f56a1",
+      "size_bytes": 3462
+    },
+    {
+      "path": "nvidia/nvshmem/include/device_host/nvshmem_types.h",
+      "sha256": "be193ef44cc527f55ecff88bc85aad876c33ab5d93bd061a67832d74e957fb26",
+      "size_bytes": 23598
+    },
+    {
+      "path": "nvidia/nvshmem/include/device_host_transport/nvshmem_common_ibgda.h",
+      "sha256": "b9cee4bf5c9d5bdbefc4e054e74c4ead1803bd441c5134e34808a418bdc48195",
+      "size_bytes": 13443
+    },
+    {
+      "path": "nvidia/nvshmem/include/device_host_transport/nvshmem_common_transport.h",
+      "sha256": "6cf6deadd9a7c8f7a1aa6b557fb18d366bf20707295d59d30c3e671b5f38b848",
+      "size_bytes": 1555
+    },
+    {
+      "path": "nvidia/nvshmem/include/device_host_transport/nvshmem_constants.h",
+      "sha256": "975fe99c6969072782ca8fa7e07ec3589acedb68ce65a9f4eb7b3c3e3f740939",
+      "size_bytes": 2603
+    },
+    {
+      "path": "nvidia/nvshmem/include/host/nvshmem_api.h",
+      "sha256": "a633944fcd584f115755d5b62ec46b6356edd42e1f0d3b432edf6078adcdd143",
+      "size_bytes": 23328
+    },
+    {
+      "path": "nvidia/nvshmem/include/host/nvshmem_coll_api.h",
+      "sha256": "cb7295824b0b31cd44961c312cd1366ba8b9ce744bc5b6bc12cee460fe078a6b",
+      "size_bytes": 5067
+    },
+    {
+      "path": "nvidia/nvshmem/include/host/nvshmem_macros.h",
+      "sha256": "929cb8f4a17960996d3d0d746b0d3dbf4260329456dd10a0a4b1518aa3f7ee14",
+      "size_bytes": 502
+    },
+    {
+      "path": "nvidia/nvshmem/include/host/nvshmemx_api.h",
+      "sha256": "23452c214b04f112a83e514bad20a8acb8ececb69f51c5a2dd285a9afe9b35e4",
+      "size_bytes": 25562
+    },
+    {
+      "path": "nvidia/nvshmem/include/host/nvshmemx_coll_api.h",
+      "sha256": "4d191cd627d7d3939f07b90245961e37cd32a89db324b05d57f316c127a36a05",
+      "size_bytes": 11812
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/device/coll/alltoall.cuh",
+      "sha256": "6c36d3bdcfcb9534b50d0ac560284fbf0c5b15dee1ce1673d9af489ae08210b4",
+      "size_bytes": 7530
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/device/coll/barrier.cuh",
+      "sha256": "cb207a56e0b3746ae5a09fe88dbd7090135b11d749f466f9324e14d359aaa84f",
+      "size_bytes": 11342
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/device/coll/broadcast.cuh",
+      "sha256": "5999c48b3dfd7d47cecdef7662893944d3c2bf7ad2e95d5076a811d8bdb64d44",
+      "size_bytes": 20277
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/device/coll/defines.cuh",
+      "sha256": "e188475cb4b0eecf8ecd0189fcf281f37e7a0a652a102da6cf7a1be57eab7713",
+      "size_bytes": 447
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/device/coll/fcollect.cuh",
+      "sha256": "e361c1cb91cb59e02339e1aa9b28bf761ecfb2b99e5e2ddc5ee1be5fcb04bdcf",
+      "size_bytes": 55586
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/device/coll/reduce.cuh",
+      "sha256": "ee5c47725f9f09839fde1db3a2283512718c1e85647abaa5622debcac0ee1632",
+      "size_bytes": 134683
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/device/coll/reducescatter.cuh",
+      "sha256": "4d1bf4c94981abc6cc7750e1e55adbb4c04c4f30d95199b5689e4128e361d7aa",
+      "size_bytes": 8865
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/device/coll/utils.cuh",
+      "sha256": "fcc3e72e4465da8acafb7baf37988db47d3f7c7ddb1b6bff606ed2acb1333185",
+      "size_bytes": 2219
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/device/common/nvshmemi_common_device.cuh",
+      "sha256": "af9eea1e3086d320877f979a6374ffe89355fdb798992f724ce81442cdfe2d56",
+      "size_bytes": 45440
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/device/common/nvshmemi_tile_utils.cuh",
+      "sha256": "61c83bdbe298523e63d1e0270ba4a61b8a9145b2438da500163859def83a7c78",
+      "size_bytes": 11553
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/device/pt-to-pt/ibgda_device.cuh",
+      "sha256": "70048704920b6c0a8e9bd837b23af38188de18fd20eadc5793bb033b3464b0f1",
+      "size_bytes": 136446
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/device/pt-to-pt/nvshmemi_transfer_api.cuh",
+      "sha256": "ea7ebd80b18361111a46738847a0739d02c451c3796b8d4382adf7d476a8db6f",
+      "size_bytes": 1616
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/device/pt-to-pt/proxy_device.cuh",
+      "sha256": "04e71674ad38b58237e38f760f770991afede3b05d610737e7252979c764abbe",
+      "size_bytes": 25417
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/device/pt-to-pt/transfer_device.cuh",
+      "sha256": "756f714e022a63b689cd7a28a1a6d5fcc99375f42bd8c277eff02131b900bd92",
+      "size_bytes": 11926
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/device/pt-to-pt/utils_device.h",
+      "sha256": "3e40dbb47b6ad5df5f1bf46e3e9715a323077d10d45f979669434fe9fe0656fd",
+      "size_bytes": 3271
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/device/team/nvshmemi_team_defines.cuh",
+      "sha256": "851b5055a6e97c440719e97606a85c44a220cad173ca435c41fa240fa04cbdb3",
+      "size_bytes": 7267
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/device/threadgroup/nvshmemi_common_device_defines.cuh",
+      "sha256": "c983e46766ecf3b8f62d9c3d5682e8a1953ef31665b32f623079fab78065f9c1",
+      "size_bytes": 4053
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/device/wait/nvshmemi_wait_until_apis.cuh",
+      "sha256": "e785d269d910bc0e06342c79f50a26936d6dcccba14de47bcb6e7c1214b3bfdd",
+      "size_bytes": 5868
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/nvshmem_build_options.h",
+      "sha256": "0dfcf376fa0bfc35daf95b8d0cc43d97629c59548cb2536b664741ef71083cff",
+      "size_bytes": 1136
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/nvshmem_version.h",
+      "sha256": "9761adfa510b4279046e362e504e622a4b98caa7aad58621eddecabc34ea9d1d",
+      "size_bytes": 1684
+    },
+    {
+      "path": "nvidia/nvshmem/include/non_abi/nvshmemx_error.h",
+      "sha256": "0952ad9f5cda89cb0676634bb4f000ef28ce30507b8a4e162f1837c108601f91",
+      "size_bytes": 8883
+    },
+    {
+      "path": "nvidia/nvshmem/include/nvshmem.h",
+      "sha256": "f31e7d2b3561cc0fab48cfa561581dc407f1c97d18ace0467421e09482a398ee",
+      "size_bytes": 998
+    },
+    {
+      "path": "nvidia/nvshmem/include/nvshmem_host.h",
+      "sha256": "ebfefca28dc8fce4fb82634dac0c6968be465b0028d695142ffeabb108144a9f",
+      "size_bytes": 236
+    },
+    {
+      "path": "nvidia/nvshmem/include/nvshmemx.h",
+      "sha256": "fa3a6a3bbc389ac3adf1f69444fe4fcfa1300ba7e0a55833a43410d43e87b722",
+      "size_bytes": 1026
+    },
+    {
+      "path": "nvidia/nvshmem/lib/libnvshmem_device.a",
+      "sha256": "440bb9cab1c684287555713dd0f08740eb9e329c76dd3e6165785b6d97800121",
+      "size_bytes": 7151702
+    },
+    {
+      "path": "nvidia/nvshmem/lib/libnvshmem_device.bc",
+      "sha256": "39d64d317f3b3f912cb107ef67800ecaf018567217a1d69a8ac07050797f2509",
+      "size_bytes": 31209212
+    },
+    {
+      "path": "nvidia/nvshmem/lib/libnvshmem_host.so.3",
+      "sha256": "bb1c1ad4a03eaf0456a01c671e5df3d27a7ac153e0e7eb5c0eb872df376cdef3",
+      "size_bytes": 160322296
+    },
+    {
+      "path": "nvidia/nvshmem/lib/nvshmem_bootstrap_mpi.so.3",
+      "sha256": "a624fbfe9ccc7bb244851d98f008711f24f4c39a1d4bbb13af2de2fab33af695",
+      "size_bytes": 23952
+    },
+    {
+      "path": "nvidia/nvshmem/lib/nvshmem_bootstrap_pmi.so.3",
+      "sha256": "d1e8f422fe59082c7fd23b8476bfb0da7a808da79bb140ee8b3eaca6182a5568",
+      "size_bytes": 39456
+    },
+    {
+      "path": "nvidia/nvshmem/lib/nvshmem_bootstrap_pmi2.so.3",
+      "sha256": "0f349b540f688d3ee58b449eccb065942d018a933d057d470328043964598983",
+      "size_bytes": 54112
+    },
+    {
+      "path": "nvidia/nvshmem/lib/nvshmem_bootstrap_pmix.so.3",
+      "sha256": "9ef563893d4abf60930cb18979860928c48e202639d73e860028661386d821c0",
+      "size_bytes": 56504
+    },
+    {
+      "path": "nvidia/nvshmem/lib/nvshmem_bootstrap_shmem.so.3",
+      "sha256": "e3628a3b631a8abb0e9ae3ea19bf379edc3d86299a3747f22a33203099346a96",
+      "size_bytes": 19704
+    },
+    {
+      "path": "nvidia/nvshmem/lib/nvshmem_bootstrap_uid.so.3",
+      "sha256": "ca44a7b7624df29220237c2f80cc423ef27ee2cdc13f51200b9df9b659ce62e9",
+      "size_bytes": 73704
+    },
+    {
+      "path": "nvidia/nvshmem/lib/nvshmem_transport_ibdevx.so.3",
+      "sha256": "77fdb45b39b219e74c7105a58a45a7306f01ffe3cda810eba2879623f7d9e205",
+      "size_bytes": 1067992
+    },
+    {
+      "path": "nvidia/nvshmem/lib/nvshmem_transport_ibgda.so.3",
+      "sha256": "d2d7b63d69f7f6466d21d919db2bf9430e51111a76c86ea28c6989b869e77e2a",
+      "size_bytes": 1106904
+    },
+    {
+      "path": "nvidia/nvshmem/lib/nvshmem_transport_ibrc.so.3",
+      "sha256": "303dbb6c36dd1d44d24e5490e975afbf4f4f070d1dcd57361a5cbfae198dd842",
+      "size_bytes": 1072856
+    },
+    {
+      "path": "nvidia/nvshmem/lib/nvshmem_transport_libfabric.so.3",
+      "sha256": "a636c5c3d6597a5958f31839bbd1e1a880b612a76e4bbc029d0637e9b977c586",
+      "size_bytes": 1056680
+    },
+    {
+      "path": "nvidia/nvshmem/lib/nvshmem_transport_ucx.so.3",
+      "sha256": "02bd60a13973d52a8f44dc411b0bc095b63246fd43829591c1e9652a2dcb67f6",
+      "size_bytes": 55912
+    },
+    {
+      "path": "nvidia_nvshmem_cu12-3.4.5.dist-info/INSTALLER",
+      "sha256": "e6184ce10e266134fdcfa401e8f1a95005bcd4f18d16b62b757323e2833fe9a9",
+      "size_bytes": 2
+    },
+    {
+      "path": "nvidia_nvshmem_cu12-3.4.5.dist-info/METADATA",
+      "sha256": "c6c10473179c8c2a45a5f06dbffa3ab5aface4a5363a810c6b68a72e2f8de452",
+      "size_bytes": 2094
+    },
+    {
+      "path": "nvidia_nvshmem_cu12-3.4.5.dist-info/REQUESTED",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia_nvshmem_cu12-3.4.5.dist-info/WHEEL",
+      "sha256": "832e85590829ba32bf76761cd79e46d8d2f7d8d423a62e5e6d31178e1f121994",
+      "size_bytes": 144
+    },
+    {
+      "path": "nvidia_nvshmem_cu12-3.4.5.dist-info/licenses/License.txt",
+      "sha256": "ad6f5853fba0ca0d159d0f58d49ae49830c2f8c93f7a92648b9ce90adb4c6ccd",
+      "size_bytes": 59262
+    },
+    {
+      "path": "nvidia_nvshmem_cu12-3.4.5.dist-info/top_level.txt",
+      "sha256": "7d3900b6216e2f5ea752b07dcad0c3b69cadcf6b7407836f6139d1cf00213b5e",
+      "size_bytes": 7
+    },
+    {
+      "path": "nvidia_nvshmem_cu12-3.4.5.dist-info/uv_cache.json",
+      "sha256": "9fa134f6af960e4176215767f6d26528b13fb99dd31ecdfd63f74dfa1f787c56",
+      "size_bytes": 127
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "nvidia_nvshmem_cu12-3.4.5.dist-info/INSTALLER",
+      "reason": "verified installed metadata; excluded from rebuilt wheel"
+    },
+    {
+      "path": "nvidia_nvshmem_cu12-3.4.5.dist-info/REQUESTED",
+      "reason": "verified installed metadata; excluded from rebuilt wheel"
+    }
+  ],
+  "status": "PASS",
+  "filename": "nvidia_nvshmem_cu12-3.4.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+  "wheel_sha256": "54ae70c622be43c0405ed68ec89b57ee8f8f313bd804c4821a299eb75f3a22a0",
+  "wheel_size_bytes": 143333565,
+  "payload_size_bytes": 204174396,
+  "checked_at_utc": "2026-10-28T09:04:09.541713+00:00"
+}

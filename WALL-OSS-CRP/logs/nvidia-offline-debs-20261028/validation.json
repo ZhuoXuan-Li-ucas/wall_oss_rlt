@@ -1,0 +1,27 @@
+{
+  "checked_utc": "2026-10-28T07:52:46.759981+00:00",
+  "checks": [
+    {
+      "filename": "nvidia-container-toolkit_1.20.1-1_amd64.deb",
+      "sha256_ok": true,
+      "dpkg_fields": "Package: nvidia-container-toolkit\nVersion: 1.20.1-1\nArchitecture: amd64\nDepends: nvidia-container-toolkit-base (= 1.20.1-1), libnvidia-container-tools (= 1.20.1-1)\n"
+    },
+    {
+      "filename": "nvidia-container-toolkit-base_1.20.1-1_amd64.deb",
+      "sha256_ok": true,
+      "dpkg_fields": "Package: nvidia-container-toolkit-base\nVersion: 1.20.1-1\nArchitecture: amd64\n"
+    },
+    {
+      "filename": "libnvidia-container-tools_1.20.1-1_amd64.deb",
+      "sha256_ok": true,
+      "dpkg_fields": "Package: libnvidia-container-tools\nVersion: 1.20.1-1\nArchitecture: amd64\nDepends: libnvidia-container1 (= 1.20.1-1), libc6 (>= 2.14), libcap2 (>= 1:2.10)\n"
+    },
+    {
+      "filename": "libnvidia-container1_1.20.1-1_amd64.deb",
+      "sha256_ok": true,
+      "dpkg_fields": "Package: libnvidia-container1\nVersion: 1.20.1-1\nArchitecture: amd64\nDepends: libc6 (>= 2.27), libcap2 (>= 1:2.10), libseccomp2 (>= 0.0.0~20120605)\n"
+    }
+  ],
+  "apt_simulation_returncode": 0,
+  "installed": false
+}

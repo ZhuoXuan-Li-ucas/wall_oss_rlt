@@ -1,0 +1,398 @@
+Authentication: 
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.h100
+#1 transferring dockerfile: 4.36kB 0.0s done
+#1 DONE 0.1s
+
+#2 [context wall_wheels] load .dockerignore
+#2 ...
+
+#3 [internal] load metadata for docker.io/nvidia/cuda:12.8.1-devel-ubuntu22.04
+#3 DONE 0.5s
+
+#2 [context wall_wheels] load .dockerignore
+#2 transferring wall_wheels:
+#2 transferring wall_wheels: 2B done
+#2 ...
+
+#4 [context wall_python] load .dockerignore
+#4 transferring wall_python: 2B done
+#4 DONE 1.0s
+
+#2 [context wall_wheels] load .dockerignore
+#2 DONE 1.2s
+
+#5 [internal] load build context
+#5 DONE 0.0s
+
+#6 [context wall_python] load from client
+#6 DONE 0.0s
+
+#7 [context wall_wheels] load from client
+#7 DONE 0.0s
+
+#8 [system 1/3] FROM docker.io/nvidia/cuda:12.8.1-devel-ubuntu22.04@sha256:6617a625f4090c76c545a0e7d63f2e441718ef9af7f4efe7dd1242a29e289fd7
+#8 resolve docker.io/nvidia/cuda:12.8.1-devel-ubuntu22.04@sha256:6617a625f4090c76c545a0e7d63f2e441718ef9af7f4efe7dd1242a29e289fd7
+#8 resolve docker.io/nvidia/cuda:12.8.1-devel-ubuntu22.04@sha256:6617a625f4090c76c545a0e7d63f2e441718ef9af7f4efe7dd1242a29e289fd7 0.3s done
+#8 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 233.44kB 0.1s
+#5 ...
+
+#6 [context wall_python] load from client
+#6 transferring wall_python: 53.87MB 0.2s done
+#6 DONE 2.2s
+
+#5 [internal] load build context
+#5 transferring context: 1.13MB 5.9s
+#5 ...
+
+#7 [context wall_wheels] load from client
+#7 transferring wall_wheels: 2.21GB 8.0s
+#7 ...
+
+#5 [internal] load build context
+#5 ...
+
+#9 [system 2/3] WORKDIR /opt/walloss
+#9 ...
+
+#7 [context wall_wheels] load from client
+#7 transferring wall_wheels: 2.51GB 13.1s
+#7 transferring wall_wheels: 3.00GB 18.3s
+#7 ...
+
+#5 [internal] load build context
+#5 transferring context: 1.16MB 21.2s done
+#5 ...
+
+#7 [context wall_wheels] load from client
+#7 transferring wall_wheels: 3.33GB 23.3s
+#7 ...
+
+#5 [internal] load build context
+#5 DONE 24.3s
+
+#7 [context wall_wheels] load from client
+#7 transferring wall_wheels: 3.63GB 28.4s
+#7 transferring wall_wheels: 4.02GB 33.5s
+#7 transferring wall_wheels: 4.40GB 38.7s
+#7 transferring wall_wheels: 4.60GB 43.8s
+#7 transferring wall_wheels: 4.60GB 43.8s done
+#7 DONE 47.6s
+
+#9 [system 2/3] WORKDIR /opt/walloss
+#9 DONE 56.0s
+
+#10 [system 3/3] RUN --mount=type=bind,from=wall_python,target=/bootstrap     cd /bootstrap && sha256sum -c SHA256SUMS     && mkdir -p /opt/walloss/env     && tar -xzf python310-bootstrap.tar.gz -C /opt/walloss/env     && mkdir -p /opt/walloss/build-record/python-bootstrap     && cp SHA256SUMS *.json /opt/walloss/build-record/python-bootstrap/     && /opt/walloss/env/bin/python -c "import sys; assert sys.prefix == '/opt/walloss/env'; print(sys.version)"
+#10 9.593 python310-bootstrap.tar.gz: OK
+#10 9.593 bootstrap-verification.json: OK
+#10 9.593 packages.json: OK
+#10 9.593 relocation-verification.json: OK
+#10 10.70 3.10.22 | packaged by conda-forge | (main, Oct  6 2026, 23:02:24) [GCC 14.4.0]
+#10 DONE 19.9s
+
+#11 [runtime  1/14] COPY docker/runtime-pins.txt /opt/walloss/docker/runtime-pins.txt
+#11 DONE 1.4s
+
+#12 [runtime  2/14] RUN --mount=type=bind,from=wall_wheels,target=/wheels     cd /wheels && sha256sum -c SHA256SUMS     && mkdir -p /opt/walloss/build-record     && cp SHA256SUMS REPACKED-SOURCES.json RUNTIME-SOURCES.json OFFICIAL-GPU-SOURCES.json /opt/walloss/build-record/     && python -m pip install --no-cache-dir --no-index --find-links=/wheels        'pip==26.1.2' 'setuptools==80.9.0' 'wheel==0.48.0'
+#12 0.592 accelerate-1.13.0-py3-none-any.whl: OK
+#12 0.593 aiohappyeyeballs-2.7.1-py3-none-any.whl: OK
+#12 0.635 aiohttp-3.14.5-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl: OK
+#12 0.636 aiosignal-1.4.0-py3-none-any.whl: OK
+#12 0.652 annotated_doc-0.0.5-py3-none-any.whl: OK
+#12 0.652 annotated_types-0.8.0-py3-none-any.whl: OK
+#12 0.665 anyio-4.15.1-py3-none-any.whl: OK
+#12 0.665 async_timeout-5.0.1-py3-none-any.whl: OK
+#12 0.680 attrs-26.1.0-py3-none-any.whl: OK
+#12 0.832 av-15.1.0-cp310-cp310-manylinux_2_28_x86_64.whl: OK
+#12 0.852 certifi-2026.10.19-py3-none-any.whl: OK
+#12 0.863 charset_normalizer-3.5.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl: OK
+#12 0.864 click-8.5.0-py3-none-any.whl: OK
+#12 0.879 contourpy-1.3.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: OK
+#12 0.959 cuda_bindings-12.9.4-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl: OK
+#12 0.979 cuda_pathfinder-1.8.3-py3-none-any.whl: OK
+#12 0.979 cycler-0.12.1-py3-none-any.whl: OK
+#12 0.991 datasets-4.8.5-py3-none-any.whl: OK
+#12 0.996 dill-0.4.1-py3-none-any.whl: OK
+#12 0.996 docstring_parser-0.18.0-py3-none-any.whl: OK
+#12 1.005 draccus-0.10.0-py3-none-any.whl: OK
+#12 1.015 einops-0.8.2-py3-none-any.whl: OK
+#12 1.021 exceptiongroup-1.3.1-py3-none-any.whl: OK
+#12 1.042 filelock-4.1.0-py3-none-any.whl: OK
+#12 1.104 fonttools-4.65.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: OK
+#12 1.127 frozenlist-1.8.0-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl: OK
+#12 1.139 fsspec-2026.2.0-py3-none-any.whl: OK
+#12 1.152 gitdb-4.0.12-py3-none-any.whl: OK
+#12 1.169 gitpython-3.2.1-py3-none-any.whl: OK
+#12 1.189 h11-0.16.0-py3-none-any.whl: OK
+#12 1.241 hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: OK
+#12 1.254 httpcore-1.0.9-py3-none-any.whl: OK
+#12 1.262 httpx-0.28.1-py3-none-any.whl: OK
+#12 1.290 huggingface_hub-1.33.0-py3-none-any.whl: OK
+#12 1.291 idna-3.20-py3-none-any.whl: OK
+#12 1.308 jinja2-3.1.6-py3-none-any.whl: OK
+#12 1.336 kiwisolver-1.5.1-cp310-cp310-manylinux2010_x86_64.manylinux_2_12_x86_64.whl: OK
+#12 1.577 llvmlite-0.44.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: OK
+#12 1.578 markdown_it_py-4.2.0-py3-none-any.whl: OK
+#12 1.578 markupsafe-3.0.4-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl: OK
+#12 1.606 matplotlib-3.10.9-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: OK
+#12 1.606 mdurl-0.1.2-py3-none-any.whl: OK
+#12 1.606 mergedeep-1.3.4-py3-none-any.whl: OK
+#12 1.608 mpmath-1.3.0-py3-none-any.whl: OK
+#12 1.609 msgpack-1.2.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl: OK
+#12 1.609 msgpack_numpy-0.4.8-py2.py3-none-any.whl: OK
+#12 1.610 multidict-7.1.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl: OK
+#12 1.610 multiprocess-0.70.19-py310-none-any.whl: OK
+#12 1.610 mypy_extensions-1.1.0-py3-none-any.whl: OK
+#12 1.615 networkx-3.4.2-py3-none-any.whl: OK
+#12 1.616 ninja-1.13.2-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: OK
+#12 1.625 numba-0.61.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: OK
+#12 1.713 numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl: OK
+#12 1.713 numpydantic-1.8.1-py3-none-any.whl: OK
+#12 5.260 nvidia_cublas_cu12-12.8.4.1-py3-none-manylinux_2_27_x86_64.whl: OK
+#12 5.319 nvidia_cuda_cupti_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: OK
+#12 6.241 nvidia_cuda_nvrtc_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl: OK
+#12 6.244 nvidia_cuda_runtime_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: OK
+#12 9.969 nvidia_cudnn_cu12-9.10.2.21-py3-none-manylinux_2_27_x86_64.whl: OK
+#12 10.84 nvidia_cufft_cu12-11.3.3.83-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: OK
+#12 10.85 nvidia_cufile_cu12-1.13.1.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: OK
+#12 11.04 nvidia_curand_cu12-10.3.9.90-py3-none-manylinux_2_27_x86_64.whl: OK
+#12 13.08 nvidia_cusolver_cu12-11.7.3.90-py3-none-manylinux_2_27_x86_64.whl: OK
+#12 16.37 nvidia_cusparse_cu12-12.5.8.93-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: OK
+#12 18.30 nvidia_cusparselt_cu12-0.7.1-py3-none-manylinux2014_x86_64.whl: OK
+#12 20.23 nvidia_nccl_cu12-2.27.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: OK
+#12 20.80 nvidia_nvjitlink_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl: OK
+#12 22.30 nvidia_nvshmem_cu12-3.4.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: OK
+#12 22.32 nvidia_nvtx_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: OK
+#12 23.16 opencv_python_headless-4.11.0.86-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: OK
+#12 23.26 packaging-25.0-py3-none-any.whl: OK
+#12 23.43 pandas-2.3.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl: OK
+#12 23.46 peft-0.18.1-py3-none-any.whl: OK
+#12 23.48 pillow-11.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl: OK
+#12 23.51 pip-26.1.2-py3-none-any.whl: OK
+#12 23.51 platformdirs-4.12.4-py3-none-any.whl: OK
+#12 23.51 propcache-0.5.4-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl: OK
+#12 23.53 protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl: OK
+#12 23.53 psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl: OK
+#12 23.66 pyarrow-22.0.0-cp310-cp310-manylinux_2_28_x86_64.whl: OK
+#12 23.66 pydantic-2.14.1-py3-none-any.whl: OK
+#12 23.67 pydantic_core-2.50.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: OK
+#12 23.67 pygments-2.21.0-py3-none-any.whl: OK
+#12 23.67 pyparsing-3.3.3-py3-none-any.whl: OK
+#12 23.67 python_dateutil-3.0.0-py2.py3-none-any.whl: OK
+#12 23.67 pytz-2026.5-py2.py3-none-any.whl: OK
+#12 23.67 pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl: OK
+#12 23.67 pyyaml_include-1.4.1-py3-none-any.whl: OK
+#12 23.67 qwen_vl_utils-0.0.11-py3-none-any.whl: OK
+#12 23.68 regex-2026.9.29-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl: OK
+#12 23.68 requests-2.34.2-py3-none-any.whl: OK
+#12 23.68 rich-15.0.0-py3-none-any.whl: OK
+#12 23.68 safetensors-0.8.0-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: OK
+#12 23.78 scipy-1.15.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: OK
+#12 23.78 sentry_sdk-2.72.0-py3-none-any.whl: OK
+#12 23.79 setuptools-80.9.0-py3-none-any.whl: OK
+#12 23.79 shellingham-1.5.4-py2.py3-none-any.whl: OK
+#12 23.79 shtab-1.13.0-py3-none-any.whl: OK
+#12 23.79 six-1.17.0-py2.py3-none-any.whl: OK
+#12 23.79 smmap-5.0.3-py3-none-any.whl: OK
+#12 23.80 sympy-1.14.0-py3-none-any.whl: OK
+#12 23.80 termcolor-3.3.0-py3-none-any.whl: OK
+#12 23.81 tokenizers-0.22.2-cp39-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl: OK
+#12 23.81 toml-0.10.2-py2.py3-none-any.whl: OK
+#12 23.81 tomli-2.5.0-py3-none-any.whl: OK
+#12 26.02 torch-2.10.0+cu128-cp310-cp310-manylinux_2_28_x86_64.whl: OK
+#12 26.03 torchaudio-2.10.0+cu128-cp310-cp310-manylinux_2_28_x86_64.whl: OK
+#12 26.03 torchdiffeq-0.2.5-py3-none-any.whl: OK
+#12 26.05 torchvision-0.25.0+cu128-cp310-cp310-manylinux_2_28_x86_64.whl: OK
+#12 26.05 tqdm-4.70.1-py3-none-any.whl: OK
+#12 26.08 transformers-5.2.0-py3-none-any.whl: OK
+#12 26.53 triton-3.6.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl: OK
+#12 26.53 typeguard-4.6.0-py3-none-any.whl: OK
+#12 26.53 typer-0.27.3-py3-none-any.whl: OK
+#12 26.53 typer_slim-0.24.0-py3-none-any.whl: OK
+#12 26.53 typing_extensions-4.16.0-py3-none-any.whl: OK
+#12 26.53 typing_inspect-0.9.0-py3-none-any.whl: OK
+#12 26.53 typing_inspection-0.4.4-py3-none-any.whl: OK
+#12 26.53 tyro-0.9.35-py3-none-any.whl: OK
+#12 26.54 tzdata-2026.5-py2.py3-none-any.whl: OK
+#12 26.54 urllib3-2.8.0-py3-none-any.whl: OK
+#12 26.60 wandb-0.24.2-py3-none-manylinux_2_28_x86_64.whl: OK
+#12 26.60 websockets-15.0.1-cp310-cp310-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl: OK
+#12 26.60 wheel-0.48.0-py3-none-any.whl: OK
+#12 26.60 xxhash-4.0.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl: OK
+#12 26.60 yarl-1.25.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl: OK
+#12 30.17 Looking in links: /wheels
+#12 30.17 Requirement already satisfied: pip==26.1.2 in /opt/walloss/env/lib/python3.10/site-packages (26.1.2)
+#12 30.19 Processing ./setuptools-80.9.0-py3-none-any.whl
+#12 30.19 Requirement already satisfied: wheel==0.48.0 in /opt/walloss/env/lib/python3.10/site-packages (0.48.0)
+#12 30.21 Requirement already satisfied: packaging>=24.0 in /opt/walloss/env/lib/python3.10/site-packages (from wheel==0.48.0) (26.3)
+#12 30.29 Installing collected packages: setuptools
+#12 30.29   Attempting uninstall: setuptools
+#12 30.29     Found existing installation: setuptools 83.0.0
+#12 30.30     Uninstalling setuptools-83.0.0:
+#12 33.09       Successfully uninstalled setuptools-83.0.0
+#12 33.58 Successfully installed setuptools-80.9.0
+#12 33.58 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#12 DONE 34.8s
+
+#13 [runtime  3/14] RUN --mount=type=bind,from=wall_wheels,target=/wheels     python -m pip install --no-cache-dir --no-index --find-links=/wheels        torch==2.10.0+cu128 torchvision==0.25.0+cu128 torchaudio==2.10.0+cu128        -r docker/runtime-pins.txt
+#13 0.932 Looking in links: /wheels
+#13 0.938 Processing /wheels/torch-2.10.0+cu128-cp310-cp310-manylinux_2_28_x86_64.whl
+#13 1.526 Processing /wheels/torchvision-0.25.0+cu128-cp310-cp310-manylinux_2_28_x86_64.whl
+#13 1.533 Processing /wheels/torchaudio-2.10.0+cu128-cp310-cp310-manylinux_2_28_x86_64.whl
+#13 1.535 Processing /wheels/accelerate-1.13.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 3))
+#13 1.561 Processing /wheels/aiohappyeyeballs-2.7.1-py3-none-any.whl (from -r docker/runtime-pins.txt (line 4))
+#13 1.579 Processing /wheels/aiohttp-3.14.5-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (from -r docker/runtime-pins.txt (line 5))
+#13 1.629 Processing /wheels/aiosignal-1.4.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 6))
+#13 1.632 Processing /wheels/annotated_doc-0.0.5-py3-none-any.whl (from -r docker/runtime-pins.txt (line 7))
+#13 1.646 Processing /wheels/annotated_types-0.8.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 8))
+#13 1.647 Processing /wheels/anyio-4.15.1-py3-none-any.whl (from -r docker/runtime-pins.txt (line 9))
+#13 1.668 Processing /wheels/async_timeout-5.0.1-py3-none-any.whl (from -r docker/runtime-pins.txt (line 10))
+#13 1.671 Processing /wheels/attrs-26.1.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 11))
+#13 1.694 Processing /wheels/av-15.1.0-cp310-cp310-manylinux_2_28_x86_64.whl (from -r docker/runtime-pins.txt (line 12))
+#13 1.927 Processing /wheels/certifi-2026.10.19-py3-none-any.whl (from -r docker/runtime-pins.txt (line 13))
+#13 1.946 Processing /wheels/charset_normalizer-3.5.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (from -r docker/runtime-pins.txt (line 14))
+#13 1.956 Processing /wheels/click-8.5.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 15))
+#13 1.958 Processing /wheels/contourpy-1.3.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from -r docker/runtime-pins.txt (line 16))
+#13 1.971 Processing /wheels/cycler-0.12.1-py3-none-any.whl (from -r docker/runtime-pins.txt (line 17))
+#13 1.973 Processing /wheels/datasets-4.8.5-py3-none-any.whl (from -r docker/runtime-pins.txt (line 18))
+#13 2.014 Processing /wheels/dill-0.4.1-py3-none-any.whl (from -r docker/runtime-pins.txt (line 19))
+#13 2.023 Processing /wheels/docstring_parser-0.18.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 20))
+#13 2.025 Processing /wheels/draccus-0.10.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 21))
+#13 2.027 Processing /wheels/einops-0.8.2-py3-none-any.whl (from -r docker/runtime-pins.txt (line 22))
+#13 2.034 Processing /wheels/exceptiongroup-1.3.1-py3-none-any.whl (from -r docker/runtime-pins.txt (line 23))
+#13 2.040 Processing /wheels/filelock-4.1.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 24))
+#13 2.061 Processing /wheels/fonttools-4.65.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from -r docker/runtime-pins.txt (line 25))
+#13 2.141 Processing /wheels/frozenlist-1.8.0-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (from -r docker/runtime-pins.txt (line 26))
+#13 2.164 Processing /wheels/fsspec-2026.2.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 27))
+#13 2.196 Processing /wheels/gitdb-4.0.12-py3-none-any.whl (from -r docker/runtime-pins.txt (line 28))
+#13 2.240 Processing /wheels/gitpython-3.2.1-py3-none-any.whl (from -r docker/runtime-pins.txt (line 29))
+#13 2.273 Processing /wheels/h11-0.16.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 30))
+#13 2.299 Processing /wheels/hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from -r docker/runtime-pins.txt (line 31))
+#13 2.484 Processing /wheels/httpcore-1.0.9-py3-none-any.whl (from -r docker/runtime-pins.txt (line 32))
+#13 2.603 Processing /wheels/httpx-0.28.1-py3-none-any.whl (from -r docker/runtime-pins.txt (line 33))
+#13 2.641 Processing /wheels/huggingface_hub-1.33.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 34))
+#13 2.689 Processing /wheels/idna-3.20-py3-none-any.whl (from -r docker/runtime-pins.txt (line 35))
+#13 2.696 Processing /wheels/jinja2-3.1.6-py3-none-any.whl (from -r docker/runtime-pins.txt (line 36))
+#13 2.743 Processing /wheels/kiwisolver-1.5.1-cp310-cp310-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (from -r docker/runtime-pins.txt (line 37))
+#13 2.776 Processing /wheels/llvmlite-0.44.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from -r docker/runtime-pins.txt (line 38))
+#13 3.013 Processing /wheels/markdown_it_py-4.2.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 39))
+#13 3.016 Processing /wheels/markupsafe-3.0.4-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (from -r docker/runtime-pins.txt (line 40))
+#13 3.017 Processing /wheels/matplotlib-3.10.9-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from -r docker/runtime-pins.txt (line 41))
+#13 3.056 Processing /wheels/mdurl-0.1.2-py3-none-any.whl (from -r docker/runtime-pins.txt (line 42))
+#13 3.059 Processing /wheels/mergedeep-1.3.4-py3-none-any.whl (from -r docker/runtime-pins.txt (line 43))
+#13 3.061 Processing /wheels/mpmath-1.3.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 44))
+#13 3.064 Processing /wheels/msgpack-1.2.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (from -r docker/runtime-pins.txt (line 45))
+#13 3.065 Processing /wheels/msgpack_numpy-0.4.8-py2.py3-none-any.whl (from -r docker/runtime-pins.txt (line 46))
+#13 3.066 Processing /wheels/multidict-7.1.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (from -r docker/runtime-pins.txt (line 47))
+#13 3.067 Processing /wheels/multiprocess-0.70.19-py310-none-any.whl (from -r docker/runtime-pins.txt (line 48))
+#13 3.069 Processing /wheels/mypy_extensions-1.1.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 49))
+#13 3.069 Processing /wheels/networkx-3.4.2-py3-none-any.whl (from -r docker/runtime-pins.txt (line 50))
+#13 3.076 Processing /wheels/ninja-1.13.2-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from -r docker/runtime-pins.txt (line 51))
+#13 3.077 Processing /wheels/numba-0.61.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from -r docker/runtime-pins.txt (line 52))
+#13 3.083 Processing /wheels/numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from -r docker/runtime-pins.txt (line 53))
+#13 3.151 Processing /wheels/numpydantic-1.8.1-py3-none-any.whl (from -r docker/runtime-pins.txt (line 54))
+#13 3.155 Processing /wheels/opencv_python_headless-4.11.0.86-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from -r docker/runtime-pins.txt (line 55))
+#13 3.261 Processing /wheels/packaging-25.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 56))
+#13 3.263 Processing /wheels/pandas-2.3.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (from -r docker/runtime-pins.txt (line 57))
+#13 3.291 Processing /wheels/peft-0.18.1-py3-none-any.whl (from -r docker/runtime-pins.txt (line 58))
+#13 3.295 Processing /wheels/pillow-11.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (from -r docker/runtime-pins.txt (line 59))
+#13 3.379 Processing /wheels/platformdirs-4.12.4-py3-none-any.whl (from -r docker/runtime-pins.txt (line 60))
+#13 3.391 Processing /wheels/propcache-0.5.4-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (from -r docker/runtime-pins.txt (line 61))
+#13 3.409 Processing /wheels/protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl (from -r docker/runtime-pins.txt (line 62))
+#13 3.411 Processing /wheels/psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (from -r docker/runtime-pins.txt (line 63))
+#13 3.447 Processing /wheels/pyarrow-22.0.0-cp310-cp310-manylinux_2_28_x86_64.whl (from -r docker/runtime-pins.txt (line 64))
+#13 3.569 Processing /wheels/pydantic-2.14.1-py3-none-any.whl (from -r docker/runtime-pins.txt (line 65))
+#13 3.593 Processing /wheels/pydantic_core-2.50.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from -r docker/runtime-pins.txt (line 66))
+#13 3.634 Processing /wheels/pygments-2.21.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 67))
+#13 3.667 Processing /wheels/pyparsing-3.3.3-py3-none-any.whl (from -r docker/runtime-pins.txt (line 68))
+#13 3.693 Processing /wheels/python_dateutil-3.0.0-py2.py3-none-any.whl (from -r docker/runtime-pins.txt (line 69))
+#13 3.715 Processing /wheels/pytz-2026.5-py2.py3-none-any.whl (from -r docker/runtime-pins.txt (line 70))
+#13 3.739 Processing /wheels/pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (from -r docker/runtime-pins.txt (line 71))
+#13 3.770 Processing /wheels/pyyaml_include-1.4.1-py3-none-any.whl (from -r docker/runtime-pins.txt (line 72))
+#13 3.783 Processing /wheels/qwen_vl_utils-0.0.11-py3-none-any.whl (from -r docker/runtime-pins.txt (line 73))
+#13 3.785 Processing /wheels/regex-2026.9.29-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (from -r docker/runtime-pins.txt (line 74))
+#13 3.807 Processing /wheels/requests-2.34.2-py3-none-any.whl (from -r docker/runtime-pins.txt (line 75))
+#13 3.827 Processing /wheels/rich-15.0.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 76))
+#13 3.848 Processing /wheels/safetensors-0.8.0-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from -r docker/runtime-pins.txt (line 77))
+#13 3.872 Processing /wheels/scipy-1.15.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from -r docker/runtime-pins.txt (line 78))
+#13 3.943 Processing /wheels/sentry_sdk-2.72.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 79))
+#13 3.975 Processing /wheels/shellingham-1.5.4-py2.py3-none-any.whl (from -r docker/runtime-pins.txt (line 80))
+#13 3.977 Processing /wheels/shtab-1.13.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 81))
+#13 3.978 Processing /wheels/six-1.17.0-py2.py3-none-any.whl (from -r docker/runtime-pins.txt (line 82))
+#13 3.979 Processing /wheels/smmap-5.0.3-py3-none-any.whl (from -r docker/runtime-pins.txt (line 83))
+#13 3.980 Processing /wheels/sympy-1.14.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 84))
+#13 3.990 Processing /wheels/termcolor-3.3.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 85))
+#13 3.991 Processing /wheels/tokenizers-0.22.2-cp39-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from -r docker/runtime-pins.txt (line 86))
+#13 3.995 Processing /wheels/toml-0.10.2-py2.py3-none-any.whl (from -r docker/runtime-pins.txt (line 87))
+#13 3.996 Processing /wheels/tomli-2.5.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 88))
+#13 3.997 Processing /wheels/torchdiffeq-0.2.5-py3-none-any.whl (from -r docker/runtime-pins.txt (line 89))
+#13 3.998 Processing /wheels/tqdm-4.70.1-py3-none-any.whl (from -r docker/runtime-pins.txt (line 90))
+#13 4.000 Processing /wheels/transformers-5.2.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 91))
+#13 4.047 Processing /wheels/typeguard-4.6.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 92))
+#13 4.048 Processing /wheels/typer-0.27.3-py3-none-any.whl (from -r docker/runtime-pins.txt (line 93))
+#13 4.049 Processing /wheels/typer_slim-0.24.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 94))
+#13 4.050 Processing /wheels/typing_extensions-4.16.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 95))
+#13 4.051 Processing /wheels/typing_inspect-0.9.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 96))
+#13 4.052 Processing /wheels/typing_inspection-0.4.4-py3-none-any.whl (from -r docker/runtime-pins.txt (line 97))
+#13 4.053 Processing /wheels/tyro-0.9.35-py3-none-any.whl (from -r docker/runtime-pins.txt (line 98))
+#13 4.056 Processing /wheels/tzdata-2026.5-py2.py3-none-any.whl (from -r docker/runtime-pins.txt (line 99))
+#13 4.059 Processing /wheels/urllib3-2.8.0-py3-none-any.whl (from -r docker/runtime-pins.txt (line 100))
+#13 4.061 Processing /wheels/wandb-0.24.2-py3-none-manylinux_2_28_x86_64.whl (from -r docker/runtime-pins.txt (line 101))
+#13 4.086 Processing /wheels/websockets-15.0.1-cp310-cp310-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl (from -r docker/runtime-pins.txt (line 102))
+#13 4.088 Processing /wheels/xxhash-4.0.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (from -r docker/runtime-pins.txt (line 103))
+#13 4.089 Processing /wheels/yarl-1.25.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (from -r docker/runtime-pins.txt (line 104))
+#13 4.093 Processing /wheels/cuda_bindings-12.9.4-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (from torch==2.10.0+cu128)
+#13 4.220 Processing /wheels/nvidia_cuda_nvrtc_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (from torch==2.10.0+cu128)
+#13 4.478 Processing /wheels/nvidia_cuda_runtime_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from torch==2.10.0+cu128)
+#13 4.482 Processing /wheels/nvidia_cuda_cupti_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from torch==2.10.0+cu128)
+#13 4.509 Processing /wheels/nvidia_cudnn_cu12-9.10.2.21-py3-none-manylinux_2_27_x86_64.whl (from torch==2.10.0+cu128)
+#13 9.516 Processing /wheels/nvidia_cublas_cu12-12.8.4.1-py3-none-manylinux_2_27_x86_64.whl (from torch==2.10.0+cu128)
+#13 16.34 Processing /wheels/nvidia_cufft_cu12-11.3.3.83-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from torch==2.10.0+cu128)
+#13 18.70 Processing /wheels/nvidia_curand_cu12-10.3.9.90-py3-none-manylinux_2_27_x86_64.whl (from torch==2.10.0+cu128)
+#13 18.94 Processing /wheels/nvidia_cusolver_cu12-11.7.3.90-py3-none-manylinux_2_27_x86_64.whl (from torch==2.10.0+cu128)
+#13 23.02 Processing /wheels/nvidia_cusparse_cu12-12.5.8.93-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from torch==2.10.0+cu128)
+#13 26.85 Processing /wheels/nvidia_cusparselt_cu12-0.7.1-py3-none-manylinux2014_x86_64.whl (from torch==2.10.0+cu128)
+#13 28.32 Processing /wheels/nvidia_nccl_cu12-2.27.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from torch==2.10.0+cu128)
+#13 29.94 Processing /wheels/nvidia_nvshmem_cu12-3.4.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from torch==2.10.0+cu128)
+#13 30.03 Processing /wheels/nvidia_nvtx_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from torch==2.10.0+cu128)
+#13 30.03 Processing /wheels/nvidia_nvjitlink_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (from torch==2.10.0+cu128)
+#13 30.06 Processing /wheels/nvidia_cufile_cu12-1.13.1.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from torch==2.10.0+cu128)
+#13 30.09 Processing /wheels/triton-3.6.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (from torch==2.10.0+cu128)
+#13 30.86 Processing /wheels/cuda_pathfinder-1.8.3-py3-none-any.whl (from cuda-bindings==12.9.4->torch==2.10.0+cu128)
+#13 31.88 Installing collected packages: pytz, nvidia-cusparselt-cu12, mpmath, xxhash, websockets, urllib3, tzdata, typing_extensions, triton, tqdm, tomli, toml, termcolor, sympy, smmap, six, shtab, shellingham, safetensors, regex, PyYAML, pyparsing, Pygments, pyarrow, psutil, protobuf, propcache, platformdirs, pillow, packaging, nvidia-nvtx-cu12, nvidia-nvshmem-cu12, nvidia-nvjitlink-cu12, nvidia-nccl-cu12, nvidia-curand-cu12, nvidia-cufile-cu12, nvidia-cuda-runtime-cu12, nvidia-cuda-nvrtc-cu12, nvidia-cuda-cupti-cu12, nvidia-cublas-cu12, numpy, ninja, networkx, mypy_extensions, msgpack, mergedeep, mdurl, MarkupSafe, llvmlite, kiwisolver, idna, hf-xet, h11, fsspec, frozenlist, fonttools, filelock, einops, docstring_parser, dill, cycler, cuda-pathfinder, click, charset-normalizer, certifi, av, attrs, async-timeout, annotated-types, annotated-doc, aiohappyeyeballs, typing-inspection, typing-inspect, typeguard, sentry-sdk, scipy, requests, pyyaml-include, python-dateutil, pydantic_core, opencv-python-headless, nvidia-cusparse-cu12, nvidia-cufft-cu12, nvidia-cudnn-cu12, numba, multiprocess, multidict, msgpack-numpy, markdown-it-py, Jinja2, httpcore, gitdb, exceptiongroup, cuda-bindings, contourpy, aiosignal, yarl, rich, qwen-vl-utils, pydantic, pandas, nvidia-cusolver-cu12, matplotlib, GitPython, draccus, anyio, wandb, tyro, typer, torch, numpydantic, httpx, aiohttp, typer-slim, torchvision, torchdiffeq, torchaudio, huggingface_hub, tokenizers, datasets, accelerate, transformers, peft
+#13 57.77   Attempting uninstall: packaging
+#13 57.78     Found existing installation: packaging 26.3
+#13 57.79     Uninstalling packaging-26.3:
+#13 57.93       Successfully uninstalled packaging-26.3
+#13 230.2 
+#13 230.2 Successfully installed GitPython-3.2.1 Jinja2-3.1.6 MarkupSafe-3.0.4 PyYAML-6.0.3 Pygments-2.21.0 accelerate-1.13.0 aiohappyeyeballs-2.7.1 aiohttp-3.14.5 aiosignal-1.4.0 annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 async-timeout-5.0.1 attrs-26.1.0 av-15.1.0 certifi-2026.10.19 charset-normalizer-3.5.2 click-8.5.0 contourpy-1.3.2 cuda-bindings-12.9.4 cuda-pathfinder-1.8.3 cycler-0.12.1 datasets-4.8.5 dill-0.4.1 docstring_parser-0.18.0 draccus-0.10.0 einops-0.8.2 exceptiongroup-1.3.1 filelock-4.1.0 fonttools-4.65.0 frozenlist-1.8.0 fsspec-2026.2.0 gitdb-4.0.12 h11-0.16.0 hf-xet-1.7.0 httpcore-1.0.9 httpx-0.28.1 huggingface_hub-1.33.0 idna-3.20 kiwisolver-1.5.1 llvmlite-0.44.0 markdown-it-py-4.2.0 matplotlib-3.10.9 mdurl-0.1.2 mergedeep-1.3.4 mpmath-1.3.0 msgpack-1.2.3 msgpack-numpy-0.4.8 multidict-7.1.0 multiprocess-0.70.19 mypy_extensions-1.1.0 networkx-3.4.2 ninja-1.13.2 numba-0.61.2 numpy-1.26.4 numpydantic-1.8.1 nvidia-cublas-cu12-12.8.4.1 nvidia-cuda-cupti-cu12-12.8.90 nvidia-cuda-nvrtc-cu12-12.8.93 nvidia-cuda-runtime-cu12-12.8.90 nvidia-cudnn-cu12-9.10.2.21 nvidia-cufft-cu12-11.3.3.83 nvidia-cufile-cu12-1.13.1.3 nvidia-curand-cu12-10.3.9.90 nvidia-cusolver-cu12-11.7.3.90 nvidia-cusparse-cu12-12.5.8.93 nvidia-cusparselt-cu12-0.7.1 nvidia-nccl-cu12-2.27.5 nvidia-nvjitlink-cu12-12.8.93 nvidia-nvshmem-cu12-3.4.5 nvidia-nvtx-cu12-12.8.90 opencv-python-headless-4.11.0.86 packaging-25.0 pandas-2.3.3 peft-0.18.1 pillow-11.3.0 platformdirs-4.12.4 propcache-0.5.4 protobuf-6.33.6 psutil-7.2.2 pyarrow-22.0.0 pydantic-2.14.1 pydantic_core-2.50.1 pyparsing-3.3.3 python-dateutil-3.0.0 pytz-2026.5 pyyaml-include-1.4.1 qwen-vl-utils-0.0.11 regex-2026.9.29 requests-2.34.2 rich-15.0.0 safetensors-0.8.0 scipy-1.15.3 sentry-sdk-2.72.0 shellingham-1.5.4 shtab-1.13.0 six-1.17.0 smmap-5.0.3 sympy-1.14.0 termcolor-3.3.0 tokenizers-0.22.2 toml-0.10.2 tomli-2.5.0 torch-2.10.0+cu128 torchaudio-2.10.0+cu128 torchdiffeq-0.2.5 torchvision-0.25.0+cu128 tqdm-4.70.1 transformers-5.2.0 triton-3.6.0 typeguard-4.6.0 typer-0.27.3 typer-slim-0.24.0 typing-inspect-0.9.0 typing-inspection-0.4.4 typing_extensions-4.16.0 tyro-0.9.35 tzdata-2026.5 urllib3-2.8.0 wandb-0.24.2 websockets-15.0.1 xxhash-4.0.2 yarl-1.25.1
+#13 230.2 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#13 DONE 234.3s
+
+#14 [runtime  4/14] COPY .cache/flash-attn-2.8.3 /opt/flash-attn-src
+#14 DONE 7.5s
+
+#15 [runtime  5/14] RUN FLASH_ATTENTION_FORCE_BUILD=TRUE python -m pip install --no-cache-dir --no-deps --no-build-isolation /opt/flash-attn-src     && rm -rf /opt/flash-attn-src/build
+#15 2.882 Processing /opt/flash-attn-src
+#15 2.882   Preparing metadata (pyproject.toml): started
+#15 17.79   Preparing metadata (pyproject.toml): finished with status 'done'
+#15 17.79 Building wheels for collected packages: flash_attn
+#15 17.80   Building wheel for flash_attn (pyproject.toml): started
+#15 227.7   Building wheel for flash_attn (pyproject.toml): still running...
+#15 501.1   Building wheel for flash_attn (pyproject.toml): still running...
+#15 678.5   Building wheel for flash_attn (pyproject.toml): still running...
+#15 949.6   Building wheel for flash_attn (pyproject.toml): still running...
+#15 1085.8   Building wheel for flash_attn (pyproject.toml): still running...
+#15 1315.2   Building wheel for flash_attn (pyproject.toml): still running...
+#15 1453.2   Building wheel for flash_attn (pyproject.toml): still running...
+#15 1682.9   Building wheel for flash_attn (pyproject.toml): still running...
+#15 1870.4   Building wheel for flash_attn (pyproject.toml): still running...
+#15 2183.6   Building wheel for flash_attn (pyproject.toml): still running...
+#15 2370.5   Building wheel for flash_attn (pyproject.toml): still running...
+#15 2682.3   Building wheel for flash_attn (pyproject.toml): still running...
+#15 2818.8   Building wheel for flash_attn (pyproject.toml): still running...
+#15 3029.6   Building wheel for flash_attn (pyproject.toml): still running...

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "files_sha256_checked": 1057,
+  "episodes": 350,
+  "first_sample_keys": [
+    "images",
+    "instruction",
+    "state"
+  ],
+  "data_root": "/home/crp-5070ti-01/workspaces/WALL-OSS-CRP/data/top_error"
+}

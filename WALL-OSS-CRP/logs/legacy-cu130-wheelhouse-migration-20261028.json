@@ -1,0 +1,155 @@
+{
+  "source": "/home/pangk/workspaces/WALL-OSS-CRP/wheelhouse",
+  "destination": "/media/pangk/My Passport/WALL-OSS-CRP-build-cache-20261028/legacy-cu130-wheelhouse",
+  "status": "PASS",
+  "started_utc": "2026-10-28T09:51:18.149595+00:00",
+  "files": [
+    {
+      "relative_path": "cuda_bindings-13.0.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+      "bytes": 12136098,
+      "source_sha256": "c5f797ce534a303525259be0ae7ee9cfcf4f7874b22f1f9b8e85555509dccb83",
+      "destination_sha256": "c5f797ce534a303525259be0ae7ee9cfcf4f7874b22f1f9b8e85555509dccb83",
+      "verified": true
+    },
+    {
+      "relative_path": "nvidia_cublas-13.1.0.3-py3-none-manylinux_2_27_x86_64.whl",
+      "bytes": 423133236,
+      "source_sha256": "ee8722c1f0145ab246bccb9e452153b5e0515fd094c3678df50b2a0888b8b171",
+      "destination_sha256": "ee8722c1f0145ab246bccb9e452153b5e0515fd094c3678df50b2a0888b8b171",
+      "verified": true
+    },
+    {
+      "relative_path": "nvidia_cuda_cupti-13.0.85-py3-none-manylinux_2_25_x86_64.whl",
+      "bytes": 10715597,
+      "source_sha256": "4eb01c08e859bf924d222250d2e8f8b8ff6d3db4721288cf35d14252a4d933c8",
+      "destination_sha256": "4eb01c08e859bf924d222250d2e8f8b8ff6d3db4721288cf35d14252a4d933c8",
+      "verified": true
+    },
+    {
+      "relative_path": "nvidia_cuda_nvrtc-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl",
+      "bytes": 90215200,
+      "source_sha256": "ad9b6d2ead2435f11cbb6868809d2adeeee302e9bb94bcf0539c7a40d80e8575",
+      "destination_sha256": "ad9b6d2ead2435f11cbb6868809d2adeeee302e9bb94bcf0539c7a40d80e8575",
+      "verified": true
+    },
+    {
+      "relative_path": "nvidia_cuda_runtime-13.0.96-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "bytes": 2243632,
+      "source_sha256": "7f82250d7782aa23b6cfe765ecc7db554bd3c2870c43f3d1821f1d18aebf0548",
+      "destination_sha256": "7f82250d7782aa23b6cfe765ecc7db554bd3c2870c43f3d1821f1d18aebf0548",
+      "verified": true
+    },
+    {
+      "relative_path": "nvidia_cudnn_cu13-9.15.1.9-py3-none-manylinux_2_27_x86_64.whl",
+      "bytes": 351298418,
+      "source_sha256": "ebc9a647918df0d7298d67cfaf41579fd4c78ead9aba246f5ad9414d61b9ec4c",
+      "destination_sha256": "ebc9a647918df0d7298d67cfaf41579fd4c78ead9aba246f5ad9414d61b9ec4c",
+      "verified": true
+    },
+    {
+      "relative_path": "nvidia_cufft-12.0.0.61-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "bytes": 214085489,
+      "source_sha256": "6c44f692dce8fd5ffd3e3df134b6cdb9c2f72d99cf40b62c32dde45eea9ddad3",
+      "destination_sha256": "6c44f692dce8fd5ffd3e3df134b6cdb9c2f72d99cf40b62c32dde45eea9ddad3",
+      "verified": true
+    },
+    {
+      "relative_path": "nvidia_cufile-1.15.1.6-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "bytes": 1223672,
+      "source_sha256": "08a3ecefae5a01c7f5117351c64f17c7c62efa5fffdbe24fc7d298da19cd0b44",
+      "destination_sha256": "08a3ecefae5a01c7f5117351c64f17c7c62efa5fffdbe24fc7d298da19cd0b44",
+      "verified": true
+    },
+    {
+      "relative_path": "nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_x86_64.whl",
+      "bytes": 59544258,
+      "source_sha256": "1aee33a5da6e1db083fe2b90082def8915f30f3248d5896bcec36a579d941bfc",
+      "destination_sha256": "1aee33a5da6e1db083fe2b90082def8915f30f3248d5896bcec36a579d941bfc",
+      "verified": true
+    },
+    {
+      "relative_path": "nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_x86_64.whl",
+      "bytes": 200941980,
+      "source_sha256": "0a759da5dea5c0ea10fd307de75cdeb59e7ea4fcb8add0924859b944babf1112",
+      "destination_sha256": "0a759da5dea5c0ea10fd307de75cdeb59e7ea4fcb8add0924859b944babf1112",
+      "verified": true
+    },
+    {
+      "relative_path": "nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "bytes": 145942937,
+      "source_sha256": "2b3c89c88d01ee0e477cb7f82ef60a11a4bcd57b6b87c33f789350b59759360b",
+      "destination_sha256": "2b3c89c88d01ee0e477cb7f82ef60a11a4bcd57b6b87c33f789350b59759360b",
+      "verified": true
+    },
+    {
+      "relative_path": "nvidia_cusparselt_cu13-0.8.0-py3-none-manylinux2014_x86_64.whl",
+      "bytes": 169884119,
+      "source_sha256": "25e30a8a7323935d4ad0340b95a0b69926eee755767e8e0b1cf8dd85b197d3fd",
+      "destination_sha256": "25e30a8a7323935d4ad0340b95a0b69926eee755767e8e0b1cf8dd85b197d3fd",
+      "verified": true
+    },
+    {
+      "relative_path": "nvidia_nccl_cu13-2.28.9-py3-none-manylinux_2_18_x86_64.whl",
+      "bytes": 196493177,
+      "source_sha256": "e4553a30f34195f3fa1da02a6da3d6337d28f2003943aa0a3d247bbc25fefc42",
+      "destination_sha256": "e4553a30f34195f3fa1da02a6da3d6337d28f2003943aa0a3d247bbc25fefc42",
+      "verified": true
+    },
+    {
+      "relative_path": "nvidia_nvjitlink-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl",
+      "bytes": 40713933,
+      "source_sha256": "13a74f429e23b921c1109976abefacc69835f2f433ebd323d3946e11d804e47b",
+      "destination_sha256": "13a74f429e23b921c1109976abefacc69835f2f433ebd323d3946e11d804e47b",
+      "verified": true
+    },
+    {
+      "relative_path": "nvidia_nvshmem_cu13-3.4.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "bytes": 60412546,
+      "source_sha256": "290f0a2ee94c9f3687a02502f3b9299a9f9fe826e6d0287ee18482e78d495b80",
+      "destination_sha256": "290f0a2ee94c9f3687a02502f3b9299a9f9fe826e6d0287ee18482e78d495b80",
+      "verified": true
+    },
+    {
+      "relative_path": "nvidia_nvtx-13.0.85-py3-none-manylinux1_x86_64.manylinux_2_5_x86_64.whl",
+      "bytes": 148047,
+      "source_sha256": "4936d1d6780fbe68db454f5e72a42ff64d1fd6397df9f363ae786930fd5c1cd4",
+      "destination_sha256": "4936d1d6780fbe68db454f5e72a42ff64d1fd6397df9f363ae786930fd5c1cd4",
+      "verified": true
+    },
+    {
+      "relative_path": "torch-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl",
+      "bytes": 641574191,
+      "source_sha256": "0f8566d1b3d8353b7f18d5a15375a00dae89d886bb7d01143bb394f475832286",
+      "destination_sha256": "0f8566d1b3d8353b7f18d5a15375a00dae89d886bb7d01143bb394f475832286",
+      "verified": true
+    },
+    {
+      "relative_path": "torchaudio-2.10.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl",
+      "bytes": 1887290,
+      "source_sha256": "a654891507ca4ab095e61335c0d2af75118fadec9b506804da5117aa6000c28d",
+      "destination_sha256": "a654891507ca4ab095e61335c0d2af75118fadec9b506804da5117aa6000c28d",
+      "verified": true
+    },
+    {
+      "relative_path": "torchvision-0.25.0+cu130-cp310-cp310-manylinux_2_28_x86_64.whl",
+      "bytes": 7533339,
+      "source_sha256": "9391dc5b2e038a5e365d07b425e4046fb8f605eeb6095fcb90f38a7b6c0aba7c",
+      "destination_sha256": "9391dc5b2e038a5e365d07b425e4046fb8f605eeb6095fcb90f38a7b6c0aba7c",
+      "verified": true
+    },
+    {
+      "relative_path": "triton-3.6.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+      "bytes": 188105201,
+      "source_sha256": "a6550fae429e0667e397e5de64b332d1e5695b73650ee75a6146e2e902770bea",
+      "destination_sha256": "a6550fae429e0667e397e5de64b332d1e5695b73650ee75a6146e2e902770bea",
+      "verified": true
+    }
+  ],
+  "active_build_context": "/media/pangk/My Passport/WALL-OSS-CRP-build-cache-20261028/wheelhouse",
+  "original_wheelhouse_excluded_by_dockerignore": true,
+  "relative_path_set_verified": true,
+  "total_bytes": 2818232360,
+  "source_regular_files_removed": true,
+  "compatibility_symlink_verified": true,
+  "completed_utc": "2026-10-28T09:52:04.182330+00:00"
+}

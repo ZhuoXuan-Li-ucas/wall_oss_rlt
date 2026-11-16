@@ -1,0 +1,17 @@
+........................................................................ [ 33%]
+........................................................................ [ 66%]
+........................................................................ [ 99%]
+..                                                                       [100%]
+=============================== warnings summary ===============================
+env/lib/python3.10/site-packages/torch/jit/_script.py:1480
+env/lib/python3.10/site-packages/torch/jit/_script.py:1480
+  /home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/jit/_script.py:1480: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+env/lib/python3.10/site-packages/torch/jit/_script.py:362: 14 warnings
+  /home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/jit/_script.py:362: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /home/pangk/workspaces/WALL-OSS-CRP/logs/rlt-h100-preparation-20261029/cpu-check/tests.xml -
+218 passed, 16 warnings in 15.05s

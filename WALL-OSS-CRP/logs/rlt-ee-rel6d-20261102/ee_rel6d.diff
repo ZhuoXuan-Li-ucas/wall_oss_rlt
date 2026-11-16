@@ -1,0 +1,1329 @@
+diff -ruN -x __pycache__ /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/data/ar5.py /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/data/ar5.py
+--- /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/data/ar5.py	2026-10-31 14:59:23.666381533 +0800
++++ /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/data/ar5.py	2026-11-02 13:43:37.630042521 +0800
+@@ -9,6 +9,14 @@
+ No robot control, kinematic conversion, normalization or slot mapping occurs
+ here. The joint target variant learns the next measured joint configuration,
+ not an unavailable logged joint command.
++
++The EE variant follows the public Wall-OSS-0.5 LeRobot layout (wall-x
++``x2robot2lerobot.py``: state = frame i, action = frame i+1, both measured
++follower poses): rows are base-frame flange position, 6D rotation (first two
++rows of the rotation matrix, row-major) and gripper. Windows are made relative
++to the observation exactly like wall-x ``LerobotDataset._to_relative_action``:
++position difference, ``R_rel = R_abs @ R_state^T`` as 6D, gripper unchanged.
++The gripper target stays the recorded binary command (user decision 2026-11-02).
+ """
+ from __future__ import annotations
+ 
+@@ -18,7 +26,9 @@
+ 
+ JOINT_NEXT = 'ar5_joint_next_v1'
+ EE_DELTA_NEXT = 'ar5_ee_delta_next_v1'
+-TARGET_MODES = (JOINT_NEXT, EE_DELTA_NEXT)
++EE_REL6D_NEXT = 'ar5_ee_rel6d_next_v1'
++TARGET_MODES = (JOINT_NEXT, EE_DELTA_NEXT, EE_REL6D_NEXT)
++EE_ROW_DIM = 10   # position 3 + rotation 6D + gripper 1
+ 
+ 
+ def _matrix(value, width, name):
+@@ -37,13 +47,17 @@
+     return action
+ 
+ 
+-def aligned_targets(state, action, mode=JOINT_NEXT):
++def aligned_targets(state, action, mode=JOINT_NEXT, *, ee_pose=None):
+     """Return ``(targets, observations)`` with exactly T-1 float32 rows.
+ 
+     ``observations[t] = state[t]``. Joint targets contain j1..j7 from
+     ``state[t+1]`` followed by the *command* ``action[t+1,6]``. The optional
+-    EE variant contains ``action[t+1,:7]`` (base-frame flange translation in
+-    meters, left-multiplied rotation vector in radians, and binary gripper).
++    EE delta variant contains ``action[t+1,:7]`` (base-frame flange translation
++    in meters, left-multiplied rotation vector in radians, and binary gripper).
++    The EE 6D variant requires ``ee_pose`` and returns absolute rows
++    ``[pos, rot6d, gripper]``: observations use ``ee_pose[t]`` and the measured
++    opening ``state[t,7]``; targets use ``ee_pose[t+1]`` and the command
++    ``action[t+1,6]``. Window-relative conversion happens later, per window.
+ 
+     The final observation has no next-frame target and is excluded. Window
+     construction may pad later, but must mark those padded labels invalid.
+@@ -57,11 +71,23 @@
+         raise ValueError('state/action frame counts must match')
+     if len(state) < 2:
+         raise ValueError('at least two frames are required for a next-frame target')
+-    if mode == JOINT_NEXT:
++    if mode == EE_REL6D_NEXT:
++        if ee_pose is None:
++            raise ValueError(f'{mode} requires the recorded ee_pose')
++        ee_pose = _matrix(ee_pose, 6, 'ee_pose').astype(np.float64, copy=False)
++        if len(ee_pose) != len(state):
++            raise ValueError('ee_pose/state frame counts must match')
++        pose = np.concatenate((ee_pose[:, :3], rotvec_to_rot6d(ee_pose[:, 3:])), axis=1)
++        targets = np.concatenate((pose[1:], action[1:, 6:7]), axis=1)
++        observations = np.concatenate((pose[:-1], state[:-1, 7:8]), axis=1)
++    elif ee_pose is not None:
++        raise ValueError(f'{mode} does not use ee_pose')
++    elif mode == JOINT_NEXT:
+         targets = np.concatenate((state[1:, :7], action[1:, 6:7]), axis=1)
++        observations = state[:-1]
+     else:
+         targets = action[1:]
+-    observations = state[:-1]
++        observations = state[:-1]
+     targets = np.array(targets, dtype=np.float32, copy=True)
+     observations = np.array(observations, dtype=np.float32, copy=True)
+     if not np.isfinite(targets).all() or not np.isfinite(observations).all():
+@@ -98,3 +124,56 @@
+     if any(error > atol for error in result.values()):
+         raise ValueError(f'AR5 previous-to-current pose deltas disagree (atol={atol}): {result}')
+     return result
++
++
++def rotvec_to_rot6d(rotvec):
++    """[N,3] rotation vectors -> [N,6] first two rows of the rotation matrix."""
++    from scipy.spatial.transform import Rotation
++
++    rotvec = _matrix(rotvec, 3, 'rotvec').astype(np.float64, copy=False)
++    return Rotation.from_rotvec(rotvec).as_matrix()[:, :2, :].reshape(-1, 6)
++
++
++def rot6d_to_matrix(rot6d):
++    """[N,6] -> [N,3,3] by Gram-Schmidt, as wall-x ``so3_to_matrix_batch_nb``."""
++    rot6d = _matrix(rot6d, 6, 'rot6d').astype(np.float64, copy=False)
++    eps = 1e-12
++    r1 = rot6d[:, :3] / (np.linalg.norm(rot6d[:, :3], axis=1, keepdims=True) + eps)
++    r2 = rot6d[:, 3:] - np.sum(r1 * rot6d[:, 3:], axis=1, keepdims=True) * r1
++    r2 = r2 / (np.linalg.norm(r2, axis=1, keepdims=True) + eps)
++    return np.stack((r1, r2, np.cross(r1, r2)), axis=1)
++
++
++def _ee_rows(rows, name):
++    rows = _matrix(rows, EE_ROW_DIM, name).astype(np.float64, copy=False)
++    if name == 'targets' and not np.isin(rows[:, 9], (0, 1)).all():
++        raise ValueError('EE target gripper must be the binary 0/1 command')
++    return rows
++
++
++def ee_relative_window(targets, state):
++    """Absolute ``[K,10]`` next poses -> rows relative to the ``[10]`` observation.
++
++    Pass only valid (unpadded) rows. Matches wall-x ``_to_relative_action``.
++    """
++    targets = _ee_rows(targets, 'targets')
++    state = _ee_rows(np.asarray(state).reshape(1, -1), 'state')[0]
++    r_state = rot6d_to_matrix(state[None, 3:9])[0]
++    r_rel = np.matmul(rot6d_to_matrix(targets[:, 3:9]), r_state.T)
++    return np.concatenate((targets[:, :3] - state[None, :3],
++                           r_rel[:, :2, :].reshape(-1, 6), targets[:, 9:10]), axis=1)
++
++
++def ee_absolute_window(relative, state):
++    """Inverse for inference: ``[K,10]`` relative rows -> ``[K,7]`` flange targets.
++
++    Returns base-frame position (m), rotation vector (rad, ``R_abs = R_rel @
++    R_state``) and the predicted gripper value, still continuous.
++    """
++    from scipy.spatial.transform import Rotation
++
++    relative = _ee_rows(relative, 'relative')
++    state = _ee_rows(np.asarray(state).reshape(1, -1), 'state')[0]
++    r_abs = np.matmul(rot6d_to_matrix(relative[:, 3:9]), rot6d_to_matrix(state[None, 3:9])[0])
++    return np.concatenate((relative[:, :3] + state[None, :3],
++                           Rotation.from_matrix(r_abs).as_rotvec(), relative[:, 9:10]), axis=1)
+diff -ruN -x __pycache__ /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/data/collator.py /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/data/collator.py
+--- /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/data/collator.py	2026-10-31 14:59:23.666596490 +0800
++++ /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/data/collator.py	2026-11-02 13:43:47.356381071 +0800
+@@ -7,6 +7,7 @@
+ import torch
+ 
+ from wall_rlt.model.prefix import observation_prefix_mask
++from .ar5 import EE_REL6D_NEXT, ee_relative_window
+ from .transforms import SlotMap
+ 
+ 
+@@ -19,6 +20,9 @@
+         self.action_map = SlotMap(contract.action_slots,contract.model_action_dim)
+         self.state_map = SlotMap(contract.state_slots,contract.model_state_dim)
+         self.image_size = image_size
++        # Official Wall-OSS-0.5 targets are relative to the observed pose, so a
++        # window is converted here, after windowing and before normalization.
++        self.relative_targets = contract.target_mode == EE_REL6D_NEXT
+         raw = json.loads(open(contract.normalization_path).read())['norm_stats']
+         stats = {}
+         for role,key,mapping in [('action',contract.action_key,self.action_map),
+@@ -63,7 +67,7 @@
+             output.append(image.resize((w,h)))
+         return output
+ 
+-    def __call__(self, samples):
++    def __call__(self, samples, *, convert_targets=True):
+         from wall_x.data.backends.lerobot.utils import get_wallx_normal_text
+         if not samples:
+             raise ValueError('empty batch')
+@@ -78,11 +82,16 @@
+             action = torch.as_tensor(sample['action'],dtype=torch.float32)
+             if action.shape != (self.contract.action_horizon,len(self.contract.action_names)):
+                 raise ValueError('action window shape disagrees with contract')
+-            raw_valid = time[:,None].expand_as(action)
+-            mapped, mask = self.action_map.encode(action,raw_valid)
+             raw_state = torch.as_tensor(sample['state'],dtype=torch.float32)
+             if raw_state.shape != (len(self.contract.state_names),):
+                 raise ValueError('state must be a single observation vector')
++            if self.relative_targets and convert_targets:
++                valid = int(time.sum())
++                action = action.clone()
++                action[:valid] = torch.from_numpy(ee_relative_window(
++                    action[:valid].double().numpy(),raw_state.double().numpy())).float()
++            raw_valid = time[:,None].expand_as(action)
++            mapped, mask = self.action_map.encode(action,raw_valid)
+             state,state_mask = self.state_map.encode(raw_state)
+             text,_ = get_wallx_normal_text(
+                 {'instruction':sample['instruction']},self.contract.action_horizon,0,
+@@ -123,7 +132,7 @@
+             items.append(item)
+         saved=self.state_dict()
+         try:
+-            result=self(items)
++            result=self(items,convert_targets=False)
+         finally:
+             self.load_state_dict(saved)
+         for key in ('action_chunk','sample_time','flow_loss_mask'):
+diff -ruN -x __pycache__ /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/data/contract.py /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/data/contract.py
+--- /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/data/contract.py	2026-10-31 14:59:23.666637207 +0800
++++ /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/data/contract.py	2026-11-02 13:43:53.638595682 +0800
+@@ -53,7 +53,8 @@
+             raise ValueError("unsupported contract schema or purpose")
+         if self.source_format not in {"lerobot", "npz_video", "memory"}:
+             raise ValueError("unsupported source format")
+-        if self.target_mode not in {"recorded", "ar5_joint_next_v1", "ar5_ee_delta_next_v1"}:
++        if self.target_mode not in {"recorded", "ar5_joint_next_v1", "ar5_ee_delta_next_v1",
++                                    "ar5_ee_rel6d_next_v1"}:
+             raise ValueError("unsupported action target mode")
+         if not math.isfinite(self.fps) or self.fps <= 0:
+             raise ValueError("fps must be finite and positive")
+@@ -121,6 +122,15 @@
+                     self.model_action_dim != 26 or self.model_state_dim != 26 or
+                     self.alignment != "observation_t_target_t_plus_1_drop_last"):
+                 raise ValueError("AR5 joint targets require the explicit joint8 adaptation contract")
++        if self.target_mode == "ar5_ee_rel6d_next_v1":
++            # Pretrained Wall-OSS-0.5 right-arm slots: pos 10..12, 6D 13..18, gripper 19.
++            if (self.model_adapter != "wall_oss05_right_arm_ee_v1" or
++                    self.action_slots != list(range(10, 20)) or self.state_slots != list(range(10, 20)) or
++                    self.model_action_dim != 26 or self.model_state_dim != 26 or
++                    self.action_convention != "mixed" or
++                    self.field_conventions != ["delta"] * 9 + ["absolute"] or
++                    self.alignment != "observation_t_target_t_plus_1_drop_last"):
++                raise ValueError("AR5 EE targets require the explicit Wall-OSS-0.5 right-arm EE contract")
+         if self.source_format == "npz_video":
+             self.read_manifest()
+         if not self.splits.get("train"):
+diff -ruN -x __pycache__ /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/data/npz_source.py /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/data/npz_source.py
+--- /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/data/npz_source.py	2026-10-31 14:59:23.666820403 +0800
++++ /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/data/npz_source.py	2026-11-02 13:43:37.630161865 +0800
+@@ -49,8 +49,10 @@
+                 if recorded_count != entry['frames']:
+                     raise ValueError('recorded length differs from manifest')
+                 if contract.target_mode != 'recorded':
+-                    from .ar5 import aligned_targets
+-                    action, state = aligned_targets(state, action, contract.target_mode)
++                    from .ar5 import EE_REL6D_NEXT, aligned_targets
++                    ee_pose = (np.asarray(record['ee_pose'], dtype=np.float64)
++                               if contract.target_mode == EE_REL6D_NEXT else None)
++                    action, state = aligned_targets(state, action, contract.target_mode, ee_pose=ee_pose)
+                 count = len(action)
+                 if action.shape != (count, len(contract.action_names)) or state.shape != (count, len(contract.state_names)):
+                     raise ValueError('recording dimensions disagree with contract')
+diff -ruN -x __pycache__ /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/data/prepare_ar5.py /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/data/prepare_ar5.py
+--- /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/data/prepare_ar5.py	2026-10-31 14:59:23.666862092 +0800
++++ /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/data/prepare_ar5.py	2026-11-02 13:46:30.385926600 +0800
+@@ -1,4 +1,15 @@
+-"""Freeze an audited AR5 next-joint dataset and train-only statistics."""
++"""Freeze an audited AR5 dataset and train-only statistics.
++
++2026-10-31: recordings collected before the joint unlock (j3/j5 locked) are void.
++Locked joints are therefore measured from the train split instead of assumed,
++required group exclusions are explicit arguments, and the collection settings
++written by wall_collect.py (``wall_collection.json``) are carried into provenance.
++
++2026-11-02: the default target is the official Wall-OSS-0.5 EE layout
++(``ar5_ee_rel6d_next_v1``, right-arm slots 10..19, pretrained projections kept).
++Its action statistics cover every valid relative window step k=0..31, computed
++with the same function the collator applies. ``ar5_joint_next_v1`` is unchanged.
++"""
+ from __future__ import annotations
+ 
+ import argparse
+@@ -9,13 +20,54 @@
+ 
+ import numpy as np
+ 
+-from .ar5 import aligned_targets
++from .ar5 import EE_REL6D_NEXT, JOINT_NEXT, aligned_targets, ee_relative_window
+ from .audit import write_json
+ from .contract import DataContract
+ from .npz_source import contained_path
+ 
+ 
+-def prepare_ar5(root, audit_dir, document, *, contract_path):
++COLLECTION_RECORD = 'wall_collection.json'
++HORIZON = 32  # DataContract.action_horizon; WALL flow horizon
++MIN_RANGE = 1e-9
++ROT6D = [f'r{i}{j}' for i in range(2) for j in range(3)]
++EE_FIELDS = {
++    'action_names': ['flange_dx', 'flange_dy', 'flange_dz'] + [f'rot6d_rel_{n}' for n in ROT6D]
++                    + ['gripper_next_command'],
++    'state_names': ['flange_x', 'flange_y', 'flange_z'] + [f'rot6d_{n}' for n in ROT6D]
++                   + ['gripper_measured_opening'],
++    'action_units': ['m'] * 3 + ['rotation_matrix_element'] * 6 + ['binary_0_close_1_open'],
++    'state_units': ['m'] * 3 + ['rotation_matrix_element'] * 6 + ['opening_fraction_position_div_210'],
++    'action_slots': list(range(10, 20)), 'state_slots': list(range(10, 20)),
++    'action_convention': 'mixed', 'field_conventions': ['delta'] * 9 + ['absolute'],
++    'coordinate_frame': 'AR5_base_frame_flange_pose',
++    'model_adapter': 'wall_oss05_right_arm_ee_v1',
++}
++JOINT_FIELDS = {
++    'action_names': [f'j{i}_next_measured' for i in range(1,8)]+['gripper_next_command'],
++    'state_names': [f'j{i}_measured' for i in range(1,8)]+['gripper_measured_opening'],
++    'action_units': ['rad']*7+['binary_0_close_1_open'],
++    'state_units': ['rad']*7+['opening_fraction_position_div_210'],
++    'action_slots': list(range(8)), 'state_slots': list(range(8)),
++    'action_convention': 'absolute',
++    'coordinate_frame': 'AR5_controller_joint_axes_1_to_7',
++    'model_adapter': 'ar5_joint8_reinit_v1',
++}
++DEFAULT_REPO_IDS = {JOINT_NEXT: 'local/top_error_ar5_joint_next_v1', EE_REL6D_NEXT: 'local/ar5_ee_rel6d_next_v1'}
++
++
++def relative_windows(targets, observations, horizon=HORIZON):
++    """Every valid step of every training window, as the collator sees it."""
++    n = len(targets)
++    return np.concatenate([ee_relative_window(targets[t:min(n, t + horizon)], observations[t])
++                           for t in range(n)])
++
++
++def prepare_ar5(root, audit_dir, document, *, contract_path, required_excluded=(),
++                repo_id=None, locked_tol_rad=1e-3, target_mode=EE_REL6D_NEXT):
++    if target_mode not in DEFAULT_REPO_IDS:
++        raise ValueError(f'unsupported target mode: {target_mode}')
++    repo_id = repo_id or DEFAULT_REPO_IDS[target_mode]
++    ee = target_mode == EE_REL6D_NEXT
+     root, audit_dir, document = Path(root).resolve(), Path(audit_dir).resolve(), Path(document).resolve()
+     contract_path = Path(contract_path).resolve()
+     if contract_path.is_relative_to(root) or audit_dir.is_relative_to(root):
+@@ -26,13 +78,15 @@
+     mp = audit_dir/'episodes.json'
+     manifest_bytes = mp.read_bytes()
+     manifest = json.loads(manifest_bytes)
+-    if not {'mouse','tape'}.issubset(manifest.get('excluded_groups',[])):
+-        raise ValueError('the user excluded mouse and tape; regenerate the manifest with exclusions')
+-    if any(e['task_group'] in {'mouse','tape'} for e in manifest['episodes']):
++    excluded = sorted(manifest.get('excluded_groups',[]))
++    missing = sorted(set(required_excluded)-set(excluded))
++    if missing:
++        raise ValueError(f'groups {missing} must be excluded; regenerate the manifest with exclusions')
++    if any(e['task_group'] in excluded for e in manifest['episodes']):
+         raise ValueError('excluded recordings present in manifest')
+     splits = manifest['splits']
+     train_ids = set(splits['train'])
+-    actions, states = [], []
++    actions, states, joints = [], [], []
+     for entry in manifest['episodes']:
+         if entry['episode_id'] not in train_ids:
+             continue
+@@ -41,8 +95,10 @@
+         if hashlib.sha256(raw).hexdigest() != entry['npz_sha256']:
+             raise ValueError('recording changed after audit')
+         with np.load(path,allow_pickle=False) as record:
+-            target, obs = aligned_targets(record['state'],record['action'],'ar5_joint_next_v1')
+-            actions.append(target); states.append(obs)
++            target, obs = aligned_targets(record['state'],record['action'],target_mode,
++                                          ee_pose=record['ee_pose'] if ee else None)
++            actions.append(relative_windows(target, obs) if ee else target); states.append(obs)
++            joints.append(np.asarray(record['state'][:-1, :7] if ee else obs[:, :7], dtype=np.float64))
+     if not actions:
+         raise ValueError('empty training split')
+     stats = {}
+@@ -52,34 +108,66 @@
+                       'q99':np.quantile(values,.99,axis=0).tolist(),
+                       'min':values.min(axis=0).tolist(), 'max':values.max(axis=0).tolist(),
+                       'count':len(values)}
++    degenerate = {}
++    if ee:
++        # wall-x treats a zero range as 1 when normalizing; make that explicit
++        # so normalization and unnormalization agree.
++        for key in ('action', 'state'):
++            lo, hi = stats[key]['q01'], stats[key]['q99']
++            degenerate[key] = [i for i in range(len(lo)) if hi[i] - lo[i] <= MIN_RANGE]
++            for i in degenerate[key]:
++                hi[i] = lo[i] + 1.0
++    # A joint counts as locked only if it never moved in the train split.
++    joint_values = np.concatenate(joints)
++    joint_ptp = joint_values.max(axis=0)-joint_values.min(axis=0)
++    locked = [int(i) for i in np.flatnonzero(joint_ptp < locked_tol_rad)]
++    collection = {}
++    record_path = root/COLLECTION_RECORD
++    if record_path.is_file():
++        record = json.loads(record_path.read_text(encoding='utf-8'))
++        collection = {'collection_settings':record.get('settings'),
++                      'collection_fixed_args':record.get('fixed_args'),
++                      'collection_record_sha256':hashlib.sha256(record_path.read_bytes()).hexdigest()}
+     mhash = hashlib.sha256(manifest_bytes).hexdigest()
+-    norm_path = audit_dir/'normalization.ar5_joint_next_v1.json'
++    norm_path = audit_dir/f'normalization.{target_mode}.json'
+     write_json(norm_path, {'schema_version':1,'train_episode_ids':splits['train'],
+-                          'manifest_sha256':mhash,'target_mode':'ar5_joint_next_v1',
++                          'manifest_sha256':mhash,'target_mode':target_mode,
+                           'norm_stats':stats})
++    fields = EE_FIELDS if ee else JOINT_FIELDS
++    if ee:
++        semantics = {
++            'target_source':'next-frame measured flange pose (npz ee_pose, base frame) relative to the '
++                            'observation pose of each window, as wall-x LerobotDataset._to_relative_action; '
++                            'next-frame binary gripper command (absolute)',
++            'rotation_6d':'first two rows of the rotation matrix, row-major; R_rel = R_abs @ R_obs^T',
++            'model_slots':'Wall-OSS-0.5 follow_right_* slots 10..19 (pos 10..12, 6D 13..18, gripper 19)',
++            'action_statistics':f'all valid relative window steps k=0..{HORIZON-1} of the train split',
++            'degenerate_range_dims':degenerate,
++            'model_adaptation':'official Wall-OSS-0.5 26-slot layout and pretrained action projections; '
++                               'train-only target normalizers; state string input'}
++    else:
++        semantics = {
++            'target_source':'next-frame measured joint angles, not saved arm commands; next-frame binary gripper command',
++            'model_adaptation':'redefine first 8 of 26 slots; reset action_preprocessor.w1 and action_preprocessor.action_proj_back before fine-tuning; state string input'}
+     contract = DataContract(
+-        root=str(root), repo_id='local/top_error_ar5_joint_next_v1', fps=30.0,
++        root=str(root), repo_id=repo_id, fps=30.0,
+         source_format='npz_video', action_key='action',state_key='state',
+-        action_names=[f'j{i}_next_measured' for i in range(1,8)]+['gripper_next_command'],
+-        state_names=[f'j{i}_measured' for i in range(1,8)]+['gripper_measured_opening'],
+-        action_units=['rad']*7+['binary_0_close_1_open'],
+-        state_units=['rad']*7+['opening_fraction_position_div_210'],
+-        action_slots=list(range(8)),state_slots=list(range(8)),
+         camera_mapping={'cam_high':'top_view','cam_front':'wrist_view'},
+-        splits=splits, action_convention='absolute',
+-        coordinate_frame='AR5_controller_joint_axes_1_to_7',
+-        robot_type='AR5_7axis_OmniPicker',semantics_confirmed=True,purpose='target',
+-        alignment='observation_t_target_t_plus_1_drop_last', target_mode='ar5_joint_next_v1',
+-        model_adapter='ar5_joint8_reinit_v1',
++        splits=splits, robot_type='AR5_7axis_OmniPicker',semantics_confirmed=True,purpose='target',
++        alignment='observation_t_target_t_plus_1_drop_last', target_mode=target_mode,
++        **fields,
+         manifest_path=str(mp),manifest_sha256=mhash,
+         normalization_path=str(norm_path),normalization_sha256=hashlib.sha256(norm_path.read_bytes()).hexdigest(),
+         provenance={'format_document':document.name,'format_document_sha256':hashlib.sha256(document.read_bytes()).hexdigest(),
+                     'collection_host':'user-confirmed intended Ubuntu inference validation host',
+                     'collection_robot':'user-confirmed intended inference validation robot',
+-                    'excluded_groups':['mouse','tape'],
+-                    'target_source':'next-frame measured joint angles, not saved arm commands; next-frame binary gripper command',
+-                    'locked_joint_indices_zero_based':[2,4],
+-                    'model_adaptation':'redefine first 8 of 26 slots; reset action_preprocessor.w1 and action_preprocessor.action_proj_back before fine-tuning; state string input',
++                    'excluded_groups':excluded,
++                    **{k:v for k,v in semantics.items() if k != 'model_adaptation'},
++                    'locked_joint_indices_zero_based':locked,
++                    'locked_joint_rule':f'train-split state peak-to-peak < {locked_tol_rad} rad',
++                    'train_joint_peak_to_peak_rad':[round(float(x),6) for x in joint_ptp],
++                    **collection,
++                    'model_adaptation':semantics['model_adaptation'],
+                     'dataset_rewards':'not supplied; not an RL replay dataset'})
+     contract.require_trainable()
+     # Artifact references are portable within the project; root is overridden
+@@ -94,6 +182,9 @@
+             'target_mode':contract.target_mode,'model_adapter':contract.model_adapter,
+             'episodes':len(manifest['episodes']),'split_counts':{k:len(v) for k,v in splits.items()},
+             'train_observations':stats['state']['count'],
++            'train_action_rows':stats['action']['count'],
++            'locked_joint_indices_zero_based':locked,
++            'collection_record':bool(collection),
+             'raw_frames':sum(e['frames'] for e in manifest['episodes']),
+             'usable_observations':sum(e['frames']-1 for e in manifest['episodes']),
+             'model_training_status':'NOT_RUN'}
+@@ -105,8 +196,18 @@
+     parser.add_argument('--audit-dir',required=True)
+     parser.add_argument('--document',required=True)
+     parser.add_argument('--contract-path',required=True)
++    parser.add_argument('--require-excluded',action='append',default=[],
++                        help='Task group the manifest must have excluded; repeatable (old top_error flow: mouse, tape)')
++    parser.add_argument('--target-mode',choices=sorted(DEFAULT_REPO_IDS),default=EE_REL6D_NEXT,
++                        help='ar5_ee_rel6d_next_v1: official Wall-OSS-0.5 EE layout (default); '
++                             'ar5_joint_next_v1: joint8 reinit variant')
++    parser.add_argument('--repo-id',default=None,help=f'default per target mode: {DEFAULT_REPO_IDS}')
++    parser.add_argument('--locked-tol-rad',type=float,default=1e-3,
++                        help='A joint whose train-split peak-to-peak is below this is recorded as locked')
+     args = parser.parse_args()
+-    print(json.dumps(prepare_ar5(args.root,args.audit_dir,args.document,contract_path=args.contract_path),
++    print(json.dumps(prepare_ar5(args.root,args.audit_dir,args.document,contract_path=args.contract_path,
++                                 required_excluded=args.require_excluded,repo_id=args.repo_id,
++                                 locked_tol_rad=args.locked_tol_rad,target_mode=args.target_mode),
+                      ensure_ascii=False,indent=2))
+ 
+ 
+diff -ruN -x __pycache__ /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/inference/artifact.py /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/inference/artifact.py
+--- /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/inference/artifact.py	2026-10-31 14:59:23.666985235 +0800
++++ /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/inference/artifact.py	2026-11-02 13:44:40.404856119 +0800
+@@ -20,7 +20,8 @@
+ from wall_rlt.config import WallRLTConfig
+ from wall_rlt.data.contract import DataContract, canonical_hash
+ from wall_rlt._vendor.rlt_token_transformer import RLTTokenEncoder
+-from wall_rlt.model.ar5_adapter import AR5_ACTION_LAYOUT, AR5_STATE_LAYOUT
++from wall_rlt.model.ar5_adapter import variant_layouts
++from wall_rlt.model.builder import SUPPORTED_ADAPTATIONS
+ 
+ 
+ KIND = 'wall-rlt-stage1-inference'
+@@ -99,20 +100,21 @@
+     if contract.fingerprint() != expected_hash:
+         raise ValueError('checkpoint contract fingerprint mismatch')
+     contract.require_trainable(allow_synthetic=contract.purpose == 'synthetic')
+-    if (contract.target_mode != 'ar5_joint_next_v1'
+-            or contract.model_adapter != 'ar5_joint8_reinit_v1'):
+-        raise ValueError('inference export requires the declared AR5 joint8 variant')
++    if (contract.target_mode, contract.model_adapter) not in SUPPORTED_ADAPTATIONS:
++        raise ValueError('inference export requires the declared AR5 joint8 or Wall-OSS-0.5 EE variant')
+     rlt = WallRLTConfig.load(assets / 'rlt_config.json')
+     wall = _read(assets / 'adapted_wall_config.json')
+     if (rlt.input_dim != wall.get('hidden_size')
+             or rlt.action_horizon != contract.action_horizon
+             or rlt.model_action_dim != contract.model_action_dim):
+         raise ValueError('WALL, RLT and data contract dimensions disagree')
+-    if (list(wall.get('dof_config', {}).items()) != list(AR5_ACTION_LAYOUT.items())
+-            or list(wall.get('agent_pos_config', {}).items()) != list(AR5_STATE_LAYOUT.items())
++    action_layout, state_layout = variant_layouts(contract.model_adapter)
++    if (list(wall.get('dof_config', {}).items()) != list(action_layout.items())
++            or list(wall.get('agent_pos_config', {}).items()) != list(state_layout.items())
+             or wall.get('proj_with_mask') is not True
+             or wall.get('use_state_string_representation') is not True):
+-        raise ValueError('adapted WALL config does not declare the AR5 joint8 layout')
++        label = 'AR5 joint8' if contract.model_adapter == 'ar5_joint8_reinit_v1' else 'Wall-OSS-0.5 EE'
++        raise ValueError(f'adapted WALL config does not declare the {label} layout')
+     return contract, rlt, wall
+ 
+ 
+diff -ruN -x __pycache__ /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/inference/protocol.py /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/inference/protocol.py
+--- /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/inference/protocol.py	2026-10-31 14:59:23.667194451 +0800
++++ /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/inference/protocol.py	2026-11-02 13:45:21.669555752 +0800
+@@ -22,7 +22,9 @@
+ SCHEMA_VERSION = 1
+ CAMERA_KEYS = ('cam_high', 'cam_front')
+ ACTION_HORIZON = 32
+-ACTION_DIM = STATE_DIM = 8
++ACTION_DIM = STATE_DIM = 8          # AR5 joint8 contract
++SUPPORTED_DIMS = (8, 10)            # joint8, Wall-OSS-0.5 right-arm EE (pos, 6D, gripper)
++ABSOLUTE_TARGET_DIM = 7             # EE only: flange pos, rotation vector, gripper
+ MAX_BODY_BYTES = 16 * 1024**2
+ MAX_IMAGE_BYTES = 8 * 1024**2
+ MAX_IMAGE_SIDE = 2048
+@@ -164,7 +166,14 @@
+     return {'encoding': encoding, 'data': base64.b64encode(payload).decode('ascii')}
+ 
+ 
+-def decode_request(value):
++def _layout_dim(value, label):
++    if type(value) is not int or value not in SUPPORTED_DIMS:
++        raise ProtocolError(f'{label} must be one of {SUPPORTED_DIMS}')
++    return value
++
++
++def decode_request(value, *, state_dim=None):
++    """``state_dim`` comes from the backend contract; None accepts any supported layout."""
+     required = {'schema_version', 'request_id', 'instruction', 'state', 'images'}
+     _object(value, required | {'return_features', 'seed'}, required, 'request')
+     if type(value['schema_version']) is not int or value['schema_version'] != SCHEMA_VERSION:
+@@ -173,7 +182,10 @@
+     if any(character in request_id for character in '\r\n\t'):
+         raise ProtocolError('request_id must be a single line')
+     instruction = _text(value['instruction'], 'instruction', 4096)
+-    state = _vector(value['state'], STATE_DIM, 'state')
++    if state_dim is None:
++        given = len(value['state']) if isinstance(value['state'], (list, tuple)) else None
++        state_dim = given if given in SUPPORTED_DIMS else STATE_DIM
++    state = _vector(value['state'], _layout_dim(state_dim, 'state_dim'), 'state')
+     _object(value['images'], CAMERA_KEYS, CAMERA_KEYS, 'images')
+     return_features = value.get('return_features', False)
+     if type(return_features) is not bool:
+@@ -215,30 +227,44 @@
+             '[0-9a-f]{64}', metadata['data_contract_hash']):
+         raise ProtocolError('backend requires a SHA256 data contract hash')
+     if (type(metadata['action_horizon']) is not int or metadata['action_horizon'] != ACTION_HORIZON or
+-            type(metadata['action_dim']) is not int or metadata['action_dim'] != ACTION_DIM):
+-        raise ProtocolError('backend action layout must be 32 by 8')
++            type(metadata['action_dim']) is not int or metadata['action_dim'] not in SUPPORTED_DIMS):
++        raise ProtocolError('backend action layout must be 32 by 8 (joint8) or 32 by 10 (EE)')
+     units = metadata['action_units']
+-    if not isinstance(units, list) or len(units) != ACTION_DIM:
+-        raise ProtocolError('backend must declare all eight physical action units')
++    if not isinstance(units, list) or len(units) != metadata['action_dim']:
++        raise ProtocolError('backend must declare every physical action unit')
+     for unit in units:
+         _text(unit, 'action unit', 128)
++    if 'state_dim' in metadata:
++        _layout_dim(metadata['state_dim'], 'state_dim')
++    if 'absolute_target_dim' in metadata and metadata['absolute_target_dim'] != ABSOLUTE_TARGET_DIM:
++        raise ProtocolError('absolute EE targets must have 7 values per step')
+     # Copy through strict JSON so optional backend diagnostics must also be finite.
+     return strict_json_loads(json_bytes(metadata))
+ 
+ 
+ def make_response(result, request, metadata):
+     """Validate predictions and attach provenance without an execution claim."""
+-    _object(result, {'actions', 'z_rl', 'timing_seconds'}, {'actions'}, 'backend response')
++    _object(result, {'actions', 'absolute_targets', 'z_rl', 'timing_seconds'}, {'actions'},
++            'backend response')
+     actions = result['actions']
+     if not isinstance(actions, (list, tuple)) or len(actions) != ACTION_HORIZON:
+         raise ProtocolError('backend actions must have 32 steps')
++    action_dim = metadata.get('action_dim', ACTION_DIM)
+     response = {'schema_version': SCHEMA_VERSION, 'status': 'ok',
+                 'request_id': request.request_id,
+-                'actions': [_vector(row, ACTION_DIM, 'actions') for row in actions],
++                'actions': [_vector(row, action_dim, 'actions') for row in actions],
+                 'data_contract_hash': metadata['data_contract_hash'],
+                 'model_origin': metadata['model_origin'], 'backend': metadata['backend'],
+                 'action_space': 'physical', 'action_units': metadata['action_units'],
+                 'action_convention': metadata['action_convention'], 'robot_executed': False}
++    if ('absolute_targets' in result) != ('absolute_target_dim' in metadata):
++        raise ProtocolError('absolute EE targets must match the backend declaration')
++    if 'absolute_targets' in result:
++        targets = result['absolute_targets']
++        if not isinstance(targets, (list, tuple)) or len(targets) != ACTION_HORIZON:
++            raise ProtocolError('absolute EE targets must have 32 steps')
++        response['absolute_targets'] = [_vector(row, ABSOLUTE_TARGET_DIM, 'absolute_targets')
++                                        for row in targets]
+     if request.return_features:
+         features = result.get('z_rl')
+         if not isinstance(features, (list, tuple)) or not 1 <= len(features) <= MAX_FEATURE_DIM:
+@@ -259,13 +285,17 @@
+     required = {'schema_version', 'status', 'request_id', 'actions', 'data_contract_hash',
+                 'model_origin', 'backend', 'action_space', 'action_units',
+                 'action_convention', 'robot_executed'}
+-    _object(value, required | {'z_rl', 'timing_seconds'}, required, 'response')
++    _object(value, required | {'absolute_targets', 'z_rl', 'timing_seconds'}, required, 'response')
+     if (type(value['schema_version']) is not int or value['schema_version'] != SCHEMA_VERSION or
+             value['status'] != 'ok' or value['request_id'] != request_id or
+             value['action_space'] != 'physical' or value['robot_executed'] is not False):
+         raise ProtocolError('response identity, schema or execution claim is invalid')
++    units = value['action_units']
+     metadata = validate_metadata({key: value[key] for key in
+         ('backend', 'data_contract_hash', 'action_units', 'action_convention', 'model_origin')} |
+-        {'action_horizon': ACTION_HORIZON, 'action_dim': ACTION_DIM})
+-    result = {key: value[key] for key in ('actions', 'z_rl', 'timing_seconds') if key in value}
++        {'action_horizon': ACTION_HORIZON,
++         'action_dim': len(units) if isinstance(units, list) else ACTION_DIM} |
++        ({'absolute_target_dim': ABSOLUTE_TARGET_DIM} if 'absolute_targets' in value else {}))
++    result = {key: value[key] for key in ('actions', 'absolute_targets', 'z_rl', 'timing_seconds')
++              if key in value}
+     return make_response(result, InferenceRequest(request_id, {}, return_features), metadata)
+diff -ruN -x __pycache__ /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/inference/runtime.py /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/inference/runtime.py
+--- /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/inference/runtime.py	2026-10-31 14:59:23.667243934 +0800
++++ /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/inference/runtime.py	2026-11-02 13:44:52.471263995 +0800
+@@ -17,6 +17,7 @@
+ import torch
+ 
+ from wall_rlt.config import WallRLTConfig
++from wall_rlt.data.ar5 import EE_REL6D_NEXT, ee_absolute_window
+ from wall_rlt.data.collator import WallCollator
+ from wall_rlt.data.contract import DataContract
+ from wall_rlt.data.transforms import SlotMap
+@@ -24,7 +25,7 @@
+ 
+ MODEL_SOURCES = {
+     'wall_rlt': ('config.py', '_vendor/rlt_token_transformer.py', 'data/contract.py',
+-                 'data/collator.py', 'data/transforms.py', 'model/prefix.py',
++                 'data/collator.py', 'data/transforms.py', 'data/ar5.py', 'model/prefix.py',
+                  'model/ar5_adapter.py', 'model/builder.py'),
+     'wall_x': ('model/qact/qwen2_5/modeling_qwen2_5_vl_act.py',
+                'model/qact/qwen2_5/modeling_qwen2_5_vl.py', 'model/core/vla_mixin.py',
+@@ -82,6 +83,7 @@
+             self.device = torch.device('cuda', torch.cuda.current_device())
+         self.inference_steps = inference_steps
+         self.slot_map = SlotMap(contract.action_slots, contract.model_action_dim)
++        self.absolute_targets = contract.target_mode == EE_REL6D_NEXT
+         self.lock = threading.Lock()
+         self.wall.requires_grad_(False).eval()
+         self.encoder.requires_grad_(False).eval()
+@@ -91,7 +93,15 @@
+         self.peak_reserved_bytes = None
+ 
+     def metadata(self):
+-        return {'backend': 'wall_rlt_stage1',
++        extra = {'absolute_target_dim': 7,
++                 'absolute_target_names': ['flange_x', 'flange_y', 'flange_z', 'flange_rotvec_x',
++                                           'flange_rotvec_y', 'flange_rotvec_z', 'gripper_command'],
++                 'absolute_target_units': ['m'] * 3 + ['rad'] * 3 + ['binary_0_close_1_open'],
++                 'absolute_target_frame': self.contract.coordinate_frame,
++                 } if self.absolute_targets else {}
++        return {'backend': 'wall_rlt_stage1', **extra,
++                'target_mode': self.contract.target_mode,
++                'model_adapter': self.contract.model_adapter,
+                 'model_origin': self.manifest['model_origin'],
+                 'artifact_id': self.manifest.get('artifact_id'),
+                 'training_step': self.manifest.get('training_step'),
+@@ -105,6 +115,7 @@
+                 'coordinate_frame': self.contract.coordinate_frame,
+                 'camera_mapping': self.contract.camera_mapping,
+                 'state_names': self.contract.state_names,
++                'state_dim': len(self.contract.state_names),
+                 'state_units': self.contract.state_units,
+                 'action_source': 'WALL_reference_prediction',
+                 'gripper_output': 'continuous_prediction_of_binary_target',
+@@ -175,6 +186,13 @@
+                 if tuple(actions.shape) != expected or not torch.isfinite(actions).all():
+                     raise ValueError('model returned invalid physical action predictions')
+                 response = {'actions': actions[0].cpu().tolist()}
++                if self.absolute_targets:
++                    # Relative to the observation that produced this chunk, like training.
++                    absolute = ee_absolute_window(actions[0].double().cpu().numpy(),
++                                                  sample['state'].double().numpy())
++                    if not np.isfinite(absolute).all():
++                        raise ValueError('model returned invalid absolute EE targets')
++                    response['absolute_targets'] = absolute.tolist()
+                 if return_features:
+                     h, mask = result['rlt_prefix_hidden_states'], result['rlt_prefix_mask']
+                     if (h.ndim != 3 or h.shape[0] != 1 or h.shape[-1] != self.config.input_dim or
+@@ -275,7 +293,7 @@
+     del wall_state, encoder_state
+     if any(p.is_meta for m in (wall,encoder) for p in m.parameters()):
+         raise RuntimeError('inference weights did not materialize every model parameter')
+-    validate_ar5_model_schema(wall)
++    validate_ar5_model_schema(wall, contract.model_adapter)
+     if collator.action_token_id != config.action_token_id:
+         raise ValueError('processor action token differs from the trained model')
+     wall.to(device); encoder.to(device)
+diff -ruN -x __pycache__ /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/inference/server.py /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/inference/server.py
+--- /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/inference/server.py	2026-10-31 14:59:23.667370344 +0800
++++ /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/inference/server.py	2026-11-02 13:45:21.669661230 +0800
+@@ -13,7 +13,7 @@
+ import socket
+ import uuid
+ 
+-from .protocol import (MAX_BODY_BYTES, SCHEMA_VERSION, ProtocolError, decode_request,
++from .protocol import (MAX_BODY_BYTES, SCHEMA_VERSION, STATE_DIM, ProtocolError, decode_request,
+                        json_bytes, make_response, strict_json_loads, validate_metadata)
+ 
+ 
+@@ -131,7 +131,8 @@
+             raw = self.rfile.read(length)
+             if len(raw) != length:
+                 raise ProtocolError('request body is incomplete')
+-            request = decode_request(strict_json_loads(raw))
++            request = decode_request(strict_json_loads(raw),
++                                     state_dim=self.server.backend_metadata.get('state_dim', STATE_DIM))
+         except socket.timeout:
+             self._error(ProtocolError('request body timed out', status=408, code='request_timeout'))
+             return
+diff -ruN -x __pycache__ /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/model/ar5_adapter.py /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/model/ar5_adapter.py
+--- /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/model/ar5_adapter.py	2026-10-31 14:59:23.667453591 +0800
++++ /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/model/ar5_adapter.py	2026-11-02 13:44:16.197703320 +0800
+@@ -1,10 +1,12 @@
+-"""Explicit joint-space transfer variant for the AR5 + OmniPicker dataset.
++"""Explicit transfer variants for the AR5 + OmniPicker dataset.
+ 
+ The public WALL checkpoint has EE-position/6D-rotation slots. Keeping 26 tensor
+ columns is shape compatibility only; it does not make seven joint angles into
+-EE coordinates. Construct WALL with the layouts below, load backbone weights,
+-then call this function once for a *new* transfer run (never on resume).
+-Target train-only normalizers must also replace the checkpoint normalizers.
++EE coordinates. For joint8, construct WALL with the layouts below, load backbone
++weights, then reset the projections once for a *new* transfer run (never on
++resume). The EE variant keeps the checkpoint's own Wall-OSS-0.5 layout and its
++pretrained action projections; AR5 occupies the right-arm slots 10..19.
++Target train-only normalizers must replace the checkpoint normalizers in both.
+ """
+ from __future__ import annotations
+ 
+@@ -25,27 +27,62 @@
+     'omnipicker_opening_measured': 1,
+     'action_padding': 18,
+ }
++# Copied verbatim from the released wall-oss-0.5 config.yml (wall-x ce2a1ae).
++EE_VARIANT = 'wall_oss05_right_arm_ee_v1'
++WALL_OSS05_ACTION_LAYOUT = {
++    'follow_left_ee_cartesian_pos_relative': 3,
++    'follow_left_ee_rotation_6D_relative': 6,
++    'follow_left_gripper': 1,
++    'follow_right_ee_cartesian_pos_relative': 3,
++    'follow_right_ee_rotation_6D_relative': 6,
++    'follow_right_gripper': 1,
++    'velocity_decomposed': 3,
++    'height': 1,
++    'head_actions': 2,
++}
++WALL_OSS05_STATE_LAYOUT = {
++    'follow_left_ee_cartesian_pos': 3,
++    'follow_left_ee_rotation_6D': 6,
++    'follow_left_gripper': 1,
++    'follow_right_ee_cartesian_pos': 3,
++    'follow_right_ee_rotation_6D': 6,
++    'follow_right_gripper': 1,
++    'velocity_decomposed': 3,
++    'height': 1,
++    'head_actions': 2,
++}
++VARIANT_LAYOUTS = {
++    AR5_VARIANT: (AR5_ACTION_LAYOUT, AR5_STATE_LAYOUT),
++    EE_VARIANT: (WALL_OSS05_ACTION_LAYOUT, WALL_OSS05_STATE_LAYOUT),
++}
+ AR5_RESET_PARAMETERS = (
+     'action_preprocessor.w1.weight',
+     'action_preprocessor.action_proj_back.weight',
+ )
+ 
+ 
+-def validate_ar5_model_schema(wall):
++def variant_layouts(variant):
++    if variant not in VARIANT_LAYOUTS:
++        raise ValueError(f'unsupported model adaptation variant: {variant}')
++    return VARIANT_LAYOUTS[variant]
++
++
++def validate_ar5_model_schema(wall, variant=AR5_VARIANT):
+     """Fail before changing any weight if the declared layout is incompatible."""
++    action_layout, state_layout = variant_layouts(variant)
+     config = wall.config
+-    for name, expected in (('dof_config', AR5_ACTION_LAYOUT),
+-                           ('agent_pos_config', AR5_STATE_LAYOUT)):
++    for name, expected in (('dof_config', action_layout),
++                           ('agent_pos_config', state_layout)):
+         value = getattr(config, name, None)
+         if not isinstance(value, dict) or list(value.items()) != list(expected.items()):
+             raise ValueError(f'{name} must explicitly declare ordered {expected}')
+     if getattr(config, 'use_state_string_representation', None) is not True:
+-        raise ValueError('ar5_joint8_reinit_v1 requires state-string inputs')
++        raise ValueError(f'{variant} requires state-string inputs')
+     proc = wall.action_preprocessor
+     if hasattr(proc, 'propri_proj'):
+         raise ValueError('continuous proprioception projection is unsupported in this variant')
+-    for name, expected in (('dof_config', AR5_ACTION_LAYOUT),
+-                           ('agent_pos_config', AR5_STATE_LAYOUT)):
++    for name, expected in (('dof_config', action_layout),
++                           ('agent_pos_config', state_layout)):
+         value = getattr(proc, name, None)
+         if not isinstance(value, dict) or list(value.items()) != list(expected.items()):
+             raise ValueError(f'action_preprocessor.{name} disagrees with the AR5 schema')
+diff -ruN -x __pycache__ /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/model/builder.py /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/model/builder.py
+--- /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/wall_rlt/model/builder.py	2026-10-31 14:59:23.667496352 +0800
++++ /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall_rlt/model/builder.py	2026-11-02 13:44:26.959157701 +0800
+@@ -18,8 +18,14 @@
+ from wall_rlt.config import WallRLTConfig
+ from wall_rlt.data.contract import DataContract
+ from wall_rlt.data.transforms import SlotMap
+-from .ar5_adapter import (AR5_ACTION_LAYOUT, AR5_STATE_LAYOUT,
+-                          reset_ar5_action_projections, validate_ar5_model_schema)
++from .ar5_adapter import (AR5_VARIANT, EE_VARIANT, reset_ar5_action_projections,
++                          validate_ar5_model_schema, variant_layouts)
++
++# Data target -> model adaptation. Only these explicit pairs are buildable.
++SUPPORTED_ADAPTATIONS = {
++    ('ar5_joint_next_v1', AR5_VARIANT),
++    ('ar5_ee_rel6d_next_v1', EE_VARIANT),
++}
+ 
+ 
+ def _plain(value):
+@@ -62,8 +68,8 @@
+         raise FileNotFoundError('local processor preprocessor_config.json missing')
+     contract = DataContract.load(rlt.data_contract_path)
+     contract.require_trainable()
+-    if contract.target_mode != 'ar5_joint_next_v1' or contract.model_adapter != 'ar5_joint8_reinit_v1':
+-        raise ValueError('this builder requires the explicit AR5 joint8 adaptation contract')
++    if (contract.target_mode, contract.model_adapter) not in SUPPORTED_ADAPTATIONS:
++        raise ValueError('this builder requires the explicit AR5 joint8 or Wall-OSS-0.5 EE adaptation contract')
+     if rlt.action_horizon != contract.action_horizon or rlt.model_action_dim != contract.model_action_dim:
+         raise ValueError('RLT horizon/action width disagrees with data contract')
+     base = json.loads((checkpoint/'config.json').read_text())
+@@ -123,15 +129,16 @@
+         raise RuntimeError('WALL RLT patch missing; put the isolated patched WALL source first in PYTHONPATH')
+ 
+ 
+-def _runtime_train_config(rlt,processor):
++def _runtime_train_config(rlt,processor,variant=AR5_VARIANT):
+     from wall_x._vendor.harrix.utils.train_config import (
+         load_train_config_with_ckpt_overlay, normalize_train_config_for_inference,
+         strip_action_tokenizer_fields)
+     train = normalize_train_config_for_inference(
+         load_train_config_with_ckpt_overlay(rlt.wall_train_config,rlt.checkpoint_path),rlt.wall_train_config)
+     strip_action_tokenizer_fields(train)
+-    train.update(processor_path=processor,dof_config=dict(AR5_ACTION_LAYOUT),
+-                 agent_pos_config=dict(AR5_STATE_LAYOUT),ar_dof_config=dict(AR5_ACTION_LAYOUT),
++    action_layout,state_layout = variant_layouts(variant)
++    train.update(processor_path=processor,dof_config=dict(action_layout),
++                 agent_pos_config=dict(state_layout),ar_dof_config=dict(action_layout),
+                  ar_loss_weight=0.0,flow_loss_weight=1.0,use_state_string_representation=True,state_bins=512)
+     train.setdefault('data',{}).update(use_state_string_representation=True,state_bins=512,
+                                       action_horizon_flow=rlt.action_horizon,generate_subtask_ratio=0.0)
+@@ -184,7 +191,7 @@
+     _require_prefix_patch(ModelClass)
+     from wall_x._vendor.harrix.utils.train_config import build_model_config
+     from wall_x.trainer.trainer_utils import load_wallx_processors
+-    train = _runtime_train_config(rlt,processor_path)
++    train = _runtime_train_config(rlt,processor_path,contract.model_adapter)
+     model_config = build_model_config(ConfigClass,rlt.checkpoint_path,train)
+     model_config._attn_implementation = wall_attn
+     model_config.vision_config._attn_implementation = vision_attn
+@@ -206,10 +213,17 @@
+         raise ValueError('processor action token differs from RLT config')
+     wall = ModelClass(model_config,processor,None)
+     wall.float()
+-    validate_ar5_model_schema(wall)
++    validate_ar5_model_schema(wall,contract.model_adapter)
+     if mode == 'new_transfer':
+         report['base_loading'] = _load_base_weights(wall,rlt.checkpoint_path,ModelClass)
+-        report['adapter_initialization'] = reset_ar5_action_projections(wall,seed=seed)
++        if contract.model_adapter == AR5_VARIANT:
++            report['adapter_initialization'] = reset_ar5_action_projections(wall,seed=seed)
++        else:
++            # Same slot semantics as pretraining: keep the learned projections.
++            report['adapter_initialization'] = {
++                'variant':contract.model_adapter,'reset_parameters':[],
++                'initialization':'pretrained_action_projections_kept',
++                'target_normalizers_required':True,'training_required':True}
+         report['weights_loaded'] = True
+     wall.set_normalizer(norm_action,norm_state)
+     from .policy import WallRLTPolicy
+diff -ruN -x __pycache__ /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/tests/rlt/test_ar5_ee.py /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/tests/rlt/test_ar5_ee.py
+--- /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/tests/rlt/test_ar5_ee.py	1970-01-01 08:00:00.000000000 +0800
++++ /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/tests/rlt/test_ar5_ee.py	2026-11-02 13:50:17.908831312 +0800
+@@ -0,0 +1,392 @@
++"""Official Wall-OSS-0.5 EE-relative target mode (ar5_ee_rel6d_next_v1), CPU only."""
++from dataclasses import asdict, replace
++import hashlib
++import json
++from pathlib import Path
++import shutil
++from types import SimpleNamespace
++
++import numpy as np
++import pytest
++import torch
++from scipy.spatial.transform import Rotation
++
++from test_inference_artifact import checkpoint, refresh_metadata, write  # noqa: F401 (fixture)
++from test_npz_pipeline import write_video
++from wall_rlt.data.ar5 import (EE_REL6D_NEXT, JOINT_NEXT, aligned_targets, ee_absolute_window,
++                               ee_relative_window, rot6d_to_matrix, rotvec_to_rot6d)
++from wall_rlt.data.contract import DataContract
++from wall_rlt.data.dataset import EpisodeWindowDataset
++from wall_rlt.data.npz_source import NPZFrameSource
++from wall_rlt.data.prepare_ar5 import EE_FIELDS, prepare_ar5, relative_windows
++from wall_rlt.model import builder
++from wall_rlt.model.ar5_adapter import (AR5_ACTION_LAYOUT, AR5_STATE_LAYOUT, EE_VARIANT,
++                                       WALL_OSS05_ACTION_LAYOUT, WALL_OSS05_STATE_LAYOUT)
++
++ROOT = Path(__file__).resolve().parents[2]
++RIGHT_ARM = {'follow_right_ee_cartesian_pos_relative': 3, 'follow_right_ee_rotation_6D_relative': 6,
++             'follow_right_gripper': 1}
++
++
++def random_rows(rng, count, *, binary=True):
++    pos = rng.normal(size=(count, 3)) * .2
++    rot = rotvec_to_rot6d(Rotation.random(count, random_state=rng.integers(1 << 31)).as_rotvec())
++    grip = rng.integers(0, 2, size=(count, 1)).astype(float) if binary else rng.random((count, 1))
++    return np.concatenate((pos, rot, grip), axis=1)
++
++
++def test_rot6d_is_first_two_rows_and_matches_wall_x_gram_schmidt():
++    from wall_x._vendor.x2robot_utils.geometry import so3_to_matrix_batch_nb
++    rng = np.random.default_rng(0)
++    rotvec = Rotation.random(50, random_state=1).as_rotvec()
++    matrix = Rotation.from_rotvec(rotvec).as_matrix()
++    six = rotvec_to_rot6d(rotvec)
++    np.testing.assert_allclose(six, matrix[:, :2, :].reshape(-1, 6), atol=1e-12)
++    np.testing.assert_allclose(rot6d_to_matrix(six), matrix, atol=1e-12)
++    noisy = six + rng.normal(size=six.shape) * .05   # network outputs are not orthonormal
++    np.testing.assert_allclose(rot6d_to_matrix(noisy), so3_to_matrix_batch_nb(noisy), atol=1e-12)
++
++
++def test_relative_window_equals_official_loader_and_inverts():
++    from wall_x.data.backends.lerobot.loader import PreprocessedDataset
++    rng = np.random.default_rng(1)
++    official = SimpleNamespace(_dof_config=RIGHT_ARM)
++    for _ in range(5):
++        targets, state = random_rows(rng, 32), random_rows(rng, 1, binary=False)[0]
++        ours = ee_relative_window(targets, state)
++        theirs = PreprocessedDataset._to_relative_action(official, targets.astype(np.float32),
++                                                         state.astype(np.float32))
++        np.testing.assert_allclose(ours, theirs, atol=2e-6)
++        back = ee_absolute_window(ours, state)
++        np.testing.assert_allclose(back[:, :3], targets[:, :3], atol=1e-12)
++        np.testing.assert_allclose(Rotation.from_rotvec(back[:, 3:6]).as_matrix(),
++                                   rot6d_to_matrix(targets[:, 3:9]), atol=1e-9)
++        np.testing.assert_array_equal(back[:, 6], targets[:, 9])
++
++
++def test_relative_window_rejects_measured_opening_as_target():
++    rng = np.random.default_rng(2)
++    targets = random_rows(rng, 3)
++    targets[1, 9] = .4
++    with pytest.raises(ValueError, match='binary'):
++        ee_relative_window(targets, random_rows(rng, 1)[0])
++
++
++def test_aligned_ee_rows_use_measured_pose_opening_and_next_command():
++    t = np.arange(4.)
++    state = np.zeros((4, 8)); state[:, 7] = [.8, .7, .5, .3]
++    action = np.zeros((4, 7)); action[:, 6] = [1, 1, 0, 0]
++    ee = np.zeros((4, 6)); ee[:, 0] = t / 10; ee[:, 5] = t / 5
++    targets, obs = aligned_targets(state, action, EE_REL6D_NEXT, ee_pose=ee)
++    assert targets.shape == obs.shape == (3, 10) and targets.dtype == np.float32
++    np.testing.assert_allclose(obs[:, 0], t[:-1] / 10)
++    np.testing.assert_allclose(targets[:, 0], t[1:] / 10)
++    np.testing.assert_allclose(obs[:, 9], state[:-1, 7])
++    np.testing.assert_array_equal(targets[:, 9], action[1:, 6])
++    np.testing.assert_allclose(targets[:, 3:9], rotvec_to_rot6d(ee[1:, 3:]), atol=1e-7)
++    with pytest.raises(ValueError, match='requires the recorded ee_pose'):
++        aligned_targets(state, action, EE_REL6D_NEXT)
++    with pytest.raises(ValueError, match='does not use ee_pose'):
++        aligned_targets(state, action, JOINT_NEXT, ee_pose=ee)
++
++
++@pytest.fixture
++def ee_dataset(tmp_path):
++    root = tmp_path / 'recordings'; root.mkdir()
++    audit = tmp_path / 'audit'; audit.mkdir()
++    episodes, arrays = [], {}
++    for eid, filename, length in ((17, 'episode_0002', 6), (91, 'episode_0009', 5)):
++        t = np.arange(length, dtype=np.float64)
++        state = np.zeros((length, 8)); state[:, 2] = .05 * t; state[:, 7] = np.linspace(.86, .2, length)
++        action = np.zeros((length, 7)); action[:, 6] = (t < 2) | (t == 5)
++        ee = np.zeros((length, 6))
++        ee[:, 0], ee[:, 1], ee[:, 2] = .3 + .01 * t, -.1 + .005 * t, .4   # z constant on purpose
++        ee[:, 3:] = Rotation.from_euler('xyz', np.stack((.1 * t, -.05 * t, .3 + .02 * t), 1)).as_rotvec()
++        npz = root / f'{filename}.npz'
++        np.savez(npz, state=state, action=action, ee_pose=ee, task=f'pick up object {eid}',
++                 fps=30., camera_keys=['cam_high', 'cam_front'])
++        videos = {camera: write_video(root / f'{filename}_{camera}.mp4', length, 20 + i * 30)
++                  for i, camera in enumerate(('cam_high', 'cam_front'))}
++        episodes.append({'episode_id': eid, 'task_group': 'fixture', 'npz': npz.name,
++                         'npz_sha256': hashlib.sha256(npz.read_bytes()).hexdigest(),
++                         'frames': length, 'videos': videos})
++        arrays[eid] = (state, action, ee)
++    write(audit / 'episodes.json', {'episodes': episodes, 'splits': {'train': [17], 'dev': [91], 'test': []},
++                                    'excluded_groups': []})
++    write(audit / 'audit.json', {'structural_status': 'PASS', 'semantic_status': 'PASS'})
++    doc = tmp_path / 'format.md'; doc.write_text('fixture: measured flange pose + binary command')
++    path = tmp_path / 'config' / 'ee.json'
++    report = prepare_ar5(root, audit, doc, contract_path=path)
++    return DataContract.load(path), arrays, report
++
++
++def test_prepare_defaults_to_ee_contract_with_window_statistics(ee_dataset):
++    contract, arrays, report = ee_dataset
++    contract.require_trainable()
++    assert (contract.target_mode, contract.model_adapter) == (EE_REL6D_NEXT, EE_VARIANT)
++    assert contract.action_slots == contract.state_slots == list(range(10, 20))
++    assert contract.field_conventions == ['delta'] * 9 + ['absolute']
++    state, action, ee = arrays[17]
++    targets, obs = aligned_targets(state, action, EE_REL6D_NEXT, ee_pose=ee)
++    rows = np.concatenate([ee_relative_window(targets[s:], obs[s]) for s in range(len(targets))])
++    assert report['train_action_rows'] == len(rows) == 5 * 6 // 2
++    stats = json.loads(Path(contract.normalization_path).read_text())['norm_stats']
++    np.testing.assert_allclose(relative_windows(targets, obs), rows)
++    for key, values in (('action', rows), ('state', obs)):
++        q01, q99 = np.quantile(values, .01, axis=0), np.quantile(values, .99, axis=0)
++        np.testing.assert_allclose(stats[key]['q01'], q01)
++        np.testing.assert_allclose(np.delete(stats[key]['q99'], 2), np.delete(q99, 2))
++        assert stats[key]['q99'][2] == stats[key]['q01'][2] + 1.0   # constant z is not divided by ~0
++    assert contract.provenance['degenerate_range_dims'] == {'action': [2], 'state': [2]}
++    assert contract.provenance['locked_joint_indices_zero_based'] == [0, 1, 3, 4, 5, 6]
++
++
++@pytest.mark.parametrize('change', [
++    {'model_adapter': 'ar5_joint8_reinit_v1'}, {'action_slots': list(range(10))},
++    {'state_slots': list(range(16, 26))}, {'field_conventions': ['delta'] * 10},
++    {'alignment': 'same_frame'},
++])
++def test_ee_contract_requires_the_explicit_right_arm_layout(ee_dataset, change):
++    contract, _, _ = ee_dataset
++    with pytest.raises(ValueError, match='right-arm EE contract'):
++        replace(contract, **change).require_trainable()
++
++
++def processor_dir(tmp_path):
++    from wall_rlt.workers.sft import PROCESSOR_FILES
++    path = tmp_path / 'processor'; path.mkdir()
++    for name in PROCESSOR_FILES:
++        if (ROOT / 'models/wall-oss-0.5' / name).is_file():
++            shutil.copyfile(ROOT / 'models/wall-oss-0.5' / name, path / name)
++    return path
++
++
++def test_source_window_and_collator_make_targets_relative_to_the_observation(ee_dataset, tmp_path):
++    from wall_rlt.data.collator import WallCollator
++    contract, arrays, _ = ee_dataset
++    source = NPZFrameSource(contract)
++    state, action, ee = arrays[17]
++    targets, obs = aligned_targets(state, action, EE_REL6D_NEXT, ee_pose=ee)
++    np.testing.assert_array_equal(source.actions[:5], targets)
++    np.testing.assert_array_equal(source.states[:5], obs)
++    sample = EpisodeWindowDataset(source, [17], horizon=contract.action_horizon)[1]
++    valid = int(sample['time_mask'].sum())
++    assert valid == 4
++    collator = WallCollator(contract, processor_dir(tmp_path), image_size=56, max_length=2048)
++    saved = collator.state_dict()
++    converted = collator([sample])['wall_inputs']
++    manual = dict(sample)
++    manual['action'] = sample['action'].clone()
++    manual['action'][:valid] = torch.from_numpy(ee_relative_window(targets[1:], obs[1])).float()
++    collator.load_state_dict(saved)
++    expected = collator([manual], convert_targets=False)['wall_inputs']
++    torch.testing.assert_close(converted['action_chunk'], expected['action_chunk'], rtol=0, atol=0)
++    mask = converted['dof_mask'][0].bool()
++    assert mask[:valid, 10:20].all() and not mask[:, :10].any() and not mask[:, 20:].any()
++    assert not mask[valid:].any()
++    observed = collator.observation_batch([source.observation(1)])['wall_inputs']
++    assert 'action_chunk' not in observed
++
++
++@pytest.fixture
++def ee_build_cfg(tmp_path):
++    base = tmp_path / 'base'; base.mkdir()
++    (base / 'config.json').write_text(json.dumps({'hidden_size': 8}))
++    (base / 'model.safetensors').write_bytes(b'fixture; weight loader is replaced')
++    (base / 'preprocessor_config.json').write_text('{}')
++    (base / 'config.yml').write_text('model_type: qwen2_5\n')
++    stats = {'train_episode_ids': [1], 'target_mode': EE_REL6D_NEXT,
++             'norm_stats': {k: {'q01': [-.1] * 9 + [0.], 'q99': [.1] * 9 + [1.]} for k in ('state', 'action')}}
++    norm = tmp_path / 'norm.json'; norm.write_text(json.dumps(stats))
++    contract = DataContract(root=str(tmp_path), repo_id='fixture/ee', fps=30,
++        camera_mapping={'cam_high': 'top', 'cam_front': 'wrist'}, splits={'train': [1], 'dev': [2], 'test': []},
++        state_key='state', semantics_confirmed=True, target_mode=EE_REL6D_NEXT,
++        alignment='observation_t_target_t_plus_1_drop_last',
++        normalization_path=str(norm), normalization_sha256=hashlib.sha256(norm.read_bytes()).hexdigest(),
++        **EE_FIELDS)
++    cp = tmp_path / 'contract.json'; cp.write_text(json.dumps(asdict(contract)))
++    return {'model_type': 'wall_rlt', 'precision': 'fp32', 'is_lora': False, 'initialization': 'new_transfer',
++            'rlt': {'input_dim': 8, 'embed_dim': 8, 'num_heads': 2, 'num_layers': 1, 'prefix_seq_len': 8,
++                    'action_token_id': 3, 'checkpoint_path': str(base), 'data_contract_path': str(cp),
++                    'wall_train_config': str(base / 'config.yml')}}
++
++
++def test_ee_builder_keeps_pretrained_projections_and_official_layout(ee_build_stack, ee_build_cfg):
++    calls, layouts = ee_build_stack
++    report = builder.validate_build_config(ee_build_cfg)
++    assert report['model_adapter'] == EE_VARIANT
++    policy = builder.build_wall_rlt(ee_build_cfg)
++    assert len(calls) == 1 and layouts == [EE_VARIANT]
++    proc = policy.wall.action_preprocessor
++    assert torch.all(proc.w1.weight == .5) and torch.all(proc.action_proj_back.weight == .5)
++    init = policy.build_report['adapter_initialization']
++    assert init['reset_parameters'] == [] and init['initialization'] == 'pretrained_action_projections_kept'
++    norm = proc.normalizer_action
++    assert torch.equal(norm.min['fixture/ee'][10:20], torch.tensor([-.1] * 9 + [0.]))
++    assert torch.equal(norm.delta['fixture/ee'][:10], torch.ones(10))
++
++
++@pytest.fixture
++def ee_build_stack(monkeypatch):
++    from test_builder import TinyWall
++    from wall_x._vendor.harrix.utils import train_config
++    from wall_x.trainer import trainer_utils
++
++    class EETinyWall(TinyWall):
++        def __init__(self, config, processor=None, tokenizer_mixin=None):
++            super().__init__(config, processor, tokenizer_mixin)
++            self.action_preprocessor.dof_config = dict(WALL_OSS05_ACTION_LAYOUT)
++            self.action_preprocessor.agent_pos_config = dict(WALL_OSS05_STATE_LAYOUT)
++
++    class Tokenizer:
++        def __len__(self): return 16
++        def convert_tokens_to_ids(self, token): return 3
++    layouts, calls = [], []
++    config = SimpleNamespace(dof_config=dict(WALL_OSS05_ACTION_LAYOUT),
++        agent_pos_config=dict(WALL_OSS05_STATE_LAYOUT), use_state_string_representation=True,
++        proj_with_mask=True, action_hidden_size=4, initializer_range=.02, tie_word_embeddings=True,
++        vocab_size=16, vision_config=SimpleNamespace())
++    monkeypatch.setattr(builder, '_wall_components', lambda: (object, EETinyWall))
++    monkeypatch.setattr(builder, '_runtime_train_config', lambda rlt, proc, variant: layouts.append(variant) or {})
++    monkeypatch.setattr(builder, '_checkpoint_vocab', lambda _: 16)
++    monkeypatch.setattr(train_config, 'build_model_config', lambda *_: config)
++    monkeypatch.setattr(trainer_utils, 'load_wallx_processors',
++                        lambda *a, **kw: {'processor': SimpleNamespace(tokenizer=Tokenizer())})
++    monkeypatch.setattr(builder, 'reset_ar5_action_projections',
++                        lambda *a, **kw: pytest.fail('EE variant must not reset projections'))
++
++    def load(wall, path, cls):
++        calls.append(path)
++        return builder.load_base_state_strict(wall, {k: torch.full_like(v, .5) for k, v in wall.state_dict().items()})
++    monkeypatch.setattr(builder, '_load_base_weights', load)
++    return calls, layouts
++
++
++def test_ee_layout_constants_equal_the_released_checkpoint_config():
++    import yaml
++    released = yaml.safe_load((ROOT / 'models/wall-oss-0.5/config.yml').read_text())
++    assert list(released['dof_config'].items()) == list(WALL_OSS05_ACTION_LAYOUT.items())
++    assert list(released['ar_dof_config'].items()) == list(WALL_OSS05_ACTION_LAYOUT.items())
++    assert list(released['agent_pos_config'].items()) == list(WALL_OSS05_STATE_LAYOUT.items())
++    rlt = SimpleNamespace(wall_train_config=str(ROOT / 'models/wall-oss-0.5/config.yml'),
++                          checkpoint_path=str(ROOT / 'models/wall-oss-0.5'), action_horizon=32)
++    train = builder._runtime_train_config(rlt, str(ROOT / 'models/wall-oss-0.5'), EE_VARIANT)
++    assert list(train['dof_config'].items()) == list(WALL_OSS05_ACTION_LAYOUT.items())
++    assert list(train['agent_pos_config'].items()) == list(WALL_OSS05_STATE_LAYOUT.items())
++    assert train['use_state_string_representation'] is True
++    joint = builder._runtime_train_config(rlt, str(ROOT / 'models/wall-oss-0.5'))
++    assert list(joint['dof_config'].items()) == list(AR5_ACTION_LAYOUT.items())
++
++
++def to_ee_checkpoint(root):
++    """Turn the synthetic joint8 checkpoint fixture into the EE variant."""
++    from wall_rlt.inference.artifact import _normalizer_values
++    assets = root / 'wall_rlt_assets'
++    value = json.loads((assets / 'data_contract.json').read_text())
++    stats = {'action': {'q01': [-.05] * 3 + [-1.] * 6 + [0.], 'q99': [.05] * 3 + [1.] * 6 + [1.]},
++             'state': {'q01': [.2, -.3, .1] + [-1.] * 6 + [0.], 'q99': [.6, .3, .5] + [1.] * 6 + [.86]}}
++    write(assets / 'normalization.json', {'schema_version': 1, 'train_episode_ids': value['splits']['train'],
++                                          'manifest_sha256': value['manifest_sha256'],
++                                          'target_mode': EE_REL6D_NEXT, 'norm_stats': stats})
++    value.update(EE_FIELDS, target_mode=EE_REL6D_NEXT, repo_id='fixture/ee',
++                 normalization_sha256=hashlib.sha256((assets / 'normalization.json').read_bytes()).hexdigest())
++    write(assets / 'data_contract.json', value)
++    contract = DataContract.load(assets / 'data_contract.json')
++    cfg = json.loads((assets / 'adapted_wall_config.json').read_text())
++    cfg.update(dof_config=dict(WALL_OSS05_ACTION_LAYOUT), agent_pos_config=dict(WALL_OSS05_STATE_LAYOUT))
++    write(assets / 'adapted_wall_config.json', cfg)
++    path = root / 'model_state_dict/full_weights.pt'
++    state = {k: v for k, v in torch.load(path, weights_only=True).items() if '.normalizer_' not in k}
++    state.update({'wall.' + k: v for k, v in _normalizer_values(contract).items()})
++    torch.save(state, path)
++    refresh_metadata(root)
++    return contract
++
++
++def test_ee_artifact_exports_and_checks_its_own_layout(checkpoint, tmp_path):
++    from wall_rlt.inference.artifact import export_inference_artifact, verify_inference_artifact
++    contract = to_ee_checkpoint(checkpoint)
++    manifest = export_inference_artifact(checkpoint, tmp_path / 'ee')
++    assert verify_inference_artifact(tmp_path / 'ee') == manifest
++    assert manifest['data_contract_hash'] == contract.fingerprint()
++    cfgpath = checkpoint / 'wall_rlt_assets/adapted_wall_config.json'
++    cfg = json.loads(cfgpath.read_text())
++    cfg.update(dof_config=dict(AR5_ACTION_LAYOUT), agent_pos_config=dict(AR5_STATE_LAYOUT))
++    write(cfgpath, cfg)
++    refresh_metadata(checkpoint)
++    with pytest.raises(ValueError, match='Wall-OSS-0.5 EE layout'):
++        export_inference_artifact(checkpoint, tmp_path / 'wrong')
++
++
++@pytest.fixture
++def ee_runtime(checkpoint, tmp_path):
++    from test_inference_runtime import make_runtime
++    to_ee_checkpoint(checkpoint)
++    return make_runtime(checkpoint, tmp_path, WALL_OSS05_ACTION_LAYOUT, WALL_OSS05_STATE_LAYOUT)
++
++
++def ee_observation():
++    from PIL import Image
++    pose = [.4, -.1, .3] + rotvec_to_rot6d(np.array([[.1, -.2, .3]]))[0].tolist() + [.8]
++    return {'instruction': 'pick up the object', 'state': pose,
++            'images': {'cam_high': Image.new('RGB', (56, 56), (20, 30, 40)),
++                       'cam_front': Image.new('RGB', (56, 56), (100, 120, 140))}}
++
++
++def test_ee_runtime_returns_relative_chunk_and_absolute_flange_targets(ee_runtime):
++    result = ee_runtime.infer(ee_observation(), seed=5)
++    relative = np.asarray(result['actions'])
++    absolute = np.asarray(result['absolute_targets'])
++    assert relative.shape == (32, 10) and absolute.shape == (32, 7)
++    np.testing.assert_allclose(absolute, ee_absolute_window(relative, np.asarray(ee_observation()['state'])),
++                               atol=1e-6)
++    meta = ee_runtime.metadata()
++    assert meta['target_mode'] == EE_REL6D_NEXT and meta['state_dim'] == 10 and meta['action_dim'] == 10
++    assert meta['absolute_target_dim'] == 7
++    with pytest.raises(ValueError, match='state dimensions'):
++        ee_runtime.infer({**ee_observation(), 'state': [0.] * 8})
++
++
++def test_ee_runtime_through_real_http_protocol(ee_runtime):
++    import threading
++    from wall_rlt.inference.client import InferenceClient
++    from wall_rlt.inference.server import create_server
++    server = create_server(ee_runtime, port=0)
++    thread = threading.Thread(target=server.serve_forever, kwargs={'poll_interval': .01}, daemon=True)
++    thread.start()
++    try:
++        client = InferenceClient(f'http://127.0.0.1:{server.server_port}', timeout=30)
++        assert client.health()['metadata']['state_dim'] == 10
++        result = client.infer(ee_observation(), seed=4)
++        assert len(result['actions'][0]) == 10 and len(result['absolute_targets'][0]) == 7
++        assert result['robot_executed'] is False
++        from wall_rlt.inference.client import RemoteInferenceError
++        with pytest.raises(RemoteInferenceError):
++            client.infer({**ee_observation(), 'state': [0.] * 8})
++    finally:
++        server.shutdown(); server.server_close(); thread.join(timeout=2)
++
++
++def test_protocol_layouts_follow_the_backend_contract():
++    from wall_rlt.inference.protocol import (InferenceRequest, ProtocolError, decode_request,
++                                             make_request, make_response, validate_metadata,
++                                             validate_response)
++    request = make_request(ee_observation(), request_id='ee')
++    assert len(decode_request(request, state_dim=10).observation['state']) == 10
++    with pytest.raises(ProtocolError, match='length 8'):
++        decode_request(request, state_dim=8)
++    with pytest.raises(ProtocolError, match='length'):
++        make_request({**ee_observation(), 'state': [0.] * 9}, request_id='bad')
++    metadata = validate_metadata({'backend': 'b', 'data_contract_hash': 'a' * 64, 'action_horizon': 32,
++                                  'action_dim': 10, 'action_units': ['m'] * 10, 'action_convention': 'mixed',
++                                  'model_origin': 'synthetic_fixture', 'state_dim': 10,
++                                  'absolute_target_dim': 7})
++    result = {'actions': [[0.] * 10] * 32, 'absolute_targets': [[0.] * 7] * 32}
++    response = make_response(result, InferenceRequest('ee', {}), metadata)
++    assert validate_response(response, request_id='ee') == response
++    with pytest.raises(ProtocolError, match='absolute EE targets'):
++        make_response({'actions': result['actions']}, InferenceRequest('ee', {}), metadata)
++    with pytest.raises(ProtocolError, match='length 10'):
++        make_response({**result, 'actions': [[0.] * 8] * 32}, InferenceRequest('ee', {}), metadata)
++    with pytest.raises(ProtocolError, match='every physical action unit'):
++        validate_metadata({**metadata, 'action_units': ['m'] * 8})
+diff -ruN -x __pycache__ /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/tests/rlt/test_inference_runtime.py /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/tests/rlt/test_inference_runtime.py
+--- /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/tests/rlt/test_inference_runtime.py	2026-10-31 14:59:23.665208645 +0800
++++ /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/tests/rlt/test_inference_runtime.py	2026-11-02 13:48:21.493863919 +0800
+@@ -25,6 +25,10 @@
+ 
+ @pytest.fixture
+ def runtime(checkpoint,tmp_path):
++    return make_runtime(checkpoint,tmp_path)
++
++
++def make_runtime(checkpoint,tmp_path,action_layout=AR5_ACTION_LAYOUT,state_layout=AR5_STATE_LAYOUT):
+     from wall_x.model.qact.qwen2_5 import Qwen2_5_VLConfig, Qwen2_5_VLMoEForAction
+     torch.set_num_threads(1)
+     assets=checkpoint/'wall_rlt_assets'
+@@ -43,7 +47,7 @@
+              max_position_embeddings=2048,dim_inputs=[32,16],
+              experts=[{'hidden_size':32,'intermediate_size':64,'hidden_act':'silu'},
+                       {'hidden_size':16,'intermediate_size':32,'hidden_act':'silu'}],
+-             dof_config=dict(AR5_ACTION_LAYOUT),agent_pos_config=dict(AR5_STATE_LAYOUT),
++             dof_config=dict(action_layout),agent_pos_config=dict(state_layout),
+              use_state_string_representation=True,proj_with_mask=True,mot_opt=True,
+              ar_loss_weight=0.,flow_loss_weight=1.,_attn_implementation='sdpa',
+              rope_scaling={'type':'mrope','mrope_section':[1,1,2]},use_cache=False,torch_dtype='float32')
+diff -ruN -x __pycache__ /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/tests/rlt/test_npz_pipeline.py /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/tests/rlt/test_npz_pipeline.py
+--- /home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/build-context-20261031T065922Z/project/tests/rlt/test_npz_pipeline.py	2026-10-31 14:59:23.665390980 +0800
++++ /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/tests/rlt/test_npz_pipeline.py	2026-11-02 13:47:04.492509680 +0800
+@@ -169,7 +169,8 @@
+     doc = tmp_path/'format.md'
+     doc.write_text('Fixture semantics: measured next joints plus next gripper command.')
+     destination = tmp_path/'config'/'data.json'
+-    report = prepare_ar5(contract.root,tmp_path,doc,contract_path=destination)
++    report = prepare_ar5(contract.root,tmp_path,doc,contract_path=destination,
++                         target_mode='ar5_joint_next_v1')
+     assert report['train_observations'] == 3
+     prepared = DataContract.load(destination)
+     prepared.require_trainable()
+# scripts/: no file content changed; entries below exist only in the dev workspace (pre-existing, not part of the image build context)
+只在 /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/scripts 中存在：activate-rlt.sh
+只在 /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/scripts 中存在：activate.sh
+只在 /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/scripts 中存在：collect_host.py
+只在 /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/scripts 中存在：docker_build_validate.sh
+只在 /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/scripts 中存在：docker_export_bundle.sh
+只在 /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/scripts 中存在：docker_finish_pending_bundle.py
+只在 /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/scripts 中存在：docker_prepare_assets.sh
+只在 /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/scripts 中存在：download_artifact.py
+只在 /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/scripts 中存在：download_models.py
+只在 /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/scripts 中存在：download_wheels.py
+只在 /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/scripts 中存在：install_docker_host.sh
+只在 /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/scripts 中存在：install_runtime.sh
+只在 /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/scripts 中存在：recover_cuda_base.py
+只在 /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/scripts 中存在：verify_setup.py

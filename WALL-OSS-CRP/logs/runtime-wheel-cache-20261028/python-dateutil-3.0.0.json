@@ -1,0 +1,277 @@
+{
+  "status": "PASS",
+  "package": "python-dateutil",
+  "version": "3.0.0",
+  "filename": "python_dateutil-3.0.0-py2.py3-none-any.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "79bb2b681cfa0d2afe8858608501a45beeb7057a7f3249475dcd71b48e9616e0",
+  "wheel_tags": [
+    "py2-none-any",
+    "py3-none-any"
+  ],
+  "record_verified_files": [
+    {
+      "path": "dateutil/__init__.py",
+      "wheel_path": "dateutil/__init__.py",
+      "size_bytes": 650,
+      "sha256": "4659dcbf5de178c69ead7dbafdc852fff81a0aa93ca3404f1f9ce58e29bf67f3"
+    },
+    {
+      "path": "dateutil/_common.py",
+      "wheel_path": "dateutil/_common.py",
+      "size_bytes": 932,
+      "sha256": "efbc34cb2b64af19586d29fefa50d53d431a6d45d147d237941bffbd0454a946"
+    },
+    {
+      "path": "dateutil/_tzdata_impl.py",
+      "wheel_path": "dateutil/_tzdata_impl.py",
+      "size_bytes": 4835,
+      "sha256": "1780a3ec3e20a304478ba0f4eb8f5852d96707ed729f338e9951140a8cc6c3a7"
+    },
+    {
+      "path": "dateutil/_version.py",
+      "wheel_path": "dateutil/_version.py",
+      "size_bytes": 160,
+      "sha256": "f8e7b4ed52bb25946e6617ff580c9179810a7bcb65c9696eea4e871329cdc9f6"
+    },
+    {
+      "path": "dateutil/easter.py",
+      "wheel_path": "dateutil/easter.py",
+      "size_bytes": 2678,
+      "sha256": "772062fa52af8a61f5bbf93aa7b6742492bbd9086a56d541b2a072be910f2af7"
+    },
+    {
+      "path": "dateutil/parser/__init__.py",
+      "wheel_path": "dateutil/parser/__init__.py",
+      "size_bytes": 1766,
+      "sha256": "c1693a185bb14e98e8820086b6091c789a2d8b8a558e5e3f7c7417a4d39a4988"
+    },
+    {
+      "path": "dateutil/parser/_parser.py",
+      "wheel_path": "dateutil/parser/_parser.py",
+      "size_bytes": 58796,
+      "sha256": "ee494377289c92c401fd7825fb7500981c33098a2bd40219aa4948713e9d1fff"
+    },
+    {
+      "path": "dateutil/parser/isoparser.py",
+      "wheel_path": "dateutil/parser/isoparser.py",
+      "size_bytes": 13233,
+      "sha256": "f05cbdf7d6e709dd5fad274e62e3ab6967c94ed7795bba90e7537036e1ff8573"
+    },
+    {
+      "path": "dateutil/relativedelta.py",
+      "wheel_path": "dateutil/relativedelta.py",
+      "size_bytes": 24835,
+      "sha256": "341e6567072c2ad7edda78fb05f69ebe1ee253c20315892efee420f1d08d88eb"
+    },
+    {
+      "path": "dateutil/rrule.py",
+      "wheel_path": "dateutil/rrule.py",
+      "size_bytes": 67585,
+      "sha256": "d93d6274e446b68cf2917a19942af81859539291840f0483fc52a085a0e57e36"
+    },
+    {
+      "path": "dateutil/tz/__init__.py",
+      "wheel_path": "dateutil/tz/__init__.py",
+      "size_bytes": 1350,
+      "sha256": "4ed98adb6f1e7c01afa94f43d9fdcc14f3d68dd8c24b65b969f5280ba5a52dbe"
+    },
+    {
+      "path": "dateutil/tz/_common.py",
+      "wheel_path": "dateutil/tz/_common.py",
+      "size_bytes": 12977,
+      "sha256": "720cc34c036c397bc473ce9c605efb12c962b9269bf0fbb0a6c979f9b5f7fd2e"
+    },
+    {
+      "path": "dateutil/tz/_factories.py",
+      "wheel_path": "dateutil/tz/_factories.py",
+      "size_bytes": 2569,
+      "sha256": "ba76fa5d0357acf32f7a4b13094f8083c8e6559b384a88e83d47001e95a7aef5"
+    },
+    {
+      "path": "dateutil/tz/_tzfile.py",
+      "wheel_path": "dateutil/tz/_tzfile.py",
+      "size_bytes": 49242,
+      "sha256": "421e56c44f2a0f2f8fd8143582b23fa8d9f69eb6b38e7e78704641bee3ddd0b8"
+    },
+    {
+      "path": "dateutil/tz/_tzpath.py",
+      "wheel_path": "dateutil/tz/_tzpath.py",
+      "size_bytes": 3288,
+      "sha256": "6fcdf301a89f942db4d0d8c759aed1450b7a89d067969e671109e0be89757fdd"
+    },
+    {
+      "path": "dateutil/tz/tz.py",
+      "wheel_path": "dateutil/tz/tz.py",
+      "size_bytes": 50272,
+      "sha256": "e407933fb9e361dcd63fd9cb045a575166ad93d18364f93a608973900a117476"
+    },
+    {
+      "path": "dateutil/tz/win.py",
+      "wheel_path": "dateutil/tz/win.py",
+      "size_bytes": 12935,
+      "sha256": "c49b335a04b0135c4fc7f1c98f86647a9cae902fe1372d35e9631c5e16d1681f"
+    },
+    {
+      "path": "dateutil/tzwin.py",
+      "wheel_path": "dateutil/tzwin.py",
+      "size_bytes": 59,
+      "sha256": "ec0af8bdd4029e733498a4773148db20ab19ac155f1e0770b0965cfe619845ec"
+    },
+    {
+      "path": "dateutil/utils.py",
+      "wheel_path": "dateutil/utils.py",
+      "size_bytes": 1965,
+      "sha256": "74a09c844c3c78e6e2d25a064f1f75ba70719bfed41a5537bff16314c76ac183"
+    },
+    {
+      "path": "dateutil/zoneinfo/__init__.py",
+      "wheel_path": "dateutil/zoneinfo/__init__.py",
+      "size_bytes": 7972,
+      "sha256": "935b401b672df76aa9350ee170754590e633e7bda5fdc99580ea6a245bd5e37e"
+    },
+    {
+      "path": "dateutil/zoneinfo/rebuild.py",
+      "wheel_path": "dateutil/zoneinfo/rebuild.py",
+      "size_bytes": 1625,
+      "sha256": "88203a09f88d2f2fc0ff3811d3195bf3c5d39deaf7f2777c0a92e60edaba602c"
+    },
+    {
+      "path": "python_dateutil-3.0.0.dist-info/INSTALLER",
+      "wheel_path": "python_dateutil-3.0.0.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "python_dateutil-3.0.0.dist-info/METADATA",
+      "wheel_path": "python_dateutil-3.0.0.dist-info/METADATA",
+      "size_bytes": 8237,
+      "sha256": "e10ead93598aed51bdb28aa30ef64ee5d6ccc871e88741d220e504e979af4695"
+    },
+    {
+      "path": "python_dateutil-3.0.0.dist-info/WHEEL",
+      "wheel_path": "python_dateutil-3.0.0.dist-info/WHEEL",
+      "size_bytes": 109,
+      "sha256": "52f960d9a36510a76296cc85489b75417e667b47846c28d0cd1de765e164bf2e"
+    },
+    {
+      "path": "python_dateutil-3.0.0.dist-info/licenses/LICENSE",
+      "wheel_path": "python_dateutil-3.0.0.dist-info/licenses/LICENSE",
+      "size_bytes": 2889,
+      "sha256": "ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e"
+    },
+    {
+      "path": "python_dateutil-3.0.0.dist-info/top_level.txt",
+      "wheel_path": "python_dateutil-3.0.0.dist-info/top_level.txt",
+      "size_bytes": 9,
+      "sha256": "e2d8dd5a485166f17b2c0fc161efcbf60076c3fa766becf9cba02b8da464a2df"
+    },
+    {
+      "path": "python_dateutil-3.0.0.dist-info/zip-safe",
+      "wheel_path": "python_dateutil-3.0.0.dist-info/zip-safe",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "dateutil/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "dateutil/__pycache__/_common.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "dateutil/__pycache__/_tzdata_impl.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "dateutil/__pycache__/_version.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "dateutil/__pycache__/easter.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "dateutil/__pycache__/relativedelta.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "dateutil/__pycache__/rrule.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "dateutil/__pycache__/tzwin.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "dateutil/__pycache__/utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "dateutil/parser/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "dateutil/parser/__pycache__/_parser.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "dateutil/parser/__pycache__/isoparser.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "dateutil/tz/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "dateutil/tz/__pycache__/_common.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "dateutil/tz/__pycache__/_factories.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "dateutil/tz/__pycache__/_tzfile.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "dateutil/tz/__pycache__/_tzpath.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "dateutil/tz/__pycache__/tz.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "dateutil/tz/__pycache__/win.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "dateutil/zoneinfo/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "dateutil/zoneinfo/__pycache__/rebuild.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "python_dateutil-3.0.0.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "53ef9c34e8cc0db56fdd753f9e5bffaba8cb90a09bbf20c38654420ca05b0182",
+  "wheel_size_bytes": 109904,
+  "rebuilt_record_verified_files": 26,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:21.966862+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 26,
+  "source_record_verified_file_count": 27
+}

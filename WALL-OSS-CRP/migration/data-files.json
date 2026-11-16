@@ -1,0 +1,4230 @@
+{
+  "banana/dataset.json": {
+    "bytes": 163,
+    "sha256": "2cc6ff8185113ae7b88a1d15dbebae5b9f5b7742bc4ee77b9715f6d23f83a026"
+  },
+  "banana/episode_0000.npz": {
+    "bytes": 90410,
+    "sha256": "7feff8154e0d28622db0659a142e2e5af74df719111c2ca6ca2322e8e8f77d29"
+  },
+  "banana/episode_0000_cam_front.mp4": {
+    "bytes": 2928211,
+    "sha256": "76d328028579e99dcb99ada9d2605dbb3bc4747f3eebedd2e0b59cde9d29247f"
+  },
+  "banana/episode_0000_cam_high.mp4": {
+    "bytes": 6820839,
+    "sha256": "f243a5078c3cd247557c6f19148bfa709564622135794d0690511d164ca00840"
+  },
+  "banana/episode_0001.npz": {
+    "bytes": 84641,
+    "sha256": "602476dbc23fa47c7abf28980735052e734ae552ba8fb6abf0e229d1c4f3fc9e"
+  },
+  "banana/episode_0001_cam_front.mp4": {
+    "bytes": 2896544,
+    "sha256": "5dd45d9f9bdbbc885d835eebedab2f0d0258193812813f34ce6771b6d3c0c458"
+  },
+  "banana/episode_0001_cam_high.mp4": {
+    "bytes": 6304010,
+    "sha256": "89719f25e185792a2af431bb37dc90f9b2a188d34c6205ba7ce948942fe7cdad"
+  },
+  "banana/episode_0002.npz": {
+    "bytes": 86596,
+    "sha256": "4814c713ad13cab8ae3eae0db2ddd889be99d5739ae2aa381c4eac831c2c49fc"
+  },
+  "banana/episode_0002_cam_front.mp4": {
+    "bytes": 3188523,
+    "sha256": "fc31d749e733ba71beae39b79677f4c85ca6b432f8602427133bd4b15f862689"
+  },
+  "banana/episode_0002_cam_high.mp4": {
+    "bytes": 6539492,
+    "sha256": "461148276ad70456ba0aaaac7a8a7056dcbbb6ef304c5881f48533436d77ee8a"
+  },
+  "banana/episode_0003.npz": {
+    "bytes": 83989,
+    "sha256": "05fc3b8996c996a9e914142ccedb0ac5f888252fae8077f4564dbbd4463e7373"
+  },
+  "banana/episode_0003_cam_front.mp4": {
+    "bytes": 3053748,
+    "sha256": "03237145993546f78df64c8438995eba654f64b92e9184c33e2530c7c20f2996"
+  },
+  "banana/episode_0003_cam_high.mp4": {
+    "bytes": 6603609,
+    "sha256": "f326e732ff107e57f07820e52e9c3cba82dcf211627718752e237c5d1bc37900"
+  },
+  "banana/episode_0004.npz": {
+    "bytes": 99022,
+    "sha256": "2adf0f119aaea9f83e2391539779867c8b547569c9d985229bbfb064256c34f7"
+  },
+  "banana/episode_0004_cam_front.mp4": {
+    "bytes": 3400737,
+    "sha256": "a4aaff656eace8a7d26e1696c2a967842953bf5a88bdc1b44c926125ac1786b3"
+  },
+  "banana/episode_0004_cam_high.mp4": {
+    "bytes": 7971006,
+    "sha256": "b14eac186931c9d4ae7f5143aa857f4998cec3119002cc40db7fad51c0e4a1de"
+  },
+  "banana/episode_0005.npz": {
+    "bytes": 101089,
+    "sha256": "bd866611396b3159b79ad66a655d36d9f70e57d16a933f5eda74c3ff6293acaa"
+  },
+  "banana/episode_0005_cam_front.mp4": {
+    "bytes": 3937452,
+    "sha256": "a81a6abd33620308d16b1554a6fe8409f804bf1a8cef23f3cb6f2a5f271793aa"
+  },
+  "banana/episode_0005_cam_high.mp4": {
+    "bytes": 8102107,
+    "sha256": "ab1740bb6cab91d7f9a62f19b933555a8eb20a80e76fe7a842f0d32675200e29"
+  },
+  "banana/episode_0006.npz": {
+    "bytes": 82048,
+    "sha256": "db185e8e949c148b99803adc656e5ffefce96fe94ff58bf8c7c0a87d90bc500e"
+  },
+  "banana/episode_0006_cam_front.mp4": {
+    "bytes": 2928357,
+    "sha256": "4cb92f71c1acaade4ebda3c486b893f065694113845410fe94d452e98e558520"
+  },
+  "banana/episode_0006_cam_high.mp4": {
+    "bytes": 6319249,
+    "sha256": "aee96fada289e078f0e187bebcbfe6d3eb054827a4c030d541b21e92bd71b1cf"
+  },
+  "banana/episode_0007.npz": {
+    "bytes": 82398,
+    "sha256": "29e0d135bc132869484da9a0c43a4b362215640e277fbccbe36e326448b4ac11"
+  },
+  "banana/episode_0007_cam_front.mp4": {
+    "bytes": 3144879,
+    "sha256": "24caca5bd7dc86f70fb557151b6a581a7c67a5ad926ba4ab0e63d352eb24bce9"
+  },
+  "banana/episode_0007_cam_high.mp4": {
+    "bytes": 6751298,
+    "sha256": "3bf73819fe8a4999dad4900dfd30cc3f98272da13916821261bdf81350353abd"
+  },
+  "banana/episode_0008.npz": {
+    "bytes": 71774,
+    "sha256": "082c7cce29b06fd5522c9da06389380ecb4e10df8df0232dd89743e93d481006"
+  },
+  "banana/episode_0008_cam_front.mp4": {
+    "bytes": 2568588,
+    "sha256": "11f7c3b7cfd39a9a66b4df9409a1e19181ee9b6748185209cb2fd232f2c56fb1"
+  },
+  "banana/episode_0008_cam_high.mp4": {
+    "bytes": 5464779,
+    "sha256": "54891ca30d3df03172d20c0f41c6f135ca2a3564569fc691a22bdcc840cdf100"
+  },
+  "banana/episode_0009.npz": {
+    "bytes": 74593,
+    "sha256": "b233ede3dcaf0593fae7619a0d78ad36ea275fc997063292c44a768056420d68"
+  },
+  "banana/episode_0009_cam_front.mp4": {
+    "bytes": 2990359,
+    "sha256": "410ee4c35cd5324def4b7d2eb5b5f9e8b7f4d16211f35c48b8aec7cda8471ab3"
+  },
+  "banana/episode_0009_cam_high.mp4": {
+    "bytes": 6014223,
+    "sha256": "4dccff405b6561512b94b0e0bb06c840be2b3410109d30f82f8cf717e86d31a9"
+  },
+  "banana/episode_0010.npz": {
+    "bytes": 98131,
+    "sha256": "165b90d05af873b689504f5ff31a94aa4537fa78c7bb1d89a3bb4d1309c78199"
+  },
+  "banana/episode_0010_cam_front.mp4": {
+    "bytes": 3524146,
+    "sha256": "84a3798a57a4d0aeafd0acc1d8c5c82265afeefcc2e765371f48cd31220e23d1"
+  },
+  "banana/episode_0010_cam_high.mp4": {
+    "bytes": 7662920,
+    "sha256": "aaa2a15122128657b82e97cd351ae2dfd5ef713b2feaf7a283e81056f3e4019f"
+  },
+  "banana/episode_0011.npz": {
+    "bytes": 75993,
+    "sha256": "7b68eb28a6235731c2006565260335b7203c08bcdfa474709f5f85c31f95b4ab"
+  },
+  "banana/episode_0011_cam_front.mp4": {
+    "bytes": 2823198,
+    "sha256": "bfdccfb83a11c834cf848b43123670cda62c900e9592c250db4d2c4fef05569a"
+  },
+  "banana/episode_0011_cam_high.mp4": {
+    "bytes": 5852428,
+    "sha256": "97ed45509b37bd8011385f30689e40696c9151b81dff7c1a41c505709bbf982c"
+  },
+  "banana/episode_0012.npz": {
+    "bytes": 82086,
+    "sha256": "295ba55f2a7a8d2915c47f4653ff8761cc96c615eb5318483f7078eeea777b9b"
+  },
+  "banana/episode_0012_cam_front.mp4": {
+    "bytes": 2923601,
+    "sha256": "aedb0b47dae87ea8ff3af561b204f9afd1405e12f004016fc7f160e6e4eb67fc"
+  },
+  "banana/episode_0012_cam_high.mp4": {
+    "bytes": 6740203,
+    "sha256": "2278b1f4c97f5c77cc57a591eb4006296cd072f897049daca7b7c5694379a181"
+  },
+  "banana/episode_0013.npz": {
+    "bytes": 74848,
+    "sha256": "e1bb3600b1dfe102b6ab4aa169e6327c5f9ab725e4ba7a5e6db848b36748e7bc"
+  },
+  "banana/episode_0013_cam_front.mp4": {
+    "bytes": 2751797,
+    "sha256": "8ca1ad2d60e5cc2331f7f2964c32ba7b537d0255dc2ce43dd361038085844f06"
+  },
+  "banana/episode_0013_cam_high.mp4": {
+    "bytes": 5853902,
+    "sha256": "34a8f96f5e987cb0ed68879731912e8a4a0662bd650a383a2d60a417168562ca"
+  },
+  "banana/episode_0014.npz": {
+    "bytes": 77007,
+    "sha256": "85a55ccf624082ddef46b31274d5c36df89841fb0b707c48b54656bbff884b1d"
+  },
+  "banana/episode_0014_cam_front.mp4": {
+    "bytes": 2661971,
+    "sha256": "dd8bd3da6940cddbd45f604697c26e0142156ac9051be99f16430b12ced2c20f"
+  },
+  "banana/episode_0014_cam_high.mp4": {
+    "bytes": 6027823,
+    "sha256": "c7f5c6ad209a27565b39bdb25f676ddd244c4b270b5842aa44dcf19ec3d570d3"
+  },
+  "banana/episode_0015.npz": {
+    "bytes": 72742,
+    "sha256": "b8af9c2271b0ead4cbb578de59c572d67338ee0accd52fef1fd6a0233994da2e"
+  },
+  "banana/episode_0015_cam_front.mp4": {
+    "bytes": 2744769,
+    "sha256": "2c87f36953c37ebefe2b51951b71fdbb1a4a31fe7679a1bd5b581bb6d688c6c8"
+  },
+  "banana/episode_0015_cam_high.mp4": {
+    "bytes": 5566616,
+    "sha256": "7575722e18034fbecd2a714f45c4c3682a01994256d441e62702d3c4ce917a25"
+  },
+  "banana/episode_0016.npz": {
+    "bytes": 77541,
+    "sha256": "4eef280f3e81cb7e2f9fa53afb5514d9b3704f385539264d80215e48128375af"
+  },
+  "banana/episode_0016_cam_front.mp4": {
+    "bytes": 2704662,
+    "sha256": "fe2d78b68571af71049a323e0087e22a7772735da0df165d153d45fb51e72cf5"
+  },
+  "banana/episode_0016_cam_high.mp4": {
+    "bytes": 6026320,
+    "sha256": "931a697e7a035c44a73d556832cb197e23ebc2275c9b912adc64a7c78c3c92ee"
+  },
+  "banana/episode_0017.npz": {
+    "bytes": 87386,
+    "sha256": "320460169dba6121bd58c8c7deb8d39a21ab64aebaa2688a32a5c9402368d317"
+  },
+  "banana/episode_0017_cam_front.mp4": {
+    "bytes": 3794694,
+    "sha256": "d693c1d7f5fd0f862a226b5155909710ca747a38764b57f517642744f94685cb"
+  },
+  "banana/episode_0017_cam_high.mp4": {
+    "bytes": 7129689,
+    "sha256": "7fac5111517d0f522ff5e21b6b7181c7517be1118d466ed754de19ed8f645373"
+  },
+  "banana/episode_0018.npz": {
+    "bytes": 116210,
+    "sha256": "82677630bb80c3766fc18eafbe58636fe97f69c60cae48738388402658e58f36"
+  },
+  "banana/episode_0018_cam_front.mp4": {
+    "bytes": 4243055,
+    "sha256": "7b05245a5ea60dcb2ec04533043bd030221cd087a8248e0135e7320322a37f2e"
+  },
+  "banana/episode_0018_cam_high.mp4": {
+    "bytes": 8860205,
+    "sha256": "081ed7fc2393dda6cf8be8582b2333848662192b6a62b49e69f0fa9a2e9340a6"
+  },
+  "banana/episode_0019.npz": {
+    "bytes": 72412,
+    "sha256": "38bf9dfbc76f494536d495efe192c46bd77118276d177676aa2081ea85220bb5"
+  },
+  "banana/episode_0019_cam_front.mp4": {
+    "bytes": 2634580,
+    "sha256": "e49a3769c0bad6b442442d72fa95d12c59b296e71752d895bde3677b4e28f676"
+  },
+  "banana/episode_0019_cam_high.mp4": {
+    "bytes": 5764565,
+    "sha256": "287750cb732670d3e3e37429017cc4383d5e78585835c27b274efef71b1afb1d"
+  },
+  "banana/episode_0020.npz": {
+    "bytes": 103064,
+    "sha256": "8026cbf3e5112bec36c7cfcaf7d231c1167560472bf7ffe85424fb2f4c2b52cd"
+  },
+  "banana/episode_0020_cam_front.mp4": {
+    "bytes": 4101556,
+    "sha256": "c7b3e73e367a67725f219b832747071fa9b91cb63714b6b992f18f96bf9efee2"
+  },
+  "banana/episode_0020_cam_high.mp4": {
+    "bytes": 7947094,
+    "sha256": "5a72ffca63d4804f27ab27dd6cb8500e2f0f074acd513df914e4cdbb9e79bae9"
+  },
+  "banana/episode_0021.npz": {
+    "bytes": 96138,
+    "sha256": "e29f3c352a140120aa878498d1c964b21c4f542769ebb872db13447d430a6c30"
+  },
+  "banana/episode_0021_cam_front.mp4": {
+    "bytes": 3735494,
+    "sha256": "f19d66dffab2fb709a28cbd959c444eea8f74a1402dd873c31180a963253b113"
+  },
+  "banana/episode_0021_cam_high.mp4": {
+    "bytes": 7806460,
+    "sha256": "29644e44f99254a205f8e2524fd3b4826b76a9a29621fe41494d9f96e98f15da"
+  },
+  "banana/episode_0022.npz": {
+    "bytes": 77259,
+    "sha256": "49b2d97d7d82f82511cdae1ce9a2e7282509403191d6467c2bf46c4b3ca1f191"
+  },
+  "banana/episode_0022_cam_front.mp4": {
+    "bytes": 2710453,
+    "sha256": "d485e7a7b191d99154cd9e5a1013392af809113ae1de12c42edf62ee6385c78c"
+  },
+  "banana/episode_0022_cam_high.mp4": {
+    "bytes": 6040710,
+    "sha256": "43ab5610339bb483397e3c2142da2634505bf2ee5c8ae65d9c7bb275ebdada46"
+  },
+  "banana/episode_0023.npz": {
+    "bytes": 106435,
+    "sha256": "2d4c8885bb450ad52a94644941bc15e1a6052348e12ca58347ef541d2e7ffa7c"
+  },
+  "banana/episode_0023_cam_front.mp4": {
+    "bytes": 4388334,
+    "sha256": "cfc2fb4a7c4ddbf9df20f563429097a4b757bb783e493604024ae68f0b518f2b"
+  },
+  "banana/episode_0023_cam_high.mp4": {
+    "bytes": 8027975,
+    "sha256": "0eb2f8ef4a18b852b8e1a9aa99825c27b29c93ca3479a267a6f8bfb2ed4f81dc"
+  },
+  "banana/episode_0024.npz": {
+    "bytes": 65313,
+    "sha256": "a37fc6c4724ed8ea401fe018e91d19b71f8ea56159b6b0ca41da7bd8faec7e5d"
+  },
+  "banana/episode_0024_cam_front.mp4": {
+    "bytes": 2510470,
+    "sha256": "f00d3117ba057d900eda1f6fbbec20f85612e07046e4fda2471546405c275376"
+  },
+  "banana/episode_0024_cam_high.mp4": {
+    "bytes": 4978130,
+    "sha256": "ef3ccd40d7a4e2c8cdd48fd032730c4777c52c103131a6e34bed9f7ae562a4d3"
+  },
+  "banana/episode_0025.npz": {
+    "bytes": 64207,
+    "sha256": "3289c2d7fd184f777d60a3735e037803316ef6fe946f6dd9fc5cf2bd9d140780"
+  },
+  "banana/episode_0025_cam_front.mp4": {
+    "bytes": 2569254,
+    "sha256": "240bbecdab5bfb379f05779c24430a9c82b435ca44e2d2ef01f3410fcfb96ef0"
+  },
+  "banana/episode_0025_cam_high.mp4": {
+    "bytes": 5177481,
+    "sha256": "2018208f1b65edbe5b621b4a61ae2a05f34520fd11684b56315e0fdebfa04c20"
+  },
+  "banana/episode_0026.npz": {
+    "bytes": 73376,
+    "sha256": "66c66e58dea8b34b88c90f523221cf84bcaed2f5c3e00eef6b712fcb5f519423"
+  },
+  "banana/episode_0026_cam_front.mp4": {
+    "bytes": 2649696,
+    "sha256": "87f4284ff65a3b089a7b1005f7dd062b3f3a9361787f6b483feba155827c9877"
+  },
+  "banana/episode_0026_cam_high.mp4": {
+    "bytes": 5788785,
+    "sha256": "778587e0afad02a902591bade015e238e0e55f9e2e557ba774fa624c9e3d3d23"
+  },
+  "banana/episode_0027.npz": {
+    "bytes": 81666,
+    "sha256": "de4ae9b3def6821431784378820ae5d3fd9fefeb344ea1b7f05e8f877c605fc4"
+  },
+  "banana/episode_0027_cam_front.mp4": {
+    "bytes": 3297448,
+    "sha256": "f8881c31d3f183c7aeabed91272a9bc05139ca02e64345e927cdff6e464a215b"
+  },
+  "banana/episode_0027_cam_high.mp4": {
+    "bytes": 6655734,
+    "sha256": "c47a005a8df3e6fdf5839f7af5e6d87c030403ed5b3f459c6a5fd63ce2df7d3e"
+  },
+  "banana/episode_0028.npz": {
+    "bytes": 81640,
+    "sha256": "86a85da8c7f5c86ee4c5dd56e4e2f595d59efca67ad2583c8403cb1833c7f80e"
+  },
+  "banana/episode_0028_cam_front.mp4": {
+    "bytes": 3189562,
+    "sha256": "85fcf673e1f46e88e7e2acc10d8d545dd6979a34371631fcc40ce94c9b79e34a"
+  },
+  "banana/episode_0028_cam_high.mp4": {
+    "bytes": 6376776,
+    "sha256": "27727d33750416e3fbe8688bba1d42b021847fb4525984fbb3d228c9bf9cb969"
+  },
+  "banana/episode_0029.npz": {
+    "bytes": 75570,
+    "sha256": "7f023eb5ca9b9b4eaeabee42afcb81b35751c44f5a25c9d424f6a8342004c6ee"
+  },
+  "banana/episode_0029_cam_front.mp4": {
+    "bytes": 2682579,
+    "sha256": "8730e43e221303a93e4fad2a20af3f3c73f2c0dc3a299184c6fc8f5df923215c"
+  },
+  "banana/episode_0029_cam_high.mp4": {
+    "bytes": 5571831,
+    "sha256": "4484b6de727ea16da0f0f55349ed197a46b2216b9ad948b4cdc0e61a938000c9"
+  },
+  "banana/episode_0030.npz": {
+    "bytes": 81914,
+    "sha256": "15031c3d59869cad547cdc9d33594bfee440399d0d3db1108b30d33d8cf7a648"
+  },
+  "banana/episode_0030_cam_front.mp4": {
+    "bytes": 3422012,
+    "sha256": "9db113b406974cd166bd595393994b05f906e4b4c5f46b16c139cf13bb64d395"
+  },
+  "banana/episode_0030_cam_high.mp4": {
+    "bytes": 6048702,
+    "sha256": "306af653a17987cfebfd6d761e3e18c51c99523ccb825a76698dfb1c42a5fb14"
+  },
+  "banana/episode_0031.npz": {
+    "bytes": 101865,
+    "sha256": "59f5e4afeba904ea8de34b8c752f2ed375703285ddb77c8f6178bd9ca5854004"
+  },
+  "banana/episode_0031_cam_front.mp4": {
+    "bytes": 4351537,
+    "sha256": "c9c3689cfdb4d023d470dcb57c7adad64a8774cca182cf9a3f7b471c6418bf2a"
+  },
+  "banana/episode_0031_cam_high.mp4": {
+    "bytes": 7688536,
+    "sha256": "fe37a2ac802bcb812b7d783d4303204afd14648e55926dd561ceb8a4b24005cb"
+  },
+  "banana/episode_0032.npz": {
+    "bytes": 80729,
+    "sha256": "48fbcc005cd9d9f8d06e5a4947c68eb5ec3e4a11bb67a19c88fb7e71060c0c68"
+  },
+  "banana/episode_0032_cam_front.mp4": {
+    "bytes": 2715395,
+    "sha256": "0430446d6828da8f24edf7f84be8d279596a4d37cc3fac6a0bed5fe4c9411041"
+  },
+  "banana/episode_0032_cam_high.mp4": {
+    "bytes": 6065234,
+    "sha256": "0c43314d81b0d814570e65d159f9db2659fe48e10fe24ba4450175962c19f6f4"
+  },
+  "banana/episode_0033.npz": {
+    "bytes": 80796,
+    "sha256": "1e3213f3eaa12e2b616b46ef65b8d22c9f366e0833c1e0796c614c8ba85ae197"
+  },
+  "banana/episode_0033_cam_front.mp4": {
+    "bytes": 2708354,
+    "sha256": "3e3617761dec9a18c4f939eb39ec656ad8c4531314d10777aa8271273e7eadbb"
+  },
+  "banana/episode_0033_cam_high.mp4": {
+    "bytes": 6091655,
+    "sha256": "5334ae1b02bd0e87a25773b8e7892421b8d10cd78ad4a6c541cb0b2c5a5b3df5"
+  },
+  "banana/episode_0034.npz": {
+    "bytes": 79379,
+    "sha256": "4585f406a6e9e3a10f9a9ded6ba9037eb77744a7ec075de734ff6c3c6aa01212"
+  },
+  "banana/episode_0034_cam_front.mp4": {
+    "bytes": 2998932,
+    "sha256": "1343f4fa80317f2d14d7cbb4892be4812c95ef2bac7172e8496dff9806880de0"
+  },
+  "banana/episode_0034_cam_high.mp4": {
+    "bytes": 6024858,
+    "sha256": "9636bb5cc855ae427bbbfb7c641847ce9fefa4c81d55ad7989c071ae4c966553"
+  },
+  "banana/episode_0035.npz": {
+    "bytes": 72659,
+    "sha256": "2055dd5fb8265e7ceb761b15f4d176fc5f12d24a8674467b373213c976604621"
+  },
+  "banana/episode_0035_cam_front.mp4": {
+    "bytes": 2772138,
+    "sha256": "5aa22afb184de348a2acb937a6d8300df4e174e334e938a913518e5c23a5092f"
+  },
+  "banana/episode_0035_cam_high.mp4": {
+    "bytes": 5707428,
+    "sha256": "32ff2d162813fa335ffe43d619c70218f657b7f3e2daf8b0153e9624ab9e5a73"
+  },
+  "banana/episode_0036.npz": {
+    "bytes": 91360,
+    "sha256": "3330493a35fb83f22084fbb34d9a7e6524b8b6852bc1a91a627c38d757188cc0"
+  },
+  "banana/episode_0036_cam_front.mp4": {
+    "bytes": 3789508,
+    "sha256": "ea0ddcc9942a20eca10c3cd918e7eb2692c888aea4ccd0dfbc781e6b3c478cb9"
+  },
+  "banana/episode_0036_cam_high.mp4": {
+    "bytes": 6952177,
+    "sha256": "2faa521800606da75fba0281595aed8f2e22ad37112f3a0d1da5447303ea7814"
+  },
+  "banana/episode_0037.npz": {
+    "bytes": 82988,
+    "sha256": "51187e6e233ba3b0e47ed24d563df9f88f9ac111438055d135954f6e6660a422"
+  },
+  "banana/episode_0037_cam_front.mp4": {
+    "bytes": 3734660,
+    "sha256": "aeb7a2323ed39f6a85acecca15d56910b981423ca6e63908271045da52a1388b"
+  },
+  "banana/episode_0037_cam_high.mp4": {
+    "bytes": 6393170,
+    "sha256": "b9563862d0ae895155b629e14772247aa99064c0276b528d6c2ce5efb8d79851"
+  },
+  "banana/episode_0038.npz": {
+    "bytes": 76229,
+    "sha256": "5118b47ab32a7c3dc103dc3943249ec650f9fda5ff6c60929a523ff0e2c1b38b"
+  },
+  "banana/episode_0038_cam_front.mp4": {
+    "bytes": 2619805,
+    "sha256": "f9dfa81f9a0a7421e55bc6c4ec386a096485d17a9ecd56265f93535d94f52fd6"
+  },
+  "banana/episode_0038_cam_high.mp4": {
+    "bytes": 5918461,
+    "sha256": "c946d8d1717376c2f494801aae65525e4c1438809b5237745b613dbfbe64a7c1"
+  },
+  "banana/episode_0039.npz": {
+    "bytes": 77838,
+    "sha256": "93e96e7aee91f4ae697bcfdffeba4fe94d0dd394dd9aaf49594596dc3b73fdc5"
+  },
+  "banana/episode_0039_cam_front.mp4": {
+    "bytes": 2659768,
+    "sha256": "3f8c86ca69db992b2e23241b495d717793963ab0f352daf5cd9ec2ed9fc9c015"
+  },
+  "banana/episode_0039_cam_high.mp4": {
+    "bytes": 6191591,
+    "sha256": "421806f37b0566c1b582d5819141e18559f8597b0537445fe85b3a737d1a896b"
+  },
+  "banana/episode_0040.npz": {
+    "bytes": 68391,
+    "sha256": "ed63b6fd8a4a3ed3069fff18fd6bbe3ebd6f3c91339c4991ef1b488610c7c00d"
+  },
+  "banana/episode_0040_cam_front.mp4": {
+    "bytes": 2323299,
+    "sha256": "2e53657789b1b83d888faf02ee8db02cb145b97579ba573c5b0b93e85129f29e"
+  },
+  "banana/episode_0040_cam_high.mp4": {
+    "bytes": 5263974,
+    "sha256": "1f5271a9ab967c125cef1f3c73ba5738654f3c54025ac1849d629ad8414e79d6"
+  },
+  "banana/episode_0041.npz": {
+    "bytes": 72125,
+    "sha256": "b7c05195cdb675766ba5c5063cece44e6c618f7a3c2e2ee623a3a105dc4e40b4"
+  },
+  "banana/episode_0041_cam_front.mp4": {
+    "bytes": 2832504,
+    "sha256": "bb3eca3e782eadc7ae2313c342f97c6d0906a7fd10b8417a52414eaf3487f0fb"
+  },
+  "banana/episode_0041_cam_high.mp4": {
+    "bytes": 5520486,
+    "sha256": "3de692e083a96ea53cda571087468c64e94ab2079cbed276e91e02fcdce17a9f"
+  },
+  "banana/episode_0042.npz": {
+    "bytes": 80985,
+    "sha256": "22c0b281685fdace6a1a4a6194005380aee0ab56b26729cb66f4733b26b0d90f"
+  },
+  "banana/episode_0042_cam_front.mp4": {
+    "bytes": 2967857,
+    "sha256": "51b6b646aad3f492257d90dc98e589b87edf82ef885c6b1a125ead01ed0d9499"
+  },
+  "banana/episode_0042_cam_high.mp4": {
+    "bytes": 6242003,
+    "sha256": "650cf12dac5f02b3bc7f7a986e8d86823fa17ef23f62c049786836e55b3498eb"
+  },
+  "banana/episode_0043.npz": {
+    "bytes": 70112,
+    "sha256": "7b7a3bd9bcc7b871b12c36137599ba1eac970f6956a1d208e49bb53850cd72a5"
+  },
+  "banana/episode_0043_cam_front.mp4": {
+    "bytes": 2314086,
+    "sha256": "486f6d7b2a4984751f33fbdf1ba33b815fc6f1016d9c3ee6d2acc644b15b055f"
+  },
+  "banana/episode_0043_cam_high.mp4": {
+    "bytes": 5299615,
+    "sha256": "99370142dc9f5c4280aa1a6569c83c4c681f2e431c25ab3b27e3f7814a9fafd0"
+  },
+  "banana/episode_0044.npz": {
+    "bytes": 87658,
+    "sha256": "79e57a786239ee6d473dd7a515c6ff0d04106afdbfafa6081817ae517307b22b"
+  },
+  "banana/episode_0044_cam_front.mp4": {
+    "bytes": 3335380,
+    "sha256": "945f8154ae119f051c203655dfd066eaba65a889440626a7f8f330a9c6185074"
+  },
+  "banana/episode_0044_cam_high.mp4": {
+    "bytes": 6993071,
+    "sha256": "9f14dc083974759ca563c4023e8064f00b93d70649fa0d196ad2664dbacd123c"
+  },
+  "banana/episode_0045.npz": {
+    "bytes": 72111,
+    "sha256": "a6ac9ceb85c94eab2164f487d1d0bbd2e49983568d13e7cf054f28e57996e067"
+  },
+  "banana/episode_0045_cam_front.mp4": {
+    "bytes": 2774720,
+    "sha256": "6df5471892f19e07d27384a74b95ee71bc80525b2d2b79c517c44b91e0a4a7b8"
+  },
+  "banana/episode_0045_cam_high.mp4": {
+    "bytes": 5798305,
+    "sha256": "f19086aaf568555018989da419cfc618284c106e34c8e30cc7fd015fcb40ecfb"
+  },
+  "banana/episode_0046.npz": {
+    "bytes": 89936,
+    "sha256": "31c7ab0452e9fbc117bf760d45d6d98bb49754b416f8e80fb13631e4ff817dcb"
+  },
+  "banana/episode_0046_cam_front.mp4": {
+    "bytes": 3379641,
+    "sha256": "9779b2500cecd3226146f678f6256de8c5fa06a5137dff63af700681f72158c8"
+  },
+  "banana/episode_0046_cam_high.mp4": {
+    "bytes": 6966286,
+    "sha256": "32cea7438f9fd892d0394a495059af3cabd791444b5836b4474a6f1b7ed50216"
+  },
+  "banana/episode_0047.npz": {
+    "bytes": 89111,
+    "sha256": "e2f558ff77a9db995a2bd41d89fe56e85609a70f9367b3e8f1d15e8b4038fa67"
+  },
+  "banana/episode_0047_cam_front.mp4": {
+    "bytes": 3592199,
+    "sha256": "25e9056722b9fc34f716c1eae47ea90d522dd6700273f8ffcacf32feb0f2bc39"
+  },
+  "banana/episode_0047_cam_high.mp4": {
+    "bytes": 6741622,
+    "sha256": "44b5a13f570d3ef5a1b7fe144a53bcbbc82acc3833c120eff5ef3b9565b69386"
+  },
+  "banana/episode_0048.npz": {
+    "bytes": 74637,
+    "sha256": "d2ccead1589b4ce33dbf6873f5e8b53607bfe3ec92ce6e308af16f5039c11069"
+  },
+  "banana/episode_0048_cam_front.mp4": {
+    "bytes": 2579228,
+    "sha256": "2b4781b4df54a1500922080a6ec283b883682e4b1e62d0c6dabf2178ae2283b4"
+  },
+  "banana/episode_0048_cam_high.mp4": {
+    "bytes": 5665352,
+    "sha256": "b341e92199995736ccefa0d72ac38b40e7cf23fa6f59d18b9c1d4e7eff690724"
+  },
+  "banana/episode_0049.npz": {
+    "bytes": 72113,
+    "sha256": "6510f33804274d382b1f0dac61fc36e026271d3a680d60a98d95df586fd5b084"
+  },
+  "banana/episode_0049_cam_front.mp4": {
+    "bytes": 2771737,
+    "sha256": "1e1e31b10d778baeaae6dfd914d07bab14be17608ab322269634fb4826774010"
+  },
+  "banana/episode_0049_cam_high.mp4": {
+    "bytes": 5821783,
+    "sha256": "9f964d4e389fe19ddc2353df0c3a6f3c3c5d386468e6a66f5b5a246929097b61"
+  },
+  "black_box/dataset.json": {
+    "bytes": 169,
+    "sha256": "6b847999a60c0dd207be428cd0028a6f527b2972bfc83078a8be301b335199ce"
+  },
+  "black_box/episode_0000.npz": {
+    "bytes": 105898,
+    "sha256": "688517c185a8ab936005616e0b3bff46fdcb6a0a4881c3407d24db3074225739"
+  },
+  "black_box/episode_0000_cam_front.mp4": {
+    "bytes": 4678291,
+    "sha256": "be2d14d9b02c6556e7e7ddcbafd92cea32ab2239f2eeb518ea8df779b9a9ef4b"
+  },
+  "black_box/episode_0000_cam_high.mp4": {
+    "bytes": 8821118,
+    "sha256": "48fde1190449c211c691f86f888c00f4f05029c298ba6daec7b83ecba55f4592"
+  },
+  "black_box/episode_0001.npz": {
+    "bytes": 118774,
+    "sha256": "35295938cd195a023c6c7d2c2eeb92e7e4c9731c66a26bce44a8615e30463d40"
+  },
+  "black_box/episode_0001_cam_front.mp4": {
+    "bytes": 5082449,
+    "sha256": "4e22398c8ac6f0b61399a5d1afa97b2256ef929650eb19f092034ace6e9d8ce7"
+  },
+  "black_box/episode_0001_cam_high.mp4": {
+    "bytes": 9813028,
+    "sha256": "b9b318cce987a0f1c47ae6a21fa04f59ec2f3c29b046c21d688a3d1882c203bc"
+  },
+  "black_box/episode_0002.npz": {
+    "bytes": 136756,
+    "sha256": "83052420cd10b51174f0eae392683b1061037315d9b56fbd7510d9243b79db00"
+  },
+  "black_box/episode_0002_cam_front.mp4": {
+    "bytes": 6050774,
+    "sha256": "5db886285f47ab408a3c6a1a56a28534a592e1f805a4cef4dcaf14000f7e89e2"
+  },
+  "black_box/episode_0002_cam_high.mp4": {
+    "bytes": 11436067,
+    "sha256": "8b366a3f8032665493e13b27e5c0f264f0e58303e733291da14d6164ce935ab0"
+  },
+  "black_box/episode_0003.npz": {
+    "bytes": 95523,
+    "sha256": "5565d15bc8476629ecf45787a6124f0ca96b0538524e75223a7f6bf2c53edd26"
+  },
+  "black_box/episode_0003_cam_front.mp4": {
+    "bytes": 4002098,
+    "sha256": "9863d2fe79598ea12ed87150527740587f786f544078c849ce951a49160ed09f"
+  },
+  "black_box/episode_0003_cam_high.mp4": {
+    "bytes": 7973444,
+    "sha256": "fcac49b898ef266a6be742dbeb2d39d1c008836972ce0e7bfbbfe882b23c3479"
+  },
+  "black_box/episode_0004.npz": {
+    "bytes": 133348,
+    "sha256": "f6bd7e08dfcdbae3967dae989b10b57741fa5ead56ff53bdb0929bc50e1f1535"
+  },
+  "black_box/episode_0004_cam_front.mp4": {
+    "bytes": 6281158,
+    "sha256": "5f3e24f8f1049d319e9c1655251b73bfb7df37604bb1d5f27072346945f91ab8"
+  },
+  "black_box/episode_0004_cam_high.mp4": {
+    "bytes": 11328674,
+    "sha256": "277075b4d33d8f0300fa3334fd96e39932718d4e27cecf6a45afb8c64a6bad83"
+  },
+  "black_box/episode_0005.npz": {
+    "bytes": 102982,
+    "sha256": "5e7517d4e49b3a1b4dc4a6d7c8495c613cbaa40188c5baf29847102a0b6ebf89"
+  },
+  "black_box/episode_0005_cam_front.mp4": {
+    "bytes": 3762119,
+    "sha256": "7d1ea98235d883cc232eae525239474511ae78638c8f02df5525062906642420"
+  },
+  "black_box/episode_0005_cam_high.mp4": {
+    "bytes": 8175568,
+    "sha256": "5a3e47aee72c1dea60bea070e219ce4a20f7c6d182ac173a15b2fe293cb017af"
+  },
+  "black_box/episode_0006.npz": {
+    "bytes": 126110,
+    "sha256": "2e60ddee822e71a70918170bab52a8864093060472d423931616c0d9718bb8b4"
+  },
+  "black_box/episode_0006_cam_front.mp4": {
+    "bytes": 4841832,
+    "sha256": "a0aea744843583fca2cdb7ff205bb046017f14009aaad5d587d047966592ef16"
+  },
+  "black_box/episode_0006_cam_high.mp4": {
+    "bytes": 10104202,
+    "sha256": "0a9ddbbd3e6fce1f393d80d0a60e7df392475fa7529e3ec259f9f0ad9dda7756"
+  },
+  "black_box/episode_0007.npz": {
+    "bytes": 96435,
+    "sha256": "d7149effc086c2b8665be279d1598da38ea5441091218d9e2687dd8c9754c074"
+  },
+  "black_box/episode_0007_cam_front.mp4": {
+    "bytes": 3994002,
+    "sha256": "4030638b4f1050551ec822354826da70097f2308d939c7abca9e143afe0a2ff9"
+  },
+  "black_box/episode_0007_cam_high.mp4": {
+    "bytes": 7445865,
+    "sha256": "351762fc3832b241c087ad7ee4637e37c5438706ec86217cb221580fc8d70717"
+  },
+  "black_box/episode_0008.npz": {
+    "bytes": 70148,
+    "sha256": "c1c8281f5ee9be294bea657cd2482d7c71f422abab90c26405a477786f0306a3"
+  },
+  "black_box/episode_0008_cam_front.mp4": {
+    "bytes": 2704806,
+    "sha256": "b5dc0af871cfc6e33d7b4327a2a9f60dd773c22259668ffd016ae18f2bc6ccab"
+  },
+  "black_box/episode_0008_cam_high.mp4": {
+    "bytes": 5510225,
+    "sha256": "a090b7a7412845d7b0781d1e124c4a0f35b07af7a8ab2cc02534c4fc7d9ff699"
+  },
+  "black_box/episode_0009.npz": {
+    "bytes": 88276,
+    "sha256": "60868ae68cb6231cce0634a83eaf045faaf775c388a55f8c5fe7005a8ede8cd9"
+  },
+  "black_box/episode_0009_cam_front.mp4": {
+    "bytes": 3148247,
+    "sha256": "58a64aa8007e81b0a379aa366a015954c983513b97336442744f933a91895a60"
+  },
+  "black_box/episode_0009_cam_high.mp4": {
+    "bytes": 6849492,
+    "sha256": "d58cfe7e6dc5f35f89765213b3cfdedfef0ef4b9c3a0cb3484e605ee62d4910a"
+  },
+  "black_box/episode_0010.npz": {
+    "bytes": 93642,
+    "sha256": "d9733082aef06b8be091cdd245e684c9d71653021bf1fab9b2040d311224860b"
+  },
+  "black_box/episode_0010_cam_front.mp4": {
+    "bytes": 3552603,
+    "sha256": "6cc50d737d1ffe3301737b6ad302b1688fdae5bfc6d18877b52a71469cbf4748"
+  },
+  "black_box/episode_0010_cam_high.mp4": {
+    "bytes": 7469808,
+    "sha256": "9f2c9e9c02f9a1018ed4b945f5501acf3d5705dcdbea797dee0509225d253d97"
+  },
+  "black_box/episode_0011.npz": {
+    "bytes": 80682,
+    "sha256": "9ba48ac9e6adae50e03bb51e03927ae7ed19190427c178897738b5f9509b7ba7"
+  },
+  "black_box/episode_0011_cam_front.mp4": {
+    "bytes": 3492413,
+    "sha256": "6e12b8d00c163a85dcf17e9bd2f4df17560a5e2f3920d259f0e1ff0d4d4f4139"
+  },
+  "black_box/episode_0011_cam_high.mp4": {
+    "bytes": 6463447,
+    "sha256": "a9d57586b4008f81054b12facbd1953434927c98bb7aa06748a53a66db4b2637"
+  },
+  "black_box/episode_0012.npz": {
+    "bytes": 121482,
+    "sha256": "508622c88800b0150998fb6971d4b637093b8065928da113396b1741f6306477"
+  },
+  "black_box/episode_0012_cam_front.mp4": {
+    "bytes": 4234447,
+    "sha256": "6bfa756160952d15275fa6a5ead593a03c885a1a6ef2abb22a8349e8c26a0c34"
+  },
+  "black_box/episode_0012_cam_high.mp4": {
+    "bytes": 10090399,
+    "sha256": "a567ab16b697b04fac7b3c34cf63382d6c04840a6eb2e1f8eb51200f3358b0f0"
+  },
+  "black_box/episode_0013.npz": {
+    "bytes": 105176,
+    "sha256": "786614568f21c0b2afdb7872c2523c18e7f92ebf83557bdf3e12068948b0d3b0"
+  },
+  "black_box/episode_0013_cam_front.mp4": {
+    "bytes": 3968826,
+    "sha256": "03eeb90827377ff8a0169805043a0d53c59b083fbcbfa29f5dda3d015bde8fa6"
+  },
+  "black_box/episode_0013_cam_high.mp4": {
+    "bytes": 8516176,
+    "sha256": "d9f41f5b02cde9912650a7fbc11d2368988b1f4436f496535e218e79faae4680"
+  },
+  "black_box/episode_0014.npz": {
+    "bytes": 168876,
+    "sha256": "0e04acac7a6f1d76829c40c9908e7d49d581cbb10b004878bee190ef2029a40a"
+  },
+  "black_box/episode_0014_cam_front.mp4": {
+    "bytes": 6989838,
+    "sha256": "44917abaa18e48c77e7e2b5811fb2f6c93534955c249c507f9d90aaa8666164c"
+  },
+  "black_box/episode_0014_cam_high.mp4": {
+    "bytes": 13536781,
+    "sha256": "561387ba40d63b17b36a3ab07bcb7794ef5d9f57b7e6da7deb5bfc441982bfc7"
+  },
+  "black_box/episode_0015.npz": {
+    "bytes": 86715,
+    "sha256": "ed36739dd00ab41acf40656de6d5c52819c27ecf522d7d40955dbf719255a241"
+  },
+  "black_box/episode_0015_cam_front.mp4": {
+    "bytes": 3116870,
+    "sha256": "c776b32efa195757bcddc8cd761c0e6b33ceee15a6e58f1a5c156d1595e392e3"
+  },
+  "black_box/episode_0015_cam_high.mp4": {
+    "bytes": 6681905,
+    "sha256": "b609ff479ccfc5ffc5f3289287fec2ef9de296c81dc70de6a858da8d910e66fd"
+  },
+  "black_box/episode_0016.npz": {
+    "bytes": 95806,
+    "sha256": "68a10e44a04c32e832b3784a303f3b5364e677e2865b13b23cdea3ef7fffefaf"
+  },
+  "black_box/episode_0016_cam_front.mp4": {
+    "bytes": 3658180,
+    "sha256": "65f51f2b2fb9de760e14c17c96b022d2a9802ee3ee25e0de6a37ba32ab00bcae"
+  },
+  "black_box/episode_0016_cam_high.mp4": {
+    "bytes": 7641059,
+    "sha256": "59acd8939df3e67c6f2913aa364b779d6becad4b6d582a2753f5312f71846b42"
+  },
+  "black_box/episode_0017.npz": {
+    "bytes": 84153,
+    "sha256": "8aeb2a25645fcf11ae3d97a7113b16371865e272ac5b798dae497f1edce9c52c"
+  },
+  "black_box/episode_0017_cam_front.mp4": {
+    "bytes": 3721328,
+    "sha256": "bfc39ec82356897b42a50affc5f8a3a01bea3f405c578b3ba340a89a44969ed5"
+  },
+  "black_box/episode_0017_cam_high.mp4": {
+    "bytes": 6802927,
+    "sha256": "08d05a8333a5199f59210f270188e2c48e113bdefb0ed3ab9b2c07e1420b72ab"
+  },
+  "black_box/episode_0018.npz": {
+    "bytes": 83311,
+    "sha256": "9084ba5c4878a5c33d0d79fbbd765d409ff9c187bef876c92247ac8372cd7709"
+  },
+  "black_box/episode_0018_cam_front.mp4": {
+    "bytes": 3702015,
+    "sha256": "ea1b1153fa08d350d852470c69ec2fd30c8cf1b33b6dea6e42780dae55e7cf4e"
+  },
+  "black_box/episode_0018_cam_high.mp4": {
+    "bytes": 6558252,
+    "sha256": "5397773952795e31fa13f4cce3d2b8e79af061a921804191de1bbbfcc68f7fcd"
+  },
+  "black_box/episode_0019.npz": {
+    "bytes": 116348,
+    "sha256": "f4471305ffe8cb09ce1c75ecf27d9db8e87463d90713c535870f76f31fe5184c"
+  },
+  "black_box/episode_0019_cam_front.mp4": {
+    "bytes": 4056467,
+    "sha256": "bca669f04973fd54dc1db9d445a48c4df9a5f98cb7e423e58cc74cd02caa3169"
+  },
+  "black_box/episode_0019_cam_high.mp4": {
+    "bytes": 9432806,
+    "sha256": "7d049ed8b89d60508b81a45407fbdd49e81d30427503a33f42fc70917f942878"
+  },
+  "black_box/episode_0020.npz": {
+    "bytes": 91082,
+    "sha256": "a05d4fc7b8cbad80d3351d22f153689e62593fe678aae90c79f76c3f32984c9c"
+  },
+  "black_box/episode_0020_cam_front.mp4": {
+    "bytes": 3239842,
+    "sha256": "07c8f59f77bf847cfeccbbe7b9c8068519659ab3f0f75ff467dde0ac4dd94453"
+  },
+  "black_box/episode_0020_cam_high.mp4": {
+    "bytes": 7084329,
+    "sha256": "56f8a571b5cd2f870a8211f8378fa6eb0a13893fae4a428b297c2f1c54f348d2"
+  },
+  "black_box/episode_0021.npz": {
+    "bytes": 85249,
+    "sha256": "d0242805d4304666e26e3799d040541c139522e74ae3f7fa6bacd47349137e6c"
+  },
+  "black_box/episode_0021_cam_front.mp4": {
+    "bytes": 3213968,
+    "sha256": "c5d0c9d31c7dfb339ee00fcead6f9dcd2bf6cfbddc9635fd3fc22de9b7ff26f6"
+  },
+  "black_box/episode_0021_cam_high.mp4": {
+    "bytes": 6593407,
+    "sha256": "813cdfea62cdc678fc323d0184693e7828a66c35630b562fca3d52b7bc382f5b"
+  },
+  "black_box/episode_0022.npz": {
+    "bytes": 80953,
+    "sha256": "6f20cde6be4ff12a8265458501b4e961903a97401d141db2b4458c6a981f88b4"
+  },
+  "black_box/episode_0022_cam_front.mp4": {
+    "bytes": 3133959,
+    "sha256": "b4bce5a3c0484b4f3b39966adca0c37dfada54e4003f8ceca1bc3cfd3ba39ffd"
+  },
+  "black_box/episode_0022_cam_high.mp4": {
+    "bytes": 6520183,
+    "sha256": "ff2b0130b5c38b981c30f48cd65c5d1ab7cd06d464894fb9eff92d681be02cb8"
+  },
+  "black_box/episode_0023.npz": {
+    "bytes": 74836,
+    "sha256": "903bb1c223b62a2b062241763781d68eb8283687f57c84db36b9c80667fafab4"
+  },
+  "black_box/episode_0023_cam_front.mp4": {
+    "bytes": 2767357,
+    "sha256": "a22ef3f32840d58c9054b07d7b9b9c2782c28d06e91d535cc398d2b52990b35d"
+  },
+  "black_box/episode_0023_cam_high.mp4": {
+    "bytes": 5784784,
+    "sha256": "da8d8abd7e088730b1dc14945cf9ba525a075fdb354b8062ee3589986c8d6b29"
+  },
+  "black_box/episode_0024.npz": {
+    "bytes": 60353,
+    "sha256": "dc97ebcc827d16ca8e7ebed3697fcc6c32f3598ee5b6d3880c760cbc5952ba34"
+  },
+  "black_box/episode_0024_cam_front.mp4": {
+    "bytes": 2574292,
+    "sha256": "a9e97c93ab7ba0baf2895f70943a7e42a41a32ba2c7cdd89a25ac90a00e62fd9"
+  },
+  "black_box/episode_0024_cam_high.mp4": {
+    "bytes": 4634812,
+    "sha256": "e1bc6a0fcdd0bb7d5f44f98635a0e3145cbd81a30f4d276057d764b5d0b43d70"
+  },
+  "black_box/episode_0025.npz": {
+    "bytes": 99590,
+    "sha256": "c3c60be8cc0626f4ef7a9ebf6c7bf03c3be21d2db3b7bbdbcce64bd925833f99"
+  },
+  "black_box/episode_0025_cam_front.mp4": {
+    "bytes": 3765542,
+    "sha256": "4e7e24df901c28f947a879f33bc29627f08b032911f65e7e9fe5658f36734faa"
+  },
+  "black_box/episode_0025_cam_high.mp4": {
+    "bytes": 7855756,
+    "sha256": "21ff55c62d46fa1c977ed5fc78889778e21e46bb0b7b66b8dfc3510082b2c9fa"
+  },
+  "black_box/episode_0026.npz": {
+    "bytes": 93031,
+    "sha256": "5c1a8e20b5140476fd8e202133528458bafbc21b3c43b6de7e3dc7a4eb673a6b"
+  },
+  "black_box/episode_0026_cam_front.mp4": {
+    "bytes": 3015317,
+    "sha256": "5c7a961b1bcc6776877d73037a6c7ad09044ba6f369ba72d89c147f3450ccef5"
+  },
+  "black_box/episode_0026_cam_high.mp4": {
+    "bytes": 7051008,
+    "sha256": "7c33c79eb0d2fdee857bbb961980101d17097f788764f0c6ba9dbb521aa9a7db"
+  },
+  "black_box/episode_0027.npz": {
+    "bytes": 91141,
+    "sha256": "d9867c204d54f63eb7bc1a13fb8df9ba6c14adb713eee788f544466a4367bc18"
+  },
+  "black_box/episode_0027_cam_front.mp4": {
+    "bytes": 3640994,
+    "sha256": "5444053bce3adaa558e4f504c6a28b572544862ae65f1121e9a291a18f3d040f"
+  },
+  "black_box/episode_0027_cam_high.mp4": {
+    "bytes": 7203517,
+    "sha256": "c70924f98f2df64b6cadc54956d94223711a47018ed18ca26eeb9dacfd8002bb"
+  },
+  "black_box/episode_0028.npz": {
+    "bytes": 78660,
+    "sha256": "b9dafb51097091479c9c533b1005d74e1f1f1069539f9b8d75cd55b6547b044b"
+  },
+  "black_box/episode_0028_cam_front.mp4": {
+    "bytes": 3441968,
+    "sha256": "ace8c4da1459022f0826c76212435a823a46ad8cf4063ce0e8f68ce5eaaa37fc"
+  },
+  "black_box/episode_0028_cam_high.mp4": {
+    "bytes": 6308336,
+    "sha256": "601de2a9f5e636f6cf1f51e71fb730712dc6ad03caf25cfa2d5e8b2632caec18"
+  },
+  "black_box/episode_0029.npz": {
+    "bytes": 73670,
+    "sha256": "b4ce00cd0622fccc4b7a6dd214da0e057642692a7b3aab0146dbdfcd401b617f"
+  },
+  "black_box/episode_0029_cam_front.mp4": {
+    "bytes": 3438172,
+    "sha256": "4a37525ad8fc2f3fb840464615b68d996ff0a4e1157c6f8287084f4009203fee"
+  },
+  "black_box/episode_0029_cam_high.mp4": {
+    "bytes": 5803532,
+    "sha256": "17dfaaa35033a7350fe21f16ddc6ed83b7399469d4c285fe5f73b11eadc22c06"
+  },
+  "black_box/episode_0030.npz": {
+    "bytes": 66870,
+    "sha256": "3f93d651c0441e28948baede372a9b82d3459a967eb6febe4e190e007d46a474"
+  },
+  "black_box/episode_0030_cam_front.mp4": {
+    "bytes": 2752749,
+    "sha256": "b6a2625736b9a1781815a2dea78c2c10a3d15eefb1758fd7c19c59fa6e10c2c0"
+  },
+  "black_box/episode_0030_cam_high.mp4": {
+    "bytes": 5136601,
+    "sha256": "05d5a8f12d3d54d242dca50e7e5ad7062f665dac31fc7ad49e2c19452c615885"
+  },
+  "black_box/episode_0031.npz": {
+    "bytes": 81367,
+    "sha256": "f6037de9947c71cbd86541132df77bfd3d1d16167672f3c0c35b788a5261d4a4"
+  },
+  "black_box/episode_0031_cam_front.mp4": {
+    "bytes": 3146315,
+    "sha256": "42f0eb39167ad4bb9b2229495022811991dc8c98802b288085897b70cb257756"
+  },
+  "black_box/episode_0031_cam_high.mp4": {
+    "bytes": 6309539,
+    "sha256": "10ba6eaccb5a318bb7e39f0450d4b5768c3d10eeb8ebf069d72a243bb10916e3"
+  },
+  "black_box/episode_0032.npz": {
+    "bytes": 108514,
+    "sha256": "c4acec2ea1edc564e4590ef9c606789f98a63c89dc672f94e3a09dd5df1474ed"
+  },
+  "black_box/episode_0032_cam_front.mp4": {
+    "bytes": 4410243,
+    "sha256": "73b30b5d955dfcded9e52724cff6d5ec3346c3852f3a9e018fd32c5b275e7148"
+  },
+  "black_box/episode_0032_cam_high.mp4": {
+    "bytes": 8384342,
+    "sha256": "c0d7906461a62129ecfab81135c84403bca4a06228faa8de5361ef7cf29c684f"
+  },
+  "black_box/episode_0033.npz": {
+    "bytes": 104549,
+    "sha256": "5c1dbbaa5d3bdebe584c798746f12a071d374ed9ff01e3fefc58c8cef4dea19b"
+  },
+  "black_box/episode_0033_cam_front.mp4": {
+    "bytes": 3610517,
+    "sha256": "1847bde02e57900ad3dd46302ef9971d54914e873059649e6be761adac7dde61"
+  },
+  "black_box/episode_0033_cam_high.mp4": {
+    "bytes": 8219219,
+    "sha256": "62f51d99c52895ffec477fbc18f7f5fd7d0543a59ff106b5c3cffb10036d2fd2"
+  },
+  "black_box/episode_0034.npz": {
+    "bytes": 83090,
+    "sha256": "bf74f109bb28849374d576d4cda4ccbdd3a30603a95c4d02cbc12d2518e006a6"
+  },
+  "black_box/episode_0034_cam_front.mp4": {
+    "bytes": 3422891,
+    "sha256": "8564c259283eb239b4bcd34d7ca6ca9b8b3e46d534d9b29c099bd1a18f33987c"
+  },
+  "black_box/episode_0034_cam_high.mp4": {
+    "bytes": 6355240,
+    "sha256": "c659bc7388d7ee638cdc4d967fd4f71cf76f5ad3a9b3de25a013504fbf9c6139"
+  },
+  "black_box/episode_0035.npz": {
+    "bytes": 75770,
+    "sha256": "800619064d065c56b0ba403e755c80c96ec99a25e8b38fd0ca9e114b7504262b"
+  },
+  "black_box/episode_0035_cam_front.mp4": {
+    "bytes": 3015402,
+    "sha256": "c4d7948a2e637412599ee5d4b4bf1e062dd8bd3ffdb984feba6b3d9ecca5cff2"
+  },
+  "black_box/episode_0035_cam_high.mp4": {
+    "bytes": 5660014,
+    "sha256": "4cb995618550e19fb0213c52ebb0a0f570fca37f6f777f1500fc5731b5a1442e"
+  },
+  "black_box/episode_0036.npz": {
+    "bytes": 71685,
+    "sha256": "71901029427c07ed90e89154b7554f3067a4c7c202992f8b119a70d4cf3c8726"
+  },
+  "black_box/episode_0036_cam_front.mp4": {
+    "bytes": 2754488,
+    "sha256": "c05971d2007614509873fba456fb092c9f73f6ea48f14c9e02ff20d4e2373c37"
+  },
+  "black_box/episode_0036_cam_high.mp4": {
+    "bytes": 5490666,
+    "sha256": "c446d567273936563bfc60d7b2e9aa5f0f5637b53d02179d84740e8904852bcc"
+  },
+  "black_box/episode_0037.npz": {
+    "bytes": 91438,
+    "sha256": "3fd2ecf76cd4a4907e8a4c9871c66622b2aaf3ff742e529a7f6883e60b28f58d"
+  },
+  "black_box/episode_0037_cam_front.mp4": {
+    "bytes": 3379426,
+    "sha256": "91b0fdc5f0980f8decd719b2a73a1964cf84f3fcc76d5dbdd663c07a380ada73"
+  },
+  "black_box/episode_0037_cam_high.mp4": {
+    "bytes": 6785803,
+    "sha256": "c3882022a6e2a73348e9452643959ab23b37badc1484029b6d6b38bb31590693"
+  },
+  "black_box/episode_0038.npz": {
+    "bytes": 77642,
+    "sha256": "cc338eb570652cc32dd8e377549f8a6c5331d478bd64ec78db8c7925f7fe1312"
+  },
+  "black_box/episode_0038_cam_front.mp4": {
+    "bytes": 2759931,
+    "sha256": "82bfdca9162984305a3e198f638750296cb7f537559c2a49a2e4335362662750"
+  },
+  "black_box/episode_0038_cam_high.mp4": {
+    "bytes": 5858346,
+    "sha256": "044f13ad58b1fb77fc218fdc68687a57639bc1a3ec0cc809d081b9addc559006"
+  },
+  "black_box/episode_0039.npz": {
+    "bytes": 85026,
+    "sha256": "4c5c4a2d64683a29e3e0b1c62da486a6a7ac332ee34f7240ace58a611de2617b"
+  },
+  "black_box/episode_0039_cam_front.mp4": {
+    "bytes": 3607700,
+    "sha256": "dcf5647e851c5c57716b44f953bde43b506656e4fba238f4ad8226883646ab81"
+  },
+  "black_box/episode_0039_cam_high.mp4": {
+    "bytes": 6315868,
+    "sha256": "92227a3f6d84dedf6ae5e2618b451f3bae678b52111e1507894173141b82ecea"
+  },
+  "black_box/episode_0040.npz": {
+    "bytes": 82644,
+    "sha256": "be2b8909016c44c416b12c554eb28bad1f01d1c9864276ad5c6c74d642c39e79"
+  },
+  "black_box/episode_0040_cam_front.mp4": {
+    "bytes": 3915505,
+    "sha256": "e917d589d0f5a04daf1013d253b075b8a6268cadae35c0c9b50e1bd7b9c3e2c9"
+  },
+  "black_box/episode_0040_cam_high.mp4": {
+    "bytes": 6306452,
+    "sha256": "5964204bca8675a9ef945244e514dcf830e1550d304de83ccbe8aff33d092962"
+  },
+  "black_box/episode_0041.npz": {
+    "bytes": 96883,
+    "sha256": "e82479634183b60dc3cca1782e7ab30f6852ece6d8b1651fa59de37901798d19"
+  },
+  "black_box/episode_0041_cam_front.mp4": {
+    "bytes": 4132073,
+    "sha256": "85f1503dbf8c0892f0180e446068f23eef2ae902617f934bc42b75b5ee15e637"
+  },
+  "black_box/episode_0041_cam_high.mp4": {
+    "bytes": 7685475,
+    "sha256": "771809addafd9e6a04d9b08194be9a26025e7e0d8b0c1cb3297ca433fe54c4c4"
+  },
+  "black_box/episode_0042.npz": {
+    "bytes": 69620,
+    "sha256": "7f9477271bb0163595df4ed2c14eaa164eadab5dffe272369f6ce042045222e4"
+  },
+  "black_box/episode_0042_cam_front.mp4": {
+    "bytes": 2833407,
+    "sha256": "810f5420b95a39e8ece34f7615a05722326e7824f5cf898bdb61aa28ba1250b1"
+  },
+  "black_box/episode_0042_cam_high.mp4": {
+    "bytes": 5321073,
+    "sha256": "cdf96ffca41882abb5ba1c525262257085106d7b5fdc31853e1b1d6b1059cd6b"
+  },
+  "black_box/episode_0043.npz": {
+    "bytes": 134747,
+    "sha256": "e17ef95972ae43bdb6bc4d42099da155cdf2d84f77567f6c30976b200250c22a"
+  },
+  "black_box/episode_0043_cam_front.mp4": {
+    "bytes": 6233819,
+    "sha256": "c7e343406aaf2faaa2670ee3a8893c811e8c9a3c9bfdb70aab6831ca391ebfba"
+  },
+  "black_box/episode_0043_cam_high.mp4": {
+    "bytes": 10650100,
+    "sha256": "295ea289d2cd758d78154a1f3b780a119e7f316fb3dd645e49cfa293a029ffda"
+  },
+  "black_box/episode_0044.npz": {
+    "bytes": 78800,
+    "sha256": "f639dab147cc3406178563a55143da45230b537269db7debdaa9a250c758c956"
+  },
+  "black_box/episode_0044_cam_front.mp4": {
+    "bytes": 3614378,
+    "sha256": "58383be0988408d5de1851fea7074ccb3bc2f2c570fae8dbfbe0ebbcd14ef9ba"
+  },
+  "black_box/episode_0044_cam_high.mp4": {
+    "bytes": 6147516,
+    "sha256": "ef0e2c9e1e5fa9ac7176d99ae9b003e33d08ce111f38ab732d531e16d6bfe102"
+  },
+  "black_box/episode_0045.npz": {
+    "bytes": 70426,
+    "sha256": "921310380298f8744c6a5488f707b90e3d19c960e5c925ba91f995bb106ca497"
+  },
+  "black_box/episode_0045_cam_front.mp4": {
+    "bytes": 2839083,
+    "sha256": "f899b4b98f20d97992541044feb96b0f8ce764ac7e8be1a9ebd148afd81d61cc"
+  },
+  "black_box/episode_0045_cam_high.mp4": {
+    "bytes": 5281202,
+    "sha256": "eb34a1dc6d6393ce778fe1454e2bc55249f8516f4a94348c6f5dddd7539cca0d"
+  },
+  "black_box/episode_0046.npz": {
+    "bytes": 76635,
+    "sha256": "607816c8613a842bd053901717748ceb74294bd8d77137a8a3ef32080a82fd2d"
+  },
+  "black_box/episode_0046_cam_front.mp4": {
+    "bytes": 2897512,
+    "sha256": "861c3def8dd5afb751f8a19a0b258a4fa344ddfc9c9cb50ded6e7bd8231bee49"
+  },
+  "black_box/episode_0046_cam_high.mp4": {
+    "bytes": 5599982,
+    "sha256": "da7108f5a411f0609bb7d387aa9b10464eaf26a5025c3c9040c252d8be0d7578"
+  },
+  "black_box/episode_0047.npz": {
+    "bytes": 107566,
+    "sha256": "fa8b8ac751e07dd44e336bf23baeef9077430916deaff598e159bd49ac04d797"
+  },
+  "black_box/episode_0047_cam_front.mp4": {
+    "bytes": 4647149,
+    "sha256": "df3d708a9d50ed11fb13b7614aa751e85491e938701c455942b5220ceb68d6ce"
+  },
+  "black_box/episode_0047_cam_high.mp4": {
+    "bytes": 8183737,
+    "sha256": "cea5c4bf20e06338ae12e9cc8e714d5d2b670b600886475b3d1cec2d363f66c7"
+  },
+  "black_box/episode_0048.npz": {
+    "bytes": 65494,
+    "sha256": "2f0d063bdc4c3071717ddf05908b8f18bd99a7b55ed1df1e647cb4c453ceaf35"
+  },
+  "black_box/episode_0048_cam_front.mp4": {
+    "bytes": 2415247,
+    "sha256": "128a2b8306cf278131ac8773f9388db5ab5b8d1c8459f1f131b197b18f884e56"
+  },
+  "black_box/episode_0048_cam_high.mp4": {
+    "bytes": 4934601,
+    "sha256": "e6528ec71140a55d1a7bf1546c564c38c83883f44dab56e00142a204810e6ba7"
+  },
+  "black_box/episode_0049.npz": {
+    "bytes": 88909,
+    "sha256": "3b53e23db49899c71472eb522a13c67630a6c675ae2cd99bef35b596f8fc8b70"
+  },
+  "black_box/episode_0049_cam_front.mp4": {
+    "bytes": 3825916,
+    "sha256": "8c5bb35c0a61e5b4777a0d64e7f074bff8805744646c62b807f928e82fa3f32c"
+  },
+  "black_box/episode_0049_cam_high.mp4": {
+    "bytes": 6891347,
+    "sha256": "f779eaf3adaf7056a63fa6d6e5739248e93126b93529d239dcf3180f819ca4df"
+  },
+  "black_sleeve/dataset.json": {
+    "bytes": 175,
+    "sha256": "2d7495deb0d4d3635e477b892b0b0fa3dfad5a8961abdf205586d7249d783051"
+  },
+  "black_sleeve/episode_0000.npz": {
+    "bytes": 131841,
+    "sha256": "922b1116c9ebcb225d9fe69d685f9049c29ca7e41c37f0af8b0f5f947f5945c7"
+  },
+  "black_sleeve/episode_0000_cam_front.mp4": {
+    "bytes": 5207606,
+    "sha256": "9946bd42d0add26839bdcdfc08b525a1b22195850a433d5b081bd4b21c5c8f74"
+  },
+  "black_sleeve/episode_0000_cam_high.mp4": {
+    "bytes": 10657616,
+    "sha256": "f0052392eed82d0a820da27342e47da48151cbbb1b728d82d14e5f38477b0b55"
+  },
+  "black_sleeve/episode_0001.npz": {
+    "bytes": 124166,
+    "sha256": "a574407174eb4fe60873b2f07727c1e8ff73086b9d3a724252e64ba398c63064"
+  },
+  "black_sleeve/episode_0001_cam_front.mp4": {
+    "bytes": 4710188,
+    "sha256": "b8b233cc9cd28aefba2734dca94e36318dc5aa9044b5547edd20e4152565e34c"
+  },
+  "black_sleeve/episode_0001_cam_high.mp4": {
+    "bytes": 10287270,
+    "sha256": "ebcde27770c06043f00dc8834a9cef2bc5e24bcc02693852744490e546b2c743"
+  },
+  "black_sleeve/episode_0002.npz": {
+    "bytes": 119584,
+    "sha256": "5af9e99ca2f295d5b77604dbcf95c11fcedcf740e0cd7b714bf327942af1ec21"
+  },
+  "black_sleeve/episode_0002_cam_front.mp4": {
+    "bytes": 5023337,
+    "sha256": "3f0994f3d0e2282b8ea49a7dc73a01755e648e2da1790f6d0bc8e865a3b83e57"
+  },
+  "black_sleeve/episode_0002_cam_high.mp4": {
+    "bytes": 9663986,
+    "sha256": "e83b8017f8746096bf8c9ef4e771434e0b21b94aefd30953143e59c4b6b6bdc3"
+  },
+  "black_sleeve/episode_0003.npz": {
+    "bytes": 107680,
+    "sha256": "7ac5f3a126b59a65da9bfbbaaf6872752d28f9eccc8073ceace5c0ae391bb039"
+  },
+  "black_sleeve/episode_0003_cam_front.mp4": {
+    "bytes": 3763977,
+    "sha256": "69a4c86636223183fecda594b19d037f76b2184a7fa9b583385a5047e6fecca7"
+  },
+  "black_sleeve/episode_0003_cam_high.mp4": {
+    "bytes": 8578603,
+    "sha256": "ff7ee6f633215348dc927b7124b162944af333a95e8a79233323ebd5b679ec43"
+  },
+  "black_sleeve/episode_0004.npz": {
+    "bytes": 113421,
+    "sha256": "6db010c094c672d99a00cfdd46095cad6bf42c2895f8da0102d7e1af557b367a"
+  },
+  "black_sleeve/episode_0004_cam_front.mp4": {
+    "bytes": 4505955,
+    "sha256": "a9441e6504222d07a288ce24f87568e716edfbe76ce61307877a0cb9aed10f26"
+  },
+  "black_sleeve/episode_0004_cam_high.mp4": {
+    "bytes": 8680631,
+    "sha256": "b99234a01b94a493c12f6f258c2cc7a500be7e35bd78d8ea429b60cc9dae5709"
+  },
+  "black_sleeve/episode_0005.npz": {
+    "bytes": 138538,
+    "sha256": "e9938e6458d86818d88da01bf8d7312e432e66eef89f876943669b30744f9fb4"
+  },
+  "black_sleeve/episode_0005_cam_front.mp4": {
+    "bytes": 4925183,
+    "sha256": "ec5f232505196db68710636b7f92fa02ee7483af1b816c6b7cc40489fef152fb"
+  },
+  "black_sleeve/episode_0005_cam_high.mp4": {
+    "bytes": 10671313,
+    "sha256": "880b64a3677249495daf775e395534a589c78f2317ffe5c13758d983e0ac228b"
+  },
+  "black_sleeve/episode_0006.npz": {
+    "bytes": 121429,
+    "sha256": "1ed573ee416c1428cad101640032e447e7902658930082bad48d94480dd3f6b8"
+  },
+  "black_sleeve/episode_0006_cam_front.mp4": {
+    "bytes": 4975415,
+    "sha256": "a6dfbcb070538ce7389780bb794b5d71a10175682c02ede202b60fe344a091a5"
+  },
+  "black_sleeve/episode_0006_cam_high.mp4": {
+    "bytes": 9601204,
+    "sha256": "d99f61e8ca79a7f03cfc29440b99de55853794aff1c7d8c145394832c6fb64ac"
+  },
+  "black_sleeve/episode_0007.npz": {
+    "bytes": 85306,
+    "sha256": "e8db94b36301333889b1e0918b39b268cbd17d719e48ef976d346d0e01692920"
+  },
+  "black_sleeve/episode_0007_cam_front.mp4": {
+    "bytes": 3089099,
+    "sha256": "253e14aa34f546bc77136d9f49b307796a493f3662c96df19a6f00ca2dd813f3"
+  },
+  "black_sleeve/episode_0007_cam_high.mp4": {
+    "bytes": 6414616,
+    "sha256": "aba013b27b7da4150434da1c42ec0727ebe7af23f0f7e6b24fc3a2544b136922"
+  },
+  "black_sleeve/episode_0008.npz": {
+    "bytes": 114095,
+    "sha256": "5e06044ece9934561652e6a06741e11c5d16feef8a3157a60feb5fb93716ff36"
+  },
+  "black_sleeve/episode_0008_cam_front.mp4": {
+    "bytes": 4486104,
+    "sha256": "89054e25fb6e0d0e1c78a13105794a17151c6ab0f3275e9daee15464570414df"
+  },
+  "black_sleeve/episode_0008_cam_high.mp4": {
+    "bytes": 8536556,
+    "sha256": "fcc1bf2b08f213dd6aba38067b9fac03a2fde73a64509dd47691ed35d9d9ebaf"
+  },
+  "black_sleeve/episode_0009.npz": {
+    "bytes": 89683,
+    "sha256": "3b96ddbb4189768eb9953315197085860cfeb83494a467391494c761b891dd90"
+  },
+  "black_sleeve/episode_0009_cam_front.mp4": {
+    "bytes": 3678475,
+    "sha256": "b0e15f9a2443faa7c2039c627ff1cec3b9caad8fa56b1ddb5dc29d208cf52968"
+  },
+  "black_sleeve/episode_0009_cam_high.mp4": {
+    "bytes": 6877368,
+    "sha256": "7cb4529ac1fc78dd9d4afc195336a3327282d849585d18f3a426207096c291ee"
+  },
+  "black_sleeve/episode_0010.npz": {
+    "bytes": 106060,
+    "sha256": "c134e4c33ea2a040269e3268b8add8ce1feab360efce7fc24b7aa67c2a82154a"
+  },
+  "black_sleeve/episode_0010_cam_front.mp4": {
+    "bytes": 3865461,
+    "sha256": "3630eef357db045e8fe7e7a60b6d60797bbf961bd7b4acd9aefd8743190d31c6"
+  },
+  "black_sleeve/episode_0010_cam_high.mp4": {
+    "bytes": 8136577,
+    "sha256": "bf741f095a6400b538764e46e0c97a6d092fece88ee043bad600ade6fabb4747"
+  },
+  "black_sleeve/episode_0011.npz": {
+    "bytes": 142868,
+    "sha256": "6596e0b4308fdad37db97106fd3825b660c42a10adb4ea18e052288ccfa91161"
+  },
+  "black_sleeve/episode_0011_cam_front.mp4": {
+    "bytes": 4686590,
+    "sha256": "9c1fd28366831f7fdda694be14b4d7f1183698cd61f7c374fd39c28e6174b859"
+  },
+  "black_sleeve/episode_0011_cam_high.mp4": {
+    "bytes": 11268554,
+    "sha256": "525f2ab8d14ccec49da7b90255dee48ea385bbf2f9f441927caf19e86e7067e3"
+  },
+  "black_sleeve/episode_0012.npz": {
+    "bytes": 130661,
+    "sha256": "c11ea7716d34e2ca13737477add2f5630e5c5a35584a97530e64bbf7c67c7dab"
+  },
+  "black_sleeve/episode_0012_cam_front.mp4": {
+    "bytes": 4568042,
+    "sha256": "fd44a508680b5ee938c95fa87bb09fe7baf78953f1e609a58ae97d1f280c069d"
+  },
+  "black_sleeve/episode_0012_cam_high.mp4": {
+    "bytes": 10264903,
+    "sha256": "47c95bc27ef2a97b14e672bcc48e7630100dab30208f2f01c87fda91e029a34f"
+  },
+  "black_sleeve/episode_0013.npz": {
+    "bytes": 128968,
+    "sha256": "9afbc92fc6d4b348bee9b3fc9764f5cdf5ac3b69c7c4e4b58f73a7643858cb2a"
+  },
+  "black_sleeve/episode_0013_cam_front.mp4": {
+    "bytes": 4430094,
+    "sha256": "1a050226379dda29dddd9e0b97ababa0b365b0c15f15ccdca3a0c1206df0e979"
+  },
+  "black_sleeve/episode_0013_cam_high.mp4": {
+    "bytes": 10271518,
+    "sha256": "9dc947ca85533224519abe2348711a9ce2cc453ecd8e75327991e2792f7b27a3"
+  },
+  "black_sleeve/episode_0014.npz": {
+    "bytes": 137957,
+    "sha256": "64f80597bd6702c2a90812051ef77f370a3f04baa2aab7897e2cc8ba3dce0dee"
+  },
+  "black_sleeve/episode_0014_cam_front.mp4": {
+    "bytes": 5064360,
+    "sha256": "68842482f043a73b2f8a4b57ea84ac217d33180003246f547b3f2758d85b17be"
+  },
+  "black_sleeve/episode_0014_cam_high.mp4": {
+    "bytes": 10794613,
+    "sha256": "fdb1e5d699c9551dd0163ce25d4e3554c4d6658ab529c38997e597df715665a2"
+  },
+  "black_sleeve/episode_0015.npz": {
+    "bytes": 106048,
+    "sha256": "53191b40b45993f6e4bd6247e0e5bd29c0b7ba21e908e7b7bbcf90f983efcd71"
+  },
+  "black_sleeve/episode_0015_cam_front.mp4": {
+    "bytes": 4117028,
+    "sha256": "314cb4f9fc449ccf696a8229c702d6e55a347ed8ef4c0286ee1959808af7d2ce"
+  },
+  "black_sleeve/episode_0015_cam_high.mp4": {
+    "bytes": 8296195,
+    "sha256": "b63bed6f760fa9865220534f7f0c66756572691ad0c2b8b3b0518d0ef3b68711"
+  },
+  "black_sleeve/episode_0016.npz": {
+    "bytes": 108539,
+    "sha256": "2fc85dfa0b0acc12c81b6602853442432923571c58b7d2e47e8a039ca0c8ed1c"
+  },
+  "black_sleeve/episode_0016_cam_front.mp4": {
+    "bytes": 4096493,
+    "sha256": "47f7e211aa50214f4c688b3cc92a50a43f99c63ac8c912eea3ca8bb14d498bf9"
+  },
+  "black_sleeve/episode_0016_cam_high.mp4": {
+    "bytes": 8437702,
+    "sha256": "ebfe8557f2d05462c80bd751f79ad9676579d935a6b99ba7a881b67f99ef385a"
+  },
+  "black_sleeve/episode_0017.npz": {
+    "bytes": 115995,
+    "sha256": "a11b1f89e4b43cb62fb5c6d20a9768e99669a6976501a2071535fd9bda8312ff"
+  },
+  "black_sleeve/episode_0017_cam_front.mp4": {
+    "bytes": 4454902,
+    "sha256": "e046d2b9c6e3ce3068666107c3fdb547c0cbe78a0909829a98405b0760cef6cf"
+  },
+  "black_sleeve/episode_0017_cam_high.mp4": {
+    "bytes": 9209494,
+    "sha256": "3931b97181f522fcc8690adbf415e3b0da89fe4554e99a7fb4e8ca810a520e6a"
+  },
+  "black_sleeve/episode_0018.npz": {
+    "bytes": 81463,
+    "sha256": "ac0f25647222510ab0016b775052be2fb3a2fa6bd34d582ff5e60ccfe0159574"
+  },
+  "black_sleeve/episode_0018_cam_front.mp4": {
+    "bytes": 2810497,
+    "sha256": "2da114b428623049cbbcb878a79a2f41856f65a425d05d214bd009f829f884ea"
+  },
+  "black_sleeve/episode_0018_cam_high.mp4": {
+    "bytes": 6285418,
+    "sha256": "70c373707acbe0f69f989a60c1dd3b485d0293f8fc7cefd2e74a2ddbc41905e9"
+  },
+  "black_sleeve/episode_0019.npz": {
+    "bytes": 88540,
+    "sha256": "12a8869fd97af1be949bd84066149a689eb3f95be346ba5c2c9c9170cbef2452"
+  },
+  "black_sleeve/episode_0019_cam_front.mp4": {
+    "bytes": 3304552,
+    "sha256": "cf89a442191e45b4a4c56fc26f4b528d2243d007a15c697d9c8df32dc8c809f2"
+  },
+  "black_sleeve/episode_0019_cam_high.mp4": {
+    "bytes": 6789126,
+    "sha256": "9ff0141f978c96269aec9f2a1a511b142aa8e906b10a839afd1da54f9ef44e81"
+  },
+  "black_sleeve/episode_0020.npz": {
+    "bytes": 125023,
+    "sha256": "edd87d25d83211284d9fb9274b218ec7b34a2fe7a2eccb39672a2e62e1cdfba9"
+  },
+  "black_sleeve/episode_0020_cam_front.mp4": {
+    "bytes": 4219646,
+    "sha256": "7d93c5b0b649033ee2f57ed89dfce90ae89693f20fbb384cc77a963ed1bae4d0"
+  },
+  "black_sleeve/episode_0020_cam_high.mp4": {
+    "bytes": 9676049,
+    "sha256": "472d91161c7457fcedd993a623ba1124fb57e8ddce37a66c86f3f04537bd4d3a"
+  },
+  "black_sleeve/episode_0021.npz": {
+    "bytes": 110010,
+    "sha256": "fb2bdfb039f5e2a42ea05de75ff8c8e050abc2114423d69e16ef60272647173d"
+  },
+  "black_sleeve/episode_0021_cam_front.mp4": {
+    "bytes": 3154511,
+    "sha256": "362db6064f4f304ffc01a78685527a792bce5f45d3d8a4f52afc81ccd57f30b6"
+  },
+  "black_sleeve/episode_0021_cam_high.mp4": {
+    "bytes": 8346542,
+    "sha256": "80df01efdfde4441f675e21180d00560e695c4005e86240fdef70588532eee6e"
+  },
+  "black_sleeve/episode_0022.npz": {
+    "bytes": 79340,
+    "sha256": "07a4d88e1a0c2e63f2d91741aade530e234cf9b6ee87a8e818f93465530dadc7"
+  },
+  "black_sleeve/episode_0022_cam_front.mp4": {
+    "bytes": 2578625,
+    "sha256": "78b984ade1891b133e4d55e39ad15b17c794cd331c714fa012d464466f85be3e"
+  },
+  "black_sleeve/episode_0022_cam_high.mp4": {
+    "bytes": 6001315,
+    "sha256": "424932cb824e909dc72e128d1fa239f6c52bd4cb538ece83c147f36a4d565396"
+  },
+  "black_sleeve/episode_0023.npz": {
+    "bytes": 109221,
+    "sha256": "18d67f41572d7349ad625ea6eb60e26f9d8c650e8df87ecca1178ffd3eb7c3c4"
+  },
+  "black_sleeve/episode_0023_cam_front.mp4": {
+    "bytes": 3202677,
+    "sha256": "bfbe1715e11058ea0601a3ee942f6b27922fcc2fcde58a352850808ec11ded7e"
+  },
+  "black_sleeve/episode_0023_cam_high.mp4": {
+    "bytes": 8331166,
+    "sha256": "9a23135cf6a77fc1d3ac6383f4d6cb4fda0408fe6a7c9e7fc3d590aca86c3b5d"
+  },
+  "black_sleeve/episode_0024.npz": {
+    "bytes": 68334,
+    "sha256": "7d04e7bca854292d61783c11d19e746d2fb54b27d37d6136d9f57c4080592222"
+  },
+  "black_sleeve/episode_0024_cam_front.mp4": {
+    "bytes": 2175775,
+    "sha256": "30b13a2dee65f53f89c333122297a5b35d9888bc7b329cb4dda97c6df1f13e89"
+  },
+  "black_sleeve/episode_0024_cam_high.mp4": {
+    "bytes": 5060444,
+    "sha256": "ec3b77bd60ee711f46146046ebaec079a9f9075cdb29f01d1cd20a4bdb228226"
+  },
+  "black_sleeve/episode_0025.npz": {
+    "bytes": 81232,
+    "sha256": "185309bf4d9d797bb2819f7d6242b7c4c7a3346fdd4b4906164b93073be04279"
+  },
+  "black_sleeve/episode_0025_cam_front.mp4": {
+    "bytes": 2663278,
+    "sha256": "353d62f1dcad91dba1342ce45faecfd69d50bacaa5b3690fdc468f42aed7e2cd"
+  },
+  "black_sleeve/episode_0025_cam_high.mp4": {
+    "bytes": 6145187,
+    "sha256": "d8169b27e60949321821aa46849d338591baac679df9d6cf032c2bb25e3bdb41"
+  },
+  "black_sleeve/episode_0026.npz": {
+    "bytes": 78668,
+    "sha256": "9c91244ade718863f5408b2b8add0b17455e94e91a7c4218ae9cc074a01d5350"
+  },
+  "black_sleeve/episode_0026_cam_front.mp4": {
+    "bytes": 2495470,
+    "sha256": "98ee802fa3132fccb8f68d566216e03c4520c95ad9d331c1a8ba751b0317106f"
+  },
+  "black_sleeve/episode_0026_cam_high.mp4": {
+    "bytes": 5755441,
+    "sha256": "816f3eb705beaec57bbaef4ecd3cca9c0fe5c4a24885cbd07b65979c33dbc24d"
+  },
+  "black_sleeve/episode_0027.npz": {
+    "bytes": 103480,
+    "sha256": "01e0b6dd2f13ffaaae921794654ca6e88ea30263e243a8c5f1c28dba5966844e"
+  },
+  "black_sleeve/episode_0027_cam_front.mp4": {
+    "bytes": 3551642,
+    "sha256": "1f7f060f2ee75e808ba0310ac7506caf25022302ce4da046821b0536ef7ed84a"
+  },
+  "black_sleeve/episode_0027_cam_high.mp4": {
+    "bytes": 8918680,
+    "sha256": "2c046c9b2038b7bb4ff1de8af57fa572552830d3c7a480883951272d30697d7e"
+  },
+  "black_sleeve/episode_0028.npz": {
+    "bytes": 103499,
+    "sha256": "66475d6b44c7602c233978274952c5482ec2a97237edb8df608fb0dfe0510e15"
+  },
+  "black_sleeve/episode_0028_cam_front.mp4": {
+    "bytes": 3313786,
+    "sha256": "dd09bde3c507e749a4ae9deeae1a4f87bdad96e40fee5a19f5ae42a2df9af1de"
+  },
+  "black_sleeve/episode_0028_cam_high.mp4": {
+    "bytes": 10255833,
+    "sha256": "e01914adba460376841d0cc119b4f76ce2ca07bf18193eda350499929417691a"
+  },
+  "black_sleeve/episode_0029.npz": {
+    "bytes": 68925,
+    "sha256": "fab978b13fcf4739554726600fed91cd0b04caf4d358fb31883c15909dc306f3"
+  },
+  "black_sleeve/episode_0029_cam_front.mp4": {
+    "bytes": 2241829,
+    "sha256": "16e5a2a21fc21f02e7b45c851a0949622686aa54bc46cad45ffc25d3cf3a5ca5"
+  },
+  "black_sleeve/episode_0029_cam_high.mp4": {
+    "bytes": 6330280,
+    "sha256": "eacf8031bb8a929202ee9f76829a2cc13a163d32883e99b7b2d4f3a752571f95"
+  },
+  "black_sleeve/episode_0030.npz": {
+    "bytes": 67148,
+    "sha256": "a50341a18e993c072a633293b14780f44065335341f49d63c926230b827a6401"
+  },
+  "black_sleeve/episode_0030_cam_front.mp4": {
+    "bytes": 2239019,
+    "sha256": "23010726a31a2e496613d05d7d592ba5a6e4a4f83ddfa236019e9747c80a9ee7"
+  },
+  "black_sleeve/episode_0030_cam_high.mp4": {
+    "bytes": 6048867,
+    "sha256": "687d1d4cc38bcbab5df721467e9df931619f0d7df1beb909254b694475e2d93c"
+  },
+  "black_sleeve/episode_0031.npz": {
+    "bytes": 60409,
+    "sha256": "5c2b66efd8f5fd96a6a1e48734f7f4e51871e5e1cce8af6694cc0ef844de187c"
+  },
+  "black_sleeve/episode_0031_cam_front.mp4": {
+    "bytes": 2048785,
+    "sha256": "404c218fab010b5a33d500bc3e3158ba4a3f908157187f3690d499ec51353b05"
+  },
+  "black_sleeve/episode_0031_cam_high.mp4": {
+    "bytes": 5442182,
+    "sha256": "b7488314bcd037eca83b71d783014ace339106af8a56e24409da89fa9a4e3db0"
+  },
+  "black_sleeve/episode_0032.npz": {
+    "bytes": 75515,
+    "sha256": "30dd600802249daa98d0cf96bd4e0b8112504eee5a281c6f86c4ec97657d6ab9"
+  },
+  "black_sleeve/episode_0032_cam_front.mp4": {
+    "bytes": 2592578,
+    "sha256": "0a8ba29e5d48e20d5ec9ecc333c9cde0637e661d689785e953d05ea025531006"
+  },
+  "black_sleeve/episode_0032_cam_high.mp4": {
+    "bytes": 6895087,
+    "sha256": "79701a58bc56693253fa7e6c979e962ffca332cbdf72f1e7f1ecf261bf011913"
+  },
+  "black_sleeve/episode_0033.npz": {
+    "bytes": 76015,
+    "sha256": "5014d9671a71c61e6f080e110554705430ad73b4b59dc23dab9f824801abdcdf"
+  },
+  "black_sleeve/episode_0033_cam_front.mp4": {
+    "bytes": 2410349,
+    "sha256": "2098388f9cf309c637ab8d8a387ca3c8f346e140541f9a5450e48ccc9b813fb4"
+  },
+  "black_sleeve/episode_0033_cam_high.mp4": {
+    "bytes": 6959082,
+    "sha256": "41af20bd6cc702347fc2e978f12cb8d1954d8498a67e7c20e7d89c985c91b5e7"
+  },
+  "black_sleeve/episode_0034.npz": {
+    "bytes": 87887,
+    "sha256": "4a70d2d07789352e16fef1fb111b95990089f7a5a057587e7bfc6c2f0f665927"
+  },
+  "black_sleeve/episode_0034_cam_front.mp4": {
+    "bytes": 2860362,
+    "sha256": "7dd7c99eacaf65b361c420eeb91a28d41e1c41c240a788d08ecc9a8a75618801"
+  },
+  "black_sleeve/episode_0034_cam_high.mp4": {
+    "bytes": 8240440,
+    "sha256": "39c82915a314a95601c70a0852b7ad2ddf81607ec29d73cd332342d67e640de4"
+  },
+  "black_sleeve/episode_0035.npz": {
+    "bytes": 74334,
+    "sha256": "bdfa06ce9a57eb711955737a6ba30e54c8becca86221d7896c0eab9490eb87b4"
+  },
+  "black_sleeve/episode_0035_cam_front.mp4": {
+    "bytes": 2423172,
+    "sha256": "79cbf01e9130fbb033d30a2be40e958ef81c4f627ca96e4a6ebacfae7caa46d3"
+  },
+  "black_sleeve/episode_0035_cam_high.mp4": {
+    "bytes": 6856006,
+    "sha256": "2086ac638f561f0146afa65188b9be20bfcae21f724bc9629d1bd5c296e73510"
+  },
+  "black_sleeve/episode_0036.npz": {
+    "bytes": 73597,
+    "sha256": "36f958be4809b55e3c1bb33cb3243f8290f59376277fa939ea53db94356d08ad"
+  },
+  "black_sleeve/episode_0036_cam_front.mp4": {
+    "bytes": 2703616,
+    "sha256": "70a3db6be1a30b357f255c86da389c6b74058a97c1fb54abcb22abfb96b2ab08"
+  },
+  "black_sleeve/episode_0036_cam_high.mp4": {
+    "bytes": 6784955,
+    "sha256": "a7366c12669c32b3ea578193624ec7eed418267c6e4957362f1dcd701c543374"
+  },
+  "black_sleeve/episode_0037.npz": {
+    "bytes": 88721,
+    "sha256": "ebfb73396a9e86a83a25e05a9b53db682a9c41986794b88c1efd813cded17b86"
+  },
+  "black_sleeve/episode_0037_cam_front.mp4": {
+    "bytes": 3259226,
+    "sha256": "fb44f9856f76073498d0874b90b12f63d34c400e842de2ce7f038ba323d8dc7e"
+  },
+  "black_sleeve/episode_0037_cam_high.mp4": {
+    "bytes": 7991556,
+    "sha256": "323aa187b1e2bc01b023f779d22d42096a28c39e4de1cbd0af0c47b1e31c107c"
+  },
+  "black_sleeve/episode_0038.npz": {
+    "bytes": 79505,
+    "sha256": "af34b1b071e5cc0aebb02ccd895f892ad9ff8f7d08a17455a904d2034570d2dd"
+  },
+  "black_sleeve/episode_0038_cam_front.mp4": {
+    "bytes": 2825695,
+    "sha256": "96c8b31f9bf8d365425d0c954235d2f12b856547d5709693eddf2394ecd2d895"
+  },
+  "black_sleeve/episode_0038_cam_high.mp4": {
+    "bytes": 7237303,
+    "sha256": "ae8602b39b6e781883b1429ce66d66d32284c38c2dda3e62eb86375bb0eb5e97"
+  },
+  "black_sleeve/episode_0039.npz": {
+    "bytes": 78027,
+    "sha256": "fa29e6cc4179c9839423cb4b6c1f59a14fdc4df5b83cbe0948a409d19fc3af93"
+  },
+  "black_sleeve/episode_0039_cam_front.mp4": {
+    "bytes": 2619141,
+    "sha256": "d7eb1ebdef3b2c2def522d83ac3bb63c99e36280e70d805e502f380c832b3a27"
+  },
+  "black_sleeve/episode_0039_cam_high.mp4": {
+    "bytes": 6873666,
+    "sha256": "53ccd78615231ce1bb90064f6645b8b20ba92f2b416ca5bcf129a6834b9642db"
+  },
+  "black_sleeve/episode_0040.npz": {
+    "bytes": 95449,
+    "sha256": "9fd64d704adc02fc5b61da1f46554bd5c883f33798d6eb71b3fabb1c5a9f2dd3"
+  },
+  "black_sleeve/episode_0040_cam_front.mp4": {
+    "bytes": 3526285,
+    "sha256": "a8bba4dd2680548d1975da93a5bbfd1fd1072a56399b469996b3ce8e3b4bb565"
+  },
+  "black_sleeve/episode_0040_cam_high.mp4": {
+    "bytes": 8503820,
+    "sha256": "ac933afebacaa75c3c7f1339e3e92b7a3ab2780d42b71af1fbabbdaad8380c40"
+  },
+  "black_sleeve/episode_0041.npz": {
+    "bytes": 87274,
+    "sha256": "2e8e3e9393cd5ca0e7167f586a8706c88838efeb9a58e01a1bd8a2902843227b"
+  },
+  "black_sleeve/episode_0041_cam_front.mp4": {
+    "bytes": 3099946,
+    "sha256": "d588ea68b34052c74cf8ddb60a3158f920b95b4d6e2818e5e3050c95358d7080"
+  },
+  "black_sleeve/episode_0041_cam_high.mp4": {
+    "bytes": 7577653,
+    "sha256": "4b5aaf676459658d84e288a264f6d741ba748454a3668bf0775e70e2ea75de08"
+  },
+  "black_sleeve/episode_0042.npz": {
+    "bytes": 58499,
+    "sha256": "11aeb98fecd9a4f38ab879669084b2a1362b751fb6ee3049c068749a453f17b8"
+  },
+  "black_sleeve/episode_0042_cam_front.mp4": {
+    "bytes": 1993097,
+    "sha256": "39e9e285c017aa17436b5fccc2da8a2499a3fe7b4d095d900f499b0dd480aec1"
+  },
+  "black_sleeve/episode_0042_cam_high.mp4": {
+    "bytes": 5140104,
+    "sha256": "2f4aa6ffb8db8714eea4ee4f533b65ffbbf47e96c0c75cf8f4f152161c312ef0"
+  },
+  "black_sleeve/episode_0043.npz": {
+    "bytes": 76881,
+    "sha256": "8e63f73c38a858d19dfbf4155e6e5cdf9535f8a3f914e622a98b13f1f56e19ec"
+  },
+  "black_sleeve/episode_0043_cam_front.mp4": {
+    "bytes": 2792468,
+    "sha256": "e35258751e499400c36fa37ebff4e4c8ae6d5b253d5daebdb84403c183aee47c"
+  },
+  "black_sleeve/episode_0043_cam_high.mp4": {
+    "bytes": 6622374,
+    "sha256": "26d18928014e5ab5ed98af05c3747eab0ff3abf3234a07d7b481d0f9f32d366a"
+  },
+  "black_sleeve/episode_0044.npz": {
+    "bytes": 75357,
+    "sha256": "1200bda93ce20b64168e84792d14b70d964086b8465471843186143822a33f95"
+  },
+  "black_sleeve/episode_0044_cam_front.mp4": {
+    "bytes": 2514207,
+    "sha256": "5c69388beb8504b089b309de4ce9e8fedfc3564e2a772a89ce47a3df06127742"
+  },
+  "black_sleeve/episode_0044_cam_high.mp4": {
+    "bytes": 6580511,
+    "sha256": "737bfc3e585a67a4b080d11179b5823dcb4c63d972f20ff3e36ec89cada3a965"
+  },
+  "black_sleeve/episode_0045.npz": {
+    "bytes": 82864,
+    "sha256": "cfc4fc5c2df47f91e3aca3e2494391a27683f964e09c59e0fbf6d7566f6ab7df"
+  },
+  "black_sleeve/episode_0045_cam_front.mp4": {
+    "bytes": 3109767,
+    "sha256": "2fa5e498afcaf98ee2e9d0250020c3eb5cafe28b3efb631d000a3a34f08145f7"
+  },
+  "black_sleeve/episode_0045_cam_high.mp4": {
+    "bytes": 7052568,
+    "sha256": "0d400446e199fb84be1a6722864615f6a69b039603d45072c010bcdc2db5a961"
+  },
+  "black_sleeve/episode_0046.npz": {
+    "bytes": 85802,
+    "sha256": "0c926e445b9d284a0ed6ad8b50eb78069f496d1c3b053db9f6a8d06331396cf7"
+  },
+  "black_sleeve/episode_0046_cam_front.mp4": {
+    "bytes": 2878581,
+    "sha256": "4762a5a15adda8eb61e5763f4f71fe8a2ac176cecba21262c2d9b3192143da25"
+  },
+  "black_sleeve/episode_0046_cam_high.mp4": {
+    "bytes": 7472155,
+    "sha256": "193b304cf690c4ac5eb2f8b6fa8e1a13bb66ddad3f4e6a3c7ad110aed776b84f"
+  },
+  "black_sleeve/episode_0047.npz": {
+    "bytes": 74898,
+    "sha256": "98cd4f3a112d93ce2b9dd4baf53ee10996b338f5b7bbd1f17f228ed86c10add8"
+  },
+  "black_sleeve/episode_0047_cam_front.mp4": {
+    "bytes": 2621130,
+    "sha256": "df311c0a85e2201b31506dd7f88383e2c2fa608817953183616b0ade32c503f4"
+  },
+  "black_sleeve/episode_0047_cam_high.mp4": {
+    "bytes": 6543496,
+    "sha256": "7daa1549342f1f2e40e4022ba93e609024cf7d2fec29ac037f43583c6462ec4c"
+  },
+  "black_sleeve/episode_0048.npz": {
+    "bytes": 61382,
+    "sha256": "a9fb619e78a8a19b770c7735fd0f28283942f15a082e1e1bf05f1e96f21a5a63"
+  },
+  "black_sleeve/episode_0048_cam_front.mp4": {
+    "bytes": 2256787,
+    "sha256": "403aeefda79722339b24ac1a261e35c867e2ebf3d173def0ca760001c613abb5"
+  },
+  "black_sleeve/episode_0048_cam_high.mp4": {
+    "bytes": 5326805,
+    "sha256": "adfcf9a030c0f3af3a11fa8ab056c3d6b10a4d1ec9f7676bfbf7c1076fb7f5a9"
+  },
+  "black_sleeve/episode_0049.npz": {
+    "bytes": 78821,
+    "sha256": "0e783ae4ff479cf97b289509375113b56a6db7ee9c8efa1571e4fa975588c28c"
+  },
+  "black_sleeve/episode_0049_cam_front.mp4": {
+    "bytes": 2867538,
+    "sha256": "a4670a291f35c8e44041f9fdeac32fcfac117c92dc6c4edfb58fea194bf2b54c"
+  },
+  "black_sleeve/episode_0049_cam_high.mp4": {
+    "bytes": 6754323,
+    "sha256": "b9c95cda78ab5f2402ea4e8d14e6dc1177ab18c07d26948fe8d6edb66afd1ff2"
+  },
+  "charger/dataset.json": {
+    "bytes": 165,
+    "sha256": "9cfda3ed682d50fa45408317cf613bbe18d83e2568569bd778a8a4959a774e50"
+  },
+  "charger/episode_0000.npz": {
+    "bytes": 315487,
+    "sha256": "2a72f33d826e81bedc5733a29944da9f71ea66da6e49ae212815c784a4fa0082"
+  },
+  "charger/episode_0000_cam_front.mp4": {
+    "bytes": 14146703,
+    "sha256": "ba294ef22aad42dc3075694615976dcd4529c11e91b0258714220f4b3e07b177"
+  },
+  "charger/episode_0000_cam_high.mp4": {
+    "bytes": 27542100,
+    "sha256": "846cac88e66f0562dcc10717bcedd4ed52b99c6dac925e1e219064fa5961a3cc"
+  },
+  "charger/episode_0001.npz": {
+    "bytes": 239016,
+    "sha256": "1feba1d8ff20e2dbd76e1bb634976344065807c4dfc4bd313d6eb6867eddfe6a"
+  },
+  "charger/episode_0001_cam_front.mp4": {
+    "bytes": 9915609,
+    "sha256": "7ced61348344035e369946b9a241cf3f1133b68feb0b14ce358e37cf12c49006"
+  },
+  "charger/episode_0001_cam_high.mp4": {
+    "bytes": 20214669,
+    "sha256": "35266a1ab22deddc606e1459c14e609b57378945661b1ac99453e5f39523425b"
+  },
+  "charger/episode_0002.npz": {
+    "bytes": 306762,
+    "sha256": "c44a9b3d446ad6c8cf439b6a789f0818c9eee416a5607ddcc7dd2ffa71f0960c"
+  },
+  "charger/episode_0002_cam_front.mp4": {
+    "bytes": 14321123,
+    "sha256": "5d6fe99fcb69e0f8c3fb199f8e01e6b94ac6b022abe917ca4fdaa01735ee2a3a"
+  },
+  "charger/episode_0002_cam_high.mp4": {
+    "bytes": 25965023,
+    "sha256": "0d4cacc84ce1df3789b3630db07c7b43b1b25e539a45869fe06dabfd9b3f7e34"
+  },
+  "charger/episode_0003.npz": {
+    "bytes": 220171,
+    "sha256": "8f876890e247173915b12d1f0445c2296aed0da498a37eea501107183a86bd0c"
+  },
+  "charger/episode_0003_cam_front.mp4": {
+    "bytes": 9765096,
+    "sha256": "4758bc3f0e9e0a360bf5d2198a5dd17ce325049de2754833a55e3440252331a1"
+  },
+  "charger/episode_0003_cam_high.mp4": {
+    "bytes": 18325387,
+    "sha256": "3e37d465cf06a1481b225f6e773785f586fdd1f0b0e86671ff2e43a4019ea5a2"
+  },
+  "charger/episode_0004.npz": {
+    "bytes": 235410,
+    "sha256": "053b619ddf7b6ad97d46054c4587ef65d2a751ea183d7c7afc31cc07b7b90277"
+  },
+  "charger/episode_0004_cam_front.mp4": {
+    "bytes": 10305151,
+    "sha256": "5fa7ec75b764db02b82f15cfc7f05ad9c0c51ebd10faa9486dbe4cd181ae1ccb"
+  },
+  "charger/episode_0004_cam_high.mp4": {
+    "bytes": 19464117,
+    "sha256": "f377d770177cca994af3d691338f3205071aeb790e2cb713df460e12503dd8ef"
+  },
+  "charger/episode_0005.npz": {
+    "bytes": 144626,
+    "sha256": "67b4d80635e85448f337b31602d0818d54a0541d9dda88b1301dfbd87967bb11"
+  },
+  "charger/episode_0005_cam_front.mp4": {
+    "bytes": 6741199,
+    "sha256": "3e09fe95f66b85fe6d3b18f65b412558388a53b3f0a9891f111fb53e3d789274"
+  },
+  "charger/episode_0005_cam_high.mp4": {
+    "bytes": 11565162,
+    "sha256": "e2c0a10557dc9a6fcfc91b47c89b2dc4aabf200edfca83efcafbd3af1c5908ce"
+  },
+  "charger/episode_0006.npz": {
+    "bytes": 202639,
+    "sha256": "bb754ba04217c693905999e83e5740c5ac223520a7086db48d859b9675c5d3dd"
+  },
+  "charger/episode_0006_cam_front.mp4": {
+    "bytes": 8505169,
+    "sha256": "296bc7f569bb4c3d205d1c1a8a7576d499339336837e64701dda878fb2ae4fbd"
+  },
+  "charger/episode_0006_cam_high.mp4": {
+    "bytes": 17048326,
+    "sha256": "9ec18c2ddb6493b80d41417995adacd8404634f620e6f0cebd23a712ab5f5390"
+  },
+  "charger/episode_0007.npz": {
+    "bytes": 331923,
+    "sha256": "a5b4c18e5ed2f04d285574cc39f5c905beefc0e4a69e085ae6bcabf79fa650e5"
+  },
+  "charger/episode_0007_cam_front.mp4": {
+    "bytes": 15107987,
+    "sha256": "101491dd5be392af24fbe079c56f6c2175c7d9ca2c9d685bbcebc4b05695775a"
+  },
+  "charger/episode_0007_cam_high.mp4": {
+    "bytes": 28517627,
+    "sha256": "a3064cff383a89aea04d9fc2bfb1840be1866cdf639be2640314582694ed8995"
+  },
+  "charger/episode_0008.npz": {
+    "bytes": 181499,
+    "sha256": "6a2c6490a4c361548174d1890e4f6441b7a328ef0589b0f93b1e4669049680ba"
+  },
+  "charger/episode_0008_cam_front.mp4": {
+    "bytes": 7308245,
+    "sha256": "8754e1b8308189a40178802204aafecd913f69ec46e153c80df5c259f0282bb9"
+  },
+  "charger/episode_0008_cam_high.mp4": {
+    "bytes": 14849929,
+    "sha256": "310a4f6e6b7a55dd9e9f2d3dab762d6b4e5817ad139c28016a9ccb927f314b03"
+  },
+  "charger/episode_0009.npz": {
+    "bytes": 127877,
+    "sha256": "2bdc325a890b6ebae1b34fb49770595bf56652de26dd6b3e47bba564d4e8ae9e"
+  },
+  "charger/episode_0009_cam_front.mp4": {
+    "bytes": 5558641,
+    "sha256": "a1014a35a876255c2e97cf08e283ee19734e190bce1855d8dc0f83271e4fc042"
+  },
+  "charger/episode_0009_cam_high.mp4": {
+    "bytes": 10267475,
+    "sha256": "c9999ce1302e9a80804e3d5b6f6ee9b7f78d5b7d2e789f8b1d48a026aa3351a7"
+  },
+  "charger/episode_0010.npz": {
+    "bytes": 164828,
+    "sha256": "8a4f3830576a640d39566fc1900514a5cb98334b7c2309afa9bbe406a502d197"
+  },
+  "charger/episode_0010_cam_front.mp4": {
+    "bytes": 6281058,
+    "sha256": "431cf0f73666488dc108c2bfa18e6ceee0bfcdd521a7cbfa4e664646b5f2eed3"
+  },
+  "charger/episode_0010_cam_high.mp4": {
+    "bytes": 13840895,
+    "sha256": "20e2ec44bc2a3a125f0182c8f0ec99a37b47b3f78f29b19dacc79fa252b2bba9"
+  },
+  "charger/episode_0011.npz": {
+    "bytes": 144854,
+    "sha256": "1799dd2ec173bb703461069d9110a5140b2b89ecb8f1faa2f85656bdf2d7c425"
+  },
+  "charger/episode_0011_cam_front.mp4": {
+    "bytes": 6174634,
+    "sha256": "0f4320e2ee2e0bacb87a96cad835857380983847cd83611efac15823fc920d11"
+  },
+  "charger/episode_0011_cam_high.mp4": {
+    "bytes": 12510599,
+    "sha256": "5de705975f9fd2b23127691906e677ad330aa5abd8927e30aec4eb56a7ba188b"
+  },
+  "charger/episode_0012.npz": {
+    "bytes": 173602,
+    "sha256": "429a6c0c87cc513a6fe4a9a1049ea1b4dc9762bf9e42d893096d607d31618e62"
+  },
+  "charger/episode_0012_cam_front.mp4": {
+    "bytes": 6490771,
+    "sha256": "b9e876e99660bafb5958d3320ced279ebeeea49dd2ada891f5580b4a7b1d54a0"
+  },
+  "charger/episode_0012_cam_high.mp4": {
+    "bytes": 13936321,
+    "sha256": "65ae77c7472c1dd3b55d9ec008a5175fa771e00bc1b761fb4c6f1ffe70f44968"
+  },
+  "charger/episode_0013.npz": {
+    "bytes": 150360,
+    "sha256": "12c715564d9ab028db7de834cb279d6b75f7a1d9ed0468dafa2be5dd65ac6b10"
+  },
+  "charger/episode_0013_cam_front.mp4": {
+    "bytes": 6466180,
+    "sha256": "74d15e4c813cab2b0a3f8156184d392296a30bc6997ec7b30f14b962b7df8659"
+  },
+  "charger/episode_0013_cam_high.mp4": {
+    "bytes": 12123303,
+    "sha256": "13e3167be43838ff41af2df7e4c7b3ac8d154c700a51bf918cea6a32e9a63e7c"
+  },
+  "charger/episode_0014.npz": {
+    "bytes": 178367,
+    "sha256": "b81abfc3a18e86196378b68f52410df9e395f74f4ee61efa5fb6153c0f75325b"
+  },
+  "charger/episode_0014_cam_front.mp4": {
+    "bytes": 6707186,
+    "sha256": "1db2c54c52c1f94d69aae2d634a47861e17ac962442796e66905791bd22851f2"
+  },
+  "charger/episode_0014_cam_high.mp4": {
+    "bytes": 14399677,
+    "sha256": "924d82378585aa3579b6db2708e4afff81c3a59ac7b4bfe8a0e6c7f08cb1748e"
+  },
+  "charger/episode_0015.npz": {
+    "bytes": 231215,
+    "sha256": "c94443ef9acec3da2de60ef0b549917713f8d2e9525c85014121aa10dcc5acf4"
+  },
+  "charger/episode_0015_cam_front.mp4": {
+    "bytes": 12824102,
+    "sha256": "363900b11d2c8348bd78b7c97c2381af648fa11f861a803242d1972af92a2e49"
+  },
+  "charger/episode_0015_cam_high.mp4": {
+    "bytes": 19393102,
+    "sha256": "17135d2e2b5d1664b4e1bc56c9fa473bde53ce1fbc046dbd8f8e50635c0d0d14"
+  },
+  "charger/episode_0016.npz": {
+    "bytes": 191990,
+    "sha256": "49c99663e54b2dc9f3d05af4635c400e7cf335c7712ec37e759d580ba53bcc3e"
+  },
+  "charger/episode_0016_cam_front.mp4": {
+    "bytes": 10093189,
+    "sha256": "8445d410f3adbfe31bda45da7f606278845d3740a1882705b38296559cd9614d"
+  },
+  "charger/episode_0016_cam_high.mp4": {
+    "bytes": 15697063,
+    "sha256": "7328554e7cbe16060252e4aff4b442f19b3fa676b3d1b3c6370e146f095a44b4"
+  },
+  "charger/episode_0017.npz": {
+    "bytes": 195167,
+    "sha256": "f15413e8f642ea61c9950ea4c6eace8431e64724001b52ecb65969a8d16744c2"
+  },
+  "charger/episode_0017_cam_front.mp4": {
+    "bytes": 9459470,
+    "sha256": "5a1119b130c310caa8a11c4795c0ad82ee82544e106a3d9ac1872e338ce00890"
+  },
+  "charger/episode_0017_cam_high.mp4": {
+    "bytes": 15547068,
+    "sha256": "0dd84de58a254dc85601476453b31e2105abbbbaab40d00d634560a7e04e0790"
+  },
+  "charger/episode_0018.npz": {
+    "bytes": 192510,
+    "sha256": "76d11f9e2e6069d42fe5701db584d39cab8f92b8f03981d0e27b6efc42ff9dc1"
+  },
+  "charger/episode_0018_cam_front.mp4": {
+    "bytes": 10326311,
+    "sha256": "8d74b3168c1eaaf3b105aacd26afe25eee9d9b34047c048cc535b1eedad3a35e"
+  },
+  "charger/episode_0018_cam_high.mp4": {
+    "bytes": 15142634,
+    "sha256": "df48e6f65975e672e4f3ccb031e2273688c688ba6a8b5e9867c7ac0bd96feb78"
+  },
+  "charger/episode_0019.npz": {
+    "bytes": 245786,
+    "sha256": "51e671ec43b60f3d46727bfbeccaa3c2b9f004777d90f2ea43b145da81cab1b6"
+  },
+  "charger/episode_0019_cam_front.mp4": {
+    "bytes": 12939812,
+    "sha256": "2177fa4b18c6bcf8833219786a82a7986aeec108023034c97637e20c2114dc34"
+  },
+  "charger/episode_0019_cam_high.mp4": {
+    "bytes": 20055285,
+    "sha256": "def48b94c30e91bca8289e4c4155706135c4acf90ebc283c07e81a43a510b874"
+  },
+  "charger/episode_0020.npz": {
+    "bytes": 257346,
+    "sha256": "eb14841fc3021e95f8ae24742e85f896cdc79ab24689dd701d79ff6c7a6dc16a"
+  },
+  "charger/episode_0020_cam_front.mp4": {
+    "bytes": 12808640,
+    "sha256": "fdeb57d637c845c7711e2f8e33fdacb9b7bbec084e5269c157801b7c5f4ab356"
+  },
+  "charger/episode_0020_cam_high.mp4": {
+    "bytes": 21178185,
+    "sha256": "3ac8a5c5a803f9dd904ad8f7095d60b3d04e9ca0d3864064a015b8d8b4555e53"
+  },
+  "charger/episode_0021.npz": {
+    "bytes": 212899,
+    "sha256": "62f38a5b299278903bfa882853b152a5a80ad6d25b9946412d725ecb9e45afe0"
+  },
+  "charger/episode_0021_cam_front.mp4": {
+    "bytes": 11471971,
+    "sha256": "ca29504f5ac23e88c817d5e13945d2c1c6de32bf9058bf3c66ab850531597ec4"
+  },
+  "charger/episode_0021_cam_high.mp4": {
+    "bytes": 17019187,
+    "sha256": "ad8a87eccac772899ea751d31b2f0f1256ce5c42dc924a67f6b670e72953b9cb"
+  },
+  "charger/episode_0022.npz": {
+    "bytes": 125112,
+    "sha256": "69c66af8bab01dc6baccd98e33dc940210f31fc6d4bec8ee7ed2bd0c2590f656"
+  },
+  "charger/episode_0022_cam_front.mp4": {
+    "bytes": 5147396,
+    "sha256": "2594394f2d1f88565136417883b15f25c61b254f8710df580b67f2e108e88284"
+  },
+  "charger/episode_0022_cam_high.mp4": {
+    "bytes": 9979160,
+    "sha256": "f0178fb20b449a72953ab09738ced7cee291a1543b837af3a458af615a8251f7"
+  },
+  "charger/episode_0023.npz": {
+    "bytes": 91125,
+    "sha256": "c9cebaebb9f67ff888b16b178eee6578b2f4b4c01f6f7dff938404df8150ac9a"
+  },
+  "charger/episode_0023_cam_front.mp4": {
+    "bytes": 3458925,
+    "sha256": "c242ea5937f2c3c023103601d73fbacaaf7e24964a0a81286c810f77ba0126d0"
+  },
+  "charger/episode_0023_cam_high.mp4": {
+    "bytes": 7095234,
+    "sha256": "c838357c7cb4bd9ff5e99bb8188819b17b1f00e4ec39bc2429350c02280fdb1d"
+  },
+  "charger/episode_0024.npz": {
+    "bytes": 128921,
+    "sha256": "dea65012d70dd41258ae1bb3bb68c2b2674045125ec35da61250e27fc1b4088c"
+  },
+  "charger/episode_0024_cam_front.mp4": {
+    "bytes": 5774317,
+    "sha256": "875ed4e342f095f1a007d4219db5a97c2b29c579321216e4c8b25ae7f1a2d520"
+  },
+  "charger/episode_0024_cam_high.mp4": {
+    "bytes": 10194881,
+    "sha256": "e6e5ccb7b8bcd67dd49d20c483515a24c2d600408ee40aa31306de909e493f6d"
+  },
+  "charger/episode_0025.npz": {
+    "bytes": 157973,
+    "sha256": "f61ca4d364657f453cb3729c43327c65e14e1d7ebc9f4b92ea8de99208200f8a"
+  },
+  "charger/episode_0025_cam_front.mp4": {
+    "bytes": 7831470,
+    "sha256": "4ffa831a29c0a383b1c55a872c22f7f893ea2d9d06a6413c11dd7606dae752c4"
+  },
+  "charger/episode_0025_cam_high.mp4": {
+    "bytes": 12933680,
+    "sha256": "884286c3d4f2dd7be3729b63659c313ca9196d206891b7bd138541e004ecabc3"
+  },
+  "charger/episode_0026.npz": {
+    "bytes": 174137,
+    "sha256": "bcdee28647465570e21bde2646077bed7d328a7cfc0e5f2d18892820cef2c1ce"
+  },
+  "charger/episode_0026_cam_front.mp4": {
+    "bytes": 9305176,
+    "sha256": "98a510a5d605d170f32ae7cf0828a528d512f32faea069d738b8cf633118bad0"
+  },
+  "charger/episode_0026_cam_high.mp4": {
+    "bytes": 13842606,
+    "sha256": "e88b3c1f2e2b3af599ae952b8e95ff3ff01d0a16451f891d93c98b0a2a8009d4"
+  },
+  "charger/episode_0027.npz": {
+    "bytes": 194488,
+    "sha256": "85abe37cc52e58dad5efafc64e971c51716a92f8d550cdd878c764e78f4bafcf"
+  },
+  "charger/episode_0027_cam_front.mp4": {
+    "bytes": 10134958,
+    "sha256": "4becbbf7919e79507ae2a72ae6172faf907f00539cf019b805b3b0074bc57515"
+  },
+  "charger/episode_0027_cam_high.mp4": {
+    "bytes": 15288661,
+    "sha256": "4f2453b7f7319e1d4fd9b9229e9309f367759b674a6442bf9b51c0c8d3e3abc0"
+  },
+  "charger/episode_0028.npz": {
+    "bytes": 172327,
+    "sha256": "5415a33d2cf717f7c4f485ac6e00a2ced0cec158ae89be7c256b4fd9830ab492"
+  },
+  "charger/episode_0028_cam_front.mp4": {
+    "bytes": 10340607,
+    "sha256": "7fed957b4a2db42edfd82903dc16cc88df2a15fc7f4762ea39b36035a5c7786a"
+  },
+  "charger/episode_0028_cam_high.mp4": {
+    "bytes": 14042036,
+    "sha256": "01679f8c95bc942e5edaaf368e5395d94017282c92a248d2c55caa2ae0c175aa"
+  },
+  "charger/episode_0029.npz": {
+    "bytes": 201172,
+    "sha256": "fc3cb686ab1554b4f39aba6d94b59caa3de8f7e8c2086035dcc8899f0a14fb98"
+  },
+  "charger/episode_0029_cam_front.mp4": {
+    "bytes": 11960269,
+    "sha256": "0e3211eccfe4ecb941f40962ce8bdd9e8195ad5f5b3c8c10674dae1aed52061a"
+  },
+  "charger/episode_0029_cam_high.mp4": {
+    "bytes": 16025628,
+    "sha256": "dfd0928188a6d62322f93278f85d1f51910949e8c887a4daeecc0b6b8e0f6c9c"
+  },
+  "charger/episode_0030.npz": {
+    "bytes": 97226,
+    "sha256": "a198cc8da6828218457efdf82cb6a51884da858d53e43ed638a69419983cace2"
+  },
+  "charger/episode_0030_cam_front.mp4": {
+    "bytes": 3523104,
+    "sha256": "d86de52f2666e38c4cdfe3a1bf85e725b69fad3dcad661aa2bf01282b2f1c7e9"
+  },
+  "charger/episode_0030_cam_high.mp4": {
+    "bytes": 7816497,
+    "sha256": "36d4069ff1c411e8d7b25c1b05bd1373be6435e566ac1f623b78c61ae423e6c2"
+  },
+  "charger/episode_0031.npz": {
+    "bytes": 100123,
+    "sha256": "702de9f82d9eebf843eac9b46fb869f7c2fe59e141a0fa6170f0eec7dfe3d2be"
+  },
+  "charger/episode_0031_cam_front.mp4": {
+    "bytes": 3967979,
+    "sha256": "63885c4425008018601847f403ca54ab75216733a450e62c714888ae6761183b"
+  },
+  "charger/episode_0031_cam_high.mp4": {
+    "bytes": 8000276,
+    "sha256": "625f821f52167c9b335a4e802e4952e59e3cc5d791dce08ed6d1d9ed3e352cac"
+  },
+  "charger/episode_0032.npz": {
+    "bytes": 73762,
+    "sha256": "c9f66013797c5c2918d31d04160c2a786d639bcb042cba8538cf2548a2014147"
+  },
+  "charger/episode_0032_cam_front.mp4": {
+    "bytes": 2671209,
+    "sha256": "28a087cdf559d29146de163057e340b4be3470a5d59cfbe83908b06be36d8f3d"
+  },
+  "charger/episode_0032_cam_high.mp4": {
+    "bytes": 5436392,
+    "sha256": "02324f28a091b9136c2739f4709da01fb2831c09683e065689b9e5dccd460072"
+  },
+  "charger/episode_0033.npz": {
+    "bytes": 174698,
+    "sha256": "418c02b51708403c9aebfa6bdf1cafc2183036ee790e1f7d253782c1aa79a1ca"
+  },
+  "charger/episode_0033_cam_front.mp4": {
+    "bytes": 7853508,
+    "sha256": "1240e544899b061f26200b86e353e13b42afa29ff7281e15c059ec0eb36b06cf"
+  },
+  "charger/episode_0033_cam_high.mp4": {
+    "bytes": 13695125,
+    "sha256": "84a7713714ea68e5375154bae79c9acb01281922dff29743e7d1ebf61e63e041"
+  },
+  "charger/episode_0034.npz": {
+    "bytes": 167577,
+    "sha256": "26bd8416e73638693be4e26c7df57ca66179fd5b8657e6139e782e20d73b0c52"
+  },
+  "charger/episode_0034_cam_front.mp4": {
+    "bytes": 8077171,
+    "sha256": "a7a8450ef52948dfdd5dbb9b0507f8f47799cd2c6a7e6da664aa540054f741e1"
+  },
+  "charger/episode_0034_cam_high.mp4": {
+    "bytes": 12660802,
+    "sha256": "b668931ea184ec682ce0b1fc016ea2d6d13dbc379bcc302c0cc3dfec192e98f4"
+  },
+  "charger/episode_0035.npz": {
+    "bytes": 100677,
+    "sha256": "6f86b7aa954e512cabfe607dbb6ad49ef90752809fdeac5f0465072c2567c7cd"
+  },
+  "charger/episode_0035_cam_front.mp4": {
+    "bytes": 4742100,
+    "sha256": "4a504102dfe608174143279ad69a2064473343618d1f87a59e018ef74e095f8b"
+  },
+  "charger/episode_0035_cam_high.mp4": {
+    "bytes": 7821518,
+    "sha256": "bdd39b91884613e4af9865cc5c65440b3f540b09f0b6e6ebeaa544113c572796"
+  },
+  "charger/episode_0036.npz": {
+    "bytes": 120048,
+    "sha256": "abc5feb31770463a5e58b2a82c81baeab233bbcc2a50f87a5ca742ae5ee7cd5d"
+  },
+  "charger/episode_0036_cam_front.mp4": {
+    "bytes": 5572640,
+    "sha256": "7ea3bc14093c399f71293547ac68c9a1e588913dc9d4bbd11b3203dfce48a9a1"
+  },
+  "charger/episode_0036_cam_high.mp4": {
+    "bytes": 9260648,
+    "sha256": "48e3b0b01acb66e7e0286ded4af14150044bee7516b08fa582802c4d80d26ee1"
+  },
+  "charger/episode_0037.npz": {
+    "bytes": 126434,
+    "sha256": "2397fabecd96d037d87fb5a57f66bba389e65c6d7067c9dddfc8492a6f3202a7"
+  },
+  "charger/episode_0037_cam_front.mp4": {
+    "bytes": 5051589,
+    "sha256": "95323197dd111baa67281f32c6c2ff59f67840b890a83040430a324c05dcaba8"
+  },
+  "charger/episode_0037_cam_high.mp4": {
+    "bytes": 10479843,
+    "sha256": "51ffb1adc077340ae55b45fa56aa789720ce78416debc11f30a3d55d5a4f9a22"
+  },
+  "charger/episode_0038.npz": {
+    "bytes": 143770,
+    "sha256": "144d63b9d3f9b850b062be9e00b176b3dd6d1f760ffdaeb9480eda055393ebb9"
+  },
+  "charger/episode_0038_cam_front.mp4": {
+    "bytes": 5467668,
+    "sha256": "d9fdd7e572c7de50bfcb42aba42c07abf740c97fc6646ec7ff98cebcaf9d4c5f"
+  },
+  "charger/episode_0038_cam_high.mp4": {
+    "bytes": 11526410,
+    "sha256": "07786df14576e2ffbfb94b64a42cede1a50ed4aeaee5849b0b9c42c42c170daa"
+  },
+  "charger/episode_0039.npz": {
+    "bytes": 139552,
+    "sha256": "2a73aa865f4c2d341cd7f4ed86724e10a0507a6a01f0acd993031f49a8511641"
+  },
+  "charger/episode_0039_cam_front.mp4": {
+    "bytes": 6428425,
+    "sha256": "e92a9bf85c3811a57704ff3b43393e0412db541bb6c1ede8f15c863992debe27"
+  },
+  "charger/episode_0039_cam_high.mp4": {
+    "bytes": 11027413,
+    "sha256": "8c9b26581d1bfb601741b1c844202da5ee7b806253270380f61f33921e6a9faa"
+  },
+  "charger/episode_0040.npz": {
+    "bytes": 94056,
+    "sha256": "d4d88093d0be9992f4c6e74758d21f7c98fd147e54a4706af66f40958fc1b580"
+  },
+  "charger/episode_0040_cam_front.mp4": {
+    "bytes": 3811010,
+    "sha256": "722eb35330284f955033913b8a86e714122716a0cf3471f0aa1c1c3ab1518950"
+  },
+  "charger/episode_0040_cam_high.mp4": {
+    "bytes": 7282177,
+    "sha256": "36ab61bcb34bb80d550e879c8558f4a39962b5d0237fdb714288dd7f19edb48f"
+  },
+  "charger/episode_0041.npz": {
+    "bytes": 108225,
+    "sha256": "bbd2328ec50b7157c017c660a5b0469f7da41ae202b6bb00f61ff59740273169"
+  },
+  "charger/episode_0041_cam_front.mp4": {
+    "bytes": 4461599,
+    "sha256": "2c1ca8d04b683156a76c86968670d09a80bb5ec49caec579f8a1a54c3aecf45c"
+  },
+  "charger/episode_0041_cam_high.mp4": {
+    "bytes": 8687111,
+    "sha256": "60afe7cd91fe3b78a7695e09c87a2d5c6035850ffa7fbaf97544b49303ea629a"
+  },
+  "charger/episode_0042.npz": {
+    "bytes": 104724,
+    "sha256": "c03b405f1a622647cd1847aba5f438e6c3c138e539c5bedfaadf29eafe4504ab"
+  },
+  "charger/episode_0042_cam_front.mp4": {
+    "bytes": 3455035,
+    "sha256": "05824cfc1bf6717308e6b01411b0e5a292bd4bfef7a8be154f809cfcb49ff79b"
+  },
+  "charger/episode_0042_cam_high.mp4": {
+    "bytes": 8027931,
+    "sha256": "98c72f338e2c7c951bbaba8c15b5a935eeb28c971cf0d3c7d959b15c9254a09c"
+  },
+  "charger/episode_0043.npz": {
+    "bytes": 99745,
+    "sha256": "2889d5158c928f3f78a81c7a229afe61ab4a3490ca22ea9f33ec28a0a8d145f4"
+  },
+  "charger/episode_0043_cam_front.mp4": {
+    "bytes": 4001925,
+    "sha256": "569c197c65f9879eb3d68919a607feed8a88cda99831dcad7b24924a0a21049d"
+  },
+  "charger/episode_0043_cam_high.mp4": {
+    "bytes": 7866663,
+    "sha256": "a4f43909072b12924a7a2f014c21cff50e59e3fd91086fbfa82a6b6953127697"
+  },
+  "charger/episode_0044.npz": {
+    "bytes": 133329,
+    "sha256": "edeeb0eb51e6083105e6777c967235cfb66b93f19cdb34ec4f926664bf426d6f"
+  },
+  "charger/episode_0044_cam_front.mp4": {
+    "bytes": 5074813,
+    "sha256": "6cccbc8cb18d22b9df5bfa3d9a501880dd3c1291d3abbf0d1466cd0956f37d3b"
+  },
+  "charger/episode_0044_cam_high.mp4": {
+    "bytes": 10643909,
+    "sha256": "03a21b7c59b6878b6e201c1bece1e1f50ba854a0e1a3821af19e8efd70c820c4"
+  },
+  "charger/episode_0045.npz": {
+    "bytes": 99302,
+    "sha256": "fc441851a6c2c3a6d367aa6729466edcac30355343baba1d3bf84931b87dd5a3"
+  },
+  "charger/episode_0045_cam_front.mp4": {
+    "bytes": 3416761,
+    "sha256": "295a1eba23c592b80cc092bd10b1276c62122d8f1e05f23fd429b622709ff388"
+  },
+  "charger/episode_0045_cam_high.mp4": {
+    "bytes": 7906764,
+    "sha256": "64f331150333da5fa5c1fe6b6ae31b644789db7c3622b823f2a3b67918fb0a72"
+  },
+  "charger/episode_0046.npz": {
+    "bytes": 126764,
+    "sha256": "19f75fd529612fad68a267b88fc1df9ad7db8e4c3ed274b8ad68d2c3b20f557c"
+  },
+  "charger/episode_0046_cam_front.mp4": {
+    "bytes": 5667013,
+    "sha256": "c469c3cc1be4762a1f6047bed59410a41fdae7744d53b6a5a2f59bb570caf51d"
+  },
+  "charger/episode_0046_cam_high.mp4": {
+    "bytes": 9758721,
+    "sha256": "8b0facf8930b6503b3ffeac7c039a449e48dc0261e793020f7a9ed0f03071598"
+  },
+  "charger/episode_0047.npz": {
+    "bytes": 117759,
+    "sha256": "cbf5ad8519a03c6778e8e847b5fd87efe4fdc21ae8559c21f087c69174faa131"
+  },
+  "charger/episode_0047_cam_front.mp4": {
+    "bytes": 5976505,
+    "sha256": "ec2a24534aae2f3b55a9e749d8aded1330ca5eb01725b46417f26c7d24872126"
+  },
+  "charger/episode_0047_cam_high.mp4": {
+    "bytes": 9421033,
+    "sha256": "618f3a5536bb6a5b92fbd3b5b9f6e9ec8cfe7179725929c96e3a518e64eee3b6"
+  },
+  "charger/episode_0048.npz": {
+    "bytes": 125254,
+    "sha256": "e3ba6ee85880cb79545d2b6d39e44ee8d4f5914fc4ff3105bf3967bdf15aabf5"
+  },
+  "charger/episode_0048_cam_front.mp4": {
+    "bytes": 5324080,
+    "sha256": "299061c6d8ec792404cf11074cc702ac3124a2b5b8cf097d698d1fe90077fd43"
+  },
+  "charger/episode_0048_cam_high.mp4": {
+    "bytes": 9517386,
+    "sha256": "1b4e3a12c7cf833d1754621132c9adfe5d7a536eba8ff2202578b89a9c080e99"
+  },
+  "charger/episode_0049.npz": {
+    "bytes": 106748,
+    "sha256": "98aabec5a11421a91c59bdf94283a24f47069f2c5a2400bff5f694ca04d97785"
+  },
+  "charger/episode_0049_cam_front.mp4": {
+    "bytes": 4400964,
+    "sha256": "fea7772d1bd95f271f7ced2dd3d8b328656dfb7dcdf79258f732bda79093c981"
+  },
+  "charger/episode_0049_cam_high.mp4": {
+    "bytes": 8113670,
+    "sha256": "bbee6adc9a938bbb1dc0bb45e09985675ab83a00130de7169478d8718ff89425"
+  },
+  "long_box/dataset.json": {
+    "bytes": 167,
+    "sha256": "5ec4db0f89ceecd97f2a1d9a442e30695bf27496580840722517a4732915f3cb"
+  },
+  "long_box/episode_0000.npz": {
+    "bytes": 381737,
+    "sha256": "312b0464781c01cefc70dd927648506a44229731cb3c9fa8aef45eba1c5855e3"
+  },
+  "long_box/episode_0000_cam_front.mp4": {
+    "bytes": 18300053,
+    "sha256": "8ea303983a13720a3eb0b374c7030315f49a40a0270ae1780fa9013595a60fbb"
+  },
+  "long_box/episode_0000_cam_high.mp4": {
+    "bytes": 34166933,
+    "sha256": "d869d4869ae5b9edabcb58240c92674a1ae568849bbe5a6d33484dce30dc081e"
+  },
+  "long_box/episode_0001.npz": {
+    "bytes": 367410,
+    "sha256": "9fc4219471cdcc5605bb17cc8024a88e02f0c6b75ad92add556ab4144ab86325"
+  },
+  "long_box/episode_0001_cam_front.mp4": {
+    "bytes": 14807516,
+    "sha256": "3eca8eecf1a2792d7d82f95a454a2a402da5a8676caac1a082e70d6745203f4c"
+  },
+  "long_box/episode_0001_cam_high.mp4": {
+    "bytes": 32961053,
+    "sha256": "cf302669455dcca93337d3190cc99776b2e757b321bcb035dfc2bc7bc043e7d9"
+  },
+  "long_box/episode_0002.npz": {
+    "bytes": 364171,
+    "sha256": "c9092ea7ad53c4a7414a60f82f58cf2bbd79e1ecee6ab45b9e7702a982616671"
+  },
+  "long_box/episode_0002_cam_front.mp4": {
+    "bytes": 19129408,
+    "sha256": "b499ce4b3f8abb1c20c59737a47f341f82987b799182b089e9928fa01cb77257"
+  },
+  "long_box/episode_0002_cam_high.mp4": {
+    "bytes": 32555933,
+    "sha256": "545c56136052c2d92822755243da5df211d0c53ba7b013d8f2a0ed1d8221289f"
+  },
+  "long_box/episode_0003.npz": {
+    "bytes": 294148,
+    "sha256": "4829d4afaacb6ce4763347a44807043d4414d23f0710a24a847fa5b1b739df65"
+  },
+  "long_box/episode_0003_cam_front.mp4": {
+    "bytes": 10508376,
+    "sha256": "6da50223471e78b9e7e82d3d4d12f9fde26f894a9e933fdd4e5c3fdf57dc6b86"
+  },
+  "long_box/episode_0003_cam_high.mp4": {
+    "bytes": 25239267,
+    "sha256": "bea2b6d3f05ab46725c85e347b59b19efdb110044bc63204ab532144576455a4"
+  },
+  "long_box/episode_0004.npz": {
+    "bytes": 295629,
+    "sha256": "4129d9c5c1a497c20cf32c65ab0559cdf1e033793f719d750dd700742278df7d"
+  },
+  "long_box/episode_0004_cam_front.mp4": {
+    "bytes": 10979947,
+    "sha256": "84ecd91c92ad5032ebb829f3a2a61c4711034e1d7a60afae6f301dab33ce0d34"
+  },
+  "long_box/episode_0004_cam_high.mp4": {
+    "bytes": 24377094,
+    "sha256": "5790a2441eec24470e5bd3f0b2ecc3902fd8907888e876c4be7b602083949649"
+  },
+  "long_box/episode_0005.npz": {
+    "bytes": 377315,
+    "sha256": "92a684f54dd7f25a68612758090978b3a1e635fa0cfc751469c41e26da7e4a75"
+  },
+  "long_box/episode_0005_cam_front.mp4": {
+    "bytes": 19645137,
+    "sha256": "55889a68aab22742ee8e5d882eb505fe3cf639d202059efa24b14113800c6f97"
+  },
+  "long_box/episode_0005_cam_high.mp4": {
+    "bytes": 32008077,
+    "sha256": "4b4267bfd281a1713eb268ab4d8526ce68700d3c1ea1f64bd30ef516f605c77c"
+  },
+  "long_box/episode_0006.npz": {
+    "bytes": 318472,
+    "sha256": "cee325745400fea8b9252b55da9524980cc3cbc5bfcc075ec3b87367f29e41dc"
+  },
+  "long_box/episode_0006_cam_front.mp4": {
+    "bytes": 14154711,
+    "sha256": "ad15ade81d94e8614adce103a94e8bbc38717dc217ff7e44dc2f622a3c837aa5"
+  },
+  "long_box/episode_0006_cam_high.mp4": {
+    "bytes": 28056540,
+    "sha256": "445e203264a01b4c8d7c5d4638fb28de482e7fd243063135917e7487ad1a843f"
+  },
+  "long_box/episode_0007.npz": {
+    "bytes": 297261,
+    "sha256": "e9f9c47f6f62c1469c200645aba2b5a4a96a0a00c84723b1189d7b520750f6c1"
+  },
+  "long_box/episode_0007_cam_front.mp4": {
+    "bytes": 10327609,
+    "sha256": "9dee74d49fab75835c74a2cec4f7ee1d9a8d4b08726969bfeb5e6d6c54b710bf"
+  },
+  "long_box/episode_0007_cam_high.mp4": {
+    "bytes": 26803105,
+    "sha256": "a5652e735000b64d1e5d24910a32d1c437a8678a41acdbc994814d23c57bc681"
+  },
+  "long_box/episode_0008.npz": {
+    "bytes": 313490,
+    "sha256": "07d3b4e42f37429bfb538c33a9e399244ad70bc0fd2288ff264cc7ecf1a0f9f8"
+  },
+  "long_box/episode_0008_cam_front.mp4": {
+    "bytes": 13598230,
+    "sha256": "227b470b37d90bfdca8bc69cc3ba1342e6c33916bb1f32a4d1ead8bb122fb2db"
+  },
+  "long_box/episode_0008_cam_high.mp4": {
+    "bytes": 27307624,
+    "sha256": "7c3144c5b5b1cb02d6b3baab664450062b1e0ddb751c5c71b03bc1e6a829f6d3"
+  },
+  "long_box/episode_0009.npz": {
+    "bytes": 365771,
+    "sha256": "5b20db1133e45e67385fe4445c51423e4716f4f4f0759484bb46e88c6a125209"
+  },
+  "long_box/episode_0009_cam_front.mp4": {
+    "bytes": 13166552,
+    "sha256": "9143f476bc5da29d9a5945aa157665cdd5a716361e0207d015d81e66138f4bad"
+  },
+  "long_box/episode_0009_cam_high.mp4": {
+    "bytes": 31801936,
+    "sha256": "0a822dcf28200c40dd31edb47a0a89a4cfc81435faa33cab059a8cc17720aaf0"
+  },
+  "long_box/episode_0010.npz": {
+    "bytes": 204967,
+    "sha256": "bdb3aed6a2d734100b365fb25eef3ebad4cccb2590c214ed7bfcd5a99c5ea5ff"
+  },
+  "long_box/episode_0010_cam_front.mp4": {
+    "bytes": 10420837,
+    "sha256": "3720b89c63f4dacbf7decf4727eae2a86561790cbdc644eab51698fc0cd90399"
+  },
+  "long_box/episode_0010_cam_high.mp4": {
+    "bytes": 17913486,
+    "sha256": "7f0b89275abe15a4660c2dd39e3aad136263fdddc1daf7a3d77673718438e3c5"
+  },
+  "long_box/episode_0011.npz": {
+    "bytes": 309557,
+    "sha256": "af45ce010d30c895e98c2130c4c2cc23d33afef526906e49649ed0513615568d"
+  },
+  "long_box/episode_0011_cam_front.mp4": {
+    "bytes": 13857997,
+    "sha256": "e9a646630b767cf917bab7ecafcd4aa1e4b94b76036665365414ce4afd6f90f6"
+  },
+  "long_box/episode_0011_cam_high.mp4": {
+    "bytes": 25689278,
+    "sha256": "a3bd5458e63da740f61943474b513f51cde7f6b9af2924ddd6ea4547641f2ca5"
+  },
+  "long_box/episode_0012.npz": {
+    "bytes": 291885,
+    "sha256": "636a9707cc69677c59593f5bbb8ee38d9f7e933d0b7ddb46a3ade74db7e424c1"
+  },
+  "long_box/episode_0012_cam_front.mp4": {
+    "bytes": 10460675,
+    "sha256": "56207901d545b10b1ea6c661954a744d6cf7278e3a5c978c5b834a5e3b998fdd"
+  },
+  "long_box/episode_0012_cam_high.mp4": {
+    "bytes": 25457462,
+    "sha256": "8d27637a42a0a111073f95055b37c49976a9909888af6308777307b2330f9ea0"
+  },
+  "long_box/episode_0013.npz": {
+    "bytes": 220743,
+    "sha256": "dc1776c8b21e145494112ee2df31525e57d9de37ddaa7f40f6075e1f97fe0d32"
+  },
+  "long_box/episode_0013_cam_front.mp4": {
+    "bytes": 10257958,
+    "sha256": "2cb1787a7b868ccb229337658f222281b2805c54284bf39c5993f288c07a0f50"
+  },
+  "long_box/episode_0013_cam_high.mp4": {
+    "bytes": 19781686,
+    "sha256": "431c7c35fce16558b6bdbf62698e98acabccde9e887e3354b4fcdc8af601da22"
+  },
+  "long_box/episode_0014.npz": {
+    "bytes": 379496,
+    "sha256": "cf8ff91665810b133eb3e526652fa29954ff014f02729ed0c962f184970bf1e7"
+  },
+  "long_box/episode_0014_cam_front.mp4": {
+    "bytes": 17308261,
+    "sha256": "bdac7f4dc3c8e0da4710d868417b091aee6c55bcc8116977eb8ddf2793786a69"
+  },
+  "long_box/episode_0014_cam_high.mp4": {
+    "bytes": 31304107,
+    "sha256": "e3f26d0f349cd2fb175c7f28e5427271e666a1536326ddf8d897dcaf3bafba32"
+  },
+  "long_box/episode_0015.npz": {
+    "bytes": 271425,
+    "sha256": "ce86132005dfd84d194eb185e5b7d9e50c15cae7fc199587906db90fee4c92f0"
+  },
+  "long_box/episode_0015_cam_front.mp4": {
+    "bytes": 12161626,
+    "sha256": "e12a37e2fe942173937ff8fb74f60deaab19bed33ea8359835826b5fb99b9b75"
+  },
+  "long_box/episode_0015_cam_high.mp4": {
+    "bytes": 22244203,
+    "sha256": "0b8b6ee48d1cac9d6ab1198771ecb36c0410364a86e51461d05d330e725dd617"
+  },
+  "long_box/episode_0016.npz": {
+    "bytes": 297547,
+    "sha256": "f3934d6a8355cfe87aa92d56a3b3e24d9a92da47e39d0badc18f293a50867560"
+  },
+  "long_box/episode_0016_cam_front.mp4": {
+    "bytes": 12599150,
+    "sha256": "c8ef20e452c5ac0ea487b4fd286e26d79dcdce55aaf578f384966805a977a569"
+  },
+  "long_box/episode_0016_cam_high.mp4": {
+    "bytes": 24500473,
+    "sha256": "2ea1894e0c90ec325e0666487474f38fa93f9ea86aa252eda0d49c9b68d7f537"
+  },
+  "long_box/episode_0017.npz": {
+    "bytes": 312150,
+    "sha256": "4b98c8f4cbcfd2700c3a0ab36d1a5452a42f913b585105c876a7d4b39a481b15"
+  },
+  "long_box/episode_0017_cam_front.mp4": {
+    "bytes": 13332142,
+    "sha256": "355be8b76d1aa331653423b6d3e143a75c0463fc0165b1bed189ffb86fa474b3"
+  },
+  "long_box/episode_0017_cam_high.mp4": {
+    "bytes": 25798008,
+    "sha256": "8d3abc31f33a3cdc3810431ddfd0fce867fe04b0cd2395d527cc3a4f723ac998"
+  },
+  "long_box/episode_0018.npz": {
+    "bytes": 357070,
+    "sha256": "3b4270801289752a03612f5853d3f861b6af572a4d16c7fd68f83da2f8ba7ecb"
+  },
+  "long_box/episode_0018_cam_front.mp4": {
+    "bytes": 18577887,
+    "sha256": "e0d0013e1ec7e0ef314aecb4872d1215ec793ae6525caf33e9c57e2379cea503"
+  },
+  "long_box/episode_0018_cam_high.mp4": {
+    "bytes": 29721757,
+    "sha256": "164abccfb20fd05bc0e5eb455e75daad6f155b1fb699ad8c8697774c77aee9ba"
+  },
+  "long_box/episode_0019.npz": {
+    "bytes": 442256,
+    "sha256": "2fdec896061c6ff68d820bf5aabb928ab5ca010d49a2b0c3ee84248cd5e69bd7"
+  },
+  "long_box/episode_0019_cam_front.mp4": {
+    "bytes": 24566540,
+    "sha256": "194cb28e15ed9fbd3d253c71d1c8a8ab6d6f0b6d0f5eaf9003e7841d1a24fe46"
+  },
+  "long_box/episode_0019_cam_high.mp4": {
+    "bytes": 34887293,
+    "sha256": "c7c9473fffdde55a750cda9071a0471f485dc4f2fc98f0a8b8e1b208e06657a8"
+  },
+  "long_box/episode_0020.npz": {
+    "bytes": 173169,
+    "sha256": "ef81daf4fdfcf9cb893f3b24287c59c61f7e94a82d9a1a2f34c9303f66c6b26f"
+  },
+  "long_box/episode_0020_cam_front.mp4": {
+    "bytes": 8705360,
+    "sha256": "42651b11f3f37a93facfee9c4e5e491285b2ced0893f00b4778e0b6762693758"
+  },
+  "long_box/episode_0020_cam_high.mp4": {
+    "bytes": 14034219,
+    "sha256": "0bdeae1febe9e94af6c8db291bdd8230552b5179be8d88402beae5214110c6ac"
+  },
+  "long_box/episode_0021.npz": {
+    "bytes": 219682,
+    "sha256": "a0ddf5700edacee039ebd3a5eed80d5c287ba204e7f9bc12a9de757f643ac99a"
+  },
+  "long_box/episode_0021_cam_front.mp4": {
+    "bytes": 9554472,
+    "sha256": "9090e853622453baa88c430efe5f0c4174129058bc793b045ce840d051c51841"
+  },
+  "long_box/episode_0021_cam_high.mp4": {
+    "bytes": 17468457,
+    "sha256": "3e86872afbfe5ead64bb99cb875a7b8083589763db2ea15aabe12a29963c580d"
+  },
+  "long_box/episode_0022.npz": {
+    "bytes": 266541,
+    "sha256": "f3c3f8567696de895b89143ae587059fc01d7e865440b1628efc6eb6ab150e51"
+  },
+  "long_box/episode_0022_cam_front.mp4": {
+    "bytes": 11531444,
+    "sha256": "a308f38402d908a8a7580fccc26fb6fd842bba9381553f63e56c0339d9c7338c"
+  },
+  "long_box/episode_0022_cam_high.mp4": {
+    "bytes": 22153828,
+    "sha256": "5e0e7d309e6df1571f3ecb1808963566f28721fec165ac56b45e6607c454cef6"
+  },
+  "long_box/episode_0023.npz": {
+    "bytes": 127219,
+    "sha256": "796c4ccd614dc32f0612379ba81a4f526fc3966744bbb0b20e852da6a8d51dcf"
+  },
+  "long_box/episode_0023_cam_front.mp4": {
+    "bytes": 5477994,
+    "sha256": "8e2625e152bc223965eddf426d3841ca9d744f02e003f85cefcb821c0ffead8a"
+  },
+  "long_box/episode_0023_cam_high.mp4": {
+    "bytes": 9502869,
+    "sha256": "036d1cb742c57056ce752b030669a66356309ceab2155ebefbab69063ddf9e8d"
+  },
+  "long_box/episode_0024.npz": {
+    "bytes": 244628,
+    "sha256": "79f52063e89eb07af4dc19932aedf588481705b7820b9728a360cda5180d39e2"
+  },
+  "long_box/episode_0024_cam_front.mp4": {
+    "bytes": 10893568,
+    "sha256": "125a7fcafce96bdf01f52b6d7e8bb38944ccd5044cc0611390877dcd975e6a13"
+  },
+  "long_box/episode_0024_cam_high.mp4": {
+    "bytes": 20496633,
+    "sha256": "3123a22ff4caacfb9bf37dfe7c8c1498f557b5031b103777e9aab203bc5be9fc"
+  },
+  "long_box/episode_0025.npz": {
+    "bytes": 287238,
+    "sha256": "2261e7b4713002dfd50713496f73a116e709457ddee0b2269898568a65ff8dd1"
+  },
+  "long_box/episode_0025_cam_front.mp4": {
+    "bytes": 12175001,
+    "sha256": "48786657810d7e8bebe1d573e4aed9f28b3fd42a22addf9e83f775e2d9dc9c8e"
+  },
+  "long_box/episode_0025_cam_high.mp4": {
+    "bytes": 25107288,
+    "sha256": "0f334c39467ae141fd5f2391dddeba77d70712799a907afeb9a9679d4ff55a20"
+  },
+  "long_box/episode_0026.npz": {
+    "bytes": 239010,
+    "sha256": "7acb2849773a606c6176bfc9d13962fd6d67a30472fbd2fe9436af584749cbc0"
+  },
+  "long_box/episode_0026_cam_front.mp4": {
+    "bytes": 10646241,
+    "sha256": "f433b2f40bf013f1bc8e47291cb4138ccf86b88278bc4884129974a7e9de49cb"
+  },
+  "long_box/episode_0026_cam_high.mp4": {
+    "bytes": 18913643,
+    "sha256": "d0cf99ff8ffdcd5fce9e5b5e6986f91cfb3aa3672a8e8d0a78a1eac1a25bd4fd"
+  },
+  "long_box/episode_0027.npz": {
+    "bytes": 235628,
+    "sha256": "df1b86d15a5487d5c46ffc9b2dda3cf413797a7e911039363943271fb387783e"
+  },
+  "long_box/episode_0027_cam_front.mp4": {
+    "bytes": 9770616,
+    "sha256": "40b547a87d460a54fca3db44ffed426a9e5531678af235dd81bd88081f7c8a9b"
+  },
+  "long_box/episode_0027_cam_high.mp4": {
+    "bytes": 19587125,
+    "sha256": "7962c522cf5a26aca0b84aee35c5b2e2df90581a8d15946e1968aa0330b06ef2"
+  },
+  "long_box/episode_0028.npz": {
+    "bytes": 176944,
+    "sha256": "85cfd2de7c0c8334edad929654cad4a6773ea4b0c7525b82aacb777fde1ea9aa"
+  },
+  "long_box/episode_0028_cam_front.mp4": {
+    "bytes": 7372050,
+    "sha256": "5951502c1f80c29ca83a24169b6bb41a1c5c6c9ffd0425edd68869fe8c0e042f"
+  },
+  "long_box/episode_0028_cam_high.mp4": {
+    "bytes": 13792887,
+    "sha256": "c1f0320d575f2983013780e497f8545bfcba2744b75317704c4826c48b69065d"
+  },
+  "long_box/episode_0029.npz": {
+    "bytes": 377658,
+    "sha256": "5e0594bc53de35722b997e3ab8c371bcaf7e2b9885d1cf99d43a4e9a652f555c"
+  },
+  "long_box/episode_0029_cam_front.mp4": {
+    "bytes": 16695952,
+    "sha256": "4e9f272bef8439920fff98dd39c3134380e1eb6f4acb82ed542660794a491a8a"
+  },
+  "long_box/episode_0029_cam_high.mp4": {
+    "bytes": 29779460,
+    "sha256": "7a4375db03fad3c53a9e5a6ed4402c70e241b0b2bef4d545b72f86bb7bebfbaf"
+  },
+  "long_box/episode_0030.npz": {
+    "bytes": 182578,
+    "sha256": "b17e32c8343f31b1ac1e23641b77481e90230039998f6a398ba4d6389453ff57"
+  },
+  "long_box/episode_0030_cam_front.mp4": {
+    "bytes": 9806206,
+    "sha256": "194ff1cc2eb858ee798f949ed8b5e9177acc838a684baa7c1454a5a911c89d81"
+  },
+  "long_box/episode_0030_cam_high.mp4": {
+    "bytes": 14465981,
+    "sha256": "380d94b3fea572d88997629acaf1472965c1e76f7a068a0a874eee09dcfdf32a"
+  },
+  "long_box/episode_0031.npz": {
+    "bytes": 213671,
+    "sha256": "a665fe1158689cd8e56b3b1f89ca0db8c988222c010adb3949717c633b0b2ce2"
+  },
+  "long_box/episode_0031_cam_front.mp4": {
+    "bytes": 10422829,
+    "sha256": "b310dd7879542928e4eafe364d34617a59bc5eccf95e4552141336f2821038c0"
+  },
+  "long_box/episode_0031_cam_high.mp4": {
+    "bytes": 16965954,
+    "sha256": "c4aa28622594fd238ae546a89bff97b9995897eb1d7e496652483f2b0aa61537"
+  },
+  "long_box/episode_0032.npz": {
+    "bytes": 269617,
+    "sha256": "c9f05291ba2f2429c3306e0223cdc09a91ddfe80966767d60aed0a065c9804ea"
+  },
+  "long_box/episode_0032_cam_front.mp4": {
+    "bytes": 15809508,
+    "sha256": "073e5bd60d75dbe5379a1829f1c4017bde021bf5390423e7568c6c7384d9da6b"
+  },
+  "long_box/episode_0032_cam_high.mp4": {
+    "bytes": 21602885,
+    "sha256": "b0f6cdb8ebe60b4162435ee23b555c9c927f6e6562d6ef5a7d4d82af2c6a02e8"
+  },
+  "long_box/episode_0033.npz": {
+    "bytes": 247621,
+    "sha256": "833fe4acfaef377e324c7082c2db33e96f0ac6403610ef337f3fdef90ed81a86"
+  },
+  "long_box/episode_0033_cam_front.mp4": {
+    "bytes": 12359719,
+    "sha256": "abb9c1f058618299a801121dbae5e54b64b72c705865961c4476a7403d843b88"
+  },
+  "long_box/episode_0033_cam_high.mp4": {
+    "bytes": 20084263,
+    "sha256": "0451eb5256d7f82d328e893b801644a53179e24fe6c560b5b7cab6fc5e88497e"
+  },
+  "long_box/episode_0034.npz": {
+    "bytes": 145526,
+    "sha256": "ea4590cf7271bea69b30d7e7901e4b920e64cfb05d771a17808c067041e71da8"
+  },
+  "long_box/episode_0034_cam_front.mp4": {
+    "bytes": 6232419,
+    "sha256": "bb61d6948ec73eb61b3f034d575b5af5d354e4a898e26b66f8d6e8030fad21c7"
+  },
+  "long_box/episode_0034_cam_high.mp4": {
+    "bytes": 12067977,
+    "sha256": "15d25ebb96bf23bef8b26d41b7af282a7e66a11a15f928baa6e6851474bcd720"
+  },
+  "long_box/episode_0035.npz": {
+    "bytes": 199938,
+    "sha256": "586d5affd928b0bcf4db3ae505f711834c1a765c3846610dd93acf7622331656"
+  },
+  "long_box/episode_0035_cam_front.mp4": {
+    "bytes": 8226778,
+    "sha256": "639091481a2d0f57609be4458c18ddea23dbd22054c279e7ce148629ad466b1c"
+  },
+  "long_box/episode_0035_cam_high.mp4": {
+    "bytes": 16985574,
+    "sha256": "0b05d94b1c38325ac94f5c3055661fab731f7f7128315ce8ab51d910e2fc600d"
+  },
+  "long_box/episode_0036.npz": {
+    "bytes": 203470,
+    "sha256": "4c38721a24b8c560b30419caeb64c1495d813011f174bffaefb85c89417aad25"
+  },
+  "long_box/episode_0036_cam_front.mp4": {
+    "bytes": 9692254,
+    "sha256": "ad5e05e3486c9bfd0ace28d7ab470454edfa64a307c1edb98881e32a0bdd888c"
+  },
+  "long_box/episode_0036_cam_high.mp4": {
+    "bytes": 16632785,
+    "sha256": "c136130dc1a1cbc70c19725d2c18c0cace9449e315c88b4e142fe8db58f63fc9"
+  },
+  "long_box/episode_0037.npz": {
+    "bytes": 255759,
+    "sha256": "a8de2910913553a802f6a0524ea6356d635b900eaf4dab244dc63535c71a05b6"
+  },
+  "long_box/episode_0037_cam_front.mp4": {
+    "bytes": 13201394,
+    "sha256": "05c249bbeb63bbb299a5792e0c5700d9f1adcee640de1e6368c30d9071df355d"
+  },
+  "long_box/episode_0037_cam_high.mp4": {
+    "bytes": 21086108,
+    "sha256": "043aa308fd85a04cf8f3b21fdc1feeef888b8b77f7f77a2683a7e059a3ae2e3c"
+  },
+  "long_box/episode_0038.npz": {
+    "bytes": 274215,
+    "sha256": "6cf31ce238d1637a7b4df93e7c19e9d1fe409630cc0dc4fe8b912d5a379559e8"
+  },
+  "long_box/episode_0038_cam_front.mp4": {
+    "bytes": 15273774,
+    "sha256": "f68c151cae8eda6b9dcbe0474fb70431fa3f04bd9a08102afcaf93b878585c3c"
+  },
+  "long_box/episode_0038_cam_high.mp4": {
+    "bytes": 22247660,
+    "sha256": "09f561fa60fd1dc15612e1db62b117b635299f56b6458099d7a3a00c7a4535fc"
+  },
+  "long_box/episode_0039.npz": {
+    "bytes": 234737,
+    "sha256": "a9dccf45fe1876f2f6ef9222159ffc7659f4ee623ef4f034450f062b8c14a9fe"
+  },
+  "long_box/episode_0039_cam_front.mp4": {
+    "bytes": 10259263,
+    "sha256": "795b8334a6c7b2b685eda6b841eb1a66b497aa67023ed42d5fff11d5f4fd2180"
+  },
+  "long_box/episode_0039_cam_high.mp4": {
+    "bytes": 18150343,
+    "sha256": "8354dbd77aa7f732379b9e3bcc10aa4842a475f562e3a0ce79bfde0c8d80f90c"
+  },
+  "long_box/episode_0040.npz": {
+    "bytes": 233636,
+    "sha256": "fa74e158a2fd9d7a945774187e3e846cc3de0fd9b411aabab85d142a142cbf24"
+  },
+  "long_box/episode_0040_cam_front.mp4": {
+    "bytes": 10113673,
+    "sha256": "b3abdc96014433bd0fd1358c8bed081ed40905cdc5dad8d7d2b2157d74f1525b"
+  },
+  "long_box/episode_0040_cam_high.mp4": {
+    "bytes": 17343774,
+    "sha256": "b8fda932e3a35ea4241f05b568b671ecf4396e4ba40ee6498761e808077fb9df"
+  },
+  "long_box/episode_0041.npz": {
+    "bytes": 269402,
+    "sha256": "0b0210483ad3c1db74d2db942476aa310bd1e7321e62ef3b81ec3cb774c3afd6"
+  },
+  "long_box/episode_0041_cam_front.mp4": {
+    "bytes": 13482829,
+    "sha256": "23d7bff45b490a5281c170bd6b7202625d59e1b2c5a5f2783cd74cdabc75740d"
+  },
+  "long_box/episode_0041_cam_high.mp4": {
+    "bytes": 20672212,
+    "sha256": "dcf914a15e1fd7bc7d5067d4cda8679131e774d71701fee3b9cf07f62f987b8a"
+  },
+  "long_box/episode_0042.npz": {
+    "bytes": 272954,
+    "sha256": "1d69e189e1e02e573dc30433c4b06c9dc5bba9145253e453f3d8d03cb61485da"
+  },
+  "long_box/episode_0042_cam_front.mp4": {
+    "bytes": 11789129,
+    "sha256": "b907c4d972d2ad705e1d94bcaae20146bd2146d910ed5b2efef41941d39cf5f3"
+  },
+  "long_box/episode_0042_cam_high.mp4": {
+    "bytes": 21654129,
+    "sha256": "27b6e456064ca34f538d7e7df60540de720fed1661dfd5369fd8805858b3e098"
+  },
+  "long_box/episode_0043.npz": {
+    "bytes": 178702,
+    "sha256": "5848c962a2547b0dcc83a6f1787e03d9034e997f45780fb45c074744e34090d2"
+  },
+  "long_box/episode_0043_cam_front.mp4": {
+    "bytes": 8333941,
+    "sha256": "53d4fdf9f7d577b3d48c9a89d4b2b465063166674c2317412b0b05c285d4d19a"
+  },
+  "long_box/episode_0043_cam_high.mp4": {
+    "bytes": 13492515,
+    "sha256": "ebfa9a9077907c3eaef5512b936e7877e8480d698e4a05f84eb7221ecbf630a7"
+  },
+  "long_box/episode_0044.npz": {
+    "bytes": 257716,
+    "sha256": "b74b81dcb75906607f6381cb4fc09e7c18f37faf9abab4ed9ba044516718af9f"
+  },
+  "long_box/episode_0044_cam_front.mp4": {
+    "bytes": 12582986,
+    "sha256": "d6f0fd6eee809de52f2752bb4f26fb70f555f1e4c12edf72c5d07e215527623d"
+  },
+  "long_box/episode_0044_cam_high.mp4": {
+    "bytes": 19433069,
+    "sha256": "0e60bdc8fb79fff74343b4caa450c783fdb624d145c1dd2610910ab45c0f699c"
+  },
+  "long_box/episode_0045.npz": {
+    "bytes": 257193,
+    "sha256": "d273a20bb495148579c624da3472ae9da6ff37fe3673f7efa3d126d15deb1082"
+  },
+  "long_box/episode_0045_cam_front.mp4": {
+    "bytes": 11339081,
+    "sha256": "b5ea5fba68d543ee404558988d467241763556d97c86b316a059f9241274cda8"
+  },
+  "long_box/episode_0045_cam_high.mp4": {
+    "bytes": 20548442,
+    "sha256": "cd11f68720b14b1365f971466f23dea4a3b66079388972d5b97658ae2d838417"
+  },
+  "long_box/episode_0046.npz": {
+    "bytes": 231218,
+    "sha256": "07477f1e544dccc75ea65efecabb9c2df14e87dae5e6f2e5ddab0291771c5a69"
+  },
+  "long_box/episode_0046_cam_front.mp4": {
+    "bytes": 9476184,
+    "sha256": "cf0608708b7d8dc149918ee4f5716d05a7175c2dd5318076fe9fec1cdd32060b"
+  },
+  "long_box/episode_0046_cam_high.mp4": {
+    "bytes": 18482153,
+    "sha256": "d1c3a7f55deb4493ccb8955f6f4cbbfe63d67aa9d171f471027bf108d1237277"
+  },
+  "long_box/episode_0047.npz": {
+    "bytes": 235113,
+    "sha256": "8ee386bbcdb527d98f24509c6f3a0d8114d30d16b5f9d0672281f0779b2dec56"
+  },
+  "long_box/episode_0047_cam_front.mp4": {
+    "bytes": 9762944,
+    "sha256": "bfdfe88c93b39aa89179c59aa9d38c3f262f47c851711efc5e0a3ecfd7a05546"
+  },
+  "long_box/episode_0047_cam_high.mp4": {
+    "bytes": 18474682,
+    "sha256": "f94a85b97da43228586cd2d8d52e9ea66cde30cdc6958d9168114d017ed71c0b"
+  },
+  "long_box/episode_0048.npz": {
+    "bytes": 291979,
+    "sha256": "0d760afbb1ff54d89890a97d7054c86accc4c01a510a0a5eefb87a68a5f7a665"
+  },
+  "long_box/episode_0048_cam_front.mp4": {
+    "bytes": 11105239,
+    "sha256": "a77e84b65ccff9fdd7cb21868080b746d1d5da23a59341d91c2b59ab8d750127"
+  },
+  "long_box/episode_0048_cam_high.mp4": {
+    "bytes": 22859735,
+    "sha256": "7f6b7fbb65e43658d90bfa588fff9054f33564a61a597f40e7cf788c3854fcfa"
+  },
+  "long_box/episode_0049.npz": {
+    "bytes": 189750,
+    "sha256": "3a99e427a7da3e4a010dbde34b3c653ca11f5b52052dd886ffb3c0c6dd9881bd"
+  },
+  "long_box/episode_0049_cam_front.mp4": {
+    "bytes": 8805161,
+    "sha256": "847caad9a4f00085d4c9264a6bbf185d9b20acecd4b0c8db3ec45b9bea827b2b"
+  },
+  "long_box/episode_0049_cam_high.mp4": {
+    "bytes": 15372159,
+    "sha256": "a4694b577a56e2ab0197fc5ab8894ed6e22c88373623d299267d2b79cf895ae2"
+  },
+  "pill_box/dataset.json": {
+    "bytes": 167,
+    "sha256": "ebdd98413af968fa843f9f9b331a68d6da5ecc94b161e5154395da577d3b93ec"
+  },
+  "pill_box/episode_0000.npz": {
+    "bytes": 114740,
+    "sha256": "605def5cdd7408985aacc69b1d6b73fe86069d5806010f04a9d41a29d1612754"
+  },
+  "pill_box/episode_0000_cam_front.mp4": {
+    "bytes": 5302203,
+    "sha256": "9b1ce4b939f8c68a1a40a0d659b775b45dabe1f5514ecd4688ec7e2b9ebf5644"
+  },
+  "pill_box/episode_0000_cam_high.mp4": {
+    "bytes": 9041719,
+    "sha256": "e50cd665ee246375064daf51cc74a0420103e9ac4101350e007476ba3fbef6a6"
+  },
+  "pill_box/episode_0001.npz": {
+    "bytes": 107642,
+    "sha256": "463d4d4f398d7038659728de3f66e05c290760cee377da244b3281133052f8ea"
+  },
+  "pill_box/episode_0001_cam_front.mp4": {
+    "bytes": 4337451,
+    "sha256": "95b709c5a819555f3c0c87e109b8ec01b81d644052fe7855bfc646976bf8f422"
+  },
+  "pill_box/episode_0001_cam_high.mp4": {
+    "bytes": 8102787,
+    "sha256": "0635370a3a5e143104737c63893efe1d4ed54374295e316d4c4035a1fd80df12"
+  },
+  "pill_box/episode_0002.npz": {
+    "bytes": 146970,
+    "sha256": "9be912a462ad93c4383ab214bc47e5fefbacec0a5b42eeaad07bfde0189ca95e"
+  },
+  "pill_box/episode_0002_cam_front.mp4": {
+    "bytes": 6417582,
+    "sha256": "491f5cc6f22d05fcc4d2392f6023f68487d0957331b845d986aea86253fc0aaa"
+  },
+  "pill_box/episode_0002_cam_high.mp4": {
+    "bytes": 10986218,
+    "sha256": "13af2be48b5b1a283c6c046cb99fdbe69f3509922395d234526fb44cf86d9ef9"
+  },
+  "pill_box/episode_0003.npz": {
+    "bytes": 118926,
+    "sha256": "54f42c2912db50bc6ee16e77813ecfe4b50e61a14a25da3289fd5f2815322bbb"
+  },
+  "pill_box/episode_0003_cam_front.mp4": {
+    "bytes": 5005296,
+    "sha256": "bd5fccc9671b0afea2c4ae4d97cf3470e2bba539ba89d826556d4076a5daf352"
+  },
+  "pill_box/episode_0003_cam_high.mp4": {
+    "bytes": 9141572,
+    "sha256": "872af2e187d3d37dd9e2f96f8c62e8d98a2faa921d1169f04dbcd497a6a5640a"
+  },
+  "pill_box/episode_0004.npz": {
+    "bytes": 92055,
+    "sha256": "971f32df023c6fe386051c371922a575d960321107cd16736918eade61d840ef"
+  },
+  "pill_box/episode_0004_cam_front.mp4": {
+    "bytes": 4502011,
+    "sha256": "21cfdb925562d4ba99f90f3fcf5129c77a70e40760c75b1ae107a2e90c4eb096"
+  },
+  "pill_box/episode_0004_cam_high.mp4": {
+    "bytes": 7021162,
+    "sha256": "cdaa4dd6ba2a9ffeeeb52784e6b47f3336b6ec4fc9cef5e3b84cca12d3c651aa"
+  },
+  "pill_box/episode_0005.npz": {
+    "bytes": 93316,
+    "sha256": "3e5b268cbe2a567ea6f2df59a503455dc2631f25e132dae8f2736f629c3f89d3"
+  },
+  "pill_box/episode_0005_cam_front.mp4": {
+    "bytes": 4210440,
+    "sha256": "7c5bf8fc5eb3b29f99d0d2316ac2d38816b410c8ff4e26ba20bed03547109d08"
+  },
+  "pill_box/episode_0005_cam_high.mp4": {
+    "bytes": 7073474,
+    "sha256": "f5b4c65eae5a349aece04ec5252c81956027182b7d0e7f4a5298744988b2c42f"
+  },
+  "pill_box/episode_0006.npz": {
+    "bytes": 169876,
+    "sha256": "2236126fdaea9e3a075d9fb95d7d9c681f1a22c7e8577c921e46ffd363e0ebd6"
+  },
+  "pill_box/episode_0006_cam_front.mp4": {
+    "bytes": 7629307,
+    "sha256": "9258c01b143065262ed3fa398bfe7918e7d748b1563fe9fa0997ae0eea98b59f"
+  },
+  "pill_box/episode_0006_cam_high.mp4": {
+    "bytes": 13447780,
+    "sha256": "698011042cd5501f38e3aff09002ac0660238cb2c1605021f12023ba3fb42a17"
+  },
+  "pill_box/episode_0007.npz": {
+    "bytes": 154607,
+    "sha256": "6bf9cfad6156cf538d4c7c09409f275e6aee197adc340a65af58913e8ad26966"
+  },
+  "pill_box/episode_0007_cam_front.mp4": {
+    "bytes": 7381137,
+    "sha256": "7c0c1af39c13836415a72cff47c17547c186eef94f1ac9f57a1c0f5a4e291365"
+  },
+  "pill_box/episode_0007_cam_high.mp4": {
+    "bytes": 11818183,
+    "sha256": "12d2df665cbc9494c00bdbdf9cf61396342ab0951aa107fd70fc5dffc67211e1"
+  },
+  "pill_box/episode_0008.npz": {
+    "bytes": 155316,
+    "sha256": "3f1c200d0efb3ef935e0aee16e0f373f591ef60223316a99c649992f1bda5d14"
+  },
+  "pill_box/episode_0008_cam_front.mp4": {
+    "bytes": 7441162,
+    "sha256": "1dbcfc498dc6206bb73d0820d7c5b70df02e640c7937408435bed20443bdc60a"
+  },
+  "pill_box/episode_0008_cam_high.mp4": {
+    "bytes": 12311941,
+    "sha256": "a2d89d782591eb01573b7b7876321fa2ed56e12afed0332e08c5ea30f15f9dbc"
+  },
+  "pill_box/episode_0009.npz": {
+    "bytes": 114737,
+    "sha256": "45c418f84600e29ef80401f196c825567c3afa6a12050ff7fc2795c7fbfff1b8"
+  },
+  "pill_box/episode_0009_cam_front.mp4": {
+    "bytes": 5167830,
+    "sha256": "a9a422b263a670ebbc2425821d9105004eb0fcff45e3022547dedddac6d20b71"
+  },
+  "pill_box/episode_0009_cam_high.mp4": {
+    "bytes": 8573907,
+    "sha256": "b68c7b30e9784e155451ddb560ed9605231e4cb62b40253b2f969e7a4655f88b"
+  },
+  "pill_box/episode_0010.npz": {
+    "bytes": 88658,
+    "sha256": "9c196be2bead2cce8c70df6f71e805241835769bd12d40d805bb9de8abc1545a"
+  },
+  "pill_box/episode_0010_cam_front.mp4": {
+    "bytes": 3936767,
+    "sha256": "e584492e9edad76fbeb13c497cffa383dc69ae3c5a52f7d68477ae4abaaa0252"
+  },
+  "pill_box/episode_0010_cam_high.mp4": {
+    "bytes": 6698618,
+    "sha256": "9b849ab7d18aabf794afa414556698a2c29fd774740d1d5741ea42cf5a7f47ff"
+  },
+  "pill_box/episode_0011.npz": {
+    "bytes": 158336,
+    "sha256": "35f8a9956b2192234d47525729b0fdbd801009e18cafa8ee39ec9ad783996d83"
+  },
+  "pill_box/episode_0011_cam_front.mp4": {
+    "bytes": 7131296,
+    "sha256": "a897f9e56ed8afb051a9eac14080feb10d1c5e9e37d13a92bb93706821f772ce"
+  },
+  "pill_box/episode_0011_cam_high.mp4": {
+    "bytes": 12758474,
+    "sha256": "b03ea8e8394026cfbf6fe209a168666e81a228dd5f49c701b99f08bc9711014c"
+  },
+  "pill_box/episode_0012.npz": {
+    "bytes": 132026,
+    "sha256": "1d9a2e7a0ca17323d8acfce9a73df0ffcff24b470682c5d2c7ffe52621365ca2"
+  },
+  "pill_box/episode_0012_cam_front.mp4": {
+    "bytes": 5568023,
+    "sha256": "1298a5721ff39c7cfd0dd87946364942c17d70c8d287ca15a2eb8b8a4ca9efef"
+  },
+  "pill_box/episode_0012_cam_high.mp4": {
+    "bytes": 10265666,
+    "sha256": "9fdcca802fb56dbb2480529638ed3252bea931ca973be35c61ac7e8b730682a1"
+  },
+  "pill_box/episode_0013.npz": {
+    "bytes": 145242,
+    "sha256": "9ca82c6891577475b544540f2a764442c497379582c78bb2f2d66a9b3b138b85"
+  },
+  "pill_box/episode_0013_cam_front.mp4": {
+    "bytes": 6792729,
+    "sha256": "f642291d149f971cd79208357ca0015f7d56c74559db5228a49980e4a18ddd09"
+  },
+  "pill_box/episode_0013_cam_high.mp4": {
+    "bytes": 11599304,
+    "sha256": "ec0af6f4378c84261047c66585792e7d26a8ce238b2b8bf627258efed3ab8dec"
+  },
+  "pill_box/episode_0014.npz": {
+    "bytes": 96540,
+    "sha256": "ac6b82176c53cdd8a55ab203add93f2b85cc5e7c35b54602282472e3d44d9f62"
+  },
+  "pill_box/episode_0014_cam_front.mp4": {
+    "bytes": 4465931,
+    "sha256": "3e64b6448d92d43e4588592ed71d7253984d53b58d196a4170f6d38e66a3865e"
+  },
+  "pill_box/episode_0014_cam_high.mp4": {
+    "bytes": 7650822,
+    "sha256": "a8d63e96d54085d8870e4055799bbba17719ebd570dcfe5d91c23115d4d8abab"
+  },
+  "pill_box/episode_0015.npz": {
+    "bytes": 95300,
+    "sha256": "6f244f1e6e7d436c4b5e96aed28288bfd4fee9c53a888b5f26ded9eff2fd7911"
+  },
+  "pill_box/episode_0015_cam_front.mp4": {
+    "bytes": 3513713,
+    "sha256": "36fc3216c65e099604af45ae2f1ff77329e7c6f5f66e4d5ecc126ea158d9884a"
+  },
+  "pill_box/episode_0015_cam_high.mp4": {
+    "bytes": 7455522,
+    "sha256": "aa78d4041fcdc871b14b93742f67b6da2f6b3452accb507d2a5c3d4e7e7bd70f"
+  },
+  "pill_box/episode_0016.npz": {
+    "bytes": 82823,
+    "sha256": "825c777508f4c5eec1913a5f1bf1054f15f0a17995bb5ce92e2edbaf932f3146"
+  },
+  "pill_box/episode_0016_cam_front.mp4": {
+    "bytes": 3239139,
+    "sha256": "7b833eb1a7af7c6e374229a6871fc64d802e6396e0ddbda3b2dc191b80552cf4"
+  },
+  "pill_box/episode_0016_cam_high.mp4": {
+    "bytes": 6361040,
+    "sha256": "3c1c61daa00bee5df0ed7389814767d4d6594dbd2bbe7fa045eed33d0ed01cc5"
+  },
+  "pill_box/episode_0017.npz": {
+    "bytes": 101177,
+    "sha256": "5d362e1e06ad63c242161514cde4c1342d785525a40345106de3d9567e3c2273"
+  },
+  "pill_box/episode_0017_cam_front.mp4": {
+    "bytes": 4549557,
+    "sha256": "24f6ab7406ee07067b7a9aeea081ac80342d35f80bd2a370a7fc66d2b64cc31b"
+  },
+  "pill_box/episode_0017_cam_high.mp4": {
+    "bytes": 8218643,
+    "sha256": "9c89dd7beb4869c2c26f877b559788ccb1b7b1ed256653a5e199101ecae2e34a"
+  },
+  "pill_box/episode_0018.npz": {
+    "bytes": 86925,
+    "sha256": "6b6c0b2be0bc0ef4936552c8a7099c65029b1e95286301ae6c0846a3a2b13018"
+  },
+  "pill_box/episode_0018_cam_front.mp4": {
+    "bytes": 4041372,
+    "sha256": "9bc0becb7f95b6d6756cc33c68788dda8626412e9220eae4c17003fd75f6676b"
+  },
+  "pill_box/episode_0018_cam_high.mp4": {
+    "bytes": 6898993,
+    "sha256": "45fb02705dd684202d4708f39f7a191f5a10b312425d757652e8bb56ffe81fd8"
+  },
+  "pill_box/episode_0019.npz": {
+    "bytes": 96634,
+    "sha256": "e412f2e94f51d7d82cf933116b181d94b0dcf07f997bcf02a93450a83363843f"
+  },
+  "pill_box/episode_0019_cam_front.mp4": {
+    "bytes": 4570878,
+    "sha256": "857624c141e34db11a2ad3fd7d98473575373471eead27fb2fd456a6cd391c28"
+  },
+  "pill_box/episode_0019_cam_high.mp4": {
+    "bytes": 7757692,
+    "sha256": "c00140ecc9e98df90da35f944de1454584d012318ade8c063c5c38aa08bb787d"
+  },
+  "pill_box/episode_0020.npz": {
+    "bytes": 89310,
+    "sha256": "79a0d475195077d03b316268dd65360d11f6bc588a6942d21b7c208a1643b3b2"
+  },
+  "pill_box/episode_0020_cam_front.mp4": {
+    "bytes": 3809209,
+    "sha256": "a39bdc3d25770f66ae128386a3edb0b002391ad508987dd2a20511a719e88a1e"
+  },
+  "pill_box/episode_0020_cam_high.mp4": {
+    "bytes": 6757404,
+    "sha256": "c0d971c6517340b683b89aa590e66ca00da3bebefa75bf9e9423409f627e3ece"
+  },
+  "pill_box/episode_0021.npz": {
+    "bytes": 78242,
+    "sha256": "862abb4c0ed7709d87f12f8fb468d0a89a4ec2b1e7fada9c73966fabf628ccb3"
+  },
+  "pill_box/episode_0021_cam_front.mp4": {
+    "bytes": 3353296,
+    "sha256": "255e6d0580874cdb576d554a0593c4e2935d04968a2a13508ae8ce6269eeda3f"
+  },
+  "pill_box/episode_0021_cam_high.mp4": {
+    "bytes": 5588113,
+    "sha256": "5d92bb864a5b71f36b01f41f3a6b572c3f47fad0520a42026946144e53274b89"
+  },
+  "pill_box/episode_0022.npz": {
+    "bytes": 127035,
+    "sha256": "32f83163062dfab8e3f087d26cbe78c260dae47f622aa2b86389d55ad4e9b1f0"
+  },
+  "pill_box/episode_0022_cam_front.mp4": {
+    "bytes": 5693801,
+    "sha256": "b0ba69e4247dcec7ae5c90bf4235729453c27116961a95570a9babda80338fc8"
+  },
+  "pill_box/episode_0022_cam_high.mp4": {
+    "bytes": 9442432,
+    "sha256": "9df0ffde77a5824d63ae2fb8775380525504e26e757c91b372772f3c0e6e1a6b"
+  },
+  "pill_box/episode_0023.npz": {
+    "bytes": 109441,
+    "sha256": "99db0fba054928c0e6a903b97aaeee689b752333d930257021e7da5317978086"
+  },
+  "pill_box/episode_0023_cam_front.mp4": {
+    "bytes": 5280974,
+    "sha256": "d91b931601d27095a5e5da4552bb5bb3c58f83d609bc21aa28f341e791232918"
+  },
+  "pill_box/episode_0023_cam_high.mp4": {
+    "bytes": 8445734,
+    "sha256": "2838da95dc1098deebb15004f1dc4dd7db9000457f608547ffe469cc8ee97be6"
+  },
+  "pill_box/episode_0024.npz": {
+    "bytes": 113893,
+    "sha256": "85491aa546f745b290ab341b6740b8efad9e25252d82f8f76ab46c1fd6b226a9"
+  },
+  "pill_box/episode_0024_cam_front.mp4": {
+    "bytes": 5257041,
+    "sha256": "124647c06da5538ef2597a0cb36d1b56c916c3d31e28c49354228a357eb82204"
+  },
+  "pill_box/episode_0024_cam_high.mp4": {
+    "bytes": 8733078,
+    "sha256": "876f35adc2acf95a964a25f209de9a6009fd515e3929b4b83f22c60e025ab2f1"
+  },
+  "pill_box/episode_0025.npz": {
+    "bytes": 96862,
+    "sha256": "4ff8982ac69aa5d4af260a0f33da81fdb6a35cc24a2176f0a387660a456b0458"
+  },
+  "pill_box/episode_0025_cam_front.mp4": {
+    "bytes": 5281507,
+    "sha256": "5d446bdadcef95fc7e17bbf077b1e30ddd6b5f8e4e69ad561e7e914412055d3f"
+  },
+  "pill_box/episode_0025_cam_high.mp4": {
+    "bytes": 7306129,
+    "sha256": "00925555cee89ad6ebb04f0b619ca731b487163c733f1f21808659a00acccf1e"
+  },
+  "pill_box/episode_0026.npz": {
+    "bytes": 92762,
+    "sha256": "f5ee801dc51ac465a690e380aee6efa7c05e1cd5590aba1c8ade537aae7705a0"
+  },
+  "pill_box/episode_0026_cam_front.mp4": {
+    "bytes": 5213021,
+    "sha256": "974abfc255eaaed7b9d7c2e973c9c09d74a0cf0aa3229b2ce89677d8a82a864b"
+  },
+  "pill_box/episode_0026_cam_high.mp4": {
+    "bytes": 6898945,
+    "sha256": "9e317b22ce7a6e5496c5ec443ddf521334f84741d2ff661853150a16db150085"
+  },
+  "pill_box/episode_0027.npz": {
+    "bytes": 113017,
+    "sha256": "491a448b41176ab4f521b8aecdff2a2cbf27df662a2894e6fd7c62aaa65d3491"
+  },
+  "pill_box/episode_0027_cam_front.mp4": {
+    "bytes": 6094208,
+    "sha256": "829dca60534fc9f94427269127727fb281508675b9a78344692ac6d3359ce5b2"
+  },
+  "pill_box/episode_0027_cam_high.mp4": {
+    "bytes": 8310799,
+    "sha256": "c10290fa31a063001deeba5c70b859346a94a07d7babccf9c4a4ba538e33b661"
+  },
+  "pill_box/episode_0028.npz": {
+    "bytes": 101207,
+    "sha256": "296c6d9dd2a740fe452349a777891194a41c275a9bfd6d2d236833140cac1f57"
+  },
+  "pill_box/episode_0028_cam_front.mp4": {
+    "bytes": 5787425,
+    "sha256": "6e262104e6efec72fb2b7b37563747984c9b6988eaf370985111150d1edc2f51"
+  },
+  "pill_box/episode_0028_cam_high.mp4": {
+    "bytes": 7369103,
+    "sha256": "e079df552a5905595916f62f7015fe20ba8d75a7449e8899a060e6c79c919b14"
+  },
+  "pill_box/episode_0029.npz": {
+    "bytes": 114848,
+    "sha256": "64bca01041ed647b5e61db4c308bbc1fd36a400dfa2db2fee4981dcefe57e157"
+  },
+  "pill_box/episode_0029_cam_front.mp4": {
+    "bytes": 6833579,
+    "sha256": "8459432c6a5e2155cb5a7917c46edc6c310de6a3574529692678dc026fea0fc9"
+  },
+  "pill_box/episode_0029_cam_high.mp4": {
+    "bytes": 8537311,
+    "sha256": "04a6c16848d5119256fbefe7f41841f4fe2f829d1a0ba5e4a18e0675707f34df"
+  },
+  "pill_box/episode_0030.npz": {
+    "bytes": 157661,
+    "sha256": "3af9403daeee0dd9fd11ca88ce6a737bc0354d42dc56bed56153c93143735f6d"
+  },
+  "pill_box/episode_0030_cam_front.mp4": {
+    "bytes": 10604106,
+    "sha256": "deae874ac0d712ffae4e50f2c2d699add84637b4a244c4264a4bf71b527147c4"
+  },
+  "pill_box/episode_0030_cam_high.mp4": {
+    "bytes": 12049164,
+    "sha256": "a39cbf05798fbf20cbb0af666547c924f51d7b217804717379c364507ed0a58d"
+  },
+  "pill_box/episode_0031.npz": {
+    "bytes": 160921,
+    "sha256": "d5ebb04c4ae619af341311fc37f6e4e6dc72a398b9d33ddec2726d7842dd3728"
+  },
+  "pill_box/episode_0031_cam_front.mp4": {
+    "bytes": 9521426,
+    "sha256": "c3d8e60e1a76096897fb29d3685b2aab91f23c68a4e966b7d57bf0628090ff62"
+  },
+  "pill_box/episode_0031_cam_high.mp4": {
+    "bytes": 12063755,
+    "sha256": "3c5021c285e2e1032401af5b340993e22fcae89919b183a0044f5019e5ab5afc"
+  },
+  "pill_box/episode_0032.npz": {
+    "bytes": 102083,
+    "sha256": "f2729224b3284ab53e459dc0870d13e9985cb1abf5df9721635419b6f1f6b597"
+  },
+  "pill_box/episode_0032_cam_front.mp4": {
+    "bytes": 6289886,
+    "sha256": "f6545662d1bb30e1e5f0cb20a71e3157a9da1c5bb8f682776d1f11b93154b639"
+  },
+  "pill_box/episode_0032_cam_high.mp4": {
+    "bytes": 7499607,
+    "sha256": "104fa765714c67536412349af2b87f614f4f73c18c1284697a0c4ccb2580785a"
+  },
+  "pill_box/episode_0033.npz": {
+    "bytes": 97569,
+    "sha256": "314d00835996de3c88d863a3a884464c19932d839b5b723d8b1701e33b40f0da"
+  },
+  "pill_box/episode_0033_cam_front.mp4": {
+    "bytes": 4217607,
+    "sha256": "0df0f4ddfa8ce48132c505fc2a68d1dc7ffc6c6f5d99e86fb0330fe98cbeee9d"
+  },
+  "pill_box/episode_0033_cam_high.mp4": {
+    "bytes": 7002316,
+    "sha256": "968ef2bb306a0b83f967a151d7a123116fba0771052e0778f67bf20cae112218"
+  },
+  "pill_box/episode_0034.npz": {
+    "bytes": 100259,
+    "sha256": "a9c6be35b6d5cb2a70543e09c7e06266846f11797544960d5256a2d64c83bad6"
+  },
+  "pill_box/episode_0034_cam_front.mp4": {
+    "bytes": 4867715,
+    "sha256": "d8bdb169f85cc64204e43c257d51a7efb4a0708c1394117fda4dd65a1f894383"
+  },
+  "pill_box/episode_0034_cam_high.mp4": {
+    "bytes": 7847163,
+    "sha256": "b5454c3ff26e8c7e659e6c17b275c424526dddef53e2726e05deaf591623b4ea"
+  },
+  "pill_box/episode_0035.npz": {
+    "bytes": 138925,
+    "sha256": "28956740d22965e07ebdb538da4b42375c18f9629e889e91206eed9e2f6c5e7d"
+  },
+  "pill_box/episode_0035_cam_front.mp4": {
+    "bytes": 6537027,
+    "sha256": "257fb7ab205a67668dedfd4b8ffa9ea58db84e6057962e72202b71ea1aeabfd6"
+  },
+  "pill_box/episode_0035_cam_high.mp4": {
+    "bytes": 10032921,
+    "sha256": "b03eecdaca056781c0dbe59130768c79bda11973d0bd19c1bf1b04e15e8aed6a"
+  },
+  "pill_box/episode_0036.npz": {
+    "bytes": 87077,
+    "sha256": "463cfbe3cb3a86b27d234351a3b300b9914d3ff1a3d9a626434762e8cf121010"
+  },
+  "pill_box/episode_0036_cam_front.mp4": {
+    "bytes": 3912943,
+    "sha256": "39692e1ee0b640e7f91c9984eb5868b1ae356fbb9d69cb90cee77ee93b7fda4b"
+  },
+  "pill_box/episode_0036_cam_high.mp4": {
+    "bytes": 6938184,
+    "sha256": "c18040a2fbd5c5e4d381681570657dcbaed534d5461586cdebdc9c0a9edac07b"
+  },
+  "pill_box/episode_0037.npz": {
+    "bytes": 69350,
+    "sha256": "93150b4c70984486fe45af782fe8f0f960a36e01a0443737ab38226b223711a3"
+  },
+  "pill_box/episode_0037_cam_front.mp4": {
+    "bytes": 2806305,
+    "sha256": "92a874dfe80bc47bfc60f40ccb5589f9724f85f844d8a4f188b32c0cded3b8b2"
+  },
+  "pill_box/episode_0037_cam_high.mp4": {
+    "bytes": 5035378,
+    "sha256": "e1c48760462df5c3bba04611cb0c8d7ec6965e4016ca3add396006897a237832"
+  },
+  "pill_box/episode_0038.npz": {
+    "bytes": 100797,
+    "sha256": "5dbfd6a6eeb18895cad1ec4448804e53e8cdfe80d187de3cf0e7edb702987824"
+  },
+  "pill_box/episode_0038_cam_front.mp4": {
+    "bytes": 4516222,
+    "sha256": "7d880e82f66c83cb24b115b6b09c3bff46316f53782433946209206856768adb"
+  },
+  "pill_box/episode_0038_cam_high.mp4": {
+    "bytes": 8126101,
+    "sha256": "883f39d6279ca006853f36426d3bbf11cd707c7bcf45aef9ac409363660b3ed0"
+  },
+  "pill_box/episode_0039.npz": {
+    "bytes": 113948,
+    "sha256": "14f7efe4136a9d28ec58bb9551a829453478cde2b0c74509a5a0ab07053eb295"
+  },
+  "pill_box/episode_0039_cam_front.mp4": {
+    "bytes": 5997085,
+    "sha256": "7a3832b1714a1176eae8d1b45e7460a648b6172a683ca77643b55251a4bafaf3"
+  },
+  "pill_box/episode_0039_cam_high.mp4": {
+    "bytes": 8563081,
+    "sha256": "2e138545237e7942d6c3d14eafd5dafb69b614ea85c187bf37b9c8a4d34bf44f"
+  },
+  "pill_box/episode_0040.npz": {
+    "bytes": 92570,
+    "sha256": "e12325a7d8fa9fd463aa9659bfcce3134b74a8b4903ed99f2dc754120ab2dca9"
+  },
+  "pill_box/episode_0040_cam_front.mp4": {
+    "bytes": 4317994,
+    "sha256": "d03d85672d0c2ea3ced420b163abf8d621a70f23433c40ec5961c8814c2c369b"
+  },
+  "pill_box/episode_0040_cam_high.mp4": {
+    "bytes": 6862291,
+    "sha256": "fe2ebffa0d89d68de559752046fee16a4f1968acd0f412bb0b8fb62b2f6c911e"
+  },
+  "pill_box/episode_0041.npz": {
+    "bytes": 95046,
+    "sha256": "34775ffc49a7e0d9563a23ee293ec58e14c482e5f7b5b5f0d7244ab0e7db4715"
+  },
+  "pill_box/episode_0041_cam_front.mp4": {
+    "bytes": 3859304,
+    "sha256": "c15971a9cfb26922f0c566b1a532cbc003e80e44ee29e8a24afd80bbb848d6c1"
+  },
+  "pill_box/episode_0041_cam_high.mp4": {
+    "bytes": 7130581,
+    "sha256": "2b940701cea3ece4422dfea07b4aa0ba11380b2e102da812def16844dd993c11"
+  },
+  "pill_box/episode_0042.npz": {
+    "bytes": 101965,
+    "sha256": "2c344af884744652c6e3155483533db50ab105ec43a31c1073b1deff95d3b988"
+  },
+  "pill_box/episode_0042_cam_front.mp4": {
+    "bytes": 4549592,
+    "sha256": "300197a0f97610b8eaebf07db6d6604cfb24478baf566443b65b38ae980056ab"
+  },
+  "pill_box/episode_0042_cam_high.mp4": {
+    "bytes": 7699115,
+    "sha256": "df2649a7da13a82b23672351d4b18cef08d47931d2350009354860f7f829b48b"
+  },
+  "pill_box/episode_0043.npz": {
+    "bytes": 90974,
+    "sha256": "6d641d2e07a874236dd0f7ea6b8545a683e84d152a0cee682637c594feaf12e7"
+  },
+  "pill_box/episode_0043_cam_front.mp4": {
+    "bytes": 3984098,
+    "sha256": "6bf8e2a556708f68d66b5d0418a494708f96077f96767f0a76fed689c0d2910c"
+  },
+  "pill_box/episode_0043_cam_high.mp4": {
+    "bytes": 6972050,
+    "sha256": "ff6dbf6d5902c3cb716e554bd4e931e836baa5e74f49a999af137b2bd565e7ca"
+  },
+  "pill_box/episode_0044.npz": {
+    "bytes": 95615,
+    "sha256": "df2cb2d5867ac3c3f9863dc82129f24ec6371ac664441eb8c0b9ede0ac00fb37"
+  },
+  "pill_box/episode_0044_cam_front.mp4": {
+    "bytes": 4540971,
+    "sha256": "ca8334a0d0310289c922c68e14947abe57fad6489746da3d6dbd3d9f4cb8e6ab"
+  },
+  "pill_box/episode_0044_cam_high.mp4": {
+    "bytes": 7127335,
+    "sha256": "55abb69a7718fe0cf87b36a2d189e7ad6007d38bce0fb1cc6ee7f8f6c9c43b38"
+  },
+  "pill_box/episode_0045.npz": {
+    "bytes": 89930,
+    "sha256": "3b68af510cb3a48c9535e7ccb8012481774d88156b1decfb4bc3416a1acbceef"
+  },
+  "pill_box/episode_0045_cam_front.mp4": {
+    "bytes": 5323094,
+    "sha256": "988ea4e2c065e3cd48cde7f1fa61995b5f3147f174bc9394dede788017306796"
+  },
+  "pill_box/episode_0045_cam_high.mp4": {
+    "bytes": 6773001,
+    "sha256": "eaceab474aaeb4eade76ce9ba96849bf73e96a73ffc8cc94e52ebca7dde09162"
+  },
+  "pill_box/episode_0046.npz": {
+    "bytes": 97041,
+    "sha256": "d191a33381f5de49e5663120e3f252ea18f161533836ff5d1fa866b83a63d3cf"
+  },
+  "pill_box/episode_0046_cam_front.mp4": {
+    "bytes": 5344906,
+    "sha256": "107faa11c8a9db0707b332348479015d741fb1d8fa23ae7da91f9b29375903c7"
+  },
+  "pill_box/episode_0046_cam_high.mp4": {
+    "bytes": 7196364,
+    "sha256": "82a0ba9d7684fcac0391ab5d54e884664abbc5f0b617b91e341e4bf4b01476c0"
+  },
+  "pill_box/episode_0047.npz": {
+    "bytes": 109079,
+    "sha256": "eb0cc39627a176d9942284245a3ffdd373ca18da7d6dd51bbb2be0835697c721"
+  },
+  "pill_box/episode_0047_cam_front.mp4": {
+    "bytes": 6433556,
+    "sha256": "894d36c932a9e27395b0831d76fd4301b915eec055740f10e849fc4ff261bbf6"
+  },
+  "pill_box/episode_0047_cam_high.mp4": {
+    "bytes": 8150049,
+    "sha256": "61e81a45ff1485bcf49a1c584a9791c16d311a80f650b624f1ee0e131d1010b1"
+  },
+  "pill_box/episode_0048.npz": {
+    "bytes": 108301,
+    "sha256": "d802c283f3c89071f22804cfb1631346cd32956ff7542da40ad0ea9ab7e0940f"
+  },
+  "pill_box/episode_0048_cam_front.mp4": {
+    "bytes": 5950042,
+    "sha256": "9b6a3afe1e21a4114fa0d07fa4e49bb1ce7f27129c37ab301eee8dd35c9664cb"
+  },
+  "pill_box/episode_0048_cam_high.mp4": {
+    "bytes": 8296991,
+    "sha256": "c127e08793fb3eed1f4b24a4dd4b10baba8de867577833707fe3e05dec803ebe"
+  },
+  "pill_box/episode_0049.npz": {
+    "bytes": 85829,
+    "sha256": "645375e2ba02fc24aec4319f625e1e81c397e6600e2f107b3f6da2ac0793a323"
+  },
+  "pill_box/episode_0049_cam_front.mp4": {
+    "bytes": 3905235,
+    "sha256": "cc92c9fe8b454b8d3a43fa11270f79d9630a42baead7ce574883299efbb15e8f"
+  },
+  "pill_box/episode_0049_cam_high.mp4": {
+    "bytes": 6486030,
+    "sha256": "7d1e07cc6c82c966619112515482cd91f49533c370adee529894fd43f3817e52"
+  },
+  "water_bottle/dataset.json": {
+    "bytes": 176,
+    "sha256": "b631c83e5a4f8c4adae83e93b8153202354d171a422abeed11819be102342713"
+  },
+  "water_bottle/episode_0000.npz": {
+    "bytes": 103446,
+    "sha256": "3ce28db7f9290a4b5654637ce8c83e4b221efc45013bdb8cd61dc688ffe87a56"
+  },
+  "water_bottle/episode_0000_cam_front.mp4": {
+    "bytes": 4392978,
+    "sha256": "d5d4fee7a1db2d1169fdf1bf684c07ccfc246e7cb1aacc2f8da30231d016ba2a"
+  },
+  "water_bottle/episode_0000_cam_high.mp4": {
+    "bytes": 8227087,
+    "sha256": "c1c3aed06791c870787ade8d626f8fe9307bd671313856a77f87e40d710b735b"
+  },
+  "water_bottle/episode_0001.npz": {
+    "bytes": 103826,
+    "sha256": "b9f7b270387bcd02947b26947046e07bef2f413fb9055df9017bfdd1907c2b3e"
+  },
+  "water_bottle/episode_0001_cam_front.mp4": {
+    "bytes": 4846328,
+    "sha256": "e322408ca4edd20dada8d0c9b6dbbc432d5d07d79f37fced23230a6a81d48f42"
+  },
+  "water_bottle/episode_0001_cam_high.mp4": {
+    "bytes": 8359738,
+    "sha256": "e33d68ad8a92be9200e3ef93e7dd9245c928ddf42e2387bfb3745c49b18debf7"
+  },
+  "water_bottle/episode_0002.npz": {
+    "bytes": 104574,
+    "sha256": "a122346881f8276efdaec1102058df8ef10178c5b1639a8cf12a75964379e907"
+  },
+  "water_bottle/episode_0002_cam_front.mp4": {
+    "bytes": 4901827,
+    "sha256": "f0516b464316535bdcaa555f95fcfa807f041e8b064f695dc35053d349713703"
+  },
+  "water_bottle/episode_0002_cam_high.mp4": {
+    "bytes": 8446639,
+    "sha256": "e8c5c0aadd24590d94368be687dc45702fdbf553b2914c3e7a33d50945a4cd1b"
+  },
+  "water_bottle/episode_0003.npz": {
+    "bytes": 99483,
+    "sha256": "54eefa72bbf481e5391d51af28276e1700a090ba6afa968b27beb561f3db84c0"
+  },
+  "water_bottle/episode_0003_cam_front.mp4": {
+    "bytes": 4948926,
+    "sha256": "e185ae51d30d183d4aa37fee3909b98f8f71b488831bdf45d8c423b4bdc59ace"
+  },
+  "water_bottle/episode_0003_cam_high.mp4": {
+    "bytes": 7886980,
+    "sha256": "6411a1d283618cd7ec9b0502a6672a80925d2a58ee74387ea09c36e8c8f88462"
+  },
+  "water_bottle/episode_0004.npz": {
+    "bytes": 96269,
+    "sha256": "d22869af33dee6f576ddfd9f2c158e36880ec5af6ab0aef5bbc3a9a4a807525f"
+  },
+  "water_bottle/episode_0004_cam_front.mp4": {
+    "bytes": 4695017,
+    "sha256": "ef8bd0baaef27724d7481c8c5a57e156cc5075933bd2ff6d2d057bbc6223cc3f"
+  },
+  "water_bottle/episode_0004_cam_high.mp4": {
+    "bytes": 7620219,
+    "sha256": "1907094bb54e7ff3edebf59bc394f45d544d490d34c07dc02509504c9d176e2e"
+  },
+  "water_bottle/episode_0005.npz": {
+    "bytes": 81653,
+    "sha256": "155863037f695bbe5fb5e481052aeb17264c9bb91e0a573dab1ffb635e315478"
+  },
+  "water_bottle/episode_0005_cam_front.mp4": {
+    "bytes": 4023978,
+    "sha256": "864c145be1300f364fe8dd1531a9c540be21b58e61968bea5d17f60fcfc266fb"
+  },
+  "water_bottle/episode_0005_cam_high.mp4": {
+    "bytes": 6515787,
+    "sha256": "c5e10e2118d4907a4d098ce045b2b1ef5de5a4f996d61adaa7ff7212121e1bdc"
+  },
+  "water_bottle/episode_0006.npz": {
+    "bytes": 119199,
+    "sha256": "ead375470aeccd68f818f58ef6714d862a2f160002f3f79e9b1d59751aa13c7d"
+  },
+  "water_bottle/episode_0006_cam_front.mp4": {
+    "bytes": 5820945,
+    "sha256": "dfc97a5ffbf9d22d721430f5adf26a2871abbfc528e9b5f527b622faf7b6d66c"
+  },
+  "water_bottle/episode_0006_cam_high.mp4": {
+    "bytes": 9690080,
+    "sha256": "aa6860365c883d96b8abd6adaa8223fa035daa0f6c4cb5f42db69d70a5213fe5"
+  },
+  "water_bottle/episode_0007.npz": {
+    "bytes": 108153,
+    "sha256": "c119572e6a51c87e6212511034d6194ba3a466b7b9976b25c74aa597486a6af2"
+  },
+  "water_bottle/episode_0007_cam_front.mp4": {
+    "bytes": 5383324,
+    "sha256": "be6d92207c49a0f8c0b46a50cdb47f3a4a41d3b3aec024379469482dbf120e77"
+  },
+  "water_bottle/episode_0007_cam_high.mp4": {
+    "bytes": 8754714,
+    "sha256": "3ce060af5e09b68669cab53b8602c1a773feec73c255494588d010aafc852079"
+  },
+  "water_bottle/episode_0008.npz": {
+    "bytes": 101185,
+    "sha256": "880eec342ce3491b0d320efe94f310fe2e65a76b623be9ff0db66e848cfcec92"
+  },
+  "water_bottle/episode_0008_cam_front.mp4": {
+    "bytes": 4811882,
+    "sha256": "c1ec4efe691c2d7e79caa8047170fe8e40269c943e7db706f40a86c983e2cc82"
+  },
+  "water_bottle/episode_0008_cam_high.mp4": {
+    "bytes": 8090827,
+    "sha256": "ae24ff7791332731486d362037e825154e3e9dba5f6d8254cda49f4b2fa630b8"
+  },
+  "water_bottle/episode_0009.npz": {
+    "bytes": 117682,
+    "sha256": "aa425638064dff4eea7fa305ec50d7013cf2861d4d16c93c14dbc5c956497066"
+  },
+  "water_bottle/episode_0009_cam_front.mp4": {
+    "bytes": 5662327,
+    "sha256": "75a2d42f2fa7e3309efffe9b908322dabb3bc0ed7fa521faefbe16c609d8053d"
+  },
+  "water_bottle/episode_0009_cam_high.mp4": {
+    "bytes": 9289338,
+    "sha256": "96f3745f6eccde96c49716ec1707fa96f8e5649c68ae1f9580fae43fe9d672f5"
+  },
+  "water_bottle/episode_0010.npz": {
+    "bytes": 94393,
+    "sha256": "37e198c9930a14c1c2163c8505f617fba682615f8cdfb85e7843aca608128688"
+  },
+  "water_bottle/episode_0010_cam_front.mp4": {
+    "bytes": 4270685,
+    "sha256": "50bc13e7596a123e4434cf5b978e73e3089eb05f66d3f0efc4d0ba32c22eb206"
+  },
+  "water_bottle/episode_0010_cam_high.mp4": {
+    "bytes": 7445037,
+    "sha256": "27aa6f51a351a2118687b371eaa3000f6733d805b499fe0a8a34a47cf56d0d42"
+  },
+  "water_bottle/episode_0011.npz": {
+    "bytes": 89373,
+    "sha256": "bd1b5253dc4f91107dfe6107c32749073ce7a29ab83601ab9dd70c4ac375d14c"
+  },
+  "water_bottle/episode_0011_cam_front.mp4": {
+    "bytes": 4238287,
+    "sha256": "215c5862c396a28e83940d86fe0e4d8208e47f1d67600d39f783bf3e2dc192d1"
+  },
+  "water_bottle/episode_0011_cam_high.mp4": {
+    "bytes": 6851747,
+    "sha256": "3487ed008ead97fc0c72e4bc6d6eab8ff7d3c2d636e3f2b1cb7b1ed0a8098657"
+  },
+  "water_bottle/episode_0012.npz": {
+    "bytes": 83224,
+    "sha256": "91615eefba11d4b5c9c2cb3e7f2285b82835005b0b5d66c9a1a32698cc2d6399"
+  },
+  "water_bottle/episode_0012_cam_front.mp4": {
+    "bytes": 3766608,
+    "sha256": "baf955819d1a465af3244291be2baae2fc1528f563b0ba7328955463d178a833"
+  },
+  "water_bottle/episode_0012_cam_high.mp4": {
+    "bytes": 6428195,
+    "sha256": "ad57231fcea8d088dd119679ebd4d9523dbdc8b7e2d1bacdb95ae5252214f41d"
+  },
+  "water_bottle/episode_0013.npz": {
+    "bytes": 100891,
+    "sha256": "68556b95dfa661303c84d367254ba6463000c6ae00561d2a6cea61e512360099"
+  },
+  "water_bottle/episode_0013_cam_front.mp4": {
+    "bytes": 4810186,
+    "sha256": "5f4a7abfb675f47190fc44bbb0c2b445bb31a03f213aa1f3d1b7350ab44765b1"
+  },
+  "water_bottle/episode_0013_cam_high.mp4": {
+    "bytes": 8014241,
+    "sha256": "d43f6eceede0a34487f3bfe93fc6093f51340860a04200af50d276c0ded27c5b"
+  },
+  "water_bottle/episode_0014.npz": {
+    "bytes": 110815,
+    "sha256": "3a15a2f00d81b8797117a3dbb8d6f2749be7fc4327c4304b39fddf5401028c91"
+  },
+  "water_bottle/episode_0014_cam_front.mp4": {
+    "bytes": 5474938,
+    "sha256": "0434a4a2523efe485a16ae593e5af81791262693e08187860c6b61c6a0f04ffc"
+  },
+  "water_bottle/episode_0014_cam_high.mp4": {
+    "bytes": 8759821,
+    "sha256": "97855f882176d1afbe0b715546468d358777b8a9ccccdf23167c94a3715f1473"
+  },
+  "water_bottle/episode_0015.npz": {
+    "bytes": 82191,
+    "sha256": "88b3f517ad0a5cf4a904980a55e3018630b1d421ab42be2c09864c4c1a880e43"
+  },
+  "water_bottle/episode_0015_cam_front.mp4": {
+    "bytes": 3832032,
+    "sha256": "744fe26b25b709e2709dbfd5dc1459c23b33dd35fd4233757ca14a1858f2500d"
+  },
+  "water_bottle/episode_0015_cam_high.mp4": {
+    "bytes": 6345941,
+    "sha256": "319a7460ec4946f427e1b31b7074070a094dd975b660789b05ec546e894f2ce6"
+  },
+  "water_bottle/episode_0016.npz": {
+    "bytes": 83888,
+    "sha256": "e117e94a8c842c37295d4fa56f25f3b9b9c5894d50dd59ff9b4c41437237dd43"
+  },
+  "water_bottle/episode_0016_cam_front.mp4": {
+    "bytes": 3901258,
+    "sha256": "dee5b605c372b6a632c15a3e25c4218b4b69641dc7b0395b5949032687c87d86"
+  },
+  "water_bottle/episode_0016_cam_high.mp4": {
+    "bytes": 6671777,
+    "sha256": "f70e9bee1f1cea5089b726871f011c3e22254ae5d4e6e2fba1ca0e7d6195a823"
+  },
+  "water_bottle/episode_0017.npz": {
+    "bytes": 88081,
+    "sha256": "a1fc15a8b001d032dc0f94c82fa06353d63b10b27e3ff1d37e2b3ead0cce3910"
+  },
+  "water_bottle/episode_0017_cam_front.mp4": {
+    "bytes": 4286375,
+    "sha256": "573910e939c164f7ff1879d9d6b09e64c8ec8fb5982a4254935a049ac8633ad6"
+  },
+  "water_bottle/episode_0017_cam_high.mp4": {
+    "bytes": 6967657,
+    "sha256": "0eba2a2658f85a907fabed8999b953d38fc065ab42d92575006e4613144cb74f"
+  },
+  "water_bottle/episode_0018.npz": {
+    "bytes": 89541,
+    "sha256": "d2350e73c9155a3024fc739fa46ee5f6a9fe3f1d411abd4596533a842872f1b1"
+  },
+  "water_bottle/episode_0018_cam_front.mp4": {
+    "bytes": 3963766,
+    "sha256": "860590a48d857306f94520774f4779799ff6721b67f0827d29e9e4fd62cbbfff"
+  },
+  "water_bottle/episode_0018_cam_high.mp4": {
+    "bytes": 7243030,
+    "sha256": "e4f7c055377ca4db99b8042c5cebdf55a7684d2fcc1d431023a179c3b211bd8b"
+  },
+  "water_bottle/episode_0019.npz": {
+    "bytes": 86583,
+    "sha256": "814f50ce28e3f44367c90709c7ddb3ca5dc34b78b5157367456e60f3dce77305"
+  },
+  "water_bottle/episode_0019_cam_front.mp4": {
+    "bytes": 4350861,
+    "sha256": "ee4e79ceb4aeee67f9f60b2700e76436dfb215249616c9ed44737fb818f1a5b6"
+  },
+  "water_bottle/episode_0019_cam_high.mp4": {
+    "bytes": 6803807,
+    "sha256": "533f00585aadc39c74411f62c5e805415e8761b4027a087ef293450ff297183f"
+  },
+  "water_bottle/episode_0020.npz": {
+    "bytes": 102038,
+    "sha256": "d3c15f4a1bc342b6edd81e4f0d77b6d0d20be0b4c8d523d114d8cb9d4a974437"
+  },
+  "water_bottle/episode_0020_cam_front.mp4": {
+    "bytes": 4428968,
+    "sha256": "eeef22e8e8ff3f8dbe512246b7f7371184f695e71f28a2942cf39b0436ced8c1"
+  },
+  "water_bottle/episode_0020_cam_high.mp4": {
+    "bytes": 7934710,
+    "sha256": "2a52b279ed5f561249da85b52a8fb07e848ba373a3eddbd6d11164bba8e17808"
+  },
+  "water_bottle/episode_0021.npz": {
+    "bytes": 90426,
+    "sha256": "510862db76046ad79d5820512c0ac4e557bf2808c508f790c6a0b7a644c33db9"
+  },
+  "water_bottle/episode_0021_cam_front.mp4": {
+    "bytes": 4300994,
+    "sha256": "7e6e543b3f366900a73c9f1e23c4163093784a784c8ba7570640d21ea88c3d03"
+  },
+  "water_bottle/episode_0021_cam_high.mp4": {
+    "bytes": 6959031,
+    "sha256": "fa2f665120f798a7eb902d2f8a98216744c0048edd0715a2beb649cddc9e7913"
+  },
+  "water_bottle/episode_0022.npz": {
+    "bytes": 105558,
+    "sha256": "dbc0f93918b26f231950b61095a5ee468df8be939ccb02cf15f05f170ddf46fe"
+  },
+  "water_bottle/episode_0022_cam_front.mp4": {
+    "bytes": 4849718,
+    "sha256": "db2a538d143c99c12137021c7f85b8e7612b951c0b05c096667d8ccf92dd8883"
+  },
+  "water_bottle/episode_0022_cam_high.mp4": {
+    "bytes": 8344762,
+    "sha256": "85a192b52baba353781e2533f4cd53185b6f8150aa4d9262bc712cfa8f00dd2d"
+  },
+  "water_bottle/episode_0023.npz": {
+    "bytes": 91363,
+    "sha256": "39c9006a323f829c2b40068eeb927763501a5ee0268b340150d3835740246080"
+  },
+  "water_bottle/episode_0023_cam_front.mp4": {
+    "bytes": 4316873,
+    "sha256": "31f351f707b95f457cb43782ce4a1a76ae28cb9eaaf3c05ad605aa744be0e67d"
+  },
+  "water_bottle/episode_0023_cam_high.mp4": {
+    "bytes": 7060579,
+    "sha256": "b537f200a7fa4bfe020c9bc1e623f65fd7301f790059badb8a3411ded35019aa"
+  },
+  "water_bottle/episode_0024.npz": {
+    "bytes": 91038,
+    "sha256": "e0e78ea4e0ec796c9619c4c73d90fb1303a10bbfae1c2819eeb4f06702c6216d"
+  },
+  "water_bottle/episode_0024_cam_front.mp4": {
+    "bytes": 4124871,
+    "sha256": "e34826018ff8ec41d2df905c16cc1b7560e0c76cfeedc9ab8074f853d43600c7"
+  },
+  "water_bottle/episode_0024_cam_high.mp4": {
+    "bytes": 7210471,
+    "sha256": "5819c2dfb476b9ef41b3b4afdfe10fd26807df78efcb86169dde7e6998aaee01"
+  },
+  "water_bottle/episode_0025.npz": {
+    "bytes": 84969,
+    "sha256": "dd0f7cae7cdf9345c1cbbb843a571cd70bd1335bdd9433a4e694e029b2d91a29"
+  },
+  "water_bottle/episode_0025_cam_front.mp4": {
+    "bytes": 3920974,
+    "sha256": "bed6a316764b44b36544026adb0215d0739bbd3b9e9b6e636e77a0be5e21557e"
+  },
+  "water_bottle/episode_0025_cam_high.mp4": {
+    "bytes": 6593633,
+    "sha256": "dfdeb7f9afbfd96486a5ab8e38b29a2d41f7ec6596b571a381ff5dac84010260"
+  },
+  "water_bottle/episode_0026.npz": {
+    "bytes": 81212,
+    "sha256": "26493afdcc2e4b26974ba53e23c2c5b08a3733bc83e9c79719c3a88e99ec619c"
+  },
+  "water_bottle/episode_0026_cam_front.mp4": {
+    "bytes": 3698763,
+    "sha256": "7c6241244b09f0ab642e94746e1d9e2f0aae1e3b6cef27a5ce59853bcffe9565"
+  },
+  "water_bottle/episode_0026_cam_high.mp4": {
+    "bytes": 6192334,
+    "sha256": "3e92e6c904edb6fd73f5537b258d97ac4705a0b1dd1d15f0130f014668147f36"
+  },
+  "water_bottle/episode_0027.npz": {
+    "bytes": 98334,
+    "sha256": "6a063d202cd6331210e9499089ce77910e5a19fac4d2517dce1626ab15c960b6"
+  },
+  "water_bottle/episode_0027_cam_front.mp4": {
+    "bytes": 4342023,
+    "sha256": "ff63ddb66238c15716bd5d50a4a3afde1fa826f6191b9f9789d86706d19aefa0"
+  },
+  "water_bottle/episode_0027_cam_high.mp4": {
+    "bytes": 7380949,
+    "sha256": "3e5cc621ef0a1135c86dc02a13c7ace1ccd14f442b2321265f40fdd3d3b12e74"
+  },
+  "water_bottle/episode_0028.npz": {
+    "bytes": 91906,
+    "sha256": "6d6b2729edceb7b46c6958856bbf97cc6875dacac769d59ea1a8d2e75cedb708"
+  },
+  "water_bottle/episode_0028_cam_front.mp4": {
+    "bytes": 4277718,
+    "sha256": "506b4295f82e63daf50b15efd2b9da9c71a9d283fe89afb0b1a1fa0c423d8d5d"
+  },
+  "water_bottle/episode_0028_cam_high.mp4": {
+    "bytes": 7257452,
+    "sha256": "9820e14b6098dea7fdb4c590d8ac48fa8383b3c007f8c62939171edcbe888bf0"
+  },
+  "water_bottle/episode_0029.npz": {
+    "bytes": 103920,
+    "sha256": "bb5f31e4ec6af06f0cd734cfdfdcf56753c71e64fa7b1dc1356c7b5e79fe9129"
+  },
+  "water_bottle/episode_0029_cam_front.mp4": {
+    "bytes": 4834705,
+    "sha256": "c3bbeeec537a93c27beb812e4fd91d52617e80d2c4fcb5ffea6922c4f754cedf"
+  },
+  "water_bottle/episode_0029_cam_high.mp4": {
+    "bytes": 8099692,
+    "sha256": "c14bfa3ee4db30a19e2da598d0c33c0b9c8082db0ef4d1c8005d06044f5591ab"
+  },
+  "water_bottle/episode_0030.npz": {
+    "bytes": 83466,
+    "sha256": "507ef6a274266afd62781ee707ecda65a7624ee0bfe9626a3d17e4f84d54b14e"
+  },
+  "water_bottle/episode_0030_cam_front.mp4": {
+    "bytes": 3778406,
+    "sha256": "c6897519e825ad3d40b2de9cbba89102b937e349c8feba7c632868af6f85485e"
+  },
+  "water_bottle/episode_0030_cam_high.mp4": {
+    "bytes": 6350965,
+    "sha256": "7854877e0f90791b15275825c0d6945f8337c9ea52341d6334192c88178ed659"
+  },
+  "water_bottle/episode_0031.npz": {
+    "bytes": 88472,
+    "sha256": "14408ca42992d292334b563e8f4f75ac270d42a35385716caf695eb42cd84b16"
+  },
+  "water_bottle/episode_0031_cam_front.mp4": {
+    "bytes": 3868440,
+    "sha256": "8a9a77cc8ed9285eb58eb31c1bd457595c7f443e6dfd3a6eca42a19102215ff7"
+  },
+  "water_bottle/episode_0031_cam_high.mp4": {
+    "bytes": 6846037,
+    "sha256": "2bd24af8fad5201bcf1538face1a2adee664d9bf73f5333c7820a8709ade1c50"
+  },
+  "water_bottle/episode_0032.npz": {
+    "bytes": 83484,
+    "sha256": "61e9efd8dea841642cdf4ffdacfa0b157e79c1313f77eb798cb34f857dec97c1"
+  },
+  "water_bottle/episode_0032_cam_front.mp4": {
+    "bytes": 3776298,
+    "sha256": "1198117a42eff224f3cec350f4943611f066dd7a5036e768e4f346af71b724e5"
+  },
+  "water_bottle/episode_0032_cam_high.mp4": {
+    "bytes": 6677759,
+    "sha256": "be625b5d7697af421643219bb5a61b74c5f2b0ec7321443eaae459e861d609a5"
+  },
+  "water_bottle/episode_0033.npz": {
+    "bytes": 100431,
+    "sha256": "38cbf09838910cf9c52525f3f202e95dc99b46d86a7693e7be4abbd6fc754b29"
+  },
+  "water_bottle/episode_0033_cam_front.mp4": {
+    "bytes": 4919487,
+    "sha256": "98ad6e953861b2376c8d7f4a6415d2b29ca04e9682064f1692a9f9a21d1742b7"
+  },
+  "water_bottle/episode_0033_cam_high.mp4": {
+    "bytes": 7751204,
+    "sha256": "e13682fa27b6b7d111a34bd82485b54fb9a3e5742ecc0673e18ad3f2b921c88a"
+  },
+  "water_bottle/episode_0034.npz": {
+    "bytes": 90785,
+    "sha256": "61bdbc2b908cf95a36222b1769ed3d7ce705e88c2d913924f06daf25d4113ed7"
+  },
+  "water_bottle/episode_0034_cam_front.mp4": {
+    "bytes": 4131723,
+    "sha256": "5e11f51a215a52043dcca45e0592717eb7a43807fc25a51a736ef89abde6b329"
+  },
+  "water_bottle/episode_0034_cam_high.mp4": {
+    "bytes": 7039212,
+    "sha256": "020ff110e683dbd005bfcc03cbfb8848c0d0108411f8b8fcfbf7ef49fd61e47e"
+  },
+  "water_bottle/episode_0035.npz": {
+    "bytes": 93720,
+    "sha256": "d82813a0bdd6f1b7e5a8502e9b39675b7b0db28a377b45b0dc1421081f450248"
+  },
+  "water_bottle/episode_0035_cam_front.mp4": {
+    "bytes": 4344199,
+    "sha256": "99a45bfb9b5034a030136f8d13aa53b8b1613663f694a71a8c36903a25aeed37"
+  },
+  "water_bottle/episode_0035_cam_high.mp4": {
+    "bytes": 7467657,
+    "sha256": "8d710362cb979d8769d96167f7d60d7cc8f40deecc088b54ca32a67f066dec33"
+  },
+  "water_bottle/episode_0036.npz": {
+    "bytes": 75520,
+    "sha256": "38c3b2218cda85ffc063493accd8b6a7f570f5545eba7a64b87d1b2afe677f04"
+  },
+  "water_bottle/episode_0036_cam_front.mp4": {
+    "bytes": 3507881,
+    "sha256": "342cf34f7262ea53be2ab5457b63444c9f6e3c0a681a02ae3adabbcf487d8c2f"
+  },
+  "water_bottle/episode_0036_cam_high.mp4": {
+    "bytes": 5749575,
+    "sha256": "b9279af3493990a203acbff591b16a477d0d2c979b59940d720fffefa5f25936"
+  },
+  "water_bottle/episode_0037.npz": {
+    "bytes": 100345,
+    "sha256": "9f1713f0f3c3ebe4a9650ab16d3cbc2e64be0e75d1c099b2f594cd337c4dbe97"
+  },
+  "water_bottle/episode_0037_cam_front.mp4": {
+    "bytes": 4754244,
+    "sha256": "1820013ae96942c715692ab9a436637c6770ed54da192ee48be2637d673cccc1"
+  },
+  "water_bottle/episode_0037_cam_high.mp4": {
+    "bytes": 8090522,
+    "sha256": "48eee215926f41b6f614208c82575e51087325c2d2f365763a4bdfe1c7baa196"
+  },
+  "water_bottle/episode_0038.npz": {
+    "bytes": 79077,
+    "sha256": "bfc68dbfc89f5af9315207184d68e2938e2a05eb7a08acfa0a1a3582da34a743"
+  },
+  "water_bottle/episode_0038_cam_front.mp4": {
+    "bytes": 3628366,
+    "sha256": "a4da1e662b91839bc882fa7eb60fa3931d5a1508931637ab322bb197f5c8d762"
+  },
+  "water_bottle/episode_0038_cam_high.mp4": {
+    "bytes": 6029097,
+    "sha256": "d259f73b6c983b9a98fd92be0f067937e3e412cf7b9ae70d1f32140134d4692e"
+  },
+  "water_bottle/episode_0039.npz": {
+    "bytes": 87250,
+    "sha256": "3497e505ffa1b8e00ab7ec51e1f19a0c3707c4d51024db039deafb5bcc67adc4"
+  },
+  "water_bottle/episode_0039_cam_front.mp4": {
+    "bytes": 4011860,
+    "sha256": "f14851629fd4238bc4adab2c38fe74015874e84690ffe8bea5288bfb5b288d02"
+  },
+  "water_bottle/episode_0039_cam_high.mp4": {
+    "bytes": 6839680,
+    "sha256": "012554f9000bde15c8cb6a5ded35ebaac6a19e67369e231923284d9228481925"
+  },
+  "water_bottle/episode_0040.npz": {
+    "bytes": 94325,
+    "sha256": "8b501363c069e1486855851490654eb01d95f0d86492ac342b894dafe69dca20"
+  },
+  "water_bottle/episode_0040_cam_front.mp4": {
+    "bytes": 4429021,
+    "sha256": "fe10268ab8572d036a3bf743fcf11da97a1828ed4fb0b4800a738b37210f8013"
+  },
+  "water_bottle/episode_0040_cam_high.mp4": {
+    "bytes": 7444373,
+    "sha256": "0f8224c7b13b548fa0d5e06d34bb7a323609e364bbe5426831f88f87e5ffa710"
+  },
+  "water_bottle/episode_0041.npz": {
+    "bytes": 93243,
+    "sha256": "044a18f17a0ebfde047c4d1896b4960da120663e6ea9723984304eb115c83ee5"
+  },
+  "water_bottle/episode_0041_cam_front.mp4": {
+    "bytes": 4236998,
+    "sha256": "fdf76308dfd45277e8594392a2db4f8a45a450de47ab3a1aa94c2cf958f3af88"
+  },
+  "water_bottle/episode_0041_cam_high.mp4": {
+    "bytes": 7057098,
+    "sha256": "1ec7c1331dd1c61cf785c600cc95189bb92695dd81c0d32f693848ac6050fd2d"
+  },
+  "water_bottle/episode_0042.npz": {
+    "bytes": 103698,
+    "sha256": "e521508b1b7251657c72453e71c9ec4d9ae824051ebc3a49bed70cfa68a248a8"
+  },
+  "water_bottle/episode_0042_cam_front.mp4": {
+    "bytes": 4882222,
+    "sha256": "9461212401cf6916466a43431bc5873895709195b500d829461801175ddea4da"
+  },
+  "water_bottle/episode_0042_cam_high.mp4": {
+    "bytes": 8241481,
+    "sha256": "097ae92cdcf3f42d4595596215267c7913de7188e95ead82fc6cc5770dd4d17d"
+  },
+  "water_bottle/episode_0043.npz": {
+    "bytes": 79195,
+    "sha256": "2695385bf4527457d1d6f4213c637c86b146ed6ca530328ef894755b86e38035"
+  },
+  "water_bottle/episode_0043_cam_front.mp4": {
+    "bytes": 4039895,
+    "sha256": "3e0dbf100cc4f78550c137b9392af50494347d4af0d2271eb48882aef25c9d22"
+  },
+  "water_bottle/episode_0043_cam_high.mp4": {
+    "bytes": 6292887,
+    "sha256": "116d96fde13684b0ce39bd80f422b06d64f9e0823600ea8af2a509881b60d134"
+  },
+  "water_bottle/episode_0044.npz": {
+    "bytes": 74419,
+    "sha256": "cf389adfc71d17ce271c209367eddbed318b71ce20e66d16200f7a9a091a6d87"
+  },
+  "water_bottle/episode_0044_cam_front.mp4": {
+    "bytes": 3381948,
+    "sha256": "e6383e765cd5fe942daa77ea1da80509216e11669e702003fe28bea516824dc5"
+  },
+  "water_bottle/episode_0044_cam_high.mp4": {
+    "bytes": 5980758,
+    "sha256": "ad6d1dea49e240faad90de312e0c7d88e0d28e2c2ceabd33919f54e3253e6afd"
+  },
+  "water_bottle/episode_0045.npz": {
+    "bytes": 90612,
+    "sha256": "650faa72ccebc1a5155373ee32de8a84f0b5777d844ef3d32404f8bfb55682cd"
+  },
+  "water_bottle/episode_0045_cam_front.mp4": {
+    "bytes": 4247178,
+    "sha256": "d8b3b077fc76893b39bff02c313d71c865d365fd306fa6de996aeeeb5168249f"
+  },
+  "water_bottle/episode_0045_cam_high.mp4": {
+    "bytes": 7096528,
+    "sha256": "7c52b0f4f4d5cdde8b35a4beed1469fb5fc15432e3c5858ef85ce58d4ab15bd5"
+  },
+  "water_bottle/episode_0046.npz": {
+    "bytes": 94095,
+    "sha256": "1f5ad31d468d15a379a8a6b295491d063533b515a1b8d57252a8f68fc01f3039"
+  },
+  "water_bottle/episode_0046_cam_front.mp4": {
+    "bytes": 4554519,
+    "sha256": "fd2514e783a378e5b6ffb14d6ffbd62429776042f0e2b2e0dd72e39b2ce99ca3"
+  },
+  "water_bottle/episode_0046_cam_high.mp4": {
+    "bytes": 7589702,
+    "sha256": "ae600828c5af8181ad35543fa9f165221d9315bbbc417fe2c82589662a102d25"
+  },
+  "water_bottle/episode_0047.npz": {
+    "bytes": 97267,
+    "sha256": "670a5d7887b67650c7693e3d36654dd349a14caa966050c8cce3268b3404cabd"
+  },
+  "water_bottle/episode_0047_cam_front.mp4": {
+    "bytes": 4245530,
+    "sha256": "9580b0ecc52e9d96c0dc3aa9f40d4bbede9cdec33f641695bb0e7f0ee0144153"
+  },
+  "water_bottle/episode_0047_cam_high.mp4": {
+    "bytes": 7375349,
+    "sha256": "6b80f09a0f504cf4f1c0c3c846f110bbb0fcd76c3a692de66924e6a7e7f0b434"
+  },
+  "water_bottle/episode_0048.npz": {
+    "bytes": 78775,
+    "sha256": "91f872e8b2c34a366bb39ee05485164b0d518044fc8fe6a5bfb3dd9715f6eada"
+  },
+  "water_bottle/episode_0048_cam_front.mp4": {
+    "bytes": 3716712,
+    "sha256": "6d9d27da6721af8a70c3068f780c1a640ed5868cf2e56888997d1fd4a1a9ef81"
+  },
+  "water_bottle/episode_0048_cam_high.mp4": {
+    "bytes": 6155567,
+    "sha256": "0f939a9e5df18c8b43ad457527d3aa111debecc8bd0a7601ede4fe162460bfec"
+  },
+  "water_bottle/episode_0049.npz": {
+    "bytes": 81633,
+    "sha256": "5b7a33adc160f06c7eef43332d6dd53d10e799bc7b7cad8c333312382e43f8a4"
+  },
+  "water_bottle/episode_0049_cam_front.mp4": {
+    "bytes": 3893848,
+    "sha256": "6d68f01e56d0435839d72345c670a4a038cf2c66ee36be0f228a0a9084c02cce"
+  },
+  "water_bottle/episode_0049_cam_high.mp4": {
+    "bytes": 6493635,
+    "sha256": "80de7fdf281a97e58194fd8c92e8f8a56afaffbc214d925851d6ed8fd468f864"
+  }
+}

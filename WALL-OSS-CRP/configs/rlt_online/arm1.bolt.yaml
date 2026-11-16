@@ -1,0 +1,112 @@
+# WALL-RLT Stage 2, Arm 1 run configuration for the bolt 20k model (old bolt data).
+# Source: WALL_RLT_Stage2_Research_Plan.md section 4.3 and decisions D1-D16.
+# Items marked "decided" were fixed by the user on 2026-11-10. The rest are the
+# plan's section 4.3 proposals, which the user has seen but not confirmed one
+# by one (listed under `proposal_values`). online.save_dir is filled in per run
+# by tools/wall_rlt_online.py. A null required field would be an undecided
+# parameter; rlt_online.policy.load_configs refuses to load it.
+# Renamed from arm1.proposal.yaml on 2026-11-10 when the last required value
+# (gripper BC weight) was decided.
+status: run config; decided 2026-11-10 = D1, D6, D9, D13, D14 (release source, p, gripper BC weight), D15, D16, RL deadband; the proposal_values below were accepted as a set by the user on 2026-11-10
+proposal_values:                # accepted by the user 2026-11-10 ("这些超参可以使用")
+  - "D2 action bounds table (whole-task train min/max + 20%), file below"
+  - "actor_action_clip_delta 0.1 in normalized units (physical-unit version not confirmed)"
+  - "gamma 0.99, beta 1.0, tau 0.005, critic:actor 2:1, UTD 5, lr 3e-5 / 1e-4, batch 128 (D9 decided), 2 x 256 MLPs"
+  - "critic LayerNorm, stratified sampling (D11, deviations from the paper)"
+  - "D4 proprio = 10-dim state normalized by train min/max"
+  - "D10 episodes per evaluation: passed with --episodes at run time"
+
+# D1 (user, 2026-11-10): C = 12 steps at 30 Hz (0.4 s per decision); fixed
+# execution offset D = 11: the chunk the actor outputs is WALL window steps
+# 11..22 of the observation it was computed from. Observation k+1 is taken
+# C steps after observation k; the D steps in between are the tail of the
+# previous chunk, sent to WALL as the RTC prefix. A late reply starts at the
+# step it actually arrives and the transition is flagged.
+execution_offset: 11
+fps: 30
+# D6 (user, 2026-11-10): exploration is added by the action-space layer in
+# physical units, not by ChunkActor (actor_fixed_std = 0). One offset per
+# chunk, ramped linearly from 1/C at the first step to full at step C.
+# Evaluation adds no noise. Gripper: random release tries (D14), see below.
+exploration:
+  form: per_chunk_linear_ramp
+  position_std_m: 0.002         # per axis, per chunk
+  rotation_std_deg: 0.5         # per axis, per chunk
+  gripper:                      # D14 (user, 2026-11-10): actor-controlled
+    release_source: human_key_plus_random   # decided: operator key first, random tries second
+    random_release_prob_per_chunk: 0.08     # decided 2026-11-10 (user lowered 0.1 -> 0.08)
+  warmup: {release_exploration: true, pose_noise: false}   # release on: decided; pose noise off: as proposed
+# D15 handover trigger (user, 2026-11-10): automatic, checked at every WALL
+# request (observation) time; once handed over, the actor keeps control.
+handover:
+  trigger: auto_position
+  reference_point_m: [0.1973, -0.3087, 0.3791]   # median demo release point, 50 bolt episodes (std 7-9 mm)
+  radius_m: 0.03
+  holding_opening: [0.12, 0.30]                  # measured opening while holding the bolt: 0.17-0.22
+limits:
+  rl_phase_s: 20                # user set 20 (proposal was 15): truncated if no release
+  wall_phase_s: 30              # no handover by then = WALL-phase failure, not stored, not in the budget
+# D16 keys (user, 2026-11-10), consistent with the collection tool.
+keys:
+  start: enter                  # reset done, start next episode
+  release: o                    # human release = intervention (collect: O opens)
+  success: s                    # after release: bolt left in the sleeve
+  failure: f                    # bolt dropped / not inserted / stuck
+  discard: r                    # setup error, nothing stored (collect: R discards)
+  emergency_stop: ctrl-c
+  ignored: [space]              # collect: space closes the gripper; must do nothing here
+budget:                         # D13 (user, 2026-11-10)
+  train_episodes: 200
+  evaluate_after: [50, 100, 150, 200]   # no noise, no key, not stored; episodes per eval undecided (D10)
+action_bounds: configs/rlt_online/action_bounds.bolt.20261110.proposal.json   # D2, proposal
+normalization: metadata/rlt-wall-v2-bolt50-20261103/normalization.ar5_ee_rel6d_next_v1.json
+
+policy:
+  chunk_length: 12              # D1, confirmed 2026-11-10
+  gamma: 0.99                   # per 30 Hz step
+  beta: 1.0                     # summed over C*10 dims; rescale if C changes
+  tau: 0.005
+  actor_update_interval: 2      # paper: 2 critic updates per actor update
+  utd_ratio: 5                  # paper
+  target_q_clip: 100.0
+  actor_hidden_dim: 256         # paper: 2 x 256
+  actor_num_layers: 2
+  actor_activation: relu
+  actor_layer_norm: false
+  actor_residual: false
+  actor_residual_to_ref: true   # zero-init: untrained actor == WALL reference
+  actor_fixed_std: 0.0          # D6: exploration lives in `exploration` above
+  actor_ref_dropout_p: 0.5      # paper
+  actor_action_clip_delta: 0.1  # normalized units around the reference (physical-unit version not confirmed)
+  actor_clip_exempt_dims: [9]   # D14: gripper not clipped, else the actor cannot release against WALL
+  # D14 (user, 2026-11-10): gripper BC weight 0.002. Closed -> open is 2 normalized units
+  # per step, so a whole 12-step chunk against WALL costs 12 * 4 * beta * 0.002 ~ 0.1,
+  # about a tenth of the success value; position / rotation dims keep weight 1.
+  actor_bc_dim_weights: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.002]
+  critic_hidden_dim: 256
+  critic_num_layers: 2
+  critic_activation: relu
+  critic_layer_norm: true       # Evo-RLT / RLPD choice, not in the paper
+  critic_residual: false
+  rankq_alpha_success: 0.0      # off (paper)
+  rankq_alpha_failure: 0.0
+
+online:
+  # D9 (user, 2026-11-10): RL segments are only ~5-14 transitions per episode,
+  # so 500 transitions / batch 256 would take 18-100 episodes; lowered.
+  warmup_episodes: 20
+  critic_only_episodes: 10
+  min_warmup_transitions: 150
+  min_warmup_successes: 3
+  min_warmup_failures: 3
+  replay_capacity: 200000
+  batch_size: 128
+  lr_actor: 3.0e-5
+  lr_critic: 1.0e-4
+  max_updates_per_episode: 1000
+  use_stratified_sampling: true # D11, deviation from the paper's uniform sampling
+  terminal_reward: 1.0
+  milestone_reward: 0.0         # off (paper)
+  time_decay: 1.0               # off (paper)
+  save_dir: null                # per run
+  save_every_episodes: 5

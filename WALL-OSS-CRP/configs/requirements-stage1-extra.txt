@@ -1,0 +1,5 @@
+# Runtime imports used by the fixed Wall-X / LeRobot inference code.
+av>=15,<16
+draccus==0.10.0
+termcolor>=2.4,<4
+einops>=0.8,<0.9

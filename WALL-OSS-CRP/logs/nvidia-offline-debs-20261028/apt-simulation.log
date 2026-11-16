@@ -1,0 +1,22 @@
+NOTE: This is only a simulation!
+      apt-get needs root privileges for real execution.
+      Keep also in mind that locking is deactivated,
+      so don't depend on the relevance to the real current situation!
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  clang-tidy-14 clang-tools-14
+Use 'apt autoremove' to remove them.
+The following NEW packages will be installed:
+  libnvidia-container-tools libnvidia-container1 nvidia-container-toolkit
+  nvidia-container-toolkit-base
+0 upgraded, 4 newly installed, 0 to remove and 386 not upgraded.
+Inst libnvidia-container1 (1.20.1-1 local-deb [amd64])
+Inst libnvidia-container-tools (1.20.1-1 local-deb [amd64])
+Inst nvidia-container-toolkit-base (1.20.1-1 local-deb [amd64])
+Inst nvidia-container-toolkit (1.20.1-1 local-deb [amd64])
+Conf libnvidia-container1 (1.20.1-1 local-deb [amd64])
+Conf libnvidia-container-tools (1.20.1-1 local-deb [amd64])
+Conf nvidia-container-toolkit-base (1.20.1-1 local-deb [amd64])
+Conf nvidia-container-toolkit (1.20.1-1 local-deb [amd64])

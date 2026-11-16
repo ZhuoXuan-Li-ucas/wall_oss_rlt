@@ -1,0 +1,216 @@
+{
+  "status": "PASS",
+  "package": "charset-normalizer",
+  "version": "3.5.2",
+  "filename": "charset_normalizer-3.5.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "01ef8278a84cc22fdae7a95b3dc6c407493f4e8593ce83280c4aa12ea26872ab",
+  "wheel_tags": [
+    "cp310-cp310-manylinux_2_17_x86_64",
+    "cp310-cp310-manylinux2014_x86_64",
+    "cp310-cp310-manylinux_2_28_x86_64"
+  ],
+  "record_verified_files": [
+    {
+      "path": "../../../bin/normalizer",
+      "wheel_path": "../../../bin/normalizer",
+      "size_bytes": 215,
+      "sha256": "e85f61b5469da9488bf860acb6c7e07a5db2e4d43c3df69ded2a50d3ce9075ae"
+    },
+    {
+      "path": "charset_normalizer-3.5.2.dist-info/INSTALLER",
+      "wheel_path": "charset_normalizer-3.5.2.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "charset_normalizer-3.5.2.dist-info/METADATA",
+      "wheel_path": "charset_normalizer-3.5.2.dist-info/METADATA",
+      "size_bytes": 46395,
+      "sha256": "89ce6362bb7be88558f4be99a98f5d1b4da93d19cd0323e5ee0bac05cf883dfb"
+    },
+    {
+      "path": "charset_normalizer-3.5.2.dist-info/WHEEL",
+      "wheel_path": "charset_normalizer-3.5.2.dist-info/WHEEL",
+      "size_bytes": 190,
+      "sha256": "19601a57dbc05e3d2e550552a4d2b517efcf28556daadd29a904dff2a0914f86"
+    },
+    {
+      "path": "charset_normalizer-3.5.2.dist-info/entry_points.txt",
+      "wheel_path": "charset_normalizer-3.5.2.dist-info/entry_points.txt",
+      "size_bytes": 65,
+      "sha256": "0034932ab91767786174e5458ba0dc5041d0452d317f10c813fa44cf8c0b2170"
+    },
+    {
+      "path": "charset_normalizer-3.5.2.dist-info/licenses/LICENSE",
+      "wheel_path": "charset_normalizer-3.5.2.dist-info/licenses/LICENSE",
+      "size_bytes": 1071,
+      "sha256": "6d0d41bfe170ac6c7dc248c9a63e254d0fb45a60d50a8257d0af92c6e249b887"
+    },
+    {
+      "path": "charset_normalizer-3.5.2.dist-info/top_level.txt",
+      "wheel_path": "charset_normalizer-3.5.2.dist-info/top_level.txt",
+      "size_bytes": 19,
+      "sha256": "ec04b2cde3ebf3fc6e65626c9ea263201b7257cbe1128d30042bf530f4518b74"
+    },
+    {
+      "path": "charset_normalizer/__init__.py",
+      "wheel_path": "charset_normalizer/__init__.py",
+      "size_bytes": 1582,
+      "sha256": "997c6fda6b13aee46c685bb1f96e6ee0d37c06702ac4cc38bfb30acce0f1f5b6"
+    },
+    {
+      "path": "charset_normalizer/__main__.py",
+      "wheel_path": "charset_normalizer/__main__.py",
+      "size_bytes": 109,
+      "sha256": "cb3631311f8884a44763071295abc4bfca06770c6c47cf66af65f4f6a5c6769b"
+    },
+    {
+      "path": "charset_normalizer/api.py",
+      "wheel_path": "charset_normalizer/api.py",
+      "size_bytes": 35774,
+      "sha256": "55455aa5898f169c803379b698a9fdf808d94002312b238968abb870fc427f81"
+    },
+    {
+      "path": "charset_normalizer/cd.cpython-310-x86_64-linux-gnu.so",
+      "wheel_path": "charset_normalizer/cd.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 185952,
+      "sha256": "5acd8461f3c1f44608ce71ead451a284141a5749616543db87a6e8f0e2cb3e0b"
+    },
+    {
+      "path": "charset_normalizer/cd.py",
+      "wheel_path": "charset_normalizer/cd.py",
+      "size_bytes": 15980,
+      "sha256": "e9d24e66f774aeb1045af931e78900132f6a00ffee22e8963008b9c17f0e66c6"
+    },
+    {
+      "path": "charset_normalizer/cli/__init__.py",
+      "wheel_path": "charset_normalizer/cli/__init__.py",
+      "size_bytes": 136,
+      "sha256": "0fc23cea5164dbea72e3926fab19e24e2ad28ffb05c84eac8da63fd3e1b5b217"
+    },
+    {
+      "path": "charset_normalizer/cli/__main__.py",
+      "wheel_path": "charset_normalizer/cli/__main__.py",
+      "size_bytes": 11949,
+      "sha256": "34f2b7c980245d713b52fb3a22a8a39206734ba1ba7e0b9116e297ce0a5ff147"
+    },
+    {
+      "path": "charset_normalizer/constant.py",
+      "wheel_path": "charset_normalizer/constant.py",
+      "size_bytes": 60812,
+      "sha256": "b49d4ea5dbc4598665bc66f651caf81564cc1cca4f21a0e45d9491bd5833771b"
+    },
+    {
+      "path": "charset_normalizer/legacy.py",
+      "wheel_path": "charset_normalizer/legacy.py",
+      "size_bytes": 2651,
+      "sha256": "6e091d12fb9b4c238f94c28ecee10d5c73226ab877e956866d1bd64a522bd4a0"
+    },
+    {
+      "path": "charset_normalizer/md.cpython-310-x86_64-linux-gnu.so",
+      "wheel_path": "charset_normalizer/md.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 355280,
+      "sha256": "02613d655018e72e45feceacd5e1561a32d7d874387f0ab2cffaefa5c13dcaf4"
+    },
+    {
+      "path": "charset_normalizer/md.py",
+      "wheel_path": "charset_normalizer/md.py",
+      "size_bytes": 35274,
+      "sha256": "cf596c0498a61f91f8d6fef54e296cba3204b178001deda9371f8a8084c378e3"
+    },
+    {
+      "path": "charset_normalizer/models.py",
+      "wheel_path": "charset_normalizer/models.py",
+      "size_bytes": 13530,
+      "sha256": "f8350cead0964f25fc4d477ee0355a6005ce07f7311c686b45a4b66bf38e406b"
+    },
+    {
+      "path": "charset_normalizer/py.typed",
+      "wheel_path": "charset_normalizer/py.typed",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "charset_normalizer/utils.py",
+      "wheel_path": "charset_normalizer/utils.py",
+      "size_bytes": 14122,
+      "sha256": "119ec0e7fb286ef4c8c58585b1f5ee56c9f6261c31c33addd3cb20105d05ae71"
+    },
+    {
+      "path": "charset_normalizer/version.py",
+      "wheel_path": "charset_normalizer/version.py",
+      "size_bytes": 115,
+      "sha256": "793b9181127b1e37a817ec597c6e6d970bd1130cac7654af99ba2cbda4a9cf57"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "../../../bin/normalizer",
+      "reason": "verified console entry point; installer regenerates portable script"
+    },
+    {
+      "path": "charset_normalizer-3.5.2.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "charset_normalizer/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "charset_normalizer/__pycache__/__main__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "charset_normalizer/__pycache__/api.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "charset_normalizer/__pycache__/cd.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "charset_normalizer/__pycache__/constant.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "charset_normalizer/__pycache__/legacy.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "charset_normalizer/__pycache__/md.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "charset_normalizer/__pycache__/models.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "charset_normalizer/__pycache__/utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "charset_normalizer/__pycache__/version.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "charset_normalizer/cli/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "charset_normalizer/cli/__pycache__/__main__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "552aaabced9a94f2b4e0413b59b4f109ae6f82607fb61217cdd3dbaa1267524e",
+  "wheel_size_bytes": 301009,
+  "rebuilt_record_verified_files": 20,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:17.604374+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 20,
+  "source_record_verified_file_count": 22
+}

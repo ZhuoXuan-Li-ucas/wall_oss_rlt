@@ -1,0 +1,35 @@
+........................................................................ [ 18%]
+........................................................................ [ 36%]
+........................................................................ [ 54%]
+........................................................................ [ 73%]
+........................................................................ [ 91%]
+..................................                                       [100%]
+=============================== warnings summary ===============================
+env/lib/python3.10/site-packages/torch/jit/_script.py:1480
+env/lib/python3.10/site-packages/torch/jit/_script.py:1480
+  /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/jit/_script.py:1480: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+env/lib/python3.10/site-packages/torch/jit/_script.py:362: 14 warnings
+  /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/jit/_script.py:362: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+tests/rlt/test_ar5_ee.py::test_ee_runtime_returns_relative_chunk_and_absolute_flange_targets
+tests/rlt/test_ar5_ee.py::test_ee_runtime_through_real_http_protocol
+tests/rlt/test_inference_runtime.py::test_unvalidated_mixed_precision_path_is_rejected_before_allocation
+tests/rlt/test_inference_runtime.py::test_real_tiny_export_meta_restore_and_seeded_visual_inference
+tests/rlt/test_inference_runtime.py::test_observation_runtime_rejects_targets_and_wrong_camera_keys
+tests/rlt/test_inference_runtime.py::test_tiny_model_through_real_http_protocol
+  /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/transformers/modeling_rope_utils.py:936: FutureWarning: `rope_config_validation` is deprecated and has been removed. Its functionality has been moved to RotaryEmbeddingConfigMixin.validate_rope method. PreTrainedConfig inherits this class, so please call self.validate_rope() instead. Also, make sure to use the new rope_parameters syntax. You can call self.standardize_rope_params() in the meantime.
+    warnings.warn(
+
+tests/rlt/test_ar5_ee.py::test_ee_runtime_returns_relative_chunk_and_absolute_flange_targets
+tests/rlt/test_ar5_ee.py::test_ee_runtime_through_real_http_protocol
+tests/rlt/test_inference_runtime.py::test_real_tiny_export_meta_restore_and_seeded_visual_inference
+tests/rlt/test_inference_runtime.py::test_tiny_model_through_real_http_protocol
+  /home/crp-5070ti-01/workspaces/WALL-OSS-CRP/.cache/wall-x-rlt/wall_x/model/core/action/processor.py:225: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+    with torch.autocast("cuda", dtype=torch.float32):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /tmp/claude-1000/-home-crp-5070ti-01-yuhang-workspace-wall-oss-rlt/5a775813-756c-4c83-864d-b74a6fc55749/scratchpad/ee-cpu-check/tests.xml -
+394 passed, 26 warnings in 18.87s

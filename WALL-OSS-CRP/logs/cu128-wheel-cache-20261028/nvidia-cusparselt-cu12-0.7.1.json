@@ -1,0 +1,75 @@
+{
+  "package": "nvidia-cusparselt-cu12",
+  "version": "0.7.1",
+  "source": {
+    "kind": "installed package",
+    "site_packages": "/home/pangk/miniforge3/envs/lerobot-so101/lib/python3.12/site-packages"
+  },
+  "source_record_sha256": "62cccaa5ba61375770c28a04e6e0ad3ae17b23dd075034b51c8870c9a05b19ba",
+  "wheel_tags": [
+    "py3-none-manylinux2014_x86_64"
+  ],
+  "record_verified_files": [
+    {
+      "path": "nvidia/cusparselt/LICENSE.txt",
+      "sha256": "e8d158885a681b95ec7a6fc06dd8d4a52989f374cb1380c8a4c8fb27fd3d5d5e",
+      "size_bytes": 17948
+    },
+    {
+      "path": "nvidia/cusparselt/include/cusparseLt.h",
+      "sha256": "74580d3104ed58e1708d2ee746f65c2a9e1557f91b1d158d2d93c1591e118c38",
+      "size_bytes": 17876
+    },
+    {
+      "path": "nvidia/cusparselt/lib/libcusparseLt.so.0",
+      "sha256": "b3d85a0311eadfd3cec86b0291c9a4b5769cba2f248a9e7e8167fbf3ffa99863",
+      "size_bytes": 451980513
+    },
+    {
+      "path": "nvidia_cusparselt_cu12-0.7.1.dist-info/INSTALLER",
+      "sha256": "e6184ce10e266134fdcfa401e8f1a95005bcd4f18d16b62b757323e2833fe9a9",
+      "size_bytes": 2
+    },
+    {
+      "path": "nvidia_cusparselt_cu12-0.7.1.dist-info/METADATA",
+      "sha256": "b264cea6951b70b52a3fd2ffaa88f9109eaf379633aa8d6e0832ecc92ddf6fba",
+      "size_bytes": 6974
+    },
+    {
+      "path": "nvidia_cusparselt_cu12-0.7.1.dist-info/REQUESTED",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia_cusparselt_cu12-0.7.1.dist-info/WHEEL",
+      "sha256": "ab472c7f2c42d0280bfd56ce0f2d5d01139428e04eea3d3003b4935554c49272",
+      "size_bytes": 108
+    },
+    {
+      "path": "nvidia_cusparselt_cu12-0.7.1.dist-info/top_level.txt",
+      "sha256": "a1f202f9d6cad2cdb68cde79b207d5a5b847593eb765d24b59e49be8aff5f812",
+      "size_bytes": 18
+    },
+    {
+      "path": "nvidia_cusparselt_cu12-0.7.1.dist-info/uv_cache.json",
+      "sha256": "8ce67c00c391547575f1d00be14ca9a7995fc84f1d3a2bca611f5fabe7e118c1",
+      "size_bytes": 127
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "nvidia_cusparselt_cu12-0.7.1.dist-info/INSTALLER",
+      "reason": "verified installed metadata; excluded from rebuilt wheel"
+    },
+    {
+      "path": "nvidia_cusparselt_cu12-0.7.1.dist-info/REQUESTED",
+      "reason": "verified installed metadata; excluded from rebuilt wheel"
+    }
+  ],
+  "status": "PASS",
+  "filename": "nvidia_cusparselt_cu12-0.7.1-py3-none-manylinux2014_x86_64.whl",
+  "wheel_sha256": "d7b1e07f43eeb8c28bedcca3db5a2ae4825c89afbbad98602cb17ce8d397259c",
+  "wheel_size_bytes": 292775843,
+  "payload_size_bytes": 452023564,
+  "checked_at_utc": "2026-10-28T09:03:48.863024+00:00"
+}

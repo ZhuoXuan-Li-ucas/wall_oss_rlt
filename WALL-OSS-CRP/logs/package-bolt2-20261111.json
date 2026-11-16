@@ -1,0 +1,10 @@
+{
+  "output": "/media/crp-5070ti-01/My Passport/WALL-RLT-training-candidate-20261111-bolt2-v1",
+  "status": "TRAINING_CANDIDATE_NOT_GPU_VALIDATED",
+  "payloads": 7,
+  "included_data": true,
+  "contract_path": "configs/rlt/wall_v3_bolt2_ar5_ee_rel6d_next_v1.json",
+  "data_directory": "data/wall_unlocked_v3",
+  "target_mode": "ar5_ee_rel6d_next_v1",
+  "contract_fingerprint": "923edc00d3902c1b63d46196e03baf31b72e17f1a1c22770ed171f953a0d8dbd"
+}

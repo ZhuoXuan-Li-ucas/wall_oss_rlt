@@ -1,0 +1,240 @@
+{
+  "status": "PASS",
+  "package": "torchdiffeq",
+  "version": "0.2.5",
+  "filename": "torchdiffeq-0.2.5-py3-none-any.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "9a7f989c37b27ab40e871c46a943525908b64bb9ec102bbe6a86decd29609c14",
+  "wheel_tags": [
+    "py3-none-any"
+  ],
+  "record_verified_files": [
+    {
+      "path": "torchdiffeq-0.2.5.dist-info/INSTALLER",
+      "wheel_path": "torchdiffeq-0.2.5.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "torchdiffeq-0.2.5.dist-info/LICENSE",
+      "wheel_path": "torchdiffeq-0.2.5.dist-info/LICENSE",
+      "size_bytes": 1075,
+      "sha256": "df970ff07a0460f29115f2feddcceb8253f5840a8b35df857884354e3d47753c"
+    },
+    {
+      "path": "torchdiffeq-0.2.5.dist-info/METADATA",
+      "wheel_path": "torchdiffeq-0.2.5.dist-info/METADATA",
+      "size_bytes": 440,
+      "sha256": "99f93feeb7ab929443f2cc0fd2bd3696c873ed4a0140866e192e4b2b8333d0fa"
+    },
+    {
+      "path": "torchdiffeq-0.2.5.dist-info/REQUESTED",
+      "wheel_path": "torchdiffeq-0.2.5.dist-info/REQUESTED",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "torchdiffeq-0.2.5.dist-info/WHEEL",
+      "wheel_path": "torchdiffeq-0.2.5.dist-info/WHEEL",
+      "size_bytes": 92,
+      "sha256": "189eedfe4581172c1b6a02b97a8f48a14c0b5baa3239e4ca990fbd8871553714"
+    },
+    {
+      "path": "torchdiffeq-0.2.5.dist-info/top_level.txt",
+      "wheel_path": "torchdiffeq-0.2.5.dist-info/top_level.txt",
+      "size_bytes": 12,
+      "sha256": "05f87abbf8362764d2da3179786db98a51a17e82a01a550bb40fb626ffabea98"
+    },
+    {
+      "path": "torchdiffeq/__init__.py",
+      "wheel_path": "torchdiffeq/__init__.py",
+      "size_bytes": 146,
+      "sha256": "9092b253060d186b00846d00ff260b6dec72f9fe7e0a9aa0d5bbf87e7c45dcd9"
+    },
+    {
+      "path": "torchdiffeq/_impl/__init__.py",
+      "wheel_path": "torchdiffeq/_impl/__init__.py",
+      "size_bytes": 91,
+      "sha256": "01322ad64ef635ceb44de4026d8436e07436ec676b6b17504cac7d65edf56363"
+    },
+    {
+      "path": "torchdiffeq/_impl/adaptive_heun.py",
+      "wheel_path": "torchdiffeq/_impl/adaptive_heun.py",
+      "size_bytes": 577,
+      "sha256": "ecd643451cd1680f52de65c808fcc8f8c06724708daf09ff310599c5bc10e7a9"
+    },
+    {
+      "path": "torchdiffeq/_impl/adjoint.py",
+      "wheel_path": "torchdiffeq/_impl/adjoint.py",
+      "size_bytes": 13496,
+      "sha256": "5fab07773c5ca1ca5a25cef545aa935b95b6acb479423ce4cab271a37741d0e7"
+    },
+    {
+      "path": "torchdiffeq/_impl/bosh3.py",
+      "wheel_path": "torchdiffeq/_impl/bosh3.py",
+      "size_bytes": 751,
+      "sha256": "3802763df28ea431ef2ebc331ac776dcccdc9a4be3cc7ddc2d8c7e19dd811d3f"
+    },
+    {
+      "path": "torchdiffeq/_impl/dopri5.py",
+      "wheel_path": "torchdiffeq/_impl/dopri5.py",
+      "size_bytes": 1477,
+      "sha256": "8d9f7f1370ffa0de3a90ef9cc96185ec8a3b089b6d863728c8085629b9a38809"
+    },
+    {
+      "path": "torchdiffeq/_impl/dopri8.py",
+      "wheel_path": "torchdiffeq/_impl/dopri8.py",
+      "size_bytes": 4806,
+      "sha256": "597dbf7fa86f63a68e9ccb2d95f8fb99b052b45a68d8ef612f5d24d3c559d4f0"
+    },
+    {
+      "path": "torchdiffeq/_impl/event_handling.py",
+      "wheel_path": "torchdiffeq/_impl/event_handling.py",
+      "size_bytes": 1051,
+      "sha256": "4aa14e0ad2812f02a361a7d9f6a9c031147c0ffe14678edd8cfb5d816153aed3"
+    },
+    {
+      "path": "torchdiffeq/_impl/fehlberg2.py",
+      "wheel_path": "torchdiffeq/_impl/fehlberg2.py",
+      "size_bytes": 678,
+      "sha256": "26d760d8c37cb4b02a7f16dbe30313589b2b0a8d0d2167ba95c3242e76544c43"
+    },
+    {
+      "path": "torchdiffeq/_impl/fixed_adams.py",
+      "wheel_path": "torchdiffeq/_impl/fixed_adams.py",
+      "size_bytes": 12047,
+      "sha256": "85845040abc11afb74d1a632a383222eaceaa14dd940d2a4d0f7befbb25880f4"
+    },
+    {
+      "path": "torchdiffeq/_impl/fixed_grid.py",
+      "wheel_path": "torchdiffeq/_impl/fixed_grid.py",
+      "size_bytes": 1795,
+      "sha256": "bb2915bdbbfb464cdb79593460761b8d9da73f653eb6894e178caf0ee03266b3"
+    },
+    {
+      "path": "torchdiffeq/_impl/interp.py",
+      "wheel_path": "torchdiffeq/_impl/interp.py",
+      "size_bytes": 1808,
+      "sha256": "436b6e8e346716dd466fede0a9038cc6e6e9c6573ffef526f028a890ab0222d6"
+    },
+    {
+      "path": "torchdiffeq/_impl/misc.py",
+      "wheel_path": "torchdiffeq/_impl/misc.py",
+      "size_bytes": 13364,
+      "sha256": "49a4707d4c2bdd2ad162fa449fcad3bedec5719159cfddf1caec516bc28db5be"
+    },
+    {
+      "path": "torchdiffeq/_impl/odeint.py",
+      "wheel_path": "torchdiffeq/_impl/odeint.py",
+      "size_bytes": 7926,
+      "sha256": "fe10e0df2967f17670b971f25ebb322f2a84ed84909d5dc32e3949f5d703fca5"
+    },
+    {
+      "path": "torchdiffeq/_impl/rk_common.py",
+      "wheel_path": "torchdiffeq/_impl/rk_common.py",
+      "size_bytes": 16233,
+      "sha256": "bd9f0e5a50cf1939e4a3136b7aeff550e04d6d8d76601991676ceb7ab2974989"
+    },
+    {
+      "path": "torchdiffeq/_impl/scipy_wrapper.py",
+      "wheel_path": "torchdiffeq/_impl/scipy_wrapper.py",
+      "size_bytes": 1850,
+      "sha256": "f5b0e8e275e205b4ce03dfe320dc4189d5d5b2c7af7efbc532ccdc82451cc62e"
+    },
+    {
+      "path": "torchdiffeq/_impl/solvers.py",
+      "wheel_path": "torchdiffeq/_impl/solvers.py",
+      "size_bytes": 6088,
+      "sha256": "724bc51c021f84366759018ba5c61e263b58492e9e2083e6b60fda71e84e68bd"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "torchdiffeq-0.2.5.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "torchdiffeq-0.2.5.dist-info/REQUESTED",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "torchdiffeq/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "torchdiffeq/_impl/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "torchdiffeq/_impl/__pycache__/adaptive_heun.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "torchdiffeq/_impl/__pycache__/adjoint.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "torchdiffeq/_impl/__pycache__/bosh3.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "torchdiffeq/_impl/__pycache__/dopri5.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "torchdiffeq/_impl/__pycache__/dopri8.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "torchdiffeq/_impl/__pycache__/event_handling.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "torchdiffeq/_impl/__pycache__/fehlberg2.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "torchdiffeq/_impl/__pycache__/fixed_adams.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "torchdiffeq/_impl/__pycache__/fixed_grid.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "torchdiffeq/_impl/__pycache__/interp.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "torchdiffeq/_impl/__pycache__/misc.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "torchdiffeq/_impl/__pycache__/odeint.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "torchdiffeq/_impl/__pycache__/rk_common.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "torchdiffeq/_impl/__pycache__/scipy_wrapper.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "torchdiffeq/_impl/__pycache__/solvers.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "21c2a2d77f1520421ccfff9cd3be99b332b4c82df5a7fb80161a5e621a522f49",
+  "wheel_size_bytes": 36185,
+  "rebuilt_record_verified_files": 21,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:22.327935+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 21,
+  "source_record_verified_file_count": 23
+}

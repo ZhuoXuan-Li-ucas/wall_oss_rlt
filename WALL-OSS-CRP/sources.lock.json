@@ -1,0 +1,117 @@
+{
+  "wall_x": {
+    "repo": "https://github.com/X-Square-Robot/wall-x",
+    "commit": "ce2a1ae31d9ee1028b97ca40e3f66034cf8c0e5f",
+    "path": "/home/pangk/workspaces/WALL-OSS-CRP/wall-x",
+    "local_patches": []
+  },
+  "models": [
+    {
+      "repo_id": "x-square-robot/wall-oss-0.5",
+      "revision": "b7dc23a82dbf70a65859c9fdd596703234597028",
+      "path": "/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5",
+      "processor_only": false
+    },
+    {
+      "repo_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "path": "/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct",
+      "processor_only": true
+    }
+  ],
+  "environment": {
+    "path": "/home/pangk/workspaces/WALL-OSS-CRP/env",
+    "python": "3.10",
+    "torch": "2.10.0+cu130",
+    "torch_index": "https://download.pytorch.org/whl/cu130",
+    "flash_attn": "2.8.3",
+    "scope": "Preparation and native-kernel/processor checks; no full-model load, action inference, training, or service test.",
+    "flash_attn_build": {
+      "source": "https://pypi.org/project/flash-attn/2.8.3/",
+      "FLASH_ATTN_CUDA_ARCHS": "80",
+      "TORCH_CUDA_ARCH_LIST": "8.6",
+      "MAX_JOBS": 1,
+      "NVCC_THREADS": 1,
+      "reason": "FA 2.8.3 setup.py enumerates 80/90/100/120 only; sm80 is compatible with the RTX 3060 Ti sm86. No official torch2.10 prebuilt wheel in the v2.8.3 release assets.",
+      "source_cache": "/home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3",
+      "parallel3_failure": "Compiler killed with exit 137; cgroup memory.events recorded oom_kill=1. Full-feature build resumed with MAX_JOBS=1.",
+      "status": "PASS; full-feature source build, MAX_JOBS=1"
+    },
+    "actual_versions": {
+      "torch": "2.10.0+cu130",
+      "torchvision": "0.25.0+cu130",
+      "torchaudio": "2.10.0+cu130",
+      "transformers": "5.2.0",
+      "flash-attn": "2.8.3",
+      "accelerate": "1.13.0",
+      "peft": "0.18.1",
+      "lerobot": "0.4.4",
+      "wall_x": "1.1.0",
+      "dmuon": "0.2.0",
+      "huggingface-hub": "1.33.0"
+    },
+    "python_actual": "3.10.22 | packaged by conda-forge | (main, Oct  6 2026, 23:02:24) [GCC 14.4.0]",
+    "ros_python_paths_excluded": true,
+    "pip_check": {
+      "status": "FAIL",
+      "log": "logs/pip-check.log",
+      "issues": [
+        "lerobot 0.4.4 requires cmake, which is not installed.",
+        "lerobot 0.4.4 requires deepdiff, which is not installed.",
+        "lerobot 0.4.4 requires diffusers, which is not installed.",
+        "lerobot 0.4.4 requires gymnasium, which is not installed.",
+        "lerobot 0.4.4 requires imageio, which is not installed.",
+        "lerobot 0.4.4 requires jsonlines, which is not installed.",
+        "lerobot 0.4.4 requires pynput, which is not installed.",
+        "lerobot 0.4.4 requires pyserial, which is not installed.",
+        "lerobot 0.4.4 requires rerun-sdk, which is not installed.",
+        "lerobot 0.4.4 requires torchcodec, which is not installed.",
+        "lerobot 0.4.4 has requirement huggingface-hub[cli,hf-transfer]<0.36.0,>=0.34.2, but you have huggingface-hub 1.33.0."
+      ],
+      "runtime_import_checks": "PASS; setup-verification.json"
+    }
+  },
+  "lerobot": {
+    "repo": "https://github.com/huggingface/lerobot",
+    "tag": "v0.4.4",
+    "commit": "8fff0fde7c79f23a93d845d1a50e985de01f8b8a",
+    "install_flags": [
+      "--no-deps",
+      "-e"
+    ],
+    "path": "/home/pangk/workspaces/WALL-OSS-CRP/lerobot",
+    "version_source": "Fixed Wall-X workspace/rtx5090/install.sh pins v0.4.4; Python >=3.10."
+  },
+  "dmuon": {
+    "repo": "https://github.com/X-Square-Robot/dmuon",
+    "commit": "f802a282207984da248defa9d5ade0e57dbbfb67",
+    "path": "/home/pangk/workspaces/WALL-OSS-CRP/dmuon",
+    "optional_fast_clip_extension": false,
+    "reason": "DMUON_BUILD_FAST_CLIP=0; optional training kernel not required for setup or continuous-flow inference."
+  },
+  "bootstrap_download_tool": {
+    "python": "/home/pangk/miniforge3/bin/python",
+    "huggingface_hub": "0.35.3",
+    "mutated_base_environment": false
+  },
+  "local_patches": [],
+  "native_artifacts": [
+    {
+      "path": "artifacts/flash_attn-2.8.3-cp310-cp310-linux_x86_64.whl",
+      "size_bytes": 57390711,
+      "sha256": "8faab997b236a93bb8c1a72c4c70493aad8a47bd31a815195cf0d3fb2e00c3c5"
+    },
+    {
+      "path": "wall-x/wall_x/model/core/ops/_cuda_ext_bin.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 2463048,
+      "sha256": "f68d1f2275fe0e865653dfe8ddc3ee4ba6bc5e0afebc97b4c57f783613e5d814"
+    }
+  ],
+  "verification": {
+    "completed_at_utc": "2026-10-26T02:45:38.705612+00:00",
+    "assets_manifest": "model_files.manifest.json",
+    "assets_count": 24,
+    "assets_all_verified": true,
+    "environment_result": "setup-verification.json"
+  }
+}

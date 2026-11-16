@@ -1,0 +1,12 @@
+{
+  "status": "TRAINING_CANDIDATE_UNPACKED_NOT_GPU_VALIDATED",
+  "project": "/home/pangk/workspaces/WALL-OSS-CRP/.cache/rlt-training-portability-20261029-v1",
+  "data_root": "/home/pangk/workspaces/WALL-OSS-CRP/.cache/rlt-training-portability-20261029-v1/data/top_error",
+  "models_root": "/home/pangk/workspaces/WALL-OSS-CRP/models",
+  "contract_fingerprint": "cb354f8197dfbbbcc8d92ba0c4bbb62c53512326c298e1d8bd2cd5cc3bc302d6",
+  "sources_prepared": true,
+  "native_extension_installed": false,
+  "dependencies_installed": false,
+  "required_base_image_id": "sha256:8f067a0eb220228f444811532cc8ec0a328e4d46b7983637c1c4ea7743ef9ee8",
+  "source_bundle": "/media/pangk/My Passport/WALL-RLT-training-candidate-20261029-v1"
+}

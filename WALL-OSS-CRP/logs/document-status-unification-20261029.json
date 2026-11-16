@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "scope": "documentation state, scope, links and Markdown structure only; no new runtime validation",
+  "documents": 17,
+  "local_link_occurrences": 289,
+  "current_document_missing_links": 0,
+  "preserved_historical_external_link_occurrences": 17,
+  "historical_external_links": [
+    {
+      "file": "数据采集.md",
+      "historical_external_reference": "../灵巧手遥操/VR设备/数据采集_servoJ.md"
+    },
+    {
+      "file": "数据采集.md",
+      "historical_external_reference": "omnipicker/README.md"
+    },
+    {
+      "file": "数据采集.md",
+      "historical_external_reference": "../../工作区说明.md"
+    },
+    {
+      "file": "数据采集.md",
+      "historical_external_reference": "omnipicker/README.md"
+    },
+    {
+      "file": "数据采集.md",
+      "historical_external_reference": "CAN诊断_2026-09-22.md"
+    },
+    {
+      "file": "数据采集.md",
+      "historical_external_reference": "../../工作区说明.md"
+    },
+    {
+      "file": "数据转换说明.md",
+      "historical_external_reference": "../../算法/DexGraspVLA-/环境说明.md"
+    },
+    {
+      "file": "数据转换说明.md",
+      "historical_external_reference": "../../算法/DexGraspVLA-/环境说明.md"
+    },
+    {
+      "file": "数据转换说明.md",
+      "historical_external_reference": "../../算法/DexGraspVLA-/环境说明.md"
+    },
+    {
+      "file": "数据集格式说明.md",
+      "historical_external_reference": "atom_robot/ar5/transforms.py"
+    },
+    {
+      "file": "数据集格式说明.md",
+      "historical_external_reference": "atom_robot/ar5/ar5_env.py"
+    },
+    {
+      "file": "数据集格式说明.md",
+      "historical_external_reference": "atom_robot/ar5/collect.py"
+    },
+    {
+      "file": "数据集格式说明.md",
+      "historical_external_reference": "atom_robot/ar5/sync_align.py"
+    },
+    {
+      "file": "数据集格式说明.md",
+      "historical_external_reference": "atom_robot/ar5/transforms.py"
+    },
+    {
+      "file": "数据集格式说明.md",
+      "historical_external_reference": "atom_robot/ar5/drivers/rokae_arm.py"
+    },
+    {
+      "file": "数据集格式说明.md",
+      "historical_external_reference": "omnipicker/gripper.py"
+    },
+    {
+      "file": "数据集格式说明.md",
+      "historical_external_reference": "atom_robot/ar5/home_collect.py"
+    }
+  ],
+  "existing_cpu_report_tests": {
+    "tests": 377,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "cpu_tests_rerun": false,
+  "delivery_packages_rebuilt_or_modified": false,
+  "document_sha256": {
+    "PROJECT_STATUS.md": "f7a440c3fca125ec976f9564bb27b48c28f21277164b4f4b82052729053ddbfd",
+    "README.md": "50e8431808468ced53fb861f91ad0b868098d3ebc5f50565a5af475e3ccd15eb",
+    "WALL_RLT_Human_Review.md": "2e848fa1803b3de138f48d01499ac082e9a9a4401776fd5d0e2fb71f0b8145e6",
+    "WALL_RLT_Agent_Implementation_Plan.md": "771b691adf4e99fc57506cee486f073f09a6be03a97820874a9a6104a19b1d4c",
+    "WALL_RLT_Inference_Deployment.md": "a79718ce672259d94e38fd25a2ff502fbe5434eac3868c7d34b91a357fbdc231",
+    "WALL_RLT_Implementation_Review.md": "6f66000d8e01a90ece244dccc6b6927b3c5133417653064a70be8aff6bc274e7",
+    "environment.md": "8ac7f97a30fb7e7392785a5c508065ed743dfe08b0d3602df43a24bed59d96a0",
+    "H100使用说明.md": "80c053088eb0e6e55d5afcce3a460cf37adfc757fd9885f22601494a42f18c41",
+    "docker/OFFLINE-DEPLOY.md": "027efafa407282a09c238d0e05a462253575f5324d51503d94d7d4816bd2c8d5",
+    "docker/H100-HANDOFF.txt": "9bbe9754ecba4bf2d0e38ae992cc92c0a77506d40c4e238592fe9fe2984bdf0c",
+    "WALL-OSS-CRP_Stage1_Agent_Plan.md": "b0a1799f572ecb84dddea93b639212d146773086d2f228e3e933c0bae0697850",
+    "stage1_report.md": "522e1490d997205ad712e5f5389e577c22255664c710a72fd827b18df1b7ae31",
+    "environment.host.md": "f06ccc8add8403875e1cd2e3cceeb70527b2d766e5ec1256d051cea36ab652c8",
+    "H100迁移LeRobot说明书.md": "bdae995fff35a7d23cfc20b6de2085c204278afad1c8526c6eea527b20d7ea53",
+    "数据采集.md": "7ff679d447dce3e8e81bc3d7c128f41ddaf350b8f65f5610ea4850c706eaa899",
+    "数据转换说明.md": "9d168d32ade55332fa23b89ed16cecff67743203f213c767bca08aedb9e98a8a",
+    "数据集格式说明.md": "bd900bade229f562a5d050ae0f12324c9be47ad1b02256025e0845da3895dba6"
+  }
+}

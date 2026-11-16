@@ -1,0 +1,192 @@
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/chat_template.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/config.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/generation_config.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/.gitattributes: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/LICENSE: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/merges.txt: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/preprocessor_config.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/README.md: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/tokenizer_config.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/tokenizer.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/vocab.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/ar_normalizer_action.pth: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/assets/logo.png: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/config.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/config.yml: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/.gitattributes: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/model.safetensors: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/normalizer_action.pth: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/normalizer_propri.pth: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/preprocessor_config.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/README.md: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/tokenizer_config.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/tokenizer.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/vocab.json: 成功
+/media/pangk/My Passport/H100_lerobot/Datasets/stack_the_base_llx_04251/data/chunk-000/file-000.parquet: 成功
+/media/pangk/My Passport/H100_lerobot/Datasets/stack_the_base_llx_04251/meta/episodes/chunk-000/file-000.parquet: 成功
+/media/pangk/My Passport/H100_lerobot/Datasets/stack_the_base_llx_04251/meta/info.json: 成功
+/media/pangk/My Passport/H100_lerobot/Datasets/stack_the_base_llx_04251/meta/stats.json: 成功
+/media/pangk/My Passport/H100_lerobot/Datasets/stack_the_base_llx_04251/meta/tasks.parquet: 成功
+/media/pangk/My Passport/H100_lerobot/Datasets/stack_the_base_llx_04251/videos/observation.images.top/chunk-000/file-000.mp4: 成功
+/media/pangk/My Passport/H100_lerobot/Datasets/stack_the_base_llx_04251/videos/observation.images.wrist/chunk-000/file-000.mp4: 成功
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 12.8.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+WARNING: The NVIDIA Driver was not detected.  GPU functionality will not be available.
+   Use the NVIDIA Container Toolkit to start this container with GPU support; see
+   https://docs.nvidia.com/datacenter/cloud-native/ .
+
+{
+  "status": "PASS",
+  "report": "/reports/native-architectures.json",
+  "required_architectures": [
+    "sm_90"
+  ],
+  "extensions": [
+    {
+      "module": "flash_attn_2_cuda",
+      "status": "PASS",
+      "path": "/opt/walloss/env/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "09c5dea022d0e88a1de3cd2563e676c59a3e0836f691467240fb7f63031d8f9f",
+      "elf_architectures": [
+        "sm_80",
+        "sm_90"
+      ],
+      "ptx_architectures": [],
+      "missing_architectures": []
+    },
+    {
+      "module": "wall_x.model.core.ops._cuda_ext_bin",
+      "status": "PASS",
+      "path": "/opt/walloss/env/lib/python3.10/site-packages/wall_x/model/core/ops/_cuda_ext_bin.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "2c2a4ae238834e1adc7e6777dc266f81da8f3ccb77a607d2d9bd445c72c044eb",
+      "elf_architectures": [
+        "sm_86",
+        "sm_90"
+      ],
+      "ptx_architectures": [],
+      "missing_architectures": []
+    }
+  ]
+}
+Archive image identity verified: sha256:2eaee50dfe782ceec5f3c29ade76fdb4b641d92229a18404f1cb5001bba353c3
+./STATUS.txt: 成功
+./Verify-Bundle.ps1: 成功
+./dataset-root.txt: 成功
+./migration-preflight.json: 成功
+./model_files.manifest.json: 成功
+./models.tar.gz: 成功
+./smoke-data.tar.gz: 成功
+./source-assets.sha256: 成功
+./source-check.log: 成功
+./sources.lock.json: 成功
+/media/pangk/My Passport/WALL-OSS-CRP-assets-20261028/source-assets.sha256 /home/pangk/workspaces/WALL-OSS-CRP/logs/docker-validation-delivery-20261029/validated-assets.sha256 不同：第 1 字节（第 1 行）
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/chat_template.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/config.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/generation_config.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/.gitattributes: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/LICENSE: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/merges.txt: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/preprocessor_config.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/README.md: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/tokenizer_config.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/tokenizer.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct/vocab.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/ar_normalizer_action.pth: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/assets/logo.png: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/config.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/config.yml: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/.gitattributes: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/model.safetensors: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/normalizer_action.pth: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/normalizer_propri.pth: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/preprocessor_config.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/README.md: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/tokenizer_config.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/tokenizer.json: 成功
+/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/vocab.json: 成功
+/media/pangk/My Passport/H100_lerobot/Datasets/stack_the_base_llx_04251/data/chunk-000/file-000.parquet: 成功
+/media/pangk/My Passport/H100_lerobot/Datasets/stack_the_base_llx_04251/meta/episodes/chunk-000/file-000.parquet: 成功
+/media/pangk/My Passport/H100_lerobot/Datasets/stack_the_base_llx_04251/meta/info.json: 成功
+/media/pangk/My Passport/H100_lerobot/Datasets/stack_the_base_llx_04251/meta/stats.json: 成功
+/media/pangk/My Passport/H100_lerobot/Datasets/stack_the_base_llx_04251/meta/tasks.parquet: 成功
+/media/pangk/My Passport/H100_lerobot/Datasets/stack_the_base_llx_04251/videos/observation.images.top/chunk-000/file-000.mp4: 成功
+/media/pangk/My Passport/H100_lerobot/Datasets/stack_the_base_llx_04251/videos/observation.images.wrist/chunk-000/file-000.mp4: 成功
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 12.8.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+WARNING: The NVIDIA Driver was not detected.  GPU functionality will not be available.
+   Use the NVIDIA Container Toolkit to start this container with GPU support; see
+   https://docs.nvidia.com/datacenter/cloud-native/ .
+
+{
+  "status": "PASS",
+  "report": "/reports/native-architectures.json",
+  "required_architectures": [
+    "sm_90"
+  ],
+  "extensions": [
+    {
+      "module": "flash_attn_2_cuda",
+      "status": "PASS",
+      "path": "/opt/walloss/env/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "09c5dea022d0e88a1de3cd2563e676c59a3e0836f691467240fb7f63031d8f9f",
+      "elf_architectures": [
+        "sm_80",
+        "sm_90"
+      ],
+      "ptx_architectures": [],
+      "missing_architectures": []
+    },
+    {
+      "module": "wall_x.model.core.ops._cuda_ext_bin",
+      "status": "PASS",
+      "path": "/opt/walloss/env/lib/python3.10/site-packages/wall_x/model/core/ops/_cuda_ext_bin.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "2c2a4ae238834e1adc7e6777dc266f81da8f3ccb77a607d2d9bd445c72c044eb",
+      "elf_architectures": [
+        "sm_86",
+        "sm_90"
+      ],
+      "ptx_architectures": [],
+      "missing_architectures": []
+    }
+  ]
+}
+Archive image identity verified: sha256:2eaee50dfe782ceec5f3c29ade76fdb4b641d92229a18404f1cb5001bba353c3
+./STATUS.txt: 成功
+./Verify-Bundle.ps1: 成功
+./dataset-root.txt: 成功
+./migration-preflight.json: 成功
+./model_files.manifest.json: 成功
+./models.tar.gz: 成功
+./smoke-data.tar.gz: 成功
+./source-assets.sha256: 成功
+./source-check.log: 成功
+./sources.lock.json: 成功
+Complete transfer bundle finalized: 27 files; /media/pangk/My Passport/WALL-OSS-CRP-transfer-20261029
+Bundle ready for SSH transfer to the Ubuntu server: /media/pangk/My Passport/WALL-OSS-CRP-transfer-20261029
+H100 GPU/full-model verification must still be performed after docker load.

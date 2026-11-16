@@ -1,0 +1,11 @@
+{
+  "build_pid": 314553,
+  "report": "/home/pangk/workspaces/WALL-OSS-CRP/logs/docker-validation-delivery-20261029",
+  "bundle": "/media/pangk/My Passport/WALL-OSS-CRP-transfer-20261029",
+  "status": "BUNDLE_READY",
+  "checked_at_utc": "2026-10-29T06:15:35.840632+00:00",
+  "source_image_id": "sha256:8f067a0eb220228f444811532cc8ec0a328e4d46b7983637c1c4ea7743ef9ee8",
+  "h100_validation": "NOT_RUN",
+  "windows_validation": "NOT_REQUIRED",
+  "server_transfer": "NOT_STARTED"
+}

@@ -1,0 +1,100 @@
+[
+    {
+        "Id": "sha256:6617a625f4090c76c545a0e7d63f2e441718ef9af7f4efe7dd1242a29e289fd7",
+        "RepoTags": [
+            "nvidia/cuda:12.8.1-devel-ubuntu22.04"
+        ],
+        "RepoDigests": [
+            "nvidia/cuda@sha256:6617a625f4090c76c545a0e7d63f2e441718ef9af7f4efe7dd1242a29e289fd7"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2025-03-10T22:36:52.741506081Z",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NVARCH=x86_64",
+                "NVIDIA_REQUIRE_CUDA=cuda>=12.8 brand=unknown,driver>=470,driver<471 brand=grid,driver>=470,driver<471 brand=tesla,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=vapps,driver>=470,driver<471 brand=vpc,driver>=470,driver<471 brand=vcs,driver>=470,driver<471 brand=vws,driver>=470,driver<471 brand=cloudgaming,driver>=470,driver<471 brand=unknown,driver>=535,driver<536 brand=grid,driver>=535,driver<536 brand=tesla,driver>=535,driver<536 brand=nvidia,driver>=535,driver<536 brand=quadro,driver>=535,driver<536 brand=quadrortx,driver>=535,driver<536 brand=nvidiartx,driver>=535,driver<536 brand=vapps,driver>=535,driver<536 brand=vpc,driver>=535,driver<536 brand=vcs,driver>=535,driver<536 brand=vws,driver>=535,driver<536 brand=cloudgaming,driver>=535,driver<536 brand=unknown,driver>=550,driver<551 brand=grid,driver>=550,driver<551 brand=tesla,driver>=550,driver<551 brand=nvidia,driver>=550,driver<551 brand=quadro,driver>=550,driver<551 brand=quadrortx,driver>=550,driver<551 brand=nvidiartx,driver>=550,driver<551 brand=vapps,driver>=550,driver<551 brand=vpc,driver>=550,driver<551 brand=vcs,driver>=550,driver<551 brand=vws,driver>=550,driver<551 brand=cloudgaming,driver>=550,driver<551 brand=unknown,driver>=560,driver<561 brand=grid,driver>=560,driver<561 brand=tesla,driver>=560,driver<561 brand=nvidia,driver>=560,driver<561 brand=quadro,driver>=560,driver<561 brand=quadrortx,driver>=560,driver<561 brand=nvidiartx,driver>=560,driver<561 brand=vapps,driver>=560,driver<561 brand=vpc,driver>=560,driver<561 brand=vcs,driver>=560,driver<561 brand=vws,driver>=560,driver<561 brand=cloudgaming,driver>=560,driver<561 brand=unknown,driver>=565,driver<566 brand=grid,driver>=565,driver<566 brand=tesla,driver>=565,driver<566 brand=nvidia,driver>=565,driver<566 brand=quadro,driver>=565,driver<566 brand=quadrortx,driver>=565,driver<566 brand=nvidiartx,driver>=565,driver<566 brand=vapps,driver>=565,driver<566 brand=vpc,driver>=565,driver<566 brand=vcs,driver>=565,driver<566 brand=vws,driver>=565,driver<566 brand=cloudgaming,driver>=565,driver<566",
+                "NV_CUDA_CUDART_VERSION=12.8.90-1",
+                "CUDA_VERSION=12.8.1",
+                "LD_LIBRARY_PATH=/usr/local/cuda/lib64",
+                "NVIDIA_VISIBLE_DEVICES=all",
+                "NVIDIA_DRIVER_CAPABILITIES=compute,utility",
+                "NV_CUDA_LIB_VERSION=12.8.1-1",
+                "NV_NVTX_VERSION=12.8.90-1",
+                "NV_LIBNPP_VERSION=12.3.3.100-1",
+                "NV_LIBNPP_PACKAGE=libnpp-12-8=12.3.3.100-1",
+                "NV_LIBCUSPARSE_VERSION=12.5.8.93-1",
+                "NV_LIBCUBLAS_PACKAGE_NAME=libcublas-12-8",
+                "NV_LIBCUBLAS_VERSION=12.8.4.1-1",
+                "NV_LIBCUBLAS_PACKAGE=libcublas-12-8=12.8.4.1-1",
+                "NV_LIBNCCL_PACKAGE_NAME=libnccl2",
+                "NV_LIBNCCL_PACKAGE_VERSION=2.25.1-1",
+                "NCCL_VERSION=2.25.1-1",
+                "NV_LIBNCCL_PACKAGE=libnccl2=2.25.1-1+cuda12.8",
+                "NVIDIA_PRODUCT_NAME=CUDA",
+                "NV_CUDA_CUDART_DEV_VERSION=12.8.90-1",
+                "NV_NVML_DEV_VERSION=12.8.90-1",
+                "NV_LIBCUSPARSE_DEV_VERSION=12.5.8.93-1",
+                "NV_LIBNPP_DEV_VERSION=12.3.3.100-1",
+                "NV_LIBNPP_DEV_PACKAGE=libnpp-dev-12-8=12.3.3.100-1",
+                "NV_LIBCUBLAS_DEV_VERSION=12.8.4.1-1",
+                "NV_LIBCUBLAS_DEV_PACKAGE_NAME=libcublas-dev-12-8",
+                "NV_LIBCUBLAS_DEV_PACKAGE=libcublas-dev-12-8=12.8.4.1-1",
+                "NV_CUDA_NSIGHT_COMPUTE_VERSION=12.8.1-1",
+                "NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE=cuda-nsight-compute-12-8=12.8.1-1",
+                "NV_NVPROF_VERSION=12.8.90-1",
+                "NV_NVPROF_DEV_PACKAGE=cuda-nvprof-12-8=12.8.90-1",
+                "NV_LIBNCCL_DEV_PACKAGE_NAME=libnccl-dev",
+                "NV_LIBNCCL_DEV_PACKAGE_VERSION=2.25.1-1",
+                "NV_LIBNCCL_DEV_PACKAGE=libnccl-dev=2.25.1-1+cuda12.8",
+                "LIBRARY_PATH=/usr/local/cuda/lib64/stubs"
+            ],
+            "Entrypoint": [
+                "/opt/nvidia/nvidia_entrypoint.sh"
+            ],
+            "Labels": {
+                "maintainer": "NVIDIA CORPORATION <cudatools@nvidia.com>",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 14523055655,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:270a1170e7e398434ff1b31e17e233f7d7b71aa99a40473615860068e86720af",
+                "sha256:fb456a9e7760e7e4481d3d9eddee3ef62358753326d669c3efe6b0cc254ab9c3",
+                "sha256:981a144d9fa2efffdbdfbdcfd3881dccb4fbf07867d4fa326a386126ca11b50f",
+                "sha256:583f1d6040fc90a1380cb4d11d46b78bbbd4ad7d6274b9656ab9832ef7ba6342",
+                "sha256:6020d84069cf575521faca653d2817e2195b8233b8c4e2d7bc65f3296296c2bb",
+                "sha256:eb0143fcce68bd06a29bf314125d30f2a1f44d606fc419e7a54ab602bc26b2d0",
+                "sha256:cb395f276e984728ca05fdee4e1dc203e1310a9e943a2d16d7aa87e5b2cf754b",
+                "sha256:70a158f70e3777a129c15ffe51399bb6c226218c08ff6819948b9b1f26a46277",
+                "sha256:9bb0510c7b4b74b056648f24e0a55c26f7521a1a1b766250a0776e14ce9d93f6",
+                "sha256:7215ae9b9700d9530f70dea6f546b7ebdaac0098e4436b4c99e3e8063170c274",
+                "sha256:acbc0d2ed199232b8f482ce41318ccd603e3c9a7731d39f0b08b88b253a6ca67"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-10-28T09:13:57.644987865Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:6617a625f4090c76c545a0e7d63f2e441718ef9af7f4efe7dd1242a29e289fd7",
+            "size": 2630,
+            "annotations": {
+                "io.containerd.image.name": "nvidia/cuda:12.8.1-devel-ubuntu22.04",
+                "org.opencontainers.image.ref.name": "nvidia/cuda:12.8.1-devel-ubuntu22.04"
+            }
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "docker.io/nvidia/cuda"
+                }
+            ]
+        }
+    }
+]

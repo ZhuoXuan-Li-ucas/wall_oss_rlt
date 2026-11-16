@@ -1,0 +1,37 @@
+# Offline derived image. BASE_IMAGE must resolve to the validated local D0 image.
+# No syntax directive: do not fetch a Dockerfile frontend on an offline host.
+ARG BASE_IMAGE
+FROM ${BASE_IMAGE}
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+ENV PATH="/opt/walloss/env/bin:${PATH}" \
+    PYTHONNOUSERSITE=1 PYTHONPATH="/opt/wall-rlt" \
+    CUDA_HOME=/usr/local/cuda MAX_JOBS=1 NVCC_THREADS=1 \
+    TORCH_CUDA_ARCH_LIST="12.0" FLASH_ATTN_CUDA_ARCHS="120" \
+    FLASH_ATTENTION_FORCE_BUILD=TRUE PIP_NO_INDEX=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 \
+    TOKENIZERS_PARALLELISM=false
+WORKDIR /opt/wall-rlt
+COPY flash-attn/ /opt/wall-rlt-build/flash-attn/
+# A complete sdist source tree contains cutlass, but no .git, so setup.py never
+# invokes git submodule update. Explicit architectures need no GPU at build time.
+RUN test ! -e /opt/wall-rlt-build/flash-attn/.git \
+    && test -f /opt/wall-rlt-build/flash-attn/csrc/cutlass/include/cutlass/cutlass.h \
+    && CUDA_VISIBLE_DEVICES="" python -m pip install -v --force-reinstall \
+       --no-cache-dir --no-index --no-deps --no-build-isolation /opt/wall-rlt-build/flash-attn \
+    && rm -rf /opt/wall-rlt-build/flash-attn
+COPY wall-x/ /opt/wall-rlt-build/wall-x/
+RUN test ! -e /opt/wall-rlt-build/wall-x/.git \
+    && CUDA_VISIBLE_DEVICES="" python -m pip install -v --force-reinstall \
+       --no-cache-dir --no-index --no-deps --no-build-isolation /opt/wall-rlt-build/wall-x \
+    && rm -rf /opt/wall-rlt-build/wall-x
+COPY project/ /opt/wall-rlt/
+COPY SOURCE-MANIFEST.json /opt/wall-rlt/build-record/source-manifest.json
+# This check inspects installed binary cubins; it does not execute a GPU kernel.
+RUN CUDA_VISIBLE_DEVICES="" python docker/verify_native_architectures.py \
+       --required-arch sm_120 --output build-record/native-sm120.json \
+    && python -m pip freeze --all > build-record/environment.freeze.txt \
+    && python -c "import importlib.util; from pathlib import Path; p=Path(importlib.util.find_spec('wall_x').origin).resolve(); assert p.is_relative_to(Path('/opt/walloss/env')), p; print('Installed patched WALL:', p)" \
+    && CUDA_VISIBLE_DEVICES="" python -c "import wall_rlt.inference.artifact, wall_rlt.inference.runtime, wall_rlt.inference.server, wall_rlt.inference.client; from wall_x.data.backends.lerobot.loader import DataCollator; from wall_x.model.qact.qwen2_5 import Qwen2_5_VLMoEForAction; from wall_rlt.model.builder import _require_prefix_patch; _require_prefix_patch(Qwen2_5_VLMoEForAction); print('Inference imports and prefix patch: PASS; model and GPU kernels not run')"
+LABEL org.opencontainers.image.title="WALL RLT RTX 5070 Ti inference candidate" \
+    walloss.scope="offline sm120 source build; target GPU execution and trained RLT artifact acceptance pending"
+CMD ["bash"]

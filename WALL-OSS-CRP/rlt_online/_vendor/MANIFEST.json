@@ -1,0 +1,456 @@
+{
+ "schema_version": 1,
+ "source": {
+  "name": "Evo-RLT",
+  "archive": "My Passport: wy/EVO/Evo-RLT.zip",
+  "archive_bytes": 52271899132,
+  "archive_mtime": "2026-08-03T11:13:47",
+  "archive_members": 4452,
+  "project_version": "0.1.0",
+  "declared_license": "Apache-2.0 (pyproject.toml; the archive has no LICENSE file)"
+ },
+ "vendored_on": "2026-11-10",
+ "modified_files": [],
+ "files": [
+  {
+   "path": "evo_rlt/__init__.py",
+   "zip_member": "src/evo_rlt/__init__.py",
+   "sha256": "2dae1a6f3a170e3e48d5b047cf63c77d654fd9fbfce454637f43270b72641ce1",
+   "bytes": 131,
+   "zip_crc32": "263557d8",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/adapters/__init__.py",
+   "zip_member": "src/evo_rlt/adapters/__init__.py",
+   "sha256": "5384bfdb2df380b6557cc7a71d16891415bccaa87699406e236f752c6415389f",
+   "bytes": 35,
+   "zip_crc32": "fef706e6",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/adapters/lerobot/__init__.py",
+   "zip_member": "src/evo_rlt/adapters/lerobot/__init__.py",
+   "sha256": "06a0e1e7885fc6d2f6598d773afd41eaff93e7a2cfe070fd4205e738997daa8a",
+   "bytes": 115,
+   "zip_crc32": "f46ff100",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/adapters/lerobot/online_collector.py",
+   "zip_member": "src/evo_rlt/adapters/lerobot/online_collector.py",
+   "sha256": "d48a49608129a7a303d29e99e3fd8a02ae1fdad9c8a483839c4fbd499c646237",
+   "bytes": 13191,
+   "zip_crc32": "aaf1945d",
+   "zip_mtime": "2026-08-01T17:20:20"
+  },
+  {
+   "path": "evo_rlt/adapters/lerobot/record/__init__.py",
+   "zip_member": "src/evo_rlt/adapters/lerobot/record/__init__.py",
+   "sha256": "7f11dddfdc058628edf38729f631d3a5c5c66a517ab28cd023768784470fa7da",
+   "bytes": 46,
+   "zip_crc32": "0a1391c7",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/adapters/lerobot/record/annotations.py",
+   "zip_member": "src/evo_rlt/adapters/lerobot/record/annotations.py",
+   "sha256": "ed15a8f9842f6c4f4d72e92eb9c4338040397bc63ab9ac3751a5bc23fe911c31",
+   "bytes": 4300,
+   "zip_crc32": "18b20645",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/adapters/lerobot/record/online_trainer.py",
+   "zip_member": "src/evo_rlt/adapters/lerobot/record/online_trainer.py",
+   "sha256": "4b3b1ab0e0e24c427e9fd5e95b4838f671671efd3df8224d5160a1bb5abaf42d",
+   "bytes": 43545,
+   "zip_crc32": "36ea523f",
+   "zip_mtime": "2026-08-03T10:29:06"
+  },
+  {
+   "path": "evo_rlt/adapters/lerobot/record/prune_state_cli.py",
+   "zip_member": "src/evo_rlt/adapters/lerobot/record/prune_state_cli.py",
+   "sha256": "a9021ed01aebdb9eba0d02aaa8cd5a3f7694b33e18e79dea0c0e3105a199ab26",
+   "bytes": 3597,
+   "zip_crc32": "eed361f0",
+   "zip_mtime": "2026-07-29T16:18:44"
+  },
+  {
+   "path": "evo_rlt/adapters/lerobot/registry.py",
+   "zip_member": "src/evo_rlt/adapters/lerobot/registry.py",
+   "sha256": "10336ded90d87e583c4002c17d1e113eb97e3608a1c0feb7971dc2b4b9a9eb35",
+   "bytes": 3653,
+   "zip_crc32": "bd93d802",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/core/__init__.py",
+   "zip_member": "src/evo_rlt/core/__init__.py",
+   "sha256": "9296cd5de2e82ca0fd5d2cac6974727c51e25d4cccba5553ebdf56321bf47a93",
+   "bytes": 1540,
+   "zip_crc32": "66e7c367",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/core/actor.py",
+   "zip_member": "src/evo_rlt/core/actor.py",
+   "sha256": "661cc113b82f8732fef872d61ef42ef58c0e8b9900498e012e5f9a9279cddd85",
+   "bytes": 5052,
+   "zip_crc32": "f30793a7",
+   "zip_mtime": "2026-07-30T18:39:50"
+  },
+  {
+   "path": "evo_rlt/core/algorithm.py",
+   "zip_member": "src/evo_rlt/core/algorithm.py",
+   "sha256": "e7fb5f7eb718755b552208c7cd10a6134e609719892761ff1cc14d228102c4e3",
+   "bytes": 5311,
+   "zip_crc32": "59bfbc03",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/core/collector.py",
+   "zip_member": "src/evo_rlt/core/collector.py",
+   "sha256": "fd0cdabbb1fa9efffaec800541a106cbcec040ad2448597304fd473e8fb57d3a",
+   "bytes": 6352,
+   "zip_crc32": "383b22a6",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/core/config.py",
+   "zip_member": "src/evo_rlt/core/config.py",
+   "sha256": "95689ea5c26986229830af7ba7f9d048b9e84956b5626549e2b9f2349d32d809",
+   "bytes": 4095,
+   "zip_crc32": "48c12c80",
+   "zip_mtime": "2026-08-01T16:29:40"
+  },
+  {
+   "path": "evo_rlt/core/configs/ac_best_v3.yaml",
+   "zip_member": "src/evo_rlt/core/configs/ac_best_v3.yaml",
+   "sha256": "d2541ad5402b19c03b2ca04b8507c864e1713d054fefae078d3e9476a3d14526",
+   "bytes": 692,
+   "zip_crc32": "a7778a3a",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/core/configs/ac_paper_screw.yaml",
+   "zip_member": "src/evo_rlt/core/configs/ac_paper_screw.yaml",
+   "sha256": "f8342487ed42602da213d42b491188e17de3968857962115cfb3ebcfe3c792e9",
+   "bytes": 692,
+   "zip_crc32": "bc49df35",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/core/configs/base.yaml",
+   "zip_member": "src/evo_rlt/core/configs/base.yaml",
+   "sha256": "30dd5879eca4e991e55d4cf00c0d03df90fc2103cb1dce73d6f42bf79f052110",
+   "bytes": 646,
+   "zip_crc32": "043f5664",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/core/configs/pi05_rlt.yaml",
+   "zip_member": "src/evo_rlt/core/configs/pi05_rlt.yaml",
+   "sha256": "5608ccde9fa4a190805bfe3abab2687d2ad49b4089c78a797e94857cc174b241",
+   "bytes": 768,
+   "zip_crc32": "da3e64ed",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/core/configs/pi05_rlt_cp_best.yaml",
+   "zip_member": "src/evo_rlt/core/configs/pi05_rlt_cp_best.yaml",
+   "sha256": "37a8fa9d554b698801555e41618d18dacbc602337f26af78740525b17fe82989",
+   "bytes": 945,
+   "zip_crc32": "154c8750",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/core/critic.py",
+   "zip_member": "src/evo_rlt/core/critic.py",
+   "sha256": "781bfc2be7f0f3edb4b1dddd924649b88ce960f02aed6592f0438fbea240f809",
+   "bytes": 2322,
+   "zip_crc32": "04be68ba",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/core/envs/__init__.py",
+   "zip_member": "src/evo_rlt/core/envs/__init__.py",
+   "sha256": "d80412c2d10e74f2f47049e8946d04a736b86f2156071b10456102a80d1938ec",
+   "bytes": 559,
+   "zip_crc32": "731d949e",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/core/envs/reaching.py",
+   "zip_member": "src/evo_rlt/core/envs/reaching.py",
+   "sha256": "5afd28e3ebcd86c7ad9eb747362214a565799b88ca801ea4eb89df979b35d22e",
+   "bytes": 1795,
+   "zip_crc32": "415da2e5",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/core/evaluator.py",
+   "zip_member": "src/evo_rlt/core/evaluator.py",
+   "sha256": "2ced39c43ad97c0c00ab7f6fa2e8a1feae59bc2ec0363e120650c302d013e0b8",
+   "bytes": 5895,
+   "zip_crc32": "1aa5a4c1",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/core/interfaces.py",
+   "zip_member": "src/evo_rlt/core/interfaces.py",
+   "sha256": "5ed518e2425072fcd9f285b6da19f0e6add07f26e0a7f656992e4abcae5c0528",
+   "bytes": 2248,
+   "zip_crc32": "7cd8b290",
+   "zip_mtime": "2026-08-01T17:20:20"
+  },
+  {
+   "path": "evo_rlt/core/losses.py",
+   "zip_member": "src/evo_rlt/core/losses.py",
+   "sha256": "04e17697af46bee792232c30ef3ddbef089dd0f2b82b8c463afa035ca768799c",
+   "bytes": 8468,
+   "zip_crc32": "57e90500",
+   "zip_mtime": "2026-08-03T10:27:34"
+  },
+  {
+   "path": "evo_rlt/core/mix_dataset.py",
+   "zip_member": "src/evo_rlt/core/mix_dataset.py",
+   "sha256": "948ced5900f673b9f29e707f2ff0adff1673c0e778f6610a34a1e5c864eb4033",
+   "bytes": 4844,
+   "zip_crc32": "d1809ca4",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/core/obs_bridge.py",
+   "zip_member": "src/evo_rlt/core/obs_bridge.py",
+   "sha256": "b72cbca084d3b5bb1e4df774808f6004199bbed24a923dd6837921fc0538e8f9",
+   "bytes": 4543,
+   "zip_crc32": "cc24d902",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/core/phase_controller.py",
+   "zip_member": "src/evo_rlt/core/phase_controller.py",
+   "sha256": "72e8201f060e4b570fa6932946dbe02b3f1aca174e9b115b9bcea12eacdc9e74",
+   "bytes": 3736,
+   "zip_crc32": "c0500f80",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/core/policy.py",
+   "zip_member": "src/evo_rlt/core/policy.py",
+   "sha256": "602a244f9f0c150ea3214c33106107a76d5d8651befddf232acaafb77661eef3",
+   "bytes": 5166,
+   "zip_crc32": "5e433d5d",
+   "zip_mtime": "2026-07-27T11:09:12"
+  },
+  {
+   "path": "evo_rlt/core/replay_buffer.py",
+   "zip_member": "src/evo_rlt/core/replay_buffer.py",
+   "sha256": "a2a87ef4f0ffcae73c49d377186cb1011788a54b2458c3140f7a5185b97a797c",
+   "bytes": 8989,
+   "zip_crc32": "5fa07a4c",
+   "zip_mtime": "2026-08-01T17:20:20"
+  },
+  {
+   "path": "evo_rlt/core/rewards.py",
+   "zip_member": "src/evo_rlt/core/rewards.py",
+   "sha256": "3adb90c2f5081814a60910b692f43a004373f326288df02e9db9d1eb6b105b27",
+   "bytes": 901,
+   "zip_crc32": "f324edfb",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/core/rl_token.py",
+   "zip_member": "src/evo_rlt/core/rl_token.py",
+   "sha256": "5eca6071c51a42ae91b29dccc55ad22add95ef50ca86eb22f056b9fced165765",
+   "bytes": 4493,
+   "zip_crc32": "81b95f8a",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/core/trainer.py",
+   "zip_member": "src/evo_rlt/core/trainer.py",
+   "sha256": "be1422b0a38cc02edc93a77018e1f0197acbce5007ea41c0cc6a8354ac5ce431",
+   "bytes": 13500,
+   "zip_crc32": "5ce404c4",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/core/utils.py",
+   "zip_member": "src/evo_rlt/core/utils.py",
+   "sha256": "70fa9d422a5976b9917cdffc10cd265959e43cb159ce4c0f373ea633fa6e757d",
+   "bytes": 5535,
+   "zip_crc32": "c2168751",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt/core/vla_adapter.py",
+   "zip_member": "src/evo_rlt/core/vla_adapter.py",
+   "sha256": "f58235da548a39c6fb5e88a399c9b54562b29eaed2a5fb241ba5ade541a00a0e",
+   "bytes": 2458,
+   "zip_crc32": "a618eca5",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt_tests/tests/__init__.py",
+   "zip_member": "tests/__init__.py",
+   "sha256": "5384bfdb2df380b6557cc7a71d16891415bccaa87699406e236f752c6415389f",
+   "bytes": 35,
+   "zip_crc32": "fef706e6",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt_tests/tests/rlt/__init__.py",
+   "zip_member": "tests/rlt/__init__.py",
+   "sha256": "5384bfdb2df380b6557cc7a71d16891415bccaa87699406e236f752c6415389f",
+   "bytes": 35,
+   "zip_crc32": "fef706e6",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt_tests/tests/rlt/helpers.py",
+   "zip_member": "tests/rlt/helpers.py",
+   "sha256": "39e659d285d788539305963c9b9b88bd897ce9ed5154af57793ec86de6c3864d",
+   "bytes": 3231,
+   "zip_crc32": "cbecb4e3",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt_tests/tests/rlt/test_actor_critic.py",
+   "zip_member": "tests/rlt/test_actor_critic.py",
+   "sha256": "d82e08b98f310deced6f52e22c8310d44c7c7375da6da0a30a8e412affbbddac",
+   "bytes": 7050,
+   "zip_crc32": "a86b909e",
+   "zip_mtime": "2026-07-30T18:39:50"
+  },
+  {
+   "path": "evo_rlt_tests/tests/rlt/test_algorithm.py",
+   "zip_member": "tests/rlt/test_algorithm.py",
+   "sha256": "f7f21a803eaa061915b53f5e42d174f300bcb4750d5a161cade293731e39659f",
+   "bytes": 2028,
+   "zip_crc32": "9069a943",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt_tests/tests/rlt/test_collector.py",
+   "zip_member": "tests/rlt/test_collector.py",
+   "sha256": "8b996972b62c80c9e56ff73939aa51f3b9f63de6fc9e267cf27c34f85850ed69",
+   "bytes": 1908,
+   "zip_crc32": "ead7fe3d",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt_tests/tests/rlt/test_interfaces.py",
+   "zip_member": "tests/rlt/test_interfaces.py",
+   "sha256": "870eb27d5050bc1a9b8dd3c4fc023596fa0308771f04f126c944bd7bda39dd9c",
+   "bytes": 2327,
+   "zip_crc32": "4a45aed7",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt_tests/tests/rlt/test_losses.py",
+   "zip_member": "tests/rlt/test_losses.py",
+   "sha256": "09ee864d0d2eaa122ad4463129dd869144d733c35e3c13feeef0bb0ea4f067e1",
+   "bytes": 11460,
+   "zip_crc32": "ce438dfc",
+   "zip_mtime": "2026-08-03T10:28:10"
+  },
+  {
+   "path": "evo_rlt_tests/tests/rlt/test_offline_eval.py",
+   "zip_member": "tests/rlt/test_offline_eval.py",
+   "sha256": "be2fa4637ce4ea56f4e25665c7ec38bac3e21ea950bcb7872a622cb81e9082ef",
+   "bytes": 1933,
+   "zip_crc32": "d1732e3c",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt_tests/tests/rlt/test_offline_trainer.py",
+   "zip_member": "tests/rlt/test_offline_trainer.py",
+   "sha256": "505e7aa0fb3007c3f903590e053f9e0fb8f0c4e027dc9e973d1a9791cebbdc3a",
+   "bytes": 4274,
+   "zip_crc32": "1f23377c",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt_tests/tests/rlt/test_online_collector.py",
+   "zip_member": "tests/rlt/test_online_collector.py",
+   "sha256": "ee3e48faa66cfacfd666c1e031891d58029da24242548455fd707e111a8fee5f",
+   "bytes": 15037,
+   "zip_crc32": "26d1c1ab",
+   "zip_mtime": "2026-08-01T17:20:32"
+  },
+  {
+   "path": "evo_rlt_tests/tests/rlt/test_online_trainer_offline_buffer.py",
+   "zip_member": "tests/rlt/test_online_trainer_offline_buffer.py",
+   "sha256": "c6424b043e00e3748cb2b5bc03ec183e41f68c05a0bcf9f7e09028ecf86ffb69",
+   "bytes": 10045,
+   "zip_crc32": "7f71065c",
+   "zip_mtime": "2026-08-03T09:36:30"
+  },
+  {
+   "path": "evo_rlt_tests/tests/rlt/test_policy.py",
+   "zip_member": "tests/rlt/test_policy.py",
+   "sha256": "7c6242741ad297f873ba7401aa8fcc425e4c36bf3084b6d69d30635651a86a7d",
+   "bytes": 4112,
+   "zip_crc32": "f0edcb34",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt_tests/tests/rlt/test_reaching_env.py",
+   "zip_member": "tests/rlt/test_reaching_env.py",
+   "sha256": "053a77055f44f320732045f1f32884a28188613c1f6acf9ecfc42fdd04984bab",
+   "bytes": 2349,
+   "zip_crc32": "552af7d0",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt_tests/tests/rlt/test_replay.py",
+   "zip_member": "tests/rlt/test_replay.py",
+   "sha256": "eb9913829d6d1c514479540dc594f5cb5b045a551abadc6e865fa72a98ae0258",
+   "bytes": 7192,
+   "zip_crc32": "8e9d01a7",
+   "zip_mtime": "2026-08-01T17:20:32"
+  },
+  {
+   "path": "evo_rlt_tests/tests/rlt/test_rewards.py",
+   "zip_member": "tests/rlt/test_rewards.py",
+   "sha256": "1713aee8d9bc2275d03437b10e8e7d8351b1ccbf9d0a01a621de5ed459f2b2ee",
+   "bytes": 1644,
+   "zip_crc32": "8bbaa11a",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt_tests/tests/rlt/test_rl_token.py",
+   "zip_member": "tests/rlt/test_rl_token.py",
+   "sha256": "57cf8af9979d9f4638219d71bbe55a0e8e749ff5c509703e934331f84b905a8c",
+   "bytes": 3034,
+   "zip_crc32": "7ff0a59e",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt_tests/tests/rlt/test_training_step.py",
+   "zip_member": "tests/rlt/test_training_step.py",
+   "sha256": "544da93402f69960a174c74f2d2c74785b707cd8870dc306d05e144fca118fea",
+   "bytes": 7673,
+   "zip_crc32": "69458110",
+   "zip_mtime": "2026-07-27T13:54:54"
+  },
+  {
+   "path": "evo_rlt_tests/tests/rlt/test_vla_adapter.py",
+   "zip_member": "tests/rlt/test_vla_adapter.py",
+   "sha256": "6b7f457f6ad9e1b8f59eb4cee230c18b912567ed00b0879ad244e5eb016481d6",
+   "bytes": 1028,
+   "zip_crc32": "10d5ff85",
+   "zip_mtime": "2026-07-10T13:40:46"
+  },
+  {
+   "path": "evo_rlt_tests/upstream_pyproject.toml",
+   "zip_member": "pyproject.toml",
+   "sha256": "f1f5ea267058860f67f27c6d72656308bfa8b5d9e28b4034812e3ddf20b584c9",
+   "bytes": 1878,
+   "zip_crc32": "01b63b0e",
+   "zip_mtime": "2026-07-29T16:18:52"
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-29T06:05:13.983557+00:00",
+  "scope": "isolated actual-manifest comparison only; no Docker export or source mutation",
+  "source_manifest": "/media/pangk/My Passport/WALL-OSS-CRP-assets-20261028/source-assets.sha256",
+  "validated_manifest": "/home/pangk/workspaces/WALL-OSS-CRP/logs/docker-validation-delivery-20261029/validated-assets.sha256",
+  "source_sha256": "25ba2318bc224337164d46c9cbf0f70764c6d3d14b270d25627780a7a360fa90",
+  "validated_sha256": "cfe40b00eca7b9fee2b98759137cf911203ef8e690cea94919bf04011485a186",
+  "entry_count": 31,
+  "original_order_differs": true,
+  "original_files_unchanged": true,
+  "cases": [
+    {
+      "case": "actual_31_entries_order_only",
+      "status": "PASS",
+      "comparison_exit_code": 0,
+      "expected_equal": true
+    },
+    {
+      "case": "hash_changed",
+      "status": "PASS",
+      "comparison_exit_code": 1,
+      "expected_equal": false
+    },
+    {
+      "case": "entry_missing",
+      "status": "PASS",
+      "comparison_exit_code": 1,
+      "expected_equal": false
+    },
+    {
+      "case": "duplicate_entry_added",
+      "status": "PASS",
+      "comparison_exit_code": 1,
+      "expected_equal": false
+    },
+    {
+      "case": "duplicate_replaces_missing_entry",
+      "status": "PASS",
+      "comparison_exit_code": 1,
+      "expected_equal": false
+    },
+    {
+      "case": "same_duplicate_count_allowed",
+      "status": "PASS",
+      "comparison_exit_code": 0,
+      "expected_equal": true
+    },
+    {
+      "case": "missing_manifest_read_fails_closed",
+      "status": "PASS",
+      "comparison_exit_code": 2
+    }
+  ],
+  "bash_syntax": "PASS",
+  "future_manifest_locale": "LC_ALL=C"
+}

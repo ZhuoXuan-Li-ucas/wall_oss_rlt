@@ -1,0 +1,218 @@
+[
+  {
+    "path": "models/wall-oss-0.5/.gitattributes",
+    "size_bytes": 1571,
+    "sha256": "3bea2e2fb5a69cebe8672e6d5f7ba12e357cbb484a0c01c4cfc41f1d6c67f4b8",
+    "repo_id": "x-square-robot/wall-oss-0.5",
+    "revision": "b7dc23a82dbf70a65859c9fdd596703234597028",
+    "verified_against": "HF Git blob SHA1",
+    "status": "PASS"
+  },
+  {
+    "path": "models/wall-oss-0.5/README.md",
+    "size_bytes": 8532,
+    "sha256": "8518243df5aab9f36facbedfe6cc24544dd1dd74909a1104e8dc462fa4098ed2",
+    "repo_id": "x-square-robot/wall-oss-0.5",
+    "revision": "b7dc23a82dbf70a65859c9fdd596703234597028",
+    "verified_against": "HF Git blob SHA1",
+    "status": "PASS"
+  },
+  {
+    "path": "models/wall-oss-0.5/ar_normalizer_action.pth",
+    "size_bytes": 41654,
+    "sha256": "2b39692f6670d9367adf93c1bf8a002f68ed44e0d6ab3be5e7cc0e551f9e9f0e",
+    "repo_id": "x-square-robot/wall-oss-0.5",
+    "revision": "b7dc23a82dbf70a65859c9fdd596703234597028",
+    "verified_against": "HF LFS SHA256",
+    "status": "PASS"
+  },
+  {
+    "path": "models/wall-oss-0.5/assets/logo.png",
+    "size_bytes": 201813,
+    "sha256": "721ada7f102cac8b9be8a006998e8248ee62075111bd8290896b7b4a9e12e55a",
+    "repo_id": "x-square-robot/wall-oss-0.5",
+    "revision": "b7dc23a82dbf70a65859c9fdd596703234597028",
+    "verified_against": "HF LFS SHA256",
+    "status": "PASS"
+  },
+  {
+    "path": "models/wall-oss-0.5/config.json",
+    "size_bytes": 2148,
+    "sha256": "9a64a8d37fa493481e2d3d936985820d8955ee6b1c2bcdedee8654066df36c0a",
+    "repo_id": "x-square-robot/wall-oss-0.5",
+    "revision": "b7dc23a82dbf70a65859c9fdd596703234597028",
+    "verified_against": "HF Git blob SHA1",
+    "status": "PASS"
+  },
+  {
+    "path": "models/wall-oss-0.5/config.yml",
+    "size_bytes": 1159,
+    "sha256": "43b63cb60c091c85b2fa80a098dbc3a1346bc4ef96001cab56c840ac2c84a4c0",
+    "repo_id": "x-square-robot/wall-oss-0.5",
+    "revision": "b7dc23a82dbf70a65859c9fdd596703234597028",
+    "verified_against": "HF Git blob SHA1",
+    "status": "PASS"
+  },
+  {
+    "path": "models/wall-oss-0.5/model.safetensors",
+    "size_bytes": 8331486672,
+    "sha256": "37f8f327d3f9c27f056ed078db43c0e39b8caf3df0dc0163cdb8cf92c167968a",
+    "repo_id": "x-square-robot/wall-oss-0.5",
+    "revision": "b7dc23a82dbf70a65859c9fdd596703234597028",
+    "verified_against": "HF LFS SHA256",
+    "status": "PASS"
+  },
+  {
+    "path": "models/wall-oss-0.5/normalizer_action.pth",
+    "size_bytes": 41242,
+    "sha256": "62f3bf32e68f09968c56b88a279a796801f8bef1bb2a7ba88c8fcb343d89ba02",
+    "repo_id": "x-square-robot/wall-oss-0.5",
+    "revision": "b7dc23a82dbf70a65859c9fdd596703234597028",
+    "verified_against": "HF LFS SHA256",
+    "status": "PASS"
+  },
+  {
+    "path": "models/wall-oss-0.5/normalizer_propri.pth",
+    "size_bytes": 41242,
+    "sha256": "9f3c34fac521f1ca365993c9dc5b8c6e49aa453605ed996d03078a8e0296b589",
+    "repo_id": "x-square-robot/wall-oss-0.5",
+    "revision": "b7dc23a82dbf70a65859c9fdd596703234597028",
+    "verified_against": "HF LFS SHA256",
+    "status": "PASS"
+  },
+  {
+    "path": "models/wall-oss-0.5/preprocessor_config.json",
+    "size_bytes": 350,
+    "sha256": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0",
+    "repo_id": "x-square-robot/wall-oss-0.5",
+    "revision": "b7dc23a82dbf70a65859c9fdd596703234597028",
+    "verified_against": "HF Git blob SHA1",
+    "status": "PASS"
+  },
+  {
+    "path": "models/wall-oss-0.5/tokenizer.json",
+    "size_bytes": 7031645,
+    "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "repo_id": "x-square-robot/wall-oss-0.5",
+    "revision": "b7dc23a82dbf70a65859c9fdd596703234597028",
+    "verified_against": "HF Git blob SHA1",
+    "status": "PASS"
+  },
+  {
+    "path": "models/wall-oss-0.5/tokenizer_config.json",
+    "size_bytes": 7255,
+    "sha256": "4827803832328bf1e43f274f6ccdeffecb3a4c406f51a19a96db404902512fe9",
+    "repo_id": "x-square-robot/wall-oss-0.5",
+    "revision": "b7dc23a82dbf70a65859c9fdd596703234597028",
+    "verified_against": "HF Git blob SHA1",
+    "status": "PASS"
+  },
+  {
+    "path": "models/wall-oss-0.5/vocab.json",
+    "size_bytes": 2776833,
+    "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "repo_id": "x-square-robot/wall-oss-0.5",
+    "revision": "b7dc23a82dbf70a65859c9fdd596703234597028",
+    "verified_against": "HF Git blob SHA1",
+    "status": "PASS"
+  },
+  {
+    "path": "models/Qwen2.5-VL-3B-Instruct/.gitattributes",
+    "size_bytes": 1519,
+    "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+    "repo_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "verified_against": "HF Git blob SHA1",
+    "status": "PASS"
+  },
+  {
+    "path": "models/Qwen2.5-VL-3B-Instruct/LICENSE",
+    "size_bytes": 7387,
+    "sha256": "b5c0e5cf74cf51af1ecbc4af597cfcd13fd9925611838884a681070838a14a50",
+    "repo_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "verified_against": "HF Git blob SHA1",
+    "status": "PASS"
+  },
+  {
+    "path": "models/Qwen2.5-VL-3B-Instruct/README.md",
+    "size_bytes": 18276,
+    "sha256": "0b6da5a154b923da4dc66e416140c9b7f235f9b08fbbcc27fd9df7b586e3150d",
+    "repo_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "verified_against": "HF Git blob SHA1",
+    "status": "PASS"
+  },
+  {
+    "path": "models/Qwen2.5-VL-3B-Instruct/chat_template.json",
+    "size_bytes": 1050,
+    "sha256": "ad60d90252ed0b0705ba14e2d0ad0fec0beac1ea955642b54059b36052d8bc96",
+    "repo_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "verified_against": "HF Git blob SHA1",
+    "status": "PASS"
+  },
+  {
+    "path": "models/Qwen2.5-VL-3B-Instruct/config.json",
+    "size_bytes": 1373,
+    "sha256": "7ed3eed5be6924cc800e8a5e53fc405c1aab1aaf36bad65c33403b36c56827f5",
+    "repo_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "verified_against": "HF Git blob SHA1",
+    "status": "PASS"
+  },
+  {
+    "path": "models/Qwen2.5-VL-3B-Instruct/generation_config.json",
+    "size_bytes": 216,
+    "sha256": "533f191cc257b7de37a4fccd0a7a1706d75e1aa660f93efaa54e5a2a9f9aace9",
+    "repo_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "verified_against": "HF Git blob SHA1",
+    "status": "PASS"
+  },
+  {
+    "path": "models/Qwen2.5-VL-3B-Instruct/merges.txt",
+    "size_bytes": 1671839,
+    "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "repo_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "verified_against": "HF Git blob SHA1",
+    "status": "PASS"
+  },
+  {
+    "path": "models/Qwen2.5-VL-3B-Instruct/preprocessor_config.json",
+    "size_bytes": 350,
+    "sha256": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0",
+    "repo_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "verified_against": "HF Git blob SHA1",
+    "status": "PASS"
+  },
+  {
+    "path": "models/Qwen2.5-VL-3B-Instruct/tokenizer.json",
+    "size_bytes": 7031645,
+    "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "repo_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "verified_against": "HF Git blob SHA1",
+    "status": "PASS"
+  },
+  {
+    "path": "models/Qwen2.5-VL-3B-Instruct/tokenizer_config.json",
+    "size_bytes": 5702,
+    "sha256": "4abd3520120e266da84c0864fee064d1fb10806f02225911a47253dd38dc5f56",
+    "repo_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "verified_against": "HF Git blob SHA1",
+    "status": "PASS"
+  },
+  {
+    "path": "models/Qwen2.5-VL-3B-Instruct/vocab.json",
+    "size_bytes": 2776833,
+    "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "repo_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "verified_against": "HF Git blob SHA1",
+    "status": "PASS"
+  }
+]

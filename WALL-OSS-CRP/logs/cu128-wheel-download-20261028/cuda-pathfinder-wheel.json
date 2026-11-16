@@ -1,0 +1,9 @@
+{
+  "package": "cuda-pathfinder",
+  "version": "1.8.3",
+  "url": "https://files.pythonhosted.org/packages/b9/fb/f8e1890428f9f590b4beebd63b068aac1ce32a3331510c847b9f9a78f261/cuda_pathfinder-1.8.3-py3-none-any.whl",
+  "filename": "cuda_pathfinder-1.8.3-py3-none-any.whl",
+  "size": 62561,
+  "sha256": "e29e59829c297a7a5233bd9cc71094fc5bddbd076951482670178f9eade39b1f",
+  "metadata_url": "https://pypi.org/pypi/cuda-pathfinder/1.8.3/json"
+}

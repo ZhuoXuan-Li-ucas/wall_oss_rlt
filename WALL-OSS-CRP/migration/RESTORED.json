@@ -1,0 +1,11 @@
+{
+  "status": "RESTORED_CPU_CHECKED",
+  "root": "/home/crp-5070ti-01/workspaces/WALL-OSS-CRP",
+  "bundle": "/media/crp-5070ti-01/My Passport/WALL-OSS-CRP-workspace-20261102",
+  "models_included_in_package": false,
+  "reused_models_root": "/home/crp-5070ti-01/yuhang_workspace/wall_oss_rlt/runs/official-wall5070-20261031T063658Z-n0xT6K/models",
+  "existing_model_check": "24 manifest files present with expected sizes; weights not copied",
+  "restored_utc": "2026-11-02T03:19:14.171826+00:00",
+  "gpu_validation": "NOT_RUN; RTX 5070 Ti uses the previously validated sm_120 container",
+  "pip_check": "11 pre-existing declaration issues preserved; see source-pip-check.txt"
+}

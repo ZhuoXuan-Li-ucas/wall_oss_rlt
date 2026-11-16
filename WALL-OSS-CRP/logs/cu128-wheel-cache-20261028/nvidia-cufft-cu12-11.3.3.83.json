@@ -1,0 +1,116 @@
+{
+  "package": "nvidia-cufft-cu12",
+  "version": "11.3.3.83",
+  "source": {
+    "kind": "installed package",
+    "site_packages": "/home/pangk/miniforge3/envs/lerobot-so101/lib/python3.12/site-packages"
+  },
+  "source_record_sha256": "fff316164cd62d0e61bd4ae8631fbeafa3d5f3dcf185f91d6db533705dc8139a",
+  "wheel_tags": [
+    "py3-none-manylinux2014_x86_64",
+    "py3-none-manylinux_2_17_x86_64"
+  ],
+  "record_verified_files": [
+    {
+      "path": "nvidia/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/cufft/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/cufft/include/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/cufft/include/cudalibxt.h",
+      "sha256": "f460ee4623b326e3bad73443848a56a45ed71e9f055d238894724da083303994",
+      "size_bytes": 4105
+    },
+    {
+      "path": "nvidia/cufft/include/cufft.h",
+      "sha256": "297d0c7cffef22b8215e1d27c5a2dfd4fc60da0882997f2c25a0a40db86d5a8a",
+      "size_bytes": 13169
+    },
+    {
+      "path": "nvidia/cufft/include/cufftXt.h",
+      "sha256": "47731414730da8c69eef51f014a3cf712848d474c96c725876bafe711bea5def",
+      "size_bytes": 12945
+    },
+    {
+      "path": "nvidia/cufft/include/cufftw.h",
+      "sha256": "5337e3d4854c94b414fc6e74bbce215d85f52bde472d723039c8d0a00839a461",
+      "size_bytes": 20051
+    },
+    {
+      "path": "nvidia/cufft/lib/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/cufft/lib/libcufft.so.11",
+      "sha256": "5c912146449614f9d73ebd1a5cb604242da6b819d94ba5b4a99272a0649f3761",
+      "size_bytes": 278925016
+    },
+    {
+      "path": "nvidia/cufft/lib/libcufftw.so.11",
+      "sha256": "0fe4db0533c317e21ef73aa6529ec5fafc6edea80aafcff103eb58f00512b8ea",
+      "size_bytes": 2101472
+    },
+    {
+      "path": "nvidia_cufft_cu12-11.3.3.83.dist-info/INSTALLER",
+      "sha256": "e6184ce10e266134fdcfa401e8f1a95005bcd4f18d16b62b757323e2833fe9a9",
+      "size_bytes": 2
+    },
+    {
+      "path": "nvidia_cufft_cu12-11.3.3.83.dist-info/License.txt",
+      "sha256": "ad6f5853fba0ca0d159d0f58d49ae49830c2f8c93f7a92648b9ce90adb4c6ccd",
+      "size_bytes": 59262
+    },
+    {
+      "path": "nvidia_cufft_cu12-11.3.3.83.dist-info/METADATA",
+      "sha256": "ed11d2273b98e3897dc87ae88fcd7a0661b8a4c96529b93a5d22799fd4898de5",
+      "size_bytes": 1741
+    },
+    {
+      "path": "nvidia_cufft_cu12-11.3.3.83.dist-info/REQUESTED",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia_cufft_cu12-11.3.3.83.dist-info/WHEEL",
+      "sha256": "0bef49b965fbccf21c1136ead20d9d43cde77b8ff11034083e60be7123168b12",
+      "size_bytes": 144
+    },
+    {
+      "path": "nvidia_cufft_cu12-11.3.3.83.dist-info/top_level.txt",
+      "sha256": "7d3900b6216e2f5ea752b07dcad0c3b69cadcf6b7407836f6139d1cf00213b5e",
+      "size_bytes": 7
+    },
+    {
+      "path": "nvidia_cufft_cu12-11.3.3.83.dist-info/uv_cache.json",
+      "sha256": "675f54b96f0f581d44062b038563089a04513b8fff27c2d2c02a0fb9cc3bf439",
+      "size_bytes": 127
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "nvidia_cufft_cu12-11.3.3.83.dist-info/INSTALLER",
+      "reason": "verified installed metadata; excluded from rebuilt wheel"
+    },
+    {
+      "path": "nvidia_cufft_cu12-11.3.3.83.dist-info/REQUESTED",
+      "reason": "verified installed metadata; excluded from rebuilt wheel"
+    }
+  ],
+  "status": "PASS",
+  "filename": "nvidia_cufft_cu12-11.3.3.83-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+  "wheel_sha256": "abd23d7bfe3418193a2e28138bdab210ccdc71769c9359b577339fe3402a52d0",
+  "wheel_size_bytes": 200724803,
+  "payload_size_bytes": 281138039,
+  "checked_at_utc": "2026-10-28T09:01:56.280300+00:00"
+}

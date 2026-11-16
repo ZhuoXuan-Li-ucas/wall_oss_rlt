@@ -1,0 +1,197 @@
+/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:9: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+{
+  "source": "/media/pangk/My Passport/H100_lerobot/Datasets/stack_the_base_llx_04251",
+  "role": "historical environment smoke dataset; not AR5 demonstrations",
+  "episodes": 32,
+  "frames": 15376,
+  "samples": [
+    {
+      "index": 0,
+      "fields": {
+        "observation.images.top": {
+          "shape": [
+            3,
+            480,
+            640
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "observation.images.wrist": {
+          "shape": [
+            3,
+            480,
+            640
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "action": {
+          "shape": [
+            7
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "observation.state": {
+          "shape": [
+            6
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "timestamp": {
+          "shape": [],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "frame_index": {
+          "shape": [],
+          "dtype": "torch.int64",
+          "finite": true
+        },
+        "episode_index": {
+          "shape": [],
+          "dtype": "torch.int64",
+          "finite": true
+        },
+        "index": {
+          "shape": [],
+          "dtype": "torch.int64",
+          "finite": true
+        },
+        "task_index": {
+          "shape": [],
+          "dtype": "torch.int64",
+          "finite": true
+        }
+      }
+    },
+    {
+      "index": 7688,
+      "fields": {
+        "observation.images.top": {
+          "shape": [
+            3,
+            480,
+            640
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "observation.images.wrist": {
+          "shape": [
+            3,
+            480,
+            640
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "action": {
+          "shape": [
+            7
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "observation.state": {
+          "shape": [
+            6
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "timestamp": {
+          "shape": [],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "frame_index": {
+          "shape": [],
+          "dtype": "torch.int64",
+          "finite": true
+        },
+        "episode_index": {
+          "shape": [],
+          "dtype": "torch.int64",
+          "finite": true
+        },
+        "index": {
+          "shape": [],
+          "dtype": "torch.int64",
+          "finite": true
+        },
+        "task_index": {
+          "shape": [],
+          "dtype": "torch.int64",
+          "finite": true
+        }
+      }
+    },
+    {
+      "index": 15375,
+      "fields": {
+        "observation.images.top": {
+          "shape": [
+            3,
+            480,
+            640
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "observation.images.wrist": {
+          "shape": [
+            3,
+            480,
+            640
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "action": {
+          "shape": [
+            7
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "observation.state": {
+          "shape": [
+            6
+          ],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "timestamp": {
+          "shape": [],
+          "dtype": "torch.float32",
+          "finite": true
+        },
+        "frame_index": {
+          "shape": [],
+          "dtype": "torch.int64",
+          "finite": true
+        },
+        "episode_index": {
+          "shape": [],
+          "dtype": "torch.int64",
+          "finite": true
+        },
+        "index": {
+          "shape": [],
+          "dtype": "torch.int64",
+          "finite": true
+        },
+        "task_index": {
+          "shape": [],
+          "dtype": "torch.int64",
+          "finite": true
+        }
+      }
+    }
+  ],
+  "status": "PASS"
+}

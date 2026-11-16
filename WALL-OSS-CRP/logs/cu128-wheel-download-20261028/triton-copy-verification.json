@@ -1,0 +1,14 @@
+{
+  "package": "triton",
+  "version": "3.6.0",
+  "filename": "triton-3.6.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+  "source": "/home/pangk/workspaces/WALL-OSS-CRP/wheelhouse/triton-3.6.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+  "target": "/media/pangk/My Passport/WALL-OSS-CRP-build-cache-20261028/wheelhouse/triton-3.6.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+  "size": 188105201,
+  "source_sha256": "a6550fae429e0667e397e5de64b332d1e5695b73650ee75a6146e2e902770bea",
+  "target_sha256": "a6550fae429e0667e397e5de64b332d1e5695b73650ee75a6146e2e902770bea",
+  "official_pypi_sha256": "a6550fae429e0667e397e5de64b332d1e5695b73650ee75a6146e2e902770bea",
+  "url": "https://files.pythonhosted.org/packages/8c/f7/f1c9d3424ab199ac53c2da567b859bcddbb9c9e7154805119f8bd95ec36f/triton-3.6.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+  "metadata_url": "https://pypi.org/pypi/triton/3.6.0/json",
+  "verified": true
+}

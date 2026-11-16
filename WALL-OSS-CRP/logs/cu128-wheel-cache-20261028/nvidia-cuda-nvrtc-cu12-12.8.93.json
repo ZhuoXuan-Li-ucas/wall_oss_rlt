@@ -1,0 +1,111 @@
+{
+  "package": "nvidia-cuda-nvrtc-cu12",
+  "version": "12.8.93",
+  "source": {
+    "kind": "installed package",
+    "site_packages": "/home/pangk/miniforge3/envs/lerobot-so101/lib/python3.12/site-packages"
+  },
+  "source_record_sha256": "3ffac8fa95ebeec712f64676816d6ca5ecb0d77637a48ca1e23c475da49e609e",
+  "wheel_tags": [
+    "py3-none-manylinux2010_x86_64",
+    "py3-none-manylinux_2_12_x86_64"
+  ],
+  "record_verified_files": [
+    {
+      "path": "nvidia/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/cuda_nvrtc/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/cuda_nvrtc/include/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/cuda_nvrtc/include/nvrtc.h",
+      "sha256": "07389d2cf314fe749050767641a868f9514ee41c759048288c531e24f778504e",
+      "size_bytes": 44261
+    },
+    {
+      "path": "nvidia/cuda_nvrtc/lib/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/cuda_nvrtc/lib/libnvrtc-builtins.alt.so.12.8",
+      "sha256": "9e971f2dcced2628f327ddb037d02c41b834f2c3dbfbff03c9d2c3177f1b9b6d",
+      "size_bytes": 6309832
+    },
+    {
+      "path": "nvidia/cuda_nvrtc/lib/libnvrtc-builtins.so.12.8",
+      "sha256": "eccaa824230ee7858a94a3055cb01f1cb634df05d313880d0bdcf195161fcb4e",
+      "size_bytes": 6338504
+    },
+    {
+      "path": "nvidia/cuda_nvrtc/lib/libnvrtc.alt.so.12",
+      "sha256": "d8260dbfdba5820d0e710dd00f4370285d5ebe18c7d98ba2a6737deedf48d3eb",
+      "size_bytes": 104966520
+    },
+    {
+      "path": "nvidia/cuda_nvrtc/lib/libnvrtc.so.12",
+      "sha256": "43731e24cd89e3749826304f304e8aa11fbecf1188715271b1f5018d6212b5e6",
+      "size_bytes": 104487248
+    },
+    {
+      "path": "nvidia_cuda_nvrtc_cu12-12.8.93.dist-info/INSTALLER",
+      "sha256": "e6184ce10e266134fdcfa401e8f1a95005bcd4f18d16b62b757323e2833fe9a9",
+      "size_bytes": 2
+    },
+    {
+      "path": "nvidia_cuda_nvrtc_cu12-12.8.93.dist-info/License.txt",
+      "sha256": "ad6f5853fba0ca0d159d0f58d49ae49830c2f8c93f7a92648b9ce90adb4c6ccd",
+      "size_bytes": 59262
+    },
+    {
+      "path": "nvidia_cuda_nvrtc_cu12-12.8.93.dist-info/METADATA",
+      "sha256": "376458a22054b4a36e110dfab570df4bc658c037a2fb47184bdc4dff7ab90d23",
+      "size_bytes": 1684
+    },
+    {
+      "path": "nvidia_cuda_nvrtc_cu12-12.8.93.dist-info/REQUESTED",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia_cuda_nvrtc_cu12-12.8.93.dist-info/WHEEL",
+      "sha256": "e95374cc2497571a9a09f016fb24a9fe0f0dd2b967d22aaddb9a4a3426d5ceb9",
+      "size_bytes": 144
+    },
+    {
+      "path": "nvidia_cuda_nvrtc_cu12-12.8.93.dist-info/top_level.txt",
+      "sha256": "7d3900b6216e2f5ea752b07dcad0c3b69cadcf6b7407836f6139d1cf00213b5e",
+      "size_bytes": 7
+    },
+    {
+      "path": "nvidia_cuda_nvrtc_cu12-12.8.93.dist-info/uv_cache.json",
+      "sha256": "211619fdae79d1ad7dad2698dc1ad7cc35ea8aac654558432f9b03d21adcdc62",
+      "size_bytes": 127
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "nvidia_cuda_nvrtc_cu12-12.8.93.dist-info/INSTALLER",
+      "reason": "verified installed metadata; excluded from rebuilt wheel"
+    },
+    {
+      "path": "nvidia_cuda_nvrtc_cu12-12.8.93.dist-info/REQUESTED",
+      "reason": "verified installed metadata; excluded from rebuilt wheel"
+    }
+  ],
+  "status": "PASS",
+  "filename": "nvidia_cuda_nvrtc_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl",
+  "wheel_sha256": "04d3da14209b833df69a56071c86b1a14de5ab37749aece3dfa12765d47727ec",
+  "wheel_size_bytes": 95808368,
+  "payload_size_bytes": 222207589,
+  "checked_at_utc": "2026-10-28T09:01:35.595123+00:00"
+}

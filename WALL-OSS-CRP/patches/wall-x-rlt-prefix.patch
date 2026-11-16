@@ -1,0 +1,90 @@
+diff --git a/wall_x/model/qact/qwen2_5/modeling_qwen2_5_vl_act.py b/wall_x/model/qact/qwen2_5/modeling_qwen2_5_vl_act.py
+index 4a0f991..b40e8e8 100644
+--- a/wall_x/model/qact/qwen2_5/modeling_qwen2_5_vl_act.py
++++ b/wall_x/model/qact/qwen2_5/modeling_qwen2_5_vl_act.py
+@@ -87,6 +87,8 @@ class Qwen2_5_VLACausalLMOutputWithPast(ModelOutput):
+     attentions: Optional[Tuple[torch.FloatTensor]] = None
+     rope_deltas: Optional[torch.LongTensor] = None
+ 
++    rlt_prefix_hidden_states: Optional[torch.FloatTensor] = None
++    rlt_prefix_mask: Optional[torch.BoolTensor] = None
+     channel_loss_dict: Optional[dict[torch.FloatTensor]] = None
+     channel_loss_count_dict: Optional[dict[torch.FloatTensor]] = None
+ 
+@@ -1302,6 +1304,8 @@ class Qwen2_5_VLMoEForAction(
+         dof_mask: Optional[torch.FloatTensor] = None,
+         agent_pos_mask: Optional[torch.FloatTensor] = None,
+         flow_loss_mask: Optional[torch.FloatTensor] = None,
++        return_rlt_prefix: bool = False,
++        flow_loss_only: bool = False,
+         **kwargs,
+     ) -> Union[Tuple, Qwen2_5_VLACausalLMOutputWithPast]:
+         if input_ids is not None:
+@@ -1440,6 +1444,13 @@ class Qwen2_5_VLMoEForAction(
+         )
+ 
+         hidden_states = outputs[0]
++        rlt_hidden, rlt_mask = None, None
++        if return_rlt_prefix:
++            from wall_rlt.model.prefix import observation_prefix_mask, pack_prefix
++            prefix_mask = observation_prefix_mask(
++                input_ids, attention_mask, self.action_token_id_set["action_token_id"]
++            )
++            rlt_hidden, rlt_mask = pack_prefix(hidden_states.detach(), prefix_mask)
+ 
+         # --- optimization: loss-token-only LM Head ---
+         # During training, only compute lm_head for tokens that contribute to CE loss,
+@@ -1447,7 +1458,10 @@ class Qwen2_5_VLMoEForAction(
+         # FSDP fp32 layernorms emit fp32 hidden_states; lm_head runs in bf16.
+         _lm_dtype = self.lm_head.weight.dtype
+         _lm_loss_mask = None
+-        if labels is not None and self.training:
++        if flow_loss_only:
++            logits = None
++            labels = None
++        elif labels is not None and self.training:
+             shift_labels = labels[..., 1:].contiguous()
+             _lm_loss_mask = shift_labels != -100  # [B, S-1]
+             if _lm_loss_mask.any():
+@@ -1494,6 +1508,8 @@ class Qwen2_5_VLMoEForAction(
+             rope_deltas=self.rope_deltas,
+             channel_loss_dict=channel_loss_dict,
+             channel_loss_count_dict=channel_loss_count_dict,
++            rlt_prefix_hidden_states=rlt_hidden,
++            rlt_prefix_mask=rlt_mask,
+         )
+ 
+     def predict_action(self, predict_mode: str, **kwargs):
+@@ -1837,6 +1853,7 @@ class Qwen2_5_VLMoEForAction(
+             agent_pos_mask=agent_pos_mask,
+         )
+ 
++        ctx["return_rlt_prefix"] = bool(kwargs.get("return_rlt_prefix", False))
+         action_trajectory, attention_maps = self._execute_flow_action(ctx)
+ 
+         output = self._finalize_flow_action_output(action_trajectory, ctx)
+@@ -2140,6 +2157,14 @@ class Qwen2_5_VLMoEForAction(
+             adarms_conds=[None, ctx["adarms_cond"]],
+         )
+         hidden_states = prefetch_output.last_hidden_state
++        if ctx.get("return_rlt_prefix", False):
++            from wall_rlt.model.prefix import observation_prefix_mask, pack_prefix
++            mask = observation_prefix_mask(
++                ctx["input_ids"], ctx["attention_mask"], self.action_token_id_set["action_token_id"]
++            )
++            ctx["rlt_prefix_hidden_states"], ctx["rlt_prefix_mask"] = pack_prefix(
++                hidden_states.detach(), mask
++            )
+         prefix_kv_cache = prefetch_output.past_key_values
+         if output_attentions:
+             all_attention_maps.append(prefetch_output.attentions)
+@@ -2348,6 +2373,9 @@ class Qwen2_5_VLMoEForAction(
+             ctx.get("dof_mask"),
+         )
+         output = {"predict_action": predict_action}
++        if ctx.get("return_rlt_prefix", False):
++            output["rlt_prefix_hidden_states"] = ctx["rlt_prefix_hidden_states"]
++            output["rlt_prefix_mask"] = ctx["rlt_prefix_mask"]
+         if ctx["action_chunk"] is not None:
+             output["gt_action"] = unnormalize_data_with_virtual_tail(
+                 self.action_preprocessor.normalizer_action,

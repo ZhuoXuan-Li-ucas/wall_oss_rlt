@@ -1,0 +1,35 @@
+{
+  "stage": "P1 data integration",
+  "dataset_contract": "configs/rlt/top_error_ar5_joint_next_v1.json",
+  "contract_sha256": "ccf8e5259e262680eb65dde34a17125da6b949a9f9e7099c5e05c1b477802208",
+  "contract_fingerprint": "cb354f8197dfbbbcc8d92ba0c4bbb62c53512326c298e1d8bd2cd5cc3bc302d6",
+  "excluded_groups": [
+    "mouse",
+    "tape"
+  ],
+  "supersedes": "metadata/rlt-top-error-20261029/",
+  "structural_and_semantic_audit": "PASS",
+  "unit_tests": {
+    "passed": 59,
+    "log": "logs/rlt-data-tests-20261029.log",
+    "junit": "logs/rlt-data-tests-20261029.xml"
+  },
+  "cpu_processor_report": "metadata/rlt-top-error-selected-20261029/cpu-batch.json",
+  "video_validation_limit": "all container frame counts and first-frame decode; representative first/tail samples; no full-stream decode or video content hashes",
+  "model_training": "NOT_RUN",
+  "model_builder_integration": "IMPLEMENTED_CPU_TESTED; GPU validation pending",
+  "robot_deployment_entry": "DEFERRED",
+  "source_code_sha256": {
+    "wall_rlt/data/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "wall_rlt/data/ar5.py": "fde524d5accf86b59b9dd83d3d4ec88927297da6d2a5157160699193da443012",
+    "wall_rlt/data/audit.py": "da5e4cc7242190d1d26ab661ab508022f93dada0b0ba9ca7bd0f8172074bdbdb",
+    "wall_rlt/data/check.py": "ef7fedaa3611ee9c2c47519e6b7aa423e3c536bbcf2f561f28dab86708d6f918",
+    "wall_rlt/data/collator.py": "7fe7965143e23d1776849760e1987b96d3c9bfc23456cd53ff984c1454dc6160",
+    "wall_rlt/data/contract.py": "b07846d205bed4d1f338863072d9572c244a79e185d6f8caeba2ad4f6ded8b75",
+    "wall_rlt/data/dataset.py": "871b43960540528b8b3b6477de28e6481d72f044b7e70d2acd75a6fc15747afb",
+    "wall_rlt/data/npz_source.py": "facd5ea654cad9a05e01001889239cfbea99f6c232621e8237d011269853af15",
+    "wall_rlt/data/prepare_ar5.py": "19392b34906658acd8f411eca0797493790510d62e0655afabaa0c3aa41ecccf",
+    "wall_rlt/data/transforms.py": "888ed22e883e7ddf6f76b5a5cbe1627bb363acdb68d8ca2792bde265fe84e5af"
+  },
+  "followup_report": "metadata/rlt-implementation-20261029.json"
+}

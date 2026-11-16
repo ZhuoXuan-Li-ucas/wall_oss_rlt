@@ -1,0 +1,296 @@
+{
+  "package": "nvidia-cuda-cupti-cu12",
+  "version": "12.8.90",
+  "source": {
+    "kind": "installed package",
+    "site_packages": "/home/pangk/miniforge3/envs/lerobot-so101/lib/python3.12/site-packages"
+  },
+  "source_record_sha256": "3e6ea4af2c4d04fa23056dd18bf6dec190e16f7e9788531ead87816187c65323",
+  "wheel_tags": [
+    "py3-none-manylinux2014_x86_64",
+    "py3-none-manylinux_2_17_x86_64"
+  ],
+  "record_verified_files": [
+    {
+      "path": "nvidia/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/cuda_cupti/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/Openacc/cupti_openacc.h",
+      "sha256": "67438ce5efe16ddddcc5d5f29f74821ea04141ac0b83840e467966e7b0abdbe3",
+      "size_bytes": 3513
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/Openmp/cupti_openmp.h",
+      "sha256": "13558d99e6ffec76944a605e82d50d7b8215d62ee95de371833225c8a9f5ceb3",
+      "size_bytes": 3491
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/Openmp/omp-tools.h",
+      "sha256": "026b82ff13c2ed53eedc1f96e0f997b8236e7c56b0858f0f8cd5de3da40500e8",
+      "size_bytes": 37403
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cuda_stdint.h",
+      "sha256": "5db14e93d0ad2632aa93b3e960da9b495b03c40b1533c6af038ad6a4f8b40634",
+      "size_bytes": 4093
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti.h",
+      "sha256": "2645720064c8318cf09bad9d7d5a9ab379cc7082e180ffd6773e9f878fcd103d",
+      "size_bytes": 4697
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti_activity.h",
+      "sha256": "809286946d8989f5b7e8bc7eba325c28196752b34ea13c5aaf9d64dbc1ab52d5",
+      "size_bytes": 229848
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti_activity_deprecated.h",
+      "sha256": "074a78cdb965daf527d63d089931ba4086e9a7a1e2c3ccbe5f4db56667fb7e51",
+      "size_bytes": 137602
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti_callbacks.h",
+      "sha256": "699f9213460c15f4fd47e521e4c1dba0f834ca91cc8de492009c37cdd3fb382b",
+      "size_bytes": 29689
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti_checkpoint.h",
+      "sha256": "ad3cfc2685b1a844815f26565216491a6e31798731e0e24eb49ecb775dd3fdbd",
+      "size_bytes": 5264
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti_common.h",
+      "sha256": "f399bbe1bc54817a77b4468f4297b379ace6a6c34cc38d4fb2335262641d4f6d",
+      "size_bytes": 3514
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti_driver_cbid.h",
+      "sha256": "9a404d3d890b7dc1318506450e8d2260795a1c95860f6bce31db73695fa51149",
+      "size_bytes": 77280
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti_events.h",
+      "sha256": "f35c1cbc5bef1e3f1198409b6c4a7915f823248403a02ffcd4586fab39c5ba96",
+      "size_bytes": 51923
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti_metrics.h",
+      "sha256": "ce67d9c6ae55914269e938fba171243fda32711370d7307d54d8684256e188de",
+      "size_bytes": 32175
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti_nvtx_cbid.h",
+      "sha256": "fdaccfb51d60e2a8afbd7eea6ef1d1520d111c2585ee210e2721cc37da997bd1",
+      "size_bytes": 5912
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti_pcsampling.h",
+      "sha256": "c9c2474f7e8398f21a5731ec077c718d792117211f30224e9772db0ac1c58320",
+      "size_bytes": 32144
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti_pcsampling_util.h",
+      "sha256": "971f0268d5e8c097b966f734e8b13ebbf66bcbf8ce0ecd6633a8fd4395885fd1",
+      "size_bytes": 12430
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti_pmsampling.h",
+      "sha256": "53de6128ec0891949b18d54fd7541298c6b007ca9d26c96363fb54258e2f79d7",
+      "size_bytes": 20440
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti_profiler_host.h",
+      "sha256": "32491f5e528146b44be0d7da3c58ae1380f8cff8299b18815964c18b1cb23139",
+      "size_bytes": 22155
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti_profiler_target.h",
+      "sha256": "31d2eeb4879fc1d31323bc2c71ed0b3b736e0a6dc5460151dc6c4092a69d32ce",
+      "size_bytes": 32294
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti_range_profiler.h",
+      "sha256": "b9ee5b500fb7c42c00b501b20dee4ed5de6b02645b55b72b5ca7c84dde313352",
+      "size_bytes": 18779
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti_result.h",
+      "sha256": "c50a81b1946889c05259d935959004fd67998fcf0c2c7e82953a39f28b21c7ef",
+      "size_bytes": 13114
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti_runtime_cbid.h",
+      "sha256": "059267cecbdfd918d194728484f8c293409d8cb23dfcbfa70a54f07b8bfd3547",
+      "size_bytes": 48372
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti_sass_metrics.h",
+      "sha256": "dd15bdb2726e15074e86b127df00c93abbb4e6ad15ff3b2c5aba83eedbd524ac",
+      "size_bytes": 19674
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti_target.h",
+      "sha256": "c78573d54a5bea6f62c6656998668a425743598408dce67ea1c1171b334ad041",
+      "size_bytes": 1263
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/cupti_version.h",
+      "sha256": "2855e68c1e28fa2646bcef256bd49ff54ae0e2ae2cae61229a7c5b3c2c9dd8df",
+      "size_bytes": 4506
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/generated_cudaGL_meta.h",
+      "sha256": "75f77642e6917448db4ad38abda40b8b531dfeaae945087c3dfc99ce727c6d66",
+      "size_bytes": 3115
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/generated_cudaVDPAU_meta.h",
+      "sha256": "7c079db28431694de12000290160ce2ac6bd92072e430e2d7727fc9252e6fb79",
+      "size_bytes": 1453
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/generated_cuda_gl_interop_meta.h",
+      "sha256": "2d73aabd009e8f4b028004f52d428a619e3ae84171378848c1ff682215ce2c5d",
+      "size_bytes": 2250
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/generated_cuda_meta.h",
+      "sha256": "0c37607d6f38195b6c19bafb75a3497219a66434bfc5fbc31ef1429b72353847",
+      "size_bytes": 98664
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/generated_cuda_runtime_api_meta.h",
+      "sha256": "0aece2683c0ed8c877de96822c62aa8bbdcf41f60d9b3a77f3062b8402be7e78",
+      "size_bytes": 72208
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/generated_cuda_vdpau_interop_meta.h",
+      "sha256": "f0e2ea58ddba6846294d6517b5b1c9bc0e4662156fdf26d854e4d6ef22b7ef3f",
+      "size_bytes": 1367
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/generated_cudart_removed_meta.h",
+      "sha256": "5f72395979a1b6c24d365818edca09e6f838b75d46e45451e97a3b31ba0879c9",
+      "size_bytes": 5172
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/generated_nvtx_meta.h",
+      "sha256": "6076ff443f20dece26f0f267ed9d309f1bd41daae5ec13805f9003afe04bdc72",
+      "size_bytes": 7513
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/nvperf_common.h",
+      "sha256": "ca479327923a734cfc2aa310875de194968c6878aaa95501eb4a065ce0aeec18",
+      "size_bytes": 17255
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/nvperf_cuda_host.h",
+      "sha256": "802d095a851d4f200e26cf32e2ea0922189ef57ab8c85e07ce8ba62ec60d5735",
+      "size_bytes": 7562
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/nvperf_host.h",
+      "sha256": "c02078991f1a2075a2a93d53b31ced420581461ff28aae400459bcb1bdff8f08",
+      "size_bytes": 49197
+    },
+    {
+      "path": "nvidia/cuda_cupti/include/nvperf_target.h",
+      "sha256": "8d1a90b6e34b4eb0b33c37727803644eb3c48a34824e32f2d80d6a8cabb449d3",
+      "size_bytes": 23607
+    },
+    {
+      "path": "nvidia/cuda_cupti/lib/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/cuda_cupti/lib/libcheckpoint.so",
+      "sha256": "06ba82bd09237b934cf16da2172ed5943c582caa35c79b52cfcfeb0ff71f7250",
+      "size_bytes": 1644872
+    },
+    {
+      "path": "nvidia/cuda_cupti/lib/libcupti.so.12",
+      "sha256": "fccdc5fcc7c32f8cf4b3ed9b17f7f187a185a6fa0a5bcc06e3434cbd1687c808",
+      "size_bytes": 7595792
+    },
+    {
+      "path": "nvidia/cuda_cupti/lib/libnvperf_host.so",
+      "sha256": "609f54063c253daff6efba79fe49252fdd2324308ab0ffb991cc125d3e9a1eab",
+      "size_bytes": 25825936
+    },
+    {
+      "path": "nvidia/cuda_cupti/lib/libnvperf_target.so",
+      "sha256": "2f10e1109fc341a57434c28e4006b45a89247801e20f5ace135c302c173e0770",
+      "size_bytes": 5275312
+    },
+    {
+      "path": "nvidia/cuda_cupti/lib/libpcsamplingutil.so",
+      "sha256": "e6fa2783077974fb2765bfa9cbaebf980736df74eebf994c59c7596988aec83b",
+      "size_bytes": 970064
+    },
+    {
+      "path": "nvidia_cuda_cupti_cu12-12.8.90.dist-info/INSTALLER",
+      "sha256": "e6184ce10e266134fdcfa401e8f1a95005bcd4f18d16b62b757323e2833fe9a9",
+      "size_bytes": 2
+    },
+    {
+      "path": "nvidia_cuda_cupti_cu12-12.8.90.dist-info/License.txt",
+      "sha256": "ad6f5853fba0ca0d159d0f58d49ae49830c2f8c93f7a92648b9ce90adb4c6ccd",
+      "size_bytes": 59262
+    },
+    {
+      "path": "nvidia_cuda_cupti_cu12-12.8.90.dist-info/METADATA",
+      "sha256": "6df7fa2fcdfa046eb952f3f8c172f524b2e19a654ec037da3dbb32e93d9671d1",
+      "size_bytes": 1730
+    },
+    {
+      "path": "nvidia_cuda_cupti_cu12-12.8.90.dist-info/REQUESTED",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia_cuda_cupti_cu12-12.8.90.dist-info/WHEEL",
+      "sha256": "ca033caa96203afae7e42fbcbdb7f33e2fb48853c40a1ef594b5aa92aad38d8c",
+      "size_bytes": 144
+    },
+    {
+      "path": "nvidia_cuda_cupti_cu12-12.8.90.dist-info/top_level.txt",
+      "sha256": "7d3900b6216e2f5ea752b07dcad0c3b69cadcf6b7407836f6139d1cf00213b5e",
+      "size_bytes": 7
+    },
+    {
+      "path": "nvidia_cuda_cupti_cu12-12.8.90.dist-info/uv_cache.json",
+      "sha256": "d3247dbc347fe604f0bd0d77fdbd8eaf5c94cdee08e024d5f51cb8efeea3aff2",
+      "size_bytes": 127
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "nvidia_cuda_cupti_cu12-12.8.90.dist-info/INSTALLER",
+      "reason": "verified installed metadata; excluded from rebuilt wheel"
+    },
+    {
+      "path": "nvidia_cuda_cupti_cu12-12.8.90.dist-info/REQUESTED",
+      "reason": "verified installed metadata; excluded from rebuilt wheel"
+    }
+  ],
+  "status": "PASS",
+  "filename": "nvidia_cuda_cupti_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+  "wheel_sha256": "52f75a22889b85fb35472cfd4667793709711f64d03af1c5f1f3e9552a83681f",
+  "wheel_size_bytes": 11423935,
+  "payload_size_bytes": 42514184,
+  "checked_at_utc": "2026-10-28T09:01:27.967496+00:00"
+}

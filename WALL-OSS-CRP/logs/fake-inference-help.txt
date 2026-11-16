@@ -1,0 +1,30 @@
+usage: fake_inference.py [-h] --checkpoint-path CHECKPOINT_PATH
+                         [--train-config-path TRAIN_CONFIG_PATH]
+                         [--norm-key NORM_KEY] [--architecture ARCHITECTURE]
+                         [--action-mode ACTION_MODE]
+                         [--cam-names CAM_NAMES [CAM_NAMES ...]]
+                         [--action-horizon ACTION_HORIZON]
+                         [--instruction INSTRUCTION] [--image-size IMAGE_SIZE]
+                         [--seed SEED]
+
+Run one Wall-X VLA inference pass through the harrix adapter. This is a
+lightweight smoke test for the inference path. It builds a synthetic LIBERO-
+style observation, loads the checkpoint through harrix, and prints the
+predicted action chunk shape.
+
+options:
+  -h, --help            show this help message and exit
+  --checkpoint-path CHECKPOINT_PATH
+                        Checkpoint directory.
+  --train-config-path TRAIN_CONFIG_PATH
+                        Optional training config path. Defaults to
+                        config.yml/config.yaml next to the checkpoint.
+  --norm-key NORM_KEY
+  --architecture ARCHITECTURE
+  --action-mode ACTION_MODE
+  --cam-names CAM_NAMES [CAM_NAMES ...]
+                        Camera names expected by the checkpoint.
+  --action-horizon ACTION_HORIZON
+  --instruction INSTRUCTION
+  --image-size IMAGE_SIZE
+  --seed SEED

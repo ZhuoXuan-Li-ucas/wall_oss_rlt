@@ -1,0 +1,16 @@
+{
+  "contract_path": "/home/pangk/workspaces/WALL-OSS-CRP/configs/rlt/top_error_ar5_joint_next_v1.json",
+  "contract_hash": "cb354f8197dfbbbcc8d92ba0c4bbb62c53512326c298e1d8bd2cd5cc3bc302d6",
+  "target_mode": "ar5_joint_next_v1",
+  "model_adapter": "ar5_joint8_reinit_v1",
+  "episodes": 350,
+  "split_counts": {
+    "train": 245,
+    "dev": 49,
+    "test": 56
+  },
+  "train_observations": 123263,
+  "raw_frames": 176523,
+  "usable_observations": 176173,
+  "model_training_status": "NOT_RUN"
+}

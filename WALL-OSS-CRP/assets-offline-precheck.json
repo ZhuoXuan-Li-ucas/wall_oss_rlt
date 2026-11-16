@@ -1,0 +1,56 @@
+{
+  "wall-oss-0.5": {
+    "processor": "Qwen2_5_VLProcessor",
+    "tokenizer_size": 151665,
+    "image_grid_thw": [
+      [
+        1,
+        32,
+        32
+      ],
+      [
+        1,
+        32,
+        32
+      ]
+    ],
+    "pixel_values_shape": [
+      2048,
+      1176
+    ]
+  },
+  "Qwen2.5-VL-3B-Instruct": {
+    "processor": "Qwen2_5_VLProcessor",
+    "tokenizer_size": 151665,
+    "image_grid_thw": [
+      [
+        1,
+        32,
+        32
+      ],
+      [
+        1,
+        32,
+        32
+      ]
+    ],
+    "pixel_values_shape": [
+      2048,
+      1176
+    ]
+  },
+  "normalizer_action.pth": {
+    "norm_key": "x2_normal",
+    "shape": [
+      26
+    ],
+    "all_finite": true
+  },
+  "normalizer_propri.pth": {
+    "norm_key": "x2_normal",
+    "shape": [
+      26
+    ],
+    "all_finite": true
+  }
+}

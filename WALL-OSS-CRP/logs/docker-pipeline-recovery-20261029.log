@@ -1,0 +1,261 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.h100
+#1 transferring dockerfile:
+#1 transferring dockerfile: 4.61kB done
+#1 DONE 0.2s
+
+#2 [context wall_wheels] load .dockerignore
+#2 ...
+
+#3 [context wall_python] load .dockerignore
+#3 transferring wall_python: 2B done
+#3 DONE 0.2s
+
+#2 [context wall_wheels] load .dockerignore
+#2 transferring wall_wheels:
+#2 ...
+
+#4 [internal] load metadata for docker.io/nvidia/cuda:12.8.1-devel-ubuntu22.04
+#4 DONE 0.2s
+
+#2 [context wall_wheels] load .dockerignore
+#2 transferring wall_wheels: 2B 1.2s done
+#2 DONE 1.3s
+
+#5 [internal] load build context
+#5 DONE 0.0s
+
+#6 [context wall_python] load from client
+#6 DONE 0.0s
+
+#7 [context wall_wheels] load from client
+#7 DONE 0.0s
+
+#8 [system 1/3] FROM docker.io/nvidia/cuda:12.8.1-devel-ubuntu22.04@sha256:6617a625f4090c76c545a0e7d63f2e441718ef9af7f4efe7dd1242a29e289fd7
+#8 resolve docker.io/nvidia/cuda:12.8.1-devel-ubuntu22.04@sha256:6617a625f4090c76c545a0e7d63f2e441718ef9af7f4efe7dd1242a29e289fd7
+#8 resolve docker.io/nvidia/cuda:12.8.1-devel-ubuntu22.04@sha256:6617a625f4090c76c545a0e7d63f2e441718ef9af7f4efe7dd1242a29e289fd7 0.1s done
+#8 DONE 0.2s
+
+#6 [context wall_python] load from client
+#6 transferring wall_python: 208B done
+#6 DONE 0.2s
+
+#5 [internal] load build context
+#5 transferring context: 92.24kB 0.2s
+#5 ...
+
+#7 [context wall_wheels] load from client
+#7 transferring wall_wheels: 9.52kB 0.0s done
+#7 DONE 0.5s
+
+#5 [internal] load build context
+#5 transferring context: 1.16MB 0.8s done
+#5 DONE 1.0s
+
+#9 [system 3/3] RUN --mount=type=bind,from=wall_python,target=/bootstrap     cd /bootstrap && sha256sum -c SHA256SUMS     && mkdir -p /opt/walloss/env     && tar -xzf python310-bootstrap.tar.gz -C /opt/walloss/env     && mkdir -p /opt/walloss/build-record/python-bootstrap     && cp SHA256SUMS *.json /opt/walloss/build-record/python-bootstrap/     && /opt/walloss/env/bin/python -c "import sys; assert sys.prefix == '/opt/walloss/env'; print(sys.version)"
+#9 CACHED
+
+#10 [runtime  1/14] COPY docker/runtime-pins.txt /opt/walloss/docker/runtime-pins.txt
+#10 CACHED
+
+#11 [runtime  2/14] RUN --mount=type=bind,from=wall_wheels,target=/wheels     cd /wheels && sha256sum -c SHA256SUMS     && mkdir -p /opt/walloss/build-record     && cp SHA256SUMS REPACKED-SOURCES.json RUNTIME-SOURCES.json OFFICIAL-GPU-SOURCES.json /opt/walloss/build-record/     && python -m pip install --no-cache-dir --no-index --find-links=/wheels        'pip==26.1.2' 'setuptools==80.9.0' 'wheel==0.48.0'
+#11 CACHED
+
+#12 [runtime  3/14] RUN --mount=type=bind,from=wall_wheels,target=/wheels     python -m pip install --no-cache-dir --no-index --find-links=/wheels        torch==2.10.0+cu128 torchvision==0.25.0+cu128 torchaudio==2.10.0+cu128        -r docker/runtime-pins.txt
+#12 CACHED
+
+#13 [system 2/3] WORKDIR /opt/walloss
+#13 CACHED
+
+#14 [runtime  4/14] COPY .cache/flash-attn-2.8.3 /opt/flash-attn-src
+#14 CACHED
+
+#15 [runtime  5/14] RUN --mount=type=cache,id=walloss-fa283-py310-torch210-cu128-sm80sm90,target=/opt/flash-attn-src/build,sharing=locked     FLASH_ATTENTION_FORCE_BUILD=TRUE python -m pip install -v --no-cache-dir --no-index --no-deps --no-build-isolation /opt/flash-attn-src
+#15 2.867 Using pip 26.1.2 from /opt/walloss/env/lib/python3.10/site-packages/pip (python 3.10)
+#15 3.043 Processing /opt/flash-attn-src
+#15 3.044   Preparing metadata (pyproject.toml): started
+#15 3.044   Running command Preparing metadata (pyproject.toml)
+#15 3.356   /opt/walloss/env/lib/python3.10/site-packages/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please update to setuptools v70.1 or later which contains an integrated version of this command.
+#15 3.356     warn(
+#15 16.91   W1029 01:10:25.054000 9 site-packages/torch/utils/cpp_extension.py:118] No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+#15 16.97   /opt/walloss/env/lib/python3.10/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+#15 16.97   !!
+#15 16.97 
+#15 16.97           ********************************************************************************
+#15 16.97           Please consider removing the following classifiers in favor of a SPDX license expression:
+#15 16.97 
+#15 16.97           License :: OSI Approved :: BSD License
+#15 16.97 
+#15 16.97           See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+#15 16.97           ********************************************************************************
+#15 16.97 
+#15 16.97   !!
+#15 16.97     self._finalize_license_expression()
+#15 16.98 
+#15 16.98 
+#15 16.98   torch.__version__  = 2.10.0+cu128
+#15 16.98 
+#15 16.98 
+#15 16.98   running dist_info
+#15 16.99   creating /tmp/pip-modern-metadata-x0vlo4ys/flash_attn.egg-info
+#15 16.99   writing /tmp/pip-modern-metadata-x0vlo4ys/flash_attn.egg-info/PKG-INFO
+#15 16.99   writing dependency_links to /tmp/pip-modern-metadata-x0vlo4ys/flash_attn.egg-info/dependency_links.txt
+#15 16.99   writing requirements to /tmp/pip-modern-metadata-x0vlo4ys/flash_attn.egg-info/requires.txt
+#15 16.99   writing top-level names to /tmp/pip-modern-metadata-x0vlo4ys/flash_attn.egg-info/top_level.txt
+#15 16.99   writing manifest file '/tmp/pip-modern-metadata-x0vlo4ys/flash_attn.egg-info/SOURCES.txt'
+#15 17.01   reading manifest file '/tmp/pip-modern-metadata-x0vlo4ys/flash_attn.egg-info/SOURCES.txt'
+#15 17.01   reading manifest template 'MANIFEST.in'
+#15 17.41   warning: no files found matching '*.cu' under directory 'flash_attn'
+#15 17.41   warning: no files found matching '*.h' under directory 'flash_attn'
+#15 17.41   warning: no files found matching '*.cuh' under directory 'flash_attn'
+#15 17.41   warning: no files found matching '*.cpp' under directory 'flash_attn'
+#15 17.41   warning: no files found matching '*.hpp' under directory 'flash_attn'
+#15 17.41   adding license file 'LICENSE'
+#15 17.41   adding license file 'AUTHORS'
+#15 17.46   writing manifest file '/tmp/pip-modern-metadata-x0vlo4ys/flash_attn.egg-info/SOURCES.txt'
+#15 17.46   creating '/tmp/pip-modern-metadata-x0vlo4ys/flash_attn-2.8.3.dist-info'
+#15 18.97   Preparing metadata (pyproject.toml): finished with status 'done'
+#15 18.97 Building wheels for collected packages: flash_attn
+#15 18.97   Building wheel for flash_attn (pyproject.toml): started
+#15 18.97   Running command Building wheel for flash_attn (pyproject.toml)
+#15 19.05   /opt/walloss/env/lib/python3.10/site-packages/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please update to setuptools v70.1 or later which contains an integrated version of this command.
+#15 19.05     warn(
+#15 19.84   W1029 01:10:27.984000 31 site-packages/torch/utils/cpp_extension.py:118] No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+#15 19.85   /opt/walloss/env/lib/python3.10/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+#15 19.85   !!
+#15 19.85 
+#15 19.85           ********************************************************************************
+#15 19.85           Please consider removing the following classifiers in favor of a SPDX license expression:
+#15 19.85 
+#15 19.85           License :: OSI Approved :: BSD License
+#15 19.85 
+#15 19.85           See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+#15 19.85           ********************************************************************************
+#15 19.85 
+#15 19.85   !!
+#15 19.85     self._finalize_license_expression()
+#15 19.85 
+#15 19.85 
+#15 19.85   torch.__version__  = 2.10.0+cu128
+#15 19.85 
+#15 19.85 
+#15 19.85   running bdist_wheel
+#15 19.87   running build
+#15 19.87   running build_py
+#15 19.88   creating build/lib.linux-x86_64-cpython-310/hopper
+#15 19.88   copying hopper/benchmark_mla_decode.py -> build/lib.linux-x86_64-cpython-310/hopper
+#15 19.89   copying hopper/padding.py -> build/lib.linux-x86_64-cpython-310/hopper
+#15 19.89   copying hopper/test_util.py -> build/lib.linux-x86_64-cpython-310/hopper
+#15 19.90   copying hopper/test_attn_kvcache.py -> build/lib.linux-x86_64-cpython-310/hopper
+#15 19.90   copying hopper/flash_attn_interface.py -> build/lib.linux-x86_64-cpython-310/hopper
+#15 19.90   copying hopper/setup.py -> build/lib.linux-x86_64-cpython-310/hopper
+#15 19.90   copying hopper/benchmark_flash_attention_fp8.py -> build/lib.linux-x86_64-cpython-310/hopper
+#15 19.91   copying hopper/test_kvcache.py -> build/lib.linux-x86_64-cpython-310/hopper
+#15 19.91   copying hopper/__init__.py -> build/lib.linux-x86_64-cpython-310/hopper
+#15 19.91   copying hopper/benchmark_attn.py -> build/lib.linux-x86_64-cpython-310/hopper
+#15 19.91   copying hopper/generate_kernels.py -> build/lib.linux-x86_64-cpython-310/hopper
+#15 19.91   copying hopper/benchmark_split_kv.py -> build/lib.linux-x86_64-cpython-310/hopper
+#15 19.91   copying hopper/test_flash_attn.py -> build/lib.linux-x86_64-cpython-310/hopper
+#15 19.91   creating build/lib.linux-x86_64-cpython-310/flash_attn
+#15 19.91   copying flash_attn/flash_blocksparse_attn_interface.py -> build/lib.linux-x86_64-cpython-310/flash_attn
+#15 19.92   copying flash_attn/bert_padding.py -> build/lib.linux-x86_64-cpython-310/flash_attn
+#15 19.93   copying flash_attn/flash_attn_triton.py -> build/lib.linux-x86_64-cpython-310/flash_attn
+#15 19.93   copying flash_attn/flash_attn_triton_og.py -> build/lib.linux-x86_64-cpython-310/flash_attn
+#15 19.93   copying flash_attn/flash_blocksparse_attention.py -> build/lib.linux-x86_64-cpython-310/flash_attn
+#15 19.93   copying flash_attn/flash_attn_interface.py -> build/lib.linux-x86_64-cpython-310/flash_attn
+#15 19.93   copying flash_attn/__init__.py -> build/lib.linux-x86_64-cpython-310/flash_attn
+#15 19.93   creating build/lib.linux-x86_64-cpython-310/flash_attn/losses
+#15 19.93   copying flash_attn/losses/cross_entropy.py -> build/lib.linux-x86_64-cpython-310/flash_attn/losses
+#15 19.93   copying flash_attn/losses/__init__.py -> build/lib.linux-x86_64-cpython-310/flash_attn/losses
+#15 19.93   creating build/lib.linux-x86_64-cpython-310/flash_attn/ops
+#15 19.93   copying flash_attn/ops/fused_dense.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops
+#15 19.93   copying flash_attn/ops/activations.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops
+#15 19.93   copying flash_attn/ops/__init__.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops
+#15 19.93   copying flash_attn/ops/rms_norm.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops
+#15 19.93   copying flash_attn/ops/layer_norm.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops
+#15 19.93   creating build/lib.linux-x86_64-cpython-310/flash_attn/modules
+#15 19.93   copying flash_attn/modules/mlp.py -> build/lib.linux-x86_64-cpython-310/flash_attn/modules
+#15 19.93   copying flash_attn/modules/block.py -> build/lib.linux-x86_64-cpython-310/flash_attn/modules
+#15 19.93   copying flash_attn/modules/embedding.py -> build/lib.linux-x86_64-cpython-310/flash_attn/modules
+#15 19.93   copying flash_attn/modules/__init__.py -> build/lib.linux-x86_64-cpython-310/flash_attn/modules
+#15 19.93   copying flash_attn/modules/mha.py -> build/lib.linux-x86_64-cpython-310/flash_attn/modules
+#15 19.94   creating build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+#15 19.94   copying flash_attn/flash_attn_triton_amd/train.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+#15 19.94   copying flash_attn/flash_attn_triton_amd/interface_fa.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+#15 19.94   copying flash_attn/flash_attn_triton_amd/test.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+#15 19.94   copying flash_attn/flash_attn_triton_amd/bwd_prefill_onekernel.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+#15 19.94   copying flash_attn/flash_attn_triton_amd/utils.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+#15 19.94   copying flash_attn/flash_attn_triton_amd/bwd_ref.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+#15 19.94   copying flash_attn/flash_attn_triton_amd/fp8.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+#15 19.94   copying flash_attn/flash_attn_triton_amd/bwd_prefill_fused.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+#15 19.96   copying flash_attn/flash_attn_triton_amd/fwd_ref.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+#15 19.96   copying flash_attn/flash_attn_triton_amd/bench.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+#15 19.96   copying flash_attn/flash_attn_triton_amd/bwd_prefill.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+#15 19.96   copying flash_attn/flash_attn_triton_amd/bwd_prefill_split.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+#15 19.96   copying flash_attn/flash_attn_triton_amd/fwd_prefill.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+#15 19.96   copying flash_attn/flash_attn_triton_amd/__init__.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+#15 19.96   copying flash_attn/flash_attn_triton_amd/fwd_decode.py -> build/lib.linux-x86_64-cpython-310/flash_attn/flash_attn_triton_amd
+#15 19.96   creating build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.96   copying flash_attn/cute/pack_gqa.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.96   copying flash_attn/cute/flash_bwd.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.96   copying flash_attn/cute/hopper_helpers.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.96   copying flash_attn/cute/ampere_helpers.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.96   copying flash_attn/cute/utils.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.96   copying flash_attn/cute/flash_bwd_preprocess.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.96   copying flash_attn/cute/interface.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.96   copying flash_attn/cute/pipeline.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.96   copying flash_attn/cute/fast_math.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.96   copying flash_attn/cute/named_barrier.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.96   copying flash_attn/cute/blackwell_helpers.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.96   copying flash_attn/cute/seqlen_info.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.96   copying flash_attn/cute/softmax.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.96   copying flash_attn/cute/flash_fwd_sm100.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.96   copying flash_attn/cute/__init__.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.96   copying flash_attn/cute/flash_bwd_postprocess.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.96   copying flash_attn/cute/block_info.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.96   copying flash_attn/cute/mask.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.96   copying flash_attn/cute/tile_scheduler.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.96   copying flash_attn/cute/flash_fwd.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.97   copying flash_attn/cute/mma_sm100_desc.py -> build/lib.linux-x86_64-cpython-310/flash_attn/cute
+#15 19.97   creating build/lib.linux-x86_64-cpython-310/flash_attn/layers
+#15 19.97   copying flash_attn/layers/rotary.py -> build/lib.linux-x86_64-cpython-310/flash_attn/layers
+#15 19.97   copying flash_attn/layers/patch_embed.py -> build/lib.linux-x86_64-cpython-310/flash_attn/layers
+#15 19.97   copying flash_attn/layers/__init__.py -> build/lib.linux-x86_64-cpython-310/flash_attn/layers
+#15 19.97   creating build/lib.linux-x86_64-cpython-310/flash_attn/utils
+#15 19.97   copying flash_attn/utils/generation.py -> build/lib.linux-x86_64-cpython-310/flash_attn/utils
+#15 19.97   copying flash_attn/utils/benchmark.py -> build/lib.linux-x86_64-cpython-310/flash_attn/utils
+#15 19.97   copying flash_attn/utils/library.py -> build/lib.linux-x86_64-cpython-310/flash_attn/utils
+#15 19.97   copying flash_attn/utils/pretrained.py -> build/lib.linux-x86_64-cpython-310/flash_attn/utils
+#15 19.97   copying flash_attn/utils/torch.py -> build/lib.linux-x86_64-cpython-310/flash_attn/utils
+#15 19.97   copying flash_attn/utils/testing.py -> build/lib.linux-x86_64-cpython-310/flash_attn/utils
+#15 19.98   copying flash_attn/utils/__init__.py -> build/lib.linux-x86_64-cpython-310/flash_attn/utils
+#15 19.98   copying flash_attn/utils/distributed.py -> build/lib.linux-x86_64-cpython-310/flash_attn/utils
+#15 19.98   creating build/lib.linux-x86_64-cpython-310/flash_attn/models
+#15 19.98   copying flash_attn/models/btlm.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+#15 19.98   copying flash_attn/models/bert.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+#15 19.98   copying flash_attn/models/gpt.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+#15 19.98   copying flash_attn/models/baichuan.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+#15 19.98   copying flash_attn/models/bigcode.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+#15 19.98   copying flash_attn/models/gptj.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+#15 19.98   copying flash_attn/models/llama.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+#15 19.98   copying flash_attn/models/vit.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+#15 19.98   copying flash_attn/models/gpt_neox.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+#15 19.98   copying flash_attn/models/__init__.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+#15 19.98   copying flash_attn/models/opt.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+#15 19.98   copying flash_attn/models/falcon.py -> build/lib.linux-x86_64-cpython-310/flash_attn/models
+#15 19.98   creating build/lib.linux-x86_64-cpython-310/flash_attn/ops/triton
+#15 19.98   copying flash_attn/ops/triton/rotary.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops/triton
+#15 19.98   copying flash_attn/ops/triton/k_activations.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops/triton
+#15 19.98   copying flash_attn/ops/triton/cross_entropy.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops/triton
+#15 19.98   copying flash_attn/ops/triton/mlp.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops/triton
+#15 19.98   copying flash_attn/ops/triton/__init__.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops/triton
+#15 19.98   copying flash_attn/ops/triton/linear.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops/triton
+#15 19.98   copying flash_attn/ops/triton/layer_norm.py -> build/lib.linux-x86_64-cpython-310/flash_attn/ops/triton
+#15 19.99   running build_ext
+#15 20.02   W1029 01:10:28.171000 31 site-packages/torch/utils/cpp_extension.py:535] There are no g++ version bounds defined for CUDA version 12.8
+#15 20.02   building 'flash_attn_2_cuda' extension
+#15 20.02   creating /opt/flash-attn-src/build/temp.linux-x86_64-cpython-310/csrc/flash_attn
+#15 20.02   creating /opt/flash-attn-src/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src
+#15 34.18   [1/73] c++ -MMD -MF /opt/flash-attn-src/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/flash_api.o.d -pthread -B /opt/walloss/env/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -fno-merge-constants -isystem /opt/walloss/env/include -fPIC -O2 -fno-merge-constants -isystem /opt/walloss/env/include -fPIC -I/opt/flash-attn-src/csrc/flash_attn -I/opt/flash-attn-src/csrc/flash_attn/src -I/opt/flash-attn-src/csrc/cutlass/include -I/opt/walloss/env/lib/python3.10/site-packages/torch/include -I/opt/walloss/env/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/opt/walloss/env/include/python3.10 -c -c /opt/flash-attn-src/csrc/flash_attn/flash_api.cpp -o /opt/flash-attn-src/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/flash_api.o -O3 -std=c++17 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=flash_attn_2_cuda
+#15 226.5   [2/73] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /opt/flash-attn-src/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_bf16_causal_sm80.o.d -I/opt/flash-attn-src/csrc/flash_attn -I/opt/flash-attn-src/csrc/flash_attn/src -I/opt/flash-attn-src/csrc/cutlass/include -I/opt/walloss/env/lib/python3.10/site-packages/torch/include -I/opt/walloss/env/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/opt/walloss/env/include/python3.10 -c -c /opt/flash-attn-src/csrc/flash_attn/src/flash_bwd_hdim128_bf16_causal_sm80.cu -o /opt/flash-attn-src/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_bf16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 -gencode arch=compute_90,code=sm_90 --threads 1 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=flash_attn_2_cuda

@@ -1,0 +1,37 @@
+{
+  "root": "/home/crp-5070ti-01/atom_episodes/wall_unlocked_v2",
+  "task": "grasping",
+  "scope": "original NPZ and MP4 only",
+  "structural_status": "PASS",
+  "semantic_status": "PASS",
+  "semantic_check_scope": "documented shapes, binary command, wrist timeline, held, prompt, camera layout and SO(3) previous-to-current pose delta",
+  "excluded_groups": [
+    "bolt"
+  ],
+  "training_ready": false,
+  "episodes": 100,
+  "frames": 38416,
+  "groups": {
+    "black_bushing": 50,
+    "orange_block": 50
+  },
+  "split_counts": {
+    "train": 70,
+    "dev": 14,
+    "test": 16
+  },
+  "split_status": "provisional stratified episode split; target representation and model contract are separate",
+  "action_dims": [
+    7
+  ],
+  "state_dims": [
+    8
+  ],
+  "video_check_scope": "container frame counts/FPS and first-frame decode, not full-stream decode/hash",
+  "unconfirmed": [
+    "model slot mapping",
+    "episode success/quality labels"
+  ],
+  "problems": [],
+  "semantic_problems": []
+}

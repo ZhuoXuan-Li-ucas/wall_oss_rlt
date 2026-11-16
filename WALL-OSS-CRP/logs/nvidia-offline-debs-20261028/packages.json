@@ -1,0 +1,38 @@
+[
+  {
+    "package": "nvidia-container-toolkit",
+    "version": "1.20.1-1",
+    "filename": "nvidia-container-toolkit_1.20.1-1_amd64.deb",
+    "url": "https://nvidia.github.io/libnvidia-container/stable/deb/amd64/nvidia-container-toolkit_1.20.1-1_amd64.deb",
+    "size": 1501496,
+    "sha256": "a95c9d206a7ecd6a90adff9290635271fa167a86b5767b17eaa0478a552eb02c",
+    "depends": "nvidia-container-toolkit-base (= 1.20.1-1), libnvidia-container-tools (= 1.20.1-1)"
+  },
+  {
+    "package": "nvidia-container-toolkit-base",
+    "version": "1.20.1-1",
+    "filename": "nvidia-container-toolkit-base_1.20.1-1_amd64.deb",
+    "url": "https://nvidia.github.io/libnvidia-container/stable/deb/amd64/nvidia-container-toolkit-base_1.20.1-1_amd64.deb",
+    "size": 5993348,
+    "sha256": "e01964a064fbdb62425ab22ec5832349f92c5b0b50c8f23fdf14dad004db4fb2",
+    "depends": ""
+  },
+  {
+    "package": "libnvidia-container-tools",
+    "version": "1.20.1-1",
+    "filename": "libnvidia-container-tools_1.20.1-1_amd64.deb",
+    "url": "https://nvidia.github.io/libnvidia-container/stable/deb/amd64/libnvidia-container-tools_1.20.1-1_amd64.deb",
+    "size": 20804,
+    "sha256": "8bd131b8977a3db667982024850ae7b50cfa02d6b2be06a718064ec814778f05",
+    "depends": "libnvidia-container1 (= 1.20.1-1), libc6 (>= 2.14), libcap2 (>= 1:2.10)"
+  },
+  {
+    "package": "libnvidia-container1",
+    "version": "1.20.1-1",
+    "filename": "libnvidia-container1_1.20.1-1_amd64.deb",
+    "url": "https://nvidia.github.io/libnvidia-container/stable/deb/amd64/libnvidia-container1_1.20.1-1_amd64.deb",
+    "size": 1236052,
+    "sha256": "9d803cd9c898cb2fa927529d5ac4fc09f3d65c8cfbde8985de1b9398e53a4656",
+    "depends": "libc6 (>= 2.27), libcap2 (>= 1:2.10), libseccomp2 (>= 0.0.0~20120605)"
+  }
+]

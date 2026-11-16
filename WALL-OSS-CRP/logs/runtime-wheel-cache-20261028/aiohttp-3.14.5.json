@@ -1,0 +1,686 @@
+{
+  "status": "PASS",
+  "package": "aiohttp",
+  "version": "3.14.5",
+  "filename": "aiohttp-3.14.5-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "d33e5527bebc023b413f5fbba86f8f8b90c65e816d669a385df90011ab4398cd",
+  "wheel_tags": [
+    "cp310-cp310-manylinux_2_17_x86_64",
+    "cp310-cp310-manylinux2014_x86_64",
+    "cp310-cp310-manylinux_2_28_x86_64"
+  ],
+  "record_verified_files": [
+    {
+      "path": "aiohttp-3.14.5.dist-info/INSTALLER",
+      "wheel_path": "aiohttp-3.14.5.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "aiohttp-3.14.5.dist-info/METADATA",
+      "wheel_path": "aiohttp-3.14.5.dist-info/METADATA",
+      "size_bytes": 8277,
+      "sha256": "50b29a2268649f7ce5b22c0a41b60896d246fee58e2a74b468f66848e469834c"
+    },
+    {
+      "path": "aiohttp-3.14.5.dist-info/WHEEL",
+      "wheel_path": "aiohttp-3.14.5.dist-info/WHEEL",
+      "size_bytes": 190,
+      "sha256": "19601a57dbc05e3d2e550552a4d2b517efcf28556daadd29a904dff2a0914f86"
+    },
+    {
+      "path": "aiohttp-3.14.5.dist-info/licenses/LICENSE.txt",
+      "wheel_path": "aiohttp-3.14.5.dist-info/licenses/LICENSE.txt",
+      "size_bytes": 11313,
+      "sha256": "2e4be5fc6c4c72a466fcb665d726e049a6891981fe536c4f04b6366749461d23"
+    },
+    {
+      "path": "aiohttp-3.14.5.dist-info/licenses/vendor/llhttp/LICENSE",
+      "wheel_path": "aiohttp-3.14.5.dist-info/licenses/vendor/llhttp/LICENSE",
+      "size_bytes": 1069,
+      "sha256": "628168d68bb5a8a17e0bbefb3bd74e326e1edc20583d76f52f457c82c921867d"
+    },
+    {
+      "path": "aiohttp-3.14.5.dist-info/top_level.txt",
+      "wheel_path": "aiohttp-3.14.5.dist-info/top_level.txt",
+      "size_bytes": 8,
+      "sha256": "8aff8921a69c99397e852868dd09a985c2a76d1458c75b2de3bca3cffd7bf11a"
+    },
+    {
+      "path": "aiohttp/__init__.py",
+      "wheel_path": "aiohttp/__init__.py",
+      "size_bytes": 8429,
+      "sha256": "7ddd3da8369592dbd4a04d9ada4629ce54d38779fc05ecef6cbeeb7a3e26d46e"
+    },
+    {
+      "path": "aiohttp/_cookie_helpers.py",
+      "wheel_path": "aiohttp/_cookie_helpers.py",
+      "size_bytes": 16216,
+      "sha256": "13a1c5cfede8d86eb9e5d110ae2eb9379d591efa8d228c28072ce64943bfd1b5"
+    },
+    {
+      "path": "aiohttp/_cparser.pxd",
+      "wheel_path": "aiohttp/_cparser.pxd",
+      "size_bytes": 2729,
+      "sha256": "69cb3016cc16fd8415d8f7d577e94595cfd705e9b8f926fa5d18171e8a1c30ae"
+    },
+    {
+      "path": "aiohttp/_find_header.pxd",
+      "wheel_path": "aiohttp/_find_header.pxd",
+      "size_bytes": 68,
+      "sha256": "d067f01423cddb3c442933b5fcc039b18ab651fcec1bc91c577693aafc25cf78"
+    },
+    {
+      "path": "aiohttp/_headers.pxi",
+      "wheel_path": "aiohttp/_headers.pxi",
+      "size_bytes": 3460,
+      "sha256": "9fdc44f2ca263e0f6fb5e8909ac5372056183de08cfe5912e0445af512ea3e59"
+    },
+    {
+      "path": "aiohttp/_http_parser.cpython-310-x86_64-linux-gnu.so",
+      "wheel_path": "aiohttp/_http_parser.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 3175424,
+      "sha256": "27fa2196e9595ccceb62a22d3cabf1409620a1c1c0b9c433f286745100899fef"
+    },
+    {
+      "path": "aiohttp/_http_parser.pyx",
+      "wheel_path": "aiohttp/_http_parser.pyx",
+      "size_bytes": 37452,
+      "sha256": "6e63b556cc67300e6b21336f85c0d8d5210f714d459941d8725c850c35f82393"
+    },
+    {
+      "path": "aiohttp/_http_writer.cpython-310-x86_64-linux-gnu.so",
+      "wheel_path": "aiohttp/_http_writer.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 468160,
+      "sha256": "2ff71d4562005050e5e2de878f92b028e64c9afbab30813ea5a0a16c88972dd8"
+    },
+    {
+      "path": "aiohttp/_http_writer.pyx",
+      "wheel_path": "aiohttp/_http_writer.pyx",
+      "size_bytes": 4823,
+      "sha256": "16686a44bbfeab2bcbd8126f570935dbc545ab060c6f56f5bc72cf0adddac170"
+    },
+    {
+      "path": "aiohttp/_websocket/__init__.py",
+      "wheel_path": "aiohttp/_websocket/__init__.py",
+      "size_bytes": 44,
+      "sha256": "31aaf747dfef04dfc46b896c5bb8930155c3ece2acc0a3c6a85e71812cadefb9"
+    },
+    {
+      "path": "aiohttp/_websocket/helpers.py",
+      "wheel_path": "aiohttp/_websocket/helpers.py",
+      "size_bytes": 5026,
+      "sha256": "94c0dba6265e7e61d318dc63a5ee8ad3d665174e3c2b1cdc3af6e1f9962abe0d"
+    },
+    {
+      "path": "aiohttp/_websocket/mask.cpython-310-x86_64-linux-gnu.so",
+      "wheel_path": "aiohttp/_websocket/mask.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 215704,
+      "sha256": "ed8dc4b6a8bf5d4667bcd96e03070ae45b99c02bfbaa9bc23c3de61c0c1b8ce5"
+    },
+    {
+      "path": "aiohttp/_websocket/mask.pxd",
+      "wheel_path": "aiohttp/_websocket/mask.pxd",
+      "size_bytes": 112,
+      "sha256": "b01999d409b29bd916e067bc963d5f2d9ee63cfc9ae0bccb769910131417bf93"
+    },
+    {
+      "path": "aiohttp/_websocket/mask.pyx",
+      "wheel_path": "aiohttp/_websocket/mask.pyx",
+      "size_bytes": 1397,
+      "sha256": "0478ceb55d0ed30ef1a7da742cd003449bc69a07cf9fdb06789bd2b347cbfffe"
+    },
+    {
+      "path": "aiohttp/_websocket/models.py",
+      "wheel_path": "aiohttp/_websocket/models.py",
+      "size_bytes": 2952,
+      "sha256": "8092ec93191429a91816c54c76339c9528ede35ad059108be117d107fc26c0ed"
+    },
+    {
+      "path": "aiohttp/_websocket/reader.py",
+      "wheel_path": "aiohttp/_websocket/reader.py",
+      "size_bytes": 1030,
+      "sha256": "782e2a4b4739b0e790d9e6c01cb681a48693545692297efda58db1be1dcfab2c"
+    },
+    {
+      "path": "aiohttp/_websocket/reader_c.cpython-310-x86_64-linux-gnu.so",
+      "wheel_path": "aiohttp/_websocket/reader_c.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 1834576,
+      "sha256": "fbe6ce80b3cda604d354ef7dca0210cc156ebf3d36a26953c955625d0db15aa3"
+    },
+    {
+      "path": "aiohttp/_websocket/reader_c.pxd",
+      "wheel_path": "aiohttp/_websocket/reader_c.pxd",
+      "size_bytes": 3141,
+      "sha256": "b00a01c059e019742893b3120ef63d2c595c83735a42513bce7f75204dda205f"
+    },
+    {
+      "path": "aiohttp/_websocket/reader_py.py",
+      "wheel_path": "aiohttp/_websocket/reader_py.py",
+      "size_bytes": 26142,
+      "sha256": "8d1e9792c11de8d7aac6827b882451dedd54539b2f4f560dbbb5397ccdff530b"
+    },
+    {
+      "path": "aiohttp/_websocket/writer.py",
+      "wheel_path": "aiohttp/_websocket/writer.py",
+      "size_bytes": 11632,
+      "sha256": "c29ddc35b1de62e3a594c7827ff781806b0a3e6dcc63f0fbf686f1ef20f44484"
+    },
+    {
+      "path": "aiohttp/abc.py",
+      "wheel_path": "aiohttp/abc.py",
+      "size_bytes": 8455,
+      "sha256": "1218d92a687f41adcb0f694cd1412958e23fd114c15559ab510934edeec30c28"
+    },
+    {
+      "path": "aiohttp/base_protocol.py",
+      "wheel_path": "aiohttp/base_protocol.py",
+      "size_bytes": 5348,
+      "sha256": "88c31ec8c16e99dff3f101e2e38a813878af4879adf394ad89090b183a742c64"
+    },
+    {
+      "path": "aiohttp/client.py",
+      "wheel_path": "aiohttp/client.py",
+      "size_bytes": 67904,
+      "sha256": "61eaeff40f0294666a3438c751698b7777b301fe8d43fc569bfa9c9ec33f8787"
+    },
+    {
+      "path": "aiohttp/client_exceptions.py",
+      "wheel_path": "aiohttp/client_exceptions.py",
+      "size_bytes": 11725,
+      "sha256": "bd33e3aaef7306266efcdd78cf488ea7c20f999eb09dc4cc1229698ccd25c1e7"
+    },
+    {
+      "path": "aiohttp/client_middleware_digest_auth.py",
+      "wheel_path": "aiohttp/client_middleware_digest_auth.py",
+      "size_bytes": 19681,
+      "sha256": "a0d6d68f9b0182a420cd058fb7b65aae2cac62d858d7d1da8fa56c588cfe2496"
+    },
+    {
+      "path": "aiohttp/client_middlewares.py",
+      "wheel_path": "aiohttp/client_middlewares.py",
+      "size_bytes": 1918,
+      "sha256": "90fe4df4233340f3063c813275e55488b5132ecc3c565f06af8a8059876edef3"
+    },
+    {
+      "path": "aiohttp/client_proto.py",
+      "wheel_path": "aiohttp/client_proto.py",
+      "size_bytes": 14500,
+      "sha256": "e2245a9166011c6094248f8b2ac2f5f69eeed4e4a1827d0c17f123efeeb6b9df"
+    },
+    {
+      "path": "aiohttp/client_reqrep.py",
+      "wheel_path": "aiohttp/client_reqrep.py",
+      "size_bytes": 64244,
+      "sha256": "75153bcadc900440fad5607bae0b1852a736c17370505f52c9050cbdd39904ca"
+    },
+    {
+      "path": "aiohttp/client_ws.py",
+      "wheel_path": "aiohttp/client_ws.py",
+      "size_bytes": 20555,
+      "sha256": "35246f7732ab36b17713c1a82337ba8e20f83a1523f1c5988f828f073796a6fe"
+    },
+    {
+      "path": "aiohttp/compression_utils.py",
+      "wheel_path": "aiohttp/compression_utils.py",
+      "size_bytes": 18700,
+      "sha256": "cc1f2d52b2fabbbda34bce79f5edc6f0fa784036250d8fb7c5231bf08de0c3ff"
+    },
+    {
+      "path": "aiohttp/connector.py",
+      "wheel_path": "aiohttp/connector.py",
+      "size_bytes": 71806,
+      "sha256": "49cc264ebc7d8dcbbb9181ad65f19ee171fc56765eb195d270dafa53716055a1"
+    },
+    {
+      "path": "aiohttp/cookiejar.py",
+      "wheel_path": "aiohttp/cookiejar.py",
+      "size_bytes": 39806,
+      "sha256": "ed3a0ecc55983443adfc409020bd0fbf27f33c6d0d79f1da99358d3bf03877ea"
+    },
+    {
+      "path": "aiohttp/formdata.py",
+      "wheel_path": "aiohttp/formdata.py",
+      "size_bytes": 6514,
+      "sha256": "cd1596d8e0d891679a84339dfa1c2b6befff1148b3741d9b7fa8403209022a17"
+    },
+    {
+      "path": "aiohttp/hdrs.py",
+      "wheel_path": "aiohttp/hdrs.py",
+      "size_bytes": 8146,
+      "sha256": "e841e8cf3985671a53b28fe892ffb62c2ff5bf832ad3fa4f1fbadeaa8ad022e1"
+    },
+    {
+      "path": "aiohttp/helpers.py",
+      "wheel_path": "aiohttp/helpers.py",
+      "size_bytes": 33033,
+      "sha256": "587ef64942a5e4de725dc6ab95c91e39093312935bf7c0d619dc4517ba8c0448"
+    },
+    {
+      "path": "aiohttp/http.py",
+      "wheel_path": "aiohttp/http.py",
+      "size_bytes": 2077,
+      "sha256": "0875f116d3972bce513628d891fa63be309b2a525cde120646c08502787cde19"
+    },
+    {
+      "path": "aiohttp/http_exceptions.py",
+      "wheel_path": "aiohttp/http_exceptions.py",
+      "size_bytes": 3115,
+      "sha256": "2359f2a29b75b185741aaa56dab6b8a670a615c3aa3280c2e1d10b821124da52"
+    },
+    {
+      "path": "aiohttp/http_parser.py",
+      "wheel_path": "aiohttp/http_parser.py",
+      "size_bytes": 49843,
+      "sha256": "0f8ff5637605c4ec879330a9785744fc1d50e621e8c36d38d2539d3c0bf97da6"
+    },
+    {
+      "path": "aiohttp/http_websocket.py",
+      "wheel_path": "aiohttp/http_websocket.py",
+      "size_bytes": 983,
+      "sha256": "f2354db21b6034f4839da6f40dcd6500eec716fb53ef2efd7992a35175fa7b6f"
+    },
+    {
+      "path": "aiohttp/http_writer.py",
+      "wheel_path": "aiohttp/http_writer.py",
+      "size_bytes": 12834,
+      "sha256": "c465f010d23c01f118494f1c25d27fcd6ad991635ecb47c149797b5c1bed9e1f"
+    },
+    {
+      "path": "aiohttp/log.py",
+      "wheel_path": "aiohttp/log.py",
+      "size_bytes": 325,
+      "sha256": "05b34ac7d7b754c226d31623648d087010684bbc2375e21e49a88913bfaa2b68"
+    },
+    {
+      "path": "aiohttp/multipart.py",
+      "wheel_path": "aiohttp/multipart.py",
+      "size_bytes": 46536,
+      "sha256": "c1436dbf370e052bdf3b28481d841dcab9e8dbf0db9bfee8599a33dd1d788234"
+    },
+    {
+      "path": "aiohttp/payload.py",
+      "wheel_path": "aiohttp/payload.py",
+      "size_bytes": 41608,
+      "sha256": "e7319cd9fb13c9b451818f3ec8850f3a3b95161bcdfb05e33edb2268fb4bfd25"
+    },
+    {
+      "path": "aiohttp/payload_streamer.py",
+      "wheel_path": "aiohttp/payload_streamer.py",
+      "size_bytes": 2225,
+      "sha256": "3c6a892adff571affb8baa7552053c8eba4ed6da0eb791100d030e2bd2e3b55e"
+    },
+    {
+      "path": "aiohttp/py.typed",
+      "wheel_path": "aiohttp/py.typed",
+      "size_bytes": 7,
+      "sha256": "b28c3db284f03fd4ff80401049587b19bf3ce79874e0dc2686cd967be2518193"
+    },
+    {
+      "path": "aiohttp/pytest_plugin.py",
+      "wheel_path": "aiohttp/pytest_plugin.py",
+      "size_bytes": 12976,
+      "sha256": "786851a32d1328d390de6b5a6e4a68320b74253867543af8d3a87f93266441ef"
+    },
+    {
+      "path": "aiohttp/resolver.py",
+      "wheel_path": "aiohttp/resolver.py",
+      "size_bytes": 10875,
+      "sha256": "898d0e938b565b961ba460a6faef1de47aa616234c9925fd182b9689e7ef0060"
+    },
+    {
+      "path": "aiohttp/streams.py",
+      "wheel_path": "aiohttp/streams.py",
+      "size_bytes": 24745,
+      "sha256": "14c7f018cea18a4b83bc0336a07c16e5d3e4b07479a6192893c9b3bddf43ecb7"
+    },
+    {
+      "path": "aiohttp/tcp_helpers.py",
+      "wheel_path": "aiohttp/tcp_helpers.py",
+      "size_bytes": 961,
+      "sha256": "05269da9559a0693050d15a785a691f78d4df4c88367b6dd4ebc6009bd025be3"
+    },
+    {
+      "path": "aiohttp/test_utils.py",
+      "wheel_path": "aiohttp/test_utils.py",
+      "size_bytes": 24773,
+      "sha256": "2d44fcf9eb425841cc9c8aba4200e69573e09280bfcd34d9e32669d8e6cf3d98"
+    },
+    {
+      "path": "aiohttp/tracing.py",
+      "wheel_path": "aiohttp/tracing.py",
+      "size_bytes": 14500,
+      "sha256": "e26a2435329d5f962ea12aef5671b80fb5933ccc1ef949581d563142346fe05c"
+    },
+    {
+      "path": "aiohttp/typedefs.py",
+      "wheel_path": "aiohttp/typedefs.py",
+      "size_bytes": 1672,
+      "sha256": "23e57a4b84fbddf23fc2425f05888bee8b44791bd51e649db24f9860f47a163d"
+    },
+    {
+      "path": "aiohttp/web.py",
+      "wheel_path": "aiohttp/web.py",
+      "size_bytes": 18426,
+      "sha256": "82ccb14523d65778998cf51b391ddd206729d639b696d06d5f090f87dd5ca374"
+    },
+    {
+      "path": "aiohttp/web_app.py",
+      "wheel_path": "aiohttp/web_app.py",
+      "size_bytes": 19559,
+      "sha256": "d644c9e91255c66ed236f54e08f2d629afa63f972c64b004415df31c30b5aa13"
+    },
+    {
+      "path": "aiohttp/web_exceptions.py",
+      "wheel_path": "aiohttp/web_exceptions.py",
+      "size_bytes": 10354,
+      "sha256": "0ac106f3c75020d612169925084ffb6d980bd485631e8cb97654d25501873d14"
+    },
+    {
+      "path": "aiohttp/web_fileresponse.py",
+      "wheel_path": "aiohttp/web_fileresponse.py",
+      "size_bytes": 16404,
+      "sha256": "e6f95ff8e99f805c46e4ed731abce4f923d191bb39f22ccb95b425753f831d71"
+    },
+    {
+      "path": "aiohttp/web_log.py",
+      "wheel_path": "aiohttp/web_log.py",
+      "size_bytes": 8487,
+      "sha256": "949083b19db1269ec7a92ba28da4d9caac49d283563e1c31244d45546516c165"
+    },
+    {
+      "path": "aiohttp/web_middlewares.py",
+      "wheel_path": "aiohttp/web_middlewares.py",
+      "size_bytes": 4152,
+      "sha256": "3887e79c21c98119ca8f30e31e873f57335c2ee55ff72f24bf9693cccd951af7"
+    },
+    {
+      "path": "aiohttp/web_protocol.py",
+      "wheel_path": "aiohttp/web_protocol.py",
+      "size_bytes": 33219,
+      "sha256": "64a27fa5d0ae7906d705dd95318601a59908f74b2594d99d5c4ae5bf72e28f80"
+    },
+    {
+      "path": "aiohttp/web_request.py",
+      "wheel_path": "aiohttp/web_request.py",
+      "size_bytes": 35422,
+      "sha256": "00f9eddf058f708617a0bc3456b548124f8d57b99c6ab7c5aa162267f942713d"
+    },
+    {
+      "path": "aiohttp/web_response.py",
+      "wheel_path": "aiohttp/web_response.py",
+      "size_bytes": 30925,
+      "sha256": "78aa643c57d0c94b7f41b5e8b4d2e68f63aaae80d02fb2dd01278384eaf92e74"
+    },
+    {
+      "path": "aiohttp/web_routedef.py",
+      "wheel_path": "aiohttp/web_routedef.py",
+      "size_bytes": 6077,
+      "sha256": "558018c3caf0892a7008b8a081c3995e4063ccf37204ae151e6e209fc97d4076"
+    },
+    {
+      "path": "aiohttp/web_runner.py",
+      "wheel_path": "aiohttp/web_runner.py",
+      "size_bytes": 12708,
+      "sha256": "3c651d66cfdddaacccdd39dbeb2090428c5fc2a41916e56bfcd18824166af4cb"
+    },
+    {
+      "path": "aiohttp/web_server.py",
+      "wheel_path": "aiohttp/web_server.py",
+      "size_bytes": 3170,
+      "sha256": "2dac13e3b489b8b48862090058bfe1685807ea5572ba80f7cf2153bc16adbec1"
+    },
+    {
+      "path": "aiohttp/web_urldispatcher.py",
+      "wheel_path": "aiohttp/web_urldispatcher.py",
+      "size_bytes": 44297,
+      "sha256": "f92c5f98875c2161514e2ab6ccecf148321dd720726c10f3eae5f1b496b79a62"
+    },
+    {
+      "path": "aiohttp/web_ws.py",
+      "wheel_path": "aiohttp/web_ws.py",
+      "size_bytes": 28358,
+      "sha256": "b75db90128267f0a01331859c68fde05e71314c4dde2d48ba4435e39fd010f35"
+    },
+    {
+      "path": "aiohttp/worker.py",
+      "wheel_path": "aiohttp/worker.py",
+      "size_bytes": 9146,
+      "sha256": "60ac0e0164f6178c892f6b10a2da9dd376c6b7534411d35b78bf0b5afde20a10"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "aiohttp-3.14.5.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/_cookie_helpers.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/abc.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/base_protocol.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/client.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/client_exceptions.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/client_middleware_digest_auth.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/client_middlewares.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/client_proto.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/client_reqrep.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/client_ws.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/compression_utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/connector.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/cookiejar.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/formdata.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/hdrs.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/helpers.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/http.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/http_exceptions.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/http_parser.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/http_websocket.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/http_writer.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/log.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/multipart.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/payload.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/payload_streamer.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/pytest_plugin.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/resolver.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/streams.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/tcp_helpers.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/test_utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/tracing.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/typedefs.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/web.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/web_app.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/web_exceptions.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/web_fileresponse.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/web_log.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/web_middlewares.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/web_protocol.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/web_request.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/web_response.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/web_routedef.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/web_runner.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/web_server.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/web_urldispatcher.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/web_ws.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/__pycache__/worker.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/_websocket/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/_websocket/__pycache__/helpers.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/_websocket/__pycache__/models.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/_websocket/__pycache__/reader.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/_websocket/__pycache__/reader_py.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "aiohttp/_websocket/__pycache__/writer.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "365f4153d40f721a744208001bca6a7fef5170d590a1da731f5e1316492f427b",
+  "wheel_size_bytes": 2089147,
+  "rebuilt_record_verified_files": 72,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:17.601693+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 72,
+  "source_record_verified_file_count": 73
+}

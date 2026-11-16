@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "scope": "configuration, source availability and dataset contract only",
+  "contract_hash": "cb354f8197dfbbbcc8d92ba0c4bbb62c53512326c298e1d8bd2cd5cc3bc302d6",
+  "model_type": "wall_rlt",
+  "model_initialization": "new_transfer",
+  "train_episodes": 245,
+  "dev_episodes": 49,
+  "expected_world_size": 2,
+  "allocated_gpus": null,
+  "eval_max_samples": 64,
+  "eval_scope": "fixed uniform dev smoke subset",
+  "weights_constructed": false,
+  "ray_started": false,
+  "gpu_training": "NOT_RUN",
+  "wall_source": {
+    "source": "/home/pangk/workspaces/WALL-OSS-CRP/.cache/rlt-training-portability-20261029-v1/.cache/wall-x-rlt/wall_x/model/qact/qwen2_5/modeling_qwen2_5_vl_act.py",
+    "sha256": "19105305fe0c040f593f5bb80e00498d2a9e1f5c5664f06dd9ccddc1f933c437",
+    "interface": "Qwen2_5_VLMoEForAction.train_step_forward(return_rlt_prefix, flow_loss_only)",
+    "scope": "static interface check; numerical model verification is separate"
+  },
+  "builder": {
+    "model_type": "wall_rlt",
+    "initialization": "new_transfer",
+    "rlt": {
+      "input_dim": 2048,
+      "embed_dim": 2048,
+      "prefix_seq_len": 1024,
+      "num_layers": 2,
+      "num_heads": 8,
+      "mlp_ratio": 4.0,
+      "dropout_rate": 0.0,
+      "rlt_alpha": 1.0,
+      "action_horizon": 32,
+      "model_action_dim": 26,
+      "action_token_id": 151666,
+      "checkpoint_path": "/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5",
+      "data_contract_path": "/home/pangk/workspaces/WALL-OSS-CRP/.cache/rlt-training-portability-20261029-v1/configs/rlt/top_error_ar5_joint_next_v1.json",
+      "wall_train_config": "/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/config.yml",
+      "schema_version": 1
+    },
+    "processor_path": "/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5",
+    "contract_hash": "cb354f8197dfbbbcc8d92ba0c4bbb62c53512326c298e1d8bd2cd5cc3bc302d6",
+    "model_adapter": "ar5_joint8_reinit_v1",
+    "initialization_seed": 0,
+    "wall_attention": "sdpa",
+    "vision_attention": "flash_attention_2",
+    "master_parameter_dtype": "float32",
+    "rlt_dtype": "float32",
+    "requires_checkpoint_restore": false,
+    "weights_loaded": false
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "data_origin": "synthetic",
+  "implementation": "pinned RLinf RLTMLPPolicy + RLTACLossMixin",
+  "actor_updates": 1,
+  "critic_updates": 1,
+  "actor_loss": -0.2782335579395294,
+  "critic_loss": 0.34519585967063904,
+  "bc_loss": 3.123008718830533e-05,
+  "feature_tensors_unchanged": true,
+  "target_network_unchanged": true,
+  "entropy_alpha_updates": 0,
+  "trained_WALL_encoder_used": false,
+  "real_replay_or_online_learning": "NOT_RUN"
+}

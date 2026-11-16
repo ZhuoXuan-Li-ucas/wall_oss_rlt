@@ -1,0 +1,77 @@
+Authentication: 
+Hit:1 http://packages.ros.org/ros2/ubuntu jammy InRelease
+Hit:2 https://downloads.cursor.com/aptrepo stable InRelease
+Hit:3 https://packages.microsoft.com/repos/edge-stable stable InRelease
+Ign:4 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble InRelease
+Hit:5 https://packages.microsoft.com/repos/code stable InRelease
+Hit:6 https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu noble InRelease
+Ign:7 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-updates InRelease
+Ign:8 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-backports InRelease
+Ign:9 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-security InRelease
+Ign:4 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble InRelease
+Ign:7 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-updates InRelease
+Ign:8 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-backports InRelease
+Ign:9 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-security InRelease
+Ign:4 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble InRelease
+Ign:7 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-updates InRelease
+Ign:8 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-backports InRelease
+Ign:9 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-security InRelease
+Err:4 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble InRelease
+  Could not handshake: The TLS connection was non-properly terminated. [IP: 28.0.0.32 443]
+Err:7 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-updates InRelease
+  Could not handshake: The TLS connection was non-properly terminated. [IP: 28.0.0.32 443]
+Err:8 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-backports InRelease
+  Could not handshake: The TLS connection was non-properly terminated. [IP: 28.0.0.32 443]
+Err:9 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-security InRelease
+  Could not handshake: The TLS connection was non-properly terminated. [IP: 28.0.0.32 443]
+Reading package lists...
+W: Failed to fetch https://mirrors.tuna.tsinghua.edu.cn/ubuntu/dists/noble/InRelease  Could not handshake: The TLS connection was non-properly terminated. [IP: 28.0.0.32 443]
+W: Failed to fetch https://mirrors.tuna.tsinghua.edu.cn/ubuntu/dists/noble-updates/InRelease  Could not handshake: The TLS connection was non-properly terminated. [IP: 28.0.0.32 443]
+W: Failed to fetch https://mirrors.tuna.tsinghua.edu.cn/ubuntu/dists/noble-backports/InRelease  Could not handshake: The TLS connection was non-properly terminated. [IP: 28.0.0.32 443]
+W: Failed to fetch https://mirrors.tuna.tsinghua.edu.cn/ubuntu/dists/noble-security/InRelease  Could not handshake: The TLS connection was non-properly terminated. [IP: 28.0.0.32 443]
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ca-certificates is already the newest version (20260816ubuntu0.24.04.1).
+ca-certificates set to manually installed.
+curl is already the newest version (8.5.0-2ubuntu10.16).
+gnupg is already the newest version (2.4.4-2ubuntu17.6).
+The following packages were automatically installed and are no longer required:
+  clang-tidy-14 clang-tools-14
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 386 not upgraded.
+Hit:1 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble InRelease
+Hit:2 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-updates InRelease
+Hit:3 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-backports InRelease
+Hit:4 https://downloads.cursor.com/aptrepo stable InRelease
+Hit:5 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-security InRelease
+Hit:6 https://packages.microsoft.com/repos/edge-stable stable InRelease
+Hit:7 https://packages.microsoft.com/repos/code stable InRelease
+Hit:8 http://packages.ros.org/ros2/ubuntu jammy InRelease
+Hit:9 https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu noble InRelease
+Get:10 https://download.docker.com/linux/ubuntu noble InRelease [48.5 kB]
+Get:11 https://download.docker.com/linux/ubuntu noble/stable amd64 Packages [72.1 kB]
+Fetched 121 kB in 7s (17.7 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  clang-tidy-14 clang-tools-14
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  docker-ce-rootless-extras pigz
+Suggested packages:
+  cgroupfs-mount | cgroup-lite docker-model-plugin
+The following NEW packages will be installed:
+  containerd.io docker-buildx-plugin docker-ce docker-ce-cli
+  docker-ce-rootless-extras docker-compose-plugin pigz
+0 upgraded, 7 newly installed, 0 to remove and 386 not upgraded.
+Need to get 102 MB of archives.
+After this operation, 388 MB of additional disk space will be used.
+Err:1 https://mirrors.tuna.tsinghua.edu.cn/ubuntu noble/universe amd64 pigz amd64 2.8-1
+  403  Forbidden [IP: 28.0.0.32 443]
+Get:2 https://download.docker.com/linux/ubuntu noble/stable amd64 containerd.io amd64 2.4.2-3~ubuntu.24.04~noble [23.3 MB]
+Ign:2 https://download.docker.com/linux/ubuntu noble/stable amd64 containerd.io amd64 2.4.2-3~ubuntu.24.04~noble
+Get:3 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-ce-cli amd64 5:29.9.2-1~ubuntu.24.04~noble [17.6 MB]

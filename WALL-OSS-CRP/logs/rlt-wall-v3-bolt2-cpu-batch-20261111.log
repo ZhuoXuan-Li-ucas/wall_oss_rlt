@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "scope": "CPU recorded data and official WALL processor; no model weights/forward",
+  "contract_hash": "923edc00d3902c1b63d46196e03baf31b72e17f1a1c22770ed171f953a0d8dbd",
+  "episodes": 97,
+  "usable_observations": 55509,
+  "dropped_final_observations": 97,
+  "split_counts": {
+    "train": 93,
+    "dev": 2,
+    "test": 2
+  },
+  "excluded_groups": [],
+  "checks": [
+    "all NPZ hashes and target dimensions",
+    "per-episode next-frame alignment",
+    "representative first/tail RGB seek in each task",
+    "official WALL preprocessing",
+    "tail time/dimension masks",
+    "constant-joint finite normalization",
+    "invalid targets do not alter batch",
+    "collator RNG restore",
+    "action targets do not alter observation prompt"
+  ],
+  "samples": [
+    {
+      "group": "bolt2",
+      "episode": "bolt2/episode_0000.npz",
+      "checked_frame_indices": [
+        0,
+        515
+      ],
+      "rgb_shapes": {
+        "cam_high": [
+          3,
+          480,
+          640
+        ],
+        "cam_front": [
+          3,
+          480,
+          640
+        ]
+      },
+      "action_shape": [
+        2,
+        32,
+        26
+      ],
+      "prefix_lengths": [
+        482,
+        478
+      ],
+      "valid_actions": [
+        32.0,
+        1.0
+      ]
+    }
+  ],
+  "model_training": "NOT_RUN",
+  "robot_inference": "DEFERRED"
+}

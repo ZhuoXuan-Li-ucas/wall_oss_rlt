@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "scope": "isolated fixture bundle validation; no real Docker/model/data accessed",
+  "cases": [
+    {
+      "case": "complete-transfer",
+      "status": "PASS"
+    },
+    {
+      "case": "complete-assets",
+      "status": "PASS"
+    },
+    {
+      "case": "empty-manifest",
+      "status": "PASS",
+      "rejection": "SHA256SUMS must not be empty"
+    },
+    {
+      "case": "subset-with-unlisted-file",
+      "status": "PASS",
+      "rejection": "Manifest differs from directory: missing=[], unlisted=['extra-audit.txt']"
+    },
+    {
+      "case": "missing-required-file-even-with-rebound-marker",
+      "status": "PASS",
+      "rejection": "Bundle is missing its required file set"
+    },
+    {
+      "case": "duplicate",
+      "status": "PASS",
+      "rejection": "Duplicate or reserved manifest path: OFFLINE-DEPLOY.md"
+    },
+    {
+      "case": "escape",
+      "status": "PASS",
+      "rejection": "Unsafe or nonportable bundle path: '../outside'"
+    },
+    {
+      "case": "absolute",
+      "status": "PASS",
+      "rejection": "Unsafe or nonportable bundle path: '/tmp/outside'"
+    },
+    {
+      "case": "windows-path",
+      "status": "PASS",
+      "rejection": "Unsafe or nonportable bundle path: 'reports\\\\escape.txt'"
+    },
+    {
+      "case": "self-reference",
+      "status": "PASS",
+      "rejection": "Duplicate or reserved manifest path: SHA256SUMS"
+    },
+    {
+      "case": "payload-tamper",
+      "status": "PASS",
+      "rejection": "Checksum mismatch: models.tar.gz"
+    },
+    {
+      "case": "missing-marker",
+      "status": "PASS",
+      "rejection": "[Errno 2] No such file or directory: '/tmp/walloss-bundle-test-wk8kmvi5/missing-marker/BUNDLE_READY.json'"
+    },
+    {
+      "case": "partial-file",
+      "status": "PASS",
+      "rejection": "Incomplete temporary file remains: copy.partial"
+    },
+    {
+      "case": "symlink-directory",
+      "status": "PASS",
+      "rejection": "Symlink is not allowed in a portable bundle: escape-link"
+    },
+    {
+      "case": "case-collision",
+      "status": "PASS",
+      "rejection": "Case-insensitive duplicate bundle path: EXTRA-AUDIT.TXT"
+    },
+    {
+      "case": "interrupt-before-manifest",
+      "status": "PASS",
+      "rejection": "Incomplete temporary file remains: SHA256SUMS.partial"
+    },
+    {
+      "case": "interrupt-before-ready",
+      "status": "PASS",
+      "rejection": "Incomplete temporary file remains: BUNDLE_READY.json.partial"
+    },
+    {
+      "case": "h100-rejects-empty-before-docker-or-extraction",
+      "status": "PASS",
+      "stderr": "Bundle verification failed: SHA256SUMS must not be empty"
+    }
+  ],
+  "powershell_execution": "NOT_RUN: neither pwsh nor powershell installed"
+}

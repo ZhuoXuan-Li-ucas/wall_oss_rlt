@@ -1,0 +1,60 @@
+# Candidate environment: requires build and GPU validation before docker save.
+# Build context is the project root; Dockerfile.h100.dockerignore is mandatory.
+ARG CUDA_BASE=nvidia/cuda:12.8.1-devel-ubuntu22.04
+FROM ${CUDA_BASE} AS system
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+ENV DEBIAN_FRONTEND=noninteractive
+WORKDIR /opt/walloss
+# The official devel base already supplies GCC/G++/make and CUDA headers.
+# This clean, relocated Python prefix is built from cached Conda base packages.
+RUN --mount=type=bind,from=wall_python,target=/bootstrap \
+    cd /bootstrap && sha256sum -c SHA256SUMS \
+    && mkdir -p /opt/walloss/env \
+    && tar -xzf python310-bootstrap.tar.gz -C /opt/walloss/env \
+    && mkdir -p /opt/walloss/build-record/python-bootstrap \
+    && cp SHA256SUMS *.json /opt/walloss/build-record/python-bootstrap/ \
+    && /opt/walloss/env/bin/python -c "import sys; assert sys.prefix == '/opt/walloss/env'; print(sys.version)"
+FROM system AS runtime
+ENV PATH="/opt/walloss/env/bin:${PATH}" \
+    PYTHONNOUSERSITE=1 PIP_DISABLE_PIP_VERSION_CHECK=1 \
+    PIP_RETRIES=10 PIP_TIMEOUT=60 PIP_RESUME_RETRIES=10 \
+    CUDA_HOME=/usr/local/cuda MAX_JOBS=1 NVCC_THREADS=1 \
+    TORCH_CUDA_ARCH_LIST="8.6;9.0" FLASH_ATTN_CUDA_ARCHS="80;90"
+COPY docker/runtime-pins.txt /opt/walloss/docker/runtime-pins.txt
+RUN --mount=type=bind,from=wall_wheels,target=/wheels \
+    cd /wheels && sha256sum -c SHA256SUMS \
+    && mkdir -p /opt/walloss/build-record \
+    && cp SHA256SUMS REPACKED-SOURCES.json RUNTIME-SOURCES.json OFFICIAL-GPU-SOURCES.json /opt/walloss/build-record/ \
+    && python -m pip install --no-cache-dir --no-index --find-links=/wheels \
+       'pip==26.1.2' 'setuptools==80.9.0' 'wheel==0.48.0'
+RUN --mount=type=bind,from=wall_wheels,target=/wheels \
+    python -m pip install --no-cache-dir --no-index --find-links=/wheels \
+       torch==2.10.0+cu128 torchvision==0.25.0+cu128 torchaudio==2.10.0+cu128 \
+       -r docker/runtime-pins.txt
+COPY .cache/flash-attn-2.8.3 /opt/flash-attn-src
+# Keep completed compiler outputs across an interrupted build. This cache is
+# specific to the source/toolchain/architectures and is not part of the image.
+RUN --mount=type=cache,id=walloss-fa283-py310-torch210-cu128-sm80sm90,target=/opt/flash-attn-src/build,sharing=locked \
+    FLASH_ATTENTION_FORCE_BUILD=TRUE python -m pip install -v --no-cache-dir --no-index --no-deps --no-build-isolation /opt/flash-attn-src
+COPY wall-x /opt/walloss/wall-x
+COPY lerobot /opt/walloss/lerobot
+COPY dmuon /opt/walloss/dmuon
+RUN DMUON_BUILD_FAST_CLIP=0 python -m pip install --no-deps --no-build-isolation ./dmuon \
+    && python -m pip install --no-deps --no-build-isolation ./lerobot \
+    && python -m pip install --no-deps --no-build-isolation ./wall-x \
+    && rm -rf dmuon/build lerobot/build wall-x/build
+COPY scripts/verify_setup.py scripts/download_models.py /opt/walloss/scripts/
+COPY metadata /opt/walloss/metadata
+COPY model_files.manifest.json sources.lock.json /opt/walloss/
+COPY docker/check_dependencies.py docker/expected-pip-check.txt docker/verify_dataset.py docker/verify_full_model.py /opt/walloss/docker/
+RUN mkdir -p /opt/walloss/build-record \
+    && python -m pip freeze --all > /opt/walloss/build-record/environment.freeze.txt \
+    && python docker/check_dependencies.py --output /opt/walloss/build-record/dependencies.json \
+    && python -c "import torch; assert torch.version.cuda == '12.8'; import flash_attn, wall_x, lerobot, dmuon"
+ENV HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_DATASETS_OFFLINE=1 \
+    HF_HOME=/tmp/walloss-hf XDG_CACHE_HOME=/tmp/walloss-cache \
+    NUMBA_CACHE_DIR=/tmp/walloss-numba TORCH_HOME=/tmp/walloss-torch \
+    MPLCONFIGDIR=/tmp/walloss-matplotlib NVIDIA_DRIVER_CAPABILITIES=compute,utility
+LABEL org.opencontainers.image.title="WALL-OSS-CRP H100 validation candidate" \
+    walloss.scope="component and dataset validation; RLinf and training not yet integrated"
+CMD ["bash"]

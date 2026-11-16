@@ -1,0 +1,45 @@
+{
+  "checked_at_utc": "2026-10-31T01:43:05.350558+00:00",
+  "status": "DOCUMENT_COMMAND_CHECKS_PASS",
+  "scope": "Bash syntax, inline Python syntax, local CLI help and packaged-source match; no installation, Docker build, GPU or model execution",
+  "syntax": {
+    "WALL_RLT_5070Ti_Official_WALL_Runbook.md": {
+      "bash_blocks": 20,
+      "python_heredocs": 2,
+      "status": "SYNTAX_PASS"
+    },
+    "WALL_RLT_Inference_Deployment.md": {
+      "bash_blocks": 17,
+      "python_heredocs": 2,
+      "status": "SYNTAX_PASS"
+    }
+  },
+  "cli_help_pass": 7,
+  "local_links": [
+    "PROJECT_STATUS.md",
+    "WALL_RLT_Inference_Deployment.md"
+  ],
+  "entrypoint_documents": [
+    "WALL_RLT_Inference_Deployment.md",
+    "PROJECT_STATUS.md",
+    "README.md"
+  ],
+  "packaged_sources_unchanged": [
+    "docker/Dockerfile.inference5070",
+    "docker/build_inference5070.sh",
+    "docker/verify_full_model.py",
+    "docker/verify_native_architectures.py",
+    "scripts/check_wall_rlt_inference_host.py"
+  ],
+  "document_sha256": {
+    "WALL_RLT_5070Ti_Official_WALL_Runbook.md": "ac550a543f0bb5e76e35dbeb2015b14a92fbb5362dac1d4ddb60bdd5c8ff6db6",
+    "WALL_RLT_Inference_Deployment.md": "a59e3c84c56781a5ab71d1a520968faff58cb7a88febc7f5a935e59c0f503067",
+    "PROJECT_STATUS.md": "9d0ec7fe6481d33c71fd537a8a61a4ea7a7ea67124254509591de085bc5eaf38",
+    "README.md": "9e143074eb0abeefdd873dce93286a5dc070cc4dd2ae52e2dadafb968e5d28fe"
+  },
+  "portable_disk_visible": false,
+  "copied_to_portable_disk": false,
+  "target_gpu_validation": "NOT_RUN",
+  "cpu_test_suite_rerun": false,
+  "packages_rebuilt": false
+}

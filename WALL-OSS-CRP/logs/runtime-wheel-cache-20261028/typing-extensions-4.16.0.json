@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "package": "typing_extensions",
+  "version": "4.16.0",
+  "filename": "typing_extensions-4.16.0-py3-none-any.whl",
+  "wheel_sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+  "wheel_size_bytes": 45571,
+  "wheel_tags": [
+    "py3-none-any"
+  ],
+  "source": {
+    "kind": "pip cache original wheel archive",
+    "path": "/home/pangk/.cache/pip/http-v2/5/d/e/7/4/5de74aa606aaf8588141cbe765382839ecb0982f091a947770ca6fa8.body"
+  },
+  "record_verified_files": [
+    {
+      "path": "typing_extensions.py",
+      "size_bytes": 165012,
+      "sha256": "4040ca1a1ecbee00d1385c12a93084d1c5bd46f0b774f07e5ae7e91c4f55e696"
+    },
+    {
+      "path": "typing_extensions-4.16.0.dist-info/licenses/LICENSE",
+      "size_bytes": 13936,
+      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+    },
+    {
+      "path": "typing_extensions-4.16.0.dist-info/WHEEL",
+      "size_bytes": 82,
+      "sha256": "1b68144734c4b66791f27add5d425f3620775585718a03d0f9b110ba3a4d88db"
+    },
+    {
+      "path": "typing_extensions-4.16.0.dist-info/METADATA",
+      "size_bytes": 3310,
+      "sha256": "b05084ca1d50879865178d9fff9fabeab61bdfb1f361bfbde95421ffc8f9be46"
+    }
+  ],
+  "excluded_installation_files": [],
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:22.367012+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 4,
+  "source_record_verified_file_count": 4
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "official_manifest": "sha256:6617a625f4090c76c545a0e7d63f2e441718ef9af7f4efe7dd1242a29e289fd7",
+  "official_config": "sha256:892341855b05029f404cd7e242fa46bb6116b511ef2ac42fe2487e267d27f7b4",
+  "docker_image_id": "sha256:6617a625f4090c76c545a0e7d63f2e441718ef9af7f4efe7dd1242a29e289fd7",
+  "rootfs_diff_ids_match": true,
+  "compiler": "CUDA 12.8.93",
+  "gpu_passthrough": "PASS",
+  "evidence": "logs/cuda-base-fetch-20261028/base-tools.log"
+}

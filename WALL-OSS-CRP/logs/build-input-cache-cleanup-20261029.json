@@ -1,0 +1,21 @@
+{
+  "checked_at_utc": "2026-10-29T05:52:13.197133+00:00",
+  "reason": "Docker image unpack consumed ordinary-user free space; dataset disk-space preflight failed after GPU setup PASS.",
+  "operation": "docker buildx prune --force --filter id=gr9locm6pqyhaksphubtmh2d8 --filter type=source.local",
+  "record_before": {
+    "id": "gr9locm6pqyhaksphubtmh2d8",
+    "description": "local source for wall_wheels",
+    "type": "source.local",
+    "reclaimable": true,
+    "shared": false,
+    "reported_size": "4.595GB"
+  },
+  "exit_code": 0,
+  "reclaimed_reported": "4.595GB",
+  "available_bytes_after": 2169389056,
+  "free_bytes_including_reserved": 29029974016,
+  "original_wheelhouse": "/media/pangk/My Passport/WALL-OSS-CRP-build-cache-20261028/wheelhouse",
+  "source_image_id": "sha256:8f067a0eb220228f444811532cc8ec0a328e4d46b7983637c1c4ea7743ef9ee8",
+  "temporary_swap_removed": true,
+  "next_action": "Revalidate the exact existing image without rebuilding or recreating the named input cache."
+}

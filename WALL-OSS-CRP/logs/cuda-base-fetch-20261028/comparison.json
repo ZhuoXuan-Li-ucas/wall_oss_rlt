@@ -1,0 +1,36 @@
+{
+  "checked_utc": "2026-10-28T08:46:45.821861+00:00",
+  "docker_image": "docker.io/nvidia/cuda:12.8.1-devel-ubuntu22.04",
+  "ngc_image": "nvcr.io/nvidia/cuda:12.8.1-devel-ubuntu22.04",
+  "amd64_manifest_digest": "sha256:6617a625f4090c76c545a0e7d63f2e441718ef9af7f4efe7dd1242a29e289fd7",
+  "same_amd64_manifest": true,
+  "same_manifest_bytes": true,
+  "docker_proxy_single_bytes_per_second": 27088.0,
+  "docker_proxy_4_parallel_bytes_per_second": 31274.14095865152,
+  "observed_parallel_speedup": 1.1545385764416538,
+  "ngc_single_results": [
+    {
+      "mode": "proxy",
+      "curl_rc": 0,
+      "http_status": 206,
+      "bytes": 131072,
+      "seconds": 7.040353,
+      "bytes_per_second": 18617.0,
+      "content_range": "bytes 0-131071/2989040412",
+      "body_sha256": "fd6c49c74c4f205823d21cfbb2c2748ae4072f5c9a7007c6ea95f881f4866661"
+    },
+    {
+      "mode": "direct",
+      "curl_rc": 0,
+      "http_status": 206,
+      "bytes": 131072,
+      "seconds": 5.917962,
+      "bytes_per_second": 22148.0,
+      "content_range": "bytes 0-131071/2989040412",
+      "body_sha256": "fd6c49c74c4f205823d21cfbb2c2748ae4072f5c9a7007c6ea95f881f4866661"
+    }
+  ],
+  "scope": "Small Range requests only; no full-layer download, system configuration change, active Docker build change, or persistence of tokens/signed URLs.",
+  "assessment": "All Range probes succeeded with HTTP 206 and matching Content-Range. Four Docker proxy connections provided only about 1.15x aggregate improvement in this short sample. NGC serves exactly the same amd64 manifest, but its measured single-connection rates were lower than Docker proxy in this sample. These short samples do not establish a durable bandwidth cap or justify a custom OCI multi-range downloader as a significant speedup.",
+  "network_caveat": "Earlier direct probes only disabled the explicit HTTP proxy; system Mihomo TUN may still intercept that traffic. Physical-interface probes additionally bind wlx6c1ff780c0b6 and resolve official CDN names to real public DNS IPv4 addresses."
+}

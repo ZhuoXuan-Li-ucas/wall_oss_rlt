@@ -1,0 +1,6 @@
+Authentication: 
+cp: warning: behavior of -n is non-portable and may change in future; use --update=none instead
+cp: cannot stat '/proc/236055/root/var/cache/apt/archives/*.deb': No such file or directory
+cp: cannot stat '/proc/236055/root/var/lib/apt/lists/*Packages*': No such file or directory
+cp: cannot stat '/proc/236055/root/var/lib/apt/lists/*InRelease': No such file or directory
+chroot: cannot change root directory to '/proc/236055/root': No such file or directory

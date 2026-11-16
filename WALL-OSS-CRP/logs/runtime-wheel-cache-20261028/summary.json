@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "expected_packages": 105,
+  "verified_packages": 105,
+  "failed_packages": [],
+  "wheel_bytes": 381585098,
+  "updated_at_utc": "2026-10-28T09:17:22.586211+00:00",
+  "final_sha256_recheck": "PASS: 105 wheels",
+  "pip_offline_selection": "PASS: 105 exact versions; dry-run/no-deps/ignore-installed/no-index",
+  "pip_dry_run_report": "logs/runtime-wheel-cache-20261028/pip-dry-run.json",
+  "scope_note": "Cache integrity and offline wheel selection only; Docker execution and full dependency resolution are separate checks."
+}

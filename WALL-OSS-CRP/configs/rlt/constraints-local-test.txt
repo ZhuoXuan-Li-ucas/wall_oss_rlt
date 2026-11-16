@@ -1,0 +1,7 @@
+# Local test host only; these CUDA wheels are NOT H100 deployment pins.
+torch==2.10.0+cu130
+transformers==5.2.0
+numpy==1.26.4
+huggingface-hub==1.33.0
+packaging==25.0
+virtualenv==21.12.0

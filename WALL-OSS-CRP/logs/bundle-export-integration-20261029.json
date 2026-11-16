@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "scope": "isolated export shell with fake Docker, fixture identity helper and tiny fixture assets; no real image/model/data accessed",
+  "file_count": 25,
+  "completed_bundle_verifies": true,
+  "existing_bundle_refused": true,
+  "docker_commands": [
+    [
+      "image",
+      "inspect",
+      "--format",
+      "{{.Id}}",
+      "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    ],
+    [
+      "run",
+      "--rm",
+      "--pull=never",
+      "--network",
+      "none",
+      "--user",
+      "1000:1000",
+      "-v",
+      "/tmp/walloss-export-fixture-sj2sj118/project/docker/verify_native_architectures.py:/checks/verify_native_architectures.py:ro",
+      "-v",
+      "/tmp/walloss-export-fixture-sj2sj118/reports:/reports",
+      "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "python",
+      "/checks/verify_native_architectures.py",
+      "--output",
+      "/reports/native-architectures.json"
+    ],
+    [
+      "image",
+      "tag",
+      "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "docker.io/library/wall-oss-crp-transfer:validated-bbbbbbbbbbbb"
+    ],
+    [
+      "image",
+      "inspect",
+      "--format",
+      "{{.Id}}",
+      "docker.io/library/wall-oss-crp-transfer:validated-bbbbbbbbbbbb"
+    ],
+    [
+      "image",
+      "save",
+      "--platform",
+      "linux/amd64",
+      "docker.io/library/wall-oss-crp-transfer:validated-bbbbbbbbbbbb"
+    ]
+  ],
+  "stdout": "/tmp/walloss-export-fixture-sj2sj118/data/meta/info.json: OK\n/tmp/walloss-export-fixture-sj2sj118/project/models/model.bin: OK\nfixture native check passed\nmodels.tar.gz: OK\nsmoke-data.tar.gz: OK\nsource-assets.sha256: OK\nComplete transfer bundle finalized: 25 files; /tmp/walloss-export-fixture-sj2sj118/output\nBundle ready for Windows transit: /tmp/walloss-export-fixture-sj2sj118/output\nH100 GPU/full-model verification must still be performed after docker load.\n",
+  "validation_stdout": "Complete transfer bundle verified: 25 files; /tmp/walloss-export-fixture-sj2sj118/output\n"
+}

@@ -1,0 +1,725 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-29T06:38:45.679331+00:00",
+  "scope": "CPU runtime/import/logger/native architecture check; no training or GPU kernels",
+  "python": "/home/pangk/workspaces/WALL-OSS-CRP/.venv-rlt/bin/python",
+  "python_version": "3.10.22",
+  "python_abi": {
+    "actual": "3.10",
+    "expected": "3.10",
+    "status": "PASS"
+  },
+  "sources": {
+    "wall": "/home/pangk/workspaces/WALL-OSS-CRP/.cache/wall-x-rlt",
+    "rlinf": "/home/pangk/workspaces/WALL-OSS-CRP/.cache/rlinf-rlt"
+  },
+  "base_versions": {
+    "accelerate": {
+      "expected": "1.13.0",
+      "actual": "1.13.0",
+      "status": "PASS"
+    },
+    "aiohappyeyeballs": {
+      "expected": "2.7.1",
+      "actual": "2.7.1",
+      "status": "PASS"
+    },
+    "aiohttp": {
+      "expected": "3.14.5",
+      "actual": "3.14.5",
+      "status": "PASS"
+    },
+    "aiosignal": {
+      "expected": "1.4.0",
+      "actual": "1.4.0",
+      "status": "PASS"
+    },
+    "annotated-doc": {
+      "expected": "0.0.5",
+      "actual": "0.0.5",
+      "status": "PASS"
+    },
+    "annotated-types": {
+      "expected": "0.8.0",
+      "actual": "0.8.0",
+      "status": "PASS"
+    },
+    "anyio": {
+      "expected": "4.15.1",
+      "actual": "4.15.1",
+      "status": "PASS"
+    },
+    "async-timeout": {
+      "expected": "5.0.1",
+      "actual": "5.0.1",
+      "status": "PASS"
+    },
+    "attrs": {
+      "expected": "26.1.0",
+      "actual": "26.1.0",
+      "status": "PASS"
+    },
+    "av": {
+      "expected": "15.1.0",
+      "actual": "15.1.0",
+      "status": "PASS"
+    },
+    "certifi": {
+      "expected": "2026.10.19",
+      "actual": "2026.10.19",
+      "status": "PASS"
+    },
+    "charset-normalizer": {
+      "expected": "3.5.2",
+      "actual": "3.5.2",
+      "status": "PASS"
+    },
+    "click": {
+      "expected": "8.5.0",
+      "actual": "8.5.0",
+      "status": "PASS"
+    },
+    "contourpy": {
+      "expected": "1.3.2",
+      "actual": "1.3.2",
+      "status": "PASS"
+    },
+    "cycler": {
+      "expected": "0.12.1",
+      "actual": "0.12.1",
+      "status": "PASS"
+    },
+    "datasets": {
+      "expected": "4.8.5",
+      "actual": "4.8.5",
+      "status": "PASS"
+    },
+    "dill": {
+      "expected": "0.4.1",
+      "actual": "0.4.1",
+      "status": "PASS"
+    },
+    "docstring_parser": {
+      "expected": "0.18.0",
+      "actual": "0.18.0",
+      "status": "PASS"
+    },
+    "draccus": {
+      "expected": "0.10.0",
+      "actual": "0.10.0",
+      "status": "PASS"
+    },
+    "einops": {
+      "expected": "0.8.2",
+      "actual": "0.8.2",
+      "status": "PASS"
+    },
+    "exceptiongroup": {
+      "expected": "1.3.1",
+      "actual": "1.3.1",
+      "status": "PASS"
+    },
+    "filelock": {
+      "expected": "4.1.0",
+      "actual": "4.1.0",
+      "status": "PASS"
+    },
+    "fonttools": {
+      "expected": "4.65.0",
+      "actual": "4.65.0",
+      "status": "PASS"
+    },
+    "frozenlist": {
+      "expected": "1.8.0",
+      "actual": "1.8.0",
+      "status": "PASS"
+    },
+    "fsspec": {
+      "expected": "2026.2.0",
+      "actual": "2026.2.0",
+      "status": "PASS"
+    },
+    "gitdb": {
+      "expected": "4.0.12",
+      "actual": "4.0.12",
+      "status": "PASS"
+    },
+    "GitPython": {
+      "expected": "3.2.1",
+      "actual": "3.2.1",
+      "status": "PASS"
+    },
+    "h11": {
+      "expected": "0.16.0",
+      "actual": "0.16.0",
+      "status": "PASS"
+    },
+    "hf-xet": {
+      "expected": "1.7.0",
+      "actual": "1.7.0",
+      "status": "PASS"
+    },
+    "httpcore": {
+      "expected": "1.0.9",
+      "actual": "1.0.9",
+      "status": "PASS"
+    },
+    "httpx": {
+      "expected": "0.28.1",
+      "actual": "0.28.1",
+      "status": "PASS"
+    },
+    "huggingface_hub": {
+      "expected": "1.33.0",
+      "actual": "1.33.0",
+      "status": "PASS"
+    },
+    "idna": {
+      "expected": "3.20",
+      "actual": "3.20",
+      "status": "PASS"
+    },
+    "Jinja2": {
+      "expected": "3.1.6",
+      "actual": "3.1.6",
+      "status": "PASS"
+    },
+    "kiwisolver": {
+      "expected": "1.5.1",
+      "actual": "1.5.1",
+      "status": "PASS"
+    },
+    "llvmlite": {
+      "expected": "0.44.0",
+      "actual": "0.44.0",
+      "status": "PASS"
+    },
+    "markdown-it-py": {
+      "expected": "4.2.0",
+      "actual": "4.2.0",
+      "status": "PASS"
+    },
+    "MarkupSafe": {
+      "expected": "3.0.4",
+      "actual": "3.0.4",
+      "status": "PASS"
+    },
+    "matplotlib": {
+      "expected": "3.10.9",
+      "actual": "3.10.9",
+      "status": "PASS"
+    },
+    "mdurl": {
+      "expected": "0.1.2",
+      "actual": "0.1.2",
+      "status": "PASS"
+    },
+    "mergedeep": {
+      "expected": "1.3.4",
+      "actual": "1.3.4",
+      "status": "PASS"
+    },
+    "mpmath": {
+      "expected": "1.3.0",
+      "actual": "1.3.0",
+      "status": "PASS"
+    },
+    "msgpack": {
+      "expected": "1.2.3",
+      "actual": "1.2.3",
+      "status": "PASS"
+    },
+    "msgpack-numpy": {
+      "expected": "0.4.8",
+      "actual": "0.4.8",
+      "status": "PASS"
+    },
+    "multidict": {
+      "expected": "7.1.0",
+      "actual": "7.1.0",
+      "status": "PASS"
+    },
+    "multiprocess": {
+      "expected": "0.70.19",
+      "actual": "0.70.19",
+      "status": "PASS"
+    },
+    "mypy_extensions": {
+      "expected": "1.1.0",
+      "actual": "1.1.0",
+      "status": "PASS"
+    },
+    "networkx": {
+      "expected": "3.4.2",
+      "actual": "3.4.2",
+      "status": "PASS"
+    },
+    "ninja": {
+      "expected": "1.13.2",
+      "actual": "1.13.2",
+      "status": "PASS"
+    },
+    "numba": {
+      "expected": "0.61.2",
+      "actual": "0.61.2",
+      "status": "PASS"
+    },
+    "numpy": {
+      "expected": "1.26.4",
+      "actual": "1.26.4",
+      "status": "PASS"
+    },
+    "numpydantic": {
+      "expected": "1.8.1",
+      "actual": "1.8.1",
+      "status": "PASS"
+    },
+    "opencv-python-headless": {
+      "expected": "4.11.0.86",
+      "actual": "4.11.0.86",
+      "status": "PASS"
+    },
+    "packaging": {
+      "expected": "25.0",
+      "actual": "25.0",
+      "status": "PASS"
+    },
+    "pandas": {
+      "expected": "2.3.3",
+      "actual": "2.3.3",
+      "status": "PASS"
+    },
+    "peft": {
+      "expected": "0.18.1",
+      "actual": "0.18.1",
+      "status": "PASS"
+    },
+    "pillow": {
+      "expected": "11.3.0",
+      "actual": "11.3.0",
+      "status": "PASS"
+    },
+    "platformdirs": {
+      "expected": "4.12.4",
+      "actual": "4.12.4",
+      "status": "PASS"
+    },
+    "propcache": {
+      "expected": "0.5.4",
+      "actual": "0.5.4",
+      "status": "PASS"
+    },
+    "protobuf": {
+      "expected": "6.33.6",
+      "actual": "6.33.6",
+      "status": "PASS"
+    },
+    "psutil": {
+      "expected": "7.2.2",
+      "actual": "7.2.2",
+      "status": "PASS"
+    },
+    "pyarrow": {
+      "expected": "22.0.0",
+      "actual": "22.0.0",
+      "status": "PASS"
+    },
+    "pydantic": {
+      "expected": "2.14.1",
+      "actual": "2.14.1",
+      "status": "PASS"
+    },
+    "pydantic_core": {
+      "expected": "2.50.1",
+      "actual": "2.50.1",
+      "status": "PASS"
+    },
+    "Pygments": {
+      "expected": "2.21.0",
+      "actual": "2.21.0",
+      "status": "PASS"
+    },
+    "pyparsing": {
+      "expected": "3.3.3",
+      "actual": "3.3.3",
+      "status": "PASS"
+    },
+    "python-dateutil": {
+      "expected": "3.0.0",
+      "actual": "3.0.0",
+      "status": "PASS"
+    },
+    "pytz": {
+      "expected": "2026.5",
+      "actual": "2026.5",
+      "status": "PASS"
+    },
+    "PyYAML": {
+      "expected": "6.0.3",
+      "actual": "6.0.3",
+      "status": "PASS"
+    },
+    "pyyaml-include": {
+      "expected": "1.4.1",
+      "actual": "1.4.1",
+      "status": "PASS"
+    },
+    "qwen-vl-utils": {
+      "expected": "0.0.11",
+      "actual": "0.0.11",
+      "status": "PASS"
+    },
+    "regex": {
+      "expected": "2026.9.29",
+      "actual": "2026.9.29",
+      "status": "PASS"
+    },
+    "requests": {
+      "expected": "2.34.2",
+      "actual": "2.34.2",
+      "status": "PASS"
+    },
+    "rich": {
+      "expected": "15.0.0",
+      "actual": "15.0.0",
+      "status": "PASS"
+    },
+    "safetensors": {
+      "expected": "0.8.0",
+      "actual": "0.8.0",
+      "status": "PASS"
+    },
+    "scipy": {
+      "expected": "1.15.3",
+      "actual": "1.15.3",
+      "status": "PASS"
+    },
+    "sentry-sdk": {
+      "expected": "2.72.0",
+      "actual": "2.72.0",
+      "status": "PASS"
+    },
+    "shellingham": {
+      "expected": "1.5.4",
+      "actual": "1.5.4",
+      "status": "PASS"
+    },
+    "shtab": {
+      "expected": "1.13.0",
+      "actual": "1.13.0",
+      "status": "PASS"
+    },
+    "six": {
+      "expected": "1.17.0",
+      "actual": "1.17.0",
+      "status": "PASS"
+    },
+    "smmap": {
+      "expected": "5.0.3",
+      "actual": "5.0.3",
+      "status": "PASS"
+    },
+    "sympy": {
+      "expected": "1.14.0",
+      "actual": "1.14.0",
+      "status": "PASS"
+    },
+    "termcolor": {
+      "expected": "3.3.0",
+      "actual": "3.3.0",
+      "status": "PASS"
+    },
+    "tokenizers": {
+      "expected": "0.22.2",
+      "actual": "0.22.2",
+      "status": "PASS"
+    },
+    "toml": {
+      "expected": "0.10.2",
+      "actual": "0.10.2",
+      "status": "PASS"
+    },
+    "tomli": {
+      "expected": "2.5.0",
+      "actual": "2.5.0",
+      "status": "PASS"
+    },
+    "torchdiffeq": {
+      "expected": "0.2.5",
+      "actual": "0.2.5",
+      "status": "PASS"
+    },
+    "tqdm": {
+      "expected": "4.70.1",
+      "actual": "4.70.1",
+      "status": "PASS"
+    },
+    "transformers": {
+      "expected": "5.2.0",
+      "actual": "5.2.0",
+      "status": "PASS"
+    },
+    "typeguard": {
+      "expected": "4.6.0",
+      "actual": "4.6.0",
+      "status": "PASS"
+    },
+    "typer": {
+      "expected": "0.27.3",
+      "actual": "0.27.3",
+      "status": "PASS"
+    },
+    "typer-slim": {
+      "expected": "0.24.0",
+      "actual": "0.24.0",
+      "status": "PASS"
+    },
+    "typing_extensions": {
+      "expected": "4.16.0",
+      "actual": "4.16.0",
+      "status": "PASS"
+    },
+    "typing-inspect": {
+      "expected": "0.9.0",
+      "actual": "0.9.0",
+      "status": "PASS"
+    },
+    "typing-inspection": {
+      "expected": "0.4.4",
+      "actual": "0.4.4",
+      "status": "PASS"
+    },
+    "tyro": {
+      "expected": "0.9.35",
+      "actual": "0.9.35",
+      "status": "PASS"
+    },
+    "tzdata": {
+      "expected": "2026.5",
+      "actual": "2026.5",
+      "status": "PASS"
+    },
+    "urllib3": {
+      "expected": "2.8.0",
+      "actual": "2.8.0",
+      "status": "PASS"
+    },
+    "wandb": {
+      "expected": "0.24.2",
+      "actual": "0.24.2",
+      "status": "PASS"
+    },
+    "websockets": {
+      "expected": "15.0.1",
+      "actual": "15.0.1",
+      "status": "PASS"
+    },
+    "xxhash": {
+      "expected": "4.0.2",
+      "actual": "4.0.2",
+      "status": "PASS"
+    },
+    "yarl": {
+      "expected": "1.25.1",
+      "actual": "1.25.1",
+      "status": "PASS"
+    },
+    "torch": {
+      "expected": "2.10.0+cu128",
+      "actual": "2.10.0+cu130",
+      "status": "FAIL"
+    },
+    "torchvision": {
+      "expected": "0.25.0+cu128",
+      "actual": "0.25.0+cu130",
+      "status": "FAIL"
+    },
+    "torchaudio": {
+      "expected": "2.10.0+cu128",
+      "actual": "2.10.0+cu130",
+      "status": "FAIL"
+    },
+    "flash-attn": {
+      "expected": "2.8.3",
+      "actual": "2.8.3",
+      "status": "PASS"
+    },
+    "huggingface-hub": {
+      "expected": "1.33.0",
+      "actual": "1.33.0",
+      "status": "PASS"
+    }
+  },
+  "training_versions": {
+    "hydra-core": {
+      "expected": "1.3.2",
+      "actual": "1.3.2",
+      "status": "PASS"
+    },
+    "omegaconf": {
+      "expected": "2.3.1",
+      "actual": "2.3.1",
+      "status": "PASS"
+    },
+    "antlr4-python3-runtime": {
+      "expected": "4.9.3",
+      "actual": "4.9.3",
+      "status": "PASS"
+    },
+    "torchdata": {
+      "expected": "0.11.0",
+      "actual": "0.11.0",
+      "status": "PASS"
+    },
+    "ray": {
+      "expected": "2.47.0",
+      "actual": "2.47.0",
+      "status": "PASS"
+    },
+    "sortedcontainers": {
+      "expected": "2.4.0",
+      "actual": "2.4.0",
+      "status": "PASS"
+    },
+    "tensorboard": {
+      "expected": "2.20.0",
+      "actual": "2.20.0",
+      "status": "PASS"
+    },
+    "pytest": {
+      "expected": "8.4.2",
+      "actual": "8.4.2",
+      "status": "PASS"
+    },
+    "virtualenv": {
+      "expected": "21.12.0",
+      "actual": "21.12.0",
+      "status": "PASS"
+    }
+  },
+  "imports": {
+    "torch": {
+      "status": "PASS",
+      "path": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/__init__.py"
+    },
+    "hydra": {
+      "status": "PASS",
+      "path": "/home/pangk/workspaces/WALL-OSS-CRP/.venv-rlt/lib/python3.10/site-packages/hydra/__init__.py"
+    },
+    "ray": {
+      "status": "PASS",
+      "path": "/home/pangk/workspaces/WALL-OSS-CRP/.venv-rlt/lib/python3.10/site-packages/ray/__init__.py"
+    },
+    "torchdata.stateful_dataloader": {
+      "status": "PASS",
+      "path": "/home/pangk/workspaces/WALL-OSS-CRP/.venv-rlt/lib/python3.10/site-packages/torchdata/stateful_dataloader/__init__.py"
+    },
+    "rlinf.scheduler.cluster.utils": {
+      "status": "PASS",
+      "path": "/home/pangk/workspaces/WALL-OSS-CRP/.cache/rlinf-rlt/rlinf/scheduler/cluster/utils.py"
+    },
+    "rlinf.workers.sft.fsdp_vla_sft_worker": {
+      "status": "PASS",
+      "path": "/home/pangk/workspaces/WALL-OSS-CRP/.cache/rlinf-rlt/rlinf/workers/sft/fsdp_vla_sft_worker.py"
+    },
+    "wall_rlt.workers.sft": {
+      "status": "PASS",
+      "path": "/home/pangk/workspaces/WALL-OSS-CRP/wall_rlt/workers/sft.py"
+    }
+  },
+  "native_extensions": [
+    {
+      "module": "flash_attn_2_cuda",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "/usr/local/cuda/bin/cuobjdump",
+            "--all-fatbin",
+            "--list-elf",
+            "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so"
+          ],
+          "returncode": 0,
+          "stdout": "ELF file    1: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.1.sm_80.cubin\nELF file    2: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.2.sm_80.cubin\nELF file    3: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.3.sm_80.cubin\nELF file    4: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.4.sm_80.cubin\nELF file    5: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.5.sm_80.cubin\nELF file    6: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.6.sm_80.cubin\nELF file    7: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.7.sm_80.cubin\nELF file    8: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.8.sm_80.cubin\nELF file    9: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.9.sm_80.cubin\nELF file   10: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.10.sm_80.cubin\nELF file   11: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.11.sm_80.cubin\nELF file   12: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.12.sm_80.cubin\nELF file   13: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.13.sm_80.cubin\nELF file   14: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.14.sm_80.cubin\nELF file   15: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.15.sm_80.cubin\nELF file   16: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.16.sm_80.cubin\nELF file   17: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.17.sm_80.cubin\nELF file   18: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.18.sm_80.cubin\nELF file   19: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.19.sm_80.cubin\nELF file   20: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.20.sm_80.cubin\nELF file   21: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.21.sm_80.cubin\nELF file   22: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.22.sm_80.cubin\nELF file   23: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.23.sm_80.cubin\nELF file   24: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.24.sm_80.cubin\nELF file   25: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.25.sm_80.cubin\nELF file   26: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.26.sm_80.cubin\nELF file   27: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.27.sm_80.cubin\nELF file   28: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.28.sm_80.cubin\nELF file   29: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.29.sm_80.cubin\nELF file   30: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.30.sm_80.cubin\nELF file   31: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.31.sm_80.cubin\nELF file   32: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.32.sm_80.cubin\nELF file   33: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.33.sm_80.cubin\nELF file   34: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.34.sm_80.cubin\nELF file   35: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.35.sm_80.cubin\nELF file   36: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.36.sm_80.cubin\nELF file   37: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.37.sm_80.cubin\nELF file   38: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.38.sm_80.cubin\nELF file   39: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.39.sm_80.cubin\nELF file   40: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.40.sm_80.cubin\nELF file   41: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.41.sm_80.cubin\nELF file   42: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.42.sm_80.cubin\nELF file   43: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.43.sm_80.cubin\nELF file   44: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.44.sm_80.cubin\nELF file   45: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.45.sm_80.cubin\nELF file   46: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.46.sm_80.cubin\nELF file   47: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.47.sm_80.cubin\nELF file   48: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.48.sm_80.cubin\nELF file   49: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.49.sm_80.cubin\nELF file   50: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.50.sm_80.cubin\nELF file   51: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.51.sm_80.cubin\nELF file   52: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.52.sm_80.cubin\nELF file   53: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.53.sm_80.cubin\nELF file   54: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.54.sm_80.cubin\nELF file   55: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.55.sm_80.cubin\nELF file   56: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.56.sm_80.cubin\nELF file   57: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.57.sm_80.cubin\nELF file   58: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.58.sm_80.cubin\nELF file   59: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.59.sm_80.cubin\nELF file   60: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.60.sm_80.cubin\nELF file   61: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.61.sm_80.cubin\nELF file   62: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.62.sm_80.cubin\nELF file   63: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.63.sm_80.cubin\nELF file   64: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.64.sm_80.cubin\nELF file   65: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.65.sm_80.cubin\nELF file   66: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.66.sm_80.cubin\nELF file   67: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.67.sm_80.cubin\nELF file   68: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.68.sm_80.cubin\nELF file   69: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.69.sm_80.cubin\nELF file   70: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.70.sm_80.cubin\nELF file   71: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.71.sm_80.cubin\nELF file   72: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.72.sm_80.cubin\n",
+          "stderr": ""
+        },
+        {
+          "command": [
+            "/usr/local/cuda/bin/cuobjdump",
+            "--all-fatbin",
+            "--list-ptx",
+            "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so"
+          ],
+          "returncode": 0,
+          "stdout": "",
+          "stderr": "cuobjdump info    : No PTX file found to extract from '/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so'. You may try with -all option.\n"
+        }
+      ],
+      "path": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so",
+      "bytes": 205012272,
+      "sha256": "df0b6de38045ed6b94781924ae5ca69c6dcd7c8ba842fba6ab74cec95133c200",
+      "elf_architectures": [
+        "sm_80"
+      ],
+      "elf_entries": 72,
+      "ptx_architectures": [],
+      "ptx_entries": 0,
+      "missing_architectures": [
+        "sm_90"
+      ],
+      "error": "RuntimeError: Required cubin architecture missing: sm_90",
+      "expected_d0_sha256": "09c5dea022d0e88a1de3cd2563e676c59a3e0836f691467240fb7f63031d8f9f",
+      "integrity_error": "Active native binary is not the validated D0 binary",
+      "import_status": "PASS"
+    },
+    {
+      "module": "wall_x.model.core.ops._cuda_ext_bin",
+      "status": "FAIL",
+      "commands": [],
+      "error": "FileNotFoundError: No active native binary found for wall_x.model.core.ops._cuda_ext_bin",
+      "expected_d0_sha256": "2c2a4ae238834e1adc7e6777dc266f81da8f3ccb77a607d2d9bd445c72c044eb",
+      "integrity_error": "Active native binary is not the validated D0 binary",
+      "import_status": "FAIL",
+      "import_error": "ModuleNotFoundError: No module named 'wall_x.model.core.ops._cuda_ext_bin'"
+    }
+  ],
+  "gpu_used": false,
+  "torch_cuda": {
+    "actual": "13.0",
+    "expected": "12.8",
+    "status": "FAIL"
+  },
+  "tensorboard_logger": {
+    "status": "PASS",
+    "events_written": 1,
+    "temporary_logs_removed": true,
+    "gpu_used": false
+  },
+  "package_declarations": {
+    "status": "FAIL",
+    "returncode": 1,
+    "stdout": "lerobot 0.4.4 requires cmake, which is not installed.\nlerobot 0.4.4 requires deepdiff, which is not installed.\nlerobot 0.4.4 requires diffusers, which is not installed.\nlerobot 0.4.4 requires gymnasium, which is not installed.\nlerobot 0.4.4 requires imageio, which is not installed.\nlerobot 0.4.4 requires jsonlines, which is not installed.\nlerobot 0.4.4 requires pynput, which is not installed.\nlerobot 0.4.4 requires pyserial, which is not installed.\nlerobot 0.4.4 requires rerun-sdk, which is not installed.\nlerobot 0.4.4 requires torchcodec, which is not installed.\nlerobot 0.4.4 has requirement huggingface-hub[cli,hf-transfer]<0.36.0,>=0.34.2, but you have huggingface-hub 1.33.0.\n",
+    "stderr": "",
+    "known_d0_exceptions_not_repaired": {
+      "missing": [
+        "cmake",
+        "deepdiff",
+        "diffusers",
+        "gymnasium",
+        "imageio",
+        "jsonlines",
+        "pynput",
+        "pyserial",
+        "rerun-sdk",
+        "torchcodec"
+      ],
+      "incompatible": [
+        "lerobot 0.4.4 declares huggingface-hub[cli,hf-transfer]>=0.34.2,<0.36.0; D0 has 1.33.0"
+      ]
+    },
+    "note": "D0 has 11 known declaration exceptions; runtime checks do not waive pip check failures"
+  },
+  "runtime_checks_status": "FAIL",
+  "status": "BLOCKED",
+  "training_or_gpu_validation_completed": false
+}

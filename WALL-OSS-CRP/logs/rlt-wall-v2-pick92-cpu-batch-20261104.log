@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "scope": "CPU recorded data and official WALL processor; no model weights/forward",
+  "contract_hash": "357f8692fc31443606ea04aa677ad7a4bc7f91d8c6d15dde9ba9aaac2990ad1e",
+  "episodes": 100,
+  "usable_observations": 38316,
+  "dropped_final_observations": 100,
+  "split_counts": {
+    "train": 92,
+    "dev": 4,
+    "test": 4
+  },
+  "excluded_groups": [
+    "bolt"
+  ],
+  "checks": [
+    "all NPZ hashes and target dimensions",
+    "per-episode next-frame alignment",
+    "representative first/tail RGB seek in each task",
+    "official WALL preprocessing",
+    "tail time/dimension masks",
+    "constant-joint finite normalization",
+    "invalid targets do not alter batch",
+    "collator RNG restore",
+    "action targets do not alter observation prompt"
+  ],
+  "samples": [
+    {
+      "group": "black_bushing",
+      "episode": "black_bushing/episode_0000.npz",
+      "checked_frame_indices": [
+        0,
+        295
+      ],
+      "rgb_shapes": {
+        "cam_high": [
+          3,
+          480,
+          640
+        ],
+        "cam_front": [
+          3,
+          480,
+          640
+        ]
+      },
+      "action_shape": [
+        2,
+        32,
+        26
+      ],
+      "prefix_lengths": [
+        482,
+        480
+      ],
+      "valid_actions": [
+        32.0,
+        1.0
+      ]
+    },
+    {
+      "group": "orange_block",
+      "episode": "orange_block/episode_0000.npz",
+      "checked_frame_indices": [
+        0,
+        1041
+      ],
+      "rgb_shapes": {
+        "cam_high": [
+          3,
+          480,
+          640
+        ],
+        "cam_front": [
+          3,
+          480,
+          640
+        ]
+      },
+      "action_shape": [
+        2,
+        32,
+        26
+      ],
+      "prefix_lengths": [
+        481,
+        475
+      ],
+      "valid_actions": [
+        32.0,
+        1.0
+      ]
+    }
+  ],
+  "model_training": "NOT_RUN",
+  "robot_inference": "DEFERRED"
+}

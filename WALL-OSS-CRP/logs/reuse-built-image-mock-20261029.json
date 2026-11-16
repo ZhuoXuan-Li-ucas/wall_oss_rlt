@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "scope": "isolated mock control-flow tests; no Docker daemon/build/cache accessed",
+  "checked_at_utc": "2026-10-29T05:53:47.164467+00:00",
+  "actual_prior_build_evidence": "/home/pangk/workspaces/WALL-OSS-CRP/logs/docker-validation-final-20261029T011859Z",
+  "cases": [
+    {
+      "case": "reuse-success",
+      "status": "PASS",
+      "exit_code": 0,
+      "docker_build_called": false,
+      "validated_marker": true
+    },
+    {
+      "case": "source-image-mismatch",
+      "status": "PASS",
+      "exit_code": 1,
+      "docker_build_called": false,
+      "validated_marker": false
+    },
+    {
+      "case": "live-image-mismatch",
+      "status": "PASS",
+      "exit_code": 1,
+      "docker_build_called": false,
+      "validated_marker": false
+    },
+    {
+      "case": "setup-failure",
+      "status": "PASS",
+      "exit_code": 1,
+      "docker_build_called": false,
+      "validated_marker": false
+    },
+    {
+      "case": "dataset-failure",
+      "status": "PASS",
+      "exit_code": 1,
+      "docker_build_called": false,
+      "validated_marker": false
+    },
+    {
+      "case": "dependencies-failure",
+      "status": "PASS",
+      "exit_code": 1,
+      "docker_build_called": false,
+      "validated_marker": false
+    },
+    {
+      "case": "missing-successful-build-export",
+      "status": "PASS",
+      "exit_code": 1,
+      "docker_build_called": false,
+      "validated_marker": false
+    },
+    {
+      "case": "unpaired-reuse-input",
+      "status": "PASS",
+      "exit_code": 1,
+      "docker_build_called": false,
+      "validated_marker": false
+    },
+    {
+      "case": "existing-report",
+      "status": "PASS",
+      "exit_code": 1,
+      "docker_build_called": false,
+      "validated_marker": false
+    },
+    {
+      "case": "watcher-reuse-export",
+      "status": "PASS",
+      "docker_build_called": false,
+      "scope": "mock Docker and export; real validation/watcher control flow"
+    },
+    {
+      "case": "watcher-runtime-failure-refuses-export",
+      "status": "PASS"
+    }
+  ],
+  "source_reports_unchanged": true
+}

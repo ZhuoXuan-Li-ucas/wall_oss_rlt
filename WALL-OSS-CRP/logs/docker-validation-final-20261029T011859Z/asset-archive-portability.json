@@ -1,0 +1,315 @@
+{
+  "status": "PASS",
+  "scope": "Read-only streaming tar member path/type audit; no extraction, no file payload hashes recomputed, no model execution",
+  "started_at_utc": "2026-10-29T02:08:12.042666+00:00",
+  "existing_integrity_evidence": {
+    "file": "metadata/migration-preflight.json",
+    "section": "assets_staging",
+    "gzip_integrity": "PASS",
+    "sha256_recheck": "PASS",
+    "completed_at_utc": "2026-10-28T07:17:00.160360+00:00"
+  },
+  "archives": {
+    "models.tar.gz": {
+      "status": "PASS",
+      "archive": "/media/pangk/My Passport/WALL-OSS-CRP-assets-20261028/models.tar.gz",
+      "compressed_size_bytes": 6570912728,
+      "existing_sha256_not_recomputed": "ca7e3165bc834032dcb5530d1ebf8bdaafe0ef61ec914818f9ff0eb77440e74c",
+      "mtime_ns": 1793171552400000000,
+      "member_count": 28,
+      "types": {
+        "directory": 4,
+        "regular": 24
+      },
+      "ordinary_payload_bytes": 8353158306,
+      "expected_regular_files": 24,
+      "missing_regular_files": [],
+      "unexpected_regular_files": [],
+      "links": [],
+      "critical_ordinary_files": [
+        "models/Qwen2.5-VL-3B-Instruct/chat_template.json",
+        "models/Qwen2.5-VL-3B-Instruct/config.json",
+        "models/Qwen2.5-VL-3B-Instruct/generation_config.json",
+        "models/Qwen2.5-VL-3B-Instruct/merges.txt",
+        "models/Qwen2.5-VL-3B-Instruct/preprocessor_config.json",
+        "models/Qwen2.5-VL-3B-Instruct/tokenizer.json",
+        "models/Qwen2.5-VL-3B-Instruct/tokenizer_config.json",
+        "models/Qwen2.5-VL-3B-Instruct/vocab.json",
+        "models/wall-oss-0.5/ar_normalizer_action.pth",
+        "models/wall-oss-0.5/config.json",
+        "models/wall-oss-0.5/config.yml",
+        "models/wall-oss-0.5/model.safetensors",
+        "models/wall-oss-0.5/normalizer_action.pth",
+        "models/wall-oss-0.5/normalizer_propri.pth",
+        "models/wall-oss-0.5/preprocessor_config.json",
+        "models/wall-oss-0.5/tokenizer.json",
+        "models/wall-oss-0.5/tokenizer_config.json",
+        "models/wall-oss-0.5/vocab.json"
+      ],
+      "members": [
+        {
+          "path": "models",
+          "type": "directory",
+          "size_bytes": 0
+        },
+        {
+          "path": "models/wall-oss-0.5",
+          "type": "directory",
+          "size_bytes": 0
+        },
+        {
+          "path": "models/wall-oss-0.5/config.json",
+          "type": "regular",
+          "size_bytes": 2148
+        },
+        {
+          "path": "models/wall-oss-0.5/preprocessor_config.json",
+          "type": "regular",
+          "size_bytes": 350
+        },
+        {
+          "path": "models/wall-oss-0.5/config.yml",
+          "type": "regular",
+          "size_bytes": 1159
+        },
+        {
+          "path": "models/wall-oss-0.5/README.md",
+          "type": "regular",
+          "size_bytes": 8532
+        },
+        {
+          "path": "models/wall-oss-0.5/model.safetensors",
+          "type": "regular",
+          "size_bytes": 8331486672
+        },
+        {
+          "path": "models/wall-oss-0.5/.gitattributes",
+          "type": "regular",
+          "size_bytes": 1571
+        },
+        {
+          "path": "models/wall-oss-0.5/assets",
+          "type": "directory",
+          "size_bytes": 0
+        },
+        {
+          "path": "models/wall-oss-0.5/assets/logo.png",
+          "type": "regular",
+          "size_bytes": 201813
+        },
+        {
+          "path": "models/wall-oss-0.5/ar_normalizer_action.pth",
+          "type": "regular",
+          "size_bytes": 41654
+        },
+        {
+          "path": "models/wall-oss-0.5/tokenizer_config.json",
+          "type": "regular",
+          "size_bytes": 7255
+        },
+        {
+          "path": "models/wall-oss-0.5/normalizer_action.pth",
+          "type": "regular",
+          "size_bytes": 41242
+        },
+        {
+          "path": "models/wall-oss-0.5/vocab.json",
+          "type": "regular",
+          "size_bytes": 2776833
+        },
+        {
+          "path": "models/wall-oss-0.5/tokenizer.json",
+          "type": "regular",
+          "size_bytes": 7031645
+        },
+        {
+          "path": "models/wall-oss-0.5/normalizer_propri.pth",
+          "type": "regular",
+          "size_bytes": 41242
+        },
+        {
+          "path": "models/Qwen2.5-VL-3B-Instruct",
+          "type": "directory",
+          "size_bytes": 0
+        },
+        {
+          "path": "models/Qwen2.5-VL-3B-Instruct/config.json",
+          "type": "regular",
+          "size_bytes": 1373
+        },
+        {
+          "path": "models/Qwen2.5-VL-3B-Instruct/preprocessor_config.json",
+          "type": "regular",
+          "size_bytes": 350
+        },
+        {
+          "path": "models/Qwen2.5-VL-3B-Instruct/generation_config.json",
+          "type": "regular",
+          "size_bytes": 216
+        },
+        {
+          "path": "models/Qwen2.5-VL-3B-Instruct/LICENSE",
+          "type": "regular",
+          "size_bytes": 7387
+        },
+        {
+          "path": "models/Qwen2.5-VL-3B-Instruct/README.md",
+          "type": "regular",
+          "size_bytes": 18276
+        },
+        {
+          "path": "models/Qwen2.5-VL-3B-Instruct/chat_template.json",
+          "type": "regular",
+          "size_bytes": 1050
+        },
+        {
+          "path": "models/Qwen2.5-VL-3B-Instruct/.gitattributes",
+          "type": "regular",
+          "size_bytes": 1519
+        },
+        {
+          "path": "models/Qwen2.5-VL-3B-Instruct/merges.txt",
+          "type": "regular",
+          "size_bytes": 1671839
+        },
+        {
+          "path": "models/Qwen2.5-VL-3B-Instruct/tokenizer_config.json",
+          "type": "regular",
+          "size_bytes": 5702
+        },
+        {
+          "path": "models/Qwen2.5-VL-3B-Instruct/vocab.json",
+          "type": "regular",
+          "size_bytes": 2776833
+        },
+        {
+          "path": "models/Qwen2.5-VL-3B-Instruct/tokenizer.json",
+          "type": "regular",
+          "size_bytes": 7031645
+        }
+      ],
+      "errors": [],
+      "elapsed_seconds": 45.592
+    },
+    "smoke-data.tar.gz": {
+      "status": "PASS",
+      "archive": "/media/pangk/My Passport/WALL-OSS-CRP-assets-20261028/smoke-data.tar.gz",
+      "compressed_size_bytes": 336602786,
+      "existing_sha256_not_recomputed": "5fb5ba323fd20b2212dbcc2a4e3f9d14119a60e320f5c23ffc7edbadefd3e842",
+      "mtime_ns": 1793171558990000000,
+      "member_count": 18,
+      "types": {
+        "directory": 11,
+        "regular": 7
+      },
+      "ordinary_payload_bytes": 337408840,
+      "expected_regular_files": 7,
+      "missing_regular_files": [],
+      "unexpected_regular_files": [],
+      "links": [],
+      "critical_ordinary_files": [
+        "meta/episodes/chunk-000/file-000.parquet",
+        "meta/info.json",
+        "meta/stats.json",
+        "meta/tasks.parquet",
+        "videos/observation.images.top/chunk-000/file-000.mp4",
+        "videos/observation.images.wrist/chunk-000/file-000.mp4"
+      ],
+      "members": [
+        {
+          "path": ".",
+          "type": "directory",
+          "size_bytes": 0
+        },
+        {
+          "path": "meta",
+          "type": "directory",
+          "size_bytes": 0
+        },
+        {
+          "path": "meta/info.json",
+          "type": "regular",
+          "size_bytes": 3152
+        },
+        {
+          "path": "meta/stats.json",
+          "type": "regular",
+          "size_bytes": 13293
+        },
+        {
+          "path": "meta/episodes",
+          "type": "directory",
+          "size_bytes": 0
+        },
+        {
+          "path": "meta/episodes/chunk-000",
+          "type": "directory",
+          "size_bytes": 0
+        },
+        {
+          "path": "meta/episodes/chunk-000/file-000.parquet",
+          "type": "regular",
+          "size_bytes": 180152
+        },
+        {
+          "path": "meta/tasks.parquet",
+          "type": "regular",
+          "size_bytes": 2246
+        },
+        {
+          "path": "videos",
+          "type": "directory",
+          "size_bytes": 0
+        },
+        {
+          "path": "videos/observation.images.top",
+          "type": "directory",
+          "size_bytes": 0
+        },
+        {
+          "path": "videos/observation.images.top/chunk-000",
+          "type": "directory",
+          "size_bytes": 0
+        },
+        {
+          "path": "videos/observation.images.top/chunk-000/file-000.mp4",
+          "type": "regular",
+          "size_bytes": 162976178
+        },
+        {
+          "path": "videos/observation.images.wrist",
+          "type": "directory",
+          "size_bytes": 0
+        },
+        {
+          "path": "videos/observation.images.wrist/chunk-000",
+          "type": "directory",
+          "size_bytes": 0
+        },
+        {
+          "path": "videos/observation.images.wrist/chunk-000/file-000.mp4",
+          "type": "regular",
+          "size_bytes": 172903543
+        },
+        {
+          "path": "data",
+          "type": "directory",
+          "size_bytes": 0
+        },
+        {
+          "path": "data/chunk-000",
+          "type": "directory",
+          "size_bytes": 0
+        },
+        {
+          "path": "data/chunk-000/file-000.parquet",
+          "type": "regular",
+          "size_bytes": 1330276
+        }
+      ],
+      "errors": [],
+      "elapsed_seconds": 0.736
+    }
+  },
+  "completed_at_utc": "2026-10-29T02:08:58.386660+00:00"
+}

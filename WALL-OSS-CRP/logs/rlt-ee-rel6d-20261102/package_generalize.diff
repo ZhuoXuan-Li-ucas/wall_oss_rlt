@@ -1,0 +1,614 @@
+--- a/scripts/package_wall_rlt_training.py
++++ b/scripts/package_wall_rlt_training.py
+@@ -1,5 +1,11 @@
+ #!/usr/bin/env python3
+-"""Create a new portable training candidate; never alter the READY base bundle."""
++"""Create a new portable training candidate; never alter the READY base bundle.
++
++Everything dataset-specific comes from the explicit ``--contract``: its manifest,
++normalization, data root, splits, exclusions and target/adapter semantics. The
++2026-10-29 joint8 candidate is reproduced by passing its contract with
++``--require-excluded mouse --require-excluded tape``.
++"""
+ from __future__ import annotations
+ 
+ import argparse
+@@ -7,6 +13,7 @@
+ import json
+ import os
+ from pathlib import Path, PurePosixPath
++import re
+ import shutil
+ import subprocess
+ import tarfile
+@@ -17,7 +24,9 @@
+ RLINF_COMMIT = 'e1a82ebf0c1af69da6ab9b1519f5f3692fe33566'
+ RLINF_SHA256 = 'd9e3d14aa19a9b7884defcebbe89497e279162a610e61a1d16ffabcfd1eb28f7'
+ BASE_IMAGE = 'sha256:8f067a0eb220228f444811532cc8ec0a328e4d46b7983637c1c4ea7743ef9ee8'
+-CONTRACT = 'configs/rlt/top_error_ar5_joint_next_v1.json'
++# 2: contract path, data directory and target semantics are recorded per candidate.
++RECORD_SCHEMA = 2
++DATASET_NAME = re.compile(r'[A-Za-z0-9][A-Za-z0-9_.-]{0,127}')
+ 
+ 
+ def sha256(path):
+@@ -99,7 +108,51 @@
+     return {'sha256':sha256(destination),'bytes':Path(destination).stat().st_size,'members':specs}
+ 
+ 
+-def project_files(project):
++def contract_relative(project,contract):
++    """Project-relative POSIX path of a contract that must live inside the project."""
++    project=Path(project).resolve()
++    path=Path(contract)
++    path=Path(os.path.normpath(path if path.is_absolute() else project/path))
++    if not path.is_relative_to(project):
++        raise ValueError('the contract must be inside the packaged project')
++    relative=path.relative_to(project).as_posix()
++    regular_file(project,relative)
++    return relative
++
++
++def contract_files(project,relative):
++    """Contract, manifest and normalization paths, verified against the contract."""
++    project=Path(project).resolve()
++    cp=regular_file(project,relative)
++    contract=json.loads(cp.read_text())
++    paths={}
++    for key in ('manifest_path','normalization_path'):
++        value=contract.get(key)
++        if not isinstance(value,str) or not value or Path(value).is_absolute():
++            raise ValueError(f'contract {key} must be a relative path inside the project')
++        target=Path(os.path.normpath(cp.parent/value))
++        if not target.is_relative_to(project):
++            raise ValueError(f'contract {key} points outside the project')
++        paths[key]=regular_file(project,target.relative_to(project).as_posix())
++    if sha256(paths['manifest_path'])!=contract.get('manifest_sha256'):
++        raise ValueError('selected manifest is missing or differs from its contract')
++    if sha256(paths['normalization_path'])!=contract.get('normalization_sha256'):
++        raise ValueError('normalization is missing or differs from its contract')
++    return contract,cp,paths['manifest_path'],paths['normalization_path']
++
++
++def format_document(project,contract):
++    """The data-format document named in provenance, if the project still has it."""
++    prov=contract.get('provenance') or {}
++    name=prov.get('format_document')
++    if not name or '/' in name or not (Path(project)/name).is_file():
++        return None
++    digest=sha256(regular_file(project,name))
++    return {'name':name,'sha256':digest,'contract_sha256':prov.get('format_document_sha256'),
++            'matches_contract_provenance':digest==prov.get('format_document_sha256')}
++
++
++def project_files(project,contract=None,extra=()):
+     project=Path(project).resolve()
+     names=set()
+     for directory,suffixes in (('wall_rlt',{'.py','.md','.txt'}),('configs/rlt',{'.json','.yaml','.yml','.txt'}),
+@@ -109,7 +162,7 @@
+                 names.add(path.relative_to(project).as_posix())
+     names.update(p.relative_to(project).as_posix() for p in (project/'scripts').glob('*wall_rlt*.py'))
+     for name in ('patches/wall-x-rlt-prefix.patch','metadata/wall-rlt-sources.lock.json',
+-                 'metadata/wall-rlt-design-audit-20261028.json','数据集格式说明.md',
++                 'metadata/wall-rlt-design-audit-20261028.json',
+                  'WALL_RLT_Agent_Implementation_Plan.md','WALL_RLT_Human_Review.md',
+                  'docker/runtime-pins.txt','docker/expected-pip-check.txt',
+                  'docker/verify_native_architectures.py',
+@@ -118,29 +171,51 @@
+                  'metadata/rlt-training-dependency-selection-20261029.json',
+                  'logs/rlt-training-env-local-20261029.json'):
+         if (project/name).is_file():names.add(name)
+-    for path in (project/'metadata/rlt-top-error-selected-20261029').glob('*.json'):
+-        names.add(path.relative_to(project).as_posix())
+     for path in (project/'logs/rlt-h100-preparation-20261029/cpu-check').glob('*'):
+         if path.is_file() and path.suffix in {'.json','.log','.xml'}:
+             names.add(path.relative_to(project).as_posix())
+-    if CONTRACT not in names:
+-        raise ValueError('project lacks the selected target contract')
++    if contract is not None:
++        value,cp,mp,norm=contract_files(project,contract)
++        names.add(contract)
++        # The audit directory's records (audit, manifest, normalization, inspection
++        # contract, batch checks) travel with the contract that cites them.
++        for directory in {mp.parent,norm.parent}:
++            for path in directory.glob('*.json'):
++                if path.is_file() and not path.is_symlink():
++                    names.add(path.relative_to(project).as_posix())
++        document=format_document(project,value)
++        if document:names.add(document['name'])
++    for item in extra:
++        path=project/safe_relative(item).as_posix()
++        if path.is_dir() and not path.is_symlink():
++            names.update(p.relative_to(project).as_posix() for p in path.rglob('*')
++                         if p.is_file() and '__pycache__' not in p.parts)
++        else:
++            names.add(regular_file(project,item).relative_to(project).as_posix())
+     return [(name,regular_file(project,name),{}) for name in sorted(names)]
+ 
+ 
+-def selected_data(project,contract_relative=CONTRACT):
++def dataset_directory(contract,name=None):
++    """``data/<name>``; by default the recordings root's own folder name."""
++    name=name or Path(contract['root']).name
++    if not DATASET_NAME.fullmatch(name) or name in {'.','..'}:
++        raise ValueError(f'unsafe dataset directory name: {name!r}')
++    return f'data/{name}'
++
++
++def selected_data(project,contract_relative,required_excluded=()):
+     project=Path(project).resolve()
+-    cp=regular_file(project,contract_relative)
+-    contract=json.loads(cp.read_text())
+-    mp=(cp.parent/contract['manifest_path']).resolve()
+-    if not mp.is_relative_to(project) or sha256(mp) != contract['manifest_sha256']:
+-        raise ValueError('selected manifest is missing or differs from its contract')
+-    norm=(cp.parent/contract['normalization_path']).resolve()
+-    if not norm.is_relative_to(project) or sha256(norm) != contract['normalization_sha256']:
+-        raise ValueError('normalization is missing or differs from its contract')
++    contract,_,mp,_=contract_files(project,contract_relative)
+     manifest=json.loads(mp.read_text())
+-    if not {'mouse','tape'}.issubset(manifest.get('excluded_groups',[])) or manifest['splits'] != contract['splits']:
+-        raise ValueError('data exclusions or frozen splits differ')
++    excluded=sorted(manifest.get('excluded_groups',[]))
++    missing=sorted(set(required_excluded)-set(excluded))
++    if missing:
++        raise ValueError(f'manifest must exclude groups {missing}')
++    recorded=(contract.get('provenance') or {}).get('excluded_groups')
++    if recorded is not None and sorted(recorded)!=excluded:
++        raise ValueError('contract provenance exclusions differ from the manifest')
++    if manifest['splits'] != contract['splits']:
++        raise ValueError('frozen splits differ between manifest and contract')
+     selected={i for values in contract['splits'].values() for i in values}
+     entries=manifest['episodes']
+     if selected != {e['episode_id'] for e in entries} or len(entries) != len(selected):
+@@ -149,7 +224,7 @@
+     result={};groups={}
+     for entry in entries:
+         group=entry['task_group']
+-        if group in {'mouse','tape'} or entry.get('structural_errors') or entry.get('semantic_errors'):
++        if group in excluded or entry.get('structural_errors') or entry.get('semantic_errors'):
+             raise ValueError('excluded or failed recording in target manifest')
+         if PurePosixPath(entry['npz']).parts[0] != group:
+             raise ValueError('recording task folder differs from manifest group')
+@@ -164,7 +239,11 @@
+         if prior != entry['dataset_metadata_sha256']:raise ValueError('task metadata digest disagrees across episodes')
+     for group,digest in groups.items():
+         result[f'{group}/dataset.json']={'sha256':digest}
+-    return contract,[(name,regular_file(root,name),spec) for name,spec in sorted(result.items())]
++    # wall_collect.py's settings record, when prepare_ar5 bound it into provenance.
++    record=(contract.get('provenance') or {}).get('collection_record_sha256')
++    if record:
++        result['wall_collection.json']={'sha256':record}
++    return contract,excluded,[(name,regular_file(root,name),spec) for name,spec in sorted(result.items())]
+ 
+ 
+ def find_rlinf_archive(project):
+@@ -217,12 +296,15 @@
+     return entries
+ 
+ 
+-def package(project,output,*,include_data=False,wheelhouse=None,rlinf_archive=None):
++def package(project,output,*,contract,include_data=False,wheelhouse=None,rlinf_archive=None,
++            required_excluded=(),dataset_name=None,extra=()):
+     project,output=Path(project).resolve(),Path(output).resolve()
+     if output.exists():raise FileExistsError('candidate output must not already exist')
+     if any(p.name.startswith('WALL-OSS-CRP-transfer-') for p in (output,*output.parents)):
+         raise ValueError('training candidates must not be written inside a base delivery bundle')
+-    contract,data_files=selected_data(project)
++    contract_path=contract_relative(project,contract)
++    contract,excluded,data_files=selected_data(project,contract_path,required_excluded)
++    data_dir=dataset_directory(contract,dataset_name)
+     if output.is_relative_to(Path(contract['root']).resolve()):
+         raise ValueError('candidate cannot be written inside original recordings')
+     archive=Path(rlinf_archive) if rlinf_archive else find_rlinf_archive(project)
+@@ -234,7 +316,7 @@
+     with tempfile.TemporaryDirectory(prefix=f'.{output.name}.',dir=output.parent) as temporary:
+         stage=Path(temporary)/'candidate';stage.mkdir()
+         payloads={}
+-        payloads['project.tar.gz']=make_archive(stage/'project.tar.gz',project_files(project))
++        payloads['project.tar.gz']=make_archive(stage/'project.tar.gz',project_files(project,contract_path,extra))
+         subprocess.run(['git','-C',str(project/'wall-x'),'cat-file','-e',f'{WALL_COMMIT}^{{commit}}'],check=True,capture_output=True)
+         subprocess.run(['git','-C',str(project/'wall-x'),'bundle','create',str(stage/'wall-x.bundle'),'--all'],check=True,capture_output=True)
+         shutil.copyfile(archive,stage/'rlinf-source.tar.gz')
+@@ -247,32 +329,48 @@
+         for name in ('package_wall_rlt_training.py','unpack_wall_rlt_training.py'):
+             shutil.copyfile(project/'scripts'/name,stage/name)
+             payloads[name]={'sha256':sha256(stage/name),'bytes':(stage/name).stat().st_size}
+-        record={'schema_version':1,'status':'TRAINING_CANDIDATE_NOT_GPU_VALIDATED',
++        record={'schema_version':RECORD_SCHEMA,'status':'TRAINING_CANDIDATE_NOT_GPU_VALIDATED',
+                 'kind':'wall-rlt-training-addendum','required_base_image_id':BASE_IMAGE,
+                 'base_delivery_is_separate':True,'wall_commit':WALL_COMMIT,'rlinf_commit':RLINF_COMMIT,
+-                'contract_path':CONTRACT,'contract_fingerprint':contract_fingerprint(contract),
+-                'excluded_groups':['mouse','tape'],'included_data':bool(include_data),
++                'contract_path':contract_path,'contract_fingerprint':contract_fingerprint(contract),
++                'repo_id':contract.get('repo_id'),'target_mode':contract.get('target_mode'),
++                'model_adapter':contract.get('model_adapter'),'data_directory':data_dir,
++                'excluded_groups':excluded,'split_counts':{k:len(v) for k,v in contract['splits'].items()},
++                'format_document':format_document(project,contract),
++                'included_data':bool(include_data),
+                 'included_wheelhouse':bool(wheelhouse),'payloads':payloads,
+                 'not_included':['base image','model weights','native extensions','credentials','host virtualenv'],
+                 'required_next_steps':['unpack to new project directory','prepare isolated training overlay',
+                                        'copy verified sm90 native extension from the base environment',
+                                        'H100 single-step and training/recovery validation'],
+-                'usage':'python3 unpack_wall_rlt_training.py --bundle CANDIDATE_DIR --destination NEW_PROJECT --models-root EXISTING_MODELS [--data-root EXISTING_TOP_ERROR]'}
++                'usage':'python3 unpack_wall_rlt_training.py --bundle CANDIDATE_DIR --destination NEW_PROJECT '
++                        '--models-root EXISTING_MODELS [--data-root EXISTING_RECORDINGS_ROOT]'}
+         write_json(stage/'TRAINING_CANDIDATE.json',record)
+         if output.exists():raise FileExistsError('candidate output appeared during packaging')
+         stage.rename(output)
+     return {'output':str(output),'status':record['status'],'payloads':len(payloads),
+-            'included_data':bool(include_data),'contract_fingerprint':record['contract_fingerprint']}
++            'included_data':bool(include_data),'contract_path':contract_path,
++            'data_directory':data_dir,'target_mode':record['target_mode'],
++            'contract_fingerprint':record['contract_fingerprint']}
+ 
+ 
+ def main():
+-    p=argparse.ArgumentParser(description=__doc__)
++    p=argparse.ArgumentParser(description=__doc__,formatter_class=argparse.RawDescriptionHelpFormatter)
+     p.add_argument('--project',default=str(ROOT));p.add_argument('--output',required=True)
++    p.add_argument('--contract',required=True,
++                   help='target data contract inside the project (e.g. written by wall_rlt.data.prepare_ar5)')
++    p.add_argument('--require-excluded',action='append',default=[],
++                   help='task group the manifest must have excluded; repeatable (old joint8: mouse, tape)')
++    p.add_argument('--dataset-name',help='bundled data directory data/<name>; default: the recordings root folder name')
++    p.add_argument('--include',action='append',default=[],
++                   help='extra project file or directory to package, e.g. a CPU-check log directory; repeatable')
+     p.add_argument('--include-data',action='store_true');p.add_argument('--wheelhouse')
+     p.add_argument('--rlinf-archive')
+     a=p.parse_args()
+-    print(json.dumps(package(a.project,a.output,include_data=a.include_data,wheelhouse=a.wheelhouse,
+-                             rlinf_archive=a.rlinf_archive),indent=2))
++    print(json.dumps(package(a.project,a.output,contract=a.contract,include_data=a.include_data,
++                             wheelhouse=a.wheelhouse,rlinf_archive=a.rlinf_archive,
++                             required_excluded=a.require_excluded,dataset_name=a.dataset_name,
++                             extra=a.include),ensure_ascii=False,indent=2))
+ 
+ 
+ if __name__=='__main__':main()
+--- a/scripts/unpack_wall_rlt_training.py
++++ b/scripts/unpack_wall_rlt_training.py
+@@ -4,6 +4,7 @@
+ 
+ import argparse
+ import json
++import os
+ from pathlib import Path
+ import shutil
+ import subprocess
+@@ -14,8 +15,8 @@
+ # The bootstrap lives in the checksummed candidate directory. Importing its
+ # sibling must not add __pycache__ and invalidate the complete file inventory.
+ sys.dont_write_bytecode = True
+-from package_wall_rlt_training import (BASE_IMAGE,CONTRACT,RLINF_COMMIT,RLINF_SHA256,WALL_COMMIT,
+-    contract_fingerprint,regular_file,safe_relative,sha256,write_json)
++from package_wall_rlt_training import (BASE_IMAGE,DATASET_NAME,RECORD_SCHEMA,RLINF_COMMIT,RLINF_SHA256,
++    WALL_COMMIT,contract_fingerprint,regular_file,safe_relative,sha256,write_json)
+ 
+ 
+ def extract_checked(archive,destination,spec):
+@@ -46,11 +47,17 @@
+ def verify_bundle(bundle):
+     bundle=Path(bundle).resolve()
+     record=json.loads(regular_file(bundle,'TRAINING_CANDIDATE.json').read_text())
+-    if (record.get('schema_version')!=1 or record.get('kind')!='wall-rlt-training-addendum' or
++    # Schema 1 candidates (2026-10-29) carry their own unpacker; use that copy.
++    if (record.get('schema_version')!=RECORD_SCHEMA or record.get('kind')!='wall-rlt-training-addendum' or
+         record.get('status')!='TRAINING_CANDIDATE_NOT_GPU_VALIDATED' or
+         record.get('required_base_image_id')!=BASE_IMAGE or record.get('wall_commit')!=WALL_COMMIT or
+-        record.get('rlinf_commit')!=RLINF_COMMIT or record.get('contract_path')!=CONTRACT):
++        record.get('rlinf_commit')!=RLINF_COMMIT):
+         raise ValueError('unsupported or incompatible training candidate')
++    contract=safe_relative(record.get('contract_path') or '')
++    if contract.suffix!='.json':raise ValueError('candidate contract path must name a JSON contract')
++    data_dir=safe_relative(record.get('data_directory') or '')
++    if len(data_dir.parts)!=2 or data_dir.parts[0]!='data' or not DATASET_NAME.fullmatch(data_dir.parts[1]):
++        raise ValueError('candidate data directory must be data/<name>')
+     required={'project.tar.gz','wall-x.bundle','rlinf-source.tar.gz',
+               'package_wall_rlt_training.py','unpack_wall_rlt_training.py'}
+     if record['included_data']:required.add('target-data.tar')
+@@ -91,16 +98,27 @@
+         stage=Path(temp)/'project';stage.mkdir()
+         extract_checked(bundle/'project.tar.gz',stage,record['payloads']['project.tar.gz'])
+         if record['included_data']:
+-            extract_checked(bundle/'target-data.tar',stage/'data/top_error',record['payloads']['target-data.tar'])
+-            target_data=destination/'data/top_error'
++            extract_checked(bundle/'target-data.tar',stage/record['data_directory'],record['payloads']['target-data.tar'])
++            target_data=destination/record['data_directory']
+         else:
+             target_data=existing_data
+         if record['included_wheelhouse']:
+             extract_checked(bundle/'wheelhouse.tar.gz',stage/'wheelhouse',record['payloads']['wheelhouse.tar.gz'])
+-        contract_path=stage/CONTRACT
++        contract_path=regular_file(stage,record['contract_path'])
+         contract=json.loads(contract_path.read_text())
+         if contract_fingerprint(contract)!=record['contract_fingerprint']:
+             raise ValueError('candidate contract fingerprint mismatch')
++        if any(contract.get(k)!=record.get(k) for k in ('target_mode','model_adapter','repo_id')):
++            raise ValueError('candidate record disagrees with its contract semantics')
++        if existing_data is not None:
++            # Cheap guard against a wrong --data-root; the trainer re-hashes every recording.
++            manifest=json.loads(regular_file(stage,Path(os.path.normpath(
++                contract_path.parent/contract['manifest_path'])).relative_to(stage).as_posix()).read_text())
++            missing=[e['npz'] for e in manifest['episodes'] if not (existing_data/e['npz']).is_file()]
++            if missing:
++                raise ValueError(f'data-root lacks {len(missing)} manifest recordings, e.g. {missing[0]}')
++        # Same relocation as the workspace restore: only the recordings root changes;
++        # manifest/normalization stay relative to the contract inside the project.
+         contract['root']=str(target_data)
+         write_json(contract_path,contract)
+         if contract_fingerprint(contract)!=record['contract_fingerprint']:
+@@ -117,8 +135,14 @@
+         subprocess.run([sys.executable,str(destination/'scripts/prepare_wall_rlt_sources.py'),
+                         '--rlinf-archive',str(bundle/'rlinf-source.tar.gz')],cwd=destination,
+                        check=True,capture_output=True,text=True)
++    contract=str(destination/record['contract_path'])
+     report={'status':'TRAINING_CANDIDATE_UNPACKED_NOT_GPU_VALIDATED','project':str(destination),
+             'data_root':str(target_data),'models_root':str(models_root),
++            'contract_path':contract,'target_mode':record['target_mode'],'model_adapter':record['model_adapter'],
++            # configs/rlt/stage1*.yaml name the old joint8 contract; train_wall_rlt.py --set overrides it.
++            'training_overrides':[f'data.train_data_paths={contract}',
++                                  f'actor.model.rlt.data_contract_path={contract}'],
++            'validation_override_single_rank':f'data.val_data_paths={contract}',
+             'contract_fingerprint':record['contract_fingerprint'],'sources_prepared':prepare_sources,
+             'native_extension_installed':False,'dependencies_installed':False,
+             'required_base_image_id':BASE_IMAGE,'source_bundle':str(bundle)}
+@@ -130,7 +154,8 @@
+ def main():
+     p=argparse.ArgumentParser(description=__doc__)
+     p.add_argument('--bundle',required=True);p.add_argument('--destination',required=True)
+-    p.add_argument('--models-root',required=True);p.add_argument('--data-root')
++    p.add_argument('--models-root',required=True)
++    p.add_argument('--data-root',help='existing recordings root, only for candidates packaged without data')
+     a=p.parse_args()
+     print(json.dumps(unpack(a.bundle,a.destination,models_root=a.models_root,data_root=a.data_root),indent=2))
+ 
+--- a/tests/rlt/test_training_bundle.py
++++ b/tests/rlt/test_training_bundle.py
+@@ -16,14 +16,19 @@
+ import unpack_wall_rlt_training as unpack
+ 
+ 
++CONTRACT='configs/rlt/fixture_contract.json'
++JOINT8=('ar5_joint_next_v1','ar5_joint8_reinit_v1')
++EE=('ar5_ee_rel6d_next_v1','wall_oss05_right_arm_ee_v1')
++
++
+ def dump(path,value):
+     path.parent.mkdir(parents=True,exist_ok=True)
+     path.write_text(json.dumps(value))
+     return pack.sha256(path)
+ 
+ 
+-@pytest.fixture
+-def fixture(tmp_path,monkeypatch):
++def make_fixture(tmp_path,monkeypatch,*,root_name='top_error',semantics=JOINT8,
++                 excluded=('mouse','tape'),recorded_excluded=None,collection=False):
+     project=tmp_path/'project';project.mkdir()
+     repo=project/'wall-x';repo.mkdir()
+     def git(*args):
+@@ -32,7 +37,7 @@
+     (repo/'tracked.py').write_text('print("fixed source")\n')
+     git('add','.');git('commit','-m','fixture')
+     commit=git('rev-parse','HEAD')
+-    raw=tmp_path/'recordings'
++    raw=tmp_path/'raw'/root_name
+     (raw/'banana').mkdir(parents=True)
+     (raw/'mouse').mkdir();(raw/'mouse'/'secret').write_text('do not include')
+     metadata_hash=dump(raw/'banana/dataset.json',{'prompt':'pick banana'})
+@@ -41,14 +46,22 @@
+     episode={'episode_id':9,'task_group':'banana','npz':'banana/episode_0002.npz',
+              'npz_sha256':pack.sha256(npz),'dataset_metadata_sha256':metadata_hash,
+              'videos':{'cam_front':{'path':'banana/episode_0002_cam_front.mp4','bytes':vp.stat().st_size}}}
+-    manifest={'episodes':[episode],'splits':{'train':[9],'dev':[],'test':[]},'excluded_groups':['mouse','tape']}
+-    md=project/'metadata/rlt-top-error-selected-20261029'
++    manifest={'episodes':[episode],'splits':{'train':[9],'dev':[],'test':[]},'excluded_groups':list(excluded)}
++    md=project/'metadata/fixture-audit'
+     mh=dump(md/'episodes.json',manifest)
+-    nh=dump(md/'normalization.ar5_joint_next_v1.json',{'norm_stats':{}})
+-    contract={'root':str(raw),'manifest_path':'../../metadata/rlt-top-error-selected-20261029/episodes.json',
+-              'manifest_sha256':mh,'normalization_path':'../../metadata/rlt-top-error-selected-20261029/normalization.ar5_joint_next_v1.json',
+-              'normalization_sha256':nh,'splits':manifest['splits'],'action_names':['joint_next'],'schema_version':1}
+-    dump(project/pack.CONTRACT,contract)
++    nh=dump(md/f'normalization.{semantics[0]}.json',{'norm_stats':{}})
++    dump(md/'audit.json',{'structural_status':'PASS'})
++    (project/'数据集格式说明.md').write_text('edited after the contract was prepared')
++    provenance={'format_document':'数据集格式说明.md','format_document_sha256':'0'*64,
++                'excluded_groups':sorted(excluded if recorded_excluded is None else recorded_excluded)}
++    if collection:
++        provenance['collection_record_sha256']=dump(raw/'wall_collection.json',{'settings':{'逆解':'weighted'}})
++    contract={'root':str(raw),'manifest_path':'../../metadata/fixture-audit/episodes.json',
++              'manifest_sha256':mh,'normalization_path':f'../../metadata/fixture-audit/normalization.{semantics[0]}.json',
++              'normalization_sha256':nh,'splits':manifest['splits'],'action_names':['target'],'schema_version':1,
++              'repo_id':f'local/{root_name}','target_mode':semantics[0],'model_adapter':semantics[1],
++              'provenance':provenance}
++    dump(project/CONTRACT,contract)
+     archive=tmp_path/'rlinf.tar.gz';archive.write_bytes(b'pinned source archive fixture')
+     digest=pack.sha256(archive)
+     for module in (pack,unpack):
+@@ -74,46 +87,131 @@
+     return project,raw,archive,models,contract
+ 
+ 
++@pytest.fixture
++def fixture(tmp_path,monkeypatch):
++    return make_fixture(tmp_path,monkeypatch)
++
++
+ def test_full_candidate_unpacks_sources_and_relocates_without_semantic_change(fixture,tmp_path):
+     project,raw,archive,models,contract=fixture
+     candidate=tmp_path/'candidate'
+-    result=pack.package(project,candidate,include_data=True,rlinf_archive=archive)
++    # The 2026-10-29 joint8 flow: its contract plus the mouse/tape exclusions, explicitly.
++    result=pack.package(project,candidate,contract=CONTRACT,include_data=True,rlinf_archive=archive,
++                        required_excluded=('mouse','tape'))
+     assert result['status']=='TRAINING_CANDIDATE_NOT_GPU_VALIDATED'
+     record=unpack.verify_bundle(candidate)
++    assert (record['contract_path'],record['data_directory'])==(CONTRACT,'data/top_error')
++    assert (record['target_mode'],record['model_adapter'])==JOINT8
++    assert record['excluded_groups']==['mouse','tape']
+     assert set(record['payloads']['target-data.tar']['members'])=={
+         'banana/dataset.json','banana/episode_0002.npz','banana/episode_0002_cam_front.mp4'}
+     names=record['payloads']['project.tar.gz']['members']
+     assert not any('env/' in name or name.endswith('.so') or 'H100使用说明' in name or '.git' in name for name in names)
++    assert {CONTRACT,'metadata/fixture-audit/episodes.json','metadata/fixture-audit/audit.json',
++            'metadata/fixture-audit/normalization.ar5_joint_next_v1.json'}<=set(names)
+     dest=tmp_path/'unpacked'
+     result=unpack.unpack(candidate,dest,models_root=models)
+     assert result['sources_prepared'] is True
+     assert (dest/'source-preparation-ran').read_text()=='yes'
+     assert (dest/'data/top_error/banana/episode_0002.npz').read_bytes()==(raw/'banana/episode_0002.npz').read_bytes()
+-    relocated=json.loads((dest/pack.CONTRACT).read_text())
++    relocated=json.loads((dest/CONTRACT).read_text())
+     assert relocated['root']==str(dest/'data/top_error')
+     assert pack.contract_fingerprint(relocated)==pack.contract_fingerprint(contract)
++    assert result['training_overrides']==[f'data.train_data_paths={dest/CONTRACT}',
++                                          f'actor.model.rlt.data_contract_path={dest/CONTRACT}']
+     assert (dest/'models').resolve()==models
+     assert not (dest/'TRAINING_UNPACK_INCOMPLETE.json').exists()
+     assert (raw/'mouse/secret').read_text()=='do not include'
+ 
+ 
++def test_ee_candidate_records_its_semantics_and_carries_the_collection_record(tmp_path,monkeypatch):
++    project,raw,archive,models,contract=make_fixture(tmp_path,monkeypatch,root_name='wall_unlocked',
++                                                     semantics=EE,excluded=(),collection=True)
++    candidate=tmp_path/'candidate'
++    result=pack.package(project,candidate,contract=project/CONTRACT,include_data=True,rlinf_archive=archive)
++    assert (result['data_directory'],result['target_mode'])==('data/wall_unlocked',EE[0])
++    record=unpack.verify_bundle(candidate)
++    assert (record['target_mode'],record['model_adapter'],record['repo_id'])==(*EE,'local/wall_unlocked')
++    assert record['excluded_groups']==[] and record['split_counts']=={'train':1,'dev':0,'test':0}
++    assert record['format_document']['name']=='数据集格式说明.md'
++    assert record['format_document']['matches_contract_provenance'] is False
++    assert 'wall_collection.json' in record['payloads']['target-data.tar']['members']
++    dest=tmp_path/'unpacked'
++    unpack.unpack(candidate,dest,models_root=models)
++    assert (dest/'data/wall_unlocked/wall_collection.json').read_bytes()==(raw/'wall_collection.json').read_bytes()
++    relocated=json.loads((dest/CONTRACT).read_text())
++    assert relocated['root']==str(dest/'data/wall_unlocked')
++    assert pack.contract_fingerprint(relocated)==pack.contract_fingerprint(contract)
++
++
++def test_changed_collection_record_is_rejected(tmp_path,monkeypatch):
++    project,raw,archive,_,_=make_fixture(tmp_path,monkeypatch,semantics=EE,collection=True)
++    dump(raw/'wall_collection.json',{'settings':{'逆解':'weighted'},'sessions':['appended later']})
++    with pytest.raises(ValueError,match='SHA256 changed'):
++        pack.package(project,tmp_path/'candidate',contract=CONTRACT,include_data=True,rlinf_archive=archive)
++
++
++def test_exclusions_come_from_the_manifest_and_must_agree(tmp_path,monkeypatch):
++    project,_,archive,_,_=make_fixture(tmp_path,monkeypatch)
++    with pytest.raises(ValueError,match=r"must exclude groups \['other'\]"):
++        pack.package(project,tmp_path/'c1',contract=CONTRACT,rlinf_archive=archive,required_excluded=('mouse','other'))
++    other=tmp_path/'second';other.mkdir()
++    project,_,archive,_,_=make_fixture(other,monkeypatch,recorded_excluded=('mouse',))
++    with pytest.raises(ValueError,match='provenance exclusions differ'):
++        pack.package(project,tmp_path/'c2',contract=CONTRACT,rlinf_archive=archive)
++
++
++def test_contract_must_be_in_project_with_relative_artifact_paths(fixture,tmp_path):
++    project,_,archive,_,contract=fixture
++    outside=tmp_path/'outside.json';outside.write_text(json.dumps(contract))
++    with pytest.raises(ValueError,match='inside the packaged project'):
++        pack.package(project,tmp_path/'c1',contract=outside,rlinf_archive=archive)
++    absolute=dict(contract,manifest_path=str(project/'metadata/fixture-audit/episodes.json'))
++    dump(project/'configs/rlt/absolute.json',absolute)
++    with pytest.raises(ValueError,match='relative path inside the project'):
++        pack.package(project,tmp_path/'c2',contract='configs/rlt/absolute.json',rlinf_archive=archive)
++    assert not (tmp_path/'c1').exists() and not (tmp_path/'c2').exists()
++
++
++def test_dataset_directory_name_can_be_chosen_but_not_escape(fixture,tmp_path):
++    project,_,archive,_,_=fixture
++    result=pack.package(project,tmp_path/'candidate',contract=CONTRACT,rlinf_archive=archive,dataset_name='renamed')
++    assert result['data_directory']=='data/renamed'
++    for name in ('../escape','a/b','.hidden',''):
++        with pytest.raises(ValueError,match='unsafe dataset directory'):
++            pack.dataset_directory({'root':'/x/y'},name or '.')
++
++
++def test_extra_evidence_is_packaged_only_when_named(fixture):
++    project,_,_,_,_=fixture
++    (project/'logs/ee-check').mkdir(parents=True);(project/'logs/ee-check/report.json').write_text('{}')
++    (project/'logs/other.json').write_text('{}')
++    names={entry[0] for entry in pack.project_files(project,CONTRACT,extra=('logs/ee-check',))}
++    assert 'logs/ee-check/report.json' in names and 'logs/other.json' not in names
++    with pytest.raises(ValueError,match='unsafe'):pack.project_files(project,CONTRACT,extra=('../outside',))
++
++
+ def test_source_only_candidate_requires_existing_data_and_never_copies_models(fixture,tmp_path):
+     project,raw,archive,models,_=fixture
+     candidate=tmp_path/'candidate'
+-    pack.package(project,candidate,rlinf_archive=archive)
++    pack.package(project,candidate,contract=CONTRACT,rlinf_archive=archive)
+     with pytest.raises(ValueError,match='requires an existing data-root'):
+         unpack.unpack(candidate,tmp_path/'fail',models_root=models)
++    empty=tmp_path/'empty';empty.mkdir()
++    with pytest.raises(ValueError,match='data-root lacks 1 manifest recordings'):
++        unpack.unpack(candidate,tmp_path/'fail',models_root=models,data_root=empty)
++    assert not (tmp_path/'fail').exists()
+     dest=tmp_path/'unpacked'
+     unpack.unpack(candidate,dest,models_root=models,data_root=raw)
+     assert not (dest/'data').exists()
+-    assert json.loads((dest/pack.CONTRACT).read_text())['root']==str(raw)
++    assert json.loads((dest/CONTRACT).read_text())['root']==str(raw)
+ 
+ 
+ def test_pack_rejects_changed_recording_without_publishing_candidate(fixture,tmp_path):
+     project,raw,archive,_,_=fixture
+     (raw/'banana/episode_0002.npz').write_bytes(b'changed after audit')
+     with pytest.raises(ValueError,match='SHA256 changed'):
+-        pack.package(project,tmp_path/'candidate',include_data=True,rlinf_archive=archive)
++        pack.package(project,tmp_path/'candidate',contract=CONTRACT,include_data=True,rlinf_archive=archive)
+     assert not (tmp_path/'candidate').exists()
+ 
+ 
+@@ -121,24 +219,24 @@
+     project,raw,archive,_,_=fixture
+     (raw/'banana/episode_0002_cam_front.mp4').write_bytes(b'changed video payload length')
+     with pytest.raises(ValueError,match='size changed'):
+-        pack.package(project,tmp_path/'candidate',include_data=True,rlinf_archive=archive)
++        pack.package(project,tmp_path/'candidate',contract=CONTRACT,include_data=True,rlinf_archive=archive)
+ 
+ 
+ def test_no_overwrite_of_candidate_destination_or_base_delivery(fixture,tmp_path):
+     project,raw,archive,models,_=fixture
+     candidate=tmp_path/'candidate'
+-    pack.package(project,candidate,include_data=True,rlinf_archive=archive)
+-    with pytest.raises(FileExistsError):pack.package(project,candidate,rlinf_archive=archive)
++    pack.package(project,candidate,contract=CONTRACT,include_data=True,rlinf_archive=archive)
++    with pytest.raises(FileExistsError):pack.package(project,candidate,contract=CONTRACT,rlinf_archive=archive)
+     dest=tmp_path/'existing';dest.mkdir()
+     with pytest.raises(FileExistsError):unpack.unpack(candidate,dest,models_root=models)
+     with pytest.raises(ValueError,match='base delivery'):
+-        pack.package(project,tmp_path/'WALL-OSS-CRP-transfer-fixture'/'new',rlinf_archive=archive)
++        pack.package(project,tmp_path/'WALL-OSS-CRP-transfer-fixture'/'new',contract=CONTRACT,rlinf_archive=archive)
+ 
+ 
+ def test_payload_corruption_is_rejected_before_destination_is_created(fixture,tmp_path):
+     project,_,archive,models,_=fixture
+     candidate=tmp_path/'candidate'
+-    pack.package(project,candidate,include_data=True,rlinf_archive=archive)
++    pack.package(project,candidate,contract=CONTRACT,include_data=True,rlinf_archive=archive)
+     with (candidate/'project.tar.gz').open('ab') as stream:stream.write(b'corrupt')
+     dest=tmp_path/'unpacked'
+     with pytest.raises(ValueError,match='checksum mismatch'):
+@@ -173,7 +271,7 @@
+     path=raw/'banana/episode_0002.npz';target=tmp_path/'same-bytes';target.write_bytes(path.read_bytes())
+     path.unlink();path.symlink_to(target)
+     with pytest.raises(ValueError,match='regular file'):
+-        pack.package(project,tmp_path/'candidate',include_data=True,rlinf_archive=archive)
++        pack.package(project,tmp_path/'candidate',contract=CONTRACT,include_data=True,rlinf_archive=archive)
+ 
+ 
+ def test_optional_wheelhouse_is_included_and_bound(fixture,tmp_path):
+@@ -186,7 +284,7 @@
+     (wheels/'overlay-pins.txt').write_text('fixture==1\n')
+     (wheels/'SHA256SUMS').write_text(''.join(f'{pack.sha256(p)}  {p.name}\n' for p in sorted(wheels.iterdir())))
+     candidate=tmp_path/'candidate'
+-    pack.package(project,candidate,include_data=True,wheelhouse=wheels,rlinf_archive=archive)
++    pack.package(project,candidate,contract=CONTRACT,include_data=True,wheelhouse=wheels,rlinf_archive=archive)
+     result=unpack.unpack(candidate,tmp_path/'unpacked',models_root=models)
+     assert (Path(result['project'])/'wheelhouse/fixture-1-py3-none-any.whl').read_bytes()==b'wheel'
+ 

@@ -1,0 +1,442 @@
+{
+  "status": "PASS",
+  "package": "GitPython",
+  "version": "3.2.1",
+  "filename": "gitpython-3.2.1-py3-none-any.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "2c690fe440eea7f5693d34981438f42d02abb9d9b5deef62f7ea4b2e07574c81",
+  "wheel_tags": [
+    "py3-none-any"
+  ],
+  "record_verified_files": [
+    {
+      "path": "git/__init__.py",
+      "wheel_path": "git/__init__.py",
+      "size_bytes": 8889,
+      "sha256": "55472843f38e23d28c0e350d6e82521369a44c6f0b8958dd6f2d7394ebf108e1"
+    },
+    {
+      "path": "git/cmd.py",
+      "wheel_path": "git/cmd.py",
+      "size_bytes": 82808,
+      "sha256": "5b6ac42c7c902a12cfd60e22e6507a4382c72c3ce097b7df0de73392f140e61d"
+    },
+    {
+      "path": "git/compat.py",
+      "wheel_path": "git/compat.py",
+      "size_bytes": 4526,
+      "sha256": "cb513acba3b6ab9afc7254a5afc64d9ae2161bd9e61ee7a1404b15b2605f7ecf"
+    },
+    {
+      "path": "git/config.py",
+      "wheel_path": "git/config.py",
+      "size_bytes": 46135,
+      "sha256": "ad19783a71e7baf3e06200fe79fc869be9bfb0cf21ef1dc90b3fe89d88574947"
+    },
+    {
+      "path": "git/db.py",
+      "wheel_path": "git/db.py",
+      "size_bytes": 3202,
+      "sha256": "5f5f689a6f6c937784cb9580ccca19dad1bd52674f6454187fef32aa9bec605d"
+    },
+    {
+      "path": "git/diff.py",
+      "wheel_path": "git/diff.py",
+      "size_bytes": 29308,
+      "sha256": "78b75319fec0e6eb8a77b75680facd1f2c997ebf6ddcfacc24d418876f79f1b2"
+    },
+    {
+      "path": "git/exc.py",
+      "wheel_path": "git/exc.py",
+      "size_bytes": 7119,
+      "sha256": "19cee0d691e99fc3a64ec7b7d0d1e6255b012760981fc2f1691f32f140379483"
+    },
+    {
+      "path": "git/index/__init__.py",
+      "wheel_path": "git/index/__init__.py",
+      "size_bytes": 406,
+      "sha256": "8be36a6fc2ee7e9f5a15b9b1a5004e4669909e311554cd4f9f9f1fb109321a04"
+    },
+    {
+      "path": "git/index/base.py",
+      "wheel_path": "git/index/base.py",
+      "size_bytes": 67628,
+      "sha256": "b176377116a117a049d95c6d71fd1f3cb5e9d0912976e8f121d155324212ff9a"
+    },
+    {
+      "path": "git/index/fun.py",
+      "wheel_path": "git/index/fun.py",
+      "size_bytes": 23754,
+      "sha256": "ad54565d1964a71e63ff3bf0dc3491220438cd1c4a81ace34926505d8ebbdca5"
+    },
+    {
+      "path": "git/index/typ.py",
+      "wheel_path": "git/index/typ.py",
+      "size_bytes": 7413,
+      "sha256": "15fd6952470ad34e851d203cf58ab8aae748c0f45b0605ef66f061aefa797c0b"
+    },
+    {
+      "path": "git/index/util.py",
+      "wheel_path": "git/index/util.py",
+      "size_bytes": 3676,
+      "sha256": "7f405f13624f91dca9b01d90fc727c294ecc0b8e51447cb02ff196c316bfe61c"
+    },
+    {
+      "path": "git/objects/__init__.py",
+      "wheel_path": "git/objects/__init__.py",
+      "size_bytes": 637,
+      "sha256": "3ba64bfe8957edee7ef2221b2af8913e4552271377ed603e102d2af5de3c5396"
+    },
+    {
+      "path": "git/objects/base.py",
+      "wheel_path": "git/objects/base.py",
+      "size_bytes": 10746,
+      "sha256": "982ed1668816a1d35e8c5e18f3a3986a3cdeb279038feb66b2ee6355d6c89ff0"
+    },
+    {
+      "path": "git/objects/blob.py",
+      "wheel_path": "git/objects/blob.py",
+      "size_bytes": 1137,
+      "sha256": "6619dbbcaaa42b9348d9d36f42684f6804998f419edb43eb5b5c1d76bada7a7b"
+    },
+    {
+      "path": "git/objects/commit.py",
+      "wheel_path": "git/objects/commit.py",
+      "size_bytes": 34802,
+      "sha256": "85d795a33574d5336054522d771d0a5d58710d825b0cb5a81ee2e76b557abf15"
+    },
+    {
+      "path": "git/objects/fun.py",
+      "wheel_path": "git/objects/fun.py",
+      "size_bytes": 9230,
+      "sha256": "1bd16470363c2d65f0cc23ef70b333e6f47adf21a19407365779dad6d7d9cfb6"
+    },
+    {
+      "path": "git/objects/submodule/__init__.py",
+      "wheel_path": "git/objects/submodule/__init__.py",
+      "size_bytes": 303,
+      "sha256": "eb1c92a7bebb2d5cf75329568146a59ed4bf9c65d1b95cd7c43b8502ffd67367"
+    },
+    {
+      "path": "git/objects/submodule/base.py",
+      "wheel_path": "git/objects/submodule/base.py",
+      "size_bytes": 74673,
+      "sha256": "f7daf1bc1ab9fa86f8e9920888fa5b3c7ab8898ff75da051d4b3577817ffe666"
+    },
+    {
+      "path": "git/objects/submodule/root.py",
+      "wheel_path": "git/objects/submodule/root.py",
+      "size_bytes": 21279,
+      "sha256": "6528c110c6874274fb8d5ed84bbf5ebb15b12dec486ea8e54c9bc64dec0c2383"
+    },
+    {
+      "path": "git/objects/submodule/util.py",
+      "wheel_path": "git/objects/submodule/util.py",
+      "size_bytes": 3509,
+      "sha256": "b10a8061a89225d16465af4d940b8aff04ec30d892fa49109d08ef22826d73fa"
+    },
+    {
+      "path": "git/objects/tag.py",
+      "wheel_path": "git/objects/tag.py",
+      "size_bytes": 4364,
+      "sha256": "10e74b1bd95673614d2ca5fff495874ca154b9536762d8872a26ee368b06adb5"
+    },
+    {
+      "path": "git/objects/tree.py",
+      "wheel_path": "git/objects/tree.py",
+      "size_bytes": 13769,
+      "sha256": "4f78e9258ff603e50aa471f8c1b61efd6d700cd3971190f7c465bf63b6ee398f"
+    },
+    {
+      "path": "git/objects/util.py",
+      "wheel_path": "git/objects/util.py",
+      "size_bytes": 24108,
+      "sha256": "3ae93d0d43418d89aafb389ccfa814f6e9bcd22cfcf7e3281ce943b9d0d029a4"
+    },
+    {
+      "path": "git/py.typed",
+      "wheel_path": "git/py.typed",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "git/refs/__init__.py",
+      "wheel_path": "git/refs/__init__.py",
+      "size_bytes": 509,
+      "sha256": "0d6949367b31fb88ccfc4f95c9c6cff85654767ea25a18e71ffb99fe965706ba"
+    },
+    {
+      "path": "git/refs/head.py",
+      "wheel_path": "git/refs/head.py",
+      "size_bytes": 11325,
+      "sha256": "facfaa34909f23c67642496e7b5ab0fe4b9f573cfe26a257547a0b09d026a45a"
+    },
+    {
+      "path": "git/refs/log.py",
+      "wheel_path": "git/refs/log.py",
+      "size_bytes": 12635,
+      "sha256": "1b67bd191d68c307660ee2a6c061a8cede5bd72f2a21c714a178ae936ab5135a"
+    },
+    {
+      "path": "git/refs/reference.py",
+      "wheel_path": "git/refs/reference.py",
+      "size_bytes": 5651,
+      "sha256": "143d4dc0ca3673bb8aa016d5e66d682f9cbe4696e5a28d3a2e35daa49295423e"
+    },
+    {
+      "path": "git/refs/remote.py",
+      "wheel_path": "git/refs/remote.py",
+      "size_bytes": 2908,
+      "sha256": "ed55b2400f2c7c59c6d7bb5d123e6dd004bedd219435e65b40d2d9cf22fbcc6e"
+    },
+    {
+      "path": "git/refs/symbolic.py",
+      "wheel_path": "git/refs/symbolic.py",
+      "size_bytes": 38510,
+      "sha256": "87754d2ec8266d88276edc03efe95a503c69e8a49decb40a001faa53e8305517"
+    },
+    {
+      "path": "git/refs/tag.py",
+      "wheel_path": "git/refs/tag.py",
+      "size_bytes": 5522,
+      "sha256": "3ffbea93155e5cbd6784079efb254b33baef79bc824b34a2a4cdc81a5d49afbc"
+    },
+    {
+      "path": "git/remote.py",
+      "wheel_path": "git/remote.py",
+      "size_bytes": 47822,
+      "sha256": "ecfddc64f6885a232f9702b5246b0cd70b4acecc779872b661515b4b583908ff"
+    },
+    {
+      "path": "git/repo/__init__.py",
+      "wheel_path": "git/repo/__init__.py",
+      "size_bytes": 210,
+      "sha256": "0882d2547dfa7d7fd6c551528c3f68d561792e0b0d79d3e226f4a780a66a7d55"
+    },
+    {
+      "path": "git/repo/base.py",
+      "wheel_path": "git/repo/base.py",
+      "size_bytes": 69453,
+      "sha256": "85378831e2a4deeade058a5bd9b51a40a1fb9614f3b75c48301ee9815eabd8b2"
+    },
+    {
+      "path": "git/repo/fun.py",
+      "wheel_path": "git/repo/fun.py",
+      "size_bytes": 23126,
+      "sha256": "9665bd9f522228e4c69a8d10797fc287d63551ed25ab8afc106f2d0198c4f3a9"
+    },
+    {
+      "path": "git/types.py",
+      "wheel_path": "git/types.py",
+      "size_bytes": 10558,
+      "sha256": "015a8ce2e4b95da5f01cf0385761666e2b83a9dbd229157e025902cbedc9e678"
+    },
+    {
+      "path": "git/util.py",
+      "wheel_path": "git/util.py",
+      "size_bytes": 53456,
+      "sha256": "280f119aaad26418311257a5dceda619cec8858dc307fc7fbe9c17a84c8873ba"
+    },
+    {
+      "path": "gitpython-3.2.1.dist-info/INSTALLER",
+      "wheel_path": "gitpython-3.2.1.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "gitpython-3.2.1.dist-info/METADATA",
+      "wheel_path": "gitpython-3.2.1.dist-info/METADATA",
+      "size_bytes": 13290,
+      "sha256": "c6c9f42caa1546c24692c3dd9fb3f774208f629a97395351a0fbd54684744536"
+    },
+    {
+      "path": "gitpython-3.2.1.dist-info/WHEEL",
+      "wheel_path": "gitpython-3.2.1.dist-info/WHEEL",
+      "size_bytes": 91,
+      "sha256": "61532836a2b3111b7ec23519c09df7c41180c27165fb872a6d8913b566b88ad1"
+    },
+    {
+      "path": "gitpython-3.2.1.dist-info/licenses/AUTHORS",
+      "wheel_path": "gitpython-3.2.1.dist-info/licenses/AUTHORS",
+      "size_bytes": 2410,
+      "sha256": "22e731fc21f7c3bff8d3ce328cce82e41bca7cb03c7157d81d65b6a559a9c529"
+    },
+    {
+      "path": "gitpython-3.2.1.dist-info/licenses/LICENSE",
+      "wheel_path": "gitpython-3.2.1.dist-info/licenses/LICENSE",
+      "size_bytes": 1503,
+      "sha256": "86fc94c321a9afbc11514713511bafded225f25100dcc0f7350e82bc231b8beb"
+    },
+    {
+      "path": "gitpython-3.2.1.dist-info/top_level.txt",
+      "wheel_path": "gitpython-3.2.1.dist-info/top_level.txt",
+      "size_bytes": 4,
+      "sha256": "d21cc3b88a7ca1bbfadb85771a66eab1a8015a493ca21b4653e05cd4f9934f4a"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "git/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/__pycache__/cmd.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/__pycache__/compat.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/__pycache__/config.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/__pycache__/db.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/__pycache__/diff.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/__pycache__/exc.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/__pycache__/remote.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/__pycache__/types.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/__pycache__/util.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/index/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/index/__pycache__/base.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/index/__pycache__/fun.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/index/__pycache__/typ.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/index/__pycache__/util.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/objects/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/objects/__pycache__/base.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/objects/__pycache__/blob.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/objects/__pycache__/commit.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/objects/__pycache__/fun.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/objects/__pycache__/tag.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/objects/__pycache__/tree.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/objects/__pycache__/util.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/objects/submodule/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/objects/submodule/__pycache__/base.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/objects/submodule/__pycache__/root.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/objects/submodule/__pycache__/util.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/refs/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/refs/__pycache__/head.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/refs/__pycache__/log.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/refs/__pycache__/reference.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/refs/__pycache__/remote.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/refs/__pycache__/symbolic.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/refs/__pycache__/tag.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/repo/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/repo/__pycache__/base.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "git/repo/__pycache__/fun.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "gitpython-3.2.1.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "ab3ecc9e7ac6a9d912a85832d76d82532ca6fef161a19501b4b3ffbd054c92e5",
+  "wheel_size_bytes": 271656,
+  "rebuilt_record_verified_files": 43,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:18.293482+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 43,
+  "source_record_verified_file_count": 44
+}

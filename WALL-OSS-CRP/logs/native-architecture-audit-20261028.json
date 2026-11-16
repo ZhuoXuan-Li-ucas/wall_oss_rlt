@@ -1,0 +1,257 @@
+{
+  "checked_utc": "2026-10-28T08:00:37.514059+00:00",
+  "purpose": "Read-only comparison of existing cu130 native extensions with H100 requirements; no plan change, installation, inference or training.",
+  "target_gpu_architecture": "sm_90",
+  "extensions": [
+    {
+      "path": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so",
+      "bytes": 205012272,
+      "sha256": "df0b6de38045ed6b94781924ae5ca69c6dcd7c8ba842fba6ab74cec95133c200",
+      "architecture_commands": [
+        {
+          "command": [
+            "/usr/local/cuda/bin/cuobjdump",
+            "--list-elf",
+            "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so"
+          ],
+          "returncode": 0,
+          "stdout": "ELF file    1: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.1.sm_80.cubin\nELF file    2: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.2.sm_80.cubin\nELF file    3: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.3.sm_80.cubin\nELF file    4: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.4.sm_80.cubin\nELF file    5: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.5.sm_80.cubin\nELF file    6: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.6.sm_80.cubin\nELF file    7: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.7.sm_80.cubin\nELF file    8: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.8.sm_80.cubin\nELF file    9: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.9.sm_80.cubin\nELF file   10: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.10.sm_80.cubin\nELF file   11: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.11.sm_80.cubin\nELF file   12: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.12.sm_80.cubin\nELF file   13: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.13.sm_80.cubin\nELF file   14: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.14.sm_80.cubin\nELF file   15: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.15.sm_80.cubin\nELF file   16: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.16.sm_80.cubin\nELF file   17: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.17.sm_80.cubin\nELF file   18: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.18.sm_80.cubin\nELF file   19: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.19.sm_80.cubin\nELF file   20: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.20.sm_80.cubin\nELF file   21: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.21.sm_80.cubin\nELF file   22: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.22.sm_80.cubin\nELF file   23: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.23.sm_80.cubin\nELF file   24: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.24.sm_80.cubin\nELF file   25: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.25.sm_80.cubin\nELF file   26: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.26.sm_80.cubin\nELF file   27: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.27.sm_80.cubin\nELF file   28: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.28.sm_80.cubin\nELF file   29: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.29.sm_80.cubin\nELF file   30: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.30.sm_80.cubin\nELF file   31: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.31.sm_80.cubin\nELF file   32: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.32.sm_80.cubin\nELF file   33: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.33.sm_80.cubin\nELF file   34: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.34.sm_80.cubin\nELF file   35: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.35.sm_80.cubin\nELF file   36: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.36.sm_80.cubin\nELF file   37: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.37.sm_80.cubin\nELF file   38: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.38.sm_80.cubin\nELF file   39: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.39.sm_80.cubin\nELF file   40: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.40.sm_80.cubin\nELF file   41: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.41.sm_80.cubin\nELF file   42: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.42.sm_80.cubin\nELF file   43: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.43.sm_80.cubin\nELF file   44: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.44.sm_80.cubin\nELF file   45: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.45.sm_80.cubin\nELF file   46: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.46.sm_80.cubin\nELF file   47: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.47.sm_80.cubin\nELF file   48: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.48.sm_80.cubin\nELF file   49: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.49.sm_80.cubin\nELF file   50: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.50.sm_80.cubin\nELF file   51: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.51.sm_80.cubin\nELF file   52: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.52.sm_80.cubin\nELF file   53: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.53.sm_80.cubin\nELF file   54: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.54.sm_80.cubin\nELF file   55: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.55.sm_80.cubin\nELF file   56: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.56.sm_80.cubin\nELF file   57: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.57.sm_80.cubin\nELF file   58: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.58.sm_80.cubin\nELF file   59: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.59.sm_80.cubin\nELF file   60: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.60.sm_80.cubin\nELF file   61: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.61.sm_80.cubin\nELF file   62: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.62.sm_80.cubin\nELF file   63: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.63.sm_80.cubin\nELF file   64: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.64.sm_80.cubin\nELF file   65: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.65.sm_80.cubin\nELF file   66: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.66.sm_80.cubin\nELF file   67: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.67.sm_80.cubin\nELF file   68: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.68.sm_80.cubin\nELF file   69: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.69.sm_80.cubin\nELF file   70: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.70.sm_80.cubin\nELF file   71: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.71.sm_80.cubin\nELF file   72: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.72.sm_80.cubin\n",
+          "stderr": "",
+          "architectures": [
+            "sm_80"
+          ],
+          "output_lines": 72
+        },
+        {
+          "command": [
+            "/usr/local/cuda/bin/cuobjdump",
+            "--list-ptx",
+            "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so"
+          ],
+          "returncode": 0,
+          "stdout": "",
+          "stderr": "cuobjdump info    : No PTX file found to extract from '/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so'. You may try with -all option.\n",
+          "architectures": [],
+          "output_lines": 0
+        },
+        {
+          "command": [
+            "/usr/local/cuda/bin/cuobjdump",
+            "--all-fatbin",
+            "--list-elf",
+            "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so"
+          ],
+          "returncode": 0,
+          "stdout": "ELF file    1: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.1.sm_80.cubin\nELF file    2: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.2.sm_80.cubin\nELF file    3: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.3.sm_80.cubin\nELF file    4: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.4.sm_80.cubin\nELF file    5: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.5.sm_80.cubin\nELF file    6: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.6.sm_80.cubin\nELF file    7: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.7.sm_80.cubin\nELF file    8: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.8.sm_80.cubin\nELF file    9: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.9.sm_80.cubin\nELF file   10: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.10.sm_80.cubin\nELF file   11: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.11.sm_80.cubin\nELF file   12: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.12.sm_80.cubin\nELF file   13: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.13.sm_80.cubin\nELF file   14: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.14.sm_80.cubin\nELF file   15: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.15.sm_80.cubin\nELF file   16: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.16.sm_80.cubin\nELF file   17: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.17.sm_80.cubin\nELF file   18: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.18.sm_80.cubin\nELF file   19: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.19.sm_80.cubin\nELF file   20: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.20.sm_80.cubin\nELF file   21: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.21.sm_80.cubin\nELF file   22: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.22.sm_80.cubin\nELF file   23: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.23.sm_80.cubin\nELF file   24: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.24.sm_80.cubin\nELF file   25: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.25.sm_80.cubin\nELF file   26: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.26.sm_80.cubin\nELF file   27: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.27.sm_80.cubin\nELF file   28: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.28.sm_80.cubin\nELF file   29: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.29.sm_80.cubin\nELF file   30: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.30.sm_80.cubin\nELF file   31: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.31.sm_80.cubin\nELF file   32: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.32.sm_80.cubin\nELF file   33: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.33.sm_80.cubin\nELF file   34: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.34.sm_80.cubin\nELF file   35: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.35.sm_80.cubin\nELF file   36: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.36.sm_80.cubin\nELF file   37: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.37.sm_80.cubin\nELF file   38: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.38.sm_80.cubin\nELF file   39: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.39.sm_80.cubin\nELF file   40: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.40.sm_80.cubin\nELF file   41: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.41.sm_80.cubin\nELF file   42: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.42.sm_80.cubin\nELF file   43: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.43.sm_80.cubin\nELF file   44: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.44.sm_80.cubin\nELF file   45: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.45.sm_80.cubin\nELF file   46: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.46.sm_80.cubin\nELF file   47: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.47.sm_80.cubin\nELF file   48: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.48.sm_80.cubin\nELF file   49: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.49.sm_80.cubin\nELF file   50: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.50.sm_80.cubin\nELF file   51: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.51.sm_80.cubin\nELF file   52: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.52.sm_80.cubin\nELF file   53: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.53.sm_80.cubin\nELF file   54: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.54.sm_80.cubin\nELF file   55: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.55.sm_80.cubin\nELF file   56: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.56.sm_80.cubin\nELF file   57: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.57.sm_80.cubin\nELF file   58: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.58.sm_80.cubin\nELF file   59: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.59.sm_80.cubin\nELF file   60: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.60.sm_80.cubin\nELF file   61: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.61.sm_80.cubin\nELF file   62: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.62.sm_80.cubin\nELF file   63: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.63.sm_80.cubin\nELF file   64: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.64.sm_80.cubin\nELF file   65: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.65.sm_80.cubin\nELF file   66: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.66.sm_80.cubin\nELF file   67: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.67.sm_80.cubin\nELF file   68: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.68.sm_80.cubin\nELF file   69: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.69.sm_80.cubin\nELF file   70: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.70.sm_80.cubin\nELF file   71: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.71.sm_80.cubin\nELF file   72: flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.72.sm_80.cubin\n",
+          "stderr": "",
+          "architectures": [
+            "sm_80"
+          ],
+          "output_lines": 72
+        },
+        {
+          "command": [
+            "/usr/local/cuda/bin/cuobjdump",
+            "--all-fatbin",
+            "--list-ptx",
+            "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so"
+          ],
+          "returncode": 0,
+          "stdout": "",
+          "stderr": "cuobjdump info    : No PTX file found to extract from '/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so'. You may try with -all option.\n",
+          "architectures": [],
+          "output_lines": 0
+        }
+      ],
+      "version_requirements": {
+        "command": [
+          "readelf",
+          "--version-info",
+          "env/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so"
+        ],
+        "returncode": 0,
+        "extracted_requirements": {
+          "GLIBC": {
+            "maximum": "2.32",
+            "versions": [
+              "2.2.5",
+              "2.3.4",
+              "2.4",
+              "2.14",
+              "2.32"
+            ]
+          },
+          "GLIBCXX": {
+            "maximum": "3.4.21",
+            "versions": [
+              "3.4",
+              "3.4.9",
+              "3.4.11",
+              "3.4.18",
+              "3.4.20",
+              "3.4.21"
+            ]
+          },
+          "CXXABI": {
+            "maximum": "1.3.9",
+            "versions": [
+              "1.3",
+              "1.3.2",
+              "1.3.3",
+              "1.3.5",
+              "1.3.9"
+            ]
+          }
+        },
+        "stderr": ""
+      },
+      "dynamic_linking": {
+        "command": [
+          "readelf",
+          "-d",
+          "env/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so"
+        ],
+        "returncode": 0,
+        "needed_rpath_runpath_lines": [
+          "0x0000000000000001 (NEEDED)             Shared library: [libc10.so]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libtorch_cpu.so]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libtorch_python.so]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libcudart.so.13]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libc10_cuda.so]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libtorch_cuda.so]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]"
+        ]
+      }
+    },
+    {
+      "path": "/home/pangk/workspaces/WALL-OSS-CRP/wall-x/wall_x/model/core/ops/_cuda_ext_bin.cpython-310-x86_64-linux-gnu.so",
+      "bytes": 2463048,
+      "sha256": "f68d1f2275fe0e865653dfe8ddc3ee4ba6bc5e0afebc97b4c57f783613e5d814",
+      "architecture_commands": [
+        {
+          "command": [
+            "/usr/local/cuda/bin/cuobjdump",
+            "--list-elf",
+            "/home/pangk/workspaces/WALL-OSS-CRP/wall-x/wall_x/model/core/ops/_cuda_ext_bin.cpython-310-x86_64-linux-gnu.so"
+          ],
+          "returncode": 0,
+          "stdout": "ELF file    1: _cuda_ext_bin.cpython-310-x86_64-linux-gnu.1.sm_86.cubin\nELF file    2: _cuda_ext_bin.cpython-310-x86_64-linux-gnu.2.sm_86.cubin\nELF file    3: _cuda_ext_bin.cpython-310-x86_64-linux-gnu.3.sm_86.cubin\nELF file    4: _cuda_ext_bin.cpython-310-x86_64-linux-gnu.4.sm_86.cubin\nELF file    5: _cuda_ext_bin.cpython-310-x86_64-linux-gnu.5.sm_86.cubin\nELF file    6: _cuda_ext_bin.cpython-310-x86_64-linux-gnu.6.sm_86.cubin\nELF file    7: _cuda_ext_bin.cpython-310-x86_64-linux-gnu.7.sm_86.cubin\n",
+          "stderr": "",
+          "architectures": [
+            "sm_86"
+          ],
+          "output_lines": 7
+        },
+        {
+          "command": [
+            "/usr/local/cuda/bin/cuobjdump",
+            "--list-ptx",
+            "/home/pangk/workspaces/WALL-OSS-CRP/wall-x/wall_x/model/core/ops/_cuda_ext_bin.cpython-310-x86_64-linux-gnu.so"
+          ],
+          "returncode": 0,
+          "stdout": "",
+          "stderr": "cuobjdump info    : No PTX file found to extract from '/home/pangk/workspaces/WALL-OSS-CRP/wall-x/wall_x/model/core/ops/_cuda_ext_bin.cpython-310-x86_64-linux-gnu.so'. You may try with -all option.\n",
+          "architectures": [],
+          "output_lines": 0
+        },
+        {
+          "command": [
+            "/usr/local/cuda/bin/cuobjdump",
+            "--all-fatbin",
+            "--list-elf",
+            "/home/pangk/workspaces/WALL-OSS-CRP/wall-x/wall_x/model/core/ops/_cuda_ext_bin.cpython-310-x86_64-linux-gnu.so"
+          ],
+          "returncode": 0,
+          "stdout": "ELF file    1: _cuda_ext_bin.cpython-310-x86_64-linux-gnu.1.sm_86.cubin\nELF file    2: _cuda_ext_bin.cpython-310-x86_64-linux-gnu.2.sm_86.cubin\nELF file    3: _cuda_ext_bin.cpython-310-x86_64-linux-gnu.3.sm_86.cubin\nELF file    4: _cuda_ext_bin.cpython-310-x86_64-linux-gnu.4.sm_86.cubin\nELF file    5: _cuda_ext_bin.cpython-310-x86_64-linux-gnu.5.sm_86.cubin\nELF file    6: _cuda_ext_bin.cpython-310-x86_64-linux-gnu.6.sm_86.cubin\nELF file    7: _cuda_ext_bin.cpython-310-x86_64-linux-gnu.7.sm_86.cubin\n",
+          "stderr": "",
+          "architectures": [
+            "sm_86"
+          ],
+          "output_lines": 7
+        },
+        {
+          "command": [
+            "/usr/local/cuda/bin/cuobjdump",
+            "--all-fatbin",
+            "--list-ptx",
+            "/home/pangk/workspaces/WALL-OSS-CRP/wall-x/wall_x/model/core/ops/_cuda_ext_bin.cpython-310-x86_64-linux-gnu.so"
+          ],
+          "returncode": 0,
+          "stdout": "",
+          "stderr": "cuobjdump info    : No PTX file found to extract from '/home/pangk/workspaces/WALL-OSS-CRP/wall-x/wall_x/model/core/ops/_cuda_ext_bin.cpython-310-x86_64-linux-gnu.so'. You may try with -all option.\n",
+          "architectures": [],
+          "output_lines": 0
+        }
+      ],
+      "version_requirements": {
+        "command": [
+          "readelf",
+          "--version-info",
+          "wall-x/wall_x/model/core/ops/_cuda_ext_bin.cpython-310-x86_64-linux-gnu.so"
+        ],
+        "returncode": 0,
+        "extracted_requirements": {
+          "GLIBC": {
+            "maximum": "2.34",
+            "versions": [
+              "2.2.5",
+              "2.3",
+              "2.3.4",
+              "2.4",
+              "2.14",
+              "2.32",
+              "2.34"
+            ]
+          },
+          "GLIBCXX": {
+            "maximum": "3.4.21",
+            "versions": [
+              "3.4",
+              "3.4.9",
+              "3.4.18",
+              "3.4.20",
+              "3.4.21"
+            ]
+          },
+          "CXXABI": {
+            "maximum": "1.3.9",
+            "versions": [
+              "1.3",
+              "1.3.2",
+              "1.3.3",
+              "1.3.5",
+              "1.3.9"
+            ]
+          }
+        },
+        "stderr": ""
+      },
+      "dynamic_linking": {
+        "command": [
+          "readelf",
+          "-d",
+          "wall-x/wall_x/model/core/ops/_cuda_ext_bin.cpython-310-x86_64-linux-gnu.so"
+        ],
+        "returncode": 0,
+        "needed_rpath_runpath_lines": [
+          "0x0000000000000001 (NEEDED)             Shared library: [libc10.so]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libtorch_cpu.so]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libtorch_python.so]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libcudart.so.13]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libc10_cuda.so]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]",
+          "0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]",
+          "0x0000000000000001 (NEEDED)             Shared library: [ld-linux-x86-64.so.2]"
+        ]
+      }
+    }
+  ],
+  "conclusion": "FA contains only sm_80 cubins; Wall-X contains only sm_86 cubins. Neither contains PTX, including cuobjdump --all-fatbin inspection. Both require rebuilding with H100 sm_90 support. Driver forward compatibility cannot supply missing GPU machine code. These two binaries alone require at most GLIBC 2.34 and GLIBCXX 3.4.21; this is not a complete environment portability assessment.",
+  "driver_compatibility_reference": {
+    "url": "https://docs.nvidia.com/deploy/cuda-compatibility/forward-compatibility.html",
+    "finding": "Official matrix permits cuda-compat-13-0 on supported data-center GPUs with driver branch 570; this does not eliminate the independent GPU architecture requirements."
+  }
+}

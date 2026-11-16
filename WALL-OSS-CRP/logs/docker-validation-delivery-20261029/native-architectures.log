@@ -1,0 +1,52 @@
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 12.8.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+WARNING: The NVIDIA Driver was not detected.  GPU functionality will not be available.
+   Use the NVIDIA Container Toolkit to start this container with GPU support; see
+   https://docs.nvidia.com/datacenter/cloud-native/ .
+
+{
+  "status": "PASS",
+  "report": "/reports/native-architectures.json",
+  "required_architectures": [
+    "sm_90"
+  ],
+  "extensions": [
+    {
+      "module": "flash_attn_2_cuda",
+      "status": "PASS",
+      "path": "/opt/walloss/env/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "09c5dea022d0e88a1de3cd2563e676c59a3e0836f691467240fb7f63031d8f9f",
+      "elf_architectures": [
+        "sm_80",
+        "sm_90"
+      ],
+      "ptx_architectures": [],
+      "missing_architectures": []
+    },
+    {
+      "module": "wall_x.model.core.ops._cuda_ext_bin",
+      "status": "PASS",
+      "path": "/opt/walloss/env/lib/python3.10/site-packages/wall_x/model/core/ops/_cuda_ext_bin.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "2c2a4ae238834e1adc7e6777dc266f81da8f3ccb77a607d2d9bd445c72c044eb",
+      "elf_architectures": [
+        "sm_86",
+        "sm_90"
+      ],
+      "ptx_architectures": [],
+      "missing_architectures": []
+    }
+  ]
+}

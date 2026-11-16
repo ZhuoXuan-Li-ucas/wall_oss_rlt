@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-10-31T01:49:09.420335+00:00",
+  "status": "COPIED_AND_HASH_VERIFIED",
+  "destination": "/media/pangk/My Passport/WALL-5070Ti-操作文档-20261031",
+  "project_documents_byte_identical": [
+    "WALL_RLT_5070Ti_Official_WALL_Runbook.md",
+    "PROJECT_STATUS.md",
+    "WALL_RLT_Inference_Deployment.md"
+  ],
+  "sha256": {
+    "WALL_RLT_5070Ti_Official_WALL_Runbook.md": "ac550a543f0bb5e76e35dbeb2015b14a92fbb5362dac1d4ddb60bdd5c8ff6db6",
+    "PROJECT_STATUS.md": "9d0ec7fe6481d33c71fd537a8a61a4ea7a7ea67124254509591de085bc5eaf38",
+    "WALL_RLT_Inference_Deployment.md": "a59e3c84c56781a5ab71d1a520968faff58cb7a88febc7f5a935e59c0f503067",
+    "先读我.txt": "dcb37444b6aef65aea29d3fe8f80247ae1ec3652ddd531c9fec03dcc721721d2"
+  },
+  "files_including_manifest": 5,
+  "existing_package_inventory_size_mtime_unchanged": true,
+  "existing_packages_rehashed": false,
+  "gpu_validation_executed": false
+}

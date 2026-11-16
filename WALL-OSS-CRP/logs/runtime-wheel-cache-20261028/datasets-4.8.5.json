@@ -1,0 +1,1412 @@
+{
+  "status": "PASS",
+  "package": "datasets",
+  "version": "4.8.5",
+  "filename": "datasets-4.8.5-py3-none-any.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "aa561c04283b983372de0b24c77f2ac741b4df4ddee13842688034590b54a311",
+  "wheel_tags": [
+    "py3-none-any"
+  ],
+  "record_verified_files": [
+    {
+      "path": "../../../bin/datasets-cli",
+      "wheel_path": "../../../bin/datasets-cli",
+      "size_bytes": 211,
+      "sha256": "e24b6be014829b59703686b895e50c46eb1b34efb2187e65d33c48c6e5eb1a4e"
+    },
+    {
+      "path": "datasets-4.8.5.dist-info/AUTHORS",
+      "wheel_path": "datasets-4.8.5.dist-info/AUTHORS",
+      "size_bytes": 327,
+      "sha256": "2f4141636ded08d1cb9afb0e2806ee9879fc5996482bdf2c1f9dc96318407215"
+    },
+    {
+      "path": "datasets-4.8.5.dist-info/INSTALLER",
+      "wheel_path": "datasets-4.8.5.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "datasets-4.8.5.dist-info/LICENSE",
+      "wheel_path": "datasets-4.8.5.dist-info/LICENSE",
+      "size_bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "datasets-4.8.5.dist-info/METADATA",
+      "wheel_path": "datasets-4.8.5.dist-info/METADATA",
+      "size_bytes": 19909,
+      "sha256": "c021983536ab740d2d63d60c535371d23ad4f2a2e0864bd9a809c13d88ac9a72"
+    },
+    {
+      "path": "datasets-4.8.5.dist-info/REQUESTED",
+      "wheel_path": "datasets-4.8.5.dist-info/REQUESTED",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets-4.8.5.dist-info/WHEEL",
+      "wheel_path": "datasets-4.8.5.dist-info/WHEEL",
+      "size_bytes": 91,
+      "sha256": "227f454cdc5e3fad0a9d3906c3bc24ea624f61dfdd4128c46665dd05d30223ef"
+    },
+    {
+      "path": "datasets-4.8.5.dist-info/entry_points.txt",
+      "wheel_path": "datasets-4.8.5.dist-info/entry_points.txt",
+      "size_bytes": 69,
+      "sha256": "88cfa1e00ece402ad9aabdcbda6c22c8cb4f7858fcc381c01f3988e39cb7b60d"
+    },
+    {
+      "path": "datasets-4.8.5.dist-info/top_level.txt",
+      "wheel_path": "datasets-4.8.5.dist-info/top_level.txt",
+      "size_bytes": 9,
+      "sha256": "f40f39ed8bc2426fc383752378a9163f3f6c0c1a2cd2ddf3376a5fe64ad37a64"
+    },
+    {
+      "path": "datasets/__init__.py",
+      "wheel_path": "datasets/__init__.py",
+      "size_bytes": 1630,
+      "sha256": "71decfe26d1df7b8eed4c7b0be6dab3ea58ac4c370b4b77042ad03ae7d2e5554"
+    },
+    {
+      "path": "datasets/arrow_dataset.py",
+      "wheel_path": "datasets/arrow_dataset.py",
+      "size_bytes": 340442,
+      "sha256": "c7436790c916a7538c41fa6e5fbdac25f4dc8770d909e18901a8928b57d15e6e"
+    },
+    {
+      "path": "datasets/arrow_reader.py",
+      "wheel_path": "datasets/arrow_reader.py",
+      "size_bytes": 25215,
+      "sha256": "e78c8b29dc42b59b2e2e0719dc4894bee9ffa28aecd334b74d3b509fb38f35ae"
+    },
+    {
+      "path": "datasets/arrow_writer.py",
+      "wheel_path": "datasets/arrow_writer.py",
+      "size_bytes": 38706,
+      "sha256": "df42298b0c1bfa4890b24698aa1deb014cc6e15a2ecce5bbec043865cd92872d"
+    },
+    {
+      "path": "datasets/builder.py",
+      "wheel_path": "datasets/builder.py",
+      "size_bytes": 86014,
+      "sha256": "a7a92fc8027a935e9e67ffef46a347f5ca83304a44786e8fd41cb7c4f8c05f1e"
+    },
+    {
+      "path": "datasets/combine.py",
+      "wheel_path": "datasets/combine.py",
+      "size_bytes": 11761,
+      "sha256": "300aa083de61fc35b56dbd3481265d0ff6bb0cd9c5f7f922b3cc704b858544ac"
+    },
+    {
+      "path": "datasets/commands/__init__.py",
+      "wheel_path": "datasets/commands/__init__.py",
+      "size_bytes": 312,
+      "sha256": "aee8db42dc496f01e117d590aa9d830fdb5f5538210cc25d974bfa1f9e753dcb"
+    },
+    {
+      "path": "datasets/commands/datasets_cli.py",
+      "wheel_path": "datasets/commands/datasets_cli.py",
+      "size_bytes": 1175,
+      "sha256": "091cb61fad21dacc490e97dae0b6787718a97462199532f8ee91172d5ead7f04"
+    },
+    {
+      "path": "datasets/commands/delete_from_hub.py",
+      "wheel_path": "datasets/commands/delete_from_hub.py",
+      "size_bytes": 1396,
+      "sha256": "a34c1da256f5af526797a17429da8a9f7bb497c551da877a2b36d1a2aad234f3"
+    },
+    {
+      "path": "datasets/commands/env.py",
+      "wheel_path": "datasets/commands/env.py",
+      "size_bytes": 1239,
+      "sha256": "f2a83e8695d25d7b07bed605bc9927e6b9fd22772a3ec8e3c779d1f27a386b62"
+    },
+    {
+      "path": "datasets/commands/test.py",
+      "wheel_path": "datasets/commands/test.py",
+      "size_bytes": 7824,
+      "sha256": "c9b69f545750103ee173827263f53c046f7f0a49212f41a9e5d38e02ecda1d4c"
+    },
+    {
+      "path": "datasets/config.py",
+      "wheel_path": "datasets/config.py",
+      "size_bytes": 10358,
+      "sha256": "d29f3c98286e67ad5d27d9a19279039a62e85c9330a319015dc606746097e878"
+    },
+    {
+      "path": "datasets/data_files.py",
+      "wheel_path": "datasets/data_files.py",
+      "size_bytes": 32812,
+      "sha256": "96c23fbca87fd41589001604e70445dd850e94943816fefba038986f2caf72e1"
+    },
+    {
+      "path": "datasets/dataset_dict.py",
+      "wheel_path": "datasets/dataset_dict.py",
+      "size_bytes": 128001,
+      "sha256": "093a87f0b639702888dfc957c92c95ad8829065523572bdc663a5dd917d3c63f"
+    },
+    {
+      "path": "datasets/distributed.py",
+      "wheel_path": "datasets/distributed.py",
+      "size_bytes": 1815,
+      "sha256": "614121aaac7bbb108041a73d7593877c920c0152cf5b9bc34244ea15951b5d1b"
+    },
+    {
+      "path": "datasets/download/__init__.py",
+      "wheel_path": "datasets/download/__init__.py",
+      "size_bytes": 281,
+      "sha256": "95b14eb484c3691ecf1eb87327c55f467a5a393e8d628cd2c5470bbff1957d38"
+    },
+    {
+      "path": "datasets/download/download_config.py",
+      "wheel_path": "datasets/download/download_config.py",
+      "size_bytes": 3796,
+      "sha256": "3831c57a3d87f8922a165964954164885e082c9eb697c725006935ddbf11bb75"
+    },
+    {
+      "path": "datasets/download/download_manager.py",
+      "wheel_path": "datasets/download/download_manager.py",
+      "size_bytes": 12780,
+      "sha256": "26ad017d8850ee4e6c4f6b636d387ecec8fe6f73064bf2083ff6dc8d150f7dea"
+    },
+    {
+      "path": "datasets/download/streaming_download_manager.py",
+      "wheel_path": "datasets/download/streaming_download_manager.py",
+      "size_bytes": 7553,
+      "sha256": "f9e472c4d9ca8fe747fb76f374abbeac5cc78e1879ed728dc0973ed3cec1370d"
+    },
+    {
+      "path": "datasets/exceptions.py",
+      "wheel_path": "datasets/exceptions.py",
+      "size_bytes": 4185,
+      "sha256": "07ddc6c0496112f9611cf53d181498f227f6ee3851c2ef3be7e80be81d822fa7"
+    },
+    {
+      "path": "datasets/features/__init__.py",
+      "wheel_path": "datasets/features/__init__.py",
+      "size_bytes": 603,
+      "sha256": "766fb56043ed030cda9636485721d697c1e56021123359b178e0f9db3551ddaf"
+    },
+    {
+      "path": "datasets/features/_torchcodec.py",
+      "wheel_path": "datasets/features/_torchcodec.py",
+      "size_bytes": 627,
+      "sha256": "5acec931895494f6bb347875660c5640dac9574735e247d860276b2e30a49a30"
+    },
+    {
+      "path": "datasets/features/audio.py",
+      "wheel_path": "datasets/features/audio.py",
+      "size_bytes": 16110,
+      "sha256": "79033a8ba90ed74e7ba5ed52a1bfb4b58d06305f58f3050b017aac0a10013b37"
+    },
+    {
+      "path": "datasets/features/features.py",
+      "wheel_path": "datasets/features/features.py",
+      "size_bytes": 98124,
+      "sha256": "d52713f02c9e8f94b085a0e7ca29dc06d66d110e2500806a5541a891519049bc"
+    },
+    {
+      "path": "datasets/features/image.py",
+      "wheel_path": "datasets/features/image.py",
+      "size_bytes": 18403,
+      "sha256": "d0532f68dc998dd1960987f642d63f91850da8c124f1b4d932b85772a9a12ce7"
+    },
+    {
+      "path": "datasets/features/nifti.py",
+      "wheel_path": "datasets/features/nifti.py",
+      "size_bytes": 14313,
+      "sha256": "66ed5f1aa64f50ad6a8feb39c86d7d725d18c1733941943f343bc7cbad5c1430"
+    },
+    {
+      "path": "datasets/features/pdf.py",
+      "wheel_path": "datasets/features/pdf.py",
+      "size_bytes": 12207,
+      "sha256": "0637b1ff004ddd25954887f9134af2da61d02f6c9e2f3e51c8ead3fd1a348150"
+    },
+    {
+      "path": "datasets/features/translation.py",
+      "wheel_path": "datasets/features/translation.py",
+      "size_bytes": 4490,
+      "sha256": "68825f34c5d34d02da9849382fc99f4c30ddcb3b1c6549e148f028afc46313ff"
+    },
+    {
+      "path": "datasets/features/video.py",
+      "wheel_path": "datasets/features/video.py",
+      "size_bytes": 17261,
+      "sha256": "2966bad6cc31a8d36d28babd102fca48fd9570ca46a82a8c2632471c7816118c"
+    },
+    {
+      "path": "datasets/filesystems/__init__.py",
+      "wheel_path": "datasets/filesystems/__init__.py",
+      "size_bytes": 1523,
+      "sha256": "8c10d4428b10a841485d40cb67045669380da26c0be85ab6aa260fbefc6e69ed"
+    },
+    {
+      "path": "datasets/filesystems/compression.py",
+      "wheel_path": "datasets/filesystems/compression.py",
+      "size_bytes": 4528,
+      "sha256": "275e86fcfd05f52c557ec2f2f572deb3240982fa7892968ef4c02286890452f6"
+    },
+    {
+      "path": "datasets/fingerprint.py",
+      "wheel_path": "datasets/fingerprint.py",
+      "size_bytes": 21922,
+      "sha256": "867cc856cfa308228962a8ba2ef13c5163662cd389f7b6ef5b3eae0351002a22"
+    },
+    {
+      "path": "datasets/formatting/__init__.py",
+      "wheel_path": "datasets/formatting/__init__.py",
+      "size_bytes": 5412,
+      "sha256": "fa9335d1f4b3c383158ff2f7345584bf6b14c8187899b9ef0a47d781f4ba5882"
+    },
+    {
+      "path": "datasets/formatting/formatting.py",
+      "wheel_path": "datasets/formatting/formatting.py",
+      "size_bytes": 26626,
+      "sha256": "f3332fedd7d3cb2103bf3363283cd3ec46f6fdf9f69fa3a49df1a660aff4f8c3"
+    },
+    {
+      "path": "datasets/formatting/jax_formatter.py",
+      "wheel_path": "datasets/formatting/jax_formatter.py",
+      "size_bytes": 7494,
+      "sha256": "1ddd8b825f786e491ae0b373f7f438e5520a495d8a5a448ba770d15f2f656a26"
+    },
+    {
+      "path": "datasets/formatting/np_formatter.py",
+      "wheel_path": "datasets/formatting/np_formatter.py",
+      "size_bytes": 5184,
+      "sha256": "4e55e4e88940fecc737844a0f635149613d7fe7a4ee889958f9e80e07a79f0cb"
+    },
+    {
+      "path": "datasets/formatting/polars_formatter.py",
+      "wheel_path": "datasets/formatting/polars_formatter.py",
+      "size_bytes": 4744,
+      "sha256": "a139b8977d1280685af8e92ee360b4740f7563c7f6a227c5f5a5af8b74084c39"
+    },
+    {
+      "path": "datasets/formatting/tf_formatter.py",
+      "wheel_path": "datasets/formatting/tf_formatter.py",
+      "size_bytes": 5318,
+      "sha256": "291b46d323336d54394f30365986b75a564a6e52e88e4a87cdb34c29763981ea"
+    },
+    {
+      "path": "datasets/formatting/torch_formatter.py",
+      "wheel_path": "datasets/formatting/torch_formatter.py",
+      "size_bytes": 5393,
+      "sha256": "37ed74ae63130fc5d551a4baf8b43dc6a5717f200c55e48910a4ba7288f2ef89"
+    },
+    {
+      "path": "datasets/hub.py",
+      "wheel_path": "datasets/hub.py",
+      "size_bytes": 4822,
+      "sha256": "eaa9c95554dd1084a16941a51eb463149c2f9c988d42ecec534d42f080fef250"
+    },
+    {
+      "path": "datasets/info.py",
+      "wheel_path": "datasets/info.py",
+      "size_bytes": 19984,
+      "sha256": "478015dce7fde2458c9857d9ec7eba7eeb1deefd8f5a746c097a4968645015ae"
+    },
+    {
+      "path": "datasets/inspect.py",
+      "wheel_path": "datasets/inspect.py",
+      "size_bytes": 15498,
+      "sha256": "76bc8296d68e2697cac83c55da2f8f58d1363ff551fcd3c304545b2e679e4034"
+    },
+    {
+      "path": "datasets/io/__init__.py",
+      "wheel_path": "datasets/io/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/io/abc.py",
+      "wheel_path": "datasets/io/abc.py",
+      "size_bytes": 1672,
+      "sha256": "2f00cc5d8b3a624859bb3d4988c2b83c322a80d8efec8f311f750c5042d6db2b"
+    },
+    {
+      "path": "datasets/io/csv.py",
+      "wheel_path": "datasets/io/csv.py",
+      "size_bytes": 5198,
+      "sha256": "68d552c1b6553f256f8b76b966c26bd7514c10e30a717299be807539c5746b65"
+    },
+    {
+      "path": "datasets/io/generator.py",
+      "wheel_path": "datasets/io/generator.py",
+      "size_bytes": 2098,
+      "sha256": "5ad516866978965c9977fea03ee38f702fd888a739c644d70234cdfb3e22bec6"
+    },
+    {
+      "path": "datasets/io/json.py",
+      "wheel_path": "datasets/io/json.py",
+      "size_bytes": 7010,
+      "sha256": "a402a9ddf86d1983acdbee9faa54f2a9d287fde859ced5677efbddbf51bf21a3"
+    },
+    {
+      "path": "datasets/io/parquet.py",
+      "wheel_path": "datasets/io/parquet.py",
+      "size_bytes": 5868,
+      "sha256": "43310ada8282328a4fded6a509ce600af3f4c5bd9edf85d3b030fd905dfdb3d7"
+    },
+    {
+      "path": "datasets/io/spark.py",
+      "wheel_path": "datasets/io/spark.py",
+      "size_bytes": 1797,
+      "sha256": "55420e0cb1e021b88ad0223452fb6143f8143b43100ed1d4a33bf0ec37ecf052"
+    },
+    {
+      "path": "datasets/io/sql.py",
+      "wheel_path": "datasets/io/sql.py",
+      "size_bytes": 4175,
+      "sha256": "299842136f9a97d418cfe7bcacf72d62f590d3bb91935d684b4f0e23502d03e3"
+    },
+    {
+      "path": "datasets/io/text.py",
+      "wheel_path": "datasets/io/text.py",
+      "size_bytes": 1908,
+      "sha256": "f41758aa5bfe5d711173f589c250fd1ae8309403afe7788c55dac1a3128bd942"
+    },
+    {
+      "path": "datasets/iterable_dataset.py",
+      "wheel_path": "datasets/iterable_dataset.py",
+      "size_bytes": 226915,
+      "sha256": "0b511036b4a1689fdbef82305d80cd588f4498a15fefb463946a374034a1a875"
+    },
+    {
+      "path": "datasets/load.py",
+      "wheel_path": "datasets/load.py",
+      "size_bytes": 79529,
+      "sha256": "131967334f87e2ea4c8fbfa4deceb7735317e1096c9af1620e26593888c516d2"
+    },
+    {
+      "path": "datasets/naming.py",
+      "wheel_path": "datasets/naming.py",
+      "size_bytes": 3028,
+      "sha256": "5b335dc8754678093f60fc77645d3d17ed20d161d55a297a50e42229914415ad"
+    },
+    {
+      "path": "datasets/packaged_modules/__init__.py",
+      "wheel_path": "datasets/packaged_modules/__init__.py",
+      "size_bytes": 6578,
+      "sha256": "29da4f144f3ce1198de27ce72a3755437a56c78af925c437b944f1216c9a6aa7"
+    },
+    {
+      "path": "datasets/packaged_modules/arrow/__init__.py",
+      "wheel_path": "datasets/packaged_modules/arrow/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/arrow/arrow.py",
+      "wheel_path": "datasets/packaged_modules/arrow/arrow.py",
+      "size_bytes": 3213,
+      "sha256": "2f6bfe894b79f37940189f5cfdbccf9b7815a97d1f57f2eda2a492ef7b115d44"
+    },
+    {
+      "path": "datasets/packaged_modules/audiofolder/__init__.py",
+      "wheel_path": "datasets/packaged_modules/audiofolder/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/audiofolder/audiofolder.py",
+      "wheel_path": "datasets/packaged_modules/audiofolder/audiofolder.py",
+      "size_bytes": 1744,
+      "sha256": "37898e672a69f284c8fbd14149e10513ea10db753a666a8f94572a6d492f880f"
+    },
+    {
+      "path": "datasets/packaged_modules/cache/__init__.py",
+      "wheel_path": "datasets/packaged_modules/cache/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/cache/cache.py",
+      "wheel_path": "datasets/packaged_modules/cache/cache.py",
+      "size_bytes": 8293,
+      "sha256": "a9f8430c3b8b35397cef4fae445c1ce954f125ff48720e61633a6c215ace7ff3"
+    },
+    {
+      "path": "datasets/packaged_modules/csv/__init__.py",
+      "wheel_path": "datasets/packaged_modules/csv/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/csv/csv.py",
+      "wheel_path": "datasets/packaged_modules/csv/csv.py",
+      "size_bytes": 8977,
+      "sha256": "218ee79c594e648066a5c6dd27ac0f3d45658637782bcadbc35ee1e58254dd8c"
+    },
+    {
+      "path": "datasets/packaged_modules/eval/__init__.py",
+      "wheel_path": "datasets/packaged_modules/eval/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/eval/eval.py",
+      "wheel_path": "datasets/packaged_modules/eval/eval.py",
+      "size_bytes": 3226,
+      "sha256": "19115b23358fcc30a65b158179f43e90dfa38efc4cd3ed93744660570f90a347"
+    },
+    {
+      "path": "datasets/packaged_modules/folder_based_builder/__init__.py",
+      "wheel_path": "datasets/packaged_modules/folder_based_builder/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/folder_based_builder/folder_based_builder.py",
+      "wheel_path": "datasets/packaged_modules/folder_based_builder/folder_based_builder.py",
+      "size_bytes": 22939,
+      "sha256": "61a41a8fd7c212eb547eb648361ba2b748fa4b3a9a8fa7cea149ba1bd5a2a3d2"
+    },
+    {
+      "path": "datasets/packaged_modules/generator/__init__.py",
+      "wheel_path": "datasets/packaged_modules/generator/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/generator/generator.py",
+      "wheel_path": "datasets/packaged_modules/generator/generator.py",
+      "size_bytes": 1380,
+      "sha256": "1d3a5a63be7e372a622f9834982803727bd3696bf37533cb20a9ec1652e5a6e2"
+    },
+    {
+      "path": "datasets/packaged_modules/hdf5/__init__.py",
+      "wheel_path": "datasets/packaged_modules/hdf5/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/hdf5/hdf5.py",
+      "wheel_path": "datasets/packaged_modules/hdf5/hdf5.py",
+      "size_bytes": 12592,
+      "sha256": "09c84d7bc8b76e82e8b124dd7679a49ff031013104bfeb1b903aa14b5ab061ac"
+    },
+    {
+      "path": "datasets/packaged_modules/imagefolder/__init__.py",
+      "wheel_path": "datasets/packaged_modules/imagefolder/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/imagefolder/imagefolder.py",
+      "wheel_path": "datasets/packaged_modules/imagefolder/imagefolder.py",
+      "size_bytes": 1956,
+      "sha256": "5293157bc4d4c9acb31ec5527ca379c225dc73de1075a98cbf16ae238a05770e"
+    },
+    {
+      "path": "datasets/packaged_modules/json/__init__.py",
+      "wheel_path": "datasets/packaged_modules/json/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/json/json.py",
+      "wheel_path": "datasets/packaged_modules/json/json.py",
+      "size_bytes": 19186,
+      "sha256": "a906fb371f281161a35a8b930e5f843ea8dbf93df4f163c4b1230832af8651e0"
+    },
+    {
+      "path": "datasets/packaged_modules/lance/__init__.py",
+      "wheel_path": "datasets/packaged_modules/lance/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/lance/lance.py",
+      "wheel_path": "datasets/packaged_modules/lance/lance.py",
+      "size_bytes": 9833,
+      "sha256": "5804afd6796ea43f3b798acc935b2c98530fa7239be605a4a142faee6bab126c"
+    },
+    {
+      "path": "datasets/packaged_modules/niftifolder/__init__.py",
+      "wheel_path": "datasets/packaged_modules/niftifolder/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/niftifolder/niftifolder.py",
+      "wheel_path": "datasets/packaged_modules/niftifolder/niftifolder.py",
+      "size_bytes": 575,
+      "sha256": "54f9a414b179f74882b06e9be2f4b770e3657b260cdba7305128bb9338f579b8"
+    },
+    {
+      "path": "datasets/packaged_modules/pandas/__init__.py",
+      "wheel_path": "datasets/packaged_modules/pandas/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/pandas/pandas.py",
+      "wheel_path": "datasets/packaged_modules/pandas/pandas.py",
+      "size_bytes": 1954,
+      "sha256": "a8bb5345e5a77f66a6f416546bbeac27029a82cdd9837a90b0ba2ccd966af351"
+    },
+    {
+      "path": "datasets/packaged_modules/parquet/__init__.py",
+      "wheel_path": "datasets/packaged_modules/parquet/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/parquet/parquet.py",
+      "wheel_path": "datasets/packaged_modules/parquet/parquet.py",
+      "size_bytes": 10175,
+      "sha256": "01a2084010e28a71f4dd94cf501bee440ea7b23a2c54501f254806ee647079ac"
+    },
+    {
+      "path": "datasets/packaged_modules/pdffolder/__init__.py",
+      "wheel_path": "datasets/packaged_modules/pdffolder/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/pdffolder/pdffolder.py",
+      "wheel_path": "datasets/packaged_modules/pdffolder/pdffolder.py",
+      "size_bytes": 565,
+      "sha256": "6cf60187df973abd82fa083f165f21f942a1b1543b5578c12f615f5bc69b8865"
+    },
+    {
+      "path": "datasets/packaged_modules/spark/__init__.py",
+      "wheel_path": "datasets/packaged_modules/spark/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/spark/spark.py",
+      "wheel_path": "datasets/packaged_modules/spark/spark.py",
+      "size_bytes": 14685,
+      "sha256": "4fd2c316893e84058381c8f25b448831f21de415c5dc201bbe5f73171f14b7ac"
+    },
+    {
+      "path": "datasets/packaged_modules/sql/__init__.py",
+      "wheel_path": "datasets/packaged_modules/sql/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/sql/sql.py",
+      "wheel_path": "datasets/packaged_modules/sql/sql.py",
+      "size_bytes": 4536,
+      "sha256": "0c51abf8174cc8eeb1134312d820a9f93b5167e3d434a8af5174b01794782b88"
+    },
+    {
+      "path": "datasets/packaged_modules/text/__init__.py",
+      "wheel_path": "datasets/packaged_modules/text/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/text/text.py",
+      "wheel_path": "datasets/packaged_modules/text/text.py",
+      "size_bytes": 6862,
+      "sha256": "4f0ad7aa6bfdf82b1c7999dc7dfc9cc0a8b606b76fcdf2dbe0c29142d153b943"
+    },
+    {
+      "path": "datasets/packaged_modules/videofolder/__init__.py",
+      "wheel_path": "datasets/packaged_modules/videofolder/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/videofolder/videofolder.py",
+      "wheel_path": "datasets/packaged_modules/videofolder/videofolder.py",
+      "size_bytes": 807,
+      "sha256": "1cb4cc95d0d9dd67caf0e01b236c2cb01b8d08feae71106934ba42a095432f5d"
+    },
+    {
+      "path": "datasets/packaged_modules/webdataset/__init__.py",
+      "wheel_path": "datasets/packaged_modules/webdataset/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/webdataset/_tenbin.py",
+      "wheel_path": "datasets/packaged_modules/webdataset/_tenbin.py",
+      "size_bytes": 8533,
+      "sha256": "a28bd8b204764777974a7d714822c6de84e5cb5b332833f850e891a783917489"
+    },
+    {
+      "path": "datasets/packaged_modules/webdataset/webdataset.py",
+      "wheel_path": "datasets/packaged_modules/webdataset/webdataset.py",
+      "size_bytes": 10496,
+      "sha256": "00d440443781ba0380ab9ff75976ac236219fb6efa6ee9bb007eb2aa75933b62"
+    },
+    {
+      "path": "datasets/packaged_modules/xml/__init__.py",
+      "wheel_path": "datasets/packaged_modules/xml/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/packaged_modules/xml/xml.py",
+      "wheel_path": "datasets/packaged_modules/xml/xml.py",
+      "size_bytes": 2844,
+      "sha256": "78c6f044807537b412b2f948b7598fc2c784fc7615ba25e1c9a6f1cbe2c82d09"
+    },
+    {
+      "path": "datasets/parallel/__init__.py",
+      "wheel_path": "datasets/parallel/__init__.py",
+      "size_bytes": 76,
+      "sha256": "c224452b8c7aedecf6bef9a3c0cd926fd475c8575fdfc95a49aad4f72d0189da"
+    },
+    {
+      "path": "datasets/parallel/parallel.py",
+      "wheel_path": "datasets/parallel/parallel.py",
+      "size_bytes": 4738,
+      "sha256": "13ea0e43acf02ab90b14fc19fb710e72bfda00d243844f9de904eaecca7b5af0"
+    },
+    {
+      "path": "datasets/search.py",
+      "wheel_path": "datasets/search.py",
+      "size_bytes": 35592,
+      "sha256": "3f1bde0dcd61cb662ec7b1adbdab75fd07bfd03e9a20a401588e4a6d5d204ba2"
+    },
+    {
+      "path": "datasets/splits.py",
+      "wheel_path": "datasets/splits.py",
+      "size_bytes": 23810,
+      "sha256": "d74c6d080b52dd71476b09b802a66b7e95de71f35c01c527389f5e56dc139206"
+    },
+    {
+      "path": "datasets/streaming.py",
+      "wheel_path": "datasets/streaming.py",
+      "size_bytes": 5772,
+      "sha256": "ecc21a999d8d991794989ff6a7181d4a8a487fb3a1e6714501b6fb5872ee5bb1"
+    },
+    {
+      "path": "datasets/table.py",
+      "wheel_path": "datasets/table.py",
+      "size_bytes": 95611,
+      "sha256": "8772431b95c25182a276b39536af13d8bb31b46c4d7d1d01ff73ea7fe0c70f3f"
+    },
+    {
+      "path": "datasets/utils/__init__.py",
+      "wheel_path": "datasets/utils/__init__.py",
+      "size_bytes": 999,
+      "sha256": "3ee66d07d6136d1caf770b9b9ecc7e246747b8c03ba7423446687413fbb1605d"
+    },
+    {
+      "path": "datasets/utils/_dataset_viewer.py",
+      "wheel_path": "datasets/utils/_dataset_viewer.py",
+      "size_bytes": 4397,
+      "sha256": "4ab135375f12e720a80b1d2b021c1a1cd0d54bdba1c63b2903ce22353e13151c"
+    },
+    {
+      "path": "datasets/utils/_dill.py",
+      "wheel_path": "datasets/utils/_dill.py",
+      "size_bytes": 19409,
+      "sha256": "4535e8cf57b99d2f9e1ceb0fbcf86e2a3230784025d1c3fcac568a6648263106"
+    },
+    {
+      "path": "datasets/utils/_filelock.py",
+      "wheel_path": "datasets/utils/_filelock.py",
+      "size_bytes": 2355,
+      "sha256": "8975b76f1b08af925635e9a12ad17ffaaff4cac6a39144c8b73326f0b63d2c16"
+    },
+    {
+      "path": "datasets/utils/deprecation_utils.py",
+      "wheel_path": "datasets/utils/deprecation_utils.py",
+      "size_bytes": 3452,
+      "sha256": "8531f097346cf7635f355b9d1fbd4b3295bbd2c8dbb0fe5a99e6eb2208b703e5"
+    },
+    {
+      "path": "datasets/utils/doc_utils.py",
+      "wheel_path": "datasets/utils/doc_utils.py",
+      "size_bytes": 407,
+      "sha256": "1e84a6d1315a41a09819f0e0361a412785dcd96419b8e0fa753c4b77d0fcedfb"
+    },
+    {
+      "path": "datasets/utils/experimental.py",
+      "wheel_path": "datasets/utils/experimental.py",
+      "size_bytes": 1097,
+      "sha256": "2603a368463745667efb7bb4fabcbcda02c20d4a6e75f05f97e856678e92c92e"
+    },
+    {
+      "path": "datasets/utils/extract.py",
+      "wheel_path": "datasets/utils/extract.py",
+      "size_bytes": 18318,
+      "sha256": "eeb11e1ae2b156b2e547012401e54593ecccc6adbd5eb211c8ebd08a1b84787b"
+    },
+    {
+      "path": "datasets/utils/file_utils.py",
+      "wheel_path": "datasets/utils/file_utils.py",
+      "size_bytes": 55582,
+      "sha256": "b0e29d4a8ac3eedd0e8463aa6fe423399a4aad626df998d26f5c6c98f4a9aa28"
+    },
+    {
+      "path": "datasets/utils/filelock.py",
+      "wheel_path": "datasets/utils/filelock.py",
+      "size_bytes": 352,
+      "sha256": "1fa0b97501850b354ac9e0d1458f1f6786064c4bef35df8c4e3a4bfec5986f99"
+    },
+    {
+      "path": "datasets/utils/hub.py",
+      "wheel_path": "datasets/utils/hub.py",
+      "size_bytes": 130,
+      "sha256": "576246a252f9563153d18884848d2cc49103ffdb4676f99aee51f6d9deb84bd2"
+    },
+    {
+      "path": "datasets/utils/info_utils.py",
+      "wheel_path": "datasets/utils/info_utils.py",
+      "size_bytes": 4217,
+      "sha256": "48df6bf0e4854b218236da5ca660b36ef48d53effb2ea4c9b1a46fd3b0de4982"
+    },
+    {
+      "path": "datasets/utils/json.py",
+      "wheel_path": "datasets/utils/json.py",
+      "size_bytes": 5269,
+      "sha256": "7e60f7752e5373bb77af164b372c782da55d9942b9b56646e06adaa13d0cbce2"
+    },
+    {
+      "path": "datasets/utils/logging.py",
+      "wheel_path": "datasets/utils/logging.py",
+      "size_bytes": 5381,
+      "sha256": "736835825dc85780bb036fa4cb4c9fac766e622e0fe351d14dd4b75c299d31ec"
+    },
+    {
+      "path": "datasets/utils/metadata.py",
+      "wheel_path": "datasets/utils/metadata.py",
+      "size_bytes": 9367,
+      "sha256": "1eb9a7f31528133c2924a1b763ab5f26de6dee75b5382c4d8df2d39446b1b2b2"
+    },
+    {
+      "path": "datasets/utils/patching.py",
+      "wheel_path": "datasets/utils/patching.py",
+      "size_bytes": 4967,
+      "sha256": "cab0c04cdfb168682833be3b6eb6f1e190cc9efa7eb5e6a17ce696e7744d5729"
+    },
+    {
+      "path": "datasets/utils/py_utils.py",
+      "wheel_path": "datasets/utils/py_utils.py",
+      "size_bytes": 23246,
+      "sha256": "286b1899798e5c3dd01d131ddda151617a63e3b6e24d2470b73514f9dd259bc5"
+    },
+    {
+      "path": "datasets/utils/resources/__init__.py",
+      "wheel_path": "datasets/utils/resources/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "datasets/utils/resources/creators.json",
+      "wheel_path": "datasets/utils/resources/creators.json",
+      "size_bytes": 257,
+      "sha256": "5ed22931979f80139d4debd1ad04e4162b9f6e009ba7f8b2c6c7b2a61610927d"
+    },
+    {
+      "path": "datasets/utils/resources/languages.json",
+      "wheel_path": "datasets/utils/resources/languages.json",
+      "size_bytes": 199138,
+      "sha256": "674ad034fb1f8def33322f0a76fbf0c45e003f0c2a72c909154be13622c080f3"
+    },
+    {
+      "path": "datasets/utils/resources/multilingualities.json",
+      "wheel_path": "datasets/utils/resources/multilingualities.json",
+      "size_bytes": 205,
+      "sha256": "d3651cf11b51cdf975de5f7c63f6a5666e47b8c6303f32fbf01d12e5ad57fbc7"
+    },
+    {
+      "path": "datasets/utils/resources/readme_structure.yaml",
+      "wheel_path": "datasets/utils/resources/readme_structure.yaml",
+      "size_bytes": 3877,
+      "sha256": "84d7fd9aca01670e637da910ac36f401ff13df6e535dd71a1ec00ed8c51c66f6"
+    },
+    {
+      "path": "datasets/utils/resources/size_categories.json",
+      "wheel_path": "datasets/utils/resources/size_categories.json",
+      "size_bytes": 171,
+      "sha256": "ff99c03fbcfc47ab7bfc67c447cd50b9d14ee98d6da98bb8016aebe00a2df12f"
+    },
+    {
+      "path": "datasets/utils/sharding.py",
+      "wheel_path": "datasets/utils/sharding.py",
+      "size_bytes": 4215,
+      "sha256": "5414386d12508a330d0d04e015bd7f75d950dbcc00700d1a429e1efb58c52009"
+    },
+    {
+      "path": "datasets/utils/stratify.py",
+      "wheel_path": "datasets/utils/stratify.py",
+      "size_bytes": 4085,
+      "sha256": "f8c55a2e68a36211b2283a67652f40f128877a4688c959bce0757220840e99f8"
+    },
+    {
+      "path": "datasets/utils/tf_utils.py",
+      "wheel_path": "datasets/utils/tf_utils.py",
+      "size_bytes": 24448,
+      "sha256": "4f73b2b0b19b90eef2f89fa8f4e546ca7f65fa5f80debba3fb6e0933f5142e6f"
+    },
+    {
+      "path": "datasets/utils/tqdm.py",
+      "wheel_path": "datasets/utils/tqdm.py",
+      "size_bytes": 4520,
+      "sha256": "20a081fa5cfa059c11a24c35407690b1614658be33b56b517799021b3c29fce7"
+    },
+    {
+      "path": "datasets/utils/track.py",
+      "wheel_path": "datasets/utils/track.py",
+      "size_bytes": 1838,
+      "sha256": "33cd4218b9f73322731e6f7c09091b177ff50c6edebd0b30f95e76fc1a76a5a2"
+    },
+    {
+      "path": "datasets/utils/typing.py",
+      "wheel_path": "datasets/utils/typing.py",
+      "size_bytes": 205,
+      "sha256": "1b5d72b569b08ea5626b621dce2443216bd0e262c979efac2b38097c7a94d7a1"
+    },
+    {
+      "path": "datasets/utils/version.py",
+      "wheel_path": "datasets/utils/version.py",
+      "size_bytes": 3281,
+      "sha256": "67cd9c1e98d36d0549c96827c1253c0ec5b61b4cbeb126d2a0e55e42b01db3d9"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "../../../bin/datasets-cli",
+      "reason": "verified console entry point; installer regenerates portable script"
+    },
+    {
+      "path": "datasets-4.8.5.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets-4.8.5.dist-info/REQUESTED",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/arrow_dataset.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/arrow_reader.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/arrow_writer.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/builder.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/combine.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/config.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/data_files.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/dataset_dict.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/distributed.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/exceptions.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/fingerprint.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/hub.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/info.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/inspect.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/iterable_dataset.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/load.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/naming.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/search.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/splits.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/streaming.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/__pycache__/table.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/commands/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/commands/__pycache__/datasets_cli.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/commands/__pycache__/delete_from_hub.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/commands/__pycache__/env.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/commands/__pycache__/test.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/download/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/download/__pycache__/download_config.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/download/__pycache__/download_manager.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/download/__pycache__/streaming_download_manager.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/features/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/features/__pycache__/_torchcodec.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/features/__pycache__/audio.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/features/__pycache__/features.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/features/__pycache__/image.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/features/__pycache__/nifti.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/features/__pycache__/pdf.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/features/__pycache__/translation.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/features/__pycache__/video.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/filesystems/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/filesystems/__pycache__/compression.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/formatting/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/formatting/__pycache__/formatting.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/formatting/__pycache__/jax_formatter.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/formatting/__pycache__/np_formatter.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/formatting/__pycache__/polars_formatter.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/formatting/__pycache__/tf_formatter.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/formatting/__pycache__/torch_formatter.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/io/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/io/__pycache__/abc.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/io/__pycache__/csv.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/io/__pycache__/generator.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/io/__pycache__/json.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/io/__pycache__/parquet.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/io/__pycache__/spark.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/io/__pycache__/sql.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/io/__pycache__/text.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/arrow/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/arrow/__pycache__/arrow.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/audiofolder/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/audiofolder/__pycache__/audiofolder.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/cache/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/cache/__pycache__/cache.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/csv/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/csv/__pycache__/csv.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/eval/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/eval/__pycache__/eval.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/folder_based_builder/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/folder_based_builder/__pycache__/folder_based_builder.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/generator/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/generator/__pycache__/generator.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/hdf5/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/hdf5/__pycache__/hdf5.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/imagefolder/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/imagefolder/__pycache__/imagefolder.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/json/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/json/__pycache__/json.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/lance/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/lance/__pycache__/lance.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/niftifolder/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/niftifolder/__pycache__/niftifolder.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/pandas/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/pandas/__pycache__/pandas.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/parquet/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/parquet/__pycache__/parquet.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/pdffolder/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/pdffolder/__pycache__/pdffolder.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/spark/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/spark/__pycache__/spark.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/sql/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/sql/__pycache__/sql.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/text/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/text/__pycache__/text.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/videofolder/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/videofolder/__pycache__/videofolder.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/webdataset/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/webdataset/__pycache__/_tenbin.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/webdataset/__pycache__/webdataset.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/xml/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/packaged_modules/xml/__pycache__/xml.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/parallel/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/parallel/__pycache__/parallel.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/_dataset_viewer.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/_dill.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/_filelock.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/deprecation_utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/doc_utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/experimental.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/extract.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/file_utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/filelock.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/hub.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/info_utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/json.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/logging.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/metadata.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/patching.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/py_utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/sharding.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/stratify.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/tf_utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/tqdm.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/track.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/typing.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/__pycache__/version.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "datasets/utils/resources/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "ea87904ffbbb4d8d9f285b90783617f27d1eb8c96aa4af77bf66d760004f1f0f",
+  "wheel_size_bytes": 629267,
+  "rebuilt_record_verified_files": 140,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:17.640992+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 140,
+  "source_record_verified_file_count": 143
+}

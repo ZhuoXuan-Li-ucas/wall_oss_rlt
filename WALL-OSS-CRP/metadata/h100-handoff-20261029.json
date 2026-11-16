@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-10-29T07:30:29.178020+00:00",
+  "status": "READY_ON_MY_PASSPORT_FOR_USER_COPY",
+  "delivery_route": [
+    "build host",
+    "My Passport",
+    "user personal computer",
+    "user dedicated network cable",
+    "H100 server"
+  ],
+  "user_selected_transport": "My Passport removable disk",
+  "agent_h100_connection_required": false,
+  "agent_h100_connection_attempted_this_handoff": false,
+  "server_resources": {
+    "source": "user confirmation in conversation",
+    "gpu_model": "NVIDIA H100",
+    "gpu_count": 8,
+    "resources_complete_per_user": true,
+    "remote_probe_performed": false,
+    "per_gpu_memory_gib": null,
+    "job_gpu_allocation": null,
+    "current_two_gpu_candidate_changed": false
+  },
+  "packages": [
+    {
+      "directory": "WALL-OSS-CRP-transfer-20261029",
+      "files": 29,
+      "bytes": 16787299846
+    },
+    {
+      "directory": "WALL-RLT-training-candidate-20261029-v1",
+      "files": 8,
+      "bytes": 5781431598
+    }
+  ],
+  "total_package_files": 37,
+  "total_package_bytes": 22568731444,
+  "unified_sha256_manifest": {
+    "path": "/media/pangk/My Passport/WALL-H100-SHA256SUMS-20261029.txt",
+    "sha256": "ee3179e7e41d645b8c88e238b73f2d6aca725f3b554b414cb5aed437f733116e",
+    "entries": 37,
+    "scope": "expected hashes from previously verified package manifests, plus manifest/ready files"
+  },
+  "instructions": {
+    "path": "/media/pangk/My Passport/WALL-H100-中转说明-20261029.txt",
+    "source": "docker/H100-HANDOFF.txt",
+    "sha256": "3bab915b0512e7fbaca095089dc2142bfe487f4ec76c182ecab076edf6130fde"
+  },
+  "this_turn_checks": {
+    "status": "PASS",
+    "exact_file_inventory_checked": true,
+    "file_sizes_checked": true,
+    "small_file_hashes_rechecked": 32,
+    "large_archive_hashes_recomputed": false,
+    "base_and_training_image_identity_match": true,
+    "existing_package_contents_modified": false
+  },
+  "prior_full_content_verification": [
+    "logs/server-environment-delivery-20261029.json",
+    "metadata/rlt-h100-preparation-20261029.json"
+  ],
+  "copy_to_user_computer": "PENDING_USER_PHYSICAL_COPY",
+  "upload_to_H100": "PENDING_USER_TRANSFER",
+  "target_server_validation": "NOT_RUN",
+  "training_candidate_git_command_in_container": "NOT_VERIFIED; documented precheck in handoff instructions"
+}

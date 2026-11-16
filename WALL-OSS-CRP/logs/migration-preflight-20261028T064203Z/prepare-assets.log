@@ -1,0 +1,11 @@
+./STATUS.txt: OK
+./Verify-Bundle.ps1: OK
+./dataset-root.txt: OK
+./migration-preflight.json: OK
+./model_files.manifest.json: OK
+./models.tar.gz: OK
+./smoke-data.tar.gz: OK
+./source-assets.sha256: OK
+./source-check.log: OK
+./sources.lock.json: OK
+Assets staged: /media/pangk/My Passport/WALL-OSS-CRP-assets-20261028

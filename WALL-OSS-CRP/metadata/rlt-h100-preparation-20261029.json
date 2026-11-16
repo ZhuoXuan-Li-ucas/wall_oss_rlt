@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-10-29T06:51:31.330050+00:00",
+  "status": "TRAINING_CANDIDATE_PACKAGED_AND_PORTABILITY_VERIFIED_H100_PENDING",
+  "scope": "H100 training preparation and local CPU/portability checks; no full pretrained model forward or GPU training",
+  "cpu": {
+    "report": "logs/rlt-h100-preparation-20261029/cpu-check/report.json",
+    "status": "PASS",
+    "tests": {
+      "tests": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "candidate": {
+    "path": "/media/pangk/My Passport/WALL-RLT-training-candidate-20261029-v1",
+    "status": "TRAINING_CANDIDATE_NOT_GPU_VALIDATED",
+    "manifest_sha256": "6ad722df3cdfdb02374a43f1cdbb6fbdf1ab4ab3a9c21befefe1fd838af12e09",
+    "total_bytes": 5781431598,
+    "project_files": 90,
+    "current_project_matches_packaged_files": true,
+    "data_files": 1057,
+    "episodes": 350,
+    "excluded_groups": [
+      "mouse",
+      "tape"
+    ],
+    "groups": [
+      "banana",
+      "black_box",
+      "black_sleeve",
+      "charger",
+      "long_box",
+      "pill_box",
+      "water_bottle"
+    ],
+    "offline_wheels": 44,
+    "weights_included": false,
+    "native_extensions_included": false,
+    "requires_separate_D0_base": true
+  },
+  "portability": {
+    "status": "PASS",
+    "report": "logs/rlt-training-candidate-unpack-20261029.log",
+    "all_payload_and_member_hashes_checked": true,
+    "isolated_sources_prepared": true,
+    "review_project": "/home/pangk/workspaces/WALL-OSS-CRP/.cache/rlt-training-portability-20261029-v1",
+    "original_models_reused": "/home/pangk/workspaces/WALL-OSS-CRP/models",
+    "training_preflight": "logs/rlt-training-portable-preflight-20261029.json",
+    "actual_data_and_processor": "logs/rlt-training-portable-data-20261029.json",
+    "train_episodes": 245,
+    "train_windows": 123263,
+    "two_observation_batch_shape": [
+      2,
+      32,
+      26
+    ],
+    "valid_timesteps": [
+      32,
+      1
+    ],
+    "full_video_decode_or_semantic_quality_review": false
+  },
+  "training_environment": {
+    "offline_wheels_status": "WHEELS_PREPARED_NOT_CONTAINER_VALIDATED",
+    "wheelhouse": ".cache/rlt-training-wheels-20261029",
+    "local_tensorboard_logger": "PASS",
+    "d0_cu128_overlay_installation": "NOT_RUN",
+    "local_docker_access": "permission denied",
+    "known_D0_pip_declaration_failures": 11,
+    "local_report": "logs/rlt-training-env-local-20261029.json"
+  },
+  "resources": {
+    "report": "metadata/rlt-h100-memory-estimate-20261029.json",
+    "single_rank_persistent_gib": 73.14955139160156,
+    "two_rank_full_shard_persistent_gib": 36.57477569580078,
+    "excludes_working_parameters_activations_temporaries": true,
+    "gpu_capacity_fit_verified": false,
+    "two_gpu_candidate": "configs/rlt/stage1_2gpu.yaml",
+    "two_gpu_eval_loop_enabled": false,
+    "explicit_allocated_gpu_selection_required": true
+  },
+  "h100_access": {
+    "recorded_at_utc": "2026-10-29T06:37:53.989998+00:00",
+    "host": "aiuser@10.241.90.194:22",
+    "attempt": "ssh BatchMode=yes, ConnectTimeout=8, StrictHostKeyChecking=yes; read-only GPU/host query",
+    "status": "CONNECTION_TIMEOUT",
+    "exit_code": 255,
+    "observed_route": "10.241.90.194 via 172.20.10.1 dev enx6a3036be357a src 172.20.10.11",
+    "server_commands_executed": false,
+    "server_transfer": "NOT_STARTED",
+    "h100_training": "NOT_STARTED",
+    "missing_input": [
+      "current reachable connection/network path",
+      "allocated GPU IDs",
+      "training working directory"
+    ],
+    "local_docker_access": "permission denied; user not in docker group; no privilege/group changes made",
+    "parallel_work": "training candidate offline preparation"
+  },
+  "D0_base_bundle_modified": false,
+  "not_validated": [
+    "pretrained WALL + RLT full-size load/forward",
+    "H100 BF16/FlashAttention/FSDP",
+    "100-step target-data training and distributed restore",
+    "Ubuntu 16GB inference",
+    "real replay/online RLT improvement"
+  ],
+  "inference_deployment_entry": "DEFERRED_BY_USER"
+}

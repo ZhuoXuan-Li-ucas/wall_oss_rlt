@@ -1,0 +1,751 @@
+{
+  "scope": "Read-only metadata inventory; historical validation dataset excluded; no target selected",
+  "datasets": [
+    {
+      "root": "/media/pangk/My Passport/20260630_gyl_fixed_merged",
+      "version": "v3.0",
+      "robot": "crp_arm_dual",
+      "episodes": 120,
+      "frames": 59110,
+      "fps": 16,
+      "action": {
+        "dtype": "float32",
+        "names": [
+          "left_j1.pos",
+          "left_j2.pos",
+          "left_j3.pos",
+          "left_j4.pos",
+          "left_j5.pos",
+          "left_j6.pos",
+          "right_j1.pos",
+          "right_j2.pos",
+          "right_j3.pos",
+          "right_j4.pos",
+          "right_j5.pos",
+          "right_j6.pos",
+          "left_ui50",
+          "right_ui50"
+        ],
+        "shape": [
+          14
+        ]
+      },
+      "state": {
+        "dtype": "float32",
+        "names": [
+          "left_j1.pos",
+          "left_j2.pos",
+          "left_j3.pos",
+          "left_j4.pos",
+          "left_j5.pos",
+          "left_j6.pos",
+          "right_j1.pos",
+          "right_j2.pos",
+          "right_j3.pos",
+          "right_j4.pos",
+          "right_j5.pos",
+          "right_j6.pos",
+          "left_ui50",
+          "left_ui57",
+          "left_ui58",
+          "right_ui50",
+          "right_ui57",
+          "right_ui58"
+        ],
+        "shape": [
+          18
+        ]
+      },
+      "cameras": [
+        "observation.images.top",
+        "observation.images.left_wrist",
+        "observation.images.right_wrist"
+      ]
+    },
+    {
+      "root": "/media/pangk/My Passport/all_task2_filtered",
+      "version": "v3.0",
+      "robot": "crp_arm",
+      "episodes": 1307,
+      "frames": 548113,
+      "fps": 30,
+      "action": {
+        "dtype": "float32",
+        "names": [
+          "j1.pos",
+          "j2.pos",
+          "j3.pos",
+          "j4.pos",
+          "j5.pos",
+          "j6.pos",
+          "gripper.pos"
+        ],
+        "shape": [
+          7
+        ]
+      },
+      "state": {
+        "dtype": "float32",
+        "names": [
+          "j1.pos",
+          "j2.pos",
+          "j3.pos",
+          "j4.pos",
+          "j5.pos",
+          "j6.pos"
+        ],
+        "shape": [
+          6
+        ]
+      },
+      "cameras": [
+        "observation.images.top",
+        "observation.images.wrist"
+      ]
+    },
+    {
+      "root": "/media/pangk/My Passport/gyl_duo_arm_mixture_subtask",
+      "version": "v3.0",
+      "robot": "crp_arm_dual",
+      "episodes": 1019,
+      "frames": 352779,
+      "fps": 16,
+      "action": {
+        "dtype": "float32",
+        "names": [
+          "left_j1.pos",
+          "left_j2.pos",
+          "left_j3.pos",
+          "left_j4.pos",
+          "left_j5.pos",
+          "left_j6.pos",
+          "right_j1.pos",
+          "right_j2.pos",
+          "right_j3.pos",
+          "right_j4.pos",
+          "right_j5.pos",
+          "right_j6.pos",
+          "left_ui50",
+          "right_ui50"
+        ],
+        "shape": [
+          14
+        ]
+      },
+      "state": {
+        "dtype": "float32",
+        "names": [
+          "left_j1.pos",
+          "left_j2.pos",
+          "left_j3.pos",
+          "left_j4.pos",
+          "left_j5.pos",
+          "left_j6.pos",
+          "right_j1.pos",
+          "right_j2.pos",
+          "right_j3.pos",
+          "right_j4.pos",
+          "right_j5.pos",
+          "right_j6.pos",
+          "left_ui50",
+          "left_ui57",
+          "left_ui58",
+          "right_ui50",
+          "right_ui57",
+          "right_ui58"
+        ],
+        "shape": [
+          18
+        ]
+      },
+      "cameras": [
+        "observation.images.top",
+        "observation.images.left_wrist",
+        "observation.images.right_wrist"
+      ]
+    },
+    {
+      "root": "/media/pangk/My Passport/humaniod/fineturn_20260922_111611_review_fixed",
+      "version": "v3.0",
+      "robot": "crp_humanoid",
+      "episodes": 59,
+      "frames": 20453,
+      "fps": 30,
+      "action": {
+        "dtype": "float32",
+        "shape": [
+          16
+        ],
+        "names": [
+          "m0.pos",
+          "m1.pos",
+          "m2.pos",
+          "m3.pos",
+          "m4.pos",
+          "m5.pos",
+          "m6.pos",
+          "m7.pos",
+          "m8.pos",
+          "m9.pos",
+          "m10.pos",
+          "m11.pos",
+          "m12.pos",
+          "m13.pos",
+          "hand_l.finger_0.pos",
+          "hand_r.finger_0.pos"
+        ]
+      },
+      "state": {
+        "dtype": "float32",
+        "shape": [
+          16
+        ],
+        "names": [
+          "m0.pos",
+          "m1.pos",
+          "m2.pos",
+          "m3.pos",
+          "m4.pos",
+          "m5.pos",
+          "m6.pos",
+          "m7.pos",
+          "m8.pos",
+          "m9.pos",
+          "m10.pos",
+          "m11.pos",
+          "m12.pos",
+          "m13.pos",
+          "hand_l.finger_0.pos",
+          "hand_r.finger_0.pos"
+        ]
+      },
+      "cameras": [
+        "observation.images.head",
+        "observation.images.left_wrist",
+        "observation.images.right_wrist"
+      ]
+    },
+    {
+      "root": "/media/pangk/My Passport/humaniod/lerobot+session_20260912_150556(double_inside)",
+      "version": "v3.0",
+      "robot": "crp_humanoid",
+      "episodes": 59,
+      "frames": 27085,
+      "fps": 30,
+      "action": {
+        "dtype": "float32",
+        "shape": [
+          16
+        ],
+        "names": [
+          "m0.pos",
+          "m1.pos",
+          "m2.pos",
+          "m3.pos",
+          "m4.pos",
+          "m5.pos",
+          "m6.pos",
+          "m7.pos",
+          "m8.pos",
+          "m9.pos",
+          "m10.pos",
+          "m11.pos",
+          "m12.pos",
+          "m13.pos",
+          "hand_l.finger_0.pos",
+          "hand_r.finger_0.pos"
+        ]
+      },
+      "state": {
+        "dtype": "float32",
+        "shape": [
+          16
+        ],
+        "names": [
+          "m0.pos",
+          "m1.pos",
+          "m2.pos",
+          "m3.pos",
+          "m4.pos",
+          "m5.pos",
+          "m6.pos",
+          "m7.pos",
+          "m8.pos",
+          "m9.pos",
+          "m10.pos",
+          "m11.pos",
+          "m12.pos",
+          "m13.pos",
+          "hand_l.finger_0.pos",
+          "hand_r.finger_0.pos"
+        ]
+      },
+      "cameras": [
+        "observation.images.head",
+        "observation.images.left_wrist",
+        "observation.images.right_wrist"
+      ]
+    },
+    {
+      "root": "/media/pangk/My Passport/humaniod/pick_fourth_bearing_right_hand",
+      "version": "v3.0",
+      "robot": "crp_humanoid",
+      "episodes": 87,
+      "frames": 33363,
+      "fps": 30,
+      "action": {
+        "dtype": "float32",
+        "shape": [
+          16
+        ],
+        "names": [
+          "m0.pos",
+          "m1.pos",
+          "m2.pos",
+          "m3.pos",
+          "m4.pos",
+          "m5.pos",
+          "m6.pos",
+          "m7.pos",
+          "m8.pos",
+          "m9.pos",
+          "m10.pos",
+          "m11.pos",
+          "m12.pos",
+          "m13.pos",
+          "hand_l.finger_0.pos",
+          "hand_r.finger_0.pos"
+        ]
+      },
+      "state": {
+        "dtype": "float32",
+        "shape": [
+          16
+        ],
+        "names": [
+          "m0.pos",
+          "m1.pos",
+          "m2.pos",
+          "m3.pos",
+          "m4.pos",
+          "m5.pos",
+          "m6.pos",
+          "m7.pos",
+          "m8.pos",
+          "m9.pos",
+          "m10.pos",
+          "m11.pos",
+          "m12.pos",
+          "m13.pos",
+          "hand_l.finger_0.pos",
+          "hand_r.finger_0.pos"
+        ]
+      },
+      "cameras": [
+        "observation.images.head",
+        "observation.images.left_wrist",
+        "observation.images.right_wrist"
+      ]
+    },
+    {
+      "root": "/media/pangk/My Passport/humaniod/pick_inner_outer_bearing_merged",
+      "version": "v3.0",
+      "robot": "crp_humanoid",
+      "episodes": 410,
+      "frames": 135387,
+      "fps": 30,
+      "action": {
+        "dtype": "float32",
+        "shape": [
+          16
+        ],
+        "names": [
+          "m0.pos",
+          "m1.pos",
+          "m2.pos",
+          "m3.pos",
+          "m4.pos",
+          "m5.pos",
+          "m6.pos",
+          "m7.pos",
+          "m8.pos",
+          "m9.pos",
+          "m10.pos",
+          "m11.pos",
+          "m12.pos",
+          "m13.pos",
+          "hand_l.finger_0.pos",
+          "hand_r.finger_0.pos"
+        ]
+      },
+      "state": {
+        "dtype": "float32",
+        "shape": [
+          16
+        ],
+        "names": [
+          "m0.pos",
+          "m1.pos",
+          "m2.pos",
+          "m3.pos",
+          "m4.pos",
+          "m5.pos",
+          "m6.pos",
+          "m7.pos",
+          "m8.pos",
+          "m9.pos",
+          "m10.pos",
+          "m11.pos",
+          "m12.pos",
+          "m13.pos",
+          "hand_l.finger_0.pos",
+          "hand_r.finger_0.pos"
+        ]
+      },
+      "cameras": [
+        "observation.images.head",
+        "observation.images.left_wrist",
+        "observation.images.right_wrist"
+      ]
+    },
+    {
+      "root": "/media/pangk/My Passport/humaniod/pick_outer_bearing_both_hands_review",
+      "version": "v3.0",
+      "robot": "crp_humanoid",
+      "episodes": 100,
+      "frames": 33305,
+      "fps": 30,
+      "action": {
+        "dtype": "float32",
+        "shape": [
+          16
+        ],
+        "names": [
+          "m0.pos",
+          "m1.pos",
+          "m2.pos",
+          "m3.pos",
+          "m4.pos",
+          "m5.pos",
+          "m6.pos",
+          "m7.pos",
+          "m8.pos",
+          "m9.pos",
+          "m10.pos",
+          "m11.pos",
+          "m12.pos",
+          "m13.pos",
+          "hand_l.finger_0.pos",
+          "hand_r.finger_0.pos"
+        ]
+      },
+      "state": {
+        "dtype": "float32",
+        "shape": [
+          16
+        ],
+        "names": [
+          "m0.pos",
+          "m1.pos",
+          "m2.pos",
+          "m3.pos",
+          "m4.pos",
+          "m5.pos",
+          "m6.pos",
+          "m7.pos",
+          "m8.pos",
+          "m9.pos",
+          "m10.pos",
+          "m11.pos",
+          "m12.pos",
+          "m13.pos",
+          "hand_l.finger_0.pos",
+          "hand_r.finger_0.pos"
+        ]
+      },
+      "cameras": [
+        "observation.images.head",
+        "observation.images.left_wrist",
+        "observation.images.right_wrist"
+      ]
+    },
+    {
+      "root": "/media/pangk/My Passport/humaniod/pick_outer_bearing_both_hands_review_20260914_134505(112)",
+      "version": "v3.0",
+      "robot": "crp_humanoid",
+      "episodes": 112,
+      "frames": 29883,
+      "fps": 30,
+      "action": {
+        "dtype": "float32",
+        "shape": [
+          16
+        ],
+        "names": [
+          "m0.pos",
+          "m1.pos",
+          "m2.pos",
+          "m3.pos",
+          "m4.pos",
+          "m5.pos",
+          "m6.pos",
+          "m7.pos",
+          "m8.pos",
+          "m9.pos",
+          "m10.pos",
+          "m11.pos",
+          "m12.pos",
+          "m13.pos",
+          "hand_l.finger_0.pos",
+          "hand_r.finger_0.pos"
+        ]
+      },
+      "state": {
+        "dtype": "float32",
+        "shape": [
+          16
+        ],
+        "names": [
+          "m0.pos",
+          "m1.pos",
+          "m2.pos",
+          "m3.pos",
+          "m4.pos",
+          "m5.pos",
+          "m6.pos",
+          "m7.pos",
+          "m8.pos",
+          "m9.pos",
+          "m10.pos",
+          "m11.pos",
+          "m12.pos",
+          "m13.pos",
+          "hand_l.finger_0.pos",
+          "hand_r.finger_0.pos"
+        ]
+      },
+      "cameras": [
+        "observation.images.head",
+        "observation.images.left_wrist",
+        "observation.images.right_wrist"
+      ]
+    },
+    {
+      "root": "/media/pangk/My Passport/insert_the_blue_tube_all",
+      "version": "v3.0",
+      "robot": "crp_arm",
+      "episodes": 788,
+      "frames": 828356,
+      "fps": 30,
+      "action": {
+        "dtype": "float32",
+        "names": [
+          "j1.pos",
+          "j2.pos",
+          "j3.pos",
+          "j4.pos",
+          "j5.pos",
+          "j6.pos",
+          "gripper.pos"
+        ],
+        "shape": [
+          7
+        ]
+      },
+      "state": {
+        "dtype": "float32",
+        "names": [
+          "j1.pos",
+          "j2.pos",
+          "j3.pos",
+          "j4.pos",
+          "j5.pos",
+          "j6.pos"
+        ],
+        "shape": [
+          6
+        ]
+      },
+      "cameras": [
+        "observation.images.top",
+        "observation.images.wrist"
+      ]
+    },
+    {
+      "root": "/media/pangk/My Passport/insert_the_rod_all",
+      "version": "v3.0",
+      "robot": "crp_arm",
+      "episodes": 423,
+      "frames": 338485,
+      "fps": 30,
+      "action": {
+        "dtype": "float32",
+        "names": [
+          "j1.pos",
+          "j2.pos",
+          "j3.pos",
+          "j4.pos",
+          "j5.pos",
+          "j6.pos",
+          "gripper.pos"
+        ],
+        "shape": [
+          7
+        ]
+      },
+      "state": {
+        "dtype": "float32",
+        "names": [
+          "j1.pos",
+          "j2.pos",
+          "j3.pos",
+          "j4.pos",
+          "j5.pos",
+          "j6.pos"
+        ],
+        "shape": [
+          6
+        ]
+      },
+      "cameras": [
+        "observation.images.top",
+        "observation.images.wrist"
+      ]
+    },
+    {
+      "root": "/media/pangk/My Passport/merged_screw_v1",
+      "version": "v3.0",
+      "robot": "bi_so_follower",
+      "episodes": 440,
+      "frames": 284254,
+      "fps": 30,
+      "action": {
+        "dtype": "float32",
+        "names": [
+          "left_shoulder_pan.pos",
+          "left_shoulder_lift.pos",
+          "left_elbow_flex.pos",
+          "left_wrist_flex.pos",
+          "left_wrist_roll.pos",
+          "left_gripper.pos",
+          "right_shoulder_pan.pos",
+          "right_shoulder_lift.pos",
+          "right_elbow_flex.pos",
+          "right_wrist_flex.pos",
+          "right_wrist_roll.pos",
+          "right_gripper.pos"
+        ],
+        "shape": [
+          12
+        ]
+      },
+      "state": {
+        "dtype": "float32",
+        "names": [
+          "left_shoulder_pan.pos",
+          "left_shoulder_lift.pos",
+          "left_elbow_flex.pos",
+          "left_wrist_flex.pos",
+          "left_wrist_roll.pos",
+          "left_gripper.pos",
+          "right_shoulder_pan.pos",
+          "right_shoulder_lift.pos",
+          "right_elbow_flex.pos",
+          "right_wrist_flex.pos",
+          "right_wrist_roll.pos",
+          "right_gripper.pos"
+        ],
+        "shape": [
+          12
+        ]
+      },
+      "cameras": [
+        "observation.images.left_wrist",
+        "observation.images.right_wrist",
+        "observation.images.right_front"
+      ]
+    },
+    {
+      "root": "/media/pangk/My Passport/mixture_all",
+      "version": "v3.0",
+      "robot": "crp_arm",
+      "episodes": 1602,
+      "frames": 1320710,
+      "fps": 30,
+      "action": {
+        "dtype": "float32",
+        "names": [
+          "j1.pos",
+          "j2.pos",
+          "j3.pos",
+          "j4.pos",
+          "j5.pos",
+          "j6.pos",
+          "gripper.pos"
+        ],
+        "shape": [
+          7
+        ]
+      },
+      "state": {
+        "dtype": "float32",
+        "names": [
+          "j1.pos",
+          "j2.pos",
+          "j3.pos",
+          "j4.pos",
+          "j5.pos",
+          "j6.pos"
+        ],
+        "shape": [
+          6
+        ]
+      },
+      "cameras": [
+        "observation.images.top",
+        "observation.images.wrist"
+      ]
+    },
+    {
+      "root": "/media/pangk/My Passport/stack_the_base_all",
+      "version": "v3.0",
+      "robot": "crp_arm",
+      "episodes": 391,
+      "frames": 153869,
+      "fps": 30,
+      "action": {
+        "dtype": "float32",
+        "names": [
+          "j1.pos",
+          "j2.pos",
+          "j3.pos",
+          "j4.pos",
+          "j5.pos",
+          "j6.pos",
+          "gripper.pos"
+        ],
+        "shape": [
+          7
+        ]
+      },
+      "state": {
+        "dtype": "float32",
+        "names": [
+          "j1.pos",
+          "j2.pos",
+          "j3.pos",
+          "j4.pos",
+          "j5.pos",
+          "j6.pos"
+        ],
+        "shape": [
+          6
+        ]
+      },
+      "cameras": [
+        "observation.images.top",
+        "observation.images.wrist"
+      ]
+    }
+  ]
+}

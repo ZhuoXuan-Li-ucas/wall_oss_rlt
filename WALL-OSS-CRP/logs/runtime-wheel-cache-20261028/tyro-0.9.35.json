@@ -1,0 +1,460 @@
+{
+  "status": "PASS",
+  "package": "tyro",
+  "version": "0.9.35",
+  "filename": "tyro-0.9.35-py3-none-any.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "02847588c469fddb35713025709f3a5506461eec3ad7781abadc0af260340120",
+  "wheel_tags": [
+    "py3-none-any"
+  ],
+  "record_verified_files": [
+    {
+      "path": "tyro-0.9.35.dist-info/INSTALLER",
+      "wheel_path": "tyro-0.9.35.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "tyro-0.9.35.dist-info/METADATA",
+      "wheel_path": "tyro-0.9.35.dist-info/METADATA",
+      "size_bytes": 12025,
+      "sha256": "15087f6569834c228e237e53414443cfb48157f8b40400e02bfbe655d1e07648"
+    },
+    {
+      "path": "tyro-0.9.35.dist-info/REQUESTED",
+      "wheel_path": "tyro-0.9.35.dist-info/REQUESTED",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tyro-0.9.35.dist-info/WHEEL",
+      "wheel_path": "tyro-0.9.35.dist-info/WHEEL",
+      "size_bytes": 87,
+      "sha256": "aad0b0a12256807936d52d4a6f88a1773236ae527564a688bab4e3fe780e8724"
+    },
+    {
+      "path": "tyro-0.9.35.dist-info/licenses/LICENSE",
+      "wheel_path": "tyro-0.9.35.dist-info/licenses/LICENSE",
+      "size_bytes": 1065,
+      "sha256": "1470480384dd9bcd98241f67ca5ef49f4c546ea9e9ac4dedf1cc27eec466c093"
+    },
+    {
+      "path": "tyro/__init__.py",
+      "wheel_path": "tyro/__init__.py",
+      "size_bytes": 446,
+      "sha256": "bc2f3967c2bb729832942611b9d1e11bab2236966c13e5d3317a1e5d2c8b252f"
+    },
+    {
+      "path": "tyro/_argparse.py",
+      "wheel_path": "tyro/_argparse.py",
+      "size_bytes": 101735,
+      "sha256": "b79b099759859640385a8ba2201273aa9bf6d53bee6707e5e51657a85fa6ab92"
+    },
+    {
+      "path": "tyro/_argparse_formatter.py",
+      "wheel_path": "tyro/_argparse_formatter.py",
+      "size_bytes": 58270,
+      "sha256": "83a4eca1f39a63ce5e7bb988f04d3a815f69a4d0282fb1295bea040e17e80b28"
+    },
+    {
+      "path": "tyro/_arguments.py",
+      "wheel_path": "tyro/_arguments.py",
+      "size_bytes": 23063,
+      "sha256": "71d45aa927fd5efabde4c02c2d312a593916515c786137be6c3f02bdb5622a8f"
+    },
+    {
+      "path": "tyro/_calling.py",
+      "wheel_path": "tyro/_calling.py",
+      "size_bytes": 12768,
+      "sha256": "346ee88f5f307a509088fe62875513f7536ec7b7409a64c9e5408af2f330e9ef"
+    },
+    {
+      "path": "tyro/_cli.py",
+      "wheel_path": "tyro/_cli.py",
+      "size_bytes": 23987,
+      "sha256": "f0d60c1b43212038a2c5e6b38722fb5127c8baf27062aec184da391da36fc879"
+    },
+    {
+      "path": "tyro/_deprecated.py",
+      "wheel_path": "tyro/_deprecated.py",
+      "size_bytes": 101,
+      "sha256": "395b86571502981ea99e8bf2667248ceb5071b827b295ae5b46c92264c355e37"
+    },
+    {
+      "path": "tyro/_docstrings.py",
+      "wheel_path": "tyro/_docstrings.py",
+      "size_bytes": 13281,
+      "sha256": "6c7bb8fe4f79aea1c764603040b9bd6ea67e384f32c518558fc91be933ae1175"
+    },
+    {
+      "path": "tyro/_fields.py",
+      "wheel_path": "tyro/_fields.py",
+      "size_bytes": 18163,
+      "sha256": "d7759cbf56500d5f676d946b06db865c42f2e67930f1813093dd228fcd0f0b4e"
+    },
+    {
+      "path": "tyro/_parsers.py",
+      "wheel_path": "tyro/_parsers.py",
+      "size_bytes": 31885,
+      "sha256": "2d1ec5776fde79952afcb17d66270e720f507e151fd6e8a5fac1ce4a1c70fa86"
+    },
+    {
+      "path": "tyro/_resolver.py",
+      "wheel_path": "tyro/_resolver.py",
+      "size_bytes": 31602,
+      "sha256": "28e653149bbd5a3451b08687a3a74023e9e7f7e37709cf2af1364678afba5abd"
+    },
+    {
+      "path": "tyro/_singleton.py",
+      "wheel_path": "tyro/_singleton.py",
+      "size_bytes": 2670,
+      "sha256": "62b565e3897b12c3591794deb30878b3e4ced37a8b544c8d2a5a7bb1d3d691fc"
+    },
+    {
+      "path": "tyro/_strings.py",
+      "wheel_path": "tyro/_strings.py",
+      "size_bytes": 7362,
+      "sha256": "649d297d7895338e6fcce42fa2069e310e609c6dd81dc50f679800053b41e332"
+    },
+    {
+      "path": "tyro/_subcommand_matching.py",
+      "wheel_path": "tyro/_subcommand_matching.py",
+      "size_bytes": 3116,
+      "sha256": "bf032f5e3e5955ac46309852627018ad61d599a15b286694201d9f78d5b7c2a9"
+    },
+    {
+      "path": "tyro/_typing.py",
+      "wheel_path": "tyro/_typing.py",
+      "size_bytes": 764,
+      "sha256": "4562ee1dd0f59d49ae7ce8bb082f21fdaf0a583418053be510face8743b8e3b6"
+    },
+    {
+      "path": "tyro/_typing_compat.py",
+      "wheel_path": "tyro/_typing_compat.py",
+      "size_bytes": 1776,
+      "sha256": "774189fa2836b8ed41957a254b77befc23ffefc089361856315a5ef1a4425b72"
+    },
+    {
+      "path": "tyro/_unsafe_cache.py",
+      "wheel_path": "tyro/_unsafe_cache.py",
+      "size_bytes": 1902,
+      "sha256": "ec2cc351d884598757a1fa5b2458dfdee35e936509bbe1cbd1b3ef0497fe4142"
+    },
+    {
+      "path": "tyro/_warnings.py",
+      "wheel_path": "tyro/_warnings.py",
+      "size_bytes": 279,
+      "sha256": "1ea6cc9418dac5cc87f809950cb5106549e91d77fa0cd59c73a823904fb3b760"
+    },
+    {
+      "path": "tyro/conf/__init__.py",
+      "wheel_path": "tyro/conf/__init__.py",
+      "size_bytes": 2072,
+      "sha256": "1af3782a3b6be0ba24a27830f63bafa1bb564f1aad8578db08e598b200feff5e"
+    },
+    {
+      "path": "tyro/conf/_confstruct.py",
+      "wheel_path": "tyro/conf/_confstruct.py",
+      "size_bytes": 8557,
+      "sha256": "89778346d612ae48dd9814b20fe507e21e09b65773123b9600d8193f15cbf13d"
+    },
+    {
+      "path": "tyro/conf/_markers.py",
+      "wheel_path": "tyro/conf/_markers.py",
+      "size_bytes": 14420,
+      "sha256": "42fc4d62899efe34103458e95fbdef1abd3437791ba43cb816f522e6d85db585"
+    },
+    {
+      "path": "tyro/conf/_mutex_group.py",
+      "wheel_path": "tyro/conf/_mutex_group.py",
+      "size_bytes": 2634,
+      "sha256": "eebfffc4e80bb97322ae73728b2beb796fe70aa8b77a673b98b2f50dbb62e0fd"
+    },
+    {
+      "path": "tyro/constructors/__init__.py",
+      "wheel_path": "tyro/constructors/__init__.py",
+      "size_bytes": 801,
+      "sha256": "2e335fb2dea3c7fdcafb1af7277a92531226b7c46fef04fb78ce2845a0905bc3"
+    },
+    {
+      "path": "tyro/constructors/_backtracking.py",
+      "wheel_path": "tyro/constructors/_backtracking.py",
+      "size_bytes": 5528,
+      "sha256": "455e98481aa2f69eed095215d3960af9146a189ffc06836c895c64cda960e378"
+    },
+    {
+      "path": "tyro/constructors/_primitive_spec.py",
+      "wheel_path": "tyro/constructors/_primitive_spec.py",
+      "size_bytes": 29244,
+      "sha256": "fe0bbbb47d5adb068dbc7035bae85ad94141df4615ad2d743ab239ae0a42b7c4"
+    },
+    {
+      "path": "tyro/constructors/_registry.py",
+      "wheel_path": "tyro/constructors/_registry.py",
+      "size_bytes": 7000,
+      "sha256": "03a748a684dcf645f8d5c2baa4ef9c0d485be8f71faae22d5dfe4965f7937bce"
+    },
+    {
+      "path": "tyro/constructors/_struct_spec.py",
+      "wheel_path": "tyro/constructors/_struct_spec.py",
+      "size_bytes": 15354,
+      "sha256": "7f157ae7ee38c84a539a41fe7851c8f877a58191fe2cfae329d8a4864ed98e91"
+    },
+    {
+      "path": "tyro/constructors/_struct_spec_attrs.py",
+      "wheel_path": "tyro/constructors/_struct_spec_attrs.py",
+      "size_bytes": 1984,
+      "sha256": "acf6bae9ade54cd62c7eed24dc690d05c90f1d6fdc62476a31f80eda4f3d5650"
+    },
+    {
+      "path": "tyro/constructors/_struct_spec_dataclass.py",
+      "wheel_path": "tyro/constructors/_struct_spec_dataclass.py",
+      "size_bytes": 4411,
+      "sha256": "987beca4bcd3dd8a718103f0a22f42546ada7d9a6fbd795924dd9d2e627ce790"
+    },
+    {
+      "path": "tyro/constructors/_struct_spec_flax.py",
+      "wheel_path": "tyro/constructors/_struct_spec_flax.py",
+      "size_bytes": 1106,
+      "sha256": "40e3d12b16f7114f6e0662c72fcac7ca9d76e42231e356f624144ea33020305a"
+    },
+    {
+      "path": "tyro/constructors/_struct_spec_ml_collections.py",
+      "wheel_path": "tyro/constructors/_struct_spec_ml_collections.py",
+      "size_bytes": 3413,
+      "sha256": "255a47d1fb05c4b82072b3915342a49e18b8e4e5ecdb7fb8a0492e4299ad8a23"
+    },
+    {
+      "path": "tyro/constructors/_struct_spec_msgspec.py",
+      "wheel_path": "tyro/constructors/_struct_spec_msgspec.py",
+      "size_bytes": 1788,
+      "sha256": "50cad3f0ab42cae2b00a1c14201da6359e590063a9841f3d9b7aa0bfd8d491f8"
+    },
+    {
+      "path": "tyro/constructors/_struct_spec_pydantic.py",
+      "wheel_path": "tyro/constructors/_struct_spec_pydantic.py",
+      "size_bytes": 4792,
+      "sha256": "3c142857353e730db4c50d221e2895e20cdd7bc847d4a07dbec50ea8f242bf92"
+    },
+    {
+      "path": "tyro/extras/__init__.py",
+      "wheel_path": "tyro/extras/__init__.py",
+      "size_bytes": 832,
+      "sha256": "0e024e0eb6c8aec49aa4fea3bcb51d2aad4eae74447ebc8690cd56979e70bee0"
+    },
+    {
+      "path": "tyro/extras/_base_configs.py",
+      "wheel_path": "tyro/extras/_base_configs.py",
+      "size_bytes": 6593,
+      "sha256": "fac4d17923cba6805158e341d556de12ce7292d852738f457ae16a7ed34992d4"
+    },
+    {
+      "path": "tyro/extras/_choices_type.py",
+      "wheel_path": "tyro/extras/_choices_type.py",
+      "size_bytes": 1226,
+      "sha256": "4b58af356d6d914661c13d504b728788508e44a858ad69de06a1dca5495b393a"
+    },
+    {
+      "path": "tyro/extras/_serialization.py",
+      "wheel_path": "tyro/extras/_serialization.py",
+      "size_bytes": 8409,
+      "sha256": "1ba04a9fb3dbd3cbe07c669d02981ea2eb22eef834cad615169b8e1153f611d3"
+    },
+    {
+      "path": "tyro/extras/_subcommand_app.py",
+      "wheel_path": "tyro/extras/_subcommand_app.py",
+      "size_bytes": 5444,
+      "sha256": "0c44948aa4a502b2a7abd28bee179fb16e9e104ca87b819312dcc2bb48ad23d2"
+    },
+    {
+      "path": "tyro/extras/_subcommand_cli_from_dict.py",
+      "wheel_path": "tyro/extras/_subcommand_cli_from_dict.py",
+      "size_bytes": 5347,
+      "sha256": "7aea27743b2251a2e29c696696a21e2f45e5efaa846acaccbab6d1a61baa1610"
+    },
+    {
+      "path": "tyro/py.typed",
+      "wheel_path": "tyro/py.typed",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "tyro-0.9.35.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro-0.9.35.dist-info/REQUESTED",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/__pycache__/_argparse.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/__pycache__/_argparse_formatter.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/__pycache__/_arguments.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/__pycache__/_calling.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/__pycache__/_cli.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/__pycache__/_deprecated.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/__pycache__/_docstrings.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/__pycache__/_fields.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/__pycache__/_parsers.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/__pycache__/_resolver.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/__pycache__/_singleton.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/__pycache__/_strings.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/__pycache__/_subcommand_matching.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/__pycache__/_typing.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/__pycache__/_typing_compat.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/__pycache__/_unsafe_cache.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/__pycache__/_warnings.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/conf/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/conf/__pycache__/_confstruct.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/conf/__pycache__/_markers.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/conf/__pycache__/_mutex_group.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/constructors/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/constructors/__pycache__/_backtracking.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/constructors/__pycache__/_primitive_spec.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/constructors/__pycache__/_registry.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/constructors/__pycache__/_struct_spec.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/constructors/__pycache__/_struct_spec_attrs.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/constructors/__pycache__/_struct_spec_dataclass.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/constructors/__pycache__/_struct_spec_flax.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/constructors/__pycache__/_struct_spec_ml_collections.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/constructors/__pycache__/_struct_spec_msgspec.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/constructors/__pycache__/_struct_spec_pydantic.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/extras/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/extras/__pycache__/_base_configs.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/extras/__pycache__/_choices_type.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/extras/__pycache__/_serialization.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/extras/__pycache__/_subcommand_app.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tyro/extras/__pycache__/_subcommand_cli_from_dict.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "032239a5e8ff952b559301126296831253822f5aee821fcdaa9019b2e6ed60f9",
+  "wheel_size_bytes": 155415,
+  "rebuilt_record_verified_files": 43,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:22.367751+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 43,
+  "source_record_verified_file_count": 45
+}

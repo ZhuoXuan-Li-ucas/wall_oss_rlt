@@ -1,0 +1,74 @@
+Running sources; log: /home/pangk/workspaces/WALL-OSS-CRP/logs/rlt-inference-20261029/cpu-check/sources.log
+Running preflight; log: /home/pangk/workspaces/WALL-OSS-CRP/logs/rlt-inference-20261029/cpu-check/preflight.log
+Running tests; log: /home/pangk/workspaces/WALL-OSS-CRP/logs/rlt-inference-20261029/cpu-check/tests.log
+Running stage2; log: /home/pangk/workspaces/WALL-OSS-CRP/logs/rlt-inference-20261029/cpu-check/stage2.log
+{
+  "scope": "CPU implementation checks; no pretrained model forward, Ray or GPU training",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "sources",
+      "exit_code": 0,
+      "command": [
+        "/home/pangk/workspaces/WALL-OSS-CRP/.venv-rlt/bin/python",
+        "scripts/prepare_wall_rlt_sources.py"
+      ],
+      "log": "/home/pangk/workspaces/WALL-OSS-CRP/logs/rlt-inference-20261029/cpu-check/sources.log",
+      "status": "PASS"
+    },
+    {
+      "name": "preflight",
+      "exit_code": 0,
+      "command": [
+        "/home/pangk/workspaces/WALL-OSS-CRP/.venv-rlt/bin/python",
+        "scripts/train_wall_rlt.py",
+        "--validate-only"
+      ],
+      "log": "/home/pangk/workspaces/WALL-OSS-CRP/logs/rlt-inference-20261029/cpu-check/preflight.log",
+      "status": "PASS"
+    },
+    {
+      "name": "tests",
+      "exit_code": 0,
+      "command": [
+        "/home/pangk/workspaces/WALL-OSS-CRP/.venv-rlt/bin/python",
+        "-m",
+        "pytest",
+        "tests/rlt",
+        "-q",
+        "--junitxml=/home/pangk/workspaces/WALL-OSS-CRP/logs/rlt-inference-20261029/cpu-check/tests.xml"
+      ],
+      "log": "/home/pangk/workspaces/WALL-OSS-CRP/logs/rlt-inference-20261029/cpu-check/tests.log",
+      "status": "PASS"
+    },
+    {
+      "name": "stage2",
+      "exit_code": 0,
+      "command": [
+        "/home/pangk/workspaces/WALL-OSS-CRP/.venv-rlt/bin/python",
+        "-m",
+        "wall_rlt.stage2",
+        "--synthetic",
+        "--output",
+        "/home/pangk/workspaces/WALL-OSS-CRP/logs/rlt-inference-20261029/cpu-check/stage2.json"
+      ],
+      "log": "/home/pangk/workspaces/WALL-OSS-CRP/logs/rlt-inference-20261029/cpu-check/stage2.log",
+      "status": "PASS"
+    }
+  ],
+  "tests": {
+    "tests": 377,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "source_lock_sha256": "a6589fb36b8f2573c32f342497f6831fd1c9ad53ee3881e783b2a86d94a3d0b8",
+  "wall_patch_sha256": "382a1eccd75810d0703d20ff09349c8d7050a90b5addd31241a4bbbc6d791de8",
+  "not_validated": [
+    "pretrained WALL + RLT full-size load/forward",
+    "H100 BF16/FlashAttention/FSDP",
+    "100-step target-data training and distributed restore",
+    "Ubuntu 16GB inference",
+    "real replay/online RLT improvement"
+  ]
+}

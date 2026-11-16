@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "scope": "static state-storage lower bound; no GPU execution",
+  "weight_file": "/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/model.safetensors",
+  "checkpoint_header_bytes_read": 125648,
+  "wall_serialized_scalars_excluding_normalizers": 4162219008,
+  "rlt_parameter_count": 746764288,
+  "total_scalar_count": 4908983296,
+  "components_bytes_unsharded": {
+    "fp32_parameters": 19635933184,
+    "fp32_gradients": 19635933184,
+    "adam_first_moment": 19635933184,
+    "adam_second_moment": 19635933184
+  },
+  "unsharded_state_bytes": 78543732736,
+  "unsharded_state_gib": 73.14955139160156,
+  "world_size": 1,
+  "sharding_strategy": "no_shard",
+  "components_bytes_per_rank": {
+    "fp32_parameters": 19635933184,
+    "fp32_gradients": 19635933184,
+    "adam_first_moment": 19635933184,
+    "adam_second_moment": 19635933184
+  },
+  "persistent_per_rank_bytes": 78543732736,
+  "persistent_per_rank_gib": 73.14955139160156,
+  "bf16_whole_model_working_copy_bytes_excluded": 9817966592,
+  "bf16_whole_model_working_copy_gib_excluded": 9.143693923950195,
+  "assumptions": [
+    "all serialized WALL non-normalizer scalars are trainable",
+    "FP32 master parameters and gradients; two FP32 Adam states",
+    "full_shard divides persistent states evenly; no_shard replicates",
+    "allocator and FSDP implementation may use additional storage"
+  ],
+  "not_included": [
+    "BF16 working parameters",
+    "activations",
+    "Adam update temporaries",
+    "FSDP collective and flattened-parameter buffers",
+    "CUDA workspaces",
+    "allocator fragmentation/reserve",
+    "other processes"
+  ],
+  "measured_gpu_peak_bytes": null,
+  "capacity_fit_verified": false,
+  "two_rank_full_shard_comparison": {
+    "schema_version": 1,
+    "scope": "static state-storage lower bound; no GPU execution",
+    "weight_file": "/home/pangk/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/model.safetensors",
+    "checkpoint_header_bytes_read": 125648,
+    "wall_serialized_scalars_excluding_normalizers": 4162219008,
+    "rlt_parameter_count": 746764288,
+    "total_scalar_count": 4908983296,
+    "components_bytes_unsharded": {
+      "fp32_parameters": 19635933184,
+      "fp32_gradients": 19635933184,
+      "adam_first_moment": 19635933184,
+      "adam_second_moment": 19635933184
+    },
+    "unsharded_state_bytes": 78543732736,
+    "unsharded_state_gib": 73.14955139160156,
+    "world_size": 2,
+    "sharding_strategy": "full_shard",
+    "components_bytes_per_rank": {
+      "fp32_parameters": 9817966592,
+      "fp32_gradients": 9817966592,
+      "adam_first_moment": 9817966592,
+      "adam_second_moment": 9817966592
+    },
+    "persistent_per_rank_bytes": 39271866368,
+    "persistent_per_rank_gib": 36.57477569580078,
+    "bf16_whole_model_working_copy_bytes_excluded": 9817966592,
+    "bf16_whole_model_working_copy_gib_excluded": 9.143693923950195,
+    "assumptions": [
+      "all serialized WALL non-normalizer scalars are trainable",
+      "FP32 master parameters and gradients; two FP32 Adam states",
+      "full_shard divides persistent states evenly; no_shard replicates",
+      "allocator and FSDP implementation may use additional storage"
+    ],
+    "not_included": [
+      "BF16 working parameters",
+      "activations",
+      "Adam update temporaries",
+      "FSDP collective and flattened-parameter buffers",
+      "CUDA workspaces",
+      "allocator fragmentation/reserve",
+      "other processes"
+    ],
+    "measured_gpu_peak_bytes": null,
+    "capacity_fit_verified": false
+  }
+}

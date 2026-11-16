@@ -1,0 +1,138 @@
+Authentication: 
+docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb: OK
+docker-ce-cli_29.9.2-1~ubuntu.24.04~noble_amd64.deb: OK
+containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb: OK
+docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb: OK
+docker-compose-plugin_5.6.1-1~ubuntu.24.04~noble_amd64.deb: OK
+nvidia-container-toolkit_1.20.1-1_amd64.deb: OK
+nvidia-container-toolkit-base_1.20.1-1_amd64.deb: OK
+libnvidia-container-tools_1.20.1-1_amd64.deb: OK
+libnvidia-container1_1.20.1-1_amd64.deb: OK
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  clang-tidy-14 clang-tools-14
+Use 'sudo apt autoremove' to remove them.
+Suggested packages:
+  cgroupfs-mount | cgroup-lite docker-model-plugin
+Recommended packages:
+  docker-ce-rootless-extras pigz
+The following NEW packages will be installed:
+  containerd.io docker-buildx-plugin docker-ce docker-ce-cli
+  docker-compose-plugin libnvidia-container-tools libnvidia-container1
+  nvidia-container-toolkit nvidia-container-toolkit-base
+0 upgraded, 9 newly installed, 0 to remove and 386 not upgraded.
+Inst containerd.io (2.4.2-3~ubuntu.24.04~noble Docker CE:noble, local-deb [amd64])
+Inst docker-ce-cli (5:29.9.2-1~ubuntu.24.04~noble Docker CE:noble, local-deb [amd64])
+Inst docker-ce (5:29.9.2-1~ubuntu.24.04~noble Docker CE:noble, local-deb [amd64])
+Inst docker-buildx-plugin (0.38.1-1~ubuntu.24.04~noble Docker CE:noble, local-deb [amd64])
+Inst docker-compose-plugin (5.6.1-1~ubuntu.24.04~noble Docker CE:noble, local-deb [amd64])
+Inst libnvidia-container1 (1.20.1-1 local-deb [amd64])
+Inst libnvidia-container-tools (1.20.1-1 local-deb [amd64])
+Inst nvidia-container-toolkit-base (1.20.1-1 local-deb [amd64])
+Inst nvidia-container-toolkit (1.20.1-1 local-deb [amd64])
+Conf containerd.io (2.4.2-3~ubuntu.24.04~noble Docker CE:noble, local-deb [amd64])
+Conf docker-ce-cli (5:29.9.2-1~ubuntu.24.04~noble Docker CE:noble, local-deb [amd64])
+Conf docker-ce (5:29.9.2-1~ubuntu.24.04~noble Docker CE:noble, local-deb [amd64])
+Conf docker-buildx-plugin (0.38.1-1~ubuntu.24.04~noble Docker CE:noble, local-deb [amd64])
+Conf docker-compose-plugin (5.6.1-1~ubuntu.24.04~noble Docker CE:noble, local-deb [amd64])
+Conf libnvidia-container1 (1.20.1-1 local-deb [amd64])
+Conf libnvidia-container-tools (1.20.1-1 local-deb [amd64])
+Conf nvidia-container-toolkit-base (1.20.1-1 local-deb [amd64])
+Conf nvidia-container-toolkit (1.20.1-1 local-deb [amd64])
+Selecting previously unselected package containerd.io.
+(Reading database ... 372922 files and directories currently installed.)
+Preparing to unpack .../containerd.io_2.4.2-3~ubuntu.24.04~noble_amd64.deb ...
+Unpacking containerd.io (2.4.2-3~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-buildx-plugin.
+Preparing to unpack .../docker-buildx-plugin_0.38.1-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-buildx-plugin (0.38.1-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-ce-cli.
+Preparing to unpack .../docker-ce-cli_29.9.2-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-ce-cli (5:29.9.2-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-ce.
+Preparing to unpack .../docker-ce_29.9.2-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-ce (5:29.9.2-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-compose-plugin.
+Preparing to unpack .../docker-compose-plugin_5.6.1-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-compose-plugin (5.6.1-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package libnvidia-container-tools.
+Preparing to unpack .../libnvidia-container-tools_1.20.1-1_amd64.deb ...
+Unpacking libnvidia-container-tools (1.20.1-1) ...
+Selecting previously unselected package libnvidia-container1:amd64.
+Preparing to unpack .../libnvidia-container1_1.20.1-1_amd64.deb ...
+Unpacking libnvidia-container1:amd64 (1.20.1-1) ...
+Selecting previously unselected package nvidia-container-toolkit-base.
+Preparing to unpack .../nvidia-container-toolkit-base_1.20.1-1_amd64.deb ...
+Unpacking nvidia-container-toolkit-base (1.20.1-1) ...
+Selecting previously unselected package nvidia-container-toolkit.
+Preparing to unpack .../nvidia-container-toolkit_1.20.1-1_amd64.deb ...
+Unpacking nvidia-container-toolkit (1.20.1-1) ...
+Setting up containerd.io (2.4.2-3~ubuntu.24.04~noble) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /usr/lib/systemd/system/containerd.service.
+Setting up docker-buildx-plugin (0.38.1-1~ubuntu.24.04~noble) ...
+Setting up docker-ce-cli (5:29.9.2-1~ubuntu.24.04~noble) ...
+Setting up docker-ce (5:29.9.2-1~ubuntu.24.04~noble) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /usr/lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /usr/lib/systemd/system/docker.socket.
+Setting up docker-compose-plugin (5.6.1-1~ubuntu.24.04~noble) ...
+Setting up libnvidia-container1:amd64 (1.20.1-1) ...
+Setting up nvidia-container-toolkit-base (1.20.1-1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/nvidia-cdi-refresh.path → /usr/lib/systemd/system/nvidia-cdi-refresh.path.
+Created symlink /etc/systemd/system/multi-user.target.wants/nvidia-cdi-refresh.service → /usr/lib/systemd/system/nvidia-cdi-refresh.service.
+Setting up libnvidia-container-tools (1.20.1-1) ...
+Setting up nvidia-container-toolkit (1.20.1-1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+time="2026-10-28T16:01:59+08:00" level=info msg="Config file does not exist; using empty config"
+time="2026-10-28T16:01:59+08:00" level=info msg="Wrote updated config to /etc/docker/daemon.json"
+time="2026-10-28T16:01:59+08:00" level=info msg="It is recommended that docker daemon be restarted."
+Client: Docker Engine - Community
+ Version:           29.9.2
+ API version:       1.56
+ Go version:        go1.26.10
+ Git commit:        a82e528
+ Built:             Tue Oct 20 18:44:40 2026
+ OS/Arch:           linux/amd64
+ Context:           default
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          29.9.2
+  API version:      1.56 (minimum version 1.40)
+  Go version:       go1.26.10
+  Git commit:       0367cbe
+  Built:            Tue Oct 20 18:44:40 2026
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          v2.4.2
+  GitCommit:        b7a25261e029d68978bbf290df0a62fc819b3c51
+ runc:
+  Version:          1.5.2
+  GitCommit:        v1.5.2-0-g29dd3dc2
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+Loaded image: walloss-bootstrap:cuda12.8-local
+Wed Oct 28 08:02:16 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3060 Ti     Off |   00000000:01:00.0  On |                  N/A |
+|  0%   45C    P8             15W /  200W |     396MiB /   8192MiB |     44%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+

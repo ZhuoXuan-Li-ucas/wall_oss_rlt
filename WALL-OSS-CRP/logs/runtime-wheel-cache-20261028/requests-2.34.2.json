@@ -1,0 +1,262 @@
+{
+  "status": "PASS",
+  "package": "requests",
+  "version": "2.34.2",
+  "filename": "requests-2.34.2-py3-none-any.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "c06e539e4fdb12944e90cc028ffa9cea878c2effa696c8ccfa7926c052b2976f",
+  "wheel_tags": [
+    "py3-none-any"
+  ],
+  "record_verified_files": [
+    {
+      "path": "requests-2.34.2.dist-info/INSTALLER",
+      "wheel_path": "requests-2.34.2.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "requests-2.34.2.dist-info/METADATA",
+      "wheel_path": "requests-2.34.2.dist-info/METADATA",
+      "size_bytes": 4806,
+      "sha256": "8c384ba3e979480faae2859d3c5e6c1276dd2c3616e322e124d52c8cfc556f27"
+    },
+    {
+      "path": "requests-2.34.2.dist-info/WHEEL",
+      "wheel_path": "requests-2.34.2.dist-info/WHEEL",
+      "size_bytes": 91,
+      "sha256": "69e6228a0d35958183cc1812f07c565ce837b95eb51bd8a33acba9fa4f68d6c9"
+    },
+    {
+      "path": "requests-2.34.2.dist-info/licenses/LICENSE",
+      "wheel_path": "requests-2.34.2.dist-info/licenses/LICENSE",
+      "size_bytes": 10142,
+      "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+    },
+    {
+      "path": "requests-2.34.2.dist-info/licenses/NOTICE",
+      "wheel_path": "requests-2.34.2.dist-info/licenses/NOTICE",
+      "size_bytes": 38,
+      "sha256": "f5110972dedad2b4e9d314518daf3b7d72d6e02e499acd802181de6f74571dcc"
+    },
+    {
+      "path": "requests-2.34.2.dist-info/top_level.txt",
+      "wheel_path": "requests-2.34.2.dist-info/top_level.txt",
+      "size_bytes": 9,
+      "sha256": "7cc4959877dbe6b6c63a8eb1bfe3bfb545fa8fe5b28b1b2c13e4a7c1c0d1c4d4"
+    },
+    {
+      "path": "requests/__init__.py",
+      "wheel_path": "requests/__init__.py",
+      "size_bytes": 5922,
+      "sha256": "311157e7fa4aa9166c827d5237e6fd694eeb5ca549ee40e2e90f89f21abcd56e"
+    },
+    {
+      "path": "requests/__version__.py",
+      "wheel_path": "requests/__version__.py",
+      "size_bytes": 435,
+      "sha256": "abba90670b0370a3dc40d97c2dea46a35d4bec941ff10d7c3cf3098ef04a17f9"
+    },
+    {
+      "path": "requests/_internal_utils.py",
+      "wheel_path": "requests/_internal_utils.py",
+      "size_bytes": 1542,
+      "sha256": "4c7d8d132c9898fc7d715e473f3ac74785ddc4ab96d2c9240f87835dc6d981ff"
+    },
+    {
+      "path": "requests/_types.py",
+      "wheel_path": "requests/_types.py",
+      "size_bytes": 5838,
+      "sha256": "d06df79f54a279c0cc3faec596c446246d5ad14edfd529eb328defbd62a44a89"
+    },
+    {
+      "path": "requests/adapters.py",
+      "wheel_path": "requests/adapters.py",
+      "size_bytes": 28064,
+      "sha256": "647eabd4453de232aa40b55ff033d6f19778910b7e7069c51fdf63076fc77493"
+    },
+    {
+      "path": "requests/api.py",
+      "wheel_path": "requests/api.py",
+      "size_bytes": 7152,
+      "sha256": "4d15480ac046f089209798e8650476ef4a28ebe6f81b400758f8ef42ec6b5509"
+    },
+    {
+      "path": "requests/auth.py",
+      "wheel_path": "requests/auth.py",
+      "size_bytes": 12233,
+      "sha256": "e93951a552d4c3c5fd9b84a5e1d49b03caaba4723c4ff112da6053600ec85a65"
+    },
+    {
+      "path": "requests/certs.py",
+      "wheel_path": "requests/certs.py",
+      "size_bytes": 430,
+      "sha256": "fd9c6b83359cef90ff6c4eeeab8dcc2388da382ebca7d00a499b3c0b434a87e4"
+    },
+    {
+      "path": "requests/compat.py",
+      "wheel_path": "requests/compat.py",
+      "size_bytes": 2465,
+      "sha256": "5d79ba289690b5015044341a1f7bc7d24134fc13a2db3efcf852515bf9aa18b4"
+    },
+    {
+      "path": "requests/cookies.py",
+      "wheel_path": "requests/cookies.py",
+      "size_bytes": 21549,
+      "sha256": "0a1ce6140f2b9420522c5080e356e689fa796c2522f55ca10826f5ed8e0a723c"
+    },
+    {
+      "path": "requests/exceptions.py",
+      "wheel_path": "requests/exceptions.py",
+      "size_bytes": 4564,
+      "sha256": "c5e18f3352454968e337bb3056f0867df2f37c0a0d2c1a77dc05e7e0b3c0411b"
+    },
+    {
+      "path": "requests/help.py",
+      "wheel_path": "requests/help.py",
+      "size_bytes": 4210,
+      "sha256": "723519bb1884da18d84f6b2fb78f7ebf7fb57f732070b6025ae071dac6a2d179"
+    },
+    {
+      "path": "requests/hooks.py",
+      "wheel_path": "requests/hooks.py",
+      "size_bytes": 1138,
+      "sha256": "ebd8a02475d31a0e473a8f553e9501ff43645b9563885ad52844e7a63f0d76ab"
+    },
+    {
+      "path": "requests/models.py",
+      "wheel_path": "requests/models.py",
+      "size_bytes": 41783,
+      "sha256": "d1bc0d990abf5d5ebee05f890911b4363fadf2d5264b686a963df47c529b6ace"
+    },
+    {
+      "path": "requests/packages.py",
+      "wheel_path": "requests/packages.py",
+      "size_bytes": 904,
+      "sha256": "fe0d2067af355320252874631fa91a9db6a8c71d9e01beaacdc5e2383c932287"
+    },
+    {
+      "path": "requests/py.typed",
+      "wheel_path": "requests/py.typed",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "requests/sessions.py",
+      "wheel_path": "requests/sessions.py",
+      "size_bytes": 34248,
+      "sha256": "96fbb30bbbf06a59a5268d13b57885149756aa3f31695b5c15e41dd7bb2f67a6"
+    },
+    {
+      "path": "requests/status_codes.py",
+      "wheel_path": "requests/status_codes.py",
+      "size_bytes": 4351,
+      "sha256": "1950f47c89cf18019787e07d8ce48f66d6b38e622f7d94d70a90247fee6c040e"
+    },
+    {
+      "path": "requests/structures.py",
+      "wheel_path": "requests/structures.py",
+      "size_bytes": 4134,
+      "sha256": "ba9460c39078f25e6f1d2a24ac941ac6f8d2ee97197fa8c8d0c262d8a1e67a02"
+    },
+    {
+      "path": "requests/utils.py",
+      "wheel_path": "requests/utils.py",
+      "size_bytes": 36322,
+      "sha256": "657fd02343b2586bbd138a4ec0f03ceeb7610c2712f96ac54f28a708bf7d079c"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "requests-2.34.2.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "requests/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "requests/__pycache__/__version__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "requests/__pycache__/_internal_utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "requests/__pycache__/_types.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "requests/__pycache__/adapters.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "requests/__pycache__/api.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "requests/__pycache__/auth.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "requests/__pycache__/certs.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "requests/__pycache__/compat.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "requests/__pycache__/cookies.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "requests/__pycache__/exceptions.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "requests/__pycache__/help.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "requests/__pycache__/hooks.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "requests/__pycache__/models.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "requests/__pycache__/packages.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "requests/__pycache__/sessions.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "requests/__pycache__/status_codes.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "requests/__pycache__/structures.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "requests/__pycache__/utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "b79fb56bede068cd4ddfce748ce226f6f27eee84891f09b2229e4f0229275134",
+  "wheel_size_bytes": 83886,
+  "rebuilt_record_verified_files": 25,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:22.211778+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 25,
+  "source_record_verified_file_count": 26
+}

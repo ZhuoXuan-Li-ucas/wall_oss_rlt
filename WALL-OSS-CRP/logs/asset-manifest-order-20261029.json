@@ -1,0 +1,10 @@
+{
+  "checked_at_utc": "2026-10-29T06:05:12.913994+00:00",
+  "source_files": 31,
+  "same_hash_and_path_lines_ignoring_order": true,
+  "prepared_manifest_sha256": "25ba2318bc224337164d46c9cbf0f70764c6d3d14b270d25627780a7a360fa90",
+  "validated_manifest_sha256": "cfe40b00eca7b9fee2b98759137cf911203ef8e690cea94919bf04011485a186",
+  "cause": "Manifest ordering differs by locale; no file path or content digest differs.",
+  "failed_bundle_preserved": "/media/pangk/My Passport/WALL-OSS-CRP-transfer-20261028",
+  "next_bundle": "/media/pangk/My Passport/WALL-OSS-CRP-transfer-20261029"
+}

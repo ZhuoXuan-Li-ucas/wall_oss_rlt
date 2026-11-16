@@ -1,0 +1,18 @@
+{
+  "recorded_at_utc": "2026-10-29T06:37:53.989998+00:00",
+  "host": "aiuser@10.241.90.194:22",
+  "attempt": "ssh BatchMode=yes, ConnectTimeout=8, StrictHostKeyChecking=yes; read-only GPU/host query",
+  "status": "CONNECTION_TIMEOUT",
+  "exit_code": 255,
+  "observed_route": "10.241.90.194 via 172.20.10.1 dev enx6a3036be357a src 172.20.10.11",
+  "server_commands_executed": false,
+  "server_transfer": "NOT_STARTED",
+  "h100_training": "NOT_STARTED",
+  "missing_input": [
+    "current reachable connection/network path",
+    "allocated GPU IDs",
+    "training working directory"
+  ],
+  "local_docker_access": "permission denied; user not in docker group; no privilege/group changes made",
+  "parallel_work": "training candidate offline preparation"
+}

@@ -1,0 +1,12 @@
+{
+  "build_pid": 314553,
+  "report": "/home/pangk/workspaces/WALL-OSS-CRP/logs/docker-validation-delivery-20261029",
+  "bundle": "/media/pangk/My Passport/WALL-OSS-CRP-transfer-20261028",
+  "mode": "reuse_built_image",
+  "reuse_build_report": "/home/pangk/workspaces/WALL-OSS-CRP/logs/docker-validation-final-20261029T011859Z",
+  "reuse_image_id": "sha256:8f067a0eb220228f444811532cc8ec0a328e4d46b7983637c1c4ea7743ef9ee8",
+  "status": "FAILED",
+  "checked_at_utc": "2026-10-29T06:02:38.957909+00:00",
+  "source_image_id": "sha256:8f067a0eb220228f444811532cc8ec0a328e4d46b7983637c1c4ea7743ef9ee8",
+  "error": "Command '['bash', '/home/pangk/workspaces/WALL-OSS-CRP/scripts/docker_export_bundle.sh']' returned non-zero exit status 1."
+}

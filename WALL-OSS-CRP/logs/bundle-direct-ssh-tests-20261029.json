@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "scope": "isolated export with fake Docker, fixture archive identity helper and tiny fixture assets; no actual build/model/data accessed",
+  "transfer_required_count": 24,
+  "assets_required_count": 11,
+  "transfer_excludes_powershell": true,
+  "assets_retains_powershell": true,
+  "complete_export_verifies": true,
+  "missing_required_rejected_after_manifest_rebind": "Bundle is missing its required file set",
+  "stdout": "/tmp/walloss-direct-ssh-test-2zqjh6aw/data/meta/info.json: OK\n/tmp/walloss-direct-ssh-test-2zqjh6aw/project/models/model.bin: OK\nfixture native check passed\nmodels.tar.gz: OK\nsmoke-data.tar.gz: OK\nsource-assets.sha256: OK\nComplete transfer bundle finalized: 24 files; /tmp/walloss-direct-ssh-test-2zqjh6aw/output\nBundle ready for SSH transfer to the Ubuntu server: /tmp/walloss-direct-ssh-test-2zqjh6aw/output\nH100 GPU/full-model verification must still be performed after docker load.\n",
+  "verification_stdout": "Complete transfer bundle verified: 24 files; /tmp/walloss-direct-ssh-test-2zqjh6aw/output\n"
+}

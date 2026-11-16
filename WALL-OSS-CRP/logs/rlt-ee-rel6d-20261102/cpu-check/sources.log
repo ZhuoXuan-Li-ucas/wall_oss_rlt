@@ -1,0 +1,19 @@
+{
+  "wall": {
+    "path": "/home/crp-5070ti-01/workspaces/WALL-OSS-CRP/.cache/wall-x-rlt",
+    "commit": "ce2a1ae31d9ee1028b97ca40e3f66034cf8c0e5f",
+    "patch_sha256": "382a1eccd75810d0703d20ff09349c8d7050a90b5addd31241a4bbbc6d791de8",
+    "status": "PASS",
+    "native_extension": "not built or supplied by this script"
+  },
+  "rlinf": {
+    "path": "/home/crp-5070ti-01/workspaces/WALL-OSS-CRP/.cache/rlinf-rlt",
+    "commit": "e1a82ebf0c1af69da6ab9b1519f5f3692fe33566",
+    "verified_entries": 2228,
+    "status": "PASS"
+  },
+  "lock": "/home/crp-5070ti-01/workspaces/WALL-OSS-CRP/metadata/wall-rlt-sources.lock.json",
+  "dependencies_installed": false,
+  "weights_loaded": false,
+  "native_build_started": false
+}

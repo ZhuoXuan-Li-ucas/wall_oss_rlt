@@ -1,0 +1,675 @@
+{
+  "status": "PASS",
+  "package": "opencv-python-headless",
+  "version": "4.11.0.86",
+  "filename": "opencv_python_headless-4.11.0.86-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "feeace66b18c46d60a4903b9e46d0859d288cc097e497b0ad1c6f08ba5e4f9c5",
+  "wheel_tags": [
+    "cp37-abi3-manylinux_2_17_x86_64",
+    "cp37-abi3-manylinux2014_x86_64"
+  ],
+  "record_verified_files": [
+    {
+      "path": "cv2/Error/__init__.pyi",
+      "wheel_path": "cv2/Error/__init__.pyi",
+      "size_bytes": 4076,
+      "sha256": "03a34ab6831e640bd95870ba0eb262c0c542858ecb2f115fbee676756e0a4a6f"
+    },
+    {
+      "path": "cv2/LICENSE-3RD-PARTY.txt",
+      "wheel_path": "cv2/LICENSE-3RD-PARTY.txt",
+      "size_bytes": 152360,
+      "sha256": "4fc3c113d53e95da0f3c433655a67067b7310e53af31eb6d280e94cc6927a363"
+    },
+    {
+      "path": "cv2/LICENSE.txt",
+      "wheel_path": "cv2/LICENSE.txt",
+      "size_bytes": 1070,
+      "sha256": "09d719058e782ac7bc71ba21c944e1136cde2bb957c0e888121f0218d6b5f02c"
+    },
+    {
+      "path": "cv2/__init__.py",
+      "wheel_path": "cv2/__init__.py",
+      "size_bytes": 6612,
+      "sha256": "936bd94c5a5debf0212fc751af79d3a163652f3e850259df2159db6aa3ed8ad8"
+    },
+    {
+      "path": "cv2/__init__.pyi",
+      "wheel_path": "cv2/__init__.pyi",
+      "size_bytes": 302180,
+      "sha256": "447caec074c22840d5efe100bb9dcaa63eb15bf8884aecd6469d0392c4cef302"
+    },
+    {
+      "path": "cv2/aruco/__init__.pyi",
+      "wheel_path": "cv2/aruco/__init__.pyi",
+      "size_bytes": 13995,
+      "sha256": "5ce68dcf849b7d0d14147f20b99f56813c9bc7c81e913396afce39d988f3e781"
+    },
+    {
+      "path": "cv2/barcode/__init__.pyi",
+      "wheel_path": "cv2/barcode/__init__.pyi",
+      "size_bytes": 1441,
+      "sha256": "d7db746db89307c9f1b93d03caa713c045860729d79ba36469983ae3a7e500bd"
+    },
+    {
+      "path": "cv2/config-3.py",
+      "wheel_path": "cv2/config-3.py",
+      "size_bytes": 724,
+      "sha256": "9a7aadf724b822001f5e963b01fd4e375d45e2cbbe328d2ca7b42a440c083a1c"
+    },
+    {
+      "path": "cv2/config.py",
+      "wheel_path": "cv2/config.py",
+      "size_bytes": 111,
+      "sha256": "974e2d4096ee1a9a9a341df1bf33e16973683bf1ac733006de27ff2f23bc584d"
+    },
+    {
+      "path": "cv2/cuda/__init__.pyi",
+      "wheel_path": "cv2/cuda/__init__.pyi",
+      "size_bytes": 16106,
+      "sha256": "34bbeefe7a6b7ce962c47597227802e13162a7a4f39f3c798ce44dc01b5e9868"
+    },
+    {
+      "path": "cv2/cv2.abi3.so",
+      "wheel_path": "cv2/cv2.abi3.so",
+      "size_bytes": 66106617,
+      "sha256": "68fee49d266a95e730c1cb17d913a39a93ab5c50bee1581600f453026f9c7b8d"
+    },
+    {
+      "path": "cv2/data/__init__.py",
+      "wheel_path": "cv2/data/__init__.py",
+      "size_bytes": 70,
+      "sha256": "d76e4f72d7bf3ad079e59c635a0e64a3cba0a67a20675b113323f8f1db4108cc"
+    },
+    {
+      "path": "cv2/data/haarcascade_eye.xml",
+      "wheel_path": "cv2/data/haarcascade_eye.xml",
+      "size_bytes": 341406,
+      "sha256": "71cc64fc305a355dc60067880f6fbbd43dd155bd63ee3844661a1bda34b2fd8c"
+    },
+    {
+      "path": "cv2/data/haarcascade_eye_tree_eyeglasses.xml",
+      "wheel_path": "cv2/data/haarcascade_eye_tree_eyeglasses.xml",
+      "size_bytes": 601661,
+      "sha256": "e32f9c67935c33e9d1331eb14fa58554ff17835c03742663bcb97a892e936a57"
+    },
+    {
+      "path": "cv2/data/haarcascade_frontalcatface.xml",
+      "wheel_path": "cv2/data/haarcascade_frontalcatface.xml",
+      "size_bytes": 411388,
+      "sha256": "ac2bac934ef24284ef8a2b2e9d8e57eef84ac1d6943b4d11e5c9e8584dc069c8"
+    },
+    {
+      "path": "cv2/data/haarcascade_frontalcatface_extended.xml",
+      "wheel_path": "cv2/data/haarcascade_frontalcatface_extended.xml",
+      "size_bytes": 382918,
+      "sha256": "ffd0d1d28f07d0376c89db4c9845009c2855cc76c8cff763d5331dc9361da854"
+    },
+    {
+      "path": "cv2/data/haarcascade_frontalface_alt.xml",
+      "wheel_path": "cv2/data/haarcascade_frontalface_alt.xml",
+      "size_bytes": 676709,
+      "sha256": "6281df13459cc218ff047d02b2ae3859b12ff14a93ffe8952f7b33fad7b9697b"
+    },
+    {
+      "path": "cv2/data/haarcascade_frontalface_alt2.xml",
+      "wheel_path": "cv2/data/haarcascade_frontalface_alt2.xml",
+      "size_bytes": 540616,
+      "sha256": "7b0c967d9abbdfbde025eb9c786947d151b6426040d07a8f9562ed8fd90724b4"
+    },
+    {
+      "path": "cv2/data/haarcascade_frontalface_alt_tree.xml",
+      "wheel_path": "cv2/data/haarcascade_frontalface_alt_tree.xml",
+      "size_bytes": 2689040,
+      "sha256": "0e5ee47ecc13269d54dd7a55f8b53752167c52587720877732388fb078a0480a"
+    },
+    {
+      "path": "cv2/data/haarcascade_frontalface_default.xml",
+      "wheel_path": "cv2/data/haarcascade_frontalface_default.xml",
+      "size_bytes": 930127,
+      "sha256": "0f7d4527844eb514d4a4948e822da90fbb16a34a0bbbbc6adc6498747a5aafb0"
+    },
+    {
+      "path": "cv2/data/haarcascade_fullbody.xml",
+      "wheel_path": "cv2/data/haarcascade_fullbody.xml",
+      "size_bytes": 476827,
+      "sha256": "041745c71eef1b5c86aef224f17ce75b042d33314cc8f6757424f8bd8cd30aa1"
+    },
+    {
+      "path": "cv2/data/haarcascade_lefteye_2splits.xml",
+      "wheel_path": "cv2/data/haarcascade_lefteye_2splits.xml",
+      "size_bytes": 195369,
+      "sha256": "74c323c78c81475fc9158facbfb866bb0cca06be41f571df47d4ac8d01f9ce4c"
+    },
+    {
+      "path": "cv2/data/haarcascade_license_plate_rus_16stages.xml",
+      "wheel_path": "cv2/data/haarcascade_license_plate_rus_16stages.xml",
+      "size_bytes": 47775,
+      "sha256": "4d1c44bf7a1bc4e204fa25b046ed0acffd7f713cc13fe2958b6977125c60ddea"
+    },
+    {
+      "path": "cv2/data/haarcascade_lowerbody.xml",
+      "wheel_path": "cv2/data/haarcascade_lowerbody.xml",
+      "size_bytes": 395322,
+      "sha256": "1e696e1c7c66c439ae229cfff8871f42037c357e9e1e090a2b59ebc1f8ff5cbb"
+    },
+    {
+      "path": "cv2/data/haarcascade_profileface.xml",
+      "wheel_path": "cv2/data/haarcascade_profileface.xml",
+      "size_bytes": 828514,
+      "sha256": "b39a4a3be45539db146a7fc1d3e761a292c196eb88421185e6a615b3055e612d"
+    },
+    {
+      "path": "cv2/data/haarcascade_righteye_2splits.xml",
+      "wheel_path": "cv2/data/haarcascade_righteye_2splits.xml",
+      "size_bytes": 196170,
+      "sha256": "4cf0d72bea7307e9af7eb99d4acbe15d7101a67c22fcdcfbeefd692ad37cf776"
+    },
+    {
+      "path": "cv2/data/haarcascade_russian_plate_number.xml",
+      "wheel_path": "cv2/data/haarcascade_russian_plate_number.xml",
+      "size_bytes": 75482,
+      "sha256": "814cb5954682af570e58361f9e5f8b5b513a4112776bb9ecacef9f0e4ca6c2d7"
+    },
+    {
+      "path": "cv2/data/haarcascade_smile.xml",
+      "wheel_path": "cv2/data/haarcascade_smile.xml",
+      "size_bytes": 188506,
+      "sha256": "4ca1f304eabd0b5ae30180c81acb53e166a5867e5be17b316bd3f32cfdf87d8a"
+    },
+    {
+      "path": "cv2/data/haarcascade_upperbody.xml",
+      "wheel_path": "cv2/data/haarcascade_upperbody.xml",
+      "size_bytes": 785819,
+      "sha256": "7328ab4fdb1592f53d98d7ea5b1b9d90e01af5d95f212af378c7eb579048bb5f"
+    },
+    {
+      "path": "cv2/detail/__init__.pyi",
+      "wheel_path": "cv2/detail/__init__.pyi",
+      "size_bytes": 22374,
+      "sha256": "1579dd5baa31b04e3a86380a05eccbbea27f88401c38298d380652a5b48cffef"
+    },
+    {
+      "path": "cv2/dnn/__init__.pyi",
+      "wheel_path": "cv2/dnn/__init__.pyi",
+      "size_bytes": 23021,
+      "sha256": "28c603ddda7d6951081e1ae4846abba4b1c89a9c87c2a92c0156e091cd8bc673"
+    },
+    {
+      "path": "cv2/fisheye/__init__.pyi",
+      "wheel_path": "cv2/fisheye/__init__.pyi",
+      "size_bytes": 8940,
+      "sha256": "bfb1fe81b8b1603cec78339c3e8f529388abb7089f1da2deb66e178b871ef774"
+    },
+    {
+      "path": "cv2/flann/__init__.pyi",
+      "wheel_path": "cv2/flann/__init__.pyi",
+      "size_bytes": 2677,
+      "sha256": "671606d3b6e117215103677595b3e6026fca1249ec4dc135fcd370fcab33d474"
+    },
+    {
+      "path": "cv2/gapi/__init__.py",
+      "wheel_path": "cv2/gapi/__init__.py",
+      "size_bytes": 10298,
+      "sha256": "e960408dfab51428910038185c600a2131dd041eadd3f8d9f2191353c062cfe3"
+    },
+    {
+      "path": "cv2/gapi/__init__.pyi",
+      "wheel_path": "cv2/gapi/__init__.pyi",
+      "size_bytes": 14636,
+      "sha256": "cc22d3b07be66e21a69435173d6a8e19d805723ebafe2c3b157893af863dd66d"
+    },
+    {
+      "path": "cv2/gapi/core/__init__.pyi",
+      "wheel_path": "cv2/gapi/core/__init__.pyi",
+      "size_bytes": 142,
+      "sha256": "ff738cfc84cead9a269fb82ce0733e0d193c9e06e35a476bdba2ab987dede24b"
+    },
+    {
+      "path": "cv2/gapi/core/cpu/__init__.pyi",
+      "wheel_path": "cv2/gapi/core/cpu/__init__.pyi",
+      "size_bytes": 93,
+      "sha256": "31f4530c43ed7107a41a7aefa1a49269dc72ca55cf7dada5cfcb9c024ce39a1f"
+    },
+    {
+      "path": "cv2/gapi/core/fluid/__init__.pyi",
+      "wheel_path": "cv2/gapi/core/fluid/__init__.pyi",
+      "size_bytes": 93,
+      "sha256": "31f4530c43ed7107a41a7aefa1a49269dc72ca55cf7dada5cfcb9c024ce39a1f"
+    },
+    {
+      "path": "cv2/gapi/core/ocl/__init__.pyi",
+      "wheel_path": "cv2/gapi/core/ocl/__init__.pyi",
+      "size_bytes": 93,
+      "sha256": "31f4530c43ed7107a41a7aefa1a49269dc72ca55cf7dada5cfcb9c024ce39a1f"
+    },
+    {
+      "path": "cv2/gapi/ie/__init__.pyi",
+      "wheel_path": "cv2/gapi/ie/__init__.pyi",
+      "size_bytes": 1117,
+      "sha256": "adb397394dfd5a9b7d2e1875a35aabed98fbaa58ea02ee9aaa862c9b8e37df24"
+    },
+    {
+      "path": "cv2/gapi/ie/detail/__init__.pyi",
+      "wheel_path": "cv2/gapi/ie/detail/__init__.pyi",
+      "size_bytes": 269,
+      "sha256": "8464d2df222222ad41f9d8d78124083e6785ed50f27b2b9c52e64e9dde0ed0e4"
+    },
+    {
+      "path": "cv2/gapi/imgproc/__init__.pyi",
+      "wheel_path": "cv2/gapi/imgproc/__init__.pyi",
+      "size_bytes": 71,
+      "sha256": "514b4f25c0cafd4684fd328df0af4ecf54c40a10901c30c1fde4c8d3c9955e65"
+    },
+    {
+      "path": "cv2/gapi/imgproc/fluid/__init__.pyi",
+      "wheel_path": "cv2/gapi/imgproc/fluid/__init__.pyi",
+      "size_bytes": 93,
+      "sha256": "31f4530c43ed7107a41a7aefa1a49269dc72ca55cf7dada5cfcb9c024ce39a1f"
+    },
+    {
+      "path": "cv2/gapi/oak/__init__.pyi",
+      "wheel_path": "cv2/gapi/oak/__init__.pyi",
+      "size_bytes": 1734,
+      "sha256": "4dbed85f2b4ac67045659f2a4ea1d266c0c4a51b76f77ecd5ed6ce40adb72ac7"
+    },
+    {
+      "path": "cv2/gapi/onnx/__init__.pyi",
+      "wheel_path": "cv2/gapi/onnx/__init__.pyi",
+      "size_bytes": 1497,
+      "sha256": "683baf6eb524a4d9f1afe57410643d850df861e930585171fd0b8ad5faba44e9"
+    },
+    {
+      "path": "cv2/gapi/onnx/ep/__init__.pyi",
+      "wheel_path": "cv2/gapi/onnx/ep/__init__.pyi",
+      "size_bytes": 1357,
+      "sha256": "7546146dc8c88d6b71ee97902cf294eb4a94ccca841fc3a7f6653896c7576e64"
+    },
+    {
+      "path": "cv2/gapi/ot/__init__.pyi",
+      "wheel_path": "cv2/gapi/ot/__init__.pyi",
+      "size_bytes": 720,
+      "sha256": "5d3313f74967125c65fca7e1162e710f0416bc1d20e4df2d7fb0a06fc5477006"
+    },
+    {
+      "path": "cv2/gapi/ot/cpu/__init__.pyi",
+      "wheel_path": "cv2/gapi/ot/cpu/__init__.pyi",
+      "size_bytes": 93,
+      "sha256": "31f4530c43ed7107a41a7aefa1a49269dc72ca55cf7dada5cfcb9c024ce39a1f"
+    },
+    {
+      "path": "cv2/gapi/ov/__init__.pyi",
+      "wheel_path": "cv2/gapi/ov/__init__.pyi",
+      "size_bytes": 2647,
+      "sha256": "dc1a8acc2fe557ec33870bb671ac0206f19b306ff3c6de43e9a9e384e457bee3"
+    },
+    {
+      "path": "cv2/gapi/own/__init__.pyi",
+      "wheel_path": "cv2/gapi/own/__init__.pyi",
+      "size_bytes": 69,
+      "sha256": "1b32fdd6939040db067011a667f5c301768ba05e0df6a5608ff21a63376e48d7"
+    },
+    {
+      "path": "cv2/gapi/own/detail/__init__.pyi",
+      "wheel_path": "cv2/gapi/own/detail/__init__.pyi",
+      "size_bytes": 140,
+      "sha256": "b130bc2457230dc5719da15f15cf959aec631c183a44ccdf69f147b52f32ac55"
+    },
+    {
+      "path": "cv2/gapi/render/__init__.pyi",
+      "wheel_path": "cv2/gapi/render/__init__.pyi",
+      "size_bytes": 66,
+      "sha256": "4b8156cf2fc226aaacddd3d89776d72682d048679565da012bb1261ef6cf54e3"
+    },
+    {
+      "path": "cv2/gapi/render/ocv/__init__.pyi",
+      "wheel_path": "cv2/gapi/render/ocv/__init__.pyi",
+      "size_bytes": 93,
+      "sha256": "31f4530c43ed7107a41a7aefa1a49269dc72ca55cf7dada5cfcb9c024ce39a1f"
+    },
+    {
+      "path": "cv2/gapi/streaming/__init__.pyi",
+      "wheel_path": "cv2/gapi/streaming/__init__.pyi",
+      "size_bytes": 813,
+      "sha256": "a883a774a94f31ebeb4a09535bebd5ba0cf2fe7ee72134fa96bff3ae552ff5c2"
+    },
+    {
+      "path": "cv2/gapi/video/__init__.pyi",
+      "wheel_path": "cv2/gapi/video/__init__.pyi",
+      "size_bytes": 150,
+      "sha256": "574126b29b9fc3bc76fa49df77b904f0b9cb8d8fee8c8cff4dac51fe8232029b"
+    },
+    {
+      "path": "cv2/gapi/wip/__init__.pyi",
+      "wheel_path": "cv2/gapi/wip/__init__.pyi",
+      "size_bytes": 1086,
+      "sha256": "7fb9b3eb47a133dcab2b4fd5b76f0d3fef9689eb4313ae448cce4ef752d5c793"
+    },
+    {
+      "path": "cv2/gapi/wip/draw/__init__.pyi",
+      "wheel_path": "cv2/gapi/wip/draw/__init__.pyi",
+      "size_bytes": 3162,
+      "sha256": "c76061cb02390beb8c1c5d47e8bf40c2b82346d28716bd37d933a7aad13d6bd4"
+    },
+    {
+      "path": "cv2/gapi/wip/gst/__init__.pyi",
+      "wheel_path": "cv2/gapi/wip/gst/__init__.pyi",
+      "size_bytes": 467,
+      "sha256": "f15b5228ff5db93998ec44c0002c3354458ff717435b4a56f3652d2fff19ec0c"
+    },
+    {
+      "path": "cv2/gapi/wip/onevpl/__init__.pyi",
+      "wheel_path": "cv2/gapi/wip/onevpl/__init__.pyi",
+      "size_bytes": 397,
+      "sha256": "78b6d53decbb24253961d452507ea52e50f5793fb5b3b62a66b421eb135d225a"
+    },
+    {
+      "path": "cv2/ipp/__init__.pyi",
+      "wheel_path": "cv2/ipp/__init__.pyi",
+      "size_bytes": 223,
+      "sha256": "5921d522a213f7bbe6b9db6e26384e258899d2205d631e00b41d2226ab5d0f4a"
+    },
+    {
+      "path": "cv2/load_config_py2.py",
+      "wheel_path": "cv2/load_config_py2.py",
+      "size_bytes": 151,
+      "sha256": "c4ffe1da939bcdf6cdf2d38d57b0804261a1f787d0fb4b741f2b2b5c30e5b7f4"
+    },
+    {
+      "path": "cv2/load_config_py3.py",
+      "wheel_path": "cv2/load_config_py3.py",
+      "size_bytes": 262,
+      "sha256": "03dc1f11374a667c9b7db10dd5276d640b0c2d5b2e7866b4ccef772732bd3852"
+    },
+    {
+      "path": "cv2/mat_wrapper/__init__.py",
+      "wheel_path": "cv2/mat_wrapper/__init__.py",
+      "size_bytes": 1124,
+      "sha256": "8b627063a9260cbfeced85f3225f8966e582315624462e05ea3eb45b78f83fd0"
+    },
+    {
+      "path": "cv2/misc/__init__.py",
+      "wheel_path": "cv2/misc/__init__.py",
+      "size_bytes": 37,
+      "sha256": "cabf4f9312ac97145cf3b861b482519f94689a63fd8daaa4b18afe643ba3edc5"
+    },
+    {
+      "path": "cv2/misc/version.py",
+      "wheel_path": "cv2/misc/version.py",
+      "size_bytes": 90,
+      "sha256": "893131ab58f01a002fde3b58407448f294a999fccfb23906f5baec1f46dd6219"
+    },
+    {
+      "path": "cv2/ml/__init__.pyi",
+      "wheel_path": "cv2/ml/__init__.pyi",
+      "size_bytes": 22803,
+      "sha256": "286892acd054f185aa273855de8c12fdbfe72a5ff8d045f0746ae60b57b8d49e"
+    },
+    {
+      "path": "cv2/ocl/__init__.pyi",
+      "wheel_path": "cv2/ocl/__init__.pyi",
+      "size_bytes": 5527,
+      "sha256": "aaffe29691d9a2c7cf10c1c412aa902dee9c269b1bf4f8a2c0864c6ddfbefa1a"
+    },
+    {
+      "path": "cv2/ogl/__init__.pyi",
+      "wheel_path": "cv2/ogl/__init__.pyi",
+      "size_bytes": 1472,
+      "sha256": "2b14d7f431d8c978368a9bce26215e02c462bc08e6bc192a7a22d957ed2c9c82"
+    },
+    {
+      "path": "cv2/parallel/__init__.pyi",
+      "wheel_path": "cv2/parallel/__init__.pyi",
+      "size_bytes": 129,
+      "sha256": "b5ce673685ab4e40fb5407e16da8ee98a17bf4b068969aa52a3617fa5636ffff"
+    },
+    {
+      "path": "cv2/py.typed",
+      "wheel_path": "cv2/py.typed",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cv2/samples/__init__.pyi",
+      "wheel_path": "cv2/samples/__init__.pyi",
+      "size_bytes": 324,
+      "sha256": "723496e6fa36a0ca48587c0ffb7218e215a394a513cfc81dd4c5fba4b38258aa"
+    },
+    {
+      "path": "cv2/segmentation/__init__.pyi",
+      "wheel_path": "cv2/segmentation/__init__.pyi",
+      "size_bytes": 1739,
+      "sha256": "8f028150245a5e11c033715dce92ee1ae7067cd2d6c56bb90837cb3a991c6a7e"
+    },
+    {
+      "path": "cv2/typing/__init__.py",
+      "wheel_path": "cv2/typing/__init__.py",
+      "size_bytes": 5339,
+      "sha256": "39ca5c5823e03c576600a43d46ec046af5624c5cc2e84e42772a31a7350c648c"
+    },
+    {
+      "path": "cv2/utils/__init__.py",
+      "wheel_path": "cv2/utils/__init__.py",
+      "size_bytes": 330,
+      "sha256": "7eec381871ce5ecc7129cf8069d00438a42afc8d46af81b7c8c951bc06d33f7d"
+    },
+    {
+      "path": "cv2/utils/__init__.pyi",
+      "wheel_path": "cv2/utils/__init__.pyi",
+      "size_bytes": 3592,
+      "sha256": "abb3e99d5507e7ded1fec17b006aec4550ce20629f953d1befb965fa69266fb8"
+    },
+    {
+      "path": "cv2/utils/fs/__init__.pyi",
+      "wheel_path": "cv2/utils/fs/__init__.pyi",
+      "size_bytes": 87,
+      "sha256": "96ed9c2b50db77bc114ce4e3bbf915542bd4e26341e6fe61495a41c525d7bc98"
+    },
+    {
+      "path": "cv2/utils/nested/__init__.pyi",
+      "wheel_path": "cv2/utils/nested/__init__.pyi",
+      "size_bytes": 573,
+      "sha256": "9f6277692c42d8cacf29a29be22818fdde3d96ebae42a5bb03f613c7a799cfd4"
+    },
+    {
+      "path": "cv2/version.py",
+      "wheel_path": "cv2/version.py",
+      "size_bytes": 92,
+      "sha256": "3b07492169e6079940f716162368c51b6dbee45be36c9c46fb6f9e56b0449739"
+    },
+    {
+      "path": "cv2/videoio_registry/__init__.pyi",
+      "wheel_path": "cv2/videoio_registry/__init__.pyi",
+      "size_bytes": 962,
+      "sha256": "79fe2ea6d5ee4e4019557c2cc8d49cf9786cfa126583a3b601c9a8624cc4c7cd"
+    },
+    {
+      "path": "opencv_python_headless-4.11.0.86.dist-info/INSTALLER",
+      "wheel_path": "opencv_python_headless-4.11.0.86.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "opencv_python_headless-4.11.0.86.dist-info/LICENSE-3RD-PARTY.txt",
+      "wheel_path": "opencv_python_headless-4.11.0.86.dist-info/LICENSE-3RD-PARTY.txt",
+      "size_bytes": 152360,
+      "sha256": "4fc3c113d53e95da0f3c433655a67067b7310e53af31eb6d280e94cc6927a363"
+    },
+    {
+      "path": "opencv_python_headless-4.11.0.86.dist-info/LICENSE.txt",
+      "wheel_path": "opencv_python_headless-4.11.0.86.dist-info/LICENSE.txt",
+      "size_bytes": 1070,
+      "sha256": "09d719058e782ac7bc71ba21c944e1136cde2bb957c0e888121f0218d6b5f02c"
+    },
+    {
+      "path": "opencv_python_headless-4.11.0.86.dist-info/METADATA",
+      "wheel_path": "opencv_python_headless-4.11.0.86.dist-info/METADATA",
+      "size_bytes": 20300,
+      "sha256": "33b8bffb26546642a9e96d317d6e0776f041939c7c695a8ac39e566822af08f3"
+    },
+    {
+      "path": "opencv_python_headless-4.11.0.86.dist-info/REQUESTED",
+      "wheel_path": "opencv_python_headless-4.11.0.86.dist-info/REQUESTED",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "opencv_python_headless-4.11.0.86.dist-info/WHEEL",
+      "wheel_path": "opencv_python_headless-4.11.0.86.dist-info/WHEEL",
+      "size_bytes": 142,
+      "sha256": "cfd67163ade34fb95b3bde31fe7903a8f069b55e82d626f86cc25bd65ea64161"
+    },
+    {
+      "path": "opencv_python_headless-4.11.0.86.dist-info/top_level.txt",
+      "wheel_path": "opencv_python_headless-4.11.0.86.dist-info/top_level.txt",
+      "size_bytes": 4,
+      "sha256": "498f2fadffec60e83df4e3fd7ae873eeadfaa4fcbfd952b9bdb784597c304a87"
+    },
+    {
+      "path": "opencv_python_headless.libs/libavcodec-76c43bf0.so.59.37.100",
+      "wheel_path": "opencv_python_headless.libs/libavcodec-76c43bf0.so.59.37.100",
+      "size_bytes": 13452609,
+      "sha256": "0a39cd4fbb6e7261c70fa98e72fa09cce7dfcd6d1fb9f74b17ad58640787b0ed"
+    },
+    {
+      "path": "opencv_python_headless.libs/libavformat-d296e685.so.59.27.100",
+      "wheel_path": "opencv_python_headless.libs/libavformat-d296e685.so.59.27.100",
+      "size_bytes": 2571489,
+      "sha256": "71bbf605de259ea96b5cd8149c81a2cbb328d8a0c5e81389570177d508a3b4be"
+    },
+    {
+      "path": "opencv_python_headless.libs/libavutil-734d06dd.so.57.28.100",
+      "wheel_path": "opencv_python_headless.libs/libavutil-734d06dd.so.57.28.100",
+      "size_bytes": 844673,
+      "sha256": "b207c6d08f72e7bc047e3d17fac1a9f23c61059ffd30cba8040489e8ad79ae33"
+    },
+    {
+      "path": "opencv_python_headless.libs/libcrypto-8c1ab3ad.so.1.1",
+      "wheel_path": "opencv_python_headless.libs/libcrypto-8c1ab3ad.so.1.1",
+      "size_bytes": 3481345,
+      "sha256": "d562e9ddc5621cad39f1d4a989fb233e6ebd59178b2a54fe06e8bc23a7389600"
+    },
+    {
+      "path": "opencv_python_headless.libs/libgfortran-91cc3cb1.so.3.0.0",
+      "wheel_path": "opencv_python_headless.libs/libgfortran-91cc3cb1.so.3.0.0",
+      "size_bytes": 1259665,
+      "sha256": "55e3eb67306c2ff17e6f8a0810eaa0dcb26e94cd83924c5065d5040e87814608"
+    },
+    {
+      "path": "opencv_python_headless.libs/libopenblas-r0-f650aae0.3.3.so",
+      "wheel_path": "opencv_python_headless.libs/libopenblas-r0-f650aae0.3.3.so",
+      "size_bytes": 37325001,
+      "sha256": "79ec02b53f573cd7116a89f04c397473018e7fda05720b354d43505c19d47958"
+    },
+    {
+      "path": "opencv_python_headless.libs/libpng16-ef62451c.so.16.44.0",
+      "wheel_path": "opencv_python_headless.libs/libpng16-ef62451c.so.16.44.0",
+      "size_bytes": 1105201,
+      "sha256": "39e236462d06ff259b3d6b94eeda6c16311a139e5cc5a30a035f6ae8631d6319"
+    },
+    {
+      "path": "opencv_python_headless.libs/libquadmath-96973f99.so.0.0.0",
+      "wheel_path": "opencv_python_headless.libs/libquadmath-96973f99.so.0.0.0",
+      "size_bytes": 247609,
+      "sha256": "934c22ded0e7d169c4d4678876c96051adf3d94545da962f60b41659b075da3b"
+    },
+    {
+      "path": "opencv_python_headless.libs/libssl-28bef1ac.so.1.1",
+      "wheel_path": "opencv_python_headless.libs/libssl-28bef1ac.so.1.1",
+      "size_bytes": 736177,
+      "sha256": "cf90306b659880ae21114a928d1a3421c66715f16e49a824fb9ee55113d2b767"
+    },
+    {
+      "path": "opencv_python_headless.libs/libswresample-3e7db482.so.4.7.100",
+      "wheel_path": "opencv_python_headless.libs/libswresample-3e7db482.so.4.7.100",
+      "size_bytes": 132417,
+      "sha256": "e1870006793d8396a4aa7a6db3e228aa0a30ae4781a639787bc1dc78f76bc220"
+    },
+    {
+      "path": "opencv_python_headless.libs/libswscale-95ddd674.so.6.7.100",
+      "wheel_path": "opencv_python_headless.libs/libswscale-95ddd674.so.6.7.100",
+      "size_bytes": 619945,
+      "sha256": "72155ab5149130621f244a9c22259713208f25e0a5b295957479b9d3bc185be1"
+    },
+    {
+      "path": "opencv_python_headless.libs/libvpx-9f572e11.so.9.1.0",
+      "wheel_path": "opencv_python_headless.libs/libvpx-9f572e11.so.9.1.0",
+      "size_bytes": 3524625,
+      "sha256": "f9c123327bfa2e9c0e393a34b792a932462c2f102ac1a6805575c1395484ef76"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "cv2/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "cv2/__pycache__/config-3.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "cv2/__pycache__/config.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "cv2/__pycache__/load_config_py2.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "cv2/__pycache__/load_config_py3.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "cv2/__pycache__/version.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "cv2/data/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "cv2/gapi/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "cv2/mat_wrapper/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "cv2/misc/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "cv2/misc/__pycache__/version.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "cv2/typing/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "cv2/utils/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "opencv_python_headless-4.11.0.86.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "opencv_python_headless-4.11.0.86.dist-info/REQUESTED",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "6f1c65454a987841b4340af0aed182a744753c5b7ac95ec31a71b278f3d6d6d7",
+  "wheel_size_bytes": 55349544,
+  "rebuilt_record_verified_files": 96,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:20.802150+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 96,
+  "source_record_verified_file_count": 98
+}

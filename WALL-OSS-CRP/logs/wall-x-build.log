@@ -1,0 +1,154 @@
+Using pip 26.1.2 from /home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/pip (python 3.10)
+Obtaining file:///home/pangk/workspaces/WALL-OSS-CRP/wall-x
+  Checking if build backend supports build_editable: started
+  Running command Checking if build backend supports build_editable
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Running command Preparing editable metadata (pyproject.toml)
+  /home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+  !!
+
+          ********************************************************************************
+          Please consider removing the following classifiers in favor of a SPDX license expression:
+
+          License :: OSI Approved :: Apache Software License
+
+          See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+          ********************************************************************************
+
+  !!
+    self._finalize_license_expression()
+  running dist_info
+  creating /tmp/pip-modern-metadata-thadrcfh/wall_x.egg-info
+  writing /tmp/pip-modern-metadata-thadrcfh/wall_x.egg-info/PKG-INFO
+  writing dependency_links to /tmp/pip-modern-metadata-thadrcfh/wall_x.egg-info/dependency_links.txt
+  writing top-level names to /tmp/pip-modern-metadata-thadrcfh/wall_x.egg-info/top_level.txt
+  writing manifest file '/tmp/pip-modern-metadata-thadrcfh/wall_x.egg-info/SOURCES.txt'
+  reading manifest file '/tmp/pip-modern-metadata-thadrcfh/wall_x.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  adding license file 'LICENSE'
+  writing manifest file '/tmp/pip-modern-metadata-thadrcfh/wall_x.egg-info/SOURCES.txt'
+  creating '/tmp/pip-modern-metadata-thadrcfh/wall_x-1.1.0.dist-info'
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: wall_x
+  Building editable for wall_x (pyproject.toml): started
+  Running command Building editable for wall_x (pyproject.toml)
+  /home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+  !!
+
+          ********************************************************************************
+          Please consider removing the following classifiers in favor of a SPDX license expression:
+
+          License :: OSI Approved :: Apache Software License
+
+          See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+          ********************************************************************************
+
+  !!
+    self._finalize_license_expression()
+  running editable_wheel
+  creating /tmp/pip-ephem-wheel-cache-siqtmc_n/wheels/9a/ae/c9/d91e9d8b051e41534c5396838bff93b159b10c04b402ef47e4/tmpem8wffi8/.tmp-_q3_r4ve/wall_x.egg-info
+  writing /tmp/pip-ephem-wheel-cache-siqtmc_n/wheels/9a/ae/c9/d91e9d8b051e41534c5396838bff93b159b10c04b402ef47e4/tmpem8wffi8/.tmp-_q3_r4ve/wall_x.egg-info/PKG-INFO
+  writing dependency_links to /tmp/pip-ephem-wheel-cache-siqtmc_n/wheels/9a/ae/c9/d91e9d8b051e41534c5396838bff93b159b10c04b402ef47e4/tmpem8wffi8/.tmp-_q3_r4ve/wall_x.egg-info/dependency_links.txt
+  writing top-level names to /tmp/pip-ephem-wheel-cache-siqtmc_n/wheels/9a/ae/c9/d91e9d8b051e41534c5396838bff93b159b10c04b402ef47e4/tmpem8wffi8/.tmp-_q3_r4ve/wall_x.egg-info/top_level.txt
+  writing manifest file '/tmp/pip-ephem-wheel-cache-siqtmc_n/wheels/9a/ae/c9/d91e9d8b051e41534c5396838bff93b159b10c04b402ef47e4/tmpem8wffi8/.tmp-_q3_r4ve/wall_x.egg-info/SOURCES.txt'
+  reading manifest file '/tmp/pip-ephem-wheel-cache-siqtmc_n/wheels/9a/ae/c9/d91e9d8b051e41534c5396838bff93b159b10c04b402ef47e4/tmpem8wffi8/.tmp-_q3_r4ve/wall_x.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  adding license file 'LICENSE'
+  writing manifest file '/tmp/pip-ephem-wheel-cache-siqtmc_n/wheels/9a/ae/c9/d91e9d8b051e41534c5396838bff93b159b10c04b402ef47e4/tmpem8wffi8/.tmp-_q3_r4ve/wall_x.egg-info/SOURCES.txt'
+  creating '/tmp/pip-ephem-wheel-cache-siqtmc_n/wheels/9a/ae/c9/d91e9d8b051e41534c5396838bff93b159b10c04b402ef47e4/tmpem8wffi8/.tmp-_q3_r4ve/wall_x-1.1.0.dist-info'
+  creating /tmp/pip-ephem-wheel-cache-siqtmc_n/wheels/9a/ae/c9/d91e9d8b051e41534c5396838bff93b159b10c04b402ef47e4/tmpem8wffi8/.tmp-_q3_r4ve/wall_x-1.1.0.dist-info/WHEEL
+  running build_py
+  running build_ext
+  W1022 18:09:14.874000 33649 site-packages/torch/utils/cpp_extension.py:535] There are no g++ version bounds defined for CUDA version 13.0
+  building 'wall_x.model.core.ops._cuda_ext_bin' extension
+  creating /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc
+  creating /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/get_rope_index
+  creating /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/m_rope
+  creating /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/permute_unpermute
+  creating /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/rope
+  creating /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/rot_pos
+  creating /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/window_index
+  [1/7] /usr/local/cuda-13.0/bin/nvcc --generate-dependencies-with-compile --dependency-output /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/binding.o.d -Iwall_x/model/core/ops/csrc -Iwall_x/model/core/ops/csrc/common -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-13.0/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/include/python3.10 -c -c /home/pangk/workspaces/WALL-OSS-CRP/wall-x/wall_x/model/core/ops/csrc/binding.cu -o /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/binding.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 --use_fast_math -std=c++17 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_cuda_ext_bin -gencode=arch=compute_86,code=sm_86
+  [2/7] /usr/local/cuda-13.0/bin/nvcc --generate-dependencies-with-compile --dependency-output /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/get_rope_index/get_rope_index.o.d -Iwall_x/model/core/ops/csrc -Iwall_x/model/core/ops/csrc/common -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-13.0/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/include/python3.10 -c -c /home/pangk/workspaces/WALL-OSS-CRP/wall-x/wall_x/model/core/ops/csrc/get_rope_index/get_rope_index.cu -o /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/get_rope_index/get_rope_index.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 --use_fast_math -std=c++17 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_cuda_ext_bin -gencode=arch=compute_86,code=sm_86
+  [3/7] /usr/local/cuda-13.0/bin/nvcc --generate-dependencies-with-compile --dependency-output /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/m_rope/m_rope_kernel.o.d -Iwall_x/model/core/ops/csrc -Iwall_x/model/core/ops/csrc/common -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-13.0/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/include/python3.10 -c -c /home/pangk/workspaces/WALL-OSS-CRP/wall-x/wall_x/model/core/ops/csrc/m_rope/m_rope_kernel.cu -o /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/m_rope/m_rope_kernel.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 --use_fast_math -std=c++17 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_cuda_ext_bin -gencode=arch=compute_86,code=sm_86
+  [4/7] /usr/local/cuda-13.0/bin/nvcc --generate-dependencies-with-compile --dependency-output /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/permute_unpermute/permute.o.d -Iwall_x/model/core/ops/csrc -Iwall_x/model/core/ops/csrc/common -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-13.0/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/include/python3.10 -c -c /home/pangk/workspaces/WALL-OSS-CRP/wall-x/wall_x/model/core/ops/csrc/permute_unpermute/permute.cu -o /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/permute_unpermute/permute.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 --use_fast_math -std=c++17 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_cuda_ext_bin -gencode=arch=compute_86,code=sm_86
+  [5/7] /usr/local/cuda-13.0/bin/nvcc --generate-dependencies-with-compile --dependency-output /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/rope/rope_kernel.o.d -Iwall_x/model/core/ops/csrc -Iwall_x/model/core/ops/csrc/common -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-13.0/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/include/python3.10 -c -c /home/pangk/workspaces/WALL-OSS-CRP/wall-x/wall_x/model/core/ops/csrc/rope/rope_kernel.cu -o /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/rope/rope_kernel.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 --use_fast_math -std=c++17 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_cuda_ext_bin -gencode=arch=compute_86,code=sm_86
+  [6/7] /usr/local/cuda-13.0/bin/nvcc --generate-dependencies-with-compile --dependency-output /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/rot_pos/rot_pos.o.d -Iwall_x/model/core/ops/csrc -Iwall_x/model/core/ops/csrc/common -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-13.0/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/include/python3.10 -c -c /home/pangk/workspaces/WALL-OSS-CRP/wall-x/wall_x/model/core/ops/csrc/rot_pos/rot_pos.cu -o /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/rot_pos/rot_pos.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 --use_fast_math -std=c++17 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_cuda_ext_bin -gencode=arch=compute_86,code=sm_86
+  [7/7] /usr/local/cuda-13.0/bin/nvcc --generate-dependencies-with-compile --dependency-output /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/window_index/window_index.o.d -Iwall_x/model/core/ops/csrc -Iwall_x/model/core/ops/csrc/common -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-13.0/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/include/python3.10 -c -c /home/pangk/workspaces/WALL-OSS-CRP/wall-x/wall_x/model/core/ops/csrc/window_index/window_index.cu -o /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/window_index/window_index.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 --use_fast_math -std=c++17 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_cuda_ext_bin -gencode=arch=compute_86,code=sm_86
+  creating /tmp/tmp6yjv35i1.build-lib/wall_x/model/core/ops
+  g++ -pthread -B /home/pangk/workspaces/WALL-OSS-CRP/env/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -fno-merge-constants -isystem /home/pangk/workspaces/WALL-OSS-CRP/env/include -fPIC -O2 -fno-merge-constants -isystem /home/pangk/workspaces/WALL-OSS-CRP/env/include -shared /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/binding.o /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/get_rope_index/get_rope_index.o /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/m_rope/m_rope_kernel.o /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/permute_unpermute/permute.o /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/rope/rope_kernel.o /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/rot_pos/rot_pos.o /tmp/tmpbk5d_4h9.build-temp/wall_x/model/core/ops/csrc/window_index/window_index.o -L/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/lib -L/usr/local/cuda-13.0/lib64 -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda -o /tmp/tmp6yjv35i1.build-lib/wall_x/model/core/ops/_cuda_ext_bin.cpython-310-x86_64-linux-gnu.so
+  copying /tmp/tmp6yjv35i1.build-lib/wall_x/model/core/ops/_cuda_ext_bin.cpython-310-x86_64-linux-gnu.so -> wall_x/model/core/ops
+  running build_scripts
+  creating /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts
+  copying and adjusting scripts/compute_norm_stats.py -> /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts
+  copying and adjusting scripts/draw_openloop_plot.py -> /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts
+  copying and adjusting scripts/fake_inference.py -> /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts
+  copying and adjusting scripts/infer_libero.py -> /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts
+  copying and adjusting scripts/merge_sharded_weights.py -> /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts
+  copying and adjusting scripts/merge_tokenizer.py -> /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts
+  copying scripts/run_libero.sh -> /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts
+  copying scripts/run_serving.sh -> /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts
+  changing mode of /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts/compute_norm_stats.py from 664 to 775
+  changing mode of /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts/draw_openloop_plot.py from 664 to 775
+  changing mode of /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts/fake_inference.py from 664 to 775
+  changing mode of /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts/infer_libero.py from 664 to 775
+  changing mode of /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts/merge_sharded_weights.py from 664 to 775
+  changing mode of /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts/merge_tokenizer.py from 664 to 775
+  Installing scripts as non editable
+  running install_scripts
+  running egg_info
+  creating /tmp/tmpbk5d_4h9.build-temp/wall_x.egg-info
+  writing /tmp/tmpbk5d_4h9.build-temp/wall_x.egg-info/PKG-INFO
+  writing dependency_links to /tmp/tmpbk5d_4h9.build-temp/wall_x.egg-info/dependency_links.txt
+  writing top-level names to /tmp/tmpbk5d_4h9.build-temp/wall_x.egg-info/top_level.txt
+  writing manifest file '/tmp/tmpbk5d_4h9.build-temp/wall_x.egg-info/SOURCES.txt'
+  reading manifest file '/tmp/tmpbk5d_4h9.build-temp/wall_x.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  adding license file 'LICENSE'
+  writing manifest file '/tmp/tmpbk5d_4h9.build-temp/wall_x.egg-info/SOURCES.txt'
+  changing mode of /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts/draw_openloop_plot.py to 775
+  changing mode of /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts/run_serving.sh to 775
+  changing mode of /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts/merge_tokenizer.py to 775
+  changing mode of /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts/compute_norm_stats.py to 775
+  changing mode of /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts/merge_sharded_weights.py to 775
+  changing mode of /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts/fake_inference.py to 775
+  changing mode of /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts/run_libero.sh to 775
+  changing mode of /tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl/wall_x-1.1.0.data/scripts/infer_libero.py to 775
+  Editable install will be performed using a meta path finder.
+
+  Options like `package-data`, `include/exclude-package-data` or
+  `packages.find.exclude/include` may have no effect.
+
+  adding '__editable___wall_x_1_1_0_finder.py'
+  adding '__editable__.wall_x-1.1.0.pth'
+  creating '/tmp/pip-ephem-wheel-cache-siqtmc_n/wheels/9a/ae/c9/d91e9d8b051e41534c5396838bff93b159b10c04b402ef47e4/tmpem8wffi8/.tmp-_q3_r4ve/wall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl' and adding '/tmp/tmp2x0vs51nwall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl' to it
+  adding 'wall_x-1.1.0.data/scripts/compute_norm_stats.py'
+  adding 'wall_x-1.1.0.data/scripts/draw_openloop_plot.py'
+  adding 'wall_x-1.1.0.data/scripts/fake_inference.py'
+  adding 'wall_x-1.1.0.data/scripts/infer_libero.py'
+  adding 'wall_x-1.1.0.data/scripts/merge_sharded_weights.py'
+  adding 'wall_x-1.1.0.data/scripts/merge_tokenizer.py'
+  adding 'wall_x-1.1.0.data/scripts/run_libero.sh'
+  adding 'wall_x-1.1.0.data/scripts/run_serving.sh'
+  adding 'wall_x-1.1.0.dist-info/licenses/LICENSE'
+  adding 'wall_x-1.1.0.dist-info/METADATA'
+  adding 'wall_x-1.1.0.dist-info/WHEEL'
+  adding 'wall_x-1.1.0.dist-info/top_level.txt'
+  adding 'wall_x-1.1.0.dist-info/RECORD'
+  /home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/command/editable_wheel.py:351: InformationOnly: Editable installation.
+  !!
+
+          ********************************************************************************
+          Please be careful with folders in your working directory with the same
+          name as your package as they may take precedence during imports.
+          ********************************************************************************
+
+  !!
+    with strategy, WheelFile(wheel_path, "w") as wheel_obj:
+  Building editable for wall_x (pyproject.toml): finished with status 'done'
+  Created wheel for wall_x: filename=wall_x-1.1.0-0.editable-cp310-cp310-linux_x86_64.whl size=41317 sha256=ee37e30ddf4bc857e9f0800ff2a7c991d8a4b833ae706de58b5bfc7ced9e4121
+  Stored in directory: /tmp/pip-ephem-wheel-cache-siqtmc_n/wheels/9a/ae/c9/d91e9d8b051e41534c5396838bff93b159b10c04b402ef47e4
+Successfully built wall_x
+Installing collected packages: wall_x
+Successfully installed wall_x-1.1.0

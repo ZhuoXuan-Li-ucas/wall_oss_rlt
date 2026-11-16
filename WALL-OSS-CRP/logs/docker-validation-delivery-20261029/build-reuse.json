@@ -1,0 +1,9 @@
+{
+  "mode": "reuse_built_image",
+  "source_report": "/home/pangk/workspaces/WALL-OSS-CRP/logs/docker-validation-final-20261029T011859Z",
+  "source_image_id": "sha256:8f067a0eb220228f444811532cc8ec0a328e4d46b7983637c1c4ea7743ef9ee8",
+  "build_log_sha256": "a484a7ebcd5f245eddcfa529205989afb303061839fe3bdbe9c45625cd1325ad",
+  "source_image_inspect_sha256": "7660bd2bd5a6319f12fac64e7f541c255c7d719029bcf89ed51e07a171466236",
+  "recorded_at_utc": "2026-10-29T05:54:38.205887+00:00",
+  "scope": "build evidence only; component, dataset, dependency and source-asset validation rerun"
+}

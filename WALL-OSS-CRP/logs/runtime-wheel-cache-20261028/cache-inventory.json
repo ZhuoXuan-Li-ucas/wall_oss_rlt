@@ -1,0 +1,164 @@
+[
+  {
+    "name": "conda-pack",
+    "version": "0.8.1",
+    "source": "/home/pangk/.cache/pip/http-v2/a/0/9/2/7/a09275d87589aa80a4429e9d9593efc25b47a7882b81416e84e27816.body",
+    "size_bytes": 34228
+  },
+  {
+    "name": "Werkzeug",
+    "version": "3.1.8",
+    "source": "/home/pangk/.cache/pip/http-v2/a/c/f/4/f/acf4fd6c256913acd9e5a7a7ef0969968b134507671c12bde829b8ec.body",
+    "size_bytes": 226459
+  },
+  {
+    "name": "tensorboard-data-server",
+    "version": "0.7.2",
+    "source": "/home/pangk/.cache/pip/http-v2/d/c/8/d/b/dc8dbc8b8767c69078fd3cb4c2f2a0cd98717a1dd5beef6dd70df348.body",
+    "size_bytes": 6590363
+  },
+  {
+    "name": "tensorboard",
+    "version": "2.21.0",
+    "source": "/home/pangk/.cache/pip/http-v2/f/4/b/8/3/f4b83044b9ba91f81324ad95fa811b8c0b39f098f02c5936a747bcf3.body",
+    "size_bytes": 5516204
+  },
+  {
+    "name": "Markdown",
+    "version": "3.10.2",
+    "source": "/home/pangk/.cache/pip/http-v2/9/a/c/4/d/9ac4d1c33a74165f87b4d801c2d743eaa824679059b73274e2037ec2.body",
+    "size_bytes": 108180
+  },
+  {
+    "name": "MarkupSafe",
+    "version": "3.0.3",
+    "source": "/home/pangk/.cache/pip/http-v2/e/2/2/9/9/e229949839dd8ce60d3c2e08b6f112908683e95f6dfb0817a955fb07.body",
+    "size_bytes": 22947
+  },
+  {
+    "name": "pip",
+    "version": "26.1.2",
+    "source": "/home/pangk/.cache/pip/http-v2/e/5/0/3/0/e503010ce88b2bb388d7806c951cab4dd3e436342653b4835f430bcc.body",
+    "size_bytes": 1813144
+  },
+  {
+    "name": "pillow",
+    "version": "12.3.0",
+    "source": "/home/pangk/.cache/pip/http-v2/7/b/e/e/4/7bee4e054f82a46705807cab36575aae8dd4ed3af2b55134559a3f9d.body",
+    "size_bytes": 6940830
+  },
+  {
+    "name": "numpy",
+    "version": "2.5.1",
+    "source": "/home/pangk/.cache/pip/http-v2/8/d/1/5/8/8d158ee629d6bcd772f56695ebb4b838214fc1d9b8aeeefbcfbc4d5d.body",
+    "size_bytes": 16672469
+  },
+  {
+    "name": "protobuf",
+    "version": "7.35.1",
+    "source": "/home/pangk/.cache/pip/http-v2/8/6/c/d/c/86cdcec04d9f0767123dcfcdef058e23ed23de42739ae3e6516911ca.body",
+    "size_bytes": 327130
+  },
+  {
+    "name": "absl-py",
+    "version": "2.5.0",
+    "source": "/home/pangk/.cache/pip/http-v2/4/a/e/8/6/4ae8640610673620aa75ca44971ef70a9bbc779422578e17a2888cff.body",
+    "size_bytes": 137410
+  },
+  {
+    "name": "packaging",
+    "version": "26.2",
+    "source": "/home/pangk/.cache/pip/http-v2/c/d/e/c/3/cdec3d0140a615c153130a37691576ea1707e32a1ab5e60ae5a540f4.body",
+    "size_bytes": 100195
+  },
+  {
+    "name": "grpcio",
+    "version": "1.83.0",
+    "source": "/home/pangk/.cache/pip/http-v2/5/a/4/e/9/5a4e950bef0ecc2092b959b7c185b82c3f9a113a60010b94928203af.body",
+    "size_bytes": 7040616
+  },
+  {
+    "name": "typing_extensions",
+    "version": "4.16.0",
+    "source": "/home/pangk/.cache/pip/http-v2/5/d/e/7/4/5de74aa606aaf8588141cbe765382839ecb0982f091a947770ca6fa8.body",
+    "size_bytes": 45571
+  },
+  {
+    "name": "evdev",
+    "version": "1.9.3",
+    "source": "/home/pangk/.cache/pip/wheels/68/70/b4/3fc7b36d0009ccf99b44add24b4bb0427f802ca6f9e525c3be/evdev-1.9.3-cp310-cp310-linux_x86_64.whl",
+    "size_bytes": 74247
+  },
+  {
+    "name": "evdev",
+    "version": "1.9.3",
+    "source": "/home/pangk/.cache/pip/wheels/76/fc/3d/3eed8d918241316fdd8512e3328a1906138f58304b790b135f/evdev-1.9.3-cp312-cp312-linux_x86_64.whl",
+    "size_bytes": 74368
+  },
+  {
+    "name": "docopt",
+    "version": "0.6.2",
+    "source": "/home/pangk/.cache/pip/wheels/fc/ab/d4/5da2067ac95b36618c629a5f93f809425700506f72c9732fac/docopt-0.6.2-py2.py3-none-any.whl",
+    "size_bytes": 13781
+  },
+  {
+    "name": "transformations",
+    "version": "2022.9.26",
+    "source": "/home/pangk/.cache/pip/wheels/38/8b/dc/33d2ef67f8cabc6ecce27189fa685127946271a822983a2798/transformations-2022.9.26-cp38-cp38-linux_x86_64.whl",
+    "size_bytes": 59361
+  },
+  {
+    "name": "feetech-servo-sdk",
+    "version": "1.0.0",
+    "source": "/home/pangk/.cache/pip/wheels/95/6d/02/c7c9a75d82512882464a2772c604307d75b221194706562e28/feetech_servo_sdk-1.0.0-py3-none-any.whl",
+    "size_bytes": 10234
+  },
+  {
+    "name": "empy",
+    "version": "3.3.4",
+    "source": "/home/pangk/.cache/pip/wheels/e1/e4/1c/d5dfe71bdbf561652eb836b137dabf120043a3086217f0f062/empy-3.3.4-py3-none-any.whl",
+    "size_bytes": 29378
+  },
+  {
+    "name": "zmq",
+    "version": "0.0.0",
+    "source": "/home/pangk/.cache/pip/wheels/3b/63/1e/ae647698259e31ad6eae6d327e7c770040cadfcbb52a2dab30/zmq-0.0.0-py3-none-any.whl",
+    "size_bytes": 1090
+  },
+  {
+    "name": "empy",
+    "version": "4.2",
+    "source": "/home/pangk/.cache/pip/wheels/fb/b6/29/8b1bb0ba85b6e31fc98d8f034427d6e01ab66beeb12f447936/empy-4.2-py3-none-any.whl",
+    "size_bytes": 145900
+  },
+  {
+    "name": "evdev",
+    "version": "1.9.3",
+    "source": "/home/pangk/.cache/pip/wheels/7e/f9/99/7b44cc5d5efb7b6c2cbee0cda2976509ff805e76d88d4d279f/evdev-1.9.3-cp310-cp310-linux_x86_64.whl",
+    "size_bytes": 112130
+  },
+  {
+    "name": "em",
+    "version": "0.4.0",
+    "source": "/home/pangk/.cache/pip/wheels/aa/d7/52/d1580d513fe775005ad4e167305e1dc65aefa99e7ea921283a/em-0.4.0-py3-none-any.whl",
+    "size_bytes": 13141
+  },
+  {
+    "name": "em",
+    "version": "0.4.0",
+    "source": "/home/pangk/.cache/pip/wheels/7a/c2/00/7b33e51b72e42f51335e3e464317f2373b3e68f7ee436c1dce/em-0.4.0-py3-none-any.whl",
+    "size_bytes": 13047
+  },
+  {
+    "name": "flash_attn",
+    "version": "2.8.3",
+    "source": "/home/pangk/.cache/pip/wheels/ee/bf/34/7103dc6fc1311b07b954d46d44f7460445f6e0a3a490c46385/flash_attn-2.8.3-cp310-cp310-linux_x86_64.whl",
+    "size_bytes": 57390711
+  },
+  {
+    "name": "empy",
+    "version": "3.3.4",
+    "source": "/home/pangk/.cache/pip/wheels/c7/0a/c4/a0dc05ea753ca932849616e1c1886ad3c50aaa2c8f09c6a552/empy-3.3.4-py3-none-any.whl",
+    "size_bytes": 29341
+  }
+]

@@ -1,0 +1,192 @@
+{
+  "status": "PASS",
+  "package": "typeguard",
+  "version": "4.6.0",
+  "filename": "typeguard-4.6.0-py3-none-any.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "cb163efc0fd3467ffbd85bdd5a465b6e965298e0da4ea23d659c29e6556f578a",
+  "wheel_tags": [
+    "py3-none-any"
+  ],
+  "record_verified_files": [
+    {
+      "path": "typeguard-4.6.0.dist-info/INSTALLER",
+      "wheel_path": "typeguard-4.6.0.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "typeguard-4.6.0.dist-info/METADATA",
+      "wheel_path": "typeguard-4.6.0.dist-info/METADATA",
+      "size_bytes": 3688,
+      "sha256": "9548e2e34c3e9368f90c3034223c54085e0bf54db03cf425be974d18c0efea01"
+    },
+    {
+      "path": "typeguard-4.6.0.dist-info/WHEEL",
+      "wheel_path": "typeguard-4.6.0.dist-info/WHEEL",
+      "size_bytes": 91,
+      "sha256": "2b6eb4118ce7cd7b09601406aa623c553c4476265836f0d9c16f5c061f7efcc0"
+    },
+    {
+      "path": "typeguard-4.6.0.dist-info/entry_points.txt",
+      "wheel_path": "typeguard-4.6.0.dist-info/entry_points.txt",
+      "size_bytes": 48,
+      "sha256": "aa9ecd43568bb624a0310aa8ea05a57c6a72d08217ce830999e4132e9cea1594"
+    },
+    {
+      "path": "typeguard-4.6.0.dist-info/licenses/LICENSE",
+      "wheel_path": "typeguard-4.6.0.dist-info/licenses/LICENSE",
+      "size_bytes": 1130,
+      "sha256": "6163f7987dfb38d6bc320ce2b70b2f02b862bc41126516d552ef1cd43247e758"
+    },
+    {
+      "path": "typeguard-4.6.0.dist-info/top_level.txt",
+      "wheel_path": "typeguard-4.6.0.dist-info/top_level.txt",
+      "size_bytes": 10,
+      "sha256": "e33dbc021b83a1dc114bf73527f97c1f9d6de50bb07d3b1eb24633971a7a82bb"
+    },
+    {
+      "path": "typeguard/__init__.py",
+      "wheel_path": "typeguard/__init__.py",
+      "size_bytes": 2203,
+      "sha256": "cc20f24e48354749373221c2cd93a006374064969c3ab7974995e7c2b73d3a93"
+    },
+    {
+      "path": "typeguard/_checkers.py",
+      "wheel_path": "typeguard/_checkers.py",
+      "size_bytes": 36674,
+      "sha256": "ef20d2df3617c2adeddf40d056e968371cd198187e14290e5774906373237cdc"
+    },
+    {
+      "path": "typeguard/_config.py",
+      "wheel_path": "typeguard/_config.py",
+      "size_bytes": 2806,
+      "sha256": "01a1f88b017356346485d72a18601128b7034f5e6d855f6016aebd9c169c8a62"
+    },
+    {
+      "path": "typeguard/_decorators.py",
+      "wheel_path": "typeguard/_decorators.py",
+      "size_bytes": 9193,
+      "sha256": "2764e459cae1ed7e5f08422d875502e0b0953d185fe20919de58a874327aa319"
+    },
+    {
+      "path": "typeguard/_exceptions.py",
+      "wheel_path": "typeguard/_exceptions.py",
+      "size_bytes": 1121,
+      "sha256": "6483de895f8505de449b0d8469677616f96caf08b8a1cc13d9f54604802d1dc4"
+    },
+    {
+      "path": "typeguard/_functions.py",
+      "wheel_path": "typeguard/_functions.py",
+      "size_bytes": 12568,
+      "sha256": "ba8082b61f89b717836de7fab0e31685d2bf754e542ac32c9d1f62c62d588420"
+    },
+    {
+      "path": "typeguard/_importhook.py",
+      "wheel_path": "typeguard/_importhook.py",
+      "size_bytes": 7794,
+      "sha256": "7083edbb9326593ef2bf0b1175e82024c54946b09f3bf4477f1f756f02050769"
+    },
+    {
+      "path": "typeguard/_memo.py",
+      "wheel_path": "typeguard/_memo.py",
+      "size_bytes": 1303,
+      "sha256": "d63b9057fbf19c3d8960a6d2ade6e242e8f8a0a1f3ea7ebbbfda5803e0822128"
+    },
+    {
+      "path": "typeguard/_pytest_plugin.py",
+      "wheel_path": "typeguard/_pytest_plugin.py",
+      "size_bytes": 5002,
+      "sha256": "838b81be4b92fe35c2854e05fa13f036162804fcaf338a54d22b632f451a60ab"
+    },
+    {
+      "path": "typeguard/_suppression.py",
+      "wheel_path": "typeguard/_suppression.py",
+      "size_bytes": 2150,
+      "sha256": "f1f69f0e082a85b2b282c3e79efc3f5545baaced7a2fd5bf6696c0b55b7cb77d"
+    },
+    {
+      "path": "typeguard/_transformer.py",
+      "wheel_path": "typeguard/_transformer.py",
+      "size_bytes": 45504,
+      "sha256": "c492565deedd22887699788a0ca019e18c55445f8ae134d2a3dd47cfb7eb7e1e"
+    },
+    {
+      "path": "typeguard/_utils.py",
+      "wheel_path": "typeguard/_utils.py",
+      "size_bytes": 6303,
+      "sha256": "b4bbacef628a88ecae7176b5e4217275031224d15daca0562003d2c66573f843"
+    },
+    {
+      "path": "typeguard/py.typed",
+      "wheel_path": "typeguard/py.typed",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "typeguard-4.6.0.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typeguard/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typeguard/__pycache__/_checkers.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typeguard/__pycache__/_config.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typeguard/__pycache__/_decorators.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typeguard/__pycache__/_exceptions.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typeguard/__pycache__/_functions.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typeguard/__pycache__/_importhook.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typeguard/__pycache__/_memo.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typeguard/__pycache__/_pytest_plugin.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typeguard/__pycache__/_suppression.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typeguard/__pycache__/_transformer.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typeguard/__pycache__/_utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "7ecda7e45decfae61d0b88d469224ca1ea862590014e5ae72b9bc2a588f5d125",
+  "wheel_size_bytes": 43103,
+  "rebuilt_record_verified_files": 18,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:22.365651+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 18,
+  "source_record_verified_file_count": 19
+}

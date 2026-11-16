@@ -1,0 +1,370 @@
+{
+  "status": "PASS",
+  "package": "httpcore",
+  "version": "1.0.9",
+  "filename": "httpcore-1.0.9-py3-none-any.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "e8e01b29f191b00707540b5c1e5f7a17360540209797ef942fdc513cd03fce08",
+  "wheel_tags": [
+    "py3-none-any"
+  ],
+  "record_verified_files": [
+    {
+      "path": "httpcore-1.0.9.dist-info/INSTALLER",
+      "wheel_path": "httpcore-1.0.9.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "httpcore-1.0.9.dist-info/METADATA",
+      "wheel_path": "httpcore-1.0.9.dist-info/METADATA",
+      "size_bytes": 21529,
+      "sha256": "fe2d4fda6199128978779e0cf27f3c045c531863fcdd987eacc74f3a18d41c21"
+    },
+    {
+      "path": "httpcore-1.0.9.dist-info/WHEEL",
+      "wheel_path": "httpcore-1.0.9.dist-info/WHEEL",
+      "size_bytes": 87,
+      "sha256": "aad0b0a12256807936d52d4a6f88a1773236ae527564a688bab4e3fe780e8724"
+    },
+    {
+      "path": "httpcore-1.0.9.dist-info/licenses/LICENSE.md",
+      "wheel_path": "httpcore-1.0.9.dist-info/licenses/LICENSE.md",
+      "size_bytes": 1518,
+      "sha256": "fdcb59154c74cbaba16a11242f7740bea9f23d6feb5547917d8c5f94a80392a5"
+    },
+    {
+      "path": "httpcore/__init__.py",
+      "wheel_path": "httpcore/__init__.py",
+      "size_bytes": 3445,
+      "sha256": "f644ff92a0a10822544c7c30db866647f7b371d6e94585a4b03fa060dce464ff"
+    },
+    {
+      "path": "httpcore/_api.py",
+      "wheel_path": "httpcore/_api.py",
+      "size_bytes": 3146,
+      "sha256": "ba7666783b1c8415821823c2c244b75a8b7d7ae2ba6e0fe42b12ed193c70db5e"
+    },
+    {
+      "path": "httpcore/_async/__init__.py",
+      "wheel_path": "httpcore/_async/__init__.py",
+      "size_bytes": 1221,
+      "sha256": "116765dafe2d867007cc9a6a8d4e21d9af03522180bcd896ae48a2f697e14dfd"
+    },
+    {
+      "path": "httpcore/_async/connection.py",
+      "wheel_path": "httpcore/_async/connection.py",
+      "size_bytes": 8449,
+      "sha256": "e8e70f5ea3047dcd01537f3ffa21d4343775bca4937365154f4f57a8d6ff04e9"
+    },
+    {
+      "path": "httpcore/_async/connection_pool.py",
+      "wheel_path": "httpcore/_async/connection_pool.py",
+      "size_bytes": 17307,
+      "sha256": "0ce210dacd9909ff6a7f0c61ccca6b4cf2ea08bf0ec465e2285eaa447c6f5726"
+    },
+    {
+      "path": "httpcore/_async/http11.py",
+      "wheel_path": "httpcore/_async/http11.py",
+      "size_bytes": 13880,
+      "sha256": "faa33d6d5ecf8d2405e6fc6cdfbf9e5173881706c88cf7196cd962b97f53b41c"
+    },
+    {
+      "path": "httpcore/_async/http2.py",
+      "wheel_path": "httpcore/_async/http2.py",
+      "size_bytes": 23936,
+      "sha256": "6b35f57dc9ad5da2308e9bad165678bddf7627cc708c639af5ac7d408bf8dfde"
+    },
+    {
+      "path": "httpcore/_async/http_proxy.py",
+      "wheel_path": "httpcore/_async/http_proxy.py",
+      "size_bytes": 14701,
+      "sha256": "db3564ae5bfe0ecfab5866aa69796b84426201014fa36dc14f71aafec5a80575"
+    },
+    {
+      "path": "httpcore/_async/interfaces.py",
+      "wheel_path": "httpcore/_async/interfaces.py",
+      "size_bytes": 4455,
+      "sha256": "8d389a58bf37a60a460bdce2bfdd197f068a34c987c2639a97368a8ae4f1013a"
+    },
+    {
+      "path": "httpcore/_async/socks_proxy.py",
+      "wheel_path": "httpcore/_async/socks_proxy.py",
+      "size_bytes": 13841,
+      "sha256": "94b2a02e58203df84596a8b438378190e5afb7d0a0841054caab27b14d6dc7a4"
+    },
+    {
+      "path": "httpcore/_backends/__init__.py",
+      "wheel_path": "httpcore/_backends/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "httpcore/_backends/anyio.py",
+      "wheel_path": "httpcore/_backends/anyio.py",
+      "size_bytes": 5252,
+      "sha256": "c7c3e01215d10bc6d5aac77393f609c7c63a77d4ee6f4e82b944b09db9adaa86"
+    },
+    {
+      "path": "httpcore/_backends/auto.py",
+      "wheel_path": "httpcore/_backends/auto.py",
+      "size_bytes": 1662,
+      "sha256": "cced77e8f2999ac6930caf87464f38780f8c520f3fdb025fe0dbe62b8df6022a"
+    },
+    {
+      "path": "httpcore/_backends/base.py",
+      "wheel_path": "httpcore/_backends/base.py",
+      "size_bytes": 3042,
+      "sha256": "69286045d6673264611561deb63ba694cef77fc2b3d58380c8250fff8907b250"
+    },
+    {
+      "path": "httpcore/_backends/mock.py",
+      "wheel_path": "httpcore/_backends/mock.py",
+      "size_bytes": 4077,
+      "sha256": "7abf53e37eae49eecd2eb7e22dae31e8dbaa8398af43af770b1598096b206c7e"
+    },
+    {
+      "path": "httpcore/_backends/sync.py",
+      "wheel_path": "httpcore/_backends/sync.py",
+      "size_bytes": 7977,
+      "sha256": "6e113877d88af549b176c76c826d847ca9d76819acd9682019853eee3994ba35"
+    },
+    {
+      "path": "httpcore/_backends/trio.py",
+      "wheel_path": "httpcore/_backends/trio.py",
+      "size_bytes": 5996,
+      "sha256": "2c7bb8fccaf932cc109a64f7c84e282e07fd6ff2497de552e018c3c5e25ced1a"
+    },
+    {
+      "path": "httpcore/_exceptions.py",
+      "wheel_path": "httpcore/_exceptions.py",
+      "size_bytes": 1184,
+      "sha256": "968a022a06b7fd8558bb7b3e7772fd44c3d127286c63b7e2bae1b1be4383d1cd"
+    },
+    {
+      "path": "httpcore/_models.py",
+      "wheel_path": "httpcore/_models.py",
+      "size_bytes": 17623,
+      "sha256": "20ed8271771da68bd170b4dd185181e91c8165d126da1fd33a6a02738ac42a1a"
+    },
+    {
+      "path": "httpcore/_ssl.py",
+      "wheel_path": "httpcore/_ssl.py",
+      "size_bytes": 187,
+      "sha256": "b2baa648d53888e52f585f92ac9bdbf06fd811b1c510b39740ec1d0c80534bd7"
+    },
+    {
+      "path": "httpcore/_sync/__init__.py",
+      "wheel_path": "httpcore/_sync/__init__.py",
+      "size_bytes": 1141,
+      "sha256": "2410c8817b7995ad4b089d6c2d078a863285a4b9e936bf12beceb3da78b77e08"
+    },
+    {
+      "path": "httpcore/_sync/connection.py",
+      "wheel_path": "httpcore/_sync/connection.py",
+      "size_bytes": 8238,
+      "sha256": "f5ec4639bdcf07e329d93d7eb1c91278bdadfad27ff7e357a2657c8a19960a05"
+    },
+    {
+      "path": "httpcore/_sync/connection_pool.py",
+      "wheel_path": "httpcore/_sync/connection_pool.py",
+      "size_bytes": 16955,
+      "sha256": "6be4fc2d3b14c5ceebd16c356ad7c7483a163e34347c0f1497b4b7f85d0c8fbd"
+    },
+    {
+      "path": "httpcore/_sync/http11.py",
+      "wheel_path": "httpcore/_sync/http11.py",
+      "size_bytes": 13476,
+      "sha256": "205a1b0f531de491652462969e1d7f4377a98a452bc88f2aa34f6ff0c8892040"
+    },
+    {
+      "path": "httpcore/_sync/http2.py",
+      "wheel_path": "httpcore/_sync/http2.py",
+      "size_bytes": 23400,
+      "sha256": "031538ca172aebc067e6fa9d258b625ca6148fb9ef8586f1cf7bf8ad3e319ef0"
+    },
+    {
+      "path": "httpcore/_sync/http_proxy.py",
+      "wheel_path": "httpcore/_sync/http_proxy.py",
+      "size_bytes": 14463,
+      "sha256": "fda97fe9cacab8466edb0cafbb8f7745922625d0499e3e6818a3632ce24bd99a"
+    },
+    {
+      "path": "httpcore/_sync/interfaces.py",
+      "wheel_path": "httpcore/_sync/interfaces.py",
+      "size_bytes": 4344,
+      "sha256": "b275ce378daf5031cee49049be8f03e155a4d966ade38cf63975c70eb8db97de"
+    },
+    {
+      "path": "httpcore/_sync/socks_proxy.py",
+      "wheel_path": "httpcore/_sync/socks_proxy.py",
+      "size_bytes": 13614,
+      "sha256": "cde8195bd4a7aa3dbff7dd831496bcfc2a6939506454be0083076e4644ad6a44"
+    },
+    {
+      "path": "httpcore/_synchronization.py",
+      "wheel_path": "httpcore/_synchronization.py",
+      "size_bytes": 9434,
+      "sha256": "cd28b5de6002a250679278d90649d40ba84a343413e02ea28e77b367eaf44f6b"
+    },
+    {
+      "path": "httpcore/_trace.py",
+      "wheel_path": "httpcore/_trace.py",
+      "size_bytes": 3952,
+      "sha256": "724e99a08cd84e474d0087eae4c19e2aa0570edaa3397faa7d8c266456eb19ca"
+    },
+    {
+      "path": "httpcore/_utils.py",
+      "wheel_path": "httpcore/_utils.py",
+      "size_bytes": 1537,
+      "sha256": "fd12e05d8380602df9d229002d5e7d199ebc209adda1c459c4fb3d3e39b37456"
+    },
+    {
+      "path": "httpcore/py.typed",
+      "wheel_path": "httpcore/py.typed",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "httpcore-1.0.9.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/__pycache__/_api.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/__pycache__/_exceptions.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/__pycache__/_models.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/__pycache__/_ssl.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/__pycache__/_synchronization.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/__pycache__/_trace.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/__pycache__/_utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_async/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_async/__pycache__/connection.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_async/__pycache__/connection_pool.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_async/__pycache__/http11.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_async/__pycache__/http2.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_async/__pycache__/http_proxy.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_async/__pycache__/interfaces.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_async/__pycache__/socks_proxy.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_backends/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_backends/__pycache__/anyio.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_backends/__pycache__/auto.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_backends/__pycache__/base.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_backends/__pycache__/mock.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_backends/__pycache__/sync.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_backends/__pycache__/trio.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_sync/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_sync/__pycache__/connection.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_sync/__pycache__/connection_pool.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_sync/__pycache__/http11.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_sync/__pycache__/http2.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_sync/__pycache__/http_proxy.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_sync/__pycache__/interfaces.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "httpcore/_sync/__pycache__/socks_proxy.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "ccc49b4212caab4a194fbe1bbf9e3bbe605a046b1fdb5bda44262d0ea85c5a5d",
+  "wheel_size_bytes": 90583,
+  "rebuilt_record_verified_files": 35,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:18.295162+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 35,
+  "source_record_verified_file_count": 36
+}

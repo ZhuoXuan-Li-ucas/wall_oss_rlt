@@ -1,0 +1,13 @@
+{
+  "model_file_size_bytes": 8331486672,
+  "tensor_count": 1061,
+  "stored_elements": 4162224832,
+  "elements_by_dtype": {
+    "F32": 3455680,
+    "BF16": 4158769152
+  },
+  "tensor_storage_bytes": 8331361024,
+  "tensor_storage_gib": 7.7591845989227295,
+  "gpu_memory_at_finalization": "name, memory.free [MiB], memory.total [MiB]\nNVIDIA GeForce RTX 3060 Ti, 7299 MiB, 8192 MiB",
+  "scope": "Storage from verified safetensors header; no full-model GPU allocation measurement."
+}

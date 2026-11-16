@@ -1,0 +1,8 @@
+{
+  "build_pid": 227545,
+  "report": "/home/pangk/workspaces/WALL-OSS-CRP/logs/docker-validation-20261028T080504Z",
+  "bundle": "/media/pangk/My Passport/WALL-OSS-CRP-transfer-20261028",
+  "status": "FAILED",
+  "checked_at_utc": "2026-10-28T08:57:27.767162+00:00",
+  "error": "Build/validation process ended without a success marker; inspect build.log/runtime.log"
+}

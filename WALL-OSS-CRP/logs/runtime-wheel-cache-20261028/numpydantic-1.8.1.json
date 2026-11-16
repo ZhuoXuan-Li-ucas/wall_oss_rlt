@@ -1,0 +1,556 @@
+{
+  "status": "PASS",
+  "package": "numpydantic",
+  "version": "1.8.1",
+  "filename": "numpydantic-1.8.1-py3-none-any.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "6609bac96bc5b0f2f11329e9cffc6adf8bbea3d097173219f6df2c2f9ccf00ff",
+  "wheel_tags": [
+    "py3-none-any"
+  ],
+  "record_verified_files": [
+    {
+      "path": "numpydantic-1.8.1.dist-info/INSTALLER",
+      "wheel_path": "numpydantic-1.8.1.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "numpydantic-1.8.1.dist-info/METADATA",
+      "wheel_path": "numpydantic-1.8.1.dist-info/METADATA",
+      "size_bytes": 17904,
+      "sha256": "d05b09175f5e324547ff81d56becd12ea1f4869e5c7f629c0c484ff6f193cdc4"
+    },
+    {
+      "path": "numpydantic-1.8.1.dist-info/REQUESTED",
+      "wheel_path": "numpydantic-1.8.1.dist-info/REQUESTED",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "numpydantic-1.8.1.dist-info/WHEEL",
+      "wheel_path": "numpydantic-1.8.1.dist-info/WHEEL",
+      "size_bytes": 90,
+      "sha256": "677e9e4d7ea51b73c84d195e49de610191c2733e76ca0ddcd09415c4a05b2d6d"
+    },
+    {
+      "path": "numpydantic-1.8.1.dist-info/entry_points.txt",
+      "wheel_path": "numpydantic-1.8.1.dist-info/entry_points.txt",
+      "size_bytes": 34,
+      "sha256": "e8e62005c2f21425207aa2e09ef332389c4f096ce0cbbb1ee2b2cf2ad3689ccb"
+    },
+    {
+      "path": "numpydantic-1.8.1.dist-info/licenses/LICENSE",
+      "wheel_path": "numpydantic-1.8.1.dist-info/licenses/LICENSE",
+      "size_bytes": 1071,
+      "sha256": "c03e015c0e540dea26387b9984235581d1838d5fb0b1417267bc92605b2d88bf"
+    },
+    {
+      "path": "numpydantic/.DS_Store",
+      "wheel_path": "numpydantic/.DS_Store",
+      "size_bytes": 6148,
+      "sha256": "fb60771ac6beea3df5f76417767e7f93d01f5b3375d91e5d3ebe8964600cf9a9"
+    },
+    {
+      "path": "numpydantic/__init__.py",
+      "wheel_path": "numpydantic/__init__.py",
+      "size_bytes": 315,
+      "sha256": "5d86627ee8e5cb2d78000809732ed1c1756f230b130e48ffe6fa73cc62c1f07e"
+    },
+    {
+      "path": "numpydantic/annotation.py",
+      "wheel_path": "numpydantic/annotation.py",
+      "size_bytes": 1750,
+      "sha256": "a5bd069a7e6e7735cc89064843b17090c54ec9f778641d76da73a00026ea07db"
+    },
+    {
+      "path": "numpydantic/dtype.py",
+      "wheel_path": "numpydantic/dtype.py",
+      "size_bytes": 2639,
+      "sha256": "6369f72d9649b1f7916678ec56947a627af3aad10a393b9070b80574ec0f336b"
+    },
+    {
+      "path": "numpydantic/exceptions.py",
+      "wheel_path": "numpydantic/exceptions.py",
+      "size_bytes": 799,
+      "sha256": "ef97bbab36f20a4223691ec181366a1ccf027f59f82c50c5027c5ae674b80d88"
+    },
+    {
+      "path": "numpydantic/interface/__init__.py",
+      "wheel_path": "numpydantic/interface/__init__.py",
+      "size_bytes": 701,
+      "sha256": "012ca1c9b4752c9568f4f53284481ffdd3f2a87ae5a3bc1e7f0a2a5d6a454532"
+    },
+    {
+      "path": "numpydantic/interface/dask.py",
+      "wheel_path": "numpydantic/interface/dask.py",
+      "size_bytes": 4653,
+      "sha256": "320df21aa0bf1e41476c13fe32aa0c09932c44fc2a2a04296dfe3d07c1c5bc6d"
+    },
+    {
+      "path": "numpydantic/interface/hdf5.py",
+      "wheel_path": "numpydantic/interface/hdf5.py",
+      "size_bytes": 13798,
+      "sha256": "7ad61e25d178f270eb2c3dd7aa8ab1470a1ec03758fffa20b209674709e9d930"
+    },
+    {
+      "path": "numpydantic/interface/interface.py",
+      "wheel_path": "numpydantic/interface/interface.py",
+      "size_bytes": 21255,
+      "sha256": "e37b0921c0b98884cd9c1e34586b5fd7a5b0edfe8bcf433cb44e77985e5e14c8"
+    },
+    {
+      "path": "numpydantic/interface/numpy.py",
+      "wheel_path": "numpydantic/interface/numpy.py",
+      "size_bytes": 3373,
+      "sha256": "c4d1e53caf1f6ecdf9961c8885ab7ca8ac809e7cefc8d05cd03d0f77fb9119b1"
+    },
+    {
+      "path": "numpydantic/interface/video.py",
+      "wheel_path": "numpydantic/interface/video.py",
+      "size_bytes": 10038,
+      "sha256": "7629747bcf6b906193657003d7a6e4e84c292421f3f33ed950893bcef7e68c51"
+    },
+    {
+      "path": "numpydantic/interface/xarray.py",
+      "wheel_path": "numpydantic/interface/xarray.py",
+      "size_bytes": 47,
+      "sha256": "a79fe48a65aeb23cfafc6ad7593b96f867db001a6460e6c41546e0bb837c895b"
+    },
+    {
+      "path": "numpydantic/interface/zarr.py",
+      "wheel_path": "numpydantic/interface/zarr.py",
+      "size_bytes": 6593,
+      "sha256": "0c986a0b26084dfbd55671296c989bf43a91656572b0346157de645962175bec"
+    },
+    {
+      "path": "numpydantic/maps.py",
+      "wheel_path": "numpydantic/maps.py",
+      "size_bytes": 1494,
+      "sha256": "ab0f15183a1016b8a9d42f1c84a9b4af0d3d56431bff2a2a809211ad92e6005c"
+    },
+    {
+      "path": "numpydantic/meta.py",
+      "wheel_path": "numpydantic/meta.py",
+      "size_bytes": 2567,
+      "sha256": "65a1bc15469652012983292f65efa79de60da6dd1f0a32c63af8876848787e39"
+    },
+    {
+      "path": "numpydantic/ndarray.py",
+      "wheel_path": "numpydantic/ndarray.py",
+      "size_bytes": 9031,
+      "sha256": "0893a21db7ee44d63b9a3237a44eb8cbd9890bedf1774d8c3ba255c52492bbcb"
+    },
+    {
+      "path": "numpydantic/ndarray.pyi",
+      "wheel_path": "numpydantic/ndarray.pyi",
+      "size_bytes": 858,
+      "sha256": "0651cf6e1b64aa6c1c238ca8f143be33696bdeffadde83155c7ffd35ce2bb8ae"
+    },
+    {
+      "path": "numpydantic/py.typed",
+      "wheel_path": "numpydantic/py.typed",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "numpydantic/schema.py",
+      "wheel_path": "numpydantic/schema.py",
+      "size_bytes": 10485,
+      "sha256": "5ed0f34fae3df638f74973778766181db4ce1560232e80d8c5b4bc2193188437"
+    },
+    {
+      "path": "numpydantic/serialization.py",
+      "wheel_path": "numpydantic/serialization.py",
+      "size_bytes": 5584,
+      "sha256": "68e30c6481e61f40434072a7cee48eb3ba40295276ec7f009b9e0ee553f861a9"
+    },
+    {
+      "path": "numpydantic/testing/__init__.py",
+      "wheel_path": "numpydantic/testing/__init__.py",
+      "size_bytes": 128,
+      "sha256": "8837aa52734a599dfbace618fc3ab3b88064d132f3f48d3190118193ebe8179d"
+    },
+    {
+      "path": "numpydantic/testing/cases.py",
+      "wheel_path": "numpydantic/testing/cases.py",
+      "size_bytes": 9437,
+      "sha256": "88df2fdfc480c1366b92276ef426e38aedf19328569d9677fe54bcfc66cfa5ed"
+    },
+    {
+      "path": "numpydantic/testing/helpers.py",
+      "wheel_path": "numpydantic/testing/helpers.py",
+      "size_bytes": 11289,
+      "sha256": "e738858174db0fc57788786e11e1517f680e8f4fef44d9cd78522d82b4dc76bb"
+    },
+    {
+      "path": "numpydantic/testing/interfaces.py",
+      "wheel_path": "numpydantic/testing/interfaces.py",
+      "size_bytes": 8753,
+      "sha256": "a68635964bd9307a887a0d453ddc8daf1da7c6f666a1e0611b9fe3bcff973153"
+    },
+    {
+      "path": "numpydantic/types.py",
+      "wheel_path": "numpydantic/types.py",
+      "size_bytes": 694,
+      "sha256": "c508c27ce649ee23ab7371552bebc122022ab5efbc11a18bc801581d40390268"
+    },
+    {
+      "path": "numpydantic/validation/__init__.py",
+      "wheel_path": "numpydantic/validation/__init__.py",
+      "size_bytes": 212,
+      "sha256": "0af9d0781642e75e3ce8dd2239ae69cc4267daf286bc38970150ed4a2f94aae3"
+    },
+    {
+      "path": "numpydantic/validation/dtype.py",
+      "wheel_path": "numpydantic/validation/dtype.py",
+      "size_bytes": 1861,
+      "sha256": "12721aa7ff763b783e7d20bb5243f72ec003ab87ad336f3ef013b07ec2ac02ed"
+    },
+    {
+      "path": "numpydantic/validation/shape.py",
+      "wheel_path": "numpydantic/validation/shape.py",
+      "size_bytes": 7937,
+      "sha256": "86b8047531c00fb5a33b1b48fcb267f995969ea36e8828a48445784f0057b0a4"
+    },
+    {
+      "path": "numpydantic/vendor/.DS_Store",
+      "wheel_path": "numpydantic/vendor/.DS_Store",
+      "size_bytes": 6148,
+      "sha256": "65eb705b4cfb6eadf8dbe2a307d133fdd8f19433779a121b3d4cba4642b64e9a"
+    },
+    {
+      "path": "numpydantic/vendor/__init__.py",
+      "wheel_path": "numpydantic/vendor/__init__.py",
+      "size_bytes": 349,
+      "sha256": "0cb4f0712ab11ddd053de0f75b5e1439aee39afd4c3818fbb2a761828a8fd5ae"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/.DS_Store",
+      "wheel_path": "numpydantic/vendor/nptyping/.DS_Store",
+      "size_bytes": 6148,
+      "sha256": "efcfe924ed3f9e324a01ff2ad92297d90b7cc63e3ba78f25d09a9aa0c7d694cc"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/__init__.py",
+      "wheel_path": "numpydantic/vendor/nptyping/__init__.py",
+      "size_bytes": 3942,
+      "sha256": "1012ef4204d12c228be6a4e39aad1dd0827ee30cda559fc0942771bd35f6f847"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/assert_isinstance.py",
+      "wheel_path": "numpydantic/vendor/nptyping/assert_isinstance.py",
+      "size_bytes": 1893,
+      "sha256": "f8a6c919c42b5648855f1c80a66856d6b769780360611bcd0504b5d60f155dd7"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/base_meta_classes.py",
+      "wheel_path": "numpydantic/vendor/nptyping/base_meta_classes.py",
+      "size_bytes": 7519,
+      "sha256": "faec3e944b2e33b9dd9f60c786c3baf5ba541c79dd0f3cfc7ffd68aa517771ca"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/error.py",
+      "wheel_path": "numpydantic/vendor/nptyping/error.py",
+      "size_bytes": 1675,
+      "sha256": "99fd67f5ac0793805a86c2d64ae674dd1157f564203e9b8d230364f99ac8ddd5"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/ndarray.py",
+      "wheel_path": "numpydantic/vendor/nptyping/ndarray.py",
+      "size_bytes": 6772,
+      "sha256": "d9c27b901f3db74d6b5bf52f45ddb93e193e56d2bf52b0fd40629e8e97f7e847"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/ndarray.pyi",
+      "wheel_path": "numpydantic/vendor/nptyping/ndarray.pyi",
+      "size_bytes": 1122,
+      "sha256": "65f06eb05a296487ecadda4c60fd49d9bf944166cbe1443822461156b95e2928"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/nptyping_type.py",
+      "wheel_path": "numpydantic/vendor/nptyping/nptyping_type.py",
+      "size_bytes": 1196,
+      "sha256": "fd6d1ef74dcc793623095ac352ccb492ac46974db28b1b4130fa3c32992f4436"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/package_info.py",
+      "wheel_path": "numpydantic/vendor/nptyping/package_info.py",
+      "size_bytes": 1404,
+      "sha256": "3d482cd4f35782fc722cba8749bfe8650acb1ae6fd6b2bd5912fac5f05b0bcf1"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/pandas_/__init__.py",
+      "wheel_path": "numpydantic/vendor/nptyping/pandas_/__init__.py",
+      "size_bytes": 31,
+      "sha256": "d5c67fe29de6f51c58a97da5cda26684d4cc8af1e8c74853940c0770b6ee6b94"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/pandas_/dataframe.py",
+      "wheel_path": "numpydantic/vendor/nptyping/pandas_/dataframe.py",
+      "size_bytes": 4593,
+      "sha256": "c390273be580a3f214d7497bf3d052363ab9af4d276650080ef6b2db4b8338bb"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/pandas_/dataframe.pyi",
+      "wheel_path": "numpydantic/vendor/nptyping/pandas_/dataframe.pyi",
+      "size_bytes": 1127,
+      "sha256": "cc3fc096189ed50ed5015ff63af1fde137c4c75e6b6af1a4150413317398ff79"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/pandas_/typing_.py",
+      "wheel_path": "numpydantic/vendor/nptyping/pandas_/typing_.py",
+      "size_bytes": 1472,
+      "sha256": "5d4bb5973ca630392bff136275aa8775266c858228a86ba86d20803054331307"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/py.typed",
+      "wheel_path": "numpydantic/vendor/nptyping/py.typed",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/recarray.py",
+      "wheel_path": "numpydantic/vendor/nptyping/recarray.py",
+      "size_bytes": 2856,
+      "sha256": "b62d2b3885215fb536eb745dd412abfe4a6181aeb2a21175b15cd45f04ce2e2f"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/recarray.pyi",
+      "wheel_path": "numpydantic/vendor/nptyping/recarray.pyi",
+      "size_bytes": 1124,
+      "sha256": "4750d40c0dd9340004e00df4d1846a4e5893a84091f4e590dfc34b685f411a8c"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/shape.py",
+      "wheel_path": "numpydantic/vendor/nptyping/shape.py",
+      "size_bytes": 2451,
+      "sha256": "7b04608a1ac107d621d5d13b59c39c25788b10f931a7f79d4c9baf25898b8034"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/shape.pyi",
+      "wheel_path": "numpydantic/vendor/nptyping/shape.pyi",
+      "size_bytes": 1478,
+      "sha256": "1d587091b87346e8bd236bb720f1b0d332d7fc493b59bddaefcd2dead707165d"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/shape_expression.py",
+      "wheel_path": "numpydantic/vendor/nptyping/shape_expression.py",
+      "size_bytes": 7206,
+      "sha256": "dc53f2fa487c6c8b3c59149104083e4c50bfaabe0d10cab427910fbddb43c1c5"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/structure.py",
+      "wheel_path": "numpydantic/vendor/nptyping/structure.py",
+      "size_bytes": 3495,
+      "sha256": "c305132abaef16744044a7edeefd8e154e33569fee2f8d4636b5ae79fafd8a52"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/structure.pyi",
+      "wheel_path": "numpydantic/vendor/nptyping/structure.pyi",
+      "size_bytes": 1884,
+      "sha256": "b1cb17af0e47dc2da2ccc2984e7ac4335be83c852e7b46d5aeb1ab981d2fe327"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/structure_expression.py",
+      "wheel_path": "numpydantic/vendor/nptyping/structure_expression.py",
+      "size_bytes": 13741,
+      "sha256": "d874c5d703fecfed3c4757b02f634fd6c7375322e661d56791cf6b5128d78ded"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/typing_.py",
+      "wheel_path": "numpydantic/vendor/nptyping/typing_.py",
+      "size_bytes": 4332,
+      "sha256": "58f726f69fce8726fc2fbae49ff63e59c35a2c16326c3e1c5a0386d495146bbe"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "numpydantic-1.8.1.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic-1.8.1.dist-info/REQUESTED",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/__pycache__/annotation.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/__pycache__/dtype.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/__pycache__/exceptions.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/__pycache__/maps.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/__pycache__/meta.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/__pycache__/ndarray.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/__pycache__/schema.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/__pycache__/serialization.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/__pycache__/types.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/interface/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/interface/__pycache__/dask.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/interface/__pycache__/hdf5.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/interface/__pycache__/interface.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/interface/__pycache__/numpy.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/interface/__pycache__/video.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/interface/__pycache__/xarray.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/interface/__pycache__/zarr.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/testing/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/testing/__pycache__/cases.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/testing/__pycache__/helpers.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/testing/__pycache__/interfaces.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/validation/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/validation/__pycache__/dtype.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/validation/__pycache__/shape.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/vendor/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/__pycache__/assert_isinstance.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/__pycache__/base_meta_classes.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/__pycache__/error.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/__pycache__/ndarray.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/__pycache__/nptyping_type.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/__pycache__/package_info.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/__pycache__/recarray.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/__pycache__/shape.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/__pycache__/shape_expression.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/__pycache__/structure.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/__pycache__/structure_expression.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/__pycache__/typing_.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/pandas_/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/pandas_/__pycache__/dataframe.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "numpydantic/vendor/nptyping/pandas_/__pycache__/typing_.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "9b08cac5031f07c111e26385d6ab31d14b34a971528996fcc5912e66d274c448",
+  "wheel_size_bytes": 97152,
+  "rebuilt_record_verified_files": 57,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:20.752125+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 57,
+  "source_record_verified_file_count": 59
+}

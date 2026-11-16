@@ -1,0 +1,32 @@
+{
+  "checked_at_utc": "2026-10-31T08:36:57.664283+00:00",
+  "scope": "Shell syntax and required environment arguments only; no container or GPU executed",
+  "status": "PASS",
+  "files": [
+    {
+      "path": "WALL_RLT_Inference_Deployment.md",
+      "bash_blocks_checked": 17,
+      "docker_user_commands_checked": 8
+    },
+    {
+      "path": "WALL_RLT_5070Ti_Official_WALL_Runbook.md",
+      "bash_blocks_checked": 20,
+      "docker_user_commands_checked": 3
+    },
+    {
+      "path": "docker/OFFLINE-DEPLOY.md",
+      "bash_blocks_checked": 5,
+      "docker_user_commands_checked": 1
+    },
+    {
+      "path": "docker/verify_h100_bundle.sh",
+      "bash_blocks_checked": 1,
+      "docker_user_commands_checked": 1
+    },
+    {
+      "path": "scripts/docker_build_validate.sh",
+      "bash_blocks_checked": 1,
+      "docker_user_commands_checked": 1
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "environment": ".venv-rlt",
+  "versions_equal_to_source": true,
+  "distributions": 174,
+  "modules": {
+    "torch": "/home/crp-5070ti-01/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/__init__.py",
+    "numpy": "/home/crp-5070ti-01/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/numpy/__init__.py",
+    "transformers": "/home/crp-5070ti-01/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/transformers/__init__.py",
+    "wall_x": "/home/crp-5070ti-01/workspaces/WALL-OSS-CRP/wall-x/wall_x/__init__.py",
+    "dmuon": "/home/crp-5070ti-01/workspaces/WALL-OSS-CRP/dmuon/dmuon/__init__.py",
+    "lerobot": "/home/crp-5070ti-01/workspaces/WALL-OSS-CRP/lerobot/src/lerobot/__init__.py"
+  },
+  "torch_cuda": "13.0",
+  "cpu_matmul": "PASS",
+  "pip_check_exit_code": 1,
+  "pip_check_issues": [
+    "lerobot 0.4.4 requires cmake, which is not installed.",
+    "lerobot 0.4.4 requires deepdiff, which is not installed.",
+    "lerobot 0.4.4 requires diffusers, which is not installed.",
+    "lerobot 0.4.4 requires gymnasium, which is not installed.",
+    "lerobot 0.4.4 requires imageio, which is not installed.",
+    "lerobot 0.4.4 requires jsonlines, which is not installed.",
+    "lerobot 0.4.4 requires pynput, which is not installed.",
+    "lerobot 0.4.4 requires pyserial, which is not installed.",
+    "lerobot 0.4.4 requires rerun-sdk, which is not installed.",
+    "lerobot 0.4.4 requires torchcodec, which is not installed.",
+    "lerobot 0.4.4 has requirement huggingface-hub[cli,hf-transfer]<0.36.0,>=0.34.2, but you have huggingface-hub 1.33.0."
+  ],
+  "gpu_validation": "NOT_RUN"
+}

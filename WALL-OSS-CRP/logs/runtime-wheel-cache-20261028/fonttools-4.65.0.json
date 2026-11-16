@@ -1,0 +1,1835 @@
+{
+  "package": "fonttools",
+  "version": "4.65.0",
+  "status": "PASS",
+  "source": {
+    "kind": "official PyPI wheel download",
+    "metadata_url": "https://pypi.org/pypi/fonttools/4.65.0/json",
+    "url": "https://files.pythonhosted.org/packages/ee/56/151b5e81d20c63834f48ad37a0cbbbe2f9b248e38f8d10387f0cf5219244/fonttools-4.65.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "pypi_sha256": "fb53892b570f7f1f0055e75fc4de32673e32f749c4c8a606b63d5c436650e634"
+  },
+  "filename": "fonttools-4.65.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+  "wheel_sha256": "fb53892b570f7f1f0055e75fc4de32673e32f749c4c8a606b63d5c436650e634",
+  "wheel_size_bytes": 5253649,
+  "wheel_tags": [
+    "cp310-cp310-manylinux_2_17_x86_64",
+    "cp310-cp310-manylinux2014_x86_64"
+  ],
+  "record_verified_files": [
+    {
+      "path": "fontTools/__init__.py",
+      "size_bytes": 183,
+      "sha256": "3616a51940f33b52881471f831d2abc4563d6ade16820afa7c38aac487caa90d"
+    },
+    {
+      "path": "fontTools/__main__.py",
+      "size_bytes": 925,
+      "sha256": "563906875503fa2d734c3035757a35b9e712b3a3f11dd190e6f94293f982098b"
+    },
+    {
+      "path": "fontTools/afmLib.py",
+      "size_bytes": 13374,
+      "sha256": "ae6a7e71740c18b279c7f6ed992f6050a5398ba6123106b59cc251c9404623bb"
+    },
+    {
+      "path": "fontTools/agl.py",
+      "size_bytes": 113030,
+      "sha256": "53dea8efc668ae7e6ece768b5aac554b15cab85d9ee4a14546fbf5cd12d68aa4"
+    },
+    {
+      "path": "fontTools/annotations.py",
+      "size_bytes": 1225,
+      "sha256": "05d208ae23580f305f8278b058583fbbbd6a2d99d5d2c09c9f8f950245e460d3"
+    },
+    {
+      "path": "fontTools/fontBuilder.py",
+      "size_bytes": 34277,
+      "sha256": "95be15ea46c8b72dfa745eb7888cf7fe9368fbf025f3a0ca9a0f61a96d01e687"
+    },
+    {
+      "path": "fontTools/help.py",
+      "size_bytes": 1125,
+      "sha256": "6c08dab6f22157b4c9c9723b5a1b317583b861596149c657bbf911b4700d10fa"
+    },
+    {
+      "path": "fontTools/tfmLib.py",
+      "size_bytes": 14480,
+      "sha256": "0e283926330d73836173a3664793bfc2e06deb745b70cbb6e42410676d9bb394"
+    },
+    {
+      "path": "fontTools/ttx.py",
+      "size_bytes": 17276,
+      "sha256": "c3084baa3acd590251a8ac54d597971e98f0c633f1c4d009e935af8d98f49f97"
+    },
+    {
+      "path": "fontTools/unicode.py",
+      "size_bytes": 1237,
+      "sha256": "659ece3265af23257520bd64ea2a13cda440877b54be6ea0bcaed08056ce2076"
+    },
+    {
+      "path": "fontTools/cffLib/CFF2ToCFF.py",
+      "size_bytes": 8200,
+      "sha256": "e6c82cd00ef843aaed07252220174c2416f5364b7913de8b1f2dbe9e9daedcc2"
+    },
+    {
+      "path": "fontTools/cffLib/CFFToCFF2.py",
+      "size_bytes": 10119,
+      "sha256": "42793b95896c4d11e795943a35735daff7f8309c19436d64712d3c2856ecc98f"
+    },
+    {
+      "path": "fontTools/cffLib/__init__.py",
+      "size_bytes": 107890,
+      "sha256": "446d63525f36b5e85cb2323449bb0a27ff8c8554ef2b14364e1816388dd20349"
+    },
+    {
+      "path": "fontTools/cffLib/specializer.py",
+      "size_bytes": 32609,
+      "sha256": "bec38f911fe31cd7bab444901239a6d22efacbbb1623930aa376ec4e6237b0d3"
+    },
+    {
+      "path": "fontTools/cffLib/transforms.py",
+      "size_bytes": 17455,
+      "sha256": "4842197355f15988955d506ca0d9ba2d3bccf5250ded9efa40e692025475642a"
+    },
+    {
+      "path": "fontTools/cffLib/width.py",
+      "size_bytes": 6073,
+      "sha256": "f72bccbd3a5645a3f0ca937973c49074a65bd6432a524afd956980c65c9f6f63"
+    },
+    {
+      "path": "fontTools/colorLib/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fontTools/colorLib/builder.py",
+      "size_bytes": 24961,
+      "sha256": "de53bdbc565269ab44b267629c981cd1c82da562e4cece771ccb32498cfdb685"
+    },
+    {
+      "path": "fontTools/colorLib/errors.py",
+      "size_bytes": 41,
+      "sha256": "0ac6af8a2471c6ba60557e1b966eca0b22bce79de58f02f8e3190939e0b953b5"
+    },
+    {
+      "path": "fontTools/colorLib/geometry.py",
+      "size_bytes": 5518,
+      "sha256": "dd27324ab47660325aedde4ae7fc4ce58b75fb734257eaf2f2291803957055b2"
+    },
+    {
+      "path": "fontTools/colorLib/table_builder.py",
+      "size_bytes": 7469,
+      "sha256": "65e96d598ea7f983e226ffe14358815e8105006ef410ac59c92720b0c2941465"
+    },
+    {
+      "path": "fontTools/colorLib/unbuilder.py",
+      "size_bytes": 2142,
+      "sha256": "896f84e48dfd5ac57cd8adcd8023b80a3cf09b55aacc6aedca91edf1ea706c73"
+    },
+    {
+      "path": "fontTools/config/__init__.py",
+      "size_bytes": 3098,
+      "sha256": "b1a18b29665224cca35c7052413ea12d355a57d79433476d2003cb7b047b2f28"
+    },
+    {
+      "path": "fontTools/cu2qu/__init__.py",
+      "size_bytes": 618,
+      "sha256": "0ae73b52095bd274a06ab693c5763927c6d17b39c7e700295b4b9a90deccc9c6"
+    },
+    {
+      "path": "fontTools/cu2qu/__main__.py",
+      "size_bytes": 91,
+      "sha256": "832a95e98abc787f0c3ad7d6092d04573f50dbab94b3addde2bceafc92cc47e6"
+    },
+    {
+      "path": "fontTools/cu2qu/benchmark.py",
+      "size_bytes": 1296,
+      "sha256": "c1ab0f2667fcabd93d5078e91c2842dd640019b040c8737d3ef2735ef582d05c"
+    },
+    {
+      "path": "fontTools/cu2qu/cli.py",
+      "size_bytes": 6075,
+      "sha256": "713eb8d7d1539eb1959b8a49787ddb39e9d0abb2c71808fe186aedbed4f38386"
+    },
+    {
+      "path": "fontTools/cu2qu/cu2qu.c",
+      "size_bytes": 693337,
+      "sha256": "677b3855c3c675f49133085352fa6bc87c0b341e43d0803fbd845a8d6a96a573"
+    },
+    {
+      "path": "fontTools/cu2qu/cu2qu.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 1083368,
+      "sha256": "dd6a5c29f71f6eb74ef42180fdc4c8f693dfa5b060cca91b7a5d03b3ecf3405a"
+    },
+    {
+      "path": "fontTools/cu2qu/cu2qu.py",
+      "size_bytes": 18282,
+      "sha256": "20c64d743f8bb527521242f630faa3b9b8e770cb712a2c9c41720ab7e0488e3e"
+    },
+    {
+      "path": "fontTools/cu2qu/errors.py",
+      "size_bytes": 2441,
+      "sha256": "3f224d332f251c3b4aa5f1647349e433c1788cd2d9002e253d008dd4a9b86e98"
+    },
+    {
+      "path": "fontTools/cu2qu/ufo.py",
+      "size_bytes": 13123,
+      "sha256": "a7367f60412a790bc6b8425e1c9de9759e14ddd640d27502cfc44ccad043c271"
+    },
+    {
+      "path": "fontTools/designspaceLib/__init__.py",
+      "size_bytes": 131897,
+      "sha256": "1a64255e50265859ec12f42755899b539b4c16456644f152b00db922a064079a"
+    },
+    {
+      "path": "fontTools/designspaceLib/__main__.py",
+      "size_bytes": 102,
+      "sha256": "3d63f2fa84ec140ebb94c9d11688dbb2e376f833435953c2547bd4418901cc59"
+    },
+    {
+      "path": "fontTools/designspaceLib/split.py",
+      "size_bytes": 19239,
+      "sha256": "141d4dbaf8543b8e77517bde4198bda32ad6fdc6a808f3374400e9d6b616903b"
+    },
+    {
+      "path": "fontTools/designspaceLib/statNames.py",
+      "size_bytes": 9237,
+      "sha256": "81718a595af58eedbfa0bf91fc3932a19dc6948ee67cb391a2fa64d446e09af7"
+    },
+    {
+      "path": "fontTools/designspaceLib/types.py",
+      "size_bytes": 5320,
+      "sha256": "a1f2bae6a5cd003a9ca65ef323bd8f6b9b34efe726ec6e3588498b555e38f84b"
+    },
+    {
+      "path": "fontTools/diff/__init__.py",
+      "size_bytes": 13626,
+      "sha256": "0e0601c2d35eae29bd831998bf2dca4fc4c4c7acc7c37cc316e01a00f010a757"
+    },
+    {
+      "path": "fontTools/diff/__main__.py",
+      "size_bytes": 92,
+      "sha256": "b15f435ecbfdcaea0770962e6107a4a4bc445e15b22c9f53171d094925ddb60a"
+    },
+    {
+      "path": "fontTools/diff/color.py",
+      "size_bytes": 1387,
+      "sha256": "8abb414e529601cd8542f63cb48dff86454291f286c5352abb717b5c535bf987"
+    },
+    {
+      "path": "fontTools/diff/diff.py",
+      "size_bytes": 8964,
+      "sha256": "4b0fd07726244c98a5cc3690328e628c22155de2396c370dcd466b07b7b6534a"
+    },
+    {
+      "path": "fontTools/diff/utils.py",
+      "size_bytes": 1020,
+      "sha256": "39375735f2b824ef15bd3e1eb9e67e5ed61fd3594ea29d17181229f3806d3f3f"
+    },
+    {
+      "path": "fontTools/encodings/MacRoman.py",
+      "size_bytes": 3576,
+      "sha256": "e2f128a140e6da02c21bc288203851c66e7e03ae30ed7ae13fd7230d1af6128d"
+    },
+    {
+      "path": "fontTools/encodings/StandardEncoding.py",
+      "size_bytes": 3581,
+      "sha256": "128dc0184f0513fa7e215618b95d3decaa2e4ac17752b5e84513745f2bd86ebb"
+    },
+    {
+      "path": "fontTools/encodings/__init__.py",
+      "size_bytes": 75,
+      "sha256": "0c90569a85ff1da6aeeea9609af5b27db852ceb5f6a8beb7e919ecec21b4d699"
+    },
+    {
+      "path": "fontTools/encodings/codecs.py",
+      "size_bytes": 4722,
+      "sha256": "cac06a511f9501ae9b0c8fb3a6d82bdc05ff70db7612c112a1a603d96edea607"
+    },
+    {
+      "path": "fontTools/feaLib/__init__.py",
+      "size_bytes": 213,
+      "sha256": "8e522bbb6821c6f6f51e10b925ed810978c52661509582a9aeea2b3e8cf706f4"
+    },
+    {
+      "path": "fontTools/feaLib/__main__.py",
+      "size_bytes": 2239,
+      "sha256": "3917e9bd060488c1c1f870d9d707af380904d2b36abcc89f13816ce45dce4112"
+    },
+    {
+      "path": "fontTools/feaLib/ast.py",
+      "size_bytes": 74158,
+      "sha256": "e3c63abe9483ff061fb9c5b287f6d0b737f6010157fa93b006fb3175ca550f3d"
+    },
+    {
+      "path": "fontTools/feaLib/builder.py",
+      "size_bytes": 76212,
+      "sha256": "aa54d74c0d0f92d6e1d2066bce5c4afd8a88becd4d496c307a28f1ab14c88864"
+    },
+    {
+      "path": "fontTools/feaLib/error.py",
+      "size_bytes": 648,
+      "sha256": "073ff9b4d70d55c63bfe7ac098595036142576da9959df165064361373d6859a"
+    },
+    {
+      "path": "fontTools/feaLib/lexer.c",
+      "size_bytes": 839901,
+      "sha256": "ce655e58eddd5d104dc74ad8f4b64b956afb0f573c077f0df1470be9665f3107"
+    },
+    {
+      "path": "fontTools/feaLib/lexer.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 1488896,
+      "sha256": "704a56f298cf7d32987db88d11c3c174d6717295dac5809199cf4eebcc0cfb69"
+    },
+    {
+      "path": "fontTools/feaLib/lexer.py",
+      "size_bytes": 11132,
+      "sha256": "357599b7f652a263ffde3616f93cb2991413b65174268325731fa27088c35fba"
+    },
+    {
+      "path": "fontTools/feaLib/location.py",
+      "size_bytes": 234,
+      "sha256": "257cc7a86579e841dd72af36dc0c00e6868ad3985fff5c925a949c6e8df3182d"
+    },
+    {
+      "path": "fontTools/feaLib/lookupDebugInfo.py",
+      "size_bytes": 304,
+      "sha256": "81546be7e00f59f4ff6b9fb6e6146e6b04955fc7c4bd756c3922d6907f754f6c"
+    },
+    {
+      "path": "fontTools/feaLib/parser.py",
+      "size_bytes": 100830,
+      "sha256": "235c0846686b11cb9063b9ee7de7efaffe46118c68c0f062f51465351665a73c"
+    },
+    {
+      "path": "fontTools/feaLib/variableScalar.py",
+      "size_bytes": 9785,
+      "sha256": "1044fa899cf9eedba65386f2e964f002d04c015f046d095d7de5ed398aa90763"
+    },
+    {
+      "path": "fontTools/merge/__init__.py",
+      "size_bytes": 8255,
+      "sha256": "88d4c7c47afdca5588be2d74e2a4f90f46ade8ad52a4da1c72ed6936fd9faa59"
+    },
+    {
+      "path": "fontTools/merge/__main__.py",
+      "size_bytes": 93,
+      "sha256": "6ecb7e09784a9a3780574fb3b0997bffdc1b6ae06cc5e7a21ec732110f11be01"
+    },
+    {
+      "path": "fontTools/merge/base.py",
+      "size_bytes": 2388,
+      "sha256": "cf68676edd21225dfd94267eb92611afb5454f09ad9bd187e62fcbbb57f02377"
+    },
+    {
+      "path": "fontTools/merge/cmap.py",
+      "size_bytes": 6727,
+      "sha256": "2324c32da9d0d13d5fcbe6cc8681b3dd57027c0a6333f8cc86268a6282a2b1e0"
+    },
+    {
+      "path": "fontTools/merge/layout.py",
+      "size_bytes": 16074,
+      "sha256": "728a92e184f8201bfc3d531b1ce055fcda0f0de3ae5418c9338b76c82ab7dcc1"
+    },
+    {
+      "path": "fontTools/merge/options.py",
+      "size_bytes": 2501,
+      "sha256": "c64a3fd7e584adc350922ac40b320e398c52251fdb46d75061060eb6681c7182"
+    },
+    {
+      "path": "fontTools/merge/tables.py",
+      "size_bytes": 10957,
+      "sha256": "a960cd48c4bdc21cbbed19b869cc0a2b866ce4b9eb0464c7dabbcccdbafe3b43"
+    },
+    {
+      "path": "fontTools/merge/unicode.py",
+      "size_bytes": 4273,
+      "sha256": "91bd49adfba8ab529471586148a9df940103ff0319c570e357007e088f64d396"
+    },
+    {
+      "path": "fontTools/merge/util.py",
+      "size_bytes": 3377,
+      "sha256": "fafdcc79f651a6f31b648c3e74dcaf469567fdf7f8c094f5d3d5f9701a88ec04"
+    },
+    {
+      "path": "fontTools/misc/__init__.py",
+      "size_bytes": 75,
+      "sha256": "0c90569a85ff1da6aeeea9609af5b27db852ceb5f6a8beb7e919ecec21b4d699"
+    },
+    {
+      "path": "fontTools/misc/arrayTools.py",
+      "size_bytes": 11457,
+      "sha256": "cdced7f92e9bbb8def2b09b7ef9a78ce4ada50cf7b0efb5938a3c5bffa36aa48"
+    },
+    {
+      "path": "fontTools/misc/bezierTools.c",
+      "size_bytes": 2049184,
+      "sha256": "5409a1c23d69da908847798727cb551d8a0b535b6f53f7cd6b3b8ee557aadacb"
+    },
+    {
+      "path": "fontTools/misc/bezierTools.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 4832288,
+      "sha256": "93fa459368a794f101dc617e4d42f3a8247f6a6576c4b2d1f75c6ef2ae1667b2"
+    },
+    {
+      "path": "fontTools/misc/bezierTools.py",
+      "size_bytes": 45239,
+      "sha256": "c3e13f1c1fd9b66051a932e3cf9106f28edc3504ec495161dde19fccb53e115b"
+    },
+    {
+      "path": "fontTools/misc/classifyTools.py",
+      "size_bytes": 5611,
+      "sha256": "6e16ccb4668bc6795edf8f7cbe306d011d85eb27cc6b0338ecd6bf8dbf650466"
+    },
+    {
+      "path": "fontTools/misc/cliTools.py",
+      "size_bytes": 1861,
+      "sha256": "c575641572b1ca7470148ebd9c0493fe02e1b666fcad9c162b978edaac9ead5c"
+    },
+    {
+      "path": "fontTools/misc/configTools.py",
+      "size_bytes": 11228,
+      "sha256": "4f5277c8a449ce11ad5e115e35473dddd46f9252b0e0d71b7b44edac9276e196"
+    },
+    {
+      "path": "fontTools/misc/cython.py",
+      "size_bytes": 681,
+      "sha256": "16f43b3e86336e2db2ee216952413e42ab4a5ae7987e8a705315d34b37aea229"
+    },
+    {
+      "path": "fontTools/misc/dictTools.py",
+      "size_bytes": 2417,
+      "sha256": "5718daaec189ba4ff06b7cf6f45482b4a64d0857d7b4c062344bb444f025a439"
+    },
+    {
+      "path": "fontTools/misc/eexec.py",
+      "size_bytes": 3331,
+      "sha256": "18d9f638246f3b51db6c87833f193d8b48253bb72ec7f0106a854c5e1051f32f"
+    },
+    {
+      "path": "fontTools/misc/encodingTools.py",
+      "size_bytes": 2072,
+      "sha256": "cfbf89e08aa234cc0283c1e64b0654592f5383c5f72f87f30b3ac32db2168f6b"
+    },
+    {
+      "path": "fontTools/misc/enumTools.py",
+      "size_bytes": 501,
+      "sha256": "154dd307de58e46de261f0a1c05c2828a1032f80a706ad78c40cc60bebdcf734"
+    },
+    {
+      "path": "fontTools/misc/etree.py",
+      "size_bytes": 17155,
+      "sha256": "8664efec4321811f30b00c36e3012415ddcbc982acb3b922f953fd9840f4b7cc"
+    },
+    {
+      "path": "fontTools/misc/filenames.py",
+      "size_bytes": 8223,
+      "sha256": "30c08edf18e4d6970373e6daa1b70a77c21da053edf9b706aaef2df075060242"
+    },
+    {
+      "path": "fontTools/misc/fixedTools.py",
+      "size_bytes": 7703,
+      "sha256": "400fe97b31d87aeb0e25e2ccfb916af6a23bdf616f1c600868dc205b9e5f2a8e"
+    },
+    {
+      "path": "fontTools/misc/iftSparseBitSet.py",
+      "size_bytes": 10521,
+      "sha256": "9e1a9021ade8f8fe5facc764e179724b310098673b8a0a2e625841491f14eecb"
+    },
+    {
+      "path": "fontTools/misc/intTools.py",
+      "size_bytes": 586,
+      "sha256": "97aa639385189577322ed7c2d0374e0b944be9427c8a1451d33462628c39c40f"
+    },
+    {
+      "path": "fontTools/misc/iterTools.py",
+      "size_bytes": 390,
+      "sha256": "d7b1fa2cf66cce9df66d32a8368ae9eae645d4f2a3e3b0406dee501bc8ab523a"
+    },
+    {
+      "path": "fontTools/misc/lazyTools.py",
+      "size_bytes": 1020,
+      "sha256": "042e8c985f8ecc9dc6ac10fc4d80d9f9509237850ec74a4dd2bde8178192a22c"
+    },
+    {
+      "path": "fontTools/misc/loggingTools.py",
+      "size_bytes": 19932,
+      "sha256": "fe6f28b021b675a80fe2bc6e686699b8965c766302ac8502a0a623b75b1ef395"
+    },
+    {
+      "path": "fontTools/misc/macCreatorType.py",
+      "size_bytes": 1593,
+      "sha256": "25ef63b6a52bec43dba47dd0c65565de98b3a10fb500e3cc04872d1c83133379"
+    },
+    {
+      "path": "fontTools/misc/macRes.py",
+      "size_bytes": 8579,
+      "sha256": "193fe99df3f0d8d0afbce17cea71cb0273ad67a48c1ea12e2e7b5aa655f3bc73"
+    },
+    {
+      "path": "fontTools/misc/psCharStrings.py",
+      "size_bytes": 43467,
+      "sha256": "89f5c6ca9d64ad1394769c64504c4fd63ecd96ae22268d4bd7fc3b23a82d2b18"
+    },
+    {
+      "path": "fontTools/misc/psLib.py",
+      "size_bytes": 12098,
+      "sha256": "228b2cb0b0b8f7c75e8e17fc44c60788fb31e8de72c86997592be42eea7980f3"
+    },
+    {
+      "path": "fontTools/misc/psOperators.py",
+      "size_bytes": 15700,
+      "sha256": "f522e5e4f3c1ba52e8d17c60fddaa524c8ad34805d88629d91784e5ac3526191"
+    },
+    {
+      "path": "fontTools/misc/py23.py",
+      "size_bytes": 2238,
+      "sha256": "68f542114cff75e820c0b0427934ac71c5fa42025abd9aaf755b6e869ceb3ef0"
+    },
+    {
+      "path": "fontTools/misc/roundTools.py",
+      "size_bytes": 4871,
+      "sha256": "e68420f511f1942e3e29944ede9686ac37d4958ec481de24124763db607787f0"
+    },
+    {
+      "path": "fontTools/misc/sstruct.py",
+      "size_bytes": 7114,
+      "sha256": "1d727226c3e48e41f26542bab90e730a66f96dae44ae86f245fa0a3be5a1847f"
+    },
+    {
+      "path": "fontTools/misc/symfont.py",
+      "size_bytes": 6961,
+      "sha256": "c2efdf31c05f3cce75a5235ccc91a6bd36fa87562afb97a7d31ca6b98c28aef8"
+    },
+    {
+      "path": "fontTools/misc/testTools.py",
+      "size_bytes": 7052,
+      "sha256": "def8ff2a59544151225456d2d12cd399eb8abf8e3e2fe762b08d5d6785e139fc"
+    },
+    {
+      "path": "fontTools/misc/textTools.py",
+      "size_bytes": 3482,
+      "sha256": "e2320fc420c4e49bface379fc8b768bd80cb5a4f9220ef427de040b027de41db"
+    },
+    {
+      "path": "fontTools/misc/timeTools.py",
+      "size_bytes": 2232,
+      "sha256": "eee357e62cf8a4188ae22ef8688ccd8a22dfacda084206e20064d501c15f7af5"
+    },
+    {
+      "path": "fontTools/misc/transform.py",
+      "size_bytes": 16003,
+      "sha256": "e28ade702521b09b7c0e78b446986eb05f863dbcf1f767e562c8fdbbe7455cc2"
+    },
+    {
+      "path": "fontTools/misc/treeTools.py",
+      "size_bytes": 1269,
+      "sha256": "b4b5a4c320c779950f54e18d9c9783e0f9fbc766d07997adc0929a1005b62763"
+    },
+    {
+      "path": "fontTools/misc/vector.py",
+      "size_bytes": 4061,
+      "sha256": "b2fa31d7fc84781821287327bd36b74b51b443900ca5ff082b739889055576a6"
+    },
+    {
+      "path": "fontTools/misc/visitor.py",
+      "size_bytes": 5754,
+      "sha256": "cf004055f677313b2b6e13458f4de94928cd4724faa0691aadefa47d690de67b"
+    },
+    {
+      "path": "fontTools/misc/xmlReader.py",
+      "size_bytes": 6579,
+      "sha256": "d75761a8b35bb53526845ef2071656453173ba337992f36e6129aa9de8107539"
+    },
+    {
+      "path": "fontTools/misc/xmlWriter.py",
+      "size_bytes": 7581,
+      "sha256": "581d3205de5ddbd68d1db989347b7825b0a7898c02b5270e7273d9dd513298e6"
+    },
+    {
+      "path": "fontTools/misc/filesystem/__init__.py",
+      "size_bytes": 2011,
+      "sha256": "8b0a0e8fa0e95ca93cabe351447a8e7d1c4517a95c5c886c200e3a8fe719b305"
+    },
+    {
+      "path": "fontTools/misc/filesystem/_base.py",
+      "size_bytes": 4010,
+      "sha256": "a7be0eef144469d7cf420ccf27d98fdde86ed191c382c997969b0bf429d346ca"
+    },
+    {
+      "path": "fontTools/misc/filesystem/_copy.py",
+      "size_bytes": 1361,
+      "sha256": "89f312b3e03f6f3d406b8b4842b95477d1ed7494397e9e4cdc1ea66d8b83b572"
+    },
+    {
+      "path": "fontTools/misc/filesystem/_errors.py",
+      "size_bytes": 955,
+      "sha256": "e4268a9613dba8e1cc4e9e4d919b169ba310d650eaa1bd51fdf211b6c038a99d"
+    },
+    {
+      "path": "fontTools/misc/filesystem/_info.py",
+      "size_bytes": 2013,
+      "sha256": "a5b57b6c34c9e45f26b3a6a52b7e09d056585b39913bb153d0d337c91037733a"
+    },
+    {
+      "path": "fontTools/misc/filesystem/_osfs.py",
+      "size_bytes": 6323,
+      "sha256": "d022af9b3c001262b743f095e551516bcc546e4ec6f45799092172cc513f0e83"
+    },
+    {
+      "path": "fontTools/misc/filesystem/_path.py",
+      "size_bytes": 2122,
+      "sha256": "b91b77d18a3ef1b81bd7f320d4beb5edae7c7643fdbdcf7e1fa732a4aa5fe059"
+    },
+    {
+      "path": "fontTools/misc/filesystem/_subfs.py",
+      "size_bytes": 3028,
+      "sha256": "bd1a2d430c8b55f20d6d1f3cc4805051babd8f82a6835fe626f1219e9bcafede"
+    },
+    {
+      "path": "fontTools/misc/filesystem/_tempfs.py",
+      "size_bytes": 924,
+      "sha256": "f45517742053c05b59305c7c82162e65562841d0dbd2d0c1fa35cdbb70fe432d"
+    },
+    {
+      "path": "fontTools/misc/filesystem/_tools.py",
+      "size_bytes": 972,
+      "sha256": "afbe5da5a769ec2f44750eabee9250299942643509cd5ab68a46ff2d737ec022"
+    },
+    {
+      "path": "fontTools/misc/filesystem/_walk.py",
+      "size_bytes": 1655,
+      "sha256": "28c43e19abd662be12b00e55f2884b3e6cf76e88a5bd8d8fd092ab2e8c56e8d5"
+    },
+    {
+      "path": "fontTools/misc/filesystem/_zipfs.py",
+      "size_bytes": 7253,
+      "sha256": "3d24e0992c4f96d625edf2255cc11d8fa43b90c56c34bcffa9a82e581e899825"
+    },
+    {
+      "path": "fontTools/misc/plistlib/__init__.py",
+      "size_bytes": 21113,
+      "sha256": "69d15a6e4890734fc13ae262a71621c9e6713530e04d9604f839b6cdc153b616"
+    },
+    {
+      "path": "fontTools/misc/plistlib/py.typed",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fontTools/mtiLib/__init__.py",
+      "size_bytes": 46594,
+      "sha256": "31e6182e61583cd1b8d31359b26ecead2dba2ae003a7714c16afc1795bdbeceb"
+    },
+    {
+      "path": "fontTools/mtiLib/__main__.py",
+      "size_bytes": 94,
+      "sha256": "81df17f3d8e764e7beef9da4eee691d655a88a3bbedb3213e58c77e4a9745de9"
+    },
+    {
+      "path": "fontTools/otlLib/__init__.py",
+      "size_bytes": 45,
+      "sha256": "0f695e516fb782c5133857096060b5f1e741623209f34e2eb78aa2b49616b1a4"
+    },
+    {
+      "path": "fontTools/otlLib/builder.py",
+      "size_bytes": 130342,
+      "sha256": "382e74dfdd8f949dd29a57fc19c576a0411c4595b01058e1a1641a0f5202554b"
+    },
+    {
+      "path": "fontTools/otlLib/error.py",
+      "size_bytes": 335,
+      "sha256": "72d86e841b8ec196299132e2e6014fba95319179021def8bfd882413b375c022"
+    },
+    {
+      "path": "fontTools/otlLib/maxContextCalc.py",
+      "size_bytes": 3175,
+      "sha256": "ddeb382adf384da678f6c0367afd73ae5c0f262909080102c7929abf087207e2"
+    },
+    {
+      "path": "fontTools/otlLib/optimize/__init__.py",
+      "size_bytes": 1530,
+      "sha256": "514411a4d90753645ccc246df86cfbb0489813d010abd0472d76443b2bec9d7e"
+    },
+    {
+      "path": "fontTools/otlLib/optimize/__main__.py",
+      "size_bytes": 103,
+      "sha256": "9ff7ddd6d5199d7ac8e024f57d34f6fc6c1c267dd7726459b0e93d2ccad598f5"
+    },
+    {
+      "path": "fontTools/otlLib/optimize/gpos.py",
+      "size_bytes": 17668,
+      "sha256": "86d3a048fef8dc364350a17779601e27e91da8d60e9e919776557eadb1172750"
+    },
+    {
+      "path": "fontTools/pens/__init__.py",
+      "size_bytes": 75,
+      "sha256": "0c90569a85ff1da6aeeea9609af5b27db852ceb5f6a8beb7e919ecec21b4d699"
+    },
+    {
+      "path": "fontTools/pens/areaPen.py",
+      "size_bytes": 1471,
+      "sha256": "2f4183f6ab539b751ed64877db311977483ff95f54cf0731aa9a18db0f6e305b"
+    },
+    {
+      "path": "fontTools/pens/basePen.py",
+      "size_bytes": 17080,
+      "sha256": "236860d444fd96c8656097d0613f429b5a27fee54db732fbbe463a8e6097dec1"
+    },
+    {
+      "path": "fontTools/pens/boundsPen.py",
+      "size_bytes": 3128,
+      "sha256": "69befe405a711fe2bb4b56fb5efed52a62f632880df0c50acdf9f66bfa366686"
+    },
+    {
+      "path": "fontTools/pens/cairoPen.py",
+      "size_bytes": 591,
+      "sha256": "a567db15b90a10fb16c6650b3e1d6a18255d8bc7f47b8afeef40d4afc2c1cf41"
+    },
+    {
+      "path": "fontTools/pens/cocoaPen.py",
+      "size_bytes": 611,
+      "sha256": "4d56c8d3b3f24676dcafe9a5ea2535195926ebe2d73e67530a91d672d14b3c01"
+    },
+    {
+      "path": "fontTools/pens/cu2quPen.py",
+      "size_bytes": 13007,
+      "sha256": "80c530154b26ffe5b30650e34cc42236712e23685ea2619e389057f35cd85cfa"
+    },
+    {
+      "path": "fontTools/pens/explicitClosingLinePen.py",
+      "size_bytes": 3219,
+      "sha256": "90a2ad7598b069ff028f8ff2b6b20374607618ca4f3c35e6e4dc1bc395838305"
+    },
+    {
+      "path": "fontTools/pens/filterPen.py",
+      "size_bytes": 14703,
+      "sha256": "44482ca5769a4af1775d4c2a7b8d1a6dedd7fc4efe59b04fd7722a2d45012c2c"
+    },
+    {
+      "path": "fontTools/pens/freetypePen.py",
+      "size_bytes": 19908,
+      "sha256": "1c3fa05c949b80898974173cb08064d07581763bf758a1687ece8f8020ac18e6"
+    },
+    {
+      "path": "fontTools/pens/hashPointPen.py",
+      "size_bytes": 3573,
+      "sha256": "80496b172428390a7765ba4a1d158fc02eb503d3a04f626cf1cad5503f014006"
+    },
+    {
+      "path": "fontTools/pens/momentsPen.c",
+      "size_bytes": 623883,
+      "sha256": "1e29159c155af09ec9f27fd9843346a77cb7382e5a835d9494eec99b71889ae9"
+    },
+    {
+      "path": "fontTools/pens/momentsPen.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 1025032,
+      "sha256": "06fe4495c90199b465e598eff59efdbb7760c4c763e344e5897e5ca6649767c9"
+    },
+    {
+      "path": "fontTools/pens/momentsPen.py",
+      "size_bytes": 25658,
+      "sha256": "9232d55e119ee7901b97ffd8af58286f46e5d1d1deedf3d2c32afb4d12676ee8"
+    },
+    {
+      "path": "fontTools/pens/perimeterPen.py",
+      "size_bytes": 2152,
+      "sha256": "d8be1a677cc2e62d9e5af60724d7d6efa1d68b29b5213652cfaaf6eccc356bd8"
+    },
+    {
+      "path": "fontTools/pens/pointInsidePen.py",
+      "size_bytes": 6354,
+      "sha256": "4271efd83b278c57a2611681d706ee0eb000e269e0d270b5e3830cfd86bac152"
+    },
+    {
+      "path": "fontTools/pens/pointPen.py",
+      "size_bytes": 24604,
+      "sha256": "9973b94efdb993201d67d157dbd2284d04a37a1d34926b6fdd264832bbbc66f2"
+    },
+    {
+      "path": "fontTools/pens/qtPen.py",
+      "size_bytes": 633,
+      "sha256": "61731d7af630284262692fd9c024d91a041e206d521aaa4111a804a46438f9b0"
+    },
+    {
+      "path": "fontTools/pens/qu2cuPen.py",
+      "size_bytes": 3985,
+      "sha256": "a51493e37fab529ce538ff3767f46bd08bc84010b1e91588ea79cd6a2b5070b9"
+    },
+    {
+      "path": "fontTools/pens/quartzPen.py",
+      "size_bytes": 1286,
+      "sha256": "635c5943c1984340468cf856f5b0382c9f5c185ba5def9c54e831a1ffc04c847"
+    },
+    {
+      "path": "fontTools/pens/recordingPen.py",
+      "size_bytes": 12488,
+      "sha256": "6a1a2b60cdd41f919d7ac7b5cd92a01e31d692ac4c61121a4dca8ca42a9205b1"
+    },
+    {
+      "path": "fontTools/pens/reportLabPen.py",
+      "size_bytes": 2055,
+      "sha256": "485b177d14320b778713e4ca073731258764bf78124ba30e9737f1b9c376174a"
+    },
+    {
+      "path": "fontTools/pens/reverseContourPen.py",
+      "size_bytes": 4021,
+      "sha256": "b6cf2a5a439a381d10672057cdebb7a0a47f22f9491c951f4afd9dafaa94fdc3"
+    },
+    {
+      "path": "fontTools/pens/roundingPen.py",
+      "size_bytes": 4619,
+      "sha256": "366143551bde688cb6925aa2826eb3eb04103a0a3d538b426872904f43594f56"
+    },
+    {
+      "path": "fontTools/pens/statisticsPen.py",
+      "size_bytes": 9808,
+      "sha256": "a6258ae8d8e35aa93d30b44e8de136fb812cc5560cc8d53b5101460ffb6b13d8"
+    },
+    {
+      "path": "fontTools/pens/svgPathPen.py",
+      "size_bytes": 8572,
+      "sha256": "4f76fa4994bd07db1558c2bd992143b631debe242cff23893992aae5283965d8"
+    },
+    {
+      "path": "fontTools/pens/t2CharStringPen.py",
+      "size_bytes": 2931,
+      "sha256": "1a01a495be57b027abd30dfbba38112d15f1f84bb3745b32098bb30b1e27f90b"
+    },
+    {
+      "path": "fontTools/pens/teePen.py",
+      "size_bytes": 1289,
+      "sha256": "d9f8237adf1c67ea9246d0603e6641dab5da2237047544846b63a093ebe41e61"
+    },
+    {
+      "path": "fontTools/pens/transformPen.py",
+      "size_bytes": 4055,
+      "sha256": "d696ba65b8f27cc5a1f9a634ef4564c007f587c9432b55db9387df6f3348b72e"
+    },
+    {
+      "path": "fontTools/pens/ttGlyphPen.py",
+      "size_bytes": 11869,
+      "sha256": "d7fef53ebd61fcea5d53fbb1cc60c67657068d0f4321ede9a920456d370bd8d4"
+    },
+    {
+      "path": "fontTools/pens/wxPen.py",
+      "size_bytes": 679,
+      "sha256": "ada499a6c1a492125f48e1682b03a7d6100950fcb3657f46a0c1e1825eb7a7d6"
+    },
+    {
+      "path": "fontTools/qu2cu/__init__.py",
+      "size_bytes": 618,
+      "sha256": "25f9b52658d76edf75c38832bd99fa8f3126567851c79d2c8767c3a2782b3ac1"
+    },
+    {
+      "path": "fontTools/qu2cu/__main__.py",
+      "size_bytes": 92,
+      "sha256": "8f55f1aea2fb66ad7c20b1930afab381a99f31a43b99ca40f513a3ecb7485b0e"
+    },
+    {
+      "path": "fontTools/qu2cu/benchmark.py",
+      "size_bytes": 1400,
+      "sha256": "18c72bff8afb2fa2bd4a6275de2b6dfbf5ca8672aa4955033e55d41ba2199a63"
+    },
+    {
+      "path": "fontTools/qu2cu/cli.py",
+      "size_bytes": 3839,
+      "sha256": "1b7a055e7fa7e2e35e3e31a645b7b0e9888606022acf5e6fd15193fb9de227ba"
+    },
+    {
+      "path": "fontTools/qu2cu/qu2cu.c",
+      "size_bytes": 831850,
+      "sha256": "715de3ba5848074a299d3008da4fb093fa69d53903770f0e56eecace55d0397b"
+    },
+    {
+      "path": "fontTools/qu2cu/qu2cu.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 1394536,
+      "sha256": "c3f9e81ec4d4f0772d4d8d668fe14e027636f9bb14cac42a797f467e3ef1a8d3"
+    },
+    {
+      "path": "fontTools/qu2cu/qu2cu.py",
+      "size_bytes": 13138,
+      "sha256": "037226f15369a8cde459111b8320b657536e864b6cd5d1197c24eb39dec4ec78"
+    },
+    {
+      "path": "fontTools/subset/__init__.py",
+      "size_bytes": 143695,
+      "sha256": "b326b1d1f21f1e065e6d45c96203fc3519c2a178a13b835a991f1eacb68f82ba"
+    },
+    {
+      "path": "fontTools/subset/__main__.py",
+      "size_bytes": 94,
+      "sha256": "2310f7c638c7a79f0c9739f86851cf897518e1bd12c3cc93b741dfe8eb4ae82e"
+    },
+    {
+      "path": "fontTools/subset/cff.py",
+      "size_bytes": 6145,
+      "sha256": "aea31124e957e4569c5752d6f1a0e554e82580433ced390c03d6ddb187a76ac9"
+    },
+    {
+      "path": "fontTools/subset/svg.py",
+      "size_bytes": 9296,
+      "sha256": "4e9ed757e4b26420c21837042cf00c16342d140d468cacf88d9a8c6d2315b76a"
+    },
+    {
+      "path": "fontTools/subset/util.py",
+      "size_bytes": 754,
+      "sha256": "f525c561be447fd679f2e5e660f0908a5f01da2dd0eda141ff57c50c54a9a5d5"
+    },
+    {
+      "path": "fontTools/svgLib/__init__.py",
+      "size_bytes": 75,
+      "sha256": "20608bc126d4f232e1aba1c8daf49d3d080db3acc3522e7bef84e05f93025cf6"
+    },
+    {
+      "path": "fontTools/svgLib/path/__init__.py",
+      "size_bytes": 2047,
+      "sha256": "1c7b2082a4827af6cc7f181125d1d485b453185a7f6a83678297ca2c8d063bfd"
+    },
+    {
+      "path": "fontTools/svgLib/path/arc.py",
+      "size_bytes": 5811,
+      "sha256": "336a18dca1fc91417a4e80c1f7161bcd667175e63e73ac8af2af0a50531703b5"
+    },
+    {
+      "path": "fontTools/svgLib/path/parser.py",
+      "size_bytes": 12408,
+      "sha256": "fda5d9b7c46b0fe60e3e25748c62699052a85674af6f726125ddc267f182e8f9"
+    },
+    {
+      "path": "fontTools/svgLib/path/shapes.py",
+      "size_bytes": 5387,
+      "sha256": "e4d604f8949236cc54b764f6d192b74c8156acd837707dc44ef393c1a93ee9c0"
+    },
+    {
+      "path": "fontTools/t1Lib/__init__.py",
+      "size_bytes": 20928,
+      "sha256": "4c77be140243089eecdc4eb27f17a1db538731ae596858783092e06097305da5"
+    },
+    {
+      "path": "fontTools/ttLib/__init__.py",
+      "size_bytes": 660,
+      "sha256": "680216e6681739c26159186cc641545d3e3c9cd201293e7e6e5049c97a8e8fb2"
+    },
+    {
+      "path": "fontTools/ttLib/__main__.py",
+      "size_bytes": 4733,
+      "sha256": "94730f5ac9f38ca3ee3056af7fa8b582993d29ec62024e2ace00dde7431b6f2d"
+    },
+    {
+      "path": "fontTools/ttLib/macUtils.py",
+      "size_bytes": 1737,
+      "sha256": "963de8785a728d5ee4a3f26a9e5ba77884e602d95cd75f49fafc134e0dacef70"
+    },
+    {
+      "path": "fontTools/ttLib/removeOverlaps.py",
+      "size_bytes": 12743,
+      "sha256": "9ea5288e8892b1584e2eb793a9f26cc19fce5428c1fe757c6eb6c9d6dbe37303"
+    },
+    {
+      "path": "fontTools/ttLib/reorderGlyphs.py",
+      "size_bytes": 10370,
+      "sha256": "2de815dbc590cf330b01f83574369f9af60165144a278ee4ab5be5aa0ce20c56"
+    },
+    {
+      "path": "fontTools/ttLib/scaleUpem.py",
+      "size_bytes": 14617,
+      "sha256": "916eec4639fff568b1d21b9cc1628cd8fba064babef40329aaa3e7050d64f54c"
+    },
+    {
+      "path": "fontTools/ttLib/sfnt.py",
+      "size_bytes": 24751,
+      "sha256": "1a98e0a95fa78d2c525f5e12447562d6b0222e219ea0df6a58235dde0b7d14f0"
+    },
+    {
+      "path": "fontTools/ttLib/standardGlyphOrder.py",
+      "size_bytes": 5785,
+      "sha256": "ec063f7d559db706788afe6e59dc8a01471b1108920edd65378b2ac7dc57c04d"
+    },
+    {
+      "path": "fontTools/ttLib/ttCollection.py",
+      "size_bytes": 7314,
+      "sha256": "d4804e8fc58e76cb6410ff44607327420016eb599ff4688452f9a35daefea243"
+    },
+    {
+      "path": "fontTools/ttLib/ttFont.py",
+      "size_bytes": 64058,
+      "sha256": "01bed50be567307a84cd4f0c19e12514e746689501f6f7aacddc04edeeb59079"
+    },
+    {
+      "path": "fontTools/ttLib/ttGlyphSet.py",
+      "size_bytes": 17476,
+      "sha256": "7140613066b986ccde56a3a6d8aa4e75e261f8bb22a84ed135dc8850f676bcef"
+    },
+    {
+      "path": "fontTools/ttLib/ttVisitor.py",
+      "size_bytes": 1025,
+      "sha256": "fed6a1e02e364efe8f9bd41e2cd430c150b1a88e1534402a6026e64e1a7a72f6"
+    },
+    {
+      "path": "fontTools/ttLib/woff2.py",
+      "size_bytes": 60920,
+      "sha256": "3f7e0028c924ad31d6116eb8d253870ed0de89fec24e597b97e9d06af07438d8"
+    },
+    {
+      "path": "fontTools/ttLib/tables/B_A_S_E_.py",
+      "size_bytes": 369,
+      "sha256": "1fbd40f6927ce749af8dbad61eacbc8852360f183bd74d9846d0247dd0a8a228"
+    },
+    {
+      "path": "fontTools/ttLib/tables/BitmapGlyphMetrics.py",
+      "size_bytes": 1768,
+      "sha256": "7758d7c62b28b5c45547988741a7159579bccfd01e895eaf04ee6ce2ecbaff60"
+    },
+    {
+      "path": "fontTools/ttLib/tables/C_B_D_T_.py",
+      "size_bytes": 3646,
+      "sha256": "e4b35d73c14c8abd640b97efa79887c167deb84f91baa771000ac55daa8f8d0d"
+    },
+    {
+      "path": "fontTools/ttLib/tables/C_B_L_C_.py",
+      "size_bytes": 520,
+      "sha256": "617970a2fa021d8c7c4c72d00fd88153f546a1a07d2c539b10ab4be9d743df6d"
+    },
+    {
+      "path": "fontTools/ttLib/tables/C_F_F_.py",
+      "size_bytes": 1978,
+      "sha256": "ca0de652d601b9d826a46ec1cf8ef98ff0cd9c27a5b20ad3b0cf031f5b91e1e9"
+    },
+    {
+      "path": "fontTools/ttLib/tables/C_F_F__2.py",
+      "size_bytes": 807,
+      "sha256": "6281df250745f9ecf1e0ec114366363bbad12443e33a47f71f1e58d755ead003"
+    },
+    {
+      "path": "fontTools/ttLib/tables/C_O_L_R_.py",
+      "size_bytes": 5993,
+      "sha256": "487c0554d566a14411d9ef3b2ae4d27be27d2df79e812e1fda112979edbdff6a"
+    },
+    {
+      "path": "fontTools/ttLib/tables/C_P_A_L_.py",
+      "size_bytes": 11942,
+      "sha256": "a1d163a8ce069e35f24181840be7b41afaa6b358d0e731c71b748383bcbe048d"
+    },
+    {
+      "path": "fontTools/ttLib/tables/D_S_I_G_.py",
+      "size_bytes": 5903,
+      "sha256": "6a107028c8097fd84f9b7113b85d48bc6e1dd7f525496d147733bce4389b39c9"
+    },
+    {
+      "path": "fontTools/ttLib/tables/D__e_b_g.py",
+      "size_bytes": 1134,
+      "sha256": "2839df90d3949e6dc5d77c03fe3dd83413af61a759e3419fff4d7bd21164269d"
+    },
+    {
+      "path": "fontTools/ttLib/tables/DefaultTable.py",
+      "size_bytes": 1986,
+      "sha256": "960e57bce6ec6cdbed1422e21414952ed266d5efe782cf5787d9e9e5bde7b5e3"
+    },
+    {
+      "path": "fontTools/ttLib/tables/E_B_D_T_.py",
+      "size_bytes": 33713,
+      "sha256": "1d3a6f8a71a2be916d44a9a7e9f4b46a25cb3c08bc4835a1e25d1bf842e29fa0"
+    },
+    {
+      "path": "fontTools/ttLib/tables/E_B_L_C_.py",
+      "size_bytes": 30047,
+      "sha256": "546627151842cea901b2ee4b4b5acad65e9b35362ea46487294b039c10d32364"
+    },
+    {
+      "path": "fontTools/ttLib/tables/E_B_S_C_.py",
+      "size_bytes": 5810,
+      "sha256": "3532f8f690e3616ef85e772e78cfdc01c3790f866e4b3157229437d17dcff7ba"
+    },
+    {
+      "path": "fontTools/ttLib/tables/F_F_T_M_.py",
+      "size_bytes": 1683,
+      "sha256": "ff8e74bdd6c41fb63ed3facec1bdd0d2183e42ad96f02fec1e58f2eeb66daaa3"
+    },
+    {
+      "path": "fontTools/ttLib/tables/F__e_a_t.py",
+      "size_bytes": 5935,
+      "sha256": "d6e484202eb149a1629a8b49e93370db9e9138c28071c9ac3b6f000732e563f7"
+    },
+    {
+      "path": "fontTools/ttLib/tables/G_D_E_F_.py",
+      "size_bytes": 299,
+      "sha256": "4178882c50919cf359730a6e6faa233794bd58feb2e7a2ec5e2db9a5458b829e"
+    },
+    {
+      "path": "fontTools/ttLib/tables/G_P_O_S_.py",
+      "size_bytes": 397,
+      "sha256": "5243f79a59f2bd083e8e3e9904e87a8fe3a279583f828250df59e52efa0b1922"
+    },
+    {
+      "path": "fontTools/ttLib/tables/G_S_U_B_.py",
+      "size_bytes": 294,
+      "sha256": "73014c28efa9830b27d47f10f496f9f19e99ac1ac2a0dd2ca8907462e9c17d29"
+    },
+    {
+      "path": "fontTools/ttLib/tables/G_V_A_R_.py",
+      "size_bytes": 94,
+      "sha256": "d77a0ed9d0fe2f8c9f92b06e47e28ddab738d3087994b225c7f921c0ccf9187e"
+    },
+    {
+      "path": "fontTools/ttLib/tables/G__l_a_t.py",
+      "size_bytes": 8640,
+      "sha256": "6b45512d7f7c30316dae40eef6736ee6bbf5e160089e6f6fa0d2c632d8282195"
+    },
+    {
+      "path": "fontTools/ttLib/tables/G__l_o_c.py",
+      "size_bytes": 2684,
+      "sha256": "13f689805a213abdf453e1bc5a1cd28502748579d0525e2a8dc027e0a277519c"
+    },
+    {
+      "path": "fontTools/ttLib/tables/H_V_A_R_.py",
+      "size_bytes": 313,
+      "sha256": "ea43cb0d4193f04bacb00df2f602abfe6ae06393cdbfb61a2b557491e3170fdc"
+    },
+    {
+      "path": "fontTools/ttLib/tables/I_F_T_.py",
+      "size_bytes": 272,
+      "sha256": "77ade75ce7cb17b5aa1ab363f7d3dc2e4bcb222090dc975997949ff5aec84c69"
+    },
+    {
+      "path": "fontTools/ttLib/tables/I_F_T_X_.py",
+      "size_bytes": 274,
+      "sha256": "e40eca7ca06bffb160b64415e8d4f6612d5e1a5ad6ace9e362b2e71be04614d6"
+    },
+    {
+      "path": "fontTools/ttLib/tables/J_S_T_F_.py",
+      "size_bytes": 315,
+      "sha256": "43d4c47f73aec832316659a8cfd6b773e98332524ae98050f4a7189a2c0545b5"
+    },
+    {
+      "path": "fontTools/ttLib/tables/L_T_S_H_.py",
+      "size_bytes": 2189,
+      "sha256": "22eeacc8916e8498f4ffb01a9f634f943b900c8abe0332f0b0e41b5d54e794bd"
+    },
+    {
+      "path": "fontTools/ttLib/tables/M_A_T_H_.py",
+      "size_bytes": 342,
+      "sha256": "f9356ef4d95cb3ed6c8641256c893e096b54c1750c7727071648ef3c4f02fdfb"
+    },
+    {
+      "path": "fontTools/ttLib/tables/M_V_A_R_.py",
+      "size_bytes": 308,
+      "sha256": "ebb704ba24f0e72e56d5993df0bfd2fd298920d21fcbf9b35829321dcba3cfde"
+    },
+    {
+      "path": "fontTools/ttLib/tables/O_S_2f_2.py",
+      "size_bytes": 28272,
+      "sha256": "e74276a93888ba9bfe9e5a0d07e41ab0094429d3f6806662ee6e2c8ed8d4905a"
+    },
+    {
+      "path": "fontTools/ttLib/tables/S_T_A_T_.py",
+      "size_bytes": 498,
+      "sha256": "cbd362582b67959b4c8f0e0af7f49d03ce176be74993b1b979bd9d49ee9c8967"
+    },
+    {
+      "path": "fontTools/ttLib/tables/S_V_G_.py",
+      "size_bytes": 7794,
+      "sha256": "abf14dd4f0515aad0d6fe99477a6427d02a25e230ead96e802a2747c85b8efb6"
+    },
+    {
+      "path": "fontTools/ttLib/tables/S__i_l_f.py",
+      "size_bytes": 34971,
+      "sha256": "d36e96195cf6eecee9c033c2b398ca48ded4e734ff8492403e41a725de9f33c5"
+    },
+    {
+      "path": "fontTools/ttLib/tables/S__i_l_l.py",
+      "size_bytes": 3218,
+      "sha256": "b73b816bd8949a03e822c466a59ff6be81214c8d83e7f8b7251a30b916904c1b"
+    },
+    {
+      "path": "fontTools/ttLib/tables/T_S_I_B_.py",
+      "size_bytes": 340,
+      "sha256": "ce9ef83c38d766b2ec34b7fbbaa0a53def75b90295e611257472dfb0dad20a49"
+    },
+    {
+      "path": "fontTools/ttLib/tables/T_S_I_C_.py",
+      "size_bytes": 380,
+      "sha256": "a8d04d68474ea8550f32db514fb522ebd8824582f7f77bb909a660aadbb5938d"
+    },
+    {
+      "path": "fontTools/ttLib/tables/T_S_I_D_.py",
+      "size_bytes": 340,
+      "sha256": "eadaee289e209b9ad15203c7b7d8eef13a0420b762fc60bf4c2dd12ace7b1543"
+    },
+    {
+      "path": "fontTools/ttLib/tables/T_S_I_J_.py",
+      "size_bytes": 340,
+      "sha256": "2d27adbbdd27f4c68b0f00115c56ea047844fb28a08c952989f02c60c1e64b87"
+    },
+    {
+      "path": "fontTools/ttLib/tables/T_S_I_P_.py",
+      "size_bytes": 340,
+      "sha256": "b6381297ceb0a78f110a0eed8c90a11673067617ac9e68dcb37095518101d0f0"
+    },
+    {
+      "path": "fontTools/ttLib/tables/T_S_I_S_.py",
+      "size_bytes": 340,
+      "sha256": "ea82d52789edd4b2944c6d65beb2951e9f260d211d98a578005b3a64aa92a3fb"
+    },
+    {
+      "path": "fontTools/ttLib/tables/T_S_I_V_.py",
+      "size_bytes": 854,
+      "sha256": "965cf777e33230757428bde38a32c3c595cb3489090c298607defb677b8402b3"
+    },
+    {
+      "path": "fontTools/ttLib/tables/T_S_I__0.py",
+      "size_bytes": 2505,
+      "sha256": "3beda823478182de263f5e7e5301f4ff4afb6168b71041211bee1eb6a0ee7862"
+    },
+    {
+      "path": "fontTools/ttLib/tables/T_S_I__1.py",
+      "size_bytes": 6970,
+      "sha256": "0b2ea3ab5b3d29f4fe78517bb2fd46079cf0b8b588d756d5acf0a83a7045b1ff"
+    },
+    {
+      "path": "fontTools/ttLib/tables/T_S_I__2.py",
+      "size_bytes": 495,
+      "sha256": "0fbdc643cc7daac27548e10aea0d66daf3d5e29ce5bd27411cf7ddea11d70487"
+    },
+    {
+      "path": "fontTools/ttLib/tables/T_S_I__3.py",
+      "size_bytes": 542,
+      "sha256": "c1030cf5eca12661faad85d2d8a4ce29b34bd7a042f0bf4b309db7aae4728796"
+    },
+    {
+      "path": "fontTools/ttLib/tables/T_S_I__5.py",
+      "size_bytes": 1905,
+      "sha256": "861bc99fa8e25ecf24b81b6e9fc92b3544d74e58c7f9e2b16b15ccd53fbb4973"
+    },
+    {
+      "path": "fontTools/ttLib/tables/T_T_F_A_.py",
+      "size_bytes": 392,
+      "sha256": "2ee4f4c3ffc032d6b09ec04ca1b844316f60a76ca4d26039651cf0178e5cd142"
+    },
+    {
+      "path": "fontTools/ttLib/tables/TupleVariation.py",
+      "size_bytes": 32195,
+      "sha256": "5989f81a79d3977a2a5bab1abb9f17b5610e226ab2d3a05e635dd6984ce92390"
+    },
+    {
+      "path": "fontTools/ttLib/tables/V_A_R_C_.py",
+      "size_bytes": 289,
+      "sha256": "de3157e7427a5fe09ce1dc308b3b4a2ac0d34575474d79557501f7dbc50dd7e9"
+    },
+    {
+      "path": "fontTools/ttLib/tables/V_D_M_X_.py",
+      "size_bytes": 10437,
+      "sha256": "45b1e5eefbcef697234ff90abdc0a6701c908f7f67e0f9957aae79c03e42d788"
+    },
+    {
+      "path": "fontTools/ttLib/tables/V_O_R_G_.py",
+      "size_bytes": 5965,
+      "sha256": "0a7dcec6356d70ef94be9eb53f9736df7e95f6211bb86afabd60179d221a8a19"
+    },
+    {
+      "path": "fontTools/ttLib/tables/V_V_A_R_.py",
+      "size_bytes": 319,
+      "sha256": "0acb70ead73f538f84993ae2448b414a9bd324e0c08cc1508dfc936b12f3b1b2"
+    },
+    {
+      "path": "fontTools/ttLib/tables/__init__.py",
+      "size_bytes": 2730,
+      "sha256": "71063cd9641cd7d3ecaacb11b03f978db1c3fb9a201b4d0376b0568e07db0fe3"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_a_n_k_r.py",
+      "size_bytes": 483,
+      "sha256": "3290332227e6222ff7831da83fa3c2dd1da5bb7e84c2caf6f96d6b5e3b33d948"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_a_v_a_r.py",
+      "size_bytes": 9018,
+      "sha256": "a870cb44458d2dc5806b80cf536b62cf48102641d44fcbbb3238987d40f77645"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_b_d_a_t.py",
+      "size_bytes": 124,
+      "sha256": "bb7d1a568989df6a9297658006ef55ae8ed0bec646dbe12dd33518fad0f6ad4c"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_b_g_c_l.py",
+      "size_bytes": 5484,
+      "sha256": "7bcfafae9425ca1d8206721121800af7170cb565dd5ebd22d469b3d777933ac9"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_b_h_e_d.py",
+      "size_bytes": 108,
+      "sha256": "e93313986fd9d88079b448813abb095ab81ff8ebd77dca64550bac39b80b54f6"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_b_l_o_c.py",
+      "size_bytes": 127,
+      "sha256": "2a714fcd22cac80206f813ebaaac6985ef0812e8c327a5db0accd0e5e26c9be8"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_b_s_l_n.py",
+      "size_bytes": 465,
+      "sha256": "ffce3ca3b490ab3b730437c761e8bef34bbd96dc481d50735eed5d6072d5e7b3"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_c_i_d_g.py",
+      "size_bytes": 913,
+      "sha256": "cadf2b54869da49483502a151f87597ad362cb40339b91120311e3076057fde0"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_c_m_a_p.py",
+      "size_bytes": 66330,
+      "sha256": "d09044828f511f34404a57305645861a5c8b7ec22f726b39ddc5a9cec5648554"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_c_v_a_r.py",
+      "size_bytes": 3526,
+      "sha256": "d851bd7a614f38980a05057f4c4546550b790b959abd304ef0f18cab141f919b"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_c_v_t.py",
+      "size_bytes": 1618,
+      "sha256": "d7f46111c4e6856416429ec7b23f14b01c8a997088a6967221b200ac6cb01043"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_f_e_a_t.py",
+      "size_bytes": 469,
+      "sha256": "162d579e3864086d2da78dc072fa486a2bc3f98445a6e7e8e9f78622b7a7403a"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_f_p_g_m.py",
+      "size_bytes": 1633,
+      "sha256": "b991d9cea2fa39d2e7fc7c6c92ffb17f75ee1387f2692bff8db00b123c1762e8"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_f_v_a_r.py",
+      "size_bytes": 8807,
+      "sha256": "41fb194beb1554d13af237fbe930c0a82455b9f315f08c1a049622f4533beb55"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_g_a_s_p.py",
+      "size_bytes": 2202,
+      "sha256": "0bdc91f78eb90d9a8c228c070a5416535dfaa8fd1564b0f4fc7d47c1e7979918"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_g_c_i_d.py",
+      "size_bytes": 362,
+      "sha256": "009e2e57b3d31db9ecc384dfc3c73613387454ca31de8007d2a861abbcbc85d3"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_g_l_y_f.py",
+      "size_bytes": 86445,
+      "sha256": "81531f2c174d4993ebaa3eb250cca538361d2a65147862efe8b3602fa87158a1"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_g_v_a_r.py",
+      "size_bytes": 12196,
+      "sha256": "13d5822a37884d47dde617092d0d2b8d0141b59771c357acc05956a7553a6c3e"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_h_d_m_x.py",
+      "size_bytes": 4252,
+      "sha256": "c0cacee03d3840d4fcbb7d29f0057e686ddb9dd5c2ab8c253cdbed6ddf22a7b7"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_h_e_a_d.py",
+      "size_bytes": 4925,
+      "sha256": "59536540326fdb5aa16278a36453ccc6fc9ad3deba4a9e16df2ccb00342ff8a4"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_h_h_e_a.py",
+      "size_bytes": 4766,
+      "sha256": "eb10742f8b098b3ea183d2520e134fc45dd1ba9a5580d174bad7ec3372ba6c65"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_h_m_t_x.py",
+      "size_bytes": 6191,
+      "sha256": "979c3cf81985a07d65989ae94e93b627a86a692fb4c62d1064cb63c17b2ce4ee"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_k_e_r_n.py",
+      "size_bytes": 10793,
+      "sha256": "8cc1416dae4ec1cb1aa24460e0355ebd1b538945438819bfa96859a720dab52a"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_l_c_a_r.py",
+      "size_bytes": 390,
+      "sha256": "f16eb114e8feb26d34dcc0975f86c81f1b3d9ed7d5bd3d055d89653f16b7cf82"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_l_o_c_a.py",
+      "size_bytes": 2179,
+      "sha256": "7b83320c5e6c25207d7cdc36ebdbe12d79418020d9c7f0b5bdba19e65fe5fcc1"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_l_t_a_g.py",
+      "size_bytes": 2552,
+      "sha256": "f58a40a6323ead9e1edc7793f0f8fea2c887977b802c3f495e0e4eee9aa4f4bd"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_m_a_x_p.py",
+      "size_bytes": 5264,
+      "sha256": "7080c8656b1ef5ccf0c2c9e5c48877ab08306976edecf4008d7280726303b296"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_m_e_t_a.py",
+      "size_bytes": 3913,
+      "sha256": "0340993c4015c58ae9cad8d750640909375dc06f0aaef5156ed05edc0d4caa02"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_m_o_r_t.py",
+      "size_bytes": 487,
+      "sha256": "bb7e6d62a9f7723ccac5e085d0550578bb5a7f7ea68c30d2374f2eba4d0a99ef"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_m_o_r_x.py",
+      "size_bytes": 548,
+      "sha256": "3b06a656920eed11039c5afde47b853e863fd14ea2f7340f6f5d4ad6c153bc36"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_n_a_m_e.py",
+      "size_bytes": 41265,
+      "sha256": "3f051948b4ef2c722e1d1eec2f3a4e234c9dec9301a6ad0461c8452bd0386d8e"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_o_p_b_d.py",
+      "size_bytes": 448,
+      "sha256": "4cd66fff6613ae3e1d1b377ac00f496fe28667df6e9f5efbb39a772e57f143be"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_p_o_s_t.py",
+      "size_bytes": 11671,
+      "sha256": "f6c8955d28ac5867537e3fe60b513d7540f3f49766d62dd0cc8fa5de2dd558c1"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_p_r_e_p.py",
+      "size_bytes": 427,
+      "sha256": "09c2abe07aecc24ba92e66c976b24b4ccfb3f5780b79f432bfce3aee3f55d33b"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_p_r_o_p.py",
+      "size_bytes": 427,
+      "sha256": "120f31e6a5b25c3ccf7b331a7c5bb4b34ab23c31e3fac3ec1711ad13a876f6aa"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_s_b_i_x.py",
+      "size_bytes": 4864,
+      "sha256": "8aa1e69b0e8a197fe0a229ff1177a6d94807d4b0cc3d7b46aea367fa7c800d03"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_t_r_a_k.py",
+      "size_bytes": 11349,
+      "sha256": "8ad5911df8f34e26aa9ef7eb5859824bf7967112de6552424f10c9c1a7fa50e3"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_v_h_e_a.py",
+      "size_bytes": 4458,
+      "sha256": "53ebae7546c540719f89755e50dbbdbab96d33b6a7ccc7ca50b97075f8df113f"
+    },
+    {
+      "path": "fontTools/ttLib/tables/_v_m_t_x.py",
+      "size_bytes": 500,
+      "sha256": "014bb1b7242f316ad304d6ce21a2fab8a701fc336935bd185f6f0922e4c7c3f6"
+    },
+    {
+      "path": "fontTools/ttLib/tables/asciiTable.py",
+      "size_bytes": 637,
+      "sha256": "e1cebd8ec022ad49c3129ca57fd09806808a4f3c1b99f6ed5003abb4f9e91e36"
+    },
+    {
+      "path": "fontTools/ttLib/tables/grUtils.py",
+      "size_bytes": 2270,
+      "sha256": "85c389e6824f39ddae2569d603bab047b01f2f7ed8679cd44fb83ca3904157cd"
+    },
+    {
+      "path": "fontTools/ttLib/tables/otBase.py",
+      "size_bytes": 53237,
+      "sha256": "0a37bbb6475a6d9f1fa30cf3d5d5eb05c48eb51769060be902ae6d40150a9170"
+    },
+    {
+      "path": "fontTools/ttLib/tables/otConverters.py",
+      "size_bytes": 113137,
+      "sha256": "52853129e890a8a7093de06972ffd4eb8a73cfee1ea721eaca683c2a3777e210"
+    },
+    {
+      "path": "fontTools/ttLib/tables/otData.py",
+      "size_bytes": 203941,
+      "sha256": "e69052b33651927e19a50037370c8a4b16143a0e686d6fc9a66548cff1619d80"
+    },
+    {
+      "path": "fontTools/ttLib/tables/otDataSchema.py",
+      "size_bytes": 1667,
+      "sha256": "256027cae84c4df4f6b1ab62c4b62c2fc722d23bd602b42a38cdc3ffd63582a0"
+    },
+    {
+      "path": "fontTools/ttLib/tables/otTables.py",
+      "size_bytes": 100458,
+      "sha256": "204905727d2b8bd50a086f754f332835894a82a083b8542960553d3054ba081e"
+    },
+    {
+      "path": "fontTools/ttLib/tables/otTraverse.py",
+      "size_bytes": 5517,
+      "sha256": "ad346907f148a4a1be554e51f6f33762d18281cdc251c6790dc18b7edabde9db"
+    },
+    {
+      "path": "fontTools/ttLib/tables/sbixGlyph.py",
+      "size_bytes": 5795,
+      "sha256": "8241503d6a5b90e055d13a281ab924783d46b40eb5ec298c6fee6795747267cd"
+    },
+    {
+      "path": "fontTools/ttLib/tables/sbixStrike.py",
+      "size_bytes": 6651,
+      "sha256": "74bf0ef4af11e12e915500cff8f56320f06bbdba9b13dcf0adad2e44bd272ead"
+    },
+    {
+      "path": "fontTools/ttLib/tables/table_API_readme.txt",
+      "size_bytes": 2748,
+      "sha256": "7999514cb5242f373ff4eb77a5d7e1c8c6f76a1534fc88a9c74bd26f33951b2f"
+    },
+    {
+      "path": "fontTools/ttLib/tables/ttProgram.py",
+      "size_bytes": 36009,
+      "sha256": "6b83c8026f243e49fcbf5bdfc74d1b7e841f929e79d62972084278b4c2e95861"
+    },
+    {
+      "path": "fontTools/ufoLib/__init__.py",
+      "size_bytes": 98982,
+      "sha256": "7214c26681dc563f399d7b7ae8121caf806bc607854d01d54aafc73a4450290b"
+    },
+    {
+      "path": "fontTools/ufoLib/converters.py",
+      "size_bytes": 13444,
+      "sha256": "62704aafc926ca3c0b72af0b743e3ab9b18e8322fd3f1b7d6af96f667f5a9ca2"
+    },
+    {
+      "path": "fontTools/ufoLib/errors.py",
+      "size_bytes": 843,
+      "sha256": "68c5a0ca38997d661c358e9114b80de5e1db5e9f71cb25605eb90549330249d2"
+    },
+    {
+      "path": "fontTools/ufoLib/etree.py",
+      "size_bytes": 231,
+      "sha256": "4f7b232d3823300aba57261189c58f68c215049d984aec19c55e95739c99b502"
+    },
+    {
+      "path": "fontTools/ufoLib/filenames.py",
+      "size_bytes": 10654,
+      "sha256": "868c94873cd030369e7244fb51dade21200dab8fa02d1da31b2939c80c98b4e0"
+    },
+    {
+      "path": "fontTools/ufoLib/glifLib.py",
+      "size_bytes": 77495,
+      "sha256": "5416f3ebb79c7b9f60feb7bc1b1b445833f7ce1e85aac7f7966157afbcf10e80"
+    },
+    {
+      "path": "fontTools/ufoLib/kerning.py",
+      "size_bytes": 6176,
+      "sha256": "b8d62cffeb4d520b9e6c5fdcee2875eb4f87d73975284b66426ca559b5aba4cf"
+    },
+    {
+      "path": "fontTools/ufoLib/plistlib.py",
+      "size_bytes": 1510,
+      "sha256": "8f3306386bc73ba5ef4be20ef214b4e2eafbafcfafd9d9d5abebca328259bea4"
+    },
+    {
+      "path": "fontTools/ufoLib/pointPen.py",
+      "size_bytes": 244,
+      "sha256": "0ae444726dc862d7993410c077f651015e17a81b32d2cd3b8dd59ce1e9fdafef"
+    },
+    {
+      "path": "fontTools/ufoLib/utils.py",
+      "size_bytes": 3192,
+      "sha256": "9d9a0926a1d74122fe2d7604e7cfd61c0f7b5e56d39046d891d1f718bdf64a64"
+    },
+    {
+      "path": "fontTools/ufoLib/validators.py",
+      "size_bytes": 31991,
+      "sha256": "225f6a618563f4fa39d7f20654699e544d925dfefba4571c809a552e480014a9"
+    },
+    {
+      "path": "fontTools/unicodedata/Blocks.py",
+      "size_bytes": 33139,
+      "sha256": "7eb4a1374ed6a83d6e2edf95d133655193e79f4f9c29cd0dba1b5ddae343a12c"
+    },
+    {
+      "path": "fontTools/unicodedata/Mirrored.py",
+      "size_bytes": 9242,
+      "sha256": "91d870096396680ae67cd9036a1d1386ffbaeccf705b3e3947920c3e1ab2cc53"
+    },
+    {
+      "path": "fontTools/unicodedata/OTTags.py",
+      "size_bytes": 1196,
+      "sha256": "c0e3e96ccb0d729fe076f3c57884ed8153274cdf13252340b1511dbbf9ee3d71"
+    },
+    {
+      "path": "fontTools/unicodedata/ScriptExtensions.py",
+      "size_bytes": 28647,
+      "sha256": "b9d2f9dd675de67f991445477880b42e928a06a3c70f65aa46205bcd7b3653b5"
+    },
+    {
+      "path": "fontTools/unicodedata/Scripts.py",
+      "size_bytes": 131148,
+      "sha256": "c010fa48495f337c3ebba25c83236cca87d73efa96d5ee1896d81e1c4e1768e7"
+    },
+    {
+      "path": "fontTools/unicodedata/__init__.py",
+      "size_bytes": 9084,
+      "sha256": "20fe97e068733b6ccefa7de473fe01222026a38c1d27267d34420dbf8c90231f"
+    },
+    {
+      "path": "fontTools/varLib/__init__.py",
+      "size_bytes": 56768,
+      "sha256": "522b2ce7e49b7e4212bcc53d5b4724e4679fe8e706a4947e5ed8dbea36808c1d"
+    },
+    {
+      "path": "fontTools/varLib/__main__.py",
+      "size_bytes": 94,
+      "sha256": "07b24ee709df1b95d0897a9642658986f548ab96be09fe8e3f1c8fec1c749979"
+    },
+    {
+      "path": "fontTools/varLib/avarPlanner.py",
+      "size_bytes": 109,
+      "sha256": "09a6c6e71079ec531dc2637569ca5532fc8eb9c54fc4275174948ada0bbb81be"
+    },
+    {
+      "path": "fontTools/varLib/builder.py",
+      "size_bytes": 6609,
+      "sha256": "99228e09c9e7c3e5b3999b35e456b2a2a08387bed3b3ba3d4eb7bda6c87c0947"
+    },
+    {
+      "path": "fontTools/varLib/cff.py",
+      "size_bytes": 22900,
+      "sha256": "0396845a4788f43f1826cdf59764d500aaf74708d1d7c6893fd3eddd738d3017"
+    },
+    {
+      "path": "fontTools/varLib/errors.py",
+      "size_bytes": 6934,
+      "sha256": "74ca3c7868fbe88ec7e21ac112235b62b1acd89d4ad52c1db14c931e99153ab4"
+    },
+    {
+      "path": "fontTools/varLib/featureVars.py",
+      "size_bytes": 26180,
+      "sha256": "929e203e32b2c8646eef2056c607753783a42a753d578e50c225921ece8e59dd"
+    },
+    {
+      "path": "fontTools/varLib/hvar.py",
+      "size_bytes": 3695,
+      "sha256": "d48bcbe419de4e483c8c9622707d1349056207a0f4bc111eb0b7657eaa0b057e"
+    },
+    {
+      "path": "fontTools/varLib/interpolatable.py",
+      "size_bytes": 45380,
+      "sha256": "5526143885ef1e1167c3559b65294dac0e76bd61603316a0ab1c2a39b72d83ef"
+    },
+    {
+      "path": "fontTools/varLib/interpolatableHelpers.py",
+      "size_bytes": 10286,
+      "sha256": "f44654c1c8172de2809ff98f036139982a969295d1101ef56b979fb26cf293da"
+    },
+    {
+      "path": "fontTools/varLib/interpolatablePlot.py",
+      "size_bytes": 44272,
+      "sha256": "d7800c72e508ae0408b417de5a500fe85145b66be887dec7c2389c8f5163e4a0"
+    },
+    {
+      "path": "fontTools/varLib/interpolatableTestContourOrder.py",
+      "size_bytes": 2970,
+      "sha256": "c483e600a2c3abfe70b48f610ed6116e9adf353f418feb9a42692506d87c5e1d"
+    },
+    {
+      "path": "fontTools/varLib/interpolatableTestStartingPoint.py",
+      "size_bytes": 4364,
+      "sha256": "5ab57857398be9899a2e64e15eb31dfd4f40d5d9734ad57e02a91a98844d876e"
+    },
+    {
+      "path": "fontTools/varLib/interpolate_layout.py",
+      "size_bytes": 3689,
+      "sha256": "db6563199b95d988807b63297537f4c4f573d71d86f386dc38bd2f39e0691903"
+    },
+    {
+      "path": "fontTools/varLib/iup.c",
+      "size_bytes": 1013553,
+      "sha256": "51e11691a8290967e20b7d840db6fed4d8a25f8d316a6a05c7fff278e1289ad9"
+    },
+    {
+      "path": "fontTools/varLib/iup.cpython-310-x86_64-linux-gnu.so",
+      "size_bytes": 1822232,
+      "sha256": "d87ed7aee3a3b78f1c2478f568a3a79e4010a110fccc3c9bad0a1ca414c917f2"
+    },
+    {
+      "path": "fontTools/varLib/iup.py",
+      "size_bytes": 14983,
+      "sha256": "dbd02c767dac53177b0537bf02f79e733989a753345c4fe5c30af1566b42ff6b"
+    },
+    {
+      "path": "fontTools/varLib/merger.py",
+      "size_bytes": 60818,
+      "sha256": "f634ed10ee59f299a6f12274539ee114906c5e1caddd80008ef88785649b31bd"
+    },
+    {
+      "path": "fontTools/varLib/models.py",
+      "size_bytes": 22909,
+      "sha256": "86e38de9b166263e159bbafd6e58ece52473b854d1a75a0f89a83f9aaf433436"
+    },
+    {
+      "path": "fontTools/varLib/multiVarStore.py",
+      "size_bytes": 9404,
+      "sha256": "c28ec6c390afdaab5b22131b1ea03916502b3e64912746d3911d73b102a847c1"
+    },
+    {
+      "path": "fontTools/varLib/mutator.py",
+      "size_bytes": 19803,
+      "sha256": "0937a7157f289e976861b7b61f621ee424d94363dcac53dbfc45dec89a4635d8"
+    },
+    {
+      "path": "fontTools/varLib/mvar.py",
+      "size_bytes": 2449,
+      "sha256": "2d357beef1ffdc4720fea2813b9c50ce32ce9498abfe9a44afb98f55946069df"
+    },
+    {
+      "path": "fontTools/varLib/plot.py",
+      "size_bytes": 7494,
+      "sha256": "368499909e6777135c0ef248bdde6943dfe35fa5f5a0cd4ad86fed478b1d3d5b"
+    },
+    {
+      "path": "fontTools/varLib/stat.py",
+      "size_bytes": 4811,
+      "sha256": "5ee34a299c46941ae5e0e1850c0c155e1a41c098b6dd4dc174798d4caa099ef1"
+    },
+    {
+      "path": "fontTools/varLib/varStore.py",
+      "size_bytes": 32419,
+      "sha256": "708a88833272a9631b8d4525bd37410ff571b6e8674b68c55fb83f29094f8c50"
+    },
+    {
+      "path": "fontTools/varLib/avar/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fontTools/varLib/avar/__main__.py",
+      "size_bytes": 1770,
+      "sha256": "7b0d5f26983cd46a586dd92ba7823b9ed59d6e19037a0e5f367d52ae9176e789"
+    },
+    {
+      "path": "fontTools/varLib/avar/build.py",
+      "size_bytes": 2089,
+      "sha256": "834ae5453d47a9516fee923363430df2986a66112e27460ed92fa66ae5b87eb0"
+    },
+    {
+      "path": "fontTools/varLib/avar/map.py",
+      "size_bytes": 3482,
+      "sha256": "76d0a427b74fe82bdabfca723b718921a5eaf4e20fb927726918160a629e15a8"
+    },
+    {
+      "path": "fontTools/varLib/avar/plan.py",
+      "size_bytes": 27354,
+      "sha256": "a832998d0aba39f79706bdd3dc3667ae66aec8c9b97a4d2b9b9615a2c00efd40"
+    },
+    {
+      "path": "fontTools/varLib/avar/unbuild.py",
+      "size_bytes": 10517,
+      "sha256": "12cfc3f728aaa7e89bfb96f17f10ac645f49abb7fad1e6f66957f1f847a9bf5d"
+    },
+    {
+      "path": "fontTools/varLib/instancer/__init__.py",
+      "size_bytes": 116907,
+      "sha256": "b8b878b68575849167f4aec3cc153a59e5f0c15471e978a8e1b45fdc873f026d"
+    },
+    {
+      "path": "fontTools/varLib/instancer/__main__.py",
+      "size_bytes": 104,
+      "sha256": "cdf50bc1c3f4d45869952d4895c3203509cbc64e5155f98eba29d68ea7a277e8"
+    },
+    {
+      "path": "fontTools/varLib/instancer/featureVars.py",
+      "size_bytes": 7109,
+      "sha256": "5f6eb6f8e5e3c8f4e4798b9bcd0d7b7a6307d79f0327b12f9007b1cbc27c4659"
+    },
+    {
+      "path": "fontTools/varLib/instancer/names.py",
+      "size_bytes": 14950,
+      "sha256": "20f46a7a5fccf33554d23977d16b1f82e7f1526f4f0414034026375476a97877"
+    },
+    {
+      "path": "fontTools/varLib/instancer/solver.py",
+      "size_bytes": 11002,
+      "sha256": "b8c78fc17d01553e45f78914bc3825b08e3f1749c41faec5ed116e27ab50c10d"
+    },
+    {
+      "path": "fontTools/voltLib/__init__.py",
+      "size_bytes": 151,
+      "sha256": "659d40b13c755650e7e342aea5c7be7ccde678e5ae832dd166b6815bd2c6fbd3"
+    },
+    {
+      "path": "fontTools/voltLib/__main__.py",
+      "size_bytes": 5928,
+      "sha256": "b95b4004bccc787b6f28bf337ad7f8ae90b8681f01918af940b49e80d8d96592"
+    },
+    {
+      "path": "fontTools/voltLib/ast.py",
+      "size_bytes": 13300,
+      "sha256": "6ab03d5b71aaa3a3aa963c0d34a9cc0288f3f82e4b4ad6c2e52823261edbb8a9"
+    },
+    {
+      "path": "fontTools/voltLib/error.py",
+      "size_bytes": 395,
+      "sha256": "a617103908fec4eb29097bbd84125046148e043cf11d18197777d640e14d273c"
+    },
+    {
+      "path": "fontTools/voltLib/lexer.py",
+      "size_bytes": 3368,
+      "sha256": "3afb844ce4af952eafee2095789dc8747d8283bd67dce268132881dfe87abe11"
+    },
+    {
+      "path": "fontTools/voltLib/parser.py",
+      "size_bytes": 25396,
+      "sha256": "ae4c362070593ecae11950bb2b0ed5e74d66d2ee76921d4948ce475e9fb17213"
+    },
+    {
+      "path": "fontTools/voltLib/voltToFea.py",
+      "size_bytes": 36549,
+      "sha256": "676caf9da64b417ccf2d3f3a52d6b4cd1b17218823e8d9ef66d496b79c66c36b"
+    },
+    {
+      "path": "fonttools-4.65.0.data/data/share/man/man1/ttx.1",
+      "size_bytes": 5377,
+      "sha256": "70b6e6fe938e8f50bbe93d905ef0f1cf00e3f6093e193779473b6f4ccb28b85c"
+    },
+    {
+      "path": "fonttools-4.65.0.dist-info/METADATA",
+      "size_bytes": 125002,
+      "sha256": "767c772df5fec424631e48baa13cfa55498f4d7be9b41d1071b34bf52cc28fa8"
+    },
+    {
+      "path": "fonttools-4.65.0.dist-info/WHEEL",
+      "size_bytes": 151,
+      "sha256": "924e30d1a448ddfb5a5f56a57e9f2abf0fe6d1e665beedcde6df077953ad3702"
+    },
+    {
+      "path": "fonttools-4.65.0.dist-info/entry_points.txt",
+      "size_bytes": 147,
+      "sha256": "f2454775dc5f156038e05483e26069982fb8b82ca7427928cfff5a3496f6dbb6"
+    },
+    {
+      "path": "fonttools-4.65.0.dist-info/top_level.txt",
+      "size_bytes": 10,
+      "sha256": "ad1811ca5ad7cde92a58eb2b87283389bd76a50ed620b7fb5068ea1309081433"
+    },
+    {
+      "path": "fonttools-4.65.0.dist-info/licenses/LICENSE",
+      "size_bytes": 1072,
+      "sha256": "6787208f83f659ccbc2223b2fde952ffa6f7e8aca62f1a8a2bf5bc51bb1b2383"
+    },
+    {
+      "path": "fonttools-4.65.0.dist-info/licenses/LICENSE.external",
+      "size_bytes": 20022,
+      "sha256": "94a83aaee0729a0f302d34acc4acecbd9d58366f262429075fe557e4a54b2e69"
+    }
+  ],
+  "excluded_installation_files": [],
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 362,
+  "source_record_verified_file_count": 362,
+  "checked_at_utc": "2026-10-28T09:17:18.196298+00:00"
+}

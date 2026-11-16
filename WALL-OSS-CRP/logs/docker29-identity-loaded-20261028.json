@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "target_image_id": "sha256:fdb8fbf9a3eb84a39e5f161994f8682cae6998d239167a44b2d36d462d675ff5",
+  "transfer_tag": "docker.io/library/wall-oss-crp-transfer:identity-smoke-20261028",
+  "config_digest": "sha256:6a340754e806a1fb39ff94313c49bc0b9cf5072706360b04ad96ff9e7f88a3f3",
+  "platform": "linux/amd64",
+  "rootfs_diff_ids": [
+    "sha256:2573e0d8158209ed54ab25c87bcdcb00bd3d2539246960a3d592a1c599d70465",
+    "sha256:17918215a5d0d001987ff4056d0fb0bc0cfd9b1571d2aaf747a6cdd518bbf07e",
+    "sha256:3bb0a9bdf97037d09dd93de26182475475169aa1d21faead5231f27dfe37320b",
+    "sha256:f8536c24d0ef1f08b7e38038221cb1f7a6e042ee376c763247553bbab5d3cb10",
+    "sha256:2f78c715c25604b415e26f7560720d3209d0b12c57a2c609fd92aedbfb3a3458"
+  ]
+}

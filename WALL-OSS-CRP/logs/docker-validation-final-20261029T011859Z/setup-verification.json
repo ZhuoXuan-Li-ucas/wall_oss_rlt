@@ -1,0 +1,115 @@
+{
+  "scope": "setup only; no full model load or action inference",
+  "checked_at_utc": "2026-10-29T05:48:48.147943+00:00",
+  "checks": {
+    "cuda_bf16_matmul": "PASS",
+    "flash_attention_bf16": "PASS",
+    "wall_x.model.core.ops._cuda_ext_bin": {
+      "status": "PASS",
+      "path": "/opt/walloss/env/lib/python3.10/site-packages/wall_x/model/core/ops/_cuda_ext_bin.cpython-310-x86_64-linux-gnu.so"
+    },
+    "wall_x.model.qact.qwen2_5": {
+      "status": "PASS",
+      "path": "/opt/walloss/env/lib/python3.10/site-packages/wall_x/model/qact/qwen2_5/__init__.py"
+    },
+    "wall_x._vendor.harrix.adapters": {
+      "status": "PASS",
+      "path": "/opt/walloss/env/lib/python3.10/site-packages/wall_x/_vendor/harrix/adapters/__init__.py"
+    },
+    "lerobot.datasets.lerobot_dataset": {
+      "status": "PASS",
+      "path": "/opt/walloss/env/lib/python3.10/site-packages/lerobot/datasets/lerobot_dataset.py"
+    },
+    "processor:wall-oss-0.5": {
+      "status": "PASS",
+      "class": "Qwen2_5_VLProcessor",
+      "tokenizer_size": 151665,
+      "image_grid_thw": [
+        [
+          1,
+          32,
+          32
+        ],
+        [
+          1,
+          32,
+          32
+        ]
+      ],
+      "pixel_values_shape": [
+        2048,
+        1176
+      ]
+    },
+    "processor:Qwen2.5-VL-3B-Instruct": {
+      "status": "PASS",
+      "class": "Qwen2_5_VLProcessor",
+      "tokenizer_size": 151665,
+      "image_grid_thw": [
+        [
+          1,
+          32,
+          32
+        ],
+        [
+          1,
+          32,
+          32
+        ]
+      ],
+      "pixel_values_shape": [
+        2048,
+        1176
+      ]
+    },
+    "official_normalizers": {
+      "status": "PASS",
+      "norm_key": "x2_normal",
+      "dimension": 26
+    },
+    "official_flow_processor": {
+      "status": "PASS",
+      "path": "/opt/walloss/models/wall-oss-0.5",
+      "tokenizer_size": 151667,
+      "special_token_ids": {
+        "<|propri|>": 151665,
+        "<|action|>": 151666
+      }
+    },
+    "safetensors_header": "PASS"
+  },
+  "python": "3.10.22 | packaged by conda-forge | (main, Oct  6 2026, 23:02:24) [GCC 14.4.0]",
+  "python_search_path": [
+    "/opt/walloss/scripts",
+    "/opt/walloss/env/lib/python310.zip",
+    "/opt/walloss/env/lib/python3.10",
+    "/opt/walloss/env/lib/python3.10/lib-dynload",
+    "/opt/walloss/env/lib/python3.10/site-packages"
+  ],
+  "versions": {
+    "torch": "2.10.0+cu128",
+    "torchvision": "0.25.0+cu128",
+    "torchaudio": "2.10.0+cu128",
+    "transformers": "5.2.0",
+    "flash-attn": "2.8.3",
+    "accelerate": "1.13.0",
+    "peft": "0.18.1",
+    "lerobot": "0.4.4",
+    "wall_x": "1.1.0",
+    "dmuon": "0.2.0",
+    "huggingface-hub": "1.33.0"
+  },
+  "gpu": "NVIDIA GeForce RTX 3060 Ti",
+  "torch_cuda": "12.8",
+  "bf16_supported": true,
+  "action_dim": 26,
+  "action_horizon": 32,
+  "checkpoint_tensor_count": 1061,
+  "checkpoint_stored_elements": 4162224832,
+  "checkpoint_dtypes_by_elements": {
+    "F32": 3455680,
+    "BF16": 4158769152
+  },
+  "checkpoint_tensor_storage_bytes": 8331361024,
+  "status": "PASS"
+}

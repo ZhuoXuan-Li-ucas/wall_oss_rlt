@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "scope": "relocated data and official processor; no model forward or GPU",
+  "project": "/home/pangk/workspaces/WALL-OSS-CRP/.cache/rlt-training-portability-20261029-v1",
+  "module_paths": {
+    "wall_rlt": "/home/pangk/workspaces/WALL-OSS-CRP/.cache/rlt-training-portability-20261029-v1/wall_rlt/__init__.py",
+    "wall_x": "/home/pangk/workspaces/WALL-OSS-CRP/.cache/rlt-training-portability-20261029-v1/.cache/wall-x-rlt/wall_x/__init__.py",
+    "rlinf": "/home/pangk/workspaces/WALL-OSS-CRP/.cache/rlt-training-portability-20261029-v1/.cache/rlinf-rlt/rlinf/__init__.py"
+  },
+  "contract_fingerprint": "cb354f8197dfbbbcc8d92ba0c4bbb62c53512326c298e1d8bd2cd5cc3bc302d6",
+  "data_root": "/home/pangk/workspaces/WALL-OSS-CRP/.cache/rlt-training-portability-20261029-v1/data/top_error",
+  "train_episodes": 245,
+  "train_windows": 123263,
+  "decoded_observations": 2,
+  "cameras_per_observation": 2,
+  "action_chunk_shape": [
+    2,
+    32,
+    26
+  ],
+  "valid_timesteps": [
+    32,
+    1
+  ],
+  "valid_action_scalar_targets": 264,
+  "excluded_groups_absent": [
+    "mouse",
+    "tape"
+  ],
+  "gpu_used": false
+}

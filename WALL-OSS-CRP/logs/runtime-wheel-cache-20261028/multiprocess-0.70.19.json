@@ -1,0 +1,396 @@
+{
+  "status": "PASS",
+  "package": "multiprocess",
+  "version": "0.70.19",
+  "filename": "multiprocess-0.70.19-py310-none-any.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "3e5e21c75da21582867f541fdaa6e05e33b274b57f20c3ea606e33ff561eb2d3",
+  "wheel_tags": [
+    "py310-none-any"
+  ],
+  "record_verified_files": [
+    {
+      "path": "_multiprocess/__init__.py",
+      "wheel_path": "_multiprocess/__init__.py",
+      "size_bytes": 321,
+      "sha256": "7bc21628f08414dcbe594d9621686e4af4c5130263f76bae805b1b2e1ff7e312"
+    },
+    {
+      "path": "multiprocess-0.70.19.dist-info/INSTALLER",
+      "wheel_path": "multiprocess-0.70.19.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "multiprocess-0.70.19.dist-info/METADATA",
+      "wheel_path": "multiprocess-0.70.19.dist-info/METADATA",
+      "size_bytes": 7511,
+      "sha256": "24146d46d724ce041d187426babb43dc5a6a4cd5d1acad0d7fc0d12693376fa5"
+    },
+    {
+      "path": "multiprocess-0.70.19.dist-info/WHEEL",
+      "wheel_path": "multiprocess-0.70.19.dist-info/WHEEL",
+      "size_bytes": 93,
+      "sha256": "3aaa2d00b4840c4395b7cbb18efcbb9ae80f2e13ec2245d12b3a8e32bdc31d00"
+    },
+    {
+      "path": "multiprocess-0.70.19.dist-info/licenses/COPYING",
+      "wheel_path": "multiprocess-0.70.19.dist-info/licenses/COPYING",
+      "size_bytes": 1493,
+      "sha256": "9f7ff27cb930d2c3202ee07e3d2d6146f4de676d069a33da3166c98cdba83a95"
+    },
+    {
+      "path": "multiprocess-0.70.19.dist-info/licenses/LICENSE",
+      "wheel_path": "multiprocess-0.70.19.dist-info/licenses/LICENSE",
+      "size_bytes": 1930,
+      "sha256": "4e693e45d442befb87c1f9d27e8d6b1566ee8ddac083d6f5c7c6829ba40878c9"
+    },
+    {
+      "path": "multiprocess-0.70.19.dist-info/top_level.txt",
+      "wheel_path": "multiprocess-0.70.19.dist-info/top_level.txt",
+      "size_bytes": 27,
+      "sha256": "aad25cf0635dbe2eacb8da48497d0cca59fd01724162b36e6acd4c0aa44f3ea8"
+    },
+    {
+      "path": "multiprocess/__info__.py",
+      "wheel_path": "multiprocess/__info__.py",
+      "size_bytes": 7999,
+      "sha256": "fb559d8847aa472727bcb7298b44f0d044828308aed071703077d47b8f83a73c"
+    },
+    {
+      "path": "multiprocess/__init__.py",
+      "wheel_path": "multiprocess/__init__.py",
+      "size_bytes": 1856,
+      "sha256": "5d65010c6a2b5240d6d3887ae317b9d69515f4de60cef4838f7b4d4f67a489fc"
+    },
+    {
+      "path": "multiprocess/connection.py",
+      "wheel_path": "multiprocess/connection.py",
+      "size_bytes": 31843,
+      "sha256": "4cef416cb5652d58d38ebd1f3fb948ba606088bc1a1559e9a8c060146ea22fdb"
+    },
+    {
+      "path": "multiprocess/context.py",
+      "wheel_path": "multiprocess/context.py",
+      "size_bytes": 11610,
+      "sha256": "d9f62f81f9eedc1f308fc53236774750781eb950e85719641452abcb272cb5a5"
+    },
+    {
+      "path": "multiprocess/dummy/__init__.py",
+      "wheel_path": "multiprocess/dummy/__init__.py",
+      "size_bytes": 3061,
+      "sha256": "9127a40ea0ff342cb414383b5e7c594a05be2dd835fe246bd3bb0dc036a32a90"
+    },
+    {
+      "path": "multiprocess/dummy/connection.py",
+      "wheel_path": "multiprocess/dummy/connection.py",
+      "size_bytes": 1598,
+      "sha256": "d63dd1979fde9c133efe430ee870e6ba6de43c0a0513866ce3ce475791fe57ab"
+    },
+    {
+      "path": "multiprocess/forkserver.py",
+      "wheel_path": "multiprocess/forkserver.py",
+      "size_bytes": 12138,
+      "sha256": "86296d29f2c8983609c8071eccd020303690ce70762ed616830aded10ae82d18"
+    },
+    {
+      "path": "multiprocess/heap.py",
+      "wheel_path": "multiprocess/heap.py",
+      "size_bytes": 11626,
+      "sha256": "f6bb79bb99b9ae484935f0d68822e9603a1622dd0b6c4966c79db232a93ba614"
+    },
+    {
+      "path": "multiprocess/managers.py",
+      "wheel_path": "multiprocess/managers.py",
+      "size_bytes": 47562,
+      "sha256": "6399bf68274b1389920aec95af0316839361f5fe0e7521c39526a3c8e83219aa"
+    },
+    {
+      "path": "multiprocess/pool.py",
+      "wheel_path": "multiprocess/pool.py",
+      "size_bytes": 32759,
+      "sha256": "1539ad7e8aa4b8df03778f1fe5381d928928c5837be7172747bf07c3e6cb4a78"
+    },
+    {
+      "path": "multiprocess/popen_fork.py",
+      "wheel_path": "multiprocess/popen_fork.py",
+      "size_bytes": 2374,
+      "sha256": "36fab9bd521ddb851f90e4315e1c596dc5eea3c77a60c738d3dc915c06a64ddd"
+    },
+    {
+      "path": "multiprocess/popen_forkserver.py",
+      "wheel_path": "multiprocess/popen_forkserver.py",
+      "size_bytes": 2227,
+      "sha256": "4ab11b57c5afd14bbf51e824696f9c6b25d17634c65ebe7ad18cb2f74a63fb21"
+    },
+    {
+      "path": "multiprocess/popen_spawn_posix.py",
+      "wheel_path": "multiprocess/popen_spawn_posix.py",
+      "size_bytes": 2029,
+      "sha256": "97b5d25aa479516894489877e6a7921252ee35f51e118c2f1f91f32919e7caa8"
+    },
+    {
+      "path": "multiprocess/popen_spawn_win32.py",
+      "wheel_path": "multiprocess/popen_spawn_win32.py",
+      "size_bytes": 4011,
+      "sha256": "03dbaf94f9a13bc241ccd70453f1a68b1d90fea6095b53576605cfc2d379028d"
+    },
+    {
+      "path": "multiprocess/process.py",
+      "wheel_path": "multiprocess/process.py",
+      "size_bytes": 12083,
+      "sha256": "188228d8d881b17d6bfe6d09d537276dd792ba518b587125442b9846491d810e"
+    },
+    {
+      "path": "multiprocess/queues.py",
+      "wheel_path": "multiprocess/queues.py",
+      "size_bytes": 12139,
+      "sha256": "b205c25e720e56b3d272a237970443f6ddc8b21a8804c124b0bb68b8f1fd3737"
+    },
+    {
+      "path": "multiprocess/reduction.py",
+      "wheel_path": "multiprocess/reduction.py",
+      "size_bytes": 9637,
+      "sha256": "35043a29b0e19ae0326837966886ab4d94289063e170575ad69a0d9cf9b9b8d7"
+    },
+    {
+      "path": "multiprocess/resource_sharer.py",
+      "wheel_path": "multiprocess/resource_sharer.py",
+      "size_bytes": 5132,
+      "sha256": "9c40292e1310a9df0aba77da34a9779fcbdd7a20863f12ab48bd496b49cd0049"
+    },
+    {
+      "path": "multiprocess/resource_tracker.py",
+      "wheel_path": "multiprocess/resource_tracker.py",
+      "size_bytes": 9056,
+      "sha256": "fc3da25f821645eddd3b02e82e37c29d735b0c0338a51cc0f2a10c4dc45fbadc"
+    },
+    {
+      "path": "multiprocess/shared_memory.py",
+      "wheel_path": "multiprocess/shared_memory.py",
+      "size_bytes": 18458,
+      "sha256": "51301e70710220e1c494ff5383ac94442a38a4a6622f2eb94e40128c45de1aeb"
+    },
+    {
+      "path": "multiprocess/sharedctypes.py",
+      "wheel_path": "multiprocess/sharedctypes.py",
+      "size_bytes": 6306,
+      "sha256": "77ef522912474652490b7df523112858e51721e63dcf109b8567a35ce9b31b0d"
+    },
+    {
+      "path": "multiprocess/spawn.py",
+      "wheel_path": "multiprocess/spawn.py",
+      "size_bytes": 9293,
+      "sha256": "720b55eba1e157fc88573bdd6e573c6d5752a5e9b5e8ab3404e16efdb5793c34"
+    },
+    {
+      "path": "multiprocess/synchronize.py",
+      "wheel_path": "multiprocess/synchronize.py",
+      "size_bytes": 11829,
+      "sha256": "eaad628f05b258b58b3bcb94b5a613f4c29ea4060a7ddcd63d21191b22453f8b"
+    },
+    {
+      "path": "multiprocess/tests/__init__.py",
+      "wheel_path": "multiprocess/tests/__init__.py",
+      "size_bytes": 199087,
+      "sha256": "934d088f0840515fced5ba7cd7cf79bcdd602e717304cde233e4139f956b4275"
+    },
+    {
+      "path": "multiprocess/tests/__main__.py",
+      "wheel_path": "multiprocess/tests/__main__.py",
+      "size_bytes": 912,
+      "sha256": "a2f97a7909b47f706134c775f10eae8290694c1e18fbc17b428fff2d911cdd22"
+    },
+    {
+      "path": "multiprocess/tests/mp_fork_bomb.py",
+      "wheel_path": "multiprocess/tests/mp_fork_bomb.py",
+      "size_bytes": 448,
+      "sha256": "e800ce1338756971d9db568e1a804f84a720079b23d791bdb5056049ce86ae56"
+    },
+    {
+      "path": "multiprocess/tests/mp_preload.py",
+      "wheel_path": "multiprocess/tests/mp_preload.py",
+      "size_bytes": 365,
+      "sha256": "d7e5af2c531a3e81febd96e951a26fbd91c5c53a40f6d82672ddaf6e5432f7d3"
+    },
+    {
+      "path": "multiprocess/tests/test_multiprocessing_fork.py",
+      "wheel_path": "multiprocess/tests/test_multiprocessing_fork.py",
+      "size_bytes": 476,
+      "sha256": "b9ed5240b245c66d6873fdc5da047f591b6ddfd8e16a3d25fc7b7a635301985a"
+    },
+    {
+      "path": "multiprocess/tests/test_multiprocessing_forkserver.py",
+      "wheel_path": "multiprocess/tests/test_multiprocessing_forkserver.py",
+      "size_bytes": 391,
+      "sha256": "545954b9923ad20c916cdc5f1d60e5826cb7ce6f9d3d395d2d6b8a419f0a39bb"
+    },
+    {
+      "path": "multiprocess/tests/test_multiprocessing_main_handling.py",
+      "wheel_path": "multiprocess/tests/test_multiprocessing_main_handling.py",
+      "size_bytes": 12018,
+      "sha256": "9ad98dd0afaca6a64271954d2dffc7ae13f5f3afa49e963a79aa05a272f55385"
+    },
+    {
+      "path": "multiprocess/tests/test_multiprocessing_spawn.py",
+      "wheel_path": "multiprocess/tests/test_multiprocessing_spawn.py",
+      "size_bytes": 276,
+      "sha256": "d94022b095f9f066426d8b8315acbfc7ded1f5a921cf38c803856e514cc84ce6"
+    },
+    {
+      "path": "multiprocess/util.py",
+      "wheel_path": "multiprocess/util.py",
+      "size_bytes": 14012,
+      "sha256": "38f237099df804dc30c1aec0a96f9e1a19ee494b2efa8cf2d8d454f0160abb08"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "_multiprocess/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess-0.70.19.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/__info__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/connection.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/context.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/forkserver.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/heap.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/managers.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/pool.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/popen_fork.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/popen_forkserver.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/popen_spawn_posix.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/popen_spawn_win32.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/process.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/queues.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/reduction.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/resource_sharer.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/resource_tracker.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/shared_memory.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/sharedctypes.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/spawn.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/synchronize.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/__pycache__/util.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/dummy/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/dummy/__pycache__/connection.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/tests/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/tests/__pycache__/__main__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/tests/__pycache__/mp_fork_bomb.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/tests/__pycache__/mp_preload.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/tests/__pycache__/test_multiprocessing_fork.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/tests/__pycache__/test_multiprocessing_forkserver.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/tests/__pycache__/test_multiprocessing_main_handling.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "multiprocess/tests/__pycache__/test_multiprocessing_spawn.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "ee8882df7efd152a5a248d4a1cea9580cec8fa175e91455a74058c7d4c42c5ac",
+  "wheel_size_bytes": 158883,
+  "rebuilt_record_verified_files": 38,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:20.359075+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 38,
+  "source_record_verified_file_count": 39
+}

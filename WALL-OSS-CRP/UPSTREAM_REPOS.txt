@@ -1,0 +1,4 @@
+# upstream clones excluded from the mirror (name, origin, HEAD, local changes)
+lerobot	https://github.com/huggingface/lerobot.git	8fff0fde7c79f23a93d845d1a50e985de01f8b8a	local_changes=36
+wall-x	https://github.com/X-Square-Robot/wall-x.git	ce2a1ae31d9ee1028b97ca40e3f66034cf8c0e5f	local_changes=1
+dmuon	https://github.com/X-Square-Robot/dmuon.git	f802a282207984da248defa9d5ade0e57dbbfb67	local_changes=0

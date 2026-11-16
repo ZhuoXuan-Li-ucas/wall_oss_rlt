@@ -1,0 +1,966 @@
+{
+  "status": "PASS",
+  "package": "accelerate",
+  "version": "1.13.0",
+  "filename": "accelerate-1.13.0-py3-none-any.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "d9ca5eed2c5d0fdc1bbf1e859d05e846ffb1d4242e06a37dee21646b1c8d8ce2",
+  "wheel_tags": [
+    "py3-none-any"
+  ],
+  "record_verified_files": [
+    {
+      "path": "../../../bin/accelerate",
+      "wheel_path": "../../../bin/accelerate",
+      "size_bytes": 215,
+      "sha256": "0b4e0f0a687407607c1e5150942561fb39adfe9678f4d7156838d41bfb8b8629"
+    },
+    {
+      "path": "../../../bin/accelerate-config",
+      "wheel_path": "../../../bin/accelerate-config",
+      "size_bytes": 207,
+      "sha256": "68093129f5555e22f43ee2a03134bfed8fae3498dae9538e800962ac6a42111a"
+    },
+    {
+      "path": "../../../bin/accelerate-estimate-memory",
+      "wheel_path": "../../../bin/accelerate-estimate-memory",
+      "size_bytes": 209,
+      "sha256": "ff414976d24997681fa2ee50a0bffb2b4f2f80e89c0111b3f8030e44a969ca9e"
+    },
+    {
+      "path": "../../../bin/accelerate-launch",
+      "wheel_path": "../../../bin/accelerate-launch",
+      "size_bytes": 207,
+      "sha256": "a259ca4d1e0a8b29bab3f397b09fa4b57ef964615fde0befe80010677658d536"
+    },
+    {
+      "path": "../../../bin/accelerate-merge-weights",
+      "wheel_path": "../../../bin/accelerate-merge-weights",
+      "size_bytes": 206,
+      "sha256": "6089b9090986469a3d0e47d82051265865b63e6abb9529be1835304b8c339e9b"
+    },
+    {
+      "path": "accelerate-1.13.0.dist-info/INSTALLER",
+      "wheel_path": "accelerate-1.13.0.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "accelerate-1.13.0.dist-info/METADATA",
+      "wheel_path": "accelerate-1.13.0.dist-info/METADATA",
+      "size_bytes": 19602,
+      "sha256": "513a92b6951d259a4db9cb17dc41618e9525302d950bb2eecd6885df48e4224f"
+    },
+    {
+      "path": "accelerate-1.13.0.dist-info/REQUESTED",
+      "wheel_path": "accelerate-1.13.0.dist-info/REQUESTED",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "accelerate-1.13.0.dist-info/WHEEL",
+      "wheel_path": "accelerate-1.13.0.dist-info/WHEEL",
+      "size_bytes": 91,
+      "sha256": "95353a07a7887d8a224094d935cf9fc9a47a0692fa7a14f3537c466319f69fc9"
+    },
+    {
+      "path": "accelerate-1.13.0.dist-info/entry_points.txt",
+      "wheel_path": "accelerate-1.13.0.dist-info/entry_points.txt",
+      "size_bytes": 296,
+      "sha256": "569cbc81419f67ed559ccdb6dbd7dbf02a4934b05d307ff0b49f4f43b6ffdad4"
+    },
+    {
+      "path": "accelerate-1.13.0.dist-info/licenses/LICENSE",
+      "wheel_path": "accelerate-1.13.0.dist-info/licenses/LICENSE",
+      "size_bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "accelerate-1.13.0.dist-info/top_level.txt",
+      "wheel_path": "accelerate-1.13.0.dist-info/top_level.txt",
+      "size_bytes": 11,
+      "sha256": "7ac55f7714e276c8d0f74cec37facfa632c52788a3465c789a72eb1b4f6196de"
+    },
+    {
+      "path": "accelerate/__init__.py",
+      "wheel_path": "accelerate/__init__.py",
+      "size_bytes": 1555,
+      "sha256": "0c660c26c21ded4c52f0e0300ae84664b7d0ff93fb26c942660b503d9c61b33e"
+    },
+    {
+      "path": "accelerate/accelerator.py",
+      "wheel_path": "accelerate/accelerator.py",
+      "size_bytes": 196722,
+      "sha256": "85fe1ad1f0061598313f8566868e9f53434ac9c1d5e24089c3d03da772d40f23"
+    },
+    {
+      "path": "accelerate/big_modeling.py",
+      "wheel_path": "accelerate/big_modeling.py",
+      "size_bytes": 37573,
+      "sha256": "4dac1453445a5998a949031ccacd8f2a91561a7152a00fc5e183c445ae38eb1f"
+    },
+    {
+      "path": "accelerate/checkpointing.py",
+      "wheel_path": "accelerate/checkpointing.py",
+      "size_bytes": 14349,
+      "sha256": "b80a4f33c73692b4349b204d3fc22fd6b6a76154a91209b5bb59b6324169442f"
+    },
+    {
+      "path": "accelerate/commands/__init__.py",
+      "wheel_path": "accelerate/commands/__init__.py",
+      "size_bytes": 606,
+      "sha256": "9b53cf4c34f8ce2200bccd3e1434a020c219ebd2a89e7d76eace8bc2ecc7eaff"
+    },
+    {
+      "path": "accelerate/commands/accelerate_cli.py",
+      "wheel_path": "accelerate/commands/accelerate_cli.py",
+      "size_bytes": 1972,
+      "sha256": "4a4c0569de99d59b068ed9bb4e25c5abc8def9a92c869ff45b15ffeab192070f"
+    },
+    {
+      "path": "accelerate/commands/config/__init__.py",
+      "wheel_path": "accelerate/commands/config/__init__.py",
+      "size_bytes": 1645,
+      "sha256": "8892bc7608f7a5ce5576bd44ed4b86a05bbe065c9bc972f1603a1383d8179e01"
+    },
+    {
+      "path": "accelerate/commands/config/cluster.py",
+      "wheel_path": "accelerate/commands/config/cluster.py",
+      "size_bytes": 40572,
+      "sha256": "d88c80dfe25df631fd3c3e5db2ff2e0fdf61d4ca34bc127c03f4aac98f81a90d"
+    },
+    {
+      "path": "accelerate/commands/config/config.py",
+      "wheel_path": "accelerate/commands/config/config.py",
+      "size_bytes": 3035,
+      "sha256": "16e46542f3a38004c4b72a8e4ac183f8a12d382bc008e1e3b360be92baed95d9"
+    },
+    {
+      "path": "accelerate/commands/config/config_args.py",
+      "wheel_path": "accelerate/commands/config/config_args.py",
+      "size_bytes": 10145,
+      "sha256": "2ac9d1f894ed6478044370050fb9afaab3fb4cf61ff5d9dce3989c85c377fce2"
+    },
+    {
+      "path": "accelerate/commands/config/config_utils.py",
+      "wheel_path": "accelerate/commands/config/config_utils.py",
+      "size_bytes": 3321,
+      "sha256": "e639c1c47c7368a29f4aa04e7b39c993826ce1b1c4fbabb592ad8ac2eba72b9f"
+    },
+    {
+      "path": "accelerate/commands/config/default.py",
+      "wheel_path": "accelerate/commands/config/default.py",
+      "size_bytes": 6559,
+      "sha256": "734c4a4a1725c0758422ec0c7b9b8d91bd80a655321eedb4a641e53d47a61acc"
+    },
+    {
+      "path": "accelerate/commands/config/sagemaker.py",
+      "wheel_path": "accelerate/commands/config/sagemaker.py",
+      "size_bytes": 10636,
+      "sha256": "4912eea7d5eb57f67edb703777c8196e4a9ba270dcb1c3030e66e99b2b42cdb6"
+    },
+    {
+      "path": "accelerate/commands/config/update.py",
+      "wheel_path": "accelerate/commands/config/update.py",
+      "size_bytes": 2396,
+      "sha256": "d04b76a8a2a0a1e8ac5508b1b09292aa9e1d2f34a87db6768d79803e024ff834"
+    },
+    {
+      "path": "accelerate/commands/env.py",
+      "wheel_path": "accelerate/commands/env.py",
+      "size_bytes": 4586,
+      "sha256": "372e55db3f131472af499bee11a6897f6df73774839107e33efd0527b53c4c0c"
+    },
+    {
+      "path": "accelerate/commands/estimate.py",
+      "wheel_path": "accelerate/commands/estimate.py",
+      "size_bytes": 12667,
+      "sha256": "4d4f7c8bba94efa9186410353c18f2dfc4576ad624218fdefe89dc3a95a8cdea"
+    },
+    {
+      "path": "accelerate/commands/launch.py",
+      "wheel_path": "accelerate/commands/launch.py",
+      "size_bytes": 55180,
+      "sha256": "5d6eefda11382c8d67128d1d66a0f080d3de02d0e21d8b86c317b59ac3f22b10"
+    },
+    {
+      "path": "accelerate/commands/menu/__init__.py",
+      "wheel_path": "accelerate/commands/menu/__init__.py",
+      "size_bytes": 645,
+      "sha256": "baa4a504cd13147070cddbf7a774977e9024d65645a788756bb99b05db1c3c7b"
+    },
+    {
+      "path": "accelerate/commands/menu/cursor.py",
+      "wheel_path": "accelerate/commands/menu/cursor.py",
+      "size_bytes": 2028,
+      "sha256": "fa59a9255033bcd73473710eb52b8ba0a079f73ab295509b63258b3e7ace9af4"
+    },
+    {
+      "path": "accelerate/commands/menu/helpers.py",
+      "wheel_path": "accelerate/commands/menu/helpers.py",
+      "size_bytes": 1483,
+      "sha256": "2ab481e5f2631f831411401027a6d868dd7a01872797d51a943acf0f70d879e8"
+    },
+    {
+      "path": "accelerate/commands/menu/input.py",
+      "wheel_path": "accelerate/commands/menu/input.py",
+      "size_bytes": 2512,
+      "sha256": "4fc31d77e63f394460a9f0d5f6a661e167fa8664f6d809de36d2738f8240d519"
+    },
+    {
+      "path": "accelerate/commands/menu/keymap.py",
+      "wheel_path": "accelerate/commands/menu/keymap.py",
+      "size_bytes": 4086,
+      "sha256": "7978feb2ec98b359b97441e850a37898a00c2dcf035879f084fe86e89494d234"
+    },
+    {
+      "path": "accelerate/commands/menu/selection_menu.py",
+      "wheel_path": "accelerate/commands/menu/selection_menu.py",
+      "size_bytes": 4959,
+      "sha256": "8b294f1d49847a61219fa83089d6e075318eac2262477225d448ea8986e7b9eb"
+    },
+    {
+      "path": "accelerate/commands/merge.py",
+      "wheel_path": "accelerate/commands/merge.py",
+      "size_bytes": 2387,
+      "sha256": "dd4a35e0b003be4f1127067f8ba908b06c16077525e72f14ab8ee81e40d8a8a5"
+    },
+    {
+      "path": "accelerate/commands/test.py",
+      "wheel_path": "accelerate/commands/test.py",
+      "size_bytes": 2149,
+      "sha256": "62b3d811a00008e199e9bb67d8c57a35b31211d05470c5800cb6d059a6521ed9"
+    },
+    {
+      "path": "accelerate/commands/to_fsdp2.py",
+      "wheel_path": "accelerate/commands/to_fsdp2.py",
+      "size_bytes": 5992,
+      "sha256": "4d619cee60b8af38d0985a769b050452289dacf58ff4f2dd3342299b4a0417ca"
+    },
+    {
+      "path": "accelerate/commands/tpu.py",
+      "wheel_path": "accelerate/commands/tpu.py",
+      "size_bytes": 5548,
+      "sha256": "2b2c433fb22ebde89d66b6d6e2bc76b3c2aede8fe9b48eadcf0aff47b724d28b"
+    },
+    {
+      "path": "accelerate/commands/utils.py",
+      "wheel_path": "accelerate/commands/utils.py",
+      "size_bytes": 4150,
+      "sha256": "693f315027b6a42905208ef267171f6a88448e0040ccc50ced6883e14b9648e6"
+    },
+    {
+      "path": "accelerate/data_loader.py",
+      "wheel_path": "accelerate/data_loader.py",
+      "size_bytes": 66369,
+      "sha256": "43ed3268025110162def628e71dd6213cee0fdc47481865f99d8b129718673b1"
+    },
+    {
+      "path": "accelerate/hooks.py",
+      "wheel_path": "accelerate/hooks.py",
+      "size_bytes": 34500,
+      "sha256": "b6a4772b6891c5c65e1261b53a11642dadfafbcbd08b9d914d940f0ca6de8c21"
+    },
+    {
+      "path": "accelerate/inference.py",
+      "wheel_path": "accelerate/inference.py",
+      "size_bytes": 7684,
+      "sha256": "f0cd4b4427d74acb4e5214bc3ba5250a2a50d78713420bc0a96a835d01109f9d"
+    },
+    {
+      "path": "accelerate/launchers.py",
+      "wheel_path": "accelerate/launchers.py",
+      "size_bytes": 14343,
+      "sha256": "d23155b9653c37a7a3809d74f7b5d50591584b4c12ee605689913831d14caf78"
+    },
+    {
+      "path": "accelerate/local_sgd.py",
+      "wheel_path": "accelerate/local_sgd.py",
+      "size_bytes": 4218,
+      "sha256": "3d2d4ff139ec44929d603c273b0d87a10648f20102f27b49b88ee5efd8f4ed36"
+    },
+    {
+      "path": "accelerate/logging.py",
+      "wheel_path": "accelerate/logging.py",
+      "size_bytes": 5233,
+      "sha256": "9644b6880d663c978abdb00e75fe45c0860fd13cd64e3645c0c3a6983893ad0f"
+    },
+    {
+      "path": "accelerate/memory_utils.py",
+      "wheel_path": "accelerate/memory_utils.py",
+      "size_bytes": 862,
+      "sha256": "dd1e4ba1e1e5e8681367e20c3eb0d931d6847a159aac674fa8e0eeb216feea98"
+    },
+    {
+      "path": "accelerate/optimizer.py",
+      "wheel_path": "accelerate/optimizer.py",
+      "size_bytes": 8158,
+      "sha256": "a79a9f08e322f03023bf1e9e102ca9a387a3de9be643f53f6e09ab10029ce216"
+    },
+    {
+      "path": "accelerate/parallelism_config.py",
+      "wheel_path": "accelerate/parallelism_config.py",
+      "size_bytes": 17061,
+      "sha256": "cb1506365309ad66aaa26381271bd680ea45c0057f9d71e456170b941e0f773c"
+    },
+    {
+      "path": "accelerate/scheduler.py",
+      "wheel_path": "accelerate/scheduler.py",
+      "size_bytes": 4238,
+      "sha256": "75eb3fe0cfd3b755bc80261965b2e56b41870448096375b1d8418140f4f37a26"
+    },
+    {
+      "path": "accelerate/state.py",
+      "wheel_path": "accelerate/state.py",
+      "size_bytes": 58292,
+      "sha256": "2f2b15ded88c794fce52e5a60422ec518176876c87912bb2f4d8db707316838b"
+    },
+    {
+      "path": "accelerate/test_utils/__init__.py",
+      "wheel_path": "accelerate/test_utils/__init__.py",
+      "size_bytes": 1826,
+      "sha256": "137e3b24a2f26befef8b821b5a176c015434142b9db5c683ec4ad7d9b87a442d"
+    },
+    {
+      "path": "accelerate/test_utils/examples.py",
+      "wheel_path": "accelerate/test_utils/examples.py",
+      "size_bytes": 7301,
+      "sha256": "9125c9af1e8e8548211c6cea2e70b0a9db0352e7cc8e60760cf4324127d91ef4"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/__init__.py",
+      "wheel_path": "accelerate/test_utils/scripts/__init__.py",
+      "size_bytes": 606,
+      "sha256": "9b53cf4c34f8ce2200bccd3e1434a020c219ebd2a89e7d76eace8bc2ecc7eaff"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/external_deps/__init__.py",
+      "wheel_path": "accelerate/test_utils/scripts/external_deps/__init__.py",
+      "size_bytes": 606,
+      "sha256": "9b53cf4c34f8ce2200bccd3e1434a020c219ebd2a89e7d76eace8bc2ecc7eaff"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/external_deps/test_checkpointing.py",
+      "wheel_path": "accelerate/test_utils/scripts/external_deps/test_checkpointing.py",
+      "size_bytes": 10699,
+      "sha256": "5c768d4669eb0117758b35c58d61a2e548d819ab3ee2fa9ac96e758c01c13c20"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/external_deps/test_ds_alst_ulysses_sp.py",
+      "wheel_path": "accelerate/test_utils/scripts/external_deps/test_ds_alst_ulysses_sp.py",
+      "size_bytes": 4077,
+      "sha256": "25013d8386f6c01fbf28c754711fd1ccb509e622cc662a30475b6eedb6c0226a"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/external_deps/test_ds_multiple_model.py",
+      "wheel_path": "accelerate/test_utils/scripts/external_deps/test_ds_multiple_model.py",
+      "size_bytes": 13765,
+      "sha256": "8447dbeb0a04507069bcc6bc7076be3f9309db2322ffcf40040e39ab4e4fd2ee"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/external_deps/test_metrics.py",
+      "wheel_path": "accelerate/test_utils/scripts/external_deps/test_metrics.py",
+      "size_bytes": 12168,
+      "sha256": "12fd9729a8b09b39e8c4aba3b24000b884860a15bae3a30e8b27f409710f6fd6"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/external_deps/test_peak_memory_usage.py",
+      "wheel_path": "accelerate/test_utils/scripts/external_deps/test_peak_memory_usage.py",
+      "size_bytes": 12925,
+      "sha256": "b457226043ff7266086374a06b80954340ff83babb8bc14283e11306655eaee4"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/external_deps/test_performance.py",
+      "wheel_path": "accelerate/test_utils/scripts/external_deps/test_performance.py",
+      "size_bytes": 11749,
+      "sha256": "cbbeced98f49a5c0de3f6201853d24d05831add718227ebcccc3c297ba9fa3c8"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/external_deps/test_pippy.py",
+      "wheel_path": "accelerate/test_utils/scripts/external_deps/test_pippy.py",
+      "size_bytes": 4789,
+      "sha256": "ad81796ea4827bfa5fca5c43bf6ff643b4b698721bf7fe9f1a7b3e21c2e013f1"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/external_deps/test_zero3_integration.py",
+      "wheel_path": "accelerate/test_utils/scripts/external_deps/test_zero3_integration.py",
+      "size_bytes": 1666,
+      "sha256": "f9f7379773d2029954f3614b69e21608025d01506c4fbdaf050a5d25f6761ecc"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/test_cli.py",
+      "wheel_path": "accelerate/test_utils/scripts/test_cli.py",
+      "size_bytes": 1081,
+      "sha256": "fa9efc35326029d793343ab2ad0b8611966a3299f37541cfc96674e45325e442"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/test_ddp_comm_hook.py",
+      "wheel_path": "accelerate/test_utils/scripts/test_ddp_comm_hook.py",
+      "size_bytes": 3566,
+      "sha256": "93ffb63018cb28d74c1887277936ee19df382b4e56a75184417e8351517d501c"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/test_distributed_data_loop.py",
+      "wheel_path": "accelerate/test_utils/scripts/test_distributed_data_loop.py",
+      "size_bytes": 16020,
+      "sha256": "38fb39f54ed9a74381dc23ba5f4a2b82f4efda009b401cc7885b02b13077304d"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/test_merge_weights.py",
+      "wheel_path": "accelerate/test_utils/scripts/test_merge_weights.py",
+      "size_bytes": 5982,
+      "sha256": "af5a2a3ce30ea8b7b9cd67a75964f297d7036db90525a76934d88f341960475f"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/test_notebook.py",
+      "wheel_path": "accelerate/test_utils/scripts/test_notebook.py",
+      "size_bytes": 4174,
+      "sha256": "3b2d1bced05ff10abb1e14517812d05fc5a01dde04b7720e4d6a2ef20a744df9"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/test_ops.py",
+      "wheel_path": "accelerate/test_utils/scripts/test_ops.py",
+      "size_bytes": 6268,
+      "sha256": "93cd7bc3eea1e7817538222bb1aac0bbc5e27963371fca1957b6ef2bee1a2799"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/test_script.py",
+      "wheel_path": "accelerate/test_utils/scripts/test_script.py",
+      "size_bytes": 34740,
+      "sha256": "698b0b4250a6d1ac7facb381a9e55a71ab9a0b179f8e0bac3ce38d8a2c275c92"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/test_sync.py",
+      "wheel_path": "accelerate/test_utils/scripts/test_sync.py",
+      "size_bytes": 18931,
+      "sha256": "d61ba0db80e3ce550913c20ddd42b175488c4c78668594f9874cdae122f43117"
+    },
+    {
+      "path": "accelerate/test_utils/testing.py",
+      "wheel_path": "accelerate/test_utils/testing.py",
+      "size_bytes": 30505,
+      "sha256": "4114eeff3362fc323a5e5941b8bba11188c01385db749ed0982c0c3b17f490f9"
+    },
+    {
+      "path": "accelerate/test_utils/training.py",
+      "wheel_path": "accelerate/test_utils/training.py",
+      "size_bytes": 6043,
+      "sha256": "ed7e89bcd78e26192ec38f01cee81ec6cabce5af4a5814c53194897a2ccd86e7"
+    },
+    {
+      "path": "accelerate/tracking.py",
+      "wheel_path": "accelerate/tracking.py",
+      "size_bytes": 51132,
+      "sha256": "b0126dea1de49d9f4ec66648414283125091ce5e13eb0311b47f85076b1d0e23"
+    },
+    {
+      "path": "accelerate/utils/__init__.py",
+      "wheel_path": "accelerate/utils/__init__.py",
+      "size_bytes": 8211,
+      "sha256": "dc3acaf3b0bf802b7403e2f118c5831a9555ea0259627607ae0dc1401c6abf4e"
+    },
+    {
+      "path": "accelerate/utils/ao.py",
+      "wheel_path": "accelerate/utils/ao.py",
+      "size_bytes": 4860,
+      "sha256": "827b0fe0b32691f194203c316f8bc904ebbd1f8cc10e45e0328f4c200a7fbd48"
+    },
+    {
+      "path": "accelerate/utils/bnb.py",
+      "wheel_path": "accelerate/utils/bnb.py",
+      "size_bytes": 20460,
+      "sha256": "27143241db72059ab2bab3352f8d0309e470176525ec56c4a890a899d7444fe5"
+    },
+    {
+      "path": "accelerate/utils/constants.py",
+      "wheel_path": "accelerate/utils/constants.py",
+      "size_bytes": 3662,
+      "sha256": "d8b51b2b93c583f4ccfd8a9a7b431fbbe0102ac7e0509b20ec55251914709ab0"
+    },
+    {
+      "path": "accelerate/utils/dataclasses.py",
+      "wheel_path": "accelerate/utils/dataclasses.py",
+      "size_bytes": 154137,
+      "sha256": "e1a5df1a12eb6af6718c356b9f92391ba31a3e3276e57ed097cb9483da6abf10"
+    },
+    {
+      "path": "accelerate/utils/deepspeed.py",
+      "wheel_path": "accelerate/utils/deepspeed.py",
+      "size_bytes": 14796,
+      "sha256": "82dfa3c0ea4eb51b3a378b2886e48ed88df1d6a2e83bab986239cfacaa7a664e"
+    },
+    {
+      "path": "accelerate/utils/environment.py",
+      "wheel_path": "accelerate/utils/environment.py",
+      "size_bytes": 17065,
+      "sha256": "64192700577e80bcae1d28186ce31dcb07d574d62c6131d5f36221505be5c961"
+    },
+    {
+      "path": "accelerate/utils/fsdp_utils.py",
+      "wheel_path": "accelerate/utils/fsdp_utils.py",
+      "size_bytes": 39707,
+      "sha256": "61d8c8a23ce3615710ca2aa6779cbea56a03f3124550a019a0426b74d911c326"
+    },
+    {
+      "path": "accelerate/utils/imports.py",
+      "wheel_path": "accelerate/utils/imports.py",
+      "size_bytes": 15902,
+      "sha256": "1ad9b016c918a559d44901e25269260966703cccc493b63639981a364b3252bf"
+    },
+    {
+      "path": "accelerate/utils/launch.py",
+      "wheel_path": "accelerate/utils/launch.py",
+      "size_bytes": 38710,
+      "sha256": "3bebe3830394fb771bac74258846c8e3747949a32ca1104684f1978d280ca4d3"
+    },
+    {
+      "path": "accelerate/utils/megatron_lm.py",
+      "wheel_path": "accelerate/utils/megatron_lm.py",
+      "size_bytes": 50456,
+      "sha256": "49e9f2b2f9d7dd5613402f036a40c2de6d5b7c1d6e7784e35f4038d362bf4590"
+    },
+    {
+      "path": "accelerate/utils/memory.py",
+      "wheel_path": "accelerate/utils/memory.py",
+      "size_bytes": 6014,
+      "sha256": "e174cb68dc4113a559cb90dbb7a37b7d524579f1240561635b88a37b1c11fb91"
+    },
+    {
+      "path": "accelerate/utils/modeling.py",
+      "wheel_path": "accelerate/utils/modeling.py",
+      "size_bytes": 95664,
+      "sha256": "d6052abc0625740115176a4d2dfc0861a189a2dba94443c09cc8500254b57e2e"
+    },
+    {
+      "path": "accelerate/utils/offload.py",
+      "wheel_path": "accelerate/utils/offload.py",
+      "size_bytes": 7845,
+      "sha256": "37a013a4e66987b806ad9523ae289c0fb17aa08859be624d0faea3472cb59e5c"
+    },
+    {
+      "path": "accelerate/utils/operations.py",
+      "wheel_path": "accelerate/utils/operations.py",
+      "size_bytes": 31462,
+      "sha256": "252fc892fb5046a4394d708fb49255aea49bb172fc0f2fca4717468889ec8a75"
+    },
+    {
+      "path": "accelerate/utils/other.py",
+      "wheel_path": "accelerate/utils/other.py",
+      "size_bytes": 20540,
+      "sha256": "fcbccc417f372e52c96e65bd507dce97a48b317566a2c661770cdda6f1219abc"
+    },
+    {
+      "path": "accelerate/utils/random.py",
+      "wheel_path": "accelerate/utils/random.py",
+      "size_bytes": 6665,
+      "sha256": "87eff0975a4877ad9122de955bdb6dd587920112a23279353b3ff46877405b81"
+    },
+    {
+      "path": "accelerate/utils/rich.py",
+      "wheel_path": "accelerate/utils/rich.py",
+      "size_bytes": 847,
+      "sha256": "f09657fee18c417f81b9f757c49a5d9deec159dd4ac8b1d281b886c6b0cc62bf"
+    },
+    {
+      "path": "accelerate/utils/torch_xla.py",
+      "wheel_path": "accelerate/utils/torch_xla.py",
+      "size_bytes": 1908,
+      "sha256": "3ead6dbaa3745ffa560d5cdae988237cee39ba825da11551168acb78b43316eb"
+    },
+    {
+      "path": "accelerate/utils/tqdm.py",
+      "wheel_path": "accelerate/utils/tqdm.py",
+      "size_bytes": 1657,
+      "sha256": "93c7bd26789e4c44070823416a2072b3b84fc569446f244049d2266beab2fd7f"
+    },
+    {
+      "path": "accelerate/utils/transformer_engine.py",
+      "wheel_path": "accelerate/utils/transformer_engine.py",
+      "size_bytes": 7537,
+      "sha256": "3059f33313f5581ed472ee7aa97b6724f848efcf73c68206e9d3a6cd0bb722ba"
+    },
+    {
+      "path": "accelerate/utils/versions.py",
+      "wheel_path": "accelerate/utils/versions.py",
+      "size_bytes": 2149,
+      "sha256": "52099c6e3066fbee82231d596a648032300afc1ff6978f0b6de68dca0a9e8fc3"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "../../../bin/accelerate",
+      "reason": "verified console entry point; installer regenerates portable script"
+    },
+    {
+      "path": "../../../bin/accelerate-config",
+      "reason": "verified console entry point; installer regenerates portable script"
+    },
+    {
+      "path": "../../../bin/accelerate-estimate-memory",
+      "reason": "verified console entry point; installer regenerates portable script"
+    },
+    {
+      "path": "../../../bin/accelerate-launch",
+      "reason": "verified console entry point; installer regenerates portable script"
+    },
+    {
+      "path": "../../../bin/accelerate-merge-weights",
+      "reason": "verified console entry point; installer regenerates portable script"
+    },
+    {
+      "path": "accelerate-1.13.0.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate-1.13.0.dist-info/REQUESTED",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/__pycache__/accelerator.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/__pycache__/big_modeling.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/__pycache__/checkpointing.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/__pycache__/data_loader.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/__pycache__/hooks.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/__pycache__/inference.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/__pycache__/launchers.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/__pycache__/local_sgd.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/__pycache__/logging.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/__pycache__/memory_utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/__pycache__/optimizer.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/__pycache__/parallelism_config.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/__pycache__/scheduler.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/__pycache__/state.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/__pycache__/tracking.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/__pycache__/accelerate_cli.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/__pycache__/env.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/__pycache__/estimate.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/__pycache__/launch.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/__pycache__/merge.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/__pycache__/test.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/__pycache__/to_fsdp2.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/__pycache__/tpu.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/__pycache__/utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/config/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/config/__pycache__/cluster.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/config/__pycache__/config.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/config/__pycache__/config_args.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/config/__pycache__/config_utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/config/__pycache__/default.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/config/__pycache__/sagemaker.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/config/__pycache__/update.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/menu/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/menu/__pycache__/cursor.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/menu/__pycache__/helpers.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/menu/__pycache__/input.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/menu/__pycache__/keymap.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/commands/menu/__pycache__/selection_menu.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/__pycache__/examples.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/__pycache__/testing.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/__pycache__/training.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/__pycache__/test_cli.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/__pycache__/test_ddp_comm_hook.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/__pycache__/test_distributed_data_loop.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/__pycache__/test_merge_weights.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/__pycache__/test_notebook.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/__pycache__/test_ops.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/__pycache__/test_script.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/__pycache__/test_sync.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/external_deps/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/external_deps/__pycache__/test_checkpointing.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/external_deps/__pycache__/test_ds_alst_ulysses_sp.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/external_deps/__pycache__/test_ds_multiple_model.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/external_deps/__pycache__/test_metrics.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/external_deps/__pycache__/test_peak_memory_usage.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/external_deps/__pycache__/test_performance.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/external_deps/__pycache__/test_pippy.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/test_utils/scripts/external_deps/__pycache__/test_zero3_integration.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/ao.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/bnb.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/constants.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/dataclasses.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/deepspeed.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/environment.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/fsdp_utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/imports.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/launch.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/megatron_lm.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/memory.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/modeling.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/offload.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/operations.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/other.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/random.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/rich.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/torch_xla.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/tqdm.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/transformer_engine.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "accelerate/utils/__pycache__/versions.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "e95289ca8129370608ada1df54de0638ca28d77f280d42e3d3d24f25c87dcae9",
+  "wheel_size_bytes": 452170,
+  "rebuilt_record_verified_files": 89,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:17.541307+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 89,
+  "source_record_verified_file_count": 96
+}

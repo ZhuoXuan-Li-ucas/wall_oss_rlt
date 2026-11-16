@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "actual new package extraction; source member hashes, docs/config/CPU-report closure and portable CLI help; no Docker or GPU",
+  "root": "/home/pangk/workspaces/WALL-OSS-CRP/.cache/rlt-inference-portability-20261029-v1",
+  "required_project_files_matched": [
+    "WALL_RLT_Inference_Deployment.md",
+    "WALL_RLT_Implementation_Review.md",
+    "configs/inference/rtx5070ti.json",
+    "logs/rlt-inference-20261029/cpu-check/report.json",
+    "scripts/serve_wall_rlt.py",
+    "scripts/export_wall_rlt_inference.py",
+    "scripts/check_wall_rlt_inference.py",
+    "scripts/check_wall_rlt_inference_host.py"
+  ],
+  "cli_help": 4,
+  "cutlass_present": true,
+  "host_native_binaries_present": false,
+  "git_metadata_present": false
+}

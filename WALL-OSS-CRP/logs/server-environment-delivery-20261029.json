@@ -1,0 +1,41 @@
+{
+  "status": "READY",
+  "checked_at_utc": "2026-10-29T06:17:59.117368+00:00",
+  "bundle": "/media/pangk/My Passport/WALL-OSS-CRP-transfer-20261029",
+  "total_bytes": 16787299846,
+  "manifest_entries": 27,
+  "required_files": 24,
+  "archive_bytes": {
+    "environment-image.tar.gz": 9879516707,
+    "models.tar.gz": 6570912728,
+    "smoke-data.tar.gz": 336602786
+  },
+  "archive_sha256": {
+    "environment-image.tar.gz": "89d7602ad621b383dd53f97389548498efd3fb2c71f45c57baf1c08318d61cbb",
+    "models.tar.gz": "ca7e3165bc834032dcb5530d1ebf8bdaafe0ef61ec914818f9ff0eb77440e74c",
+    "smoke-data.tar.gz": "5fb5ba323fd20b2212dbcc2a4e3f9d14119a60e320f5c23ffc7edbadefd3e842"
+  },
+  "manifest_sha256": "9dbf56cb50f464339ae1053f91934e8a98c3857b901b8d8d81f7061b7b537f10",
+  "source_image_id": "sha256:8f067a0eb220228f444811532cc8ec0a328e4d46b7983637c1c4ea7743ef9ee8",
+  "validation_report": "/home/pangk/workspaces/WALL-OSS-CRP/logs/docker-validation-delivery-20261029",
+  "runtime_gpu": "NVIDIA GeForce RTX 3060 Ti",
+  "scope": "Base component execution, historical sample-data reads, static native-architecture coverage and complete transfer-bundle integrity only.",
+  "dependency_declarations": "FAIL: 11 known exceptions; no unexpected issues",
+  "service": "walloss-bundle-20261029-export.service",
+  "service_result": "success",
+  "service_exit_code": 0,
+  "temporary_swap_removed": true,
+  "task_sleep_inhibitor_released": true,
+  "windows_validation": "NOT_REQUIRED",
+  "server_transfer": "NOT_STARTED",
+  "h100_validation": "NOT_RUN",
+  "full_model_inference": "NOT_RUN",
+  "training": "NOT_RUN",
+  "rlinf_rlt": "NOT_INTEGRATED",
+  "full_bundle_hash_verification": "PASS in exporter finalize; closeout checks receipt binding and inventory without redundantly rehashing archives.",
+  "recovery_evidence": [
+    "logs/build-input-cache-cleanup-20261029.json",
+    "logs/asset-manifest-order-20261029.json",
+    "logs/asset-manifest-order-tests-20261029.json"
+  ]
+}

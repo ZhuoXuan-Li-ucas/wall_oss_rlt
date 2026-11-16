@@ -1,0 +1,596 @@
+{
+  "status": "PASS",
+  "package": "draccus",
+  "version": "0.10.0",
+  "filename": "draccus-0.10.0-py3-none-any.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "3ba4c9cce064579f5bdd365408af92ab5f16e6a80a40e2912c8b1456fd8fe807",
+  "wheel_tags": [
+    "py3-none-any"
+  ],
+  "record_verified_files": [
+    {
+      "path": "draccus-0.10.0.dist-info/INSTALLER",
+      "wheel_path": "draccus-0.10.0.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "draccus-0.10.0.dist-info/LICENSE",
+      "wheel_path": "draccus-0.10.0.dist-info/LICENSE",
+      "size_bytes": 1179,
+      "sha256": "1bc629a2a1506450313a582c112b15a128cb00464747da5f27b37799464179b0"
+    },
+    {
+      "path": "draccus-0.10.0.dist-info/METADATA",
+      "wheel_path": "draccus-0.10.0.dist-info/METADATA",
+      "size_bytes": 24293,
+      "sha256": "3d3a6cf304a47a8fed0e7fc2e0b49b0b67f8b4305be975dda19c61b0106f9adb"
+    },
+    {
+      "path": "draccus-0.10.0.dist-info/REQUESTED",
+      "wheel_path": "draccus-0.10.0.dist-info/REQUESTED",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "draccus-0.10.0.dist-info/WHEEL",
+      "wheel_path": "draccus-0.10.0.dist-info/WHEEL",
+      "size_bytes": 91,
+      "sha256": "227f454cdc5e3fad0a9d3906c3bc24ea624f61dfdd4128c46665dd05d30223ef"
+    },
+    {
+      "path": "draccus-0.10.0.dist-info/top_level.txt",
+      "wheel_path": "draccus-0.10.0.dist-info/top_level.txt",
+      "size_bytes": 23,
+      "sha256": "c1f00a2f59a29c1c9da3385ea7f87db04a1f6c1a894f6b8281ca649bbdeabb0b"
+    },
+    {
+      "path": "draccus/__init__.py",
+      "wheel_path": "draccus/__init__.py",
+      "size_bytes": 481,
+      "sha256": "fdaa1deb3837bca504412974b392382503361581e0d9413459f2aa19f962a013"
+    },
+    {
+      "path": "draccus/argparsing.py",
+      "wheel_path": "draccus/argparsing.py",
+      "size_bytes": 8848,
+      "sha256": "eeeb3bec712cb2fce761b283fb13e0697723dbb309e150a2cdea8d2b99fcbc91"
+    },
+    {
+      "path": "draccus/cfgparsing.py",
+      "wheel_path": "draccus/cfgparsing.py",
+      "size_bytes": 1574,
+      "sha256": "364db77cc766433a647caf06937cda9f03a812fec187cdb8380f00cf9e309797"
+    },
+    {
+      "path": "draccus/choice_types.py",
+      "wheel_path": "draccus/choice_types.py",
+      "size_bytes": 6592,
+      "sha256": "f1414246850ec39cdaa1f201d670a46315ba758a7c76430a398309e81ee8739a"
+    },
+    {
+      "path": "draccus/fields.py",
+      "wheel_path": "draccus/fields.py",
+      "size_bytes": 846,
+      "sha256": "64f267579be96350b2f83ae2f60851591d5743635a8147e966fc7c096aa03b9d"
+    },
+    {
+      "path": "draccus/help_formatter.py",
+      "wheel_path": "draccus/help_formatter.py",
+      "size_bytes": 3262,
+      "sha256": "e8f2d109b14fc3d82b8bd9a306b5e2fca9b086900b537e859ab2c6088f46f594"
+    },
+    {
+      "path": "draccus/options.py",
+      "wheel_path": "draccus/options.py",
+      "size_bytes": 849,
+      "sha256": "4073541a79fa7e1a5afc9a46b42c7f1972635b0b58325624e1db28f0a47273a5"
+    },
+    {
+      "path": "draccus/parsers/__init__.py",
+      "wheel_path": "draccus/parsers/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "draccus/parsers/config_parsers.py",
+      "wheel_path": "draccus/parsers/config_parsers.py",
+      "size_bytes": 2364,
+      "sha256": "930cb6d1596f7e4fc64595bcf004c658ab9c7631fada9738972e6ac6243ef140"
+    },
+    {
+      "path": "draccus/parsers/decoding.py",
+      "wheel_path": "draccus/parsers/decoding.py",
+      "size_bytes": 17273,
+      "sha256": "67c1dd5027bd5bc291bfe66657f936998460eb8c6103fcd1ccdfa8868238f4ae"
+    },
+    {
+      "path": "draccus/parsers/encoding.py",
+      "wheel_path": "draccus/parsers/encoding.py",
+      "size_bytes": 3771,
+      "sha256": "8f709fb285dd2d83393642878e37b19eb73f4fcb4fb30bc15affe20d3eb12ff6"
+    },
+    {
+      "path": "draccus/parsers/registry_utils.py",
+      "wheel_path": "draccus/parsers/registry_utils.py",
+      "size_bytes": 3024,
+      "sha256": "89afd0dd8f1882c0d5499dcc3db5eb61b4e7bdb06ff33a1bfad12fb761a04de6"
+    },
+    {
+      "path": "draccus/parsers/yaml_loader.py",
+      "wheel_path": "draccus/parsers/yaml_loader.py",
+      "size_bytes": 3725,
+      "sha256": "c94eff32f687300c53e06659257af41c81821967d3a807f0ce90a08a19b37758"
+    },
+    {
+      "path": "draccus/py.typed",
+      "wheel_path": "draccus/py.typed",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "draccus/utils.py",
+      "wheel_path": "draccus/utils.py",
+      "size_bytes": 12254,
+      "sha256": "f6ebd365633dc4e265005ba4facff193dee93317ef5ac9b92e50d76a9b59118c"
+    },
+    {
+      "path": "draccus/wrappers/__init__.py",
+      "wheel_path": "draccus/wrappers/__init__.py",
+      "size_bytes": 88,
+      "sha256": "2d77d566ce5d2cd77f764a411cb737e8ecc72fe443ff7674b2bae03ec9d5158f"
+    },
+    {
+      "path": "draccus/wrappers/choice_wrapper.py",
+      "wheel_path": "draccus/wrappers/choice_wrapper.py",
+      "size_bytes": 9310,
+      "sha256": "cd16ea74d1c5442e277647137e5dea23c463af646997cc8f2594a4c3525490af"
+    },
+    {
+      "path": "draccus/wrappers/dataclass_wrapper.py",
+      "wheel_path": "draccus/wrappers/dataclass_wrapper.py",
+      "size_bytes": 7766,
+      "sha256": "e9b92079e0fcd3b2a2bf0bac8936ad808826de22b159a8bbf0f9ac8fdbd24da1"
+    },
+    {
+      "path": "draccus/wrappers/docstring.py",
+      "wheel_path": "draccus/wrappers/docstring.py",
+      "size_bytes": 10207,
+      "sha256": "3bc177700dc89065403cb4933f0fa57789c655e0888b158e37fbd63e431300e3"
+    },
+    {
+      "path": "draccus/wrappers/field_metavar.py",
+      "wheel_path": "draccus/wrappers/field_metavar.py",
+      "size_bytes": 2199,
+      "sha256": "b44f44e4c06d00ca751015399c45ad530e7eec0c545d300eb1f7ee2696d0d78b"
+    },
+    {
+      "path": "draccus/wrappers/field_wrapper.py",
+      "wheel_path": "draccus/wrappers/field_wrapper.py",
+      "size_bytes": 13160,
+      "sha256": "d3073734a2f4c90b9e3ad04003673ca224ee11544ef3a39414df1c10448e8e23"
+    },
+    {
+      "path": "draccus/wrappers/suppressing_argparse.py",
+      "wheel_path": "draccus/wrappers/suppressing_argparse.py",
+      "size_bytes": 2113,
+      "sha256": "20a4df7265e4a0eb7ba741068c78034b4e0c6ed6234fca15194a2248212b3e1a"
+    },
+    {
+      "path": "draccus/wrappers/wrapper.py",
+      "wheel_path": "draccus/wrappers/wrapper.py",
+      "size_bytes": 2123,
+      "sha256": "4f690767cefe0239392c507d2e2d342c88fabb309ce70d03d2d3b97cfd62157c"
+    },
+    {
+      "path": "examples/choice_class_demo.py",
+      "wheel_path": "examples/choice_class_demo.py",
+      "size_bytes": 2007,
+      "sha256": "b05d2e389a78e9c4783706096e374baa4120f6966a7a4ab24c08d157b1b67d5d"
+    },
+    {
+      "path": "examples/demo.py",
+      "wheel_path": "examples/demo.py",
+      "size_bytes": 1609,
+      "sha256": "d23e734334a47d560c9cd0bc3d7ac91761d2659c010a60a7285677887dbb3645"
+    },
+    {
+      "path": "tests/__init__.py",
+      "wheel_path": "tests/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tests/conftest.py",
+      "wheel_path": "tests/conftest.py",
+      "size_bytes": 6257,
+      "sha256": "e7a5ab396ca999f62d182be6e428463f418aea3280897435ae01f05b2d6f69e3"
+    },
+    {
+      "path": "tests/draccus_choice_plugins/gpt.py",
+      "wheel_path": "tests/draccus_choice_plugins/gpt.py",
+      "size_bytes": 220,
+      "sha256": "ac2737b616ceda0c9d64998dbbdca961b801e6d11971672e46ae0f13dbb44836"
+    },
+    {
+      "path": "tests/draccus_choice_plugins/model_config.py",
+      "wheel_path": "tests/draccus_choice_plugins/model_config.py",
+      "size_bytes": 463,
+      "sha256": "0eee31b357c69919e2528d8c700dc0eb1e3ff12e8f9b042fc45fdc9b6acce259"
+    },
+    {
+      "path": "tests/test_argparse_choice_types.py",
+      "wheel_path": "tests/test_argparse_choice_types.py",
+      "size_bytes": 2331,
+      "sha256": "b636e369c0927a3c2a3bf4995e5d1b64b7e5b9a1bdeaab6b1d79cf6976666470"
+    },
+    {
+      "path": "tests/test_argparse_choice_types_plugin.py",
+      "wheel_path": "tests/test_argparse_choice_types_plugin.py",
+      "size_bytes": 2370,
+      "sha256": "c1d679ad91d41e30e61bff6756d233487a4500c0bfc576a9e90a7d64379caeca"
+    },
+    {
+      "path": "tests/test_base.py",
+      "wheel_path": "tests/test_base.py",
+      "size_bytes": 5390,
+      "sha256": "3ca2014ba03e2ebf5ed9b28696e92cd6a928443ba394183521ede0f51bc4e5ae"
+    },
+    {
+      "path": "tests/test_bools.py",
+      "wheel_path": "tests/test_bools.py",
+      "size_bytes": 821,
+      "sha256": "0b4be18bd7eeeab3838f9bd8865ca83809ca9dfc5b2df260df8ab8978eee900c"
+    },
+    {
+      "path": "tests/test_calling_using_dataclass.py",
+      "wheel_path": "tests/test_calling_using_dataclass.py",
+      "size_bytes": 314,
+      "sha256": "121bc67e6b2e98cb10e4bbd6275c0d6fe331f6fc5966821a15be7175c44477fe"
+    },
+    {
+      "path": "tests/test_choice_types.py",
+      "wheel_path": "tests/test_choice_types.py",
+      "size_bytes": 1539,
+      "sha256": "8bb35a42699a0c4ab3d3ffca75fda8c855d706de8be77300cea26b83d43f8a9a"
+    },
+    {
+      "path": "tests/test_decoding.py",
+      "wheel_path": "tests/test_decoding.py",
+      "size_bytes": 3779,
+      "sha256": "34a5be77fbcdbc370a49d82339f969a6e08478118e3d4bf91e022a813673870f"
+    },
+    {
+      "path": "tests/test_default_args.py",
+      "wheel_path": "tests/test_default_args.py",
+      "size_bytes": 803,
+      "sha256": "9b7f320b594d552a909f106fc06bdd624130072b2c0467ad318578a1b6aa68ac"
+    },
+    {
+      "path": "tests/test_docstrings.py",
+      "wheel_path": "tests/test_docstrings.py",
+      "size_bytes": 3105,
+      "sha256": "bc242fac8dca0f798a439ca74757bd05eb131afd1d2cc508f85145633a926565"
+    },
+    {
+      "path": "tests/test_enums.py",
+      "wheel_path": "tests/test_enums.py",
+      "size_bytes": 2384,
+      "sha256": "72f91be535a478f29974cb93de5572e87f65d7f18562e5f57cccc339e4804d28"
+    },
+    {
+      "path": "tests/test_future_annotations.py",
+      "wheel_path": "tests/test_future_annotations.py",
+      "size_bytes": 592,
+      "sha256": "abd65ce51d727b0c606a982ec4668ceff089f6cd6924e5c5fe0d31799de9f7b9"
+    },
+    {
+      "path": "tests/test_generic_params.py",
+      "wheel_path": "tests/test_generic_params.py",
+      "size_bytes": 815,
+      "sha256": "b74582f3dad2477d619642e6ce3ac057a1ae0634e1e783e189f05822d306e574"
+    },
+    {
+      "path": "tests/test_inheritance.py",
+      "wheel_path": "tests/test_inheritance.py",
+      "size_bytes": 2485,
+      "sha256": "ada838358bed339535e74d980f11632b4ad0816ea5581e1998e6340b6418431e"
+    },
+    {
+      "path": "tests/test_lists.py",
+      "wheel_path": "tests/test_lists.py",
+      "size_bytes": 4112,
+      "sha256": "216dfe6b57512fe10ba7bb10721cd49f890c429520180c90ded6123b951aca58"
+    },
+    {
+      "path": "tests/test_optional.py",
+      "wheel_path": "tests/test_optional.py",
+      "size_bytes": 3136,
+      "sha256": "3d9640ecc290c1deddb6928f0ed6d1f37014ebb3c313c3d546c0368f3262294d"
+    },
+    {
+      "path": "tests/test_optional_choice_type.py",
+      "wheel_path": "tests/test_optional_choice_type.py",
+      "size_bytes": 2137,
+      "sha256": "e12531a4eb7af73317f7efc7c8346eb1f4b396d983383646c7430327d5253bb5"
+    },
+    {
+      "path": "tests/test_optional_union.py",
+      "wheel_path": "tests/test_optional_union.py",
+      "size_bytes": 463,
+      "sha256": "8f52eef1082ea97a9f81e18514d42ebe1f6a008bdf70f2bf2b0b7e1c0a205db0"
+    },
+    {
+      "path": "tests/test_preferred_help.py",
+      "wheel_path": "tests/test_preferred_help.py",
+      "size_bytes": 2601,
+      "sha256": "bd39baef290c5eccde5d4d4f4b211b7ae9b4f09b01fe0caf761a89384170f07b"
+    },
+    {
+      "path": "tests/test_tuples.py",
+      "wheel_path": "tests/test_tuples.py",
+      "size_bytes": 1313,
+      "sha256": "16a045b5c1a338749a24c0748f9a2207ae1ad6a61025aad4c2db8d00b51f9e2a"
+    },
+    {
+      "path": "tests/test_union.py",
+      "wheel_path": "tests/test_union.py",
+      "size_bytes": 3798,
+      "sha256": "b90df361ce9477df8877a267de0b7ee7e5cbcc790633bc929c08acb257edf01a"
+    },
+    {
+      "path": "tests/test_utils.py",
+      "wheel_path": "tests/test_utils.py",
+      "size_bytes": 2348,
+      "sha256": "c37b2a71ab44711758ac72ab6bfcc779921d8f1effe56510cb7b5e4b17418ddd"
+    },
+    {
+      "path": "tests/test_yaml_inclusion.py",
+      "wheel_path": "tests/test_yaml_inclusion.py",
+      "size_bytes": 1797,
+      "sha256": "b12c78251e03fa8ec799fa1544598c2de275c317509af86203597bfacb1a1981"
+    },
+    {
+      "path": "tests/test_yaml_inclusion_cli.py",
+      "wheel_path": "tests/test_yaml_inclusion_cli.py",
+      "size_bytes": 1919,
+      "sha256": "ea22913e66f2b8279643fb2f11f2ca366e947c4b675f8d9314b698b0d828aeea"
+    },
+    {
+      "path": "tests/testutils.py",
+      "wheel_path": "tests/testutils.py",
+      "size_bytes": 4634,
+      "sha256": "3b454ea0167d33c8fde6c95a112dfdc5b863ccb57264ea0f9b87c66550e07bff"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "draccus-0.10.0.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus-0.10.0.dist-info/REQUESTED",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/__pycache__/argparsing.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/__pycache__/cfgparsing.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/__pycache__/choice_types.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/__pycache__/fields.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/__pycache__/help_formatter.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/__pycache__/options.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/__pycache__/utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/parsers/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/parsers/__pycache__/config_parsers.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/parsers/__pycache__/decoding.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/parsers/__pycache__/encoding.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/parsers/__pycache__/registry_utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/parsers/__pycache__/yaml_loader.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/wrappers/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/wrappers/__pycache__/choice_wrapper.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/wrappers/__pycache__/dataclass_wrapper.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/wrappers/__pycache__/docstring.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/wrappers/__pycache__/field_metavar.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/wrappers/__pycache__/field_wrapper.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/wrappers/__pycache__/suppressing_argparse.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "draccus/wrappers/__pycache__/wrapper.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "examples/__pycache__/choice_class_demo.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "examples/__pycache__/demo.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/conftest.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_argparse_choice_types.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_argparse_choice_types_plugin.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_base.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_bools.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_calling_using_dataclass.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_choice_types.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_decoding.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_default_args.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_docstrings.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_enums.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_future_annotations.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_generic_params.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_inheritance.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_lists.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_optional.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_optional_choice_type.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_optional_union.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_preferred_help.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_tuples.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_union.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_yaml_inclusion.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/test_yaml_inclusion_cli.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/__pycache__/testutils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/draccus_choice_plugins/__pycache__/gpt.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tests/draccus_choice_plugins/__pycache__/model_config.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "f8361c6b661d4cc3072df305fb3e9be15dd4970b6af8515d178c6afa16f0e067",
+  "wheel_size_bytes": 79878,
+  "rebuilt_record_verified_files": 57,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:18.057524+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 57,
+  "source_record_verified_file_count": 59
+}

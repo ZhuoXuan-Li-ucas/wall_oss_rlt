@@ -1,0 +1,306 @@
+Using pip 26.1.2 from /home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/pip (python 3.10)
+Processing ./WALL-OSS-CRP/.cache/flash-attn-2.8.3
+  Preparing metadata (pyproject.toml): started
+  Running command Preparing metadata (pyproject.toml)
+  /home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please update to setuptools v70.1 or later which contains an integrated version of this command.
+    warn(
+  /home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+  !!
+
+          ********************************************************************************
+          Please consider removing the following classifiers in favor of a SPDX license expression:
+
+          License :: OSI Approved :: BSD License
+
+          See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+          ********************************************************************************
+
+  !!
+    self._finalize_license_expression()
+
+
+  torch.__version__  = 2.10.0+cu130
+
+
+  running dist_info
+  creating /tmp/pip-modern-metadata-hab5hot5/flash_attn.egg-info
+  writing /tmp/pip-modern-metadata-hab5hot5/flash_attn.egg-info/PKG-INFO
+  writing dependency_links to /tmp/pip-modern-metadata-hab5hot5/flash_attn.egg-info/dependency_links.txt
+  writing requirements to /tmp/pip-modern-metadata-hab5hot5/flash_attn.egg-info/requires.txt
+  writing top-level names to /tmp/pip-modern-metadata-hab5hot5/flash_attn.egg-info/top_level.txt
+  writing manifest file '/tmp/pip-modern-metadata-hab5hot5/flash_attn.egg-info/SOURCES.txt'
+  reading manifest file '/tmp/pip-modern-metadata-hab5hot5/flash_attn.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  warning: no files found matching '*.cu' under directory 'flash_attn'
+  warning: no files found matching '*.h' under directory 'flash_attn'
+  warning: no files found matching '*.cuh' under directory 'flash_attn'
+  warning: no files found matching '*.cpp' under directory 'flash_attn'
+  warning: no files found matching '*.hpp' under directory 'flash_attn'
+  adding license file 'LICENSE'
+  adding license file 'AUTHORS'
+  writing manifest file '/tmp/pip-modern-metadata-hab5hot5/flash_attn.egg-info/SOURCES.txt'
+  creating '/tmp/pip-modern-metadata-hab5hot5/flash_attn-2.8.3.dist-info'
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: flash_attn
+  Building wheel for flash_attn (pyproject.toml): started
+  Running command Building wheel for flash_attn (pyproject.toml)
+  /home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please update to setuptools v70.1 or later which contains an integrated version of this command.
+    warn(
+  /home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+  !!
+
+          ********************************************************************************
+          Please consider removing the following classifiers in favor of a SPDX license expression:
+
+          License :: OSI Approved :: BSD License
+
+          See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+          ********************************************************************************
+
+  !!
+    self._finalize_license_expression()
+
+
+  torch.__version__  = 2.10.0+cu130
+
+
+  running bdist_wheel
+  Guessing wheel URL:  https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3/flash_attn-2.8.3+cu12torch2.10cxx11abiTRUE-cp310-cp310-linux_x86_64.whl
+  Precompiled wheel not found. Building from source...
+  running build
+  running build_py
+  running build_ext
+  W1022 16:17:50.610000 29750 site-packages/torch/utils/cpp_extension.py:535] There are no g++ version bounds defined for CUDA version 13.0
+  building 'flash_attn_2_cuda' extension
+  [1/73] c++ -MMD -MF /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/flash_api.o.d -pthread -B /home/pangk/workspaces/WALL-OSS-CRP/env/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -fno-merge-constants -isystem /home/pangk/workspaces/WALL-OSS-CRP/env/include -fPIC -O2 -fno-merge-constants -isystem /home/pangk/workspaces/WALL-OSS-CRP/env/include -fPIC -I/home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/flash_attn -I/home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/flash_attn/src -I/home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-13.0/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/include/python3.10 -c -c /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/flash_attn/flash_api.cpp -o /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/flash_api.o -O3 -std=c++17 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=flash_attn_2_cuda
+  In file included from /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include/cutlass/integer_subbyte.h:47,
+                   from /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include/cutlass/numeric_types.h:40,
+                   from /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/flash_attn/flash_api.cpp:13:
+  /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include/cutlass/platform/platform.h:599:21: warning: ‘long4’ is deprecated: use long4_16a or long4_32a [-Wdeprecated-declarations]
+    599 | struct alignment_of<long4> {
+        |                     ^~~~~
+  In file included from /usr/local/cuda-13.0/include/driver_types.h:61,
+                   from /usr/local/cuda-13.0/include/builtin_types.h:59,
+                   from /usr/local/cuda-13.0/include/cuda_runtime.h:90,
+                   from /home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include/c10/cuda/CUDAMiscFunctions.h:7,
+                   from /home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include/c10/cuda/CUDAException.h:6,
+                   from /home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include/c10/cuda/CUDAAllocatorConfig.h:5,
+                   from /home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include/c10/cuda/CUDACachingAllocator.h:6,
+                   from /home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include/c10/cuda/impl/CUDAGuardImpl.h:9,
+                   from /home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include/c10/cuda/CUDAGuard.h:8,
+                   from /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/flash_attn/flash_api.cpp:8:
+  /usr/local/cuda-13.0/include/vector_types.h:532:98: note: declared here
+    532 | typedef __device_builtin__ struct long4 __VECTOR_TYPE_DEPRECATED__("use long4_16a or long4_32a") long4;
+        |                                                                                                  ^~~~~
+  /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include/cutlass/platform/platform.h:603:21: warning: ‘ulong4’ is deprecated: use ulong4_16a or ulong4_32a [-Wdeprecated-declarations]
+    603 | struct alignment_of<ulong4> {
+        |                     ^~~~~~
+  /usr/local/cuda-13.0/include/vector_types.h:533:101: note: declared here
+    533 | typedef __device_builtin__ struct ulong4 __VECTOR_TYPE_DEPRECATED__("use ulong4_16a or ulong4_32a") ulong4;
+        |                                                                                                     ^~~~~~
+  /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include/cutlass/platform/platform.h:619:21: warning: ‘longlong4’ is deprecated: use longlong4_16a or longlong4_32a [-Wdeprecated-declarations]
+    619 | struct alignment_of<longlong4> {
+        |                     ^~~~~~~~~
+  /usr/local/cuda-13.0/include/vector_types.h:550:110: note: declared here
+    550 | typedef __device_builtin__ struct longlong4 __VECTOR_TYPE_DEPRECATED__("use longlong4_16a or longlong4_32a") longlong4;
+        |                                                                                                              ^~~~~~~~~
+  /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include/cutlass/platform/platform.h:623:21: warning: ‘ulonglong4’ is deprecated: use ulonglong4_16a or ulonglong4_32a [-Wdeprecated-declarations]
+    623 | struct alignment_of<ulonglong4> {
+        |                     ^~~~~~~~~~
+  /usr/local/cuda-13.0/include/vector_types.h:551:113: note: declared here
+    551 | typedef __device_builtin__ struct ulonglong4 __VECTOR_TYPE_DEPRECATED__("use ulonglong4_16a or ulonglong4_32a") ulonglong4;
+        |                                                                                                                 ^~~~~~~~~~
+  /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include/cutlass/platform/platform.h:627:21: warning: ‘double4’ is deprecated: use double4_16a or double4_32a [-Wdeprecated-declarations]
+    627 | struct alignment_of<double4> {
+        |                     ^~~~~~~
+  /usr/local/cuda-13.0/include/vector_types.h:561:104: note: declared here
+    561 | typedef __device_builtin__ struct double4 __VECTOR_TYPE_DEPRECATED__("use double4_16a or double4_32a") double4;
+        |                                                                                                        ^~~~~~~
+  [2/73] /usr/local/cuda-13.0/bin/nvcc --generate-dependencies-with-compile --dependency-output /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_bf16_sm80.o.d -I/home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/flash_attn -I/home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/flash_attn/src -I/home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-13.0/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/include/python3.10 -c -c /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/flash_attn/src/flash_bwd_hdim128_bf16_sm80.cu -o /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_bf16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 --threads 1 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=flash_attn_2_cuda
+  FAILED: [code=137] /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_bf16_sm80.o
+  /usr/local/cuda-13.0/bin/nvcc --generate-dependencies-with-compile --dependency-output /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_bf16_sm80.o.d -I/home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/flash_attn -I/home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/flash_attn/src -I/home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-13.0/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/include/python3.10 -c -c /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/flash_attn/src/flash_bwd_hdim128_bf16_sm80.cu -o /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_bf16_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 --threads 1 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=flash_attn_2_cuda
+  Killed
+  [3/73] /usr/local/cuda-13.0/bin/nvcc --generate-dependencies-with-compile --dependency-output /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_bf16_causal_sm80.o.d -I/home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/flash_attn -I/home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/flash_attn/src -I/home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-13.0/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/include/python3.10 -c -c /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/flash_attn/src/flash_bwd_hdim128_bf16_causal_sm80.cu -o /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_bf16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 --threads 1 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=flash_attn_2_cuda
+  /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include/cutlass/platform/platform.h:599:33: warning: ‘long4’ is deprecated: use long4_16a or long4_32a [-Wdeprecated-declarations]
+    599 | struct alignment_of<long4> {
+        |                                 ^
+  In file included from /usr/local/cuda-13.0/include/driver_types.h:61,
+                   from /usr/local/cuda-13.0/include/builtin_types.h:59,
+                   from /usr/local/cuda-13.0/include/crt/host_runtime.h:58,
+                   from /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:218:
+  /usr/local/cuda-13.0/include/vector_types.h:532:98: note: declared here
+    532 | typedef __device_builtin__ struct long4 __VECTOR_TYPE_DEPRECATED__("use long4_16a or long4_32a") long4;
+        |                                                                                                  ^~~~~
+  /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include/cutlass/platform/platform.h:603:33: warning: ‘ulong4’ is deprecated: use ulong4_16a or ulong4_32a [-Wdeprecated-declarations]
+    603 | struct alignment_of<ulong4> {
+        |                                 ^
+  /usr/local/cuda-13.0/include/vector_types.h:533:101: note: declared here
+    533 | typedef __device_builtin__ struct ulong4 __VECTOR_TYPE_DEPRECATED__("use ulong4_16a or ulong4_32a") ulong4;
+        |                                                                                                     ^~~~~~
+  /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include/cutlass/platform/platform.h:619:33: warning: ‘longlong4’ is deprecated: use longlong4_16a or longlong4_32a [-Wdeprecated-declarations]
+    619 | struct alignment_of<longlong4> {
+        |                                 ^
+  /usr/local/cuda-13.0/include/vector_types.h:550:110: note: declared here
+    550 | typedef __device_builtin__ struct longlong4 __VECTOR_TYPE_DEPRECATED__("use longlong4_16a or longlong4_32a") longlong4;
+        |                                                                                                              ^~~~~~~~~
+  /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include/cutlass/platform/platform.h:623:33: warning: ‘ulonglong4’ is deprecated: use ulonglong4_16a or ulonglong4_32a [-Wdeprecated-declarations]
+    623 | struct alignment_of<ulonglong4> {
+        |                                 ^
+  /usr/local/cuda-13.0/include/vector_types.h:551:113: note: declared here
+    551 | typedef __device_builtin__ struct ulonglong4 __VECTOR_TYPE_DEPRECATED__("use ulonglong4_16a or ulonglong4_32a") ulonglong4;
+        |                                                                                                                 ^~~~~~~~~~
+  /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include/cutlass/platform/platform.h:627:33: warning: ‘double4’ is deprecated: use double4_16a or double4_32a [-Wdeprecated-declarations]
+    627 | struct alignment_of<double4> {
+        |                                 ^
+  /usr/local/cuda-13.0/include/vector_types.h:561:104: note: declared here
+    561 | typedef __device_builtin__ struct double4 __VECTOR_TYPE_DEPRECATED__("use double4_16a or double4_32a") double4;
+        |                                                                                                        ^~~~~~~
+  [4/73] /usr/local/cuda-13.0/bin/nvcc --generate-dependencies-with-compile --dependency-output /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_fp16_causal_sm80.o.d -I/home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/flash_attn -I/home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/flash_attn/src -I/home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-13.0/include -I/home/pangk/workspaces/WALL-OSS-CRP/env/include/python3.10 -c -c /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/flash_attn/src/flash_bwd_hdim128_fp16_causal_sm80.cu -o /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/build/temp.linux-x86_64-cpython-310/csrc/flash_attn/src/flash_bwd_hdim128_fp16_causal_sm80.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math -gencode arch=compute_80,code=sm_80 --threads 1 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=flash_attn_2_cuda
+  /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include/cutlass/platform/platform.h:599:33: warning: ‘long4’ is deprecated: use long4_16a or long4_32a [-Wdeprecated-declarations]
+    599 | struct alignment_of<long4> {
+        |                                 ^
+  In file included from /usr/local/cuda-13.0/include/driver_types.h:61,
+                   from /usr/local/cuda-13.0/include/builtin_types.h:59,
+                   from /usr/local/cuda-13.0/include/crt/host_runtime.h:58,
+                   from /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:218:
+  /usr/local/cuda-13.0/include/vector_types.h:532:98: note: declared here
+    532 | typedef __device_builtin__ struct long4 __VECTOR_TYPE_DEPRECATED__("use long4_16a or long4_32a") long4;
+        |                                                                                                  ^~~~~
+  /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include/cutlass/platform/platform.h:603:33: warning: ‘ulong4’ is deprecated: use ulong4_16a or ulong4_32a [-Wdeprecated-declarations]
+    603 | struct alignment_of<ulong4> {
+        |                                 ^
+  /usr/local/cuda-13.0/include/vector_types.h:533:101: note: declared here
+    533 | typedef __device_builtin__ struct ulong4 __VECTOR_TYPE_DEPRECATED__("use ulong4_16a or ulong4_32a") ulong4;
+        |                                                                                                     ^~~~~~
+  /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include/cutlass/platform/platform.h:619:33: warning: ‘longlong4’ is deprecated: use longlong4_16a or longlong4_32a [-Wdeprecated-declarations]
+    619 | struct alignment_of<longlong4> {
+        |                                 ^
+  /usr/local/cuda-13.0/include/vector_types.h:550:110: note: declared here
+    550 | typedef __device_builtin__ struct longlong4 __VECTOR_TYPE_DEPRECATED__("use longlong4_16a or longlong4_32a") longlong4;
+        |                                                                                                              ^~~~~~~~~
+  /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include/cutlass/platform/platform.h:623:33: warning: ‘ulonglong4’ is deprecated: use ulonglong4_16a or ulonglong4_32a [-Wdeprecated-declarations]
+    623 | struct alignment_of<ulonglong4> {
+        |                                 ^
+  /usr/local/cuda-13.0/include/vector_types.h:551:113: note: declared here
+    551 | typedef __device_builtin__ struct ulonglong4 __VECTOR_TYPE_DEPRECATED__("use ulonglong4_16a or ulonglong4_32a") ulonglong4;
+        |                                                                                                                 ^~~~~~~~~~
+  /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3/csrc/cutlass/include/cutlass/platform/platform.h:627:33: warning: ‘double4’ is deprecated: use double4_16a or double4_32a [-Wdeprecated-declarations]
+    627 | struct alignment_of<double4> {
+        |                                 ^
+  /usr/local/cuda-13.0/include/vector_types.h:561:104: note: declared here
+    561 | typedef __device_builtin__ struct double4 __VECTOR_TYPE_DEPRECATED__("use double4_16a or double4_32a") double4;
+        |                                                                                                        ^~~~~~~
+  ninja: build stopped: subcommand failed.
+  Traceback (most recent call last):
+    File "<string>", line 486, in run
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/urllib/request.py", line 241, in urlretrieve
+      with contextlib.closing(urlopen(url, data)) as fp:
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/urllib/request.py", line 216, in urlopen
+      return opener.open(url, data, timeout)
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/urllib/request.py", line 525, in open
+      response = meth(req, response)
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/urllib/request.py", line 634, in http_response
+      response = self.parent.error(
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/urllib/request.py", line 563, in error
+      return self._call_chain(*args)
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/urllib/request.py", line 496, in _call_chain
+      result = func(*args)
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/urllib/request.py", line 643, in http_error_default
+      raise HTTPError(req.full_url, code, msg, hdrs, fp)
+  urllib.error.HTTPError: HTTP Error 404: Not Found
+
+  During handling of the above exception, another exception occurred:
+
+  Traceback (most recent call last):
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2693, in _run_ninja_build
+      subprocess.run(
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/subprocess.py", line 526, in run
+      raise CalledProcessError(retcode, process.args,
+  subprocess.CalledProcessError: Command '['ninja', '-v', '-j', '3']' returned non-zero exit status 137.
+
+  The above exception was the direct cause of the following exception:
+
+  Traceback (most recent call last):
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+      main()
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+      json_out["return_val"] = hook(**hook_input["kwargs"])
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 280, in build_wheel
+      return _build_backend().build_wheel(
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/build_meta.py", line 435, in build_wheel
+      return _build(['bdist_wheel', '--dist-info-dir', str(metadata_directory)])
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/build_meta.py", line 423, in _build
+      return self._build_with_temp_dir(
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/build_meta.py", line 404, in _build_with_temp_dir
+      self.run_setup()
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/build_meta.py", line 512, in run_setup
+      super().run_setup(setup_script=setup_script)
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/build_meta.py", line 317, in run_setup
+      exec(code, locals())
+    File "<string>", line 526, in <module>
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/__init__.py", line 115, in setup
+      return distutils.core.setup(**attrs)
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 186, in setup
+      return run_commands(dist)
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 202, in run_commands
+      dist.run_commands()
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1002, in run_commands
+      self.run_command(cmd)
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/dist.py", line 1102, in run_command
+      super().run_command(command)
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1021, in run_command
+      cmd_obj.run()
+    File "<string>", line 503, in run
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/command/bdist_wheel.py", line 370, in run
+      self.run_command("build")
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/_distutils/cmd.py", line 357, in run_command
+      self.distribution.run_command(command)
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/dist.py", line 1102, in run_command
+      super().run_command(command)
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1021, in run_command
+      cmd_obj.run()
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/_distutils/command/build.py", line 135, in run
+      self.run_command(cmd_name)
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/_distutils/cmd.py", line 357, in run_command
+      self.distribution.run_command(command)
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/dist.py", line 1102, in run_command
+      super().run_command(command)
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1021, in run_command
+      cmd_obj.run()
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/command/build_ext.py", line 96, in run
+      _build_ext.run(self)
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 368, in run
+      self.build_extensions()
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 1143, in build_extensions
+      build_ext.build_extensions(self)
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 484, in build_extensions
+      self._build_extensions_serial()
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 510, in _build_extensions_serial
+      self.build_extension(ext)
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/command/build_ext.py", line 261, in build_extension
+      _build_ext.build_extension(self, ext)
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 565, in build_extension
+      objects = self.compiler.compile(
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 900, in unix_wrap_ninja_compile
+      _write_ninja_file_and_compile_objects(
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2297, in _write_ninja_file_and_compile_objects
+      _run_ninja_build(
+    File "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2710, in _run_ninja_build
+      raise RuntimeError(message) from e
+  RuntimeError: Error compiling objects for extension
+  error: subprocess-exited-with-error
+  
+  × Building wheel for flash_attn (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> No available output.
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  full command: /home/pangk/workspaces/WALL-OSS-CRP/env/bin/python /home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py build_wheel /tmp/tmp3zr1a0wm
+  cwd: /home/pangk/workspaces/WALL-OSS-CRP/.cache/flash-attn-2.8.3
+  Building wheel for flash_attn (pyproject.toml): finished with status 'error'
+  ERROR: Failed building wheel for flash_attn
+Failed to build flash_attn
+error: failed-wheel-build-for-install
+
+× Failed to build installable wheels for some pyproject.toml based projects
+╰─> flash_attn

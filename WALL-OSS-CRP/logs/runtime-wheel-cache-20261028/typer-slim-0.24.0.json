@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "package": "typer-slim",
+  "version": "0.24.0",
+  "filename": "typer_slim-0.24.0-py3-none-any.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "5cb96a953251b7114491b382bfa362e1a28c5c31c6668f3a92cc870484dfdba1",
+  "wheel_tags": [
+    "py3-none-any"
+  ],
+  "record_verified_files": [
+    {
+      "path": "typer_slim-0.24.0.dist-info/INSTALLER",
+      "wheel_path": "typer_slim-0.24.0.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "typer_slim-0.24.0.dist-info/METADATA",
+      "wheel_path": "typer_slim-0.24.0.dist-info/METADATA",
+      "size_bytes": 4177,
+      "sha256": "d81899ba7b49ef949ddbb85ef6c3b0807d40853d869a2c87d7ab43c26a9f1f9b"
+    },
+    {
+      "path": "typer_slim-0.24.0.dist-info/WHEEL",
+      "wheel_path": "typer_slim-0.24.0.dist-info/WHEEL",
+      "size_bytes": 90,
+      "sha256": "59bd0049b563f09bd61e93a22293e2eee71f22025e0a2fff3f38afbe21004057"
+    },
+    {
+      "path": "typer_slim-0.24.0.dist-info/entry_points.txt",
+      "wheel_path": "typer_slim-0.24.0.dist-info/entry_points.txt",
+      "size_bytes": 34,
+      "sha256": "e8e62005c2f21425207aa2e09ef332389c4f096ce0cbbb1ee2b2cf2ad3689ccb"
+    },
+    {
+      "path": "typer_slim-0.24.0.dist-info/licenses/LICENSE",
+      "wheel_path": "typer_slim-0.24.0.dist-info/licenses/LICENSE",
+      "size_bytes": 1086,
+      "sha256": "58992cebcf8dfb6e40c4e2112ed12126c243666dca3912a3d78b7ecac4859d49"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "typer_slim-0.24.0.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "6bb612f55f1c955e0c4c7d9ed59992e035466cd7d3a413feb7b18ab3d80358aa",
+  "wheel_size_bytes": 3557,
+  "rebuilt_record_verified_files": 4,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:22.366775+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 4,
+  "source_record_verified_file_count": 5
+}

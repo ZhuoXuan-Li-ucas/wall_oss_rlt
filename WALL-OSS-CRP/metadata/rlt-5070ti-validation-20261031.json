@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-31",
+  "status": "PASS",
+  "basis": "User supplied deployment report and explicit confirmation of successful revalidation on the target host",
+  "report": "rlt-5070ti-validation-20261031/deployment-report.md",
+  "host": "crp-5070ti-01",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "image_tag": "wall-rlt-inference:5070ti-20261031T065922Z",
+  "checks": {
+    "sm120_image_build": "PASS",
+    "bf16_matmul": "PASS",
+    "flash_attention": "PASS",
+    "official_wall_synthetic_inference": "PASS",
+    "fresh_container_rerun": "PASS"
+  },
+  "official_wall": {
+    "runs": 2,
+    "action_shape": [
+      32,
+      26
+    ],
+    "finite_actions": true,
+    "peak_allocated_gib_approx": 7.94,
+    "peak_reserved_gib_approx": 8.07,
+    "model_load_seconds_approx": [
+      38.8,
+      38.2
+    ],
+    "first_inference_seconds_approx": [
+      2.43,
+      1.39
+    ]
+  },
+  "runtime_adjustment": "Set USER, writable HOME and TORCHINDUCTOR_CACHE_DIR for --user containers",
+  "checker_adjustment": "Allow only verified tied lm_head omission and identical duplicate normalizer tensors; other key mismatches remain errors",
+  "next_step": "H100 Stage 1 training with existing top_error data; export WALL and Encoder, then validate target inference on RTX 5070 Ti",
+  "trained_stage1_weights": "PENDING",
+  "trained_stage2_actor": "PENDING_STAGE2",
+  "stage2_design_owner": "user",
+  "report_scope_clarifications": [
+    "Historical D0 runtime.log records the RTX 3060 Ti build host, not H100 validation",
+    "Stage 1 does not produce trained RL Actor weights"
+  ],
+  "raw_artifact_transfer_required_to_continue": false,
+  "agent_executed_target_validation": false
+}

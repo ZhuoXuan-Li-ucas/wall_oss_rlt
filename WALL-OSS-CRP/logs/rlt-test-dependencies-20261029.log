@@ -1,0 +1,192 @@
+Collecting pytest<9,>=8
+  Downloading pytest-8.4.2-py3-none-any.whl (365 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 365.8/365.8 kB 454.2 kB/s eta 0:00:00
+Collecting hydra-core==1.3.2
+  Downloading hydra_core-1.3.2-py3-none-any.whl (154 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 154.5/154.5 kB 1.7 MB/s eta 0:00:00
+Collecting torchdata==0.11.0
+  Downloading torchdata-0.11.0-py3-none-any.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.0/62.0 kB 758.4 kB/s eta 0:00:00
+Collecting ray[default]==2.47.0
+  Downloading ray-2.47.0-cp310-cp310-manylinux2014_x86_64.whl (68.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 68.8/68.8 MB 1.5 MB/s eta 0:00:00
+Collecting sortedcontainers==2.4.0
+  Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+Collecting omegaconf<2.4,>=2.2
+  Downloading omegaconf-2.3.1-py3-none-any.whl (79 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.5/79.5 kB 781.8 kB/s eta 0:00:00
+Collecting antlr4-python3-runtime==4.9.*
+  Downloading antlr4-python3-runtime-4.9.3.tar.gz (117 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.0/117.0 kB 1.2 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: packaging in ./env/lib/python3.10/site-packages (from hydra-core==1.3.2->-r configs/rlt/requirements-local-test.txt (line 3)) (25.0)
+Requirement already satisfied: requests in ./env/lib/python3.10/site-packages (from torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (2.34.2)
+Requirement already satisfied: torch>=2 in ./env/lib/python3.10/site-packages (from torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (2.10.0+cu130)
+Requirement already satisfied: urllib3>=1.25 in ./env/lib/python3.10/site-packages (from torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (2.8.0)
+Requirement already satisfied: click>=7.0 in ./env/lib/python3.10/site-packages (from ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (8.5.0)
+Requirement already satisfied: msgpack<2.0.0,>=1.0.0 in ./env/lib/python3.10/site-packages (from ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (1.2.3)
+Collecting jsonschema
+  Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.6/90.6 kB 1.9 MB/s eta 0:00:00
+Requirement already satisfied: pyyaml in ./env/lib/python3.10/site-packages (from ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (6.0.3)
+Requirement already satisfied: protobuf!=3.19.5,>=3.15.3 in ./env/lib/python3.10/site-packages (from ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (6.33.6)
+Requirement already satisfied: filelock in ./env/lib/python3.10/site-packages (from ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (4.1.0)
+Requirement already satisfied: aiohttp>=3.7 in ./env/lib/python3.10/site-packages (from ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (3.14.5)
+Collecting py-spy>=0.2.0
+  Using cached py_spy-0.4.2-py2.py3-none-manylinux_2_5_x86_64.manylinux1_x86_64.whl (2.9 MB)
+Collecting grpcio>=1.42.0
+  Downloading grpcio-1.85.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (7.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.4/7.4 MB 1.4 MB/s eta 0:00:00
+Collecting virtualenv!=20.21.1,>=20.0.24
+  Downloading virtualenv-21.15.1-py3-none-any.whl (5.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.6/5.6 MB 1.9 MB/s eta 0:00:00
+Collecting prometheus_client>=0.7.1
+  Downloading prometheus_client-0.26.0-py3-none-any.whl (64 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.5/64.5 kB 136.8 kB/s eta 0:00:00
+Collecting colorful
+  Downloading colorful-0.5.8-py2.py3-none-any.whl (201 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 201.3/201.3 kB 432.4 kB/s eta 0:00:00
+Collecting opentelemetry-proto
+  Downloading opentelemetry_proto-1.45.1-py3-none-any.whl (72 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.5/72.5 kB 88.5 kB/s eta 0:00:00
+Collecting aiohttp_cors
+  Downloading aiohttp_cors-0.8.1-py3-none-any.whl (25 kB)
+Collecting opencensus
+  Downloading opencensus-0.11.4-py2.py3-none-any.whl (128 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 128.2/128.2 kB 2.8 MB/s eta 0:00:00
+Requirement already satisfied: pydantic!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,<3 in ./env/lib/python3.10/site-packages (from ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (2.14.1)
+Collecting opentelemetry-exporter-prometheus
+  Downloading opentelemetry_exporter_prometheus-0.66b1-py3-none-any.whl (13 kB)
+Collecting opentelemetry-sdk
+  Downloading opentelemetry_sdk-1.45.1-py3-none-any.whl (140 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 140.1/140.1 kB 283.8 kB/s eta 0:00:00
+Collecting smart_open
+  Downloading smart_open-9.0.0-py3-none-any.whl (75 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 75.8/75.8 kB 46.4 kB/s eta 0:00:00
+Collecting iniconfig>=1
+  Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Requirement already satisfied: exceptiongroup>=1 in ./env/lib/python3.10/site-packages (from pytest<9,>=8->-r configs/rlt/requirements-local-test.txt (line 2)) (1.3.1)
+Requirement already satisfied: pygments>=2.7.2 in ./env/lib/python3.10/site-packages (from pytest<9,>=8->-r configs/rlt/requirements-local-test.txt (line 2)) (2.21.0)
+Requirement already satisfied: tomli>=1 in ./env/lib/python3.10/site-packages (from pytest<9,>=8->-r configs/rlt/requirements-local-test.txt (line 2)) (2.5.0)
+Collecting pluggy<2,>=1.5
+  Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in ./env/lib/python3.10/site-packages (from aiohttp>=3.7->ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (2.7.1)
+Requirement already satisfied: typing_extensions>=4.4 in ./env/lib/python3.10/site-packages (from aiohttp>=3.7->ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (4.16.0)
+Requirement already satisfied: frozenlist>=1.1.1 in ./env/lib/python3.10/site-packages (from aiohttp>=3.7->ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (1.8.0)
+Requirement already satisfied: propcache>=0.2.0 in ./env/lib/python3.10/site-packages (from aiohttp>=3.7->ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (0.5.4)
+Requirement already satisfied: yarl<2.0,>=1.25.1 in ./env/lib/python3.10/site-packages (from aiohttp>=3.7->ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (1.25.1)
+Requirement already satisfied: async-timeout<6.0,>=4.0 in ./env/lib/python3.10/site-packages (from aiohttp>=3.7->ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (5.0.1)
+Requirement already satisfied: aiosignal>=1.4.0 in ./env/lib/python3.10/site-packages (from aiohttp>=3.7->ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (1.4.0)
+Requirement already satisfied: attrs>=17.3.0 in ./env/lib/python3.10/site-packages (from aiohttp>=3.7->ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (26.1.0)
+Requirement already satisfied: multidict<8.0,>=4.5 in ./env/lib/python3.10/site-packages (from aiohttp>=3.7->ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (7.1.0)
+Requirement already satisfied: pydantic-core==2.50.1 in ./env/lib/python3.10/site-packages (from pydantic!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,<3->ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (2.50.1)
+Requirement already satisfied: annotated-types>=0.6.0 in ./env/lib/python3.10/site-packages (from pydantic!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,<3->ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (0.8.0)
+Requirement already satisfied: typing-inspection>=0.4.4 in ./env/lib/python3.10/site-packages (from pydantic!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,<3->ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (0.4.4)
+Requirement already satisfied: sympy>=1.13.3 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (1.14.0)
+Requirement already satisfied: nvidia-cusolver==12.0.4.66 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (12.0.4.66)
+Requirement already satisfied: cuda-bindings==13.0.3 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (13.0.3)
+Requirement already satisfied: nvidia-cusparselt-cu13==0.8.0 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (0.8.0)
+Requirement already satisfied: networkx>=2.5.1 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (3.4.2)
+Requirement already satisfied: fsspec>=0.8.5 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (2026.2.0)
+Requirement already satisfied: nvidia-cusparse==12.6.3.3 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (12.6.3.3)
+Requirement already satisfied: nvidia-cublas==13.1.0.3 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (13.1.0.3)
+Requirement already satisfied: nvidia-cuda-runtime==13.0.96 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (13.0.96)
+Requirement already satisfied: nvidia-nvtx==13.0.85 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (13.0.85)
+Requirement already satisfied: jinja2 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (3.1.6)
+Requirement already satisfied: nvidia-cuda-cupti==13.0.85 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (13.0.85)
+Requirement already satisfied: nvidia-nvjitlink==13.0.88 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (13.0.88)
+Requirement already satisfied: nvidia-nvshmem-cu13==3.4.5 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (3.4.5)
+Requirement already satisfied: nvidia-cufft==12.0.0.61 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (12.0.0.61)
+Requirement already satisfied: nvidia-cudnn-cu13==9.15.1.9 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (9.15.1.9)
+Requirement already satisfied: nvidia-curand==10.4.0.35 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (10.4.0.35)
+Requirement already satisfied: triton==3.6.0 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (3.6.0)
+Requirement already satisfied: nvidia-cufile==1.15.1.6 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (1.15.1.6)
+Requirement already satisfied: nvidia-cuda-nvrtc==13.0.88 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (13.0.88)
+Requirement already satisfied: nvidia-nccl-cu13==2.28.9 in ./env/lib/python3.10/site-packages (from torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (2.28.9)
+Requirement already satisfied: cuda-pathfinder~=1.1 in ./env/lib/python3.10/site-packages (from cuda-bindings==13.0.3->torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (1.8.3)
+Collecting packaging
+  Downloading packaging-26.3-py3-none-any.whl (129 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.0/130.0 kB 96.4 kB/s eta 0:00:00
+Requirement already satisfied: platformdirs<5,>=4.4 in ./env/lib/python3.10/site-packages (from virtualenv!=20.21.1,>=20.0.24->ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (4.12.4)
+Collecting python-discovery>=1.6.1
+  Downloading python_discovery-1.6.7-py3-none-any.whl (39 kB)
+Collecting distlib<1,>=0.4.3
+  Downloading distlib-0.4.4-py2.py3-none-any.whl (472 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 472.1/472.1 kB 259.1 kB/s eta 0:00:00
+Collecting jsonschema-specifications>=2023.03.6
+  Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Collecting referencing>=0.28.4
+  Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+Collecting rpds-py>=0.25.0
+  Downloading rpds_py-0.30.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (390 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 390.5/390.5 kB 244.4 kB/s eta 0:00:00
+Collecting google-api-core<3.0.0,>=1.0.0
+  Downloading google_api_core-2.43.1-py3-none-any.whl (223 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 223.6/223.6 kB 383.3 kB/s eta 0:00:00
+Requirement already satisfied: six~=1.16 in ./env/lib/python3.10/site-packages (from opencensus->ray[default]==2.47.0->-r configs/rlt/requirements-local-test.txt (line 5)) (1.17.0)
+Collecting opencensus-context>=0.1.3
+  Downloading opencensus_context-0.1.3-py2.py3-none-any.whl (5.1 kB)
+Collecting opentelemetry-api~=1.12
+  Downloading opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.3/60.3 kB 440.0 kB/s eta 0:00:00
+Collecting opentelemetry-semantic-conventions==0.66b1
+  Downloading opentelemetry_semantic_conventions-0.66b1-py3-none-any.whl (206 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 206.3/206.3 kB 439.1 kB/s eta 0:00:00
+Requirement already satisfied: idna<4,>=2.5 in ./env/lib/python3.10/site-packages (from requests->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (3.20)
+Requirement already satisfied: certifi>=2023.5.7 in ./env/lib/python3.10/site-packages (from requests->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (2026.10.19)
+Requirement already satisfied: charset_normalizer<4,>=2 in ./env/lib/python3.10/site-packages (from requests->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (3.5.2)
+Collecting wrapt
+  Downloading wrapt-2.5.1-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (231 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 231.3/231.3 kB 552.9 kB/s eta 0:00:00
+Collecting proto-plus<2.0.0,>=1.26.1
+  Downloading proto_plus-1.29.0-py3-none-any.whl (50 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.8/50.8 kB 428.5 kB/s eta 0:00:00
+Collecting googleapis-common-protos<2.0.0,>=1.69.2
+  Downloading googleapis_common_protos-1.76.0-py3-none-any.whl (307 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 307.7/307.7 kB 613.8 kB/s eta 0:00:00
+Collecting google-auth<3.0.0,>=2.14.1
+  Downloading google_auth-2.62.0-py3-none-any.whl (267 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 267.9/267.9 kB 483.5 kB/s eta 0:00:00
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in ./env/lib/python3.10/site-packages (from sympy>=1.13.3->torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in ./env/lib/python3.10/site-packages (from jinja2->torch>=2->torchdata==0.11.0->-r configs/rlt/requirements-local-test.txt (line 4)) (3.0.4)
+Collecting pyasn1-modules>=0.2.1
+  Downloading pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 181.3/181.3 kB 304.2 kB/s eta 0:00:00
+Collecting cryptography>=38.0.3
+  Downloading cryptography-50.0.2-cp39-abi3-manylinux_2_34_x86_64.whl (4.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 605.7 kB/s eta 0:00:00
+Collecting cffi>=2.0.0
+  Downloading cffi-2.1.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (218 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 218.7/218.7 kB 5.3 MB/s eta 0:00:00
+Collecting pyasn1<0.7.0,>=0.6.1
+  Downloading pyasn1-0.6.5-py3-none-any.whl (84 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 84.8/84.8 kB 164.8 kB/s eta 0:00:00
+Collecting pycparser
+  Downloading pycparser-3.11-py3-none-any.whl (51 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 51.2/51.2 kB 1.1 MB/s eta 0:00:00
+Building wheels for collected packages: antlr4-python3-runtime
+  Building wheel for antlr4-python3-runtime (setup.py): started
+  Building wheel for antlr4-python3-runtime (setup.py): finished with status 'done'
+  Created wheel for antlr4-python3-runtime: filename=antlr4_python3_runtime-4.9.3-py3-none-any.whl size=144590 sha256=3685d6ffe94d2f3f838288ccacfc41f19d6a3c0bbbb31c9e66c3508e572d568f
+  Stored in directory: /home/pangk/.cache/pip/wheels/12/93/dd/1f6a127edc45659556564c5730f6d4e300888f4bca2d4c5a88
+Successfully built antlr4-python3-runtime
+Installing collected packages: sortedcontainers, py-spy, opencensus-context, distlib, colorful, antlr4-python3-runtime, wrapt, rpds-py, python-discovery, pycparser, pyasn1, proto-plus, prometheus_client, pluggy, packaging, opentelemetry-proto, opentelemetry-api, omegaconf, iniconfig, grpcio, googleapis-common-protos, virtualenv, smart_open, referencing, pytest, pyasn1-modules, opentelemetry-semantic-conventions, hydra-core, cffi, opentelemetry-sdk, jsonschema-specifications, cryptography, torchdata, opentelemetry-exporter-prometheus, jsonschema, google-auth, aiohttp_cors, ray, google-api-core, opencensus
+  Attempting uninstall: packaging
+    Found existing installation: packaging 25.0
+    Not uninstalling packaging at /home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages, outside environment /home/pangk/workspaces/WALL-OSS-CRP/.venv-rlt
+    Can't uninstall 'packaging'. No files were found to uninstall.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+lerobot 0.4.4 requires cmake<4.2.0,>=3.29.0.1, which is not installed.
+lerobot 0.4.4 requires deepdiff<9.0.0,>=7.0.1, which is not installed.
+lerobot 0.4.4 requires diffusers<0.36.0,>=0.27.2, which is not installed.
+lerobot 0.4.4 requires gymnasium<2.0.0,>=1.1.1, which is not installed.
+lerobot 0.4.4 requires imageio[ffmpeg]<3.0.0,>=2.34.0, which is not installed.
+lerobot 0.4.4 requires jsonlines<5.0.0,>=4.0.0, which is not installed.
+lerobot 0.4.4 requires pynput<1.9.0,>=1.7.7, which is not installed.
+lerobot 0.4.4 requires pyserial<4.0,>=3.5, which is not installed.
+lerobot 0.4.4 requires rerun-sdk<0.27.0,>=0.24.0, which is not installed.
+lerobot 0.4.4 requires torchcodec<0.11.0,>=0.2.1; sys_platform != "win32" and (sys_platform != "linux" or (platform_machine != "aarch64" and platform_machine != "arm64" and platform_machine != "armv7l")) and (sys_platform != "darwin" or platform_machine != "x86_64"), which is not installed.
+lerobot 0.4.4 requires huggingface-hub[cli,hf-transfer]<0.36.0,>=0.34.2, but you have huggingface-hub 1.33.0 which is incompatible.
+lerobot 0.4.4 requires packaging<26.0,>=24.2, but you have packaging 26.3 which is incompatible.
+Successfully installed aiohttp_cors-0.8.1 antlr4-python3-runtime-4.9.3 cffi-2.1.1 colorful-0.5.8 cryptography-50.0.2 distlib-0.4.4 google-api-core-2.43.1 google-auth-2.62.0 googleapis-common-protos-1.76.0 grpcio-1.85.0 hydra-core-1.3.2 iniconfig-2.3.1 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 omegaconf-2.3.1 opencensus-0.11.4 opencensus-context-0.1.3 opentelemetry-api-1.45.1 opentelemetry-exporter-prometheus-0.66b1 opentelemetry-proto-1.45.1 opentelemetry-sdk-1.45.1 opentelemetry-semantic-conventions-0.66b1 packaging-26.3 pluggy-1.7.0 prometheus_client-0.26.0 proto-plus-1.29.0 py-spy-0.4.2 pyasn1-0.6.5 pyasn1-modules-0.4.2 pycparser-3.11 pytest-8.4.2 python-discovery-1.6.7 ray-2.47.0 referencing-0.37.0 rpds-py-0.30.0 smart_open-9.0.0 sortedcontainers-2.4.0 torchdata-0.11.0 virtualenv-21.15.1 wrapt-2.5.1

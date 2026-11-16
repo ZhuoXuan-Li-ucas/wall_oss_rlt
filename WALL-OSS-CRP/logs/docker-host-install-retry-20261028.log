@@ -1,0 +1,28 @@
+Authentication: 
+Get:1 https://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+Ign:1 https://archive.ubuntu.com/ubuntu noble InRelease
+Get:2 https://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Ign:2 https://archive.ubuntu.com/ubuntu noble-updates InRelease
+Get:3 https://archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Ign:3 https://archive.ubuntu.com/ubuntu noble-security InRelease
+Get:1 https://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+Ign:1 https://archive.ubuntu.com/ubuntu noble InRelease
+Get:2 https://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:3 https://archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:1 https://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+Get:4 https://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1406 kB]
+Ign:4 https://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages
+Get:5 https://archive.ubuntu.com/ubuntu noble-updates/main Translation-en [310 kB]
+Get:6 https://archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [181 kB]
+Get:7 https://archive.ubuntu.com/ubuntu noble-updates/main Icons (48x48) [37.3 kB]
+Get:8 https://archive.ubuntu.com/ubuntu noble-updates/main Icons (64x64) [52.7 kB]
+Get:9 https://archive.ubuntu.com/ubuntu noble-updates/main Icons (64x64@2) [29 B]
+Get:10 https://archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [17.7 kB]
+Get:11 https://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1707 kB]
+Ign:11 https://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages
+Get:12 https://archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [343 kB]
+Ign:12 https://archive.ubuntu.com/ubuntu noble-updates/universe Translation-en
+Get:13 https://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [388 kB]
+Get:14 https://archive.ubuntu.com/ubuntu noble-updates/universe Icons (48x48) [238 kB]
+Ign:14 https://archive.ubuntu.com/ubuntu noble-updates/universe Icons (48x48)
+Get:15 https://archive.ubuntu.com/ubuntu noble-updates/universe Icons (64x64) [375 kB]

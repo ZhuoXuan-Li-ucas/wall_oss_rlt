@@ -1,0 +1,196 @@
+{
+  "package": "nvidia-nvtx-cu12",
+  "version": "12.8.90",
+  "source": {
+    "kind": "installed package",
+    "site_packages": "/home/pangk/miniforge3/envs/lerobot-so101/lib/python3.12/site-packages"
+  },
+  "source_record_sha256": "e748d40fbb849c4935df76717835eebe37ced1b4e3d66360c1f7a9f05f22cca3",
+  "wheel_tags": [
+    "py3-none-manylinux2014_x86_64",
+    "py3-none-manylinux_2_17_x86_64"
+  ],
+  "record_verified_files": [
+    {
+      "path": "nvidia/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/nvtx/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/nvtx/include/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/nvtx/include/nvToolsExt.h",
+      "sha256": "4c557a588a87aca876c1b965d259374ac48bdca3280dabf9727c20106b826d72",
+      "size_bytes": 55254
+    },
+    {
+      "path": "nvidia/nvtx/include/nvToolsExtCuda.h",
+      "sha256": "503035a5b9afa11166949d7512df6d20c133b4eb4e570fb5d263b6ed0e8af238",
+      "size_bytes": 6009
+    },
+    {
+      "path": "nvidia/nvtx/include/nvToolsExtCudaRt.h",
+      "sha256": "e886e075118e6e5cb9de3cd1aafb19e054284eb5c9389c12c8238bb97afd9dc0",
+      "size_bytes": 5192
+    },
+    {
+      "path": "nvidia/nvtx/include/nvToolsExtOpenCL.h",
+      "sha256": "8044d91fd721fe8e8c604fc1610da98fd492bb1c80a351f8a6d9912be0cc592a",
+      "size_bytes": 8360
+    },
+    {
+      "path": "nvidia/nvtx/include/nvToolsExtSync.h",
+      "sha256": "c2a38d222c9c50f694502cd00660a2a698a580ab7cb0e2fdb69cc6efbdeed276",
+      "size_bytes": 14562
+    },
+    {
+      "path": "nvidia/nvtx/include/nvtx3/nvToolsExt.h",
+      "sha256": "4c5105ddfc75d38dc4c0c75b4bb16abef6afc0ad24a19786ac8380b02ac1d76b",
+      "size_bytes": 52247
+    },
+    {
+      "path": "nvidia/nvtx/include/nvtx3/nvToolsExtCuda.h",
+      "sha256": "e196d91d431c98745fe1274a07b9c7d04dee1ddffd661641bb0b963c8b4af95b",
+      "size_bytes": 6204
+    },
+    {
+      "path": "nvidia/nvtx/include/nvtx3/nvToolsExtCudaRt.h",
+      "sha256": "6e85b4cdd6286cd14513dc30c42cb304604b7121ad75b439a2c2a3406342d84f",
+      "size_bytes": 5393
+    },
+    {
+      "path": "nvidia/nvtx/include/nvtx3/nvToolsExtOpenCL.h",
+      "sha256": "44f7ec665de51c03c8382cd38a99b3d3bfaf6a220ee1cc5e95cc75d848c1d8bd",
+      "size_bytes": 8563
+    },
+    {
+      "path": "nvidia/nvtx/include/nvtx3/nvToolsExtSync.h",
+      "sha256": "0be1c85416aea716289b706a320810fde3ead5bc45870f245ec39f6092815ab2",
+      "size_bytes": 14756
+    },
+    {
+      "path": "nvidia/nvtx/include/nvtx3/nvtxDetail/nvtxImpl.h",
+      "sha256": "8c49d81773322ec0fbd9ebb0d88b77073d17d062b85effe1b4477c05e22b3e36",
+      "size_bytes": 23333
+    },
+    {
+      "path": "nvidia/nvtx/include/nvtx3/nvtxDetail/nvtxImplCore.h",
+      "sha256": "b18a56a997d8ae3b0c75dc6d7b33d7dea49321b00e9f87651282e2610f4cda73",
+      "size_bytes": 9756
+    },
+    {
+      "path": "nvidia/nvtx/include/nvtx3/nvtxDetail/nvtxImplCudaRt_v3.h",
+      "sha256": "4a86a2a6bbec23cd322e61009e5157d2216e7efe91b4a8e330cad5c106638d02",
+      "size_bytes": 4775
+    },
+    {
+      "path": "nvidia/nvtx/include/nvtx3/nvtxDetail/nvtxImplCuda_v3.h",
+      "sha256": "204a2bf884aa0a8982446543748cca04b5377960ae0c8d0882acfe79128a72f8",
+      "size_bytes": 5550
+    },
+    {
+      "path": "nvidia/nvtx/include/nvtx3/nvtxDetail/nvtxImplOpenCL_v3.h",
+      "sha256": "88f476c7be1b244de99454014fd1561816939b8b02f8f965e96023a4a467cfb8",
+      "size_bytes": 8275
+    },
+    {
+      "path": "nvidia/nvtx/include/nvtx3/nvtxDetail/nvtxImplSync_v3.h",
+      "sha256": "4eac107c45156f0739f1ba478a8135dcd33078584eb875cdaa5eb90672f386f7",
+      "size_bytes": 5022
+    },
+    {
+      "path": "nvidia/nvtx/include/nvtx3/nvtxDetail/nvtxInit.h",
+      "sha256": "7e86a338569cbcb1b1dc13799edc39bfca38277398e21aa4559139642d31ddee",
+      "size_bytes": 14716
+    },
+    {
+      "path": "nvidia/nvtx/include/nvtx3/nvtxDetail/nvtxInitDecls.h",
+      "sha256": "f90cb1732f420d7381844b5867c2fb89877a75a27d6827b240ce3c5f405a7cc3",
+      "size_bytes": 9361
+    },
+    {
+      "path": "nvidia/nvtx/include/nvtx3/nvtxDetail/nvtxInitDefs.h",
+      "sha256": "74b84e57892784dae64f60e750dcd7ade3adfd073a1806b7c88966a891427952",
+      "size_bytes": 35432
+    },
+    {
+      "path": "nvidia/nvtx/include/nvtx3/nvtxDetail/nvtxLinkOnce.h",
+      "sha256": "269fb3e8b4f3fe9f1f291ba57057dd72c908c73719eb26db1e4181f66a496b63",
+      "size_bytes": 3863
+    },
+    {
+      "path": "nvidia/nvtx/include/nvtx3/nvtxDetail/nvtxTypes.h",
+      "sha256": "8e46c2c32bc83f51be11ff12c18a789038baf618d96f36b129293b49c82b348f",
+      "size_bytes": 17352
+    },
+    {
+      "path": "nvidia/nvtx/lib/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia/nvtx/lib/libnvToolsExt.so.1",
+      "sha256": "c498fcbab0202886c27a0adeac44abf233ade03d30680ffa2d2abe93ab88d913",
+      "size_bytes": 36024
+    },
+    {
+      "path": "nvidia_nvtx_cu12-12.8.90.dist-info/INSTALLER",
+      "sha256": "e6184ce10e266134fdcfa401e8f1a95005bcd4f18d16b62b757323e2833fe9a9",
+      "size_bytes": 2
+    },
+    {
+      "path": "nvidia_nvtx_cu12-12.8.90.dist-info/License.txt",
+      "sha256": "9e45e856bedccee9f67254082ca11851d954de2fed7448c4bed19ad9aab99a91",
+      "size_bytes": 12262
+    },
+    {
+      "path": "nvidia_nvtx_cu12-12.8.90.dist-info/METADATA",
+      "sha256": "c63c23e04e8cf04143721ff718cba87a2ae5630a50451b77f8357a0d26133cf1",
+      "size_bytes": 1820
+    },
+    {
+      "path": "nvidia_nvtx_cu12-12.8.90.dist-info/REQUESTED",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "nvidia_nvtx_cu12-12.8.90.dist-info/WHEEL",
+      "sha256": "ca033caa96203afae7e42fbcbdb7f33e2fb48853c40a1ef594b5aa92aad38d8c",
+      "size_bytes": 144
+    },
+    {
+      "path": "nvidia_nvtx_cu12-12.8.90.dist-info/top_level.txt",
+      "sha256": "7d3900b6216e2f5ea752b07dcad0c3b69cadcf6b7407836f6139d1cf00213b5e",
+      "size_bytes": 7
+    },
+    {
+      "path": "nvidia_nvtx_cu12-12.8.90.dist-info/uv_cache.json",
+      "sha256": "a2779180d2789a61ecb2370c878092ffd77862ce5959ccc0909149870fd99bb4",
+      "size_bytes": 127
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "nvidia_nvtx_cu12-12.8.90.dist-info/INSTALLER",
+      "reason": "verified installed metadata; excluded from rebuilt wheel"
+    },
+    {
+      "path": "nvidia_nvtx_cu12-12.8.90.dist-info/REQUESTED",
+      "reason": "verified installed metadata; excluded from rebuilt wheel"
+    }
+  ],
+  "status": "PASS",
+  "filename": "nvidia_nvtx_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+  "wheel_sha256": "e4d20395cc1a75d65727e5e440fa350fbb013b7c7764037bbb6670041ccf4b32",
+  "wheel_size_bytes": 102594,
+  "payload_size_bytes": 364359,
+  "checked_at_utc": "2026-10-28T09:04:11.241516+00:00"
+}

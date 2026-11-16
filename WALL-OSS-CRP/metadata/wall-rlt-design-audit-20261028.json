@@ -1,0 +1,177 @@
+{
+  "checked_at": "2026-10-28T18:28:32.548397+08:00",
+  "scope": "Static source and configuration review for implementation planning only; no model load, training, deployment or data collection executed.",
+  "user_constraints": {
+    "wall_inference_validation": "Separate Ubuntu host, 16GB VRAM; exact GPU and driver not yet specified",
+    "data_collection": "Completed, confirmed by user; no new collection or expansion requested",
+    "deployment_entry_updates": "Deferred at user request",
+    "training": "H100 responsibility retained provisionally"
+  },
+  "source_versions": {
+    "wall_x": "ce2a1ae31d9ee1028b97ca40e3f66034cf8c0e5f",
+    "wall_checkpoint": "b7dc23a82dbf70a65859c9fdd596703234597028",
+    "rlinf": "e1a82ebf0c1af69da6ab9b1519f5f3692fe33566"
+  },
+  "rlinf_review_source": {
+    "url": "https://codeload.github.com/RLinf/RLinf/tar.gz/e1a82ebf0c1af69da6ab9b1519f5f3692fe33566",
+    "archive_sha256": "d9e3d14aa19a9b7884defcebbe89497e279162a610e61a1d16ffabcfd1eb28f7",
+    "reviewed_in_temporary_directory": true,
+    "installed_in_project": false
+  },
+  "model_config_observed": {
+    "hidden_size": 2048,
+    "action_hidden_size": 1024,
+    "num_hidden_layers": 36
+  },
+  "source_files": [
+    {
+      "repository": "wall-x",
+      "path": "wall_x/model/qact/qwen2_5/modeling_qwen2_5_vl_act.py",
+      "sha256": "24296c95e926aadcbf01e50df443a58c9f525b67acc28214241bd0af2146a2e8",
+      "symbol_lines": {
+        "class Qwen2_5_VLACausalLMOutputWithPast": [
+          80
+        ],
+        "def train_step_forward": [
+          1274
+        ],
+        "def _generate_flow_action_vanilla": [
+          2122
+        ],
+        "def forward(self, mode:": [
+          2361
+        ]
+      }
+    },
+    {
+      "repository": "wall-x",
+      "path": "wall_x/model/core/vla_mixin.py",
+      "sha256": "a847eb6641f5c4c353e3d37cca0bebad0322cf0fe16ed3e1e4b2ab4b1f45f571",
+      "symbol_lines": {
+        "def compute_loss": [
+          539
+        ]
+      }
+    },
+    {
+      "repository": "wall-x",
+      "path": "wall_x/model/core/attention/mask.py",
+      "sha256": "0ae2c261d8370748cb3228afbe787f600c75e5a1b55a8d42f5c70283469ae5e5",
+      "symbol_lines": {
+        "def update_joint_attention_mask_2d": [
+          53
+        ],
+        "def update_joint_attention_flash_mask": [
+          157
+        ]
+      }
+    },
+    {
+      "repository": "wall-x",
+      "path": "wall_x/data/backends/lerobot/loader.py",
+      "sha256": "f1221621bb65f57e58a130bf831932452e12bc32e950ba8a6394c52ff8a723f2",
+      "symbol_lines": {
+        "class PreprocessedDataset": [
+          91
+        ],
+        "class DataCollator": [
+          404
+        ],
+        "def load_lerobot_data": [
+          697
+        ]
+      }
+    },
+    {
+      "repository": "rlinf",
+      "path": "rlinf/models/embodiment/modules/rlt_token_transformer.py",
+      "sha256": "d72364f58436af345164d9bb574d7f7edf054e5c9d1e94d367ae075b53779332",
+      "symbol_lines": {
+        "class RLTTokenTransformer": [
+          299
+        ],
+        "def reconstruct": [
+          355
+        ],
+        "def loss": [
+          363
+        ]
+      }
+    },
+    {
+      "repository": "rlinf",
+      "path": "rlinf/workers/sft/fsdp_vla_sft_worker.py",
+      "sha256": "025f4742fb178093ef9f68eb6e08cae324366dcf6278b02227ff7826a277fde0",
+      "symbol_lines": {
+        "class FSDPVlaSftWorker": [
+          27
+        ],
+        "def build_dataloader": [
+          37
+        ],
+        "def get_eval_model_output": [
+          88
+        ]
+      }
+    },
+    {
+      "repository": "rlinf",
+      "path": "rlinf/models/embodiment/mlp_policy/rlt_mlp_policy.py",
+      "sha256": "052860f9e9b0ae640adeb921ab82a2e63ae7d6deaf568d14e091897d5e45e29e",
+      "symbol_lines": {
+        "class RLTMLPPolicy": [
+          22
+        ],
+        "def sac_forward": [
+          138
+        ]
+      }
+    },
+    {
+      "repository": "rlinf",
+      "path": "rlinf/workers/actor/fsdp_rlt_ac_policy_worker.py",
+      "sha256": "22fd926fc0b248556f3c68ea49a2535d27e986b4120ffba88a2b23fadcde45a9",
+      "symbol_lines": {
+        "def forward_critic": [
+          234
+        ],
+        "def forward_actor": [
+          302
+        ]
+      }
+    },
+    {
+      "repository": "rlinf",
+      "path": "rlinf/models/__init__.py",
+      "sha256": "9a5dcda7655d3edbc8d4ced15d5f3c6616424f75705105bb21df0d9d674f12ac",
+      "symbol_lines": {
+        "def register_model": [
+          31
+        ]
+      }
+    },
+    {
+      "repository": "rlinf",
+      "path": "pyproject.toml",
+      "sha256": "41f9f46fd0a3f49865a48abbcb95f9548e0ae1a76a4e492925626586e16df3a1",
+      "symbol_lines": {
+        "embodied =": [
+          92
+        ],
+        "override-dependencies =": [
+          112
+        ]
+      }
+    }
+  ],
+  "planned_deliverables_status": {
+    "wall_rlt_package": "NOT_IMPLEMENTED",
+    "wall_prefix_patch": "NOT_IMPLEMENTED",
+    "target_dataset_contract": "PENDING_DATA_LOCATION_AND_METADATA",
+    "stage1_training": "NOT_RUN",
+    "stage2_dry_run": "NOT_RUN",
+    "separate_host_inference_validation": "NOT_RUN",
+    "deployment_entry_updates": "DEFERRED"
+  },
+  "plan": "WALL_RLT_Agent_Implementation_Plan.md"
+}

@@ -1,0 +1,14 @@
+{
+  "curl_rc": 0,
+  "http_status": 206,
+  "bytes": 1048576,
+  "seconds": 3.160921,
+  "bytes_per_second": 331731.0,
+  "content_range": [
+    0,
+    1048575,
+    916743378
+  ],
+  "total_size": 916743378,
+  "valid_range": true
+}

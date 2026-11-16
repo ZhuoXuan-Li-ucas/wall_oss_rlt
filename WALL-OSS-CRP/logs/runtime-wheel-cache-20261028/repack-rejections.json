@@ -1,0 +1,58 @@
+[
+  {
+    "status": "FAIL",
+    "package": "dill",
+    "version": "0.4.1",
+    "error": "External script is not a declared entry point: ../../../bin/get_gprof",
+    "cache_attempt_errors": [],
+    "checked_at_utc": "2026-10-28T09:07:29.526857+00:00"
+  },
+  {
+    "status": "FAIL",
+    "package": "fonttools",
+    "version": "4.65.0",
+    "error": "External data payload not supported: ../../../share/man/man1/ttx.1",
+    "cache_attempt_errors": [],
+    "checked_at_utc": "2026-10-28T09:07:34.775895+00:00"
+  },
+  {
+    "status": "FAIL",
+    "package": "numba",
+    "version": "0.61.2",
+    "error": "External script is not a declared entry point: ../../../bin/numba",
+    "cache_attempt_errors": [],
+    "checked_at_utc": "2026-10-28T09:09:02.677601+00:00"
+  },
+  {
+    "status": "FAIL",
+    "package": "numpy",
+    "version": "1.26.4",
+    "error": "Malformed installed RECORD",
+    "cache_attempt_errors": [],
+    "checked_at_utc": "2026-10-28T09:09:02.722892+00:00"
+  },
+  {
+    "status": "FAIL",
+    "package": "sympy",
+    "version": "1.14.0",
+    "error": "External data payload not supported: ../../../share/man/man1/isympy.1",
+    "cache_attempt_errors": [],
+    "checked_at_utc": "2026-10-28T09:10:44.477028+00:00"
+  },
+  {
+    "status": "FAIL",
+    "package": "setuptools",
+    "version": "80.9.0",
+    "error": "Expected exactly one RECORD",
+    "cache_attempt_errors": [],
+    "checked_at_utc": "2026-10-28T09:10:47.404521+00:00"
+  },
+  {
+    "status": "FAIL",
+    "package": "wheel",
+    "version": "0.48.0",
+    "error": "Installed RECORD hash/size mismatch: ../../../bin/wheel",
+    "cache_attempt_errors": [],
+    "checked_at_utc": "2026-10-28T09:10:47.407695+00:00"
+  }
+]

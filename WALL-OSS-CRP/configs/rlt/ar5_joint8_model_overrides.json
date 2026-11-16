@@ -1,0 +1,28 @@
+{
+  "variant": "ar5_joint8_reinit_v1",
+  "status": "model_config_overrides_and_initializer_tested_on_cpu_fixtures; full_builder_pending",
+  "wall_config_overrides": {
+    "dof_config": {
+      "ar5_joint_absolute": 7,
+      "omnipicker_command": 1,
+      "action_padding": 18
+    },
+    "agent_pos_config": {
+      "ar5_joint_measured": 7,
+      "omnipicker_opening_measured": 1,
+      "action_padding": 18
+    },
+    "use_state_string_representation": true,
+    "proj_with_mask": true
+  },
+  "new_transfer_run": {
+    "initialize_after_loading_base_weights": "wall_rlt.model.ar5_adapter.reset_ar5_action_projections",
+    "reset_parameters": [
+      "action_preprocessor.w1.weight",
+      "action_preprocessor.action_proj_back.weight"
+    ],
+    "seed": 0,
+    "normalization": "target contract train-only stats"
+  },
+  "resume": "Restore already adapted projection weights and target normalizers; do not initialize again."
+}

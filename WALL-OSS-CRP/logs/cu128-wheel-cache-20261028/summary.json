@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "verified_packages": 14,
+  "wheel_bytes": 2757703319,
+  "pip_dry_run_exit": 0,
+  "pip_dry_run_scope": "Accept all 14 standard wheel filenames/tags and metadata without installing or resolving dependencies"
+}

@@ -1,0 +1,290 @@
+{
+  "status": "PASS",
+  "package": "filelock",
+  "version": "4.1.0",
+  "filename": "filelock-4.1.0-py3-none-any.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "e92e9b08f35ecb6114428c8117442fa7cbfb43a5c28e862899edd5298ba97dbf",
+  "wheel_tags": [
+    "py3-none-any"
+  ],
+  "record_verified_files": [
+    {
+      "path": "filelock-4.1.0.dist-info/INSTALLER",
+      "wheel_path": "filelock-4.1.0.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "filelock-4.1.0.dist-info/METADATA",
+      "wheel_path": "filelock-4.1.0.dist-info/METADATA",
+      "size_bytes": 2027,
+      "sha256": "f494bfbd4ce00128759bc0ff21e7b5cad77a6397902f53a5d0f4398292b6979f"
+    },
+    {
+      "path": "filelock-4.1.0.dist-info/WHEEL",
+      "wheel_path": "filelock-4.1.0.dist-info/WHEEL",
+      "size_bytes": 87,
+      "sha256": "5b77e4a649bbfb07fdbc123967eeecd1e5a478cfaca6eefc23c35e6fdf037848"
+    },
+    {
+      "path": "filelock-4.1.0.dist-info/licenses/LICENSE",
+      "wheel_path": "filelock-4.1.0.dist-info/licenses/LICENSE",
+      "size_bytes": 1088,
+      "sha256": "608c89d5060ae9921adccf3236695bc654a9946e12323ef6c021dfa04e294d48"
+    },
+    {
+      "path": "filelock/__init__.py",
+      "wheel_path": "filelock/__init__.py",
+      "size_bytes": 3996,
+      "sha256": "0df52016bcc268e823809b963b568d17a3cb6ece51727530b9121fef459a0169"
+    },
+    {
+      "path": "filelock/_api.py",
+      "wheel_path": "filelock/_api.py",
+      "size_bytes": 99215,
+      "sha256": "2990881c1ee6766efa65532a25faaf17b64230b2450c2e4c10e791c18306091e"
+    },
+    {
+      "path": "filelock/_async.py",
+      "wheel_path": "filelock/_async.py",
+      "size_bytes": 14188,
+      "sha256": "f414d82f627c97d2f6716ac6be1b96c8354a385c9fa7f897b3a03fbc712ab92b"
+    },
+    {
+      "path": "filelock/_async_read_write.py",
+      "wheel_path": "filelock/_async_read_write.py",
+      "size_bytes": 14563,
+      "sha256": "5fcbfd384bf40c04c85cbf55785b63e6c9f1da7668f814536ca2cf0f95c38548"
+    },
+    {
+      "path": "filelock/_descriptor.py",
+      "wheel_path": "filelock/_descriptor.py",
+      "size_bytes": 3191,
+      "sha256": "9284599cbb5dd65bcd1a7a268450270b802a1b36d60ec56eec319a8f39dbd75c"
+    },
+    {
+      "path": "filelock/_error.py",
+      "wheel_path": "filelock/_error.py",
+      "size_bytes": 3204,
+      "sha256": "18c93d850e4d07dc4292bde953e5be3a2423cbc87915bfbaa89236f38bf66efd"
+    },
+    {
+      "path": "filelock/_identity.py",
+      "wheel_path": "filelock/_identity.py",
+      "size_bytes": 14275,
+      "sha256": "641ba290429f215990e3ec407ed02d53b1e30eab59405d3be8cee02ea43f9777"
+    },
+    {
+      "path": "filelock/_lease.py",
+      "wheel_path": "filelock/_lease.py",
+      "size_bytes": 18119,
+      "sha256": "efff2d082ecb7dbd24d104e1fa45780d5c8e5930b5b9d0ea5fe7bd2062900ed8"
+    },
+    {
+      "path": "filelock/_marker.py",
+      "wheel_path": "filelock/_marker.py",
+      "size_bytes": 7164,
+      "sha256": "ea677bfd29ba4f7f679e817fd580c9c1df152aaed9fe490846cb6e0ca17f6037"
+    },
+    {
+      "path": "filelock/_read_write.py",
+      "wheel_path": "filelock/_read_write.py",
+      "size_bytes": 52520,
+      "sha256": "e1819597d887bea40695da82e9bf86cb3822baf712dc09b555610052e7393d06"
+    },
+    {
+      "path": "filelock/_soft.py",
+      "wheel_path": "filelock/_soft.py",
+      "size_bytes": 19410,
+      "sha256": "b8290dcdc5248f473cae72cdbf99b2fa7f72ede16e5a53fcb12c62cdc5e9fd09"
+    },
+    {
+      "path": "filelock/_soft_protocol.py",
+      "wheel_path": "filelock/_soft_protocol.py",
+      "size_bytes": 187,
+      "sha256": "a84336c7d373f7382e5f0c168d9b02b0f11f6ace67a87949fbfa07bc0334528e"
+    },
+    {
+      "path": "filelock/_soft_rw/__init__.py",
+      "wheel_path": "filelock/_soft_rw/__init__.py",
+      "size_bytes": 369,
+      "sha256": "94ed423fc8ee59d96192026e9e354005acdf600978f2714bf12c255a02044ad9"
+    },
+    {
+      "path": "filelock/_soft_rw/_async.py",
+      "wheel_path": "filelock/_soft_rw/_async.py",
+      "size_bytes": 14314,
+      "sha256": "a9424c7f220ab3ba964889e8808a6c58ec5c02ab36ccc3ad9e991c99ffd86409"
+    },
+    {
+      "path": "filelock/_soft_rw/_protocol.py",
+      "wheel_path": "filelock/_soft_rw/_protocol.py",
+      "size_bytes": 28940,
+      "sha256": "a31994e03f2a74d4f4a741e3c5a3feb02a023ae434488332f4f7d013cf4ed24c"
+    },
+    {
+      "path": "filelock/_soft_rw/_storage.py",
+      "wheel_path": "filelock/_soft_rw/_storage.py",
+      "size_bytes": 6955,
+      "sha256": "f0d4439dfc4a39f8216f771d902d7424045e74e07a0335c789740d5cf8727d17"
+    },
+    {
+      "path": "filelock/_soft_rw/_sync.py",
+      "wheel_path": "filelock/_soft_rw/_sync.py",
+      "size_bytes": 33569,
+      "sha256": "e0885187ddab1d02bb145be837df4acd82d6f1b9fa7cfd4b6815fd37564ca587"
+    },
+    {
+      "path": "filelock/_strict.py",
+      "wheel_path": "filelock/_strict.py",
+      "size_bytes": 47830,
+      "sha256": "28799c08bff96b810dc810601d6f046b8875e19b21986d5dc86177a4a0331403"
+    },
+    {
+      "path": "filelock/_unix.py",
+      "wheel_path": "filelock/_unix.py",
+      "size_bytes": 9220,
+      "sha256": "ba9d0c19a26e6a612fc054492ece3dce6ae783d3cae3b0915617a402ed2771df"
+    },
+    {
+      "path": "filelock/_util.py",
+      "wheel_path": "filelock/_util.py",
+      "size_bytes": 7404,
+      "sha256": "c835d2bc8d6d0fd6f77b5c1d5b4d8233d41df6814468868f040641ccc954a32d"
+    },
+    {
+      "path": "filelock/_windows.py",
+      "wheel_path": "filelock/_windows.py",
+      "size_bytes": 17033,
+      "sha256": "3cb08bb8bb778ae00421935674cf387be2a38cff535ed8477420d8fe9008da31"
+    },
+    {
+      "path": "filelock/asyncio.py",
+      "wheel_path": "filelock/asyncio.py",
+      "size_bytes": 41513,
+      "sha256": "3703a1589a1c67edc145d3f1a25e1cfa231bfa4e27759fa52ca2d068f890478f"
+    },
+    {
+      "path": "filelock/py.typed",
+      "wheel_path": "filelock/py.typed",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "filelock/version.py",
+      "wheel_path": "filelock/version.py",
+      "size_bytes": 520,
+      "sha256": "c7857e53468485c2050bc8e529ec5ec94eab06ea6c10f2233663dddf506023b3"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "filelock-4.1.0.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/__pycache__/_api.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/__pycache__/_async.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/__pycache__/_async_read_write.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/__pycache__/_descriptor.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/__pycache__/_error.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/__pycache__/_identity.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/__pycache__/_lease.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/__pycache__/_marker.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/__pycache__/_read_write.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/__pycache__/_soft.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/__pycache__/_soft_protocol.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/__pycache__/_strict.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/__pycache__/_unix.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/__pycache__/_util.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/__pycache__/_windows.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/__pycache__/asyncio.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/__pycache__/version.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/_soft_rw/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/_soft_rw/__pycache__/_async.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/_soft_rw/__pycache__/_protocol.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/_soft_rw/__pycache__/_storage.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "filelock/_soft_rw/__pycache__/_sync.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "370dbc729b91a19dd0afbeb516310fe8b3d4ecbbe678c92380580d6dd7662c65",
+  "wheel_size_bytes": 156272,
+  "rebuilt_record_verified_files": 27,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:18.180880+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 27,
+  "source_record_verified_file_count": 28
+}

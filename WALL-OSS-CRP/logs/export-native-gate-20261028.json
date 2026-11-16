@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "scope": "isolated export gate regression; fake docker and temporary assets only",
+  "script": "scripts/docker_export_bundle.sh",
+  "script_sha256": "d878bb1ca1debbcffe332cebac6f64d4f15a06330c7c4c3def8876605ed5311a",
+  "native_failure_exit_code": 47,
+  "export_exit_code": 47,
+  "docker_calls": [
+    [
+      "image",
+      "inspect",
+      "--format",
+      "{{.Id}}",
+      "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    ],
+    [
+      "run",
+      "--rm",
+      "--pull=never",
+      "--network",
+      "none",
+      "--user",
+      "1000:1000",
+      "-v",
+      "/home/pangk/workspaces/WALL-OSS-CRP/docker/verify_native_architectures.py:/checks/verify_native_architectures.py:ro",
+      "-v",
+      "/tmp/wall-export-native-gate-bzq0in8l/reports:/reports",
+      "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "python",
+      "/checks/verify_native_architectures.py",
+      "--output",
+      "/reports/native-architectures.json"
+    ]
+  ],
+  "assertions": {
+    "native_check_failure_propagated_through_tee": true,
+    "no_docker_tag": true,
+    "no_docker_save": true,
+    "bundle_directory_not_created": true,
+    "failure_log_preserved": true,
+    "real_docker_or_data_used": false
+  },
+  "stdout": "/tmp/wall-export-native-gate-bzq0in8l/fake-asset.bin: OK\nSimulated native check FAIL: Required cubin architecture missing: sm_90\n",
+  "stderr": ""
+}

@@ -1,0 +1,414 @@
+{
+  "status": "PASS",
+  "package": "typer",
+  "version": "0.27.3",
+  "filename": "typer-0.27.3-py3-none-any.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "6d0d8a99ecca7fb484977c47df77e5ca5200ebf130b0339d799c07f0d247f282",
+  "wheel_tags": [
+    "py3-none-any"
+  ],
+  "record_verified_files": [
+    {
+      "path": "../../../bin/typer",
+      "wheel_path": "../../../bin/typer",
+      "size_bytes": 190,
+      "sha256": "c234e9138ff491bc3d8ee9fb51740a084ae637f8bb1d1a3aebc4ac4914a564a2"
+    },
+    {
+      "path": "typer-0.27.3.dist-info/INSTALLER",
+      "wheel_path": "typer-0.27.3.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "typer-0.27.3.dist-info/METADATA",
+      "wheel_path": "typer-0.27.3.dist-info/METADATA",
+      "size_bytes": 16394,
+      "sha256": "fc2cbb86c4fd175326b63427e9a3fa13e79364d7333a945414d9c6ac80c0f0e4"
+    },
+    {
+      "path": "typer-0.27.3.dist-info/WHEEL",
+      "wheel_path": "typer-0.27.3.dist-info/WHEEL",
+      "size_bytes": 90,
+      "sha256": "22e224df06da127147d5cc7be623364750a6962448ddd14b5d36d16a482f8054"
+    },
+    {
+      "path": "typer-0.27.3.dist-info/entry_points.txt",
+      "wheel_path": "typer-0.27.3.dist-info/entry_points.txt",
+      "size_bytes": 57,
+      "sha256": "60ed770728aa59eb9ab3d5742400cb5004591547bf73053fef099336fc41610f"
+    },
+    {
+      "path": "typer-0.27.3.dist-info/licenses/LICENSE",
+      "wheel_path": "typer-0.27.3.dist-info/licenses/LICENSE",
+      "size_bytes": 1086,
+      "sha256": "58992cebcf8dfb6e40c4e2112ed12126c243666dca3912a3d78b7ecac4859d49"
+    },
+    {
+      "path": "typer/.agents/skills/typer/SKILL.md",
+      "wheel_path": "typer/.agents/skills/typer/SKILL.md",
+      "size_bytes": 6728,
+      "sha256": "9009daf749d0830e86e61f3ec1b4671666835a77e59fb3d5973bbc5f3ccac146"
+    },
+    {
+      "path": "typer/__init__.py",
+      "wheel_path": "typer/__init__.py",
+      "size_bytes": 1399,
+      "sha256": "0a675fdf118d02dcfaa6a9ad044c4acd02f09379933f99246953e9bf034cbb29"
+    },
+    {
+      "path": "typer/__main__.py",
+      "wheel_path": "typer/__main__.py",
+      "size_bytes": 30,
+      "sha256": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279"
+    },
+    {
+      "path": "typer/_click/LICENSE.txt",
+      "wheel_path": "typer/_click/LICENSE.txt",
+      "size_bytes": 1475,
+      "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+    },
+    {
+      "path": "typer/_click/__init__.py",
+      "wheel_path": "typer/_click/__init__.py",
+      "size_bytes": 392,
+      "sha256": "c66dd5371f0758617ac87858b913cf980eb755834978f1c2bd42521454027ce9"
+    },
+    {
+      "path": "typer/_click/_compat.py",
+      "wheel_path": "typer/_click/_compat.py",
+      "size_bytes": 16901,
+      "sha256": "3800fd07f40df3ae9f65049c45b1ab6fbfe9bb329c45a63022e7a0234459d2c8"
+    },
+    {
+      "path": "typer/_click/_termui_impl.py",
+      "wheel_path": "typer/_click/_termui_impl.py",
+      "size_bytes": 16669,
+      "sha256": "c0396fd4ee1607f362e8342d811cc0bffe004053801cbed7de501cfcfc28d761"
+    },
+    {
+      "path": "typer/_click/_textwrap.py",
+      "wheel_path": "typer/_click/_textwrap.py",
+      "size_bytes": 1233,
+      "sha256": "3a72bda21c12dae999009a0b92bc47d28e3befec850f166f9e7e0a63b6d502e9"
+    },
+    {
+      "path": "typer/_click/_winconsole.py",
+      "wheel_path": "typer/_click/_winconsole.py",
+      "size_bytes": 8305,
+      "sha256": "e62844e2328f70494e9de97fad22b9cce967738b112196628cfdebf4d8e5d519"
+    },
+    {
+      "path": "typer/_click/core.py",
+      "wheel_path": "typer/_click/core.py",
+      "size_bytes": 39205,
+      "sha256": "8ae5f9d9ce4d554961579e4a2c84221918a1f6753e7b6191bc85aea78e49b2ab"
+    },
+    {
+      "path": "typer/_click/decorators.py",
+      "wheel_path": "typer/_click/decorators.py",
+      "size_bytes": 1593,
+      "sha256": "ca4494f2e9a4912742dbb5ee80ffd0c4431d8fb5dafbeefd2d602a306929780c"
+    },
+    {
+      "path": "typer/_click/exceptions.py",
+      "wheel_path": "typer/_click/exceptions.py",
+      "size_bytes": 7630,
+      "sha256": "b58cf95b09ae9f91bf4d15fbdaaedff1cbf88116e99bacec8ae8e0922a1278cd"
+    },
+    {
+      "path": "typer/_click/formatting.py",
+      "wheel_path": "typer/_click/formatting.py",
+      "size_bytes": 8472,
+      "sha256": "9ec2df2ad11a3d0114853f3251f2b995b07229dfceeb994cfc97365a43eb356b"
+    },
+    {
+      "path": "typer/_click/globals.py",
+      "wheel_path": "typer/_click/globals.py",
+      "size_bytes": 1761,
+      "sha256": "d017a9812d99f4515d1c9d7ec676087596d8229d9340a280463cddc278c4f6a9"
+    },
+    {
+      "path": "typer/_click/parser.py",
+      "wheel_path": "typer/_click/parser.py",
+      "size_bytes": 16645,
+      "sha256": "56b0a674ea4a36fd2013a0b61e73e3fda5a18c9d5183d502cb2e7cd98ce1f89e"
+    },
+    {
+      "path": "typer/_click/py.typed",
+      "wheel_path": "typer/_click/py.typed",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "typer/_click/shell_completion.py",
+      "wheel_path": "typer/_click/shell_completion.py",
+      "size_bytes": 10018,
+      "sha256": "2da097560bc038d122675fd86a61656ffe2073a8924fc94fec29520d069ae0c5"
+    },
+    {
+      "path": "typer/_click/termui.py",
+      "wheel_path": "typer/_click/termui.py",
+      "size_bytes": 13727,
+      "sha256": "2c4c1827142d557e380cba6ef147cad4859a6716b4cc74a3840996cd14014a0c"
+    },
+    {
+      "path": "typer/_click/types.py",
+      "wheel_path": "typer/_click/types.py",
+      "size_bytes": 21652,
+      "sha256": "7d8eaee666135c296c12d0e934328453a7d1fdbf48ee62366bd568ec8e8b860d"
+    },
+    {
+      "path": "typer/_click/utils.py",
+      "wheel_path": "typer/_click/utils.py",
+      "size_bytes": 14812,
+      "sha256": "84f7593e2f0473ceb72ace12cbda1ddd87c12f4cd21c10d2c503d11f9516ebf0"
+    },
+    {
+      "path": "typer/_completion_classes.py",
+      "wheel_path": "typer/_completion_classes.py",
+      "size_bytes": 7836,
+      "sha256": "8a047a8c83a3cab6e6875c8a20016ed114a64e6592cd43af3473f0b3c42f8b9a"
+    },
+    {
+      "path": "typer/_completion_shared.py",
+      "wheel_path": "typer/_completion_shared.py",
+      "size_bytes": 9145,
+      "sha256": "0c610a4c172388bad4590408155513c3c2957033b71eaeb4e30e6624d310cbbb"
+    },
+    {
+      "path": "typer/_types.py",
+      "wheel_path": "typer/_types.py",
+      "size_bytes": 4223,
+      "sha256": "32803931f0f3a001aeef12e3254d16c9d147e84566a413bacec3f2d144150c03"
+    },
+    {
+      "path": "typer/_typing.py",
+      "wheel_path": "typer/_typing.py",
+      "size_bytes": 1727,
+      "sha256": "40ec39a3e0762fef82de5cb60d01fa694c1a83ac796eb57916155a059e60ccc8"
+    },
+    {
+      "path": "typer/cli.py",
+      "wheel_path": "typer/cli.py",
+      "size_bytes": 10259,
+      "sha256": "669d616bb3854f200d83691517f0b4ac2631838414a8b698d101703d591fb448"
+    },
+    {
+      "path": "typer/colors.py",
+      "wheel_path": "typer/colors.py",
+      "size_bytes": 430,
+      "sha256": "7b8da3f2e079db484ba57e42ff47e247738ea0814c6e13b700366fbfa865015f"
+    },
+    {
+      "path": "typer/completion.py",
+      "wheel_path": "typer/completion.py",
+      "size_bytes": 4825,
+      "sha256": "cc35bae4456cd230022dac3703c0e818f9d82fc5916fe0f6735724c58b9ae3cd"
+    },
+    {
+      "path": "typer/core.py",
+      "wheel_path": "typer/core.py",
+      "size_bytes": 42540,
+      "sha256": "67d6db87deff74d1da2856501fa17270be1575a0363671c1d7cd4c141ba3ed81"
+    },
+    {
+      "path": "typer/exceptions.py",
+      "wheel_path": "typer/exceptions.py",
+      "size_bytes": 673,
+      "sha256": "4467c897743f420acfc723eefb14b41f8a3220607683181314d00c6a61d1d655"
+    },
+    {
+      "path": "typer/main.py",
+      "wheel_path": "typer/main.py",
+      "size_bytes": 69089,
+      "sha256": "29a201974ed555378b352b40b220dd57ee7c25161a03ce9ba8f4eaaa8e2205ab"
+    },
+    {
+      "path": "typer/models.py",
+      "wheel_path": "typer/models.py",
+      "size_bytes": 22793,
+      "sha256": "8570bbd7709740422a22d070e34ec1fd49aac18da6a0f6b193eab242eba73b19"
+    },
+    {
+      "path": "typer/params.py",
+      "wheel_path": "typer/params.py",
+      "size_bytes": 59648,
+      "sha256": "b03cca0c4f15209e3d88c52c4ef3586efa7647b99ca0bc5a917aff9624ecb63e"
+    },
+    {
+      "path": "typer/py.typed",
+      "wheel_path": "typer/py.typed",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "typer/rich_utils.py",
+      "wheel_path": "typer/rich_utils.py",
+      "size_bytes": 26258,
+      "sha256": "ffe1f8ce3ec12aa9436107ad9603e0716cc7b71ee264f46f56beb88130cd521c"
+    },
+    {
+      "path": "typer/testing.py",
+      "wheel_path": "typer/testing.py",
+      "size_bytes": 11084,
+      "sha256": "fafee5532d521107886408b8fa8dc16dab9fde365dadc33bd1bce2a20b60a8ee"
+    },
+    {
+      "path": "typer/utils.py",
+      "wheel_path": "typer/utils.py",
+      "size_bytes": 7599,
+      "sha256": "c272750d65c114c9f12c768c37f1c3627b712d16f2d0afabbb1eb76a89072272"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "../../../bin/typer",
+      "reason": "verified console entry point; installer regenerates portable script"
+    },
+    {
+      "path": "typer-0.27.3.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/__pycache__/__main__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/__pycache__/_completion_classes.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/__pycache__/_completion_shared.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/__pycache__/_types.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/__pycache__/_typing.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/__pycache__/cli.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/__pycache__/colors.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/__pycache__/completion.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/__pycache__/core.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/__pycache__/exceptions.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/__pycache__/main.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/__pycache__/models.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/__pycache__/params.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/__pycache__/rich_utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/__pycache__/testing.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/__pycache__/utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/_click/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/_click/__pycache__/_compat.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/_click/__pycache__/_termui_impl.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/_click/__pycache__/_textwrap.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/_click/__pycache__/_winconsole.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/_click/__pycache__/core.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/_click/__pycache__/decorators.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/_click/__pycache__/exceptions.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/_click/__pycache__/formatting.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/_click/__pycache__/globals.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/_click/__pycache__/parser.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/_click/__pycache__/shell_completion.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/_click/__pycache__/termui.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/_click/__pycache__/types.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "typer/_click/__pycache__/utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "df63d0cbc37f4348e7d27205b579a38a1e5a6f911d247895340e1a339c604460",
+  "wheel_size_bytes": 144775,
+  "rebuilt_record_verified_files": 40,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:22.366178+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 40,
+  "source_record_verified_file_count": 42
+}

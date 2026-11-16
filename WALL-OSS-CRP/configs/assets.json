@@ -1,0 +1,19 @@
+{
+  "checkpoint_path": "/home/crp-5070ti-01/workspaces/WALL-OSS-CRP/models/wall-oss-0.5",
+  "train_config_path": "/home/crp-5070ti-01/workspaces/WALL-OSS-CRP/models/wall-oss-0.5/config.yml",
+  "qwen_processor_path": "/home/crp-5070ti-01/workspaces/WALL-OSS-CRP/models/Qwen2.5-VL-3B-Instruct",
+  "runtime_processor_selection": "Fixed code overlays processor_path with checkpoint directory when preprocessor_config.json is present.",
+  "target": {
+    "action_mode": "flow",
+    "image_size": 448,
+    "cam_names": [
+      "face_view",
+      "right_wrist_view"
+    ],
+    "action_horizon": 32,
+    "norm_key": "x2_normal",
+    "action_dim": 26
+  },
+  "scope": "Prepared and verified assets; full model inference has not been executed.",
+  "assets_verified": true
+}

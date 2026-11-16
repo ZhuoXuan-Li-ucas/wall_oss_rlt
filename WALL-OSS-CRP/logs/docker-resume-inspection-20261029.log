@@ -1,0 +1,45 @@
+Authentication: 
+Thu Oct 29 01:08:51 UTC 2026
+ 09:08:51 up 6 days, 18:42,  1 user,  load average: 0.95, 0.99, 0.98
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+IMAGE                                           ID             DISK USAGE   CONTENT SIZE   EXTRA
+nvidia/cuda:12.8.1-devel-ubuntu22.04            6617a625f409       14.5GB         5.15GB        
+nvidia/cuda:12.8.1-devel-ubuntu22.04            6617a625f409       14.5GB         5.15GB        
+nvidia/cuda:12.8.1-devel-ubuntu22.04            6617a625f409       14.5GB         5.15GB        
+wall-oss-crp-transfer:identity-smoke-20261028   fdb8fbf9a3eb        402MB         98.4MB        
+walloss-bootstrap:cuda12.8-local                fdb8fbf9a3eb        402MB         98.4MB        
+ID                           RECLAIMABLE   SIZE       LAST ACCESSED
+ie3os7eelfj0g5g0mjt3joqn6*   true          4.096kB    15 hours ago
+os8fmn79110319swe3bj47nct*   true          4.096kB    15 hours ago
+osy6vyqjyjsno9ohscgoii2j9    true          12.29kB*   15 hours ago
+xsoxho3z3yxi04bdeih39kwdk*   true          12.29kB    15 hours ago
+v2j5q3h57e0430j6r4dvpfry2    true          16.57kB*   16 hours ago
+tqf0wimabe8f8hoba5ox6or8z    true          17.91kB*   16 hours ago
+9xf6x5g21181phhwsaclq27zd    true          24.58kB*   15 hours ago
+mbfttdxclfyqy25py0i807q9q    true          31.46kB*   16 hours ago
+t3uuykqg8moquwoid2ud0lnve    true          46.74kB*   16 hours ago
+dmi4ftdp7ste5iflj59dzilpl    true          354.9kB*   16 hours ago
+q7gnktada48w2msbwnenfptzx    true          502.5kB*   15 hours ago
+hm68n9qoaiufv73axy10fdkj3    true          9.875MB*   15 hours ago
+s88vqrwu4fzuambouah95qmui    true          17.07MB*   16 hours ago
+5dr3cvxbabzx890d4zmgnkxyb    true          29.54MB    17 hours ago
+zneuql6wlr3h1us5mf6ankd4o*   true          53.87MB    15 hours ago
+z4gkexfn9kvfiez1acwgfk6la    true          111.6MB*   15 hours ago
+xobxovxkgb381qm5uvz3s0eo7    true          117MB*     16 hours ago
+ofnpepcy2brqr352zo1zaimsi    true          162.5MB*   15 hours ago
+0oihkuzkkvp3qdqllc69pjn2i*   true          198.2MB    15 hours ago
+k575hld88k1qcp55sj9qcjjio    true          267.9MB*   16 hours ago
+gr9locm6pqyhaksphubtmh2d8*   true          4.595GB    15 hours ago
+vp8mx1q8aov5wpkh9wmyivejp    true          5.169GB*   16 hours ago
+uq0vlfo48vqf0i6d7g33qumbh    true          8.572GB*   15 hours ago
+mjo7tcgwxe9g2uhq618emw2xi    true          8.952GB*   16 hours ago
+Shared:		23.38GB
+Private:	4.877GB
+Reclaimable:	28.26GB
+Total:		28.26GB
+5.6M	/var/lib/docker
+36G	/var/lib/containerd
+Oct 28 18:38:34 1225 dockerd[227550]: time="2026-10-28T18:38:34.170444191+08:00" level=warning msg="failed to read oom_kill event" error="open /sys/fs/cgroup/system.slice:docker:uhmg2arjxqevzgh9xloskc106/memory.events: no such file or directory" span="[runtime  5/14] RUN FLASH_ATTENTION_FORCE_BUILD=TRUE python -m pip install --no-cache-dir --no-deps --no-build-isolation /opt/flash-attn-src     && rm -rf /opt/flash-attn-src/build" spanID=a3acf9489bca0410 traceID=acfe98a84cfe269200bf0d6a3e3f279e
+Oct 28 18:38:35 1225 dockerd[227550]: time="2026-10-28T18:38:35.853648745+08:00" level=error msg=/moby.buildkit.v1.Control/Solve error="rpc error: code = Canceled desc = context canceled" spanID=ac5002a933d75009 traceID=acfe98a84cfe269200bf0d6a3e3f279e
+Oct 28 18:38:38 1225 dockerd[227550]: time="2026-10-28T18:38:38.477054931+08:00" level=warning msg="healthcheck failed" actualDuration="600.472µs" error="Unavailable: connection error: desc = \"transport: Error while dialing: only one connection allowed\"" timeout=15s
+Oct 28 18:38:43 1225 dockerd[227550]: time="2026-10-28T18:38:43.476071876+08:00" level=error msg="healthcheck failed fatally" error="session healthcheck failed fatally: Unavailable: connection error: desc = \"transport: Error while dialing: only one connection allowed\""

@@ -1,0 +1,134 @@
+{
+  "_id": "6a17a3d57799993cc5b73203",
+  "id": "x-square-robot/wall-oss-0.5",
+  "private": false,
+  "tags": [
+    "safetensors",
+    "qwen2_5_vl",
+    "region:us"
+  ],
+  "downloads": 234,
+  "likes": 9,
+  "modelId": "x-square-robot/wall-oss-0.5",
+  "author": "x-square-robot",
+  "sha": "b7dc23a82dbf70a65859c9fdd596703234597028",
+  "lastModified": "2026-07-07T05:41:05.000Z",
+  "gated": false,
+  "disabled": false,
+  "config": {
+    "architectures": [
+      "Qwen2_5_VLForConditionalGeneration"
+    ],
+    "model_type": "qwen2_5_vl",
+    "num_experts": 2,
+    "tokenizer_config": {
+      "bos_token": null,
+      "chat_template": "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0]['role'] == 'system' %}\n        {{- messages[0]['content'] }}\n    {%- else %}\n        {{- 'You are a helpful assistant.' }}\n    {%- endif %}\n    {{- \"\\n\\n# Tools\\n\\nYou may call one or more functions to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}\\n</tool_call><|im_end|>\\n\" }}\n{%- else %}\n    {%- if messages[0]['role'] == 'system' %}\n        {{- '<|im_start|>system\\n' + messages[0]['content'] + '<|im_end|>\\n' }}\n    {%- else %}\n        {{- '<|im_start|>system\\nYou are a helpful assistant.<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- for message in messages %}\n    {%- if (message.role == \"user\") or (message.role == \"system\" and not loop.first) or (message.role == \"assistant\" and not message.tool_calls) %}\n        {{- '<|im_start|>' + message.role + '\\n' + message.content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {{- '<|im_start|>' + message.role }}\n        {%- if message.content %}\n            {{- '\\n' + message.content }}\n        {%- endif %}\n        {%- for tool_call in message.tool_calls %}\n            {%- if tool_call.function is defined %}\n                {%- set tool_call = tool_call.function %}\n            {%- endif %}\n            {{- '\\n<tool_call>\\n{\"name\": \"' }}\n            {{- tool_call.name }}\n            {{- '\", \"arguments\": ' }}\n            {{- tool_call.arguments | tojson }}\n            {{- '}\\n</tool_call>' }}\n        {%- endfor %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if (loop.index0 == 0) or (messages[loop.index0 - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- message.content }}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n{%- endif %}\n",
+      "eos_token": "<|im_end|>",
+      "pad_token": "<|endoftext|>",
+      "unk_token": null
+    }
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "e1fa4c16ab29dea6f57549b384ea28083ba54834",
+      "size": 1571
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "8beec3abd3096be6281b9bab0387fc20bee4b61d",
+      "size": 8532
+    },
+    {
+      "rfilename": "ar_normalizer_action.pth",
+      "blobId": "b61186472cb1757e87500592c29708dc817ca550",
+      "size": 41654,
+      "lfs": {
+        "sha256": "2b39692f6670d9367adf93c1bf8a002f68ed44e0d6ab3be5e7cc0e551f9e9f0e",
+        "size": 41654,
+        "pointerSize": 130
+      }
+    },
+    {
+      "rfilename": "assets/logo.png",
+      "blobId": "81389b5bed6d69bcd644e5f3d520e1bd40c712be",
+      "size": 201813,
+      "lfs": {
+        "sha256": "721ada7f102cac8b9be8a006998e8248ee62075111bd8290896b7b4a9e12e55a",
+        "size": 201813,
+        "pointerSize": 131
+      }
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "e8a9f3f91a3c8085e9d6ef662a6d69736ce33ae3",
+      "size": 2148
+    },
+    {
+      "rfilename": "config.yml",
+      "blobId": "779f7f4042a6a5d40e95f9864117c61dce1d895a",
+      "size": 1159
+    },
+    {
+      "rfilename": "model.safetensors",
+      "blobId": "04e9c00ba0eda79f715cf20805f4851d4f59380d",
+      "size": 8331486672,
+      "lfs": {
+        "sha256": "37f8f327d3f9c27f056ed078db43c0e39b8caf3df0dc0163cdb8cf92c167968a",
+        "size": 8331486672,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "normalizer_action.pth",
+      "blobId": "6b1397c20654bcf6eff3cd956fd3993e687e3bef",
+      "size": 41242,
+      "lfs": {
+        "sha256": "62f3bf32e68f09968c56b88a279a796801f8bef1bb2a7ba88c8fcb343d89ba02",
+        "size": 41242,
+        "pointerSize": 130
+      }
+    },
+    {
+      "rfilename": "normalizer_propri.pth",
+      "blobId": "9e9fd7033952babe82e3ed7f41e57714037fa36c",
+      "size": 41242,
+      "lfs": {
+        "sha256": "9f3c34fac521f1ca365993c9dc5b8c6e49aa453605ed996d03078a8e0296b589",
+        "size": 41242,
+        "pointerSize": 130
+      }
+    },
+    {
+      "rfilename": "preprocessor_config.json",
+      "blobId": "7f3b746825e5eef53ed8ed57a91df9e86ee62c0a",
+      "size": 350
+    },
+    {
+      "rfilename": "tokenizer.json",
+      "blobId": "443909a61d429dff23010e5bddd28ff530edda00",
+      "size": 7031645
+    },
+    {
+      "rfilename": "tokenizer_config.json",
+      "blobId": "806fef71c212d4296262ab50914d42384e80a2c7",
+      "size": 7255
+    },
+    {
+      "rfilename": "vocab.json",
+      "blobId": "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "size": 2776833
+    }
+  ],
+  "spaces": [],
+  "createdAt": "2026-05-28T02:09:25.000Z",
+  "safetensors": {
+    "parameters": {
+      "F32": 3455680,
+      "BF16": 4158769152
+    },
+    "total": 4162224832
+  },
+  "usedStorage": 8331812623
+}

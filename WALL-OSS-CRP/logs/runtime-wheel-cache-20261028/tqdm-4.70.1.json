@@ -1,0 +1,408 @@
+{
+  "status": "PASS",
+  "package": "tqdm",
+  "version": "4.70.1",
+  "filename": "tqdm-4.70.1-py3-none-any.whl",
+  "source": {
+    "kind": "RECORD-verified installed package",
+    "site_packages": "/home/pangk/workspaces/WALL-OSS-CRP/env/lib/python3.10/site-packages"
+  },
+  "source_record_sha256": "ac9095d997199ee8c39e21e83f13e75c3fe9ff918217ebb3a8349051c91ac324",
+  "wheel_tags": [
+    "py3-none-any"
+  ],
+  "record_verified_files": [
+    {
+      "path": "../../../bin/tqdm",
+      "wheel_path": "../../../bin/tqdm",
+      "size_bytes": 189,
+      "sha256": "64902ef8aed66087444fd1b0cc21c9b68d50253bbb6d05a575ff41cf35812f35"
+    },
+    {
+      "path": "tqdm-4.70.1.dist-info/INSTALLER",
+      "wheel_path": "tqdm-4.70.1.dist-info/INSTALLER",
+      "size_bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "tqdm-4.70.1.dist-info/METADATA",
+      "wheel_path": "tqdm-4.70.1.dist-info/METADATA",
+      "size_bytes": 57366,
+      "sha256": "a5da70b966afea3a759716041bad7187f2ece02c22348cf9e7c0a512bbf15f57"
+    },
+    {
+      "path": "tqdm-4.70.1.dist-info/REQUESTED",
+      "wheel_path": "tqdm-4.70.1.dist-info/REQUESTED",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tqdm-4.70.1.dist-info/WHEEL",
+      "wheel_path": "tqdm-4.70.1.dist-info/WHEEL",
+      "size_bytes": 91,
+      "sha256": "61532836a2b3111b7ec23519c09df7c41180c27165fb872a6d8913b566b88ad1"
+    },
+    {
+      "path": "tqdm-4.70.1.dist-info/entry_points.txt",
+      "wheel_path": "tqdm-4.70.1.dist-info/entry_points.txt",
+      "size_bytes": 39,
+      "sha256": "45e2421fb522dd9ca1e8cd7a1383a1b19d6853b5ad31709f6eda3206118edbd6"
+    },
+    {
+      "path": "tqdm-4.70.1.dist-info/licenses/LICENCE",
+      "wheel_path": "tqdm-4.70.1.dist-info/licenses/LICENCE",
+      "size_bytes": 1985,
+      "sha256": "fcff87c3a47ce8028a8512aa182d4fcf0ad1c90544ee75cf9b343684cac194de"
+    },
+    {
+      "path": "tqdm-4.70.1.dist-info/top_level.txt",
+      "wheel_path": "tqdm-4.70.1.dist-info/top_level.txt",
+      "size_bytes": 5,
+      "sha256": "34b89424d7e673d02dd79b3b254462c2fa8c123522f46e4f30646b98c6333523"
+    },
+    {
+      "path": "tqdm/__init__.py",
+      "wheel_path": "tqdm/__init__.py",
+      "size_bytes": 1572,
+      "sha256": "f6640d6124aa3fdf496acb9b102d4f3892cc9a1924047e9c259c4f211e46da94"
+    },
+    {
+      "path": "tqdm/__main__.py",
+      "wheel_path": "tqdm/__main__.py",
+      "size_bytes": 30,
+      "sha256": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279"
+    },
+    {
+      "path": "tqdm/_main.py",
+      "wheel_path": "tqdm/_main.py",
+      "size_bytes": 283,
+      "sha256": "f724af8268bfd92c38080a395035b44367717d3af26e8116187a217c2273d2c0"
+    },
+    {
+      "path": "tqdm/_monitor.py",
+      "wheel_path": "tqdm/_monitor.py",
+      "size_bytes": 4013,
+      "sha256": "d5571abeea2d61237a2bed636e936ecba1d8b6bde6c28e4d87f8d9310fa38370"
+    },
+    {
+      "path": "tqdm/_tqdm.py",
+      "wheel_path": "tqdm/_tqdm.py",
+      "size_bytes": 283,
+      "sha256": "2df2c2b89e9ba6c568f718a59ad057c849b5bc69d4085ae5896f398f727e9c3e"
+    },
+    {
+      "path": "tqdm/_tqdm_gui.py",
+      "wheel_path": "tqdm/_tqdm_gui.py",
+      "size_bytes": 287,
+      "sha256": "d371dcf0a6b2c49bde89e239fb4fb6346883a4bbf0f6365e9287c9515ec20b09"
+    },
+    {
+      "path": "tqdm/_tqdm_notebook.py",
+      "wheel_path": "tqdm/_tqdm_notebook.py",
+      "size_bytes": 307,
+      "sha256": "06e1e22eec6eeae11f64568f256dd13e93dac5a55cb44400de47522520cbd61c"
+    },
+    {
+      "path": "tqdm/_tqdm_pandas.py",
+      "wheel_path": "tqdm/_tqdm_pandas.py",
+      "size_bytes": 888,
+      "sha256": "73d8e9b5482280de9ac510e145de1189ff7c4e6c5ea297359c5345848a5b1541"
+    },
+    {
+      "path": "tqdm/_utils.py",
+      "wheel_path": "tqdm/_utils.py",
+      "size_bytes": 559,
+      "sha256": "09f2f3b71158f9046235fc500aa01bd8df04d77b9ab8833de5149088595a12e1"
+    },
+    {
+      "path": "tqdm/asyncio.py",
+      "wheel_path": "tqdm/asyncio.py",
+      "size_bytes": 3196,
+      "sha256": "229706a3a645c1ce8a287623e6cee1e246918a881c69b27a3dca878fa8ddcb42"
+    },
+    {
+      "path": "tqdm/auto.py",
+      "wheel_path": "tqdm/auto.py",
+      "size_bytes": 871,
+      "sha256": "9c365f963ea9db32a48c108d068babae14bcd7361f672d7f750bdb724add5bca"
+    },
+    {
+      "path": "tqdm/autonotebook.py",
+      "wheel_path": "tqdm/autonotebook.py",
+      "size_bytes": 1440,
+      "sha256": "da9360182243b1eb0d372627992bdef013502e2192828f7b4ac3e83170ab3514"
+    },
+    {
+      "path": "tqdm/cli.py",
+      "wheel_path": "tqdm/cli.py",
+      "size_bytes": 11011,
+      "sha256": "b758ff3ea2344ae3328491a807130f09763e5136df8dc89a010631014fdffd5d"
+    },
+    {
+      "path": "tqdm/completion.sh",
+      "wheel_path": "tqdm/completion.sh",
+      "size_bytes": 946,
+      "sha256": "8fbf4a6d29a9223fc4d758df4df057ac69d44f3297569435bc6550becc83465e"
+    },
+    {
+      "path": "tqdm/contrib/__init__.py",
+      "wheel_path": "tqdm/contrib/__init__.py",
+      "size_bytes": 2479,
+      "sha256": "d46318604f3ae960af94783931d9b33af3ec423e19b8c957cf3f317117090fad"
+    },
+    {
+      "path": "tqdm/contrib/bells.py",
+      "wheel_path": "tqdm/contrib/bells.py",
+      "size_bytes": 921,
+      "sha256": "21ac42d985b9ef11c38a7c5d503407bd27a0a341d24dd0d313141010dbd207f9"
+    },
+    {
+      "path": "tqdm/contrib/concurrent.py",
+      "wheel_path": "tqdm/contrib/concurrent.py",
+      "size_bytes": 9873,
+      "sha256": "0a9c6bc1c29a4111fb9f04cf1b799562e95e1acfeed0c3615b8853b9a6e9618b"
+    },
+    {
+      "path": "tqdm/contrib/discord.py",
+      "wheel_path": "tqdm/contrib/discord.py",
+      "size_bytes": 5337,
+      "sha256": "2cf8f10db99f898b70dce026fd686dc1b5fd05560394f73c949f7a698dd86431"
+    },
+    {
+      "path": "tqdm/contrib/itertools.py",
+      "wheel_path": "tqdm/contrib/itertools.py",
+      "size_bytes": 2949,
+      "sha256": "300f7e26f6f74e8b1ea69227bdebf6885e1ba2437b190cb84382e08d4c98740e"
+    },
+    {
+      "path": "tqdm/contrib/logging.py",
+      "wheel_path": "tqdm/contrib/logging.py",
+      "size_bytes": 3902,
+      "sha256": "d27167d82eea51488a3c1d7da931ae4bd2df8daf1a8855b4bbd9326d1746d215"
+    },
+    {
+      "path": "tqdm/contrib/slack.py",
+      "wheel_path": "tqdm/contrib/slack.py",
+      "size_bytes": 4049,
+      "sha256": "b02d7cdafef10647c67ed9c379499000b30e7f043353766235fd50fd70350e32"
+    },
+    {
+      "path": "tqdm/contrib/telegram.py",
+      "wheel_path": "tqdm/contrib/telegram.py",
+      "size_bytes": 5081,
+      "sha256": "c9b4eb6868d4431e66e38dd3b17ea927b531ae9b21d66e1ae3705359597fe1ee"
+    },
+    {
+      "path": "tqdm/contrib/utils_worker.py",
+      "wheel_path": "tqdm/contrib/utils_worker.py",
+      "size_bytes": 1199,
+      "sha256": "bdac722726a06303824172d431df3a6c26c8e2c3ea672b2e3066c34869af116a"
+    },
+    {
+      "path": "tqdm/dask.py",
+      "wheel_path": "tqdm/dask.py",
+      "size_bytes": 1319,
+      "sha256": "f448b9f1e56a4e8b2c44b8407d6c9414276e5d82a398b9b091a5c8cbe08761fb"
+    },
+    {
+      "path": "tqdm/gui.py",
+      "wheel_path": "tqdm/gui.py",
+      "size_bytes": 5481,
+      "sha256": "99a43b8e007995e587c313256c1bf4f21a5ee65cadbe61f4844011bb6d8645d5"
+    },
+    {
+      "path": "tqdm/keras.py",
+      "wheel_path": "tqdm/keras.py",
+      "size_bytes": 4396,
+      "sha256": "ba077cd3ec42c4caa7adbc7f0c43a99a3e9cd92875c6856d43c57df9bc36f5ea"
+    },
+    {
+      "path": "tqdm/notebook.py",
+      "wheel_path": "tqdm/notebook.py",
+      "size_bytes": 10888,
+      "sha256": "eb19144dc611b05c4de3f052518619e75900808ef27274f41cba4ff47ba412a8"
+    },
+    {
+      "path": "tqdm/rich.py",
+      "wheel_path": "tqdm/rich.py",
+      "size_bytes": 5255,
+      "sha256": "274e32abacb652bf74d76cc2ecf91ccc0d6dedc0e37adf3c866064ac0bfeb36b"
+    },
+    {
+      "path": "tqdm/std.py",
+      "wheel_path": "tqdm/std.py",
+      "size_bytes": 58047,
+      "sha256": "dd76d965de52c590819dec376644220cb35dc4831e40efb4c30944884fc57d86"
+    },
+    {
+      "path": "tqdm/tk.py",
+      "wheel_path": "tqdm/tk.py",
+      "size_bytes": 6702,
+      "sha256": "dd5b01d4c0c090222d696bbb0a631bd82a132cc8aa98388480d8b7ca2a90e466"
+    },
+    {
+      "path": "tqdm/tqdm.1",
+      "wheel_path": "tqdm/tqdm.1",
+      "size_bytes": 7538,
+      "sha256": "30b83daa37874e16693c441b595adfe4fe6039730a1c4fd7eb4e8548e048f5e5"
+    },
+    {
+      "path": "tqdm/utils.py",
+      "wheel_path": "tqdm/utils.py",
+      "size_bytes": 9746,
+      "sha256": "a3f7f4577d87ff0ae7d179919e8de3f6927dc65a79c4bd1f1d3de0b6a2fe939f"
+    },
+    {
+      "path": "tqdm/version.py",
+      "wheel_path": "tqdm/version.py",
+      "size_bytes": 233,
+      "sha256": "d2e1f84cb7bc23c1fbd71dbd7659ad11904e6cb4f76f9216fa7cad177574215c"
+    }
+  ],
+  "excluded_installation_files": [
+    {
+      "path": "../../../bin/tqdm",
+      "reason": "verified console entry point; installer regenerates portable script"
+    },
+    {
+      "path": "tqdm-4.70.1.dist-info/INSTALLER",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm-4.70.1.dist-info/REQUESTED",
+      "reason": "verified installation metadata; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/__main__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/_main.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/_monitor.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/_tqdm.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/_tqdm_gui.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/_tqdm_notebook.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/_tqdm_pandas.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/_utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/asyncio.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/auto.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/autonotebook.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/cli.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/dask.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/gui.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/keras.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/notebook.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/rich.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/std.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/tk.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/utils.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/__pycache__/version.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/contrib/__pycache__/__init__.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/contrib/__pycache__/bells.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/contrib/__pycache__/concurrent.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/contrib/__pycache__/discord.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/contrib/__pycache__/itertools.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/contrib/__pycache__/logging.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/contrib/__pycache__/slack.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/contrib/__pycache__/telegram.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    },
+    {
+      "path": "tqdm/contrib/__pycache__/utils_worker.cpython-310.pyc",
+      "reason": "generated bytecode; omitted from rebuilt wheel"
+    }
+  ],
+  "wheel_sha256": "77e91dd735910ae34b62e56a3f7c01e6cfe1b3d3a17272edfd390d545b693936",
+  "wheel_size_bytes": 90482,
+  "rebuilt_record_verified_files": 38,
+  "cache_attempt_errors": [],
+  "checked_at_utc": "2026-10-28T09:17:22.328136+00:00",
+  "record_validation": "PASS",
+  "wheel_record_verified_file_count": 38,
+  "source_record_verified_file_count": 41
+}
